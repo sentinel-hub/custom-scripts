@@ -15,32 +15,9 @@ where
 \mathtt{NDGR} := \mathtt{Index}(B02, B03) = \frac{B02 - B03}{B02 + B03}
 ```
 
-One can think of this formula as describing a subspace (of the space of Sentinel-2 responses) that contains most of the clouds. The same thing could be written more concisely - the NDGR threshold is really just `$B02>B03$`.
+One can think of this formula as describing a subspace (of the space of Sentinel-2 responses) that contains most of the clouds. The same thing could be written more concisely - the NDGR threshold is really just $`B02>B03`$.
 
 ## Assessment of quality
-
-There's a Javascript code that can be used with  to see the detector in action.
-```javascript
-//Braaten, Cohen, Yang 2015
-var bRatio = (B02 - 0.175) / (0.39 - 0.175);
-var NGDR = (B02 - B03) / (B02 + B03);
-
-function clip(a) {
-  return Math.max(0, Math.min(1, a));
-}
-
-if (bRatio > 1) { //cloud
-  var v = 0.5*(bRatio - 1);
-  return [0.5*clip(B04), 0.5*clip(B03), 0.5*clip(B02) + v];
-}
-
-if (bRatio > 0 && NGDR>0) { //cloud
-  var v = 5 * Math.sqrt(bRatio * NGDR);
-  return [0.5 * clip(B04) + v, 0.5 * clip(B03), 0.5 * clip(B02)];
-}
-
-return [2*B04, 2*B03, 2*B02];
-```
 
 On the Hollstein data set this algorithm achieves 73% classification accuracy; most of the error comes from detecting snow as cloud and failing to detect thin clouds. The corresponding confusion matrix (entries along the left column are taken from Hollstein data, so 8% means that from among all pixels in the train set there are 8% that are clouds but weren't detected):
 ```
