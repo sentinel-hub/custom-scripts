@@ -1,6 +1,6 @@
 # Normalized difference vegetation index
 The normalized difference vegetation index, abbreviated NDVI, is defined as
-```latex
+```math
 NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.
 ```
 
