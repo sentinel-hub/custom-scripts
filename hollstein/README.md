@@ -3,7 +3,6 @@
 A paper about cloud detection [1], shows a fairly complex classification decision tree (figure 8 in the article), based on derived feature space resulting in 91% of correctly classified spectra.
 
 ![The decision tree from [1][1]](fig/tree.png)
-Figure 1: The decision tree from [1].
 
 The colours correspond to the colours from the article, apart from the colours for clear and shadow, which are made into natural (true) colour from red, green and blue bands.
 
