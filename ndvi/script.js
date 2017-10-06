@@ -19,10 +19,10 @@ function index(x, y) {
 }
 
 function toRGB(val) {
-	let r = (val >>> 16) & 0xFF;
-	let g = (val >>> 8) & 0xFF;
-	let b = val & 0xFF;
-	return [r, g, b].map(x => x/0xFF);
+	let r = val >>> 16;
+	let g = val >>> 8;
+	let b = val;
+	return [r, g, b].map(x => (x & 0xFF) / 0xFF);
 }
 
 function findColor(colValPairs, val) {
