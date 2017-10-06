@@ -35,4 +35,4 @@ function findColor(colorPairs, ndvi) {
 	return toRGB(colorPairs[n-1][1]);
 }
 
-return findColor_(colorPairs, index(B08, B04));
+return findColor(colorPairs, index(B08, B04));
