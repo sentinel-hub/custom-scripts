@@ -1,3 +1,4 @@
+
 let ndviColorMap = [
 	[-1.0, 0x000000],
 	[-0.2, 0xFF0000],
@@ -22,10 +23,11 @@ function toRGB(val) {
 	return [val >>> 16, val >>> 8, val].map(x => (x & 0xFF) / 0xFF);
 }
 
+// We should interpolate between neighboring colors
 function findColor(colValPairs, val) {
 	let n = colValPairs.length;
 	for (let i = 1; i < n; i++) {
-		if (Math.abs(colValPairs[i][0] - val) > Math.abs(colValPairs[i-1][0] - val)) {
+		if (val <= colValPairs[i][0]) {
 			return toRGB(colValPairs[i-1][1]);
 		}
 	}
