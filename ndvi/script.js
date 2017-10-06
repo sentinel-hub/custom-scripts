@@ -1,4 +1,4 @@
-let colorPairs = [
+let ndviColorMap = [
 	[-1.0, 0x000000],
 	[-0.2, 0xFF0000],
 	[-0.1, 0x9A0000],
@@ -25,14 +25,14 @@ function toRGB(val) {
 	return [r, g, b].map(x => x/0xFF);
 }
 
-function findColor(colorPairs, ndvi) {
-	let n = colorPairs.length;
+function findColor(colValPairs, val) {
+	let n = colValPairs.length;
 	for (let i = 1; i < n; i++) {
-		if (Math.abs(colorPairs[i][0] - ndvi) > Math.abs(colorPairs[i-1][0] - ndvi)) {
-			return toRGB(colorPairs[i-1][1]);
+		if (Math.abs(colValPairs[i][0] - val) > Math.abs(colValPairs[i-1][0] - val)) {
+			return toRGB(colValPairs[i-1][1]);
 		}
 	}
-	return toRGB(colorPairs[n-1][1]);
+	return toRGB(colValPairs[n-1][1]);
 }
 
-return findColor(colorPairs, index(B08, B04));
+return findColor(ndviColorMap, index(B08, B04));
