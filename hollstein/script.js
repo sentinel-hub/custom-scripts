@@ -1,6 +1,6 @@
 function S (a, b) { return a - b };
 function R (a, b) { return a / b };
-var naturalColour = [3*B04, 3*B03, 3*B02];
+var naturalColour = [B04, B03, B02].map(a => 3*a);
 var CLEAR  = naturalColour;
 var SHADOW = naturalColour;
 var WATER  = [0.1,0.1,0.7];
