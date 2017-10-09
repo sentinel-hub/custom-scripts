@@ -1,5 +1,5 @@
 # Collection of custom scripts
-This repository contains a collection of custom scripts for Sentinel-Hub, which can be fed to the service via the URL to the raw script.
+This repository contains a collection of custom scripts for [Sentinel-Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
 
 ## Popular RGB composites
  - [Natural color](natural_color)
@@ -19,3 +19,5 @@ This repository contains a collection of custom scripts for Sentinel-Hub, which 
  Create a new directory entry for your custom script, say `my_algorithm`. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](cby_cloud_detection/README.md).
 
   Once you have set up the directory structure please add an entry pointing to your script to the above bullet list.
+
+  And create a pull request :).
