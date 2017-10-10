@@ -19,7 +19,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Popular RGB composites
  - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
  - [True color](sentinel-2/true_color) simplistic true color image from red, green and blue bands.
-
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/))
 
 #### Remote sensing indices
