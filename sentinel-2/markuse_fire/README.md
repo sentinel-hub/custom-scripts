@@ -9,7 +9,7 @@
  - Bands used by the script: B2, B3, B4, B5, B8, B11, B12
 
 ## General description
-The script visualizes wildfires from Sentinel-2 data. It was published by Pierre Markuse on his blog post [1] in August 2017.
+The script visualizes wildfires from Sentinel-2 data. It was published by Pierre Markuse on his blog [1] in August 2017.
 
 ## References
 [1] P. Markuse, [Visualizing (Wild)Fires in Sentinel-2 imagery through EO Browser
