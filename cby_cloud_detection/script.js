@@ -1,5 +1,6 @@
-var bRatio = (B02 - 0.175) / (0.39 - 0.175);
-var NGDR = (B02 - B03) / (B02 + B03);
+function index(x, y) {
+	return (x - y) / (x + y);
+}
 
 function clip(a) {
   return Math.max(0, Math.min(1, a));
@@ -15,4 +16,8 @@ if (bRatio > 0 && NGDR>0) { //cloud
   return [0.5 * clip(B04) + v, 0.5 * clip(B03), 0.5 * clip(B02)];
 }
 
-return [2*B04, 2*B03, 2*B02];
+let bRatio = (B02 - 0.175) / (0.39 - 0.175);
+let NGDR = index(B02, B03);
+let gain = 2.5;
+
+return [gain*B04, gain*B03, gain*B02];
