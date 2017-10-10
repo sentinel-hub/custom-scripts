@@ -1,12 +1,16 @@
 function S (a, b) { return a - b };
 function R (a, b) { return a / b };
-var naturalColour = [B04, B03, B02].map(a => 3*a);
-var CLEAR  = naturalColour;
-var SHADOW = naturalColour;
-var WATER  = [0.1,0.1,0.7];
-var CIRRUS = [0.8,0.1,0.1];
-var CLOUD  = [0.3,0.3,1.0];
-var SNOW   = [1.0,0.8,0.4];
+
+let gain = 2.5;
+
+let naturalColour = [B04, B03, B02].map(a => gain * a);
+
+let CLEAR  = naturalColour;
+let SHADOW = naturalColour;
+let WATER  = [0.1,0.1,0.7];
+let CIRRUS = [0.8,0.1,0.1];
+let CLOUD  = [0.3,0.3,1.0];
+let SNOW   = [1.0,0.8,0.4];
 
 return (B03 < 0.319)
 ? (B8A < 0.166)
