@@ -18,7 +18,7 @@ NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.
 The script takes uncertainty of the NDVI product into account. It is expressed in terms of uncertainties of band measurements (see [2, 3]) which are reported by ESA to be 0.02 for B4 and 0.03 for B8. The script encodes the uncertainty with darkness [2].
 
 Figure below shows the color map used by the script.
-![Color map of the NDVI uncertainty script from [2][1]](fig/cmap.jng)
+![Color map of the NDVI uncertainty script from [2][1]](fig/cmap.jpg)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index
