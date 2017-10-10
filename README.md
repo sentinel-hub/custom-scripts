@@ -23,7 +23,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Remote sensing indices
  - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized dense vegetation index
- - [Index DataBase](sentineel-2/indexdb) - indices suitable for Sentinel-2 sensor as listed by [indexdatabase](http://www.indexdatabase.de/).
+ - [Index DataBase (IDB)](sentineel-2/indexdb) - indices suitable for Sentinel-2 sensor as listed by [indexdatabase](http://www.indexdatabase.de/).
 
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection)
@@ -37,16 +37,18 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean Colour Observations, and secondary to the understanding of atmospheric parameters associated with clouds, water vapour and aerosols in addition to land surface parameters, in particular vegetation processes. MERIS has a high spectral and radiometric resolution and a dual spatial resolution. It acquires 15 spectral bands in the 390 - 1040 NM range of the electromagnetic spectrum, and it allows the programmability of its spectral bands in their width and position.
 
 ## <a name="application"></a>List by application
-|    | Sentinel-2    | Landsat-8       | Envisat Meris  |
+|               | Sentinel-2    | Landsat-8       | Envisat Meris  |
 | ------------- |:-------------:| :-------------: | :-------------:|
-| **Agriculture**                  |  | | |
-| **Alpine**                       |  | | |
-| **Fire**                         |  | | |
-| **Forestry**                     |  | | |
-| **Geology**                      |  | | |
-| **Soil**                         |  | | |
-| **Vegetation**                   |  | | |
-| **Water**                        |  | | |  |
+| **Agriculture** |  | | |
+| **Alpine**      |  | | |
+| **Fire**        |  | | |
+| **Forestry**    |  | | |
+| **Geology**     |  | | |
+| **Soil**        |  | |  |
+| **Vegetation**  |  | |  |
+| **Water**       |  | |  |  |
+
+For indices from [IDB](http://www.indexdatabase.de/) the application scope is defined on a much finer scale directly on the [IDB](http://www.indexdatabase.de/).
 
 # <a name="howto"></a>Adding new custom scripts
  Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
