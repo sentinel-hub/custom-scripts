@@ -10,18 +10,24 @@
 
 ## General description
 
-The normalized difference vegetation index, abbreviated NDVI, is defined as
+This script allows you to visually interpret how the normalized density vegetation index (NDVI) is affected by the uncertainties in detector reflectances of the L1C products.
+
+Since NDVI is defined as a ratio of difference over sum of bands 8 and 4 (near infrared and red):
 ```math
 NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.
 ```
+the uncertainty propagation gives us the uncertainty of the index itself as
+```math
+\Delta_{NDVI} := \frac{\sqrt{B8^2 ...}}{(B8+B4)^2}.
+```
 
-The script takes uncertainty of the NDVI product into account. It is expressed in terms of uncertainties of band measurements (see [2, 3]) which are reported by ESA to be 0.02 for B4 and 0.03 for B8. The script encodes the uncertainty with darkness [2].
+where `math \Delta_{B4}` and `math \Delta_{B8}` are uncertainties of red and near infrared bands respectively (reported by ESA to be 0.02 and 0.03). We left out the mixed part `math \Delta_{B4}\Delta_{B8}` as if the two uncertainties were not correlated.
 
-Figure below shows the color map used by the script.
+The script encodes the uncertainty with darkness, as can be seen in following figure
 ![Color map of the NDVI uncertainty script from [2][1]](fig/cmap.jpg)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index
-](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.
+](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.   
  [2] Sentinel-Hub, [Ad hoc testing of algorithms globally](http://sentinel-hub.com/blog/ad-hoc-testing-algorithms-globally). Accessed October 10th 2017.
  [3] Wikipedia, [Propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty). Accessed October 10th 2017.
