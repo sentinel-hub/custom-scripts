@@ -18,16 +18,16 @@ NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.
 ```
 the uncertainty propagation gives us the uncertainty of the index itself as
 ```math
-\Delta_{NDVI} := \frac{\sqrt{B8^2 ...}}{(B8+B4)^2}.
+\Delta_{NDVI} := \frac{\sqrt{B8^2 \Delta_{B4}^2 + B4^2 \Delta_{B8}^2} - 2B4 B8 \Delta_{B4B8}}{(B8+B4)^2}.
 ```
 
-where `math \Delta_{B4}` and `math \Delta_{B8}` are uncertainties of red and near infrared bands respectively (reported by ESA to be 0.02 and 0.03). We left out the mixed part `math \Delta_{B4}\Delta_{B8}` as if the two uncertainties were not correlated.
+where $`\Delta_{B4}`$ and $`\Delta_{B8}`$ are uncertainties of red and near infrared bands respectively (reported by ESA to be 0.02 and 0.03). We left out the mixed part $`\Delta_{B4B8}`$ as if the two uncertainties were not correlated.
 
-The script encodes the uncertainty with darkness, as can be seen in following figure
+The script encodes the uncertainty with darkness, as can be seen in following figure   
 ![Color map of the NDVI uncertainty script from [2][1]](fig/cmap.jpg)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index
 ](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.   
- [2] Sentinel-Hub, [Ad hoc testing of algorithms globally](http://sentinel-hub.com/blog/ad-hoc-testing-algorithms-globally). Accessed October 10th 2017.
+ [2] Sentinel-Hub, [Ad hoc testing of algorithms globally](http://sentinel-hub.com/blog/ad-hoc-testing-algorithms-globally). Accessed October 10th 2017.   
  [3] Wikipedia, [Propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty). Accessed October 10th 2017.
