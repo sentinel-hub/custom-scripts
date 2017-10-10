@@ -36,6 +36,17 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 ## <a name="meris"></a>Envisat Meris
 Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean Colour Observations, and secondary to the understanding of atmospheric parameters associated with clouds, water vapour and aerosols in addition to land surface parameters, in particular vegetation processes. MERIS has a high spectral and radiometric resolution and a dual spatial resolution. It acquires 15 spectral bands in the 390 - 1040 NM range of the electromagnetic spectrum, and it allows the programmability of its spectral bands in their width and position.
 
+## <a name="application"></a>List by application
+|    | Sentinel-2    | Landsat-8       | Envisat Meris  |
+| ------------- |:-------------:| :-------------: | :-------------:|
+| **Agriculture**                  |  | | |
+| **Alpine**                       |  | | |
+| **Fire**                         |  | | |
+| **Forestry**                     |  | | |
+| **Geology**                      |  | | |
+| **Soil**                         |  | | |
+| **Vegetation**                   |  | | |
+| **Water**                        |  | | |  |
 
 # <a name="howto"></a>Adding new custom scripts
  Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
