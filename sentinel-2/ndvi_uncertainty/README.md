@@ -18,7 +18,7 @@ NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.
 ```
 the uncertainty propagation gives us the uncertainty of the index itself as
 ```math
-\Delta_{NDVI} := \frac{\sqrt{B8^2 \Delta_{B4}^2 + B4^2 \Delta_{B8}^2} - 2B4 B8 \Delta_{B4B8}}{(B8+B4)^2}.
+\Delta_{NDVI} := \frac{\sqrt{B8^2 \Delta_{B4}^2 + B4^2 \Delta_{B8}^2 - 2B4 B8 \Delta_{B4B8}}}{(B8+B4)^2}.
 ```
 
 where $`\Delta_{B4}`$ and $`\Delta_{B8}`$ are uncertainties of red and near infrared bands respectively (reported by ESA to be 0.02 and 0.03). We left out the mixed part $`\Delta_{B4B8}`$ as if the two uncertainties were not correlated.

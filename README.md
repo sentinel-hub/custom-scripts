@@ -23,6 +23,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Remote sensing indices
  - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized dense vegetation index
+ - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [Index DataBase (IDB)](sentineel-2/indexdb) - indices suitable for Sentinel-2 sensor as listed by [indexdatabase](http://www.indexdatabase.de/).
 
 #### Cloud detection algorithms
