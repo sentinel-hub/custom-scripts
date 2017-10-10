@@ -8,12 +8,7 @@ function A(a, b) {return a + b};
 function stretch(val, min, max)  {
 	return (val - min) / (max - min);
 }
-// Some basic colors
-var BLACK = [0.0, 0.0, 0.0];
-var WHITE = [1.0, 1.0, 1.0];
-var RED = [0.9, 0.1, 0.1];
-var YELLOW = [0.9, 0.9, 0.1];
-var GREEN = [0.1, 0.9, 0.1];
+
 // Band combinations
 var NaturalColors = [stretch(3.1 * B04,0.05,0.9), stretch(3 * B03,0.05,0.9), stretch(3.0 * B02,0.05,0.9)];
 var EnhancedNaturalColors = [stretch((3.1 * B04 + 0.1 * B05),0.05,0.9), stretch((3 * B03 + 0.15 * B08),0.05,0.9), stretch(3 * B02,0.05,0.9)];
