@@ -5,8 +5,8 @@
  - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscript=bGV0IGdhaW4gPSAyLjU7CnJldHVybiBbQjA4LCBCMDQsIEIwM10ubWFwKGEgPT4gZ2FpbiAqIGEpOwo%3D)
 
 ## Basic information
-- Bands used by the algorithm: B3, B4, and B8
-- Bands used by the script: B3, B4, and B8
+- Bands used by the algorithm: B3, B4, B8
+- Bands used by the script: B3, B4, B8
 
 ## General description
 
