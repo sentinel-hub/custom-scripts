@@ -1,10 +1,12 @@
 # Normalized difference vegetation index
 
-Link to [script](script.js).
-
+<input type='button' id='togglescript' value='Show script'>
+<div id='script_view'>
 {% highlight javascript %}
       {% include_relative script.js %}
 {% endhighlight %}
+</div>
+Link to [script](script.js).
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&preset=CUSTOM&layers=B04,B03,B02&maxcc=20&gain=1&gamma=1&time=2015-01-01%7C2017-10-10&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/ndvi/script.js){:target="_blank"}
