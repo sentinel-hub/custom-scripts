@@ -2,7 +2,7 @@
 
 Link to [script](script.js).
 
-{% highlight javascript %}
+{% highlight JS %}
 {% include_relative ../ndvi/script.js %}
 {% endhighlight %}
 
