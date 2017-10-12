@@ -1,6 +1,6 @@
 # False color infrared product
 
-{% include script filename='script.js' lang='javascript' %}
+{% include script filename='sentinel-2/false_color_infrared/script.js' %}
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.77643254375405&lng=12.69744873046875&zoom=10&preset=CUSTOM&layers=B04,B03,B02&maxcc=20&gain=1&gamma=1&time=2015-01-01%7C2017-10-10&atmFilter=&showDates=false&evalscript=cmV0dXJuIFtCMDQqMi41LEIwMyoyLjUsQjAyKjIuNV0%3D&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/false_color_infrared/script.js){:target="_blank"}
