@@ -29,10 +29,9 @@ One can think of this formula as describing a subspace (of the space of Sentinel
 On the Hollstein data set this algorithm achieves 73% classification accuracy; most of the error comes from detecting snow as cloud and failing to detect thin clouds. The corresponding confusion matrix (entries along the left column are taken from Hollstein data, so 8% means that from among all pixels in the train set there are 8% that are clouds but weren't detected):
 
 |       |  cloud           |  Ncloud         |
-|-------|------------------|-----------------|
+|:------|:-----------------|:----------------|
 |cloud  |  1142085  (20%)  |  460329 (8%)    |
 |Ncloud |  1027308 (18%)   |  3017989 (53%)  |
-```
 
 However, this algorithm doesn't detect thin clouds (e.g. transparent and translucent clouds) as well as misclassifies snow for cloud. One way to alleviate this is to use SWIR bands to help differentiate snow from cloud:   
 $$B11>\tau\land ((B02 > 0.175 \land \mathtt{NDGR} > 0) \lor B02 > 0.39),$$   
