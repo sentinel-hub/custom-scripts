@@ -25,8 +25,14 @@
   });
     <script type="text/javascript">
       jQuery(document).ready(function(){
-        jQuery('#togglescript').live('click', function(event) {        
-          jQuery('#script_view').toggle();
+        jQuery('#togglescript').live('click', function(event) {
+          if (jQuery("#script_view").is(':visible') {
+              jQuery("#script_view").hide();
+              jQuery('#togglescript').text("Show");
+          } else {
+              jQuery("#script_view").show();
+              jQuery('#togglescript').text("Hide");
+          }
         });
       });
     </script>
