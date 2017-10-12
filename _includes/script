@@ -1,5 +1,0 @@
-Link to [script]({{include.filename}}).
-
-{% highlight javascript %}
-      {% include {{include.filename}} %}
-{% endhighlight %}
