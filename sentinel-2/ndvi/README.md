@@ -18,7 +18,7 @@
 ## General description
 
 The normalized difference vegetation index, abbreviated NDVI, is defined as   
-$$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.   
+$$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$   
 
 It is a good proxy for live green vegetation; see [1] for details.
 
