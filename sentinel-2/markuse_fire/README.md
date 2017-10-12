@@ -1,6 +1,11 @@
 # Wildfire visualization
 
-Link to [script](script.js).
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&layers=B04,B03,B02&maxcc=20&gain=1&gamma=1&time=2015-01-01%7C2017-07-17&atmFilter=&showDates=false&evalscript=&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Fsentinel-hub%2FcustomScripts%2Fmaster%2Fsentinel-2%2Fmarkuse_fire%2Fscript.js){:target="_blank"}

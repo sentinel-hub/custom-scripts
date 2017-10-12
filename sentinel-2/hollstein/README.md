@@ -1,6 +1,11 @@
 # Clouds classification script
 
-Link to [script](script.js).
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.43880327782999&lng=14.775924682617188&zoom=11&preset=CUSTOM&layers=B04,B03,B02&maxcc=100&gain=1&gamma=1&time=2015-01-01%7C2017-10-09&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/hollstein/script.js){:target="_blank"}

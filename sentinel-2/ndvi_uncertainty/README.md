@@ -1,6 +1,11 @@
 # Normalized difference vegetation index with uncertainty
 
-Link to [script](script.js).
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=40.39519549132737&lng=-3.739471435546875&zoom=11&preset=CUSTOM&layers=B04,B03,B02&maxcc=20&gain=1&gamma=1&time=2015-01-01%7C2017-10-10&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/ndvi_uncertainty/script.js){:target="_blank"}

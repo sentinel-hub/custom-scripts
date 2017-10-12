@@ -1,6 +1,11 @@
 # Braaten-Cohen-Yang cloud detector
 
-Link to [original script](script_bcy_original.js).
+<a href="#" id='togglescript'>Show</a> original script or [download](script_bcy_original.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script_bcy_original.js %}
+{% endhighlight %}
+</div>  
 
 ## Evaluate and visualize
 - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.10942153064164&lng=14.8919677734375&zoom=9&preset=CUSTOM&layers=B04,B03,B12&maxcc=100&gain=1.0&gamma=1.0&time=2015-01-01%7C2017-06-06&atmFilter=&showDates=false&evalscript=cmV0dXJuIFtCMDQqMi41LEIwMyoyLjUsQjEyKjIuNV0%3D&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Fsentinel-hub%2FcustomScripts%2Fmaster%2Fsentinel-2%2Fcby_cloud_detection%2Fscript.js){:target="_blank"}

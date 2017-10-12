@@ -1,6 +1,11 @@
 # Natural color product
 
-Link to [script](script.js).
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&preset=CUSTOM&layers=B04,B03,B02&maxcc=20&gain=1&gamma=1&time=2015-01-01%7C2017-10-10&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/natural_color/script.js){:target="_blank"}
