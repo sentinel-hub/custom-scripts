@@ -1,15 +1,5 @@
 Link to [script]({{include.filename}}).
 
-{% capture filecontent %}
-    {% include {{include.filename}} %}
-{% endcapture %}
-
-{%if include.lines %}
-  {% highlight {{include.lang}} linenos %}
-      {{ filecontent }}
-  {% endhighlight %}
-{% else %}
-  {% highlight {{include.lang}} %}
-      {{ filecontent }}
-  {% endhighlight %}
-{% elsif %}
+{% highlight javascript %}
+      {% include {{include.filename}} %}
+{% endhighlight %}
