@@ -2,9 +2,8 @@
 
 Link to [script](script.js).
 
-{% highlight javascipt %}
-let gain = 2.5;
-return [B08, B04, B03].map(a => gain * a);
+{% highlight javascript %}
+{% include_relative script.js %}
 {% endhighlight %}
 
 ## Evaluate and visualize
