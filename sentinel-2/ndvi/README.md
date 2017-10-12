@@ -2,9 +2,9 @@
 
 <input type='button' id='togglescript' value='Show script'>
 <div id='script_view' style="display:none">
-{% highlight javascript %}
+```javascript
       {% include_relative script.js %}
-{% endhighlight %}
+```
 </div>
 Link to [script](script.js).
 
