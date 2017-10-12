@@ -1,6 +1,6 @@
 # Normalized difference vegetation index
 
-<input type='button' id='togglescript' value='Show script'>
+<a href="#" id='togglescript'>Toggle script view</a>
 <div id='script_view' style="display:none">
 ```javascript
       {% include_relative script.js %}
