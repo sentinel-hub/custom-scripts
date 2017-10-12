@@ -4,7 +4,7 @@
 <div id='script_view' style="display:none">
 {% highlight javascript %}
       {% include_relative script.js %}
-{% endhightligh %}
+{% endhighlight %}
 </div>
 
 ## Evaluate and visualize
