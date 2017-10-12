@@ -1,0 +1,9 @@
+name: Sentinel-Hub custom scripts
+theme: jekyll-theme-leap-day
+description: A repository of custom scripts that can be used with Sentinel-Hub services.
+author: Sentinel-Hub by Sinergise
+author_email: info@sentinel-hub.com
+---
+layout: post
+title: Custom scripts for Sentinel-Hub
+---
