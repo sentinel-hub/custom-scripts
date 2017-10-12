@@ -4,12 +4,13 @@ This repository contains a collection of custom scripts for [Sentinel-Hub](https
 Scripts are organised by sensors which are currently supported on Sentinel-Hub:
   - [Sentinel-2](#sentinel-2)
   
-<!--
+{::comment}
   - [Landsat-8](#landsat-8)
   - [MERIS](#meris)
 
 The scope of various indices according to their application is given [here](#applications).
--->
+{:/comment}
+
 You are invited to publish your own scripts - see [howto](#howto).
 
 ## <a name="sentinel-2"></a>Sentinel-2
@@ -32,7 +33,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
 
 
- <!--
+{::comment}
 ## <a name="landsat-8"></a>Landsat-8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php), was launched on February 11, 2013. The images are a unique resource for global change research and applications in agriculture, cartography, geology, forestry, regional planning, surveillance and education. Landsat 8 data has eight spectral bands with spatial resolutions ranging from 15 to 60 meters; the temporal resolution is 16 days.
 
@@ -53,7 +54,7 @@ Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean
 | **Water**       |  | |  |  |
 
 For indices from [IDB](http://www.indexdatabase.de/) the application scope is defined on a much finer scale directly on the [IDB](http://www.indexdatabase.de/).
--->
+{:/comment}
 
 # <a name="howto"></a>Adding new custom scripts
  Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
