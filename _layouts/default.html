@@ -23,12 +23,16 @@
     </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   });
-  </head>
-  <body>
+    <script type="text/javascript">
       jQuery(document).ready(function(){
         jQuery('#togglescript').live('click', function(event) {        
           jQuery('#script_view').toggle('show');
         });
+      });
+    </script>
+  </head>
+  <body>
+      
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
