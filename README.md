@@ -62,3 +62,9 @@ For indices from [IDB](http://www.indexdatabase.de/){:target="_blank"} the appli
   Once you have set up the directory structure please add an entry pointing to your script to the above bullet list.
 
   And create a pull request :).
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+<br />
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
