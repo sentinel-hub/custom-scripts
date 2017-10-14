@@ -58,10 +58,9 @@ function checkDebug(arr) {
 }
 
 //== SCRIPT ============================
-var rgb = [
-  atm(B04, c0r), 
-  atm(B03, c0r * 2), //Rayleigh-derived constants 
-  atm(B02, c0r * 3.4)
-].map(adj);
+
+var rgb = [adj(atm(B04, c0r)), 
+           adj(atm(B03, c0r * 2)), //Rayleigh-derived constants 
+           adj(atm(B02, c0r * 3.4))];
 
 return checkDebug(satEnh(rgb)).map(sRGBenc);
