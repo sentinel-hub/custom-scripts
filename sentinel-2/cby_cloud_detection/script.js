@@ -6,8 +6,8 @@ function clip(a) {
   return Math.max(0, Math.min(1, a));
 }
 
-let bRatio = (B02 - 0.175) / (0.39 - 0.175);
-let NGDR = index(B02, B03);
+let bRatio = (B03 - 0.175) / (0.39 - 0.175);
+let NGDR = index(B03, B04);
 let gain = 2.5;
 
 if (B11>0.1 && bRatio > 1) { //cloud
