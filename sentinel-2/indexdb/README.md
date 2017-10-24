@@ -1,4 +1,4 @@
-# Remote sensing indices
+# Sentinel-2 RS indices
 
 Following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"} specifically for Sentinel-2 satellite.
 

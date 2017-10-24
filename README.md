@@ -4,7 +4,7 @@ This repository contains a collection of custom scripts for [Sentinel-Hub](https
 Scripts are organised by sensors supported on Sentinel-Hub:
   - [Sentinel-2](#sentinel-2)
   - [Landsat-8](#landsat-8)
-  - [MERIS](#meris)
+  - [MODIS](#modis)
 
 {::comment}
 The scope of various indices according to their application is given [here](#applications).
@@ -69,26 +69,19 @@ The Landsat program is the longest running enterprise for acquisition of satelli
   - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 
-## <a name="meris"></a>Envisat Meris
-Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean Colour Observations, and secondary to the understanding of atmospheric parameters associated with clouds, water vapour and aerosols in addition to land surface parameters, in particular vegetation processes. MERIS has a high spectral and radiometric resolution and a dual spatial resolution. It acquires 15 spectral bands in the 390 - 1040 NM range of the electromagnetic spectrum, and it allows the programmability of its spectral bands in their width and position.
+## <a name="modis"></a>Envisat MODIS
+The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7:
 
-|	Band	|	Central wavelength (nm)	|	Bandwidth (nm)	|
+|	Band	|	Bandwidth (nm)	|	Resolution (m)	|
 |:-- |:----:|:----:|
-|	**B01**	|	412.5 	|	10 	|
-|	**B02**	|	442.5 	|	10 	|
-|	**B03**	|	490 	|	10 	|
-|	**B04**	|	510 	|	10 	|
-|	**B05**	|	560 	|	10 	|
-|	**B06**	|	620 	|	10 	|
-|	**B07**	|	665 	|	10 	|
-|	**B08**	|	681.25 	|	7.5 	|
-|	**B09**	|	708.75 	|	10 	|
-|	**B10**	|	753.75 	|	7.5 	|
-|	**B11**	|	760.625	|	3.75 	|
-|	**B12**	|	778.75 	|	15 	|
-|	**B13**	|	865 	|	20 	|
-|	**B14**	|	885 	|	10 	|
-|	**B15**	|	900 	|	10 	|
+|	**B01**	|	620 - 670	|	500	|
+|	**B02**	|	841 - 876	|	500	|
+|	**B03**	|	459 - 479	|	500	|
+|	**B04**	|	545 - 565	|	500	|
+|	**B05**	|	1230 - 1250	|	500	|
+|	**B06**	|	1628 - 1652	|	500	|
+|	**B07**	|	2105 - 2155	|	500	|
+
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
