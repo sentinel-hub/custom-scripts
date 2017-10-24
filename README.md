@@ -29,7 +29,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Index DataBase (IDB)](http://www.indexdatabase.de/){:target="_blank"} - an extensive database of remote sensing indices, listed by sensor and application scope.
 
 #### Cloud detection algorithms
- - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection)
+ - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
 
 
