@@ -1,4 +1,11 @@
-| Abbreviation | Name | Custom script | Open in Playground | 
+# Remote sensing indices
+
+Following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"} specifically for Sentinel-2 satellite.
+
+Javascript functions have been parsed from the data automatically, so please note there might be errors and feedback will be appreciated. Also note thate the intervals where various indices are mapped to colors are estimations and as such might not work best for all use cases. Tweak the scripts and let us know about your findings.
+
+
+| Abbreviation | Name | Custom script | Open in Playground |
  |---|---|---|---|
 | ATSAVI | [Adjusted transformed soil-adjusted VI](http://www.indexdatabase.de/db/si-single.php?rsindex_id=209=&sensor_id=96){:target="_blank"} | [id_209.js](./id_209.js){:target="_blank"} | [Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&maxcc=20&gain=1&gamma=1&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/indexdb/id_209.js){:target="_blank"} |
 | AFRI1600 | [Aerosol free vegetation index 1600](http://www.indexdatabase.de/db/si-single.php?rsindex_id=393=&sensor_id=96){:target="_blank"} | [id_393.js](./id_393.js){:target="_blank"} | [Playground](http://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&maxcc=20&gain=1&gamma=1&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/indexdb/id_393.js){:target="_blank"} |
