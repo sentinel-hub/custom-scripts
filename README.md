@@ -41,7 +41,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized dense vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
- - [collection](meris/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+ - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -66,7 +66,7 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 |	**B11** TIRS 2	|	11.5 - 12.51	|	30 (100)	|
 
 #### Remote sensing indices
-  - [collection](meris/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+  - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 
 ## <a name="meris"></a>Envisat Meris
@@ -91,9 +91,9 @@ Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean
 |	**B15**	|	900 	|	10 	|
 
 #### Remote sensing indices
-  - [collection](meris/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+  - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
-
+{::comment}
 ## <a name="application"></a>List by application
 |               | Sentinel-2    | Landsat-8       | Envisat Meris  |
 | ------------- |:-------------:| :-------------: | :-------------:|
