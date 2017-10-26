@@ -1,7 +1,7 @@
 //== PARAMETERS ===========================
 var c0r = 0.036;   // amount of atmosphere we're compensating
-//var cManual = [0.039,0.071,0.121]; // manual white point
-//var cManual = [[0.039, 1.09], [0.071, 1.21], [0.121, 1.34]]; // manual black & white point
+//var cManual = [0.039, 0.071, 0.121]; // manual white point
+//var cManual = [[0.039, 0.96], [0.071, 0.84], [0.121, 1.34]]; // manual black & white point
 var tx  = 0.2;    // ty/tx ~ contrast in dark areas
 var ty  = 0.4;    // (1-ty)/(1-tx) ~ contrast in light areas
 var max = 3.1;    // reflectance that will become white
@@ -18,14 +18,14 @@ function sRGBenc(C) {
 
 // atmospheric adjustment
 function atm2p(a, c0, c1) {
-	return c1 * (a - c0);
+	return (a - c0) / c1;
 }
 function atm1p(a, c0) {
-	return atm2p(a, c0, 1 / (1 - c0)**2);
+	return atm2p(a, c0, (1 - c0)**2);
 }
 function atm(a, ii) {
   if (typeof cManual !== 'undefined') {
-    if (cManual[0] instanceof Array) {
+    if (cManual[ii] instanceof Array) {
       return atm2p(a, cManual[ii][0], cManual[ii][1]);
     }
     return atm1p(a, cManual[ii]);
@@ -74,4 +74,3 @@ var rgb = satEnh(
           .map(adj));
 		  
 return checkDebug(rgb).map(sRGBenc);
- 
