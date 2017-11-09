@@ -1,3 +1,4 @@
+ 
 //== PARAMETERS ===========================
 var c0r = 0.036;   // amount of atmosphere we're compensating
 //var cManual = [0.039, 0.071, 0.121]; // manual white point
