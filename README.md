@@ -1,20 +1,15 @@
 # Collection of custom scripts
 This repository contains a collection of custom scripts for [Sentinel-Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
 
-Scripts are organised by sensors which are currently supported on Sentinel-Hub:
+Scripts are organised by sensors supported on Sentinel-Hub:
   - [Sentinel-2](#sentinel-2)
-
-{::comment}
   - [Landsat-8](#landsat-8)
-  - [MERIS](#meris)
-
-The scope of various indices according to their application is given [here](#applications).
-{:/comment}
+  - [MODIS](#modis)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
 ## <a name="sentinel-2"></a>Sentinel-2
-Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 is carrying a range of technologies, such as multi-spectral imaging instruments for land, ocean and atmospheric monitoring. It's is delivering high-resolution optical images for land monitoring, emergency response and security services. The satellite carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution.
+Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
 
 
 #### Popular RGB composites
@@ -26,35 +21,25 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized dense vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
- - [Index DataBase (IDB)](http://www.indexdatabase.de/){:target="_blank"} - an extensive database of remote sensing indices, listed by sensor and application scope.
+ - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 #### Cloud detection algorithms
- - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection)
+ - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
 
 
-{::comment}
 ## <a name="landsat-8"></a>Landsat-8
-The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. The images are a unique resource for global change research and applications in agriculture, cartography, geology, forestry, regional planning, surveillance and education. Landsat 8 data has eight spectral bands with spatial resolutions ranging from 15 to 60 meters; the temporal resolution is 16 days.
+The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
+
+#### Remote sensing indices
+  - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 
-## <a name="meris"></a>Envisat Meris
-Primary dedication of Medium Resolution Imaging Spectrometer (MERIS) is to Ocean Colour Observations, and secondary to the understanding of atmospheric parameters associated with clouds, water vapour and aerosols in addition to land surface parameters, in particular vegetation processes. MERIS has a high spectral and radiometric resolution and a dual spatial resolution. It acquires 15 spectral bands in the 390 - 1040 NM range of the electromagnetic spectrum, and it allows the programmability of its spectral bands in their width and position.
+## <a name="modis"></a>Envisat MODIS
+The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.
 
-## <a name="application"></a>List by application
-|               | Sentinel-2    | Landsat-8       | Envisat Meris  |
-| ------------- |:-------------:| :-------------: | :-------------:|
-| **Agriculture** |  | | |
-| **Alpine**      |  | | |
-| **Fire**        |  | | |
-| **Forestry**    |  | | |
-| **Geology**     |  | | |
-| **Soil**        |  | |  |
-| **Vegetation**  |  | |  |
-| **Water**       |  | |  |  |
-
-For indices from [IDB](http://www.indexdatabase.de/){:target="_blank"} the application scope is defined on a much finer scale directly on the [IDB](http://www.indexdatabase.de/){:target="_blank"}.
-{:/comment}
+#### Remote sensing indices
+  - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 # <a name="howto"></a>Adding new custom scripts
  Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
