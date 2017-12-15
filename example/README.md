@@ -4,11 +4,13 @@
 
 ## How to publish your own product
 
+* Fork the repository to get your own copy of the custom-scripts
+  > It is easiest to fork the repository on GitHub, but as some of you might not have GitHub account, or don't want to bother with all this versioning and collaboration tools, you can also just download the whole repository as zip file and work from there.
 * Create a new directory entry for your custom script
   > Copy the `example` directory to proper directory, based on which datasource (satellite) you are publishing the product for, to something that describes what the product is about, say `my_algorithm`.
   > Preferably use "snake_case" (underscores instead of spaces) if more than one word is used.
 * Fill in the details about the project in the `README.md` file.
-  > Obviously you'll want to remove this chapter, but use the rest of the file as a template. 
+  > Obviously you'll want to remove this chapter, but use the rest of the file as a template.
   > Have a look around at other `README.md` files to see how to include images, format the text and generally use the GitHub [markdown](https://help.github.com/categories/writing-on-github/)
    > (e.g. [here](sentinel-2/cby_cloud_detection/README.md) for mathematical formulas or [here](sentinel-2/ndvi_uncertainty/README.md) for adding images).
 * Implement the product in the `script.js` file.
