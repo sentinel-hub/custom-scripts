@@ -10,11 +10,11 @@
   > Copy the `example` directory to proper directory, based on which datasource (satellite) you are publishing the product for, to something that describes what the product is about, say `my_algorithm`.
   > Preferably use "snake_case" (underscores instead of spaces) if more than one word is used.
 * Fill in the details about the project in the `README.md` file.
-  > Obviously you'll want to remove this chapter, but use the rest of the file as a template.
+  > Obviously, you'll want to remove this chapter, but use the rest of the file as a template.
   > Have a look around at other `README.md` files to see how to include images, format the text and generally use the GitHub [markdown](https://help.github.com/categories/writing-on-github/)
    > (e.g. [here](../sentinel-2/cby_cloud_detection/README.md) for mathematical formulas or [here](../sentinel-2/ndvi_uncertainty/README.md) for adding images).
 * Implement the product in the `script.js` file.
-  > The most work is of course the Javascript implementation of the product. The `example` folder includes an empty custom script with comments that will hopefully help you build your own custom script. Of course the easiest is to do the custom script building/testing on [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/).
+  > The most work is of course the JavaScript implementation of the product. The `example` folder includes an empty custom script with comments that will hopefully help you build your own custom script. Of course the easiest is to do the custom script building/testing on [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/).
 * Add an entry pointing to your script to the [main](../README.md) readme file.
   > A link and a short description will do.
 * And create a pull request :).
