@@ -42,11 +42,7 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 # <a name="howto"></a>Adding new custom scripts
- Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
-
-  Once you have set up the directory structure please add an entry pointing to your script to the above bullet list.
-
-  And create a pull request :).
+Have a look at the [template](example) and follow the procedure described there.  
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
