@@ -35,18 +35,14 @@ The Landsat program is the longest running enterprise for acquisition of satelli
   - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 
-## <a name="modis"></a>Envisat MODIS
+## <a name="modis"></a>MODIS
 The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
 # <a name="howto"></a>Adding new custom scripts
- Create a new directory entry for your custom script, say `my_algorithm`, depending on the sensor it is applicable for. The Javascript code goes into `my_algorithm/script.js` and there should be `my_algorithm/README.md` accompanying the script. Please follow the conventions in [this example of a README](sentinel-2/cby_cloud_detection/README.md).
-
-  Once you have set up the directory structure please add an entry pointing to your script to the above bullet list.
-
-  And create a pull request :).
+Have a look at the [template](example) and follow the procedure described there.  
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
