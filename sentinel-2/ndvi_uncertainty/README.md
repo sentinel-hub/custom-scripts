@@ -34,5 +34,5 @@ The script encodes the uncertainty with darkness, as can be seen in following fi
 ## References
 <a name="ref1"></a>[1] Wikipedia, [Normalized Difference Vegetation Index
 ](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.   
-<a name="ref2"></a>[2] Sentinel-Hub, [Ad hoc testing of algorithms globally](http://sentinel-hub.com/blog/ad-hoc-testing-algorithms-globally). Accessed October 10th 2017.   
+<a name="ref2"></a>[2] Sentinel-Hub, [Ad hoc testing of algorithms globally](https://medium.com/sentinel-hub/ad-hoc-testing-of-algorithms-globally-8fb1f564f0f5). Accessed October 10th 2017.   
 <a name="ref3"></a>[3] Wikipedia, [Propagation of uncertainty](https://en.wikipedia.org/wiki/Propagation_of_uncertainty). Accessed October 10th 2017.
