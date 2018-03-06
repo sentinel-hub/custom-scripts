@@ -1,8 +1,8 @@
-// Normalized Difference 800/675 Pigment specific normalised di€fference A1
+// Normalized Difference 800/675 Pigment specific normalised difference A1
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=284=&sensor_id=96
 
 let index = (B08-B04)/(B08+B04);
-let min = -0.889;
+let min = -0.891;
 let max = 0.89;
 let zero = 0.0;
 

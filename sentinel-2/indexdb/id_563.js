@@ -2,8 +2,8 @@
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=563=&sensor_id=96
 
 let index = (B07-B04)/(B07+B04);
-let min = -0.89;
-let max = 0.89;
+let min = -0.889;
+let max = 0.888;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

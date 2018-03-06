@@ -3,7 +3,7 @@
 
 let index = (B09)/(B03)-1;
 let min = -0.942;
-let max = 16.182;
+let max = 16.427;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

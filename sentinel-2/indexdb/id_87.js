@@ -2,7 +2,7 @@
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=87=&sensor_id=96
 
 let index = (B08-B04)/(B08+B04+0.5)*(1+0.5);
-let min = -0.562;
+let min = -0.558;
 let max = 0.558;
 let zero = 0.0;
 

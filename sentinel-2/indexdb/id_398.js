@@ -2,7 +2,7 @@
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=398=&sensor_id=96
 
 let index = B08-B03;
-let min = -0.333;
+let min = -0.337;
 let max = 0.335;
 let zero = 0.0;
 

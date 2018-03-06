@@ -3,7 +3,7 @@
 
 let index = B09*(B05)/(Math.pow((B03),(2)));
 let min = 0.016;
-let max = 218.311;
+let max = 218.935;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.
