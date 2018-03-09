@@ -1,9 +1,14 @@
-// Wide Dynamic Range Vegetation Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=125=&sensor_id=96
+//
+// Wide Dynamic Range Vegetation Index  (abbrv. WDRVI)
+//
+// General formula: (0.1*NIR-RED)/(0.1*NIR+RED)
+//
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=125
+//
 
-let index = (0.1*B09-B05)/(0.1*B09+B05);
+let index = (0.1 * B08 - B04) / (0.1 * B08 + B04);
 let min = -0.988;
-let max = 0.256;
+let max = 0.263;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [

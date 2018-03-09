@@ -1,9 +1,14 @@
-// TCARI/OSAVI
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=191=&sensor_id=96
+//
+// TCARI/OSAVI  (abbrv. TCARI/OSAVI)
+//
+// General formula: (3*(700nm-670nm)-0.2*(700nm-550nm)*700nm/670nm)/((1+0.16)*(800nm-670nm)/(800nm+670nm+0.16))
+//
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=191
+//
 
-let index = (3*(B05-B04)-0.2*(B05-B03)*(B05)/(B04))/((1+0.16)*(B08-B04)/(B08+B04+0.16));
-let min = -45.093;
-let max = 47.447;
+let index = (3.0 * (B05 - B04) - 0.2 * (B05 - B03) * B05 / B04) / ((1.0 + 0.16) * (B08 - B04) / (B08 + B04 + 0.16));
+let min = -45.828;
+let max = 47.312;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [
