@@ -1,9 +1,14 @@
-// Enhanced Vegetation Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=16=&sensor_id=96
+//
+// Enhanced Vegetation Index  (abbrv. EVI)
+//
+// General formula: 2.5 * (NIR - RED) / ((NIR + 6*RED - 7.5*BLUE) + 1)
+//
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=16
+//
 
-let index = 2.5*(B09-B05)/((B09+6*B05-7.5*B01)+1);
-let min = -8.116;
-let max = 7.915;
+let index = 2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0);
+let min = -8.026;
+let max = 7.804;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [

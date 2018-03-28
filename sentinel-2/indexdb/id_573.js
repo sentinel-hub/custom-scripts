@@ -1,7 +1,12 @@
-// Misra Non Such Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=573=&sensor_id=96
+//
+// Misra Non Such Index  (abbrv. MNSI)
+//
+// General formula: 0.404*[500:600] - 0.039*[600:700] - 0.505*[700:800] + 0.762*[800:1100]
+//
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=573
+//
 
-let index = 0.404*B03-0.039*B04-0.505*B06+0.762*B09;
+let index = 0.404 * B03 - 0.039 * B04 - 0.505 * B06 + 0.762 * B09;
 let min = -0.116;
 let max = 0.371;
 let zero = 0.0;
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [

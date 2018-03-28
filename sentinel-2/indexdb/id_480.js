@@ -1,9 +1,14 @@
-// Browning Reflectance Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=480=&sensor_id=96
+//
+// Browning Reflectance Index  (abbrv. BRI)
+//
+// General formula: (1/550nm-1/700nm)/NIR
+//
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=480
+//
 
-let index = ((1)/(B03)-(1)/(B05))/(B09);
-let min = -724.043;
-let max = 723.465;
+let index = (1.0 / B03 - 1.0 / B05) / B08;
+let min = -730.283;
+let max = 722.41;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [
