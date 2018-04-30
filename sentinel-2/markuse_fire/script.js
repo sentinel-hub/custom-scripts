@@ -113,12 +113,3 @@ return (a(B12, B11) > (1.0 / fireSensitivity)) ?
     (a(B12, B11) > (2.0 / fireSensitivity)) ? fire3 :
     (a(B12, B11) > (1.5 / fireSensitivity)) ? fire2 : fire1 :
    finalRGB;
-
-
-
-
-ible fires and more wrong indications
-var SENSITIVITY = 1.0;
-return (A(B12, B11) > (1.0 / SENSITIVITY))
-? (A(B12, B11) > (2.0 / SENSITIVITY)) ? FIRE2 : FIRE1
-: NOFIRE;
