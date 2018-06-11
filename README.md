@@ -19,7 +19,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 
 #### Remote sensing indices
  - [False color infrared](sentinel-2/false_color_infrared)
- - [NDVI](sentinel-2/ndvi) - normalized dense vegetation index
+ - [NDVI](sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
