@@ -22,6 +22,25 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDVI](sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+ - [ARI](sentinel-2/ari) - anthocyanin reflectance index
+ - [ARVI](sentinel-2/arvi) - atmospherically resistant vegetation index 
+ - [CHL_REDEDGE](sentinel-2/chl_rededge) - chlorophyll red-edge
+ - [EVI](sentinel-2/evi) - enhanced vegetation index
+ - [EVI2](sentinel-2/evi2) - enhanced vegetation index 2
+ - [GNDVI](sentinel-2/gndvi) - green normalized difference vegetation index
+ - [MCARI](sentinel-2/mcari) - modified chlorophyll absorption in reflectance index
+ - [MSI](sentinel-2/msi) - moisture stress index
+ - [NBR](sentinel-2/nbr) - normalized burn ratio  
+ - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
+ - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
+ - [NDWI](sentinel-2/ndwi) - normalized difference water index  
+ - [PSSRB1](sentinel-2/pssrb1) - simple ratio 800/650 pigment specific simple ratio B1  
+ - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
+ - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
+ 
+ 
+ 
+
 
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
