@@ -5,7 +5,7 @@
 var ndwi = (B08-B11)/(B08+B11);
 
 //option 2, used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996):
-//var ndvi = (B03 - B08) / (B03 + B08);
+//var ndwi = (B03 - B08) / (B03 + B08);
 
 if (ndwi < -0) {
   return colorBlend(-ndwi, [0,1], [[1,1,1],[0,0.5,0]]);
