@@ -8,7 +8,7 @@ var ndwi = (B08-B11)/(B08+B11);
 //var ndvi = (B03 - B08) / (B03 + B08);
 
 if (ndwi < -0) {
-  return colorBlend(-val, [0,1], [[1,1,1],[0,0.5,0]]);
+  return colorBlend(-ndwi, [0,1], [[1,1,1],[0,0.5,0]]);
   
 } else {
   return colorBlend(Math.pow(ndwi,0.25), [0,1], [[1,1,1],[0,0,0.8]]);
