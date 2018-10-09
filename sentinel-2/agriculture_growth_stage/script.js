@@ -1,11 +1,12 @@
 /*
 Source: @hareldunn - https://github.com/hareldunn/GIS_Repo/blob/master/Multi-Temporal%20NDVI%20for%20Sentinel%20Hub%20Custom%20Scripts
 Visualizing NDVI multi-temporal trends in Sentinel-2 imagery.
-Copy into Sentinel-Hub Playground or EO Browser.
+Copy into Sentinel-Hub Playground 
 will take the current image as baseline and calculate average NDVI for the previous 2 months
 Based on:
 https://twitter.com/sentinel_hub/status/922813457145221121
 https://twitter.com/sentinel_hub/status/1020755996359225344
+Script requires multi-temporal processing so parameter TEMPORAL=true should be added to the request.
 */
 
 function    setup (dss) {
