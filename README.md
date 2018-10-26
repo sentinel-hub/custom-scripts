@@ -47,6 +47,9 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
 
 
+#### Snow detection algorithms
+- [Snow classifier](sentinel-2/snow_classifier/)
+
 ## <a name="landsat-8"></a>Landsat-8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
 
