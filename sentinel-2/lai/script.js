@@ -1,4 +1,5 @@
 //Leaf area index script as implemented in SNAP
+//visualized as an interval from 0-3. This can be adjusted in evaluatePixel method
 
 var degToRad = Math.PI / 180;
 
