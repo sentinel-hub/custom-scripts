@@ -1,7 +1,3 @@
-// FAPAR script as implemented in SNAP but without input and output validation!
-// Input/output values which are suspect are not reported or changed. Most values, however, do not fall under this category.
-// Visualized as an interval from 0-1. This can be adjusted in the evaluatePixel method.
-
 var degToRad = Math.PI / 180;
 
 function evaluatePixel(samples) {
