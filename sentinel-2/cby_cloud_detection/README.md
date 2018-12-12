@@ -13,7 +13,7 @@
 
 ## General description
 In  [1] Braaten, Cohen, and Yang describe a very simple cloud detection algorithm. The whole cloud detection is a simple threshold-based test:   
-$$(B02 > 0.175 \land \mathtt{NDGR} > 0) \lor B02 > 0.39$$   
+$$(B03 > 0.175 \land \mathtt{NDGR} > 0) \lor B03 > 0.39$$   
 
 where
 $$\mathtt{NDGR} := \mathtt{Index}(B03, B04) = \frac{B03 - B04}{B03 + B04}$$   
