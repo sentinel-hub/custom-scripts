@@ -1,3 +1,4 @@
+//VERSION=2
 var degToRad = Math.PI / 180;
 
 function evaluatePixel(samples) {
@@ -19,11 +20,13 @@ function evaluatePixel(samples) {
   var n3 = neuron3(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,b12_norm, viewZen_norm,sunZen_norm,relAzim_norm);
   var n4 = neuron4(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,b12_norm, viewZen_norm,sunZen_norm,relAzim_norm);
   var n5 = neuron5(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,b12_norm, viewZen_norm,sunZen_norm,relAzim_norm);
-  
+
   var l2 = layer2(n1, n2, n3, n4, n5);
-  
+
   var lai = denormalize(l2, 0.000319182538301, 14.4675094548151);
-  return [lai / 3];
+  return {
+    default: [lai / 3]
+  }
 }
 
 function neuron1(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,b12_norm, viewZen_norm,sunZen_norm,relAzim_norm) {
@@ -40,7 +43,7 @@ function neuron1(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.083196409727092 * viewZen_norm
 	+ 0.260029270773809 * sunZen_norm
 	+ 0.284761567218845 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -58,7 +61,7 @@ function neuron2(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	+ 0.216603876541632 * viewZen_norm
 	+ 0.410652303762839 * sunZen_norm
 	+ 0.064760155543506 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -76,7 +79,7 @@ function neuron3(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.021903699490589 * viewZen_norm
 	- 0.228492476802263 * sunZen_norm
 	- 0.039460537589826 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -94,7 +97,7 @@ function neuron4(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.049709652688365 * viewZen_norm
 	+ 0.021829545430994 * sunZen_norm
 	+ 0.057483827104091 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -112,7 +115,7 @@ function neuron5(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	+ 0.124263341255473 * viewZen_norm
 	+ 0.210086140404351 * sunZen_norm
 	- 0.183878138700341 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -131,16 +134,22 @@ function layer2(neuron1, neuron2, neuron3, neuron4, neuron5) {
 function normalize(unnormalized, min, max) {
   return 2 * (unnormalized - min) / (max - min) - 1;
 }
-
 function denormalize(normalized, min, max) {
   return 0.5 * (normalized + 1) * (max - min) + min;
 }
-
 function tansig(input) {
   return 2 / (1 + Math.exp(-2 * input)) - 1; 
 }
 
 function setup(ds) {
-    setInputComponents([ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B8A, ds.B11, ds.B12, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles]);
-    setOutputComponentCount(1);
+    return {
+        components: [ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B8A, ds.B11, ds.B12, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles],
+        output: [
+            {
+                id: "default",
+                sampleType: SampleType.AUTO,
+                componentCount: 1
+            }
+        ]
+    }
 }
