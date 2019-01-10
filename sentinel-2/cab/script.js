@@ -1,3 +1,4 @@
+//VERSION=2
 var degToRad = Math.PI / 180;
 
 function evaluatePixel(samples) {
@@ -23,7 +24,9 @@ function evaluatePixel(samples) {
   var l2 = layer2(n1, n2, n3, n4, n5);
   
   var cab = denormalize(l2, 0.007426692959872, 873.908222110306);
-  return [cab / 300];
+  return {
+    default: [cab / 300]
+  }
 }
 
 function neuron1(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,b12_norm, viewZen_norm,sunZen_norm,relAzim_norm) {
@@ -40,7 +43,7 @@ function neuron1(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.071613219805105 * viewZen_norm
 	+ 0.510113504210111 * sunZen_norm
 	+ 0.142813982138661 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -58,7 +61,7 @@ function neuron2(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	+ 0.037078083501217 * viewZen_norm
 	+ 0.030044189670404 * sunZen_norm
 	+ 0.005956686619403 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -76,7 +79,7 @@ function neuron3(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.036663679860328 * viewZen_norm
 	- 0.183105291400739 * sunZen_norm
 	- 0.038145312117381 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -94,7 +97,7 @@ function neuron4(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	- 0.023414901078143 * viewZen_norm
 	- 0.046022503549557 * sunZen_norm
 	- 0.006570284080657 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -112,7 +115,7 @@ function neuron5(b03_norm,b04_norm,b05_norm,b06_norm,b07_norm,b8a_norm,b11_norm,
 	+ 0.097303331714567 * viewZen_norm
 	+ 0.334528254938326 * sunZen_norm
 	+ 0.113075306591838 * relAzim_norm;
-	
+
   return tansig(sum);
 }
 
@@ -131,16 +134,22 @@ function layer2(neuron1, neuron2, neuron3, neuron4, neuron5) {
 function normalize(unnormalized, min, max) {
   return 2 * (unnormalized - min) / (max - min) - 1;
 }
-
 function denormalize(normalized, min, max) {
   return 0.5 * (normalized + 1) * (max - min) + min;
 }
-
 function tansig(input) {
   return 2 / (1 + Math.exp(-2 * input)) - 1; 
 }
 
 function setup(ds) {
-    setInputComponents([ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B8A, ds.B11, ds.B12, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles]);
-    setOutputComponentCount(1);
+    return {
+        components: [ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B8A, ds.B11, ds.B12, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles],
+        output: [
+            {
+                id: "default",
+                sampleType: SampleType.AUTO,
+                componentCount: 1
+            }
+        ]
+    }
 }
