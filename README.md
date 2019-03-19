@@ -1,4 +1,10 @@
 # Collection of custom scripts
+## Sentinel Hub Custom Script Contest
+<a href="https://www.sentinel-hub.com/contest"><img alt="Sentinel Hub Custom Script Contest" style="border-width:0" src="https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/Sentinel_Hub_Custom_Script_Contest_2019.jpg" /></a>
+
+
+## Custom Scripts Repository
+
 This repository contains a collection of custom scripts for [Sentinel-Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
 
 Scripts are organised by sensors supported on Sentinel-Hub:
