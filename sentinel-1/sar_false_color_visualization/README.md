@@ -11,3 +11,6 @@
 
 ## Description
 TODO: a short description on how the script can be used would be useful here.
+
+## Contributors:
+Annamaria Luongo, https://twitter.com/annamaria_84
