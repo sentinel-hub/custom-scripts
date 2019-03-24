@@ -1,12 +1,6 @@
-// ***
-// Visualizing (wild)fires in Sentinel-2 imagery
-// For use in Sinergise EO Browser (http://apps.sentinel-hub.com/eo-browser)
-// https://pierre-markuse.net/2018/04/30/visualizing-wildfires-burn-scars-sentinel-hub-eo-browser/
-// Pierre Markuse (@pierre_markuse)
-// ***
-
 // Wildfire and burn scar visualization in Sentinel-2 images V2.0.0
 // Twitter: Pierre Markuse (@pierre_markuse)
+// https://pierre-markuse.net/2018/04/30/visualizing-wildfires-burn-scars-sentinel-hub-eo-browser/
 // CC BY 4.0 International - https://creativecommons.org/licenses/by/4.0/
 function a(a, b) {return a + b};
 function stretch(val, min, max) {return (val - min) / (max - min);}
