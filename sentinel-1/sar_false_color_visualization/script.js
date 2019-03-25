@@ -1,5 +1,7 @@
-// script SAR false colors.
-//Author: Annamaria Luongo, https://twitter.com/annamaria_84
+// SAR False Color Visualization 
+// The script visualizes Earth surface in False Color from Sentinel-1 data. 
+// Author: Annamaria Luongo (Twitter: @annamaria_84, http://www.linkedin.com/in/annamaria-luongo-RS )
+// License: CC BY 4.0 International 
 
 c1 = 10e-4; 
 c2 = 0.01; 
