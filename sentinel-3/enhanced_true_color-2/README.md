@@ -10,7 +10,8 @@
  - [EO Browser](http://apps.sentinel-hub.com/eo-browser/?lat=-19.898&lng=35.109&zoom=9&time=2019-03-25&datasource=Sentinel-3%20OLCI&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-3/enhanced_true_color-2/script.js){:target="_blank"}   
 
 ## Description
-This script offers different true color visualizations, a NIR visualization, and the ability to easily add more visualizations. Variables allow you to influence the resulting image regarding, brightness, contrast, and saturation.
+This script offers different true color visualizations, a NIR visualization, and the ability to easily add more visualizations. Variables allow you to influence the resulting image regarding, brightness, contrast, and saturation.  
+More info here: https://pierre-markuse.net/2019/03/26/sentinel-3-data-visualization-in-eo-browser-using-a-custom-script/
 
 ## Contributors:
 Pierre Markuse (@pierre_markuse, https://pierre-markuse.net/)
