@@ -10,7 +10,7 @@
  - [EO Browser](http://apps.sentinel-hub.com/eo-browser/?lat=-19.898&lng=35.109&zoom=9&time=2019-03-25&datasource=Sentinel-3%20OLCI&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-3/enhanced_true_color-2/script.js){:target="_blank"}   
 
 ## Description
-The script shows true color image. 
+This script offers different true color visualizations, a NIR visualization, and the ability to easily add more visualizations. Variables allow you to influence the resulting image regarding, brightness, contrast, and saturation.
 
 ## Contributors:
 Pierre Markuse (@pierre_markuse, https://pierre-markuse.net/)
