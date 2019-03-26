@@ -7,7 +7,7 @@
 </div>
 
 ## Evaluate and visualize
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=-19.898&lng=35.109&zoom=9&time=2019-03-25&datasource=Sentinel-3%20OLCI&preset=CUSTOM&layers=VV,VH,HH&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-3/enhanced_true_color-2/script.js){:target="_blank"}   
+ - [EO Browser](http://apps.sentinel-hub.com/eo-browser/?lat=-19.898&lng=35.109&zoom=9&time=2019-03-25&datasource=Sentinel-3%20OLCI&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-3/enhanced_true_color-2/script.js){:target="_blank"}   
 
 ## Description
 The script shows true color image. 
