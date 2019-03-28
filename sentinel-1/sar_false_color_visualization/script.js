@@ -12,17 +12,17 @@ c6 = 0.05;
 c7 = 0.9; 
 c8 = 0.25; 
 
-//Enhanced or non-enhanced option
+//Enhanced or non-enhanced option (set to "true" if you want enhanced)
 var enhanced = false;
 
-if (enhanced==false)
+if (enhanced!=true)
 {
 //Non-enhanced option
 band1 = c4 + Math.log (c1 - Math.log (c6 / (c3 + 2 * VV))); 
 band2 = c6 + Math.exp (c8 * (Math.log (c2 + 2 * VV) + Math.log (c3 + 5 * VH))); 
 band3 = 1 - Math.log (c6 / (c5 - c7 * VV)); 
 }
-else 
+else
 {
 //Enhanced option
 band1 = c4 + Math.log (c1 - Math.log (c6 / (c3 + 2.5 * VV)) + Math.log (c6 / (c3 + 1.5 * VH)));
