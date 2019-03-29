@@ -5,8 +5,11 @@
 function stretch(val, min, max) 
 { return (val-min)/(max-min); } 
 
-var index = (B04-B08)/(B06+B09); 
-var band1 = 1.1*stretch(B09, 0, 0.25)-0.1*stretch(B14, 0, 0.1); 
-var band2 = 1.1*stretch(B06, 0, 0.25)-0.1* stretch(B14, 0, 0.1); 
-var band3 = stretch(B04, 0, 0.25)-0.1*stretch(B14, 0, 0.1)+.01*stretch(index, 0.5, 1);
+var brightness = 1.0; // default value is 1.0 for land, brightness<=0.3 for clouds or snow/ice; 
+var index = (B04-B08)/(B06+B09); // used for enhance sea visualization
+
+var band1 = brightness * (stretch(B09, 0, 0.25)-0.1*stretch(B14, 0, 0.1));
+var band2 = brightness * (1.1*stretch(B06, 0, 0.25)-0.1* stretch(B14, 0, 0.1));
+var band3 = brightness *  (stretch(B04, 0, 0.25)-0.1*stretch(B14, 0, 0.1)+.01*stretch(index, 0.5, 1));
+
 return [ band1, band2, band3];
