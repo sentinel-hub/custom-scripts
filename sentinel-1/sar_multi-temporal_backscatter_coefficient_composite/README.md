@@ -1,4 +1,4 @@
-# SSentinel-1 Multi-temporal Backscatter Coefficient Composite
+# Sentinel-1 Multi-temporal Backscatter Coefficient Composite
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
