@@ -14,6 +14,10 @@ The book is available for free here: https://www.servirglobal.net/Global/Article
 The script visualizes Earth surface in False Color from Sentinel-1 data.   
 It helps in maritime monitoring (ice monitoring, ship monitoring,...) land monitoring (agricolture, deforestation,...) and emergency management (flood monitoring, volcano monitoring, ...).  
 
+## Examples
+<img alt="Sentinel Hub Custom Script Contest" style="border-width:0" src="https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-1/sar_multi-temporal_backscatter_coefficient_composite/examples/etna_multitemporal_S1_composite.png" />
+
+
 ## Contributors:  
 Annamaria Luongo, https://twitter.com/annamaria_84
 
