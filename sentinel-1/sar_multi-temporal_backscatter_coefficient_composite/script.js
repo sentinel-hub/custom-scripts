@@ -12,7 +12,7 @@ var earliest_date = "2018-04-11"; var middle_date = "2018-06-10"; var latest_dat
 //var earliest_date = "2019-03-13"; var middle_date = "2019-03-19"; var latest_date = "2019-03-25"; // Beira flooding, Mozambique
 //var earliest_date = "2018-05-06"; var middle_date = "2018-06-05"; var latest_date = "2018-07-11"; // Po delta, Italy, soil/crop evolution 
 //var earliest_date = "2017-05-13"; var middle_date = "2017-07-06"; var latest_date = "2017-07-12"; // Vesuvio wildfire, Italy
-//var earliest_date = "2018-12-19"; var middle_date = "2018-12-25"; var latest_date = "2018-12-31"; // Anak Krakatau Volcano evolution during the first three weeks after the eruption eruption
+//var earliest_date = "2018-12-19"; var middle_date = "2018-12-25"; var latest_date = "2018-12-31"; // Anak Krakatau Volcano evolution during the first three weeks after the eruption 
 //var earliest_date = "2018-12-16"; var middle_date = "2018-12-22"; var latest_date = "2018-12-28"; // Etna Volcano, Christmas' eve eruption     
 //var earliest_date = "2017-04-13"; var middle_date = "2018-04-20"; var latest_date = "2019-04-15"; // Viedma glacier, Argentina, during 2017-2019
 //var earliest_date = "2017-04-13"; var middle_date = "2018-04-20"; var latest_date = "2019-04-15"; // Filadelfia, Paraguay, deforestation 
