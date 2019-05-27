@@ -23,4 +23,3 @@ Fatwa Ramdani
 This is the result of the script for the wildfire event of Melbourne, March 4, 2019.
 
 <img src="https://raw.githubusercontent.com/sabinadolenc/custom-scripts/master/sentinel-2/fire_boundary/2019-03-04%2C%20Sentinel-2B%20L1C%2C%20Custom%20script%20-%20Adzanil%20Rachmadi%20Putra.jpg" alt="" />
-This is the result of the script for the wildfire event of Melbourne, March 4, 2019.
