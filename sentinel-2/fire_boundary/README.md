@@ -22,4 +22,4 @@ Fatwa Ramdani
 
 This is the result of the script for the wildfire event of Melbourne, March 4, 2019.
 
-![Fire boundary script example](Fig/2019-03-04_Sentinel-2B_L1C_Fire_boundary_script.jpg)
+![Fire boundary script example](fig/2019-03-04_Sentinel-2B_L1C_Fire_boundary_script.jpg)
