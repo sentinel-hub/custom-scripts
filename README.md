@@ -2,9 +2,9 @@
 
 ## Custom Scripts Repository
 
-This repository contains a collection of custom scripts for [Sentinel-Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
+This repository contains a collection of custom scripts for [Sentinel Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
 
-Scripts are organised by sensors supported on Sentinel-Hub:
+Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-2](#sentinel-2)
   - [Landsat-8](#landsat-8)
   - [MODIS](#modis)
