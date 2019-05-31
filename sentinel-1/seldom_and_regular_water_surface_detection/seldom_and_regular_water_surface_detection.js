@@ -1,32 +1,14 @@
-/*
-SELDOM AND REGULAR WATER SURFACE DETECTION AND POSSIBLE HIGH INCLINATION (INFRASTRUCTURE, ROADS, BRIDGES, RIDGE, CLIFFS, MOUNTAINS, HILLS, ETC.)
-use only in multi-temporal processing, it is recommended to have around 30 samples.
-
-Author: Mohor Gartner (Linkedin: https://www.linkedin.com/in/mohor-gartner/)
-
-As values (VV) can be variable for different parts around the world and result depends on selected timeline, limiting parameters could need adjustment. 
-Recommended values are VVminLim=0.02, VV50lim=1, percLim=0.1 and onlySeldomWater=false. For specific cases, calibration of the variables might be necessary. In case high percentage of smooth surfaces (wide roads, sand dunes), onlySeldomWater=true -> waterCol=terrainCol. 
-
-WMS settings in layer should be following:
-Mosaic order: Most Recent
-Acquisition mode: IW
-Polarization: DV
-Resolution: High
-Orbit direction: Both
-Orthorectification: Enabled
-Backscatter coefficient: gamma0
-
-Template script to make multi-temporal processing was used from:
-https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/max_ndvi/script.js
-
-REPRESENTATIVE IMAGES
-1. Platte and Missouri Rivers confluence (USA): VVminLim=0.02, VV50lim=1, percLim=0.1;
-2. Intermittent lake Cerknica (Slovenia): VVminLim=0.01, VV50lim=1.5, percLim=0.1;
-3. Kerala (India): VVminLim=0.02, VV50lim=3, percLim=0.1;
-4. The Villages (USA): VVminLim=0.02, VV50lim=2, percLim=0.1;
-5. Polemidia dam (Cyprus): VVminLim=0.006, VV50lim=1, percLim=0.1;
-
-*/
+// SELDOM AND REGULAR WATER SURFACE DETECTION AND POSSIBLE HIGH INCLINATION (INFRASTRUCTURE, ROADS, BRIDGES, RIDGE, CLIFFS, MOUNTAINS, HILLS, ETC.)
+// use only in multi-temporal processing, it is recommended to have around 30 samples.
+// Mohor Gartner (Linkedin: https://www.linkedin.com/in/mohor-gartner/)
+// As values (VV) can be variable for different parts around the world and result depends on selected timeline, limiting parameters could need adjustment. 
+// Recommended values are VVminLim=0.02, VV50lim=1, percLim=0.1 and onlySeldomWater=false. For specific cases, calibration of the variables might be necessary. In case high percentage of smooth surfaces (wide roads, sand dunes), onlySeldomWater=true -> waterCol=terrainCol. 
+// REPRESENTATIVE IMAGES
+// 1. Platte and Missouri Rivers confluence (USA): VVminLim=0.02, VV50lim=1, percLim=0.1;
+// 2. Intermittent lake Cerknica (Slovenia): VVminLim=0.01, VV50lim=1.5, percLim=0.1;
+// 3. Kerala (India): VVminLim=0.02, VV50lim=3, percLim=0.1;
+// 4. The Villages (USA): VVminLim=0.02, VV50lim=2, percLim=0.1;
+// 5. Polemidia dam (Cyprus): VVminLim=0.006, VV50lim=1, percLim=0.1;
 
 // limiting parameters
 var VVminLim=0.02;
