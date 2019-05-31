@@ -15,13 +15,13 @@ Carlos Bentes
 
 ## Description of representative images
 
-Visualisation of Tallinn with the Green City script.
+Visualization of Tallinn with the Green City script.
 ![Green City script over Tallinn](fig/greencity_tallinn.png)
 
-Visualisation of Paris with the Green City script.
+Visualization of Paris with the Green City script.
 ![Green City script over Paris](fig/greencity_paris.png)
 
-Visualisation of Beijing with the Green City script.
+Visualization of Beijing with the Green City script.
 ![Green City script over Beijing](fig/greencity_beijing.png)
 
 ## References
