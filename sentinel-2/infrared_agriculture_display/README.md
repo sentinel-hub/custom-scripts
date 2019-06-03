@@ -15,7 +15,7 @@ Roberto Gagliardi
 
 ## Description of representative images
 
-In the image, from 9 de Julio departament, Santa Fe Province, Argentina, it can be clearly seen the areas with good vegetation in green tonalities, and the darker areas correspond to flooded areas that are now begining to get vegetation.
+In the image of the 9 de Julio departament, Santa Fe Province, Argentina, it can be clearly seen the areas with good vegetation in green tonalities, and the darker areas correspond to flooded areas that are now begining to get vegetation.
 
 ![Infrared Agriculture Display script example](fig/infrared_agriculture.png)
 Image: Sentinel 2- L1C, 20 JPN, acquired on 2019-03-18
