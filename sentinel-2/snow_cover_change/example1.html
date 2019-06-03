@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+    <title>Sentinel Hub WMS services with Leaflet</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        #devTestingDemo {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+
+</head>
+
+<body>
+<div id="devTestingDemo"></div>
+<script>
+
+// OpenStreetMap
+let osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+});
+
+// Sentinel Hub WMS service
+// tiles generated using EPSG:3857 projection - Leaflet takes care of that
+let baseUrl = "https://services.sentinel-hub.com/ogc/wms/ed64bf38-72da-4723-9c06-568b76b8add0";
+let sentinelHub = L.tileLayer.wms(baseUrl, {
+    tileSize: 512,
+    attribution: '&copy; <a href="http://www.sentinel-hub.com/" target="_blank">Sentinel Hub</a>',
+    maxcc:20, 
+    minZoom:6, 
+    maxZoom:16, 
+    preset:"1_TRUE_COLOR", 
+    layers:"1_TRUE_COLOR",
+    time:"2018-06-01/2018-08-31",
+    evalscripturl:"https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/snow_cover_change/snow_cover_change.js",
+    temporal: true,
+
+});
+
+let baseMaps = {
+    'OpenStreetMap': osm
+};
+let overlayMaps = {
+    'Sentinel Hub WMS': sentinelHub
+}
+
+let map = L.map('devTestingDemo', {
+    center: [52.1899, -117.2612], // lat/lng in EPSG:4326
+    zoom: 10,
+    layers: [osm, sentinelHub]
+});
+
+L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+        </script>
+</body>
+</html>
