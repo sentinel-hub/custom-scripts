@@ -1,7 +1,7 @@
 # Snow Cover Change Detection
 
 ## Evaluate and visualize
- - [Example 1](example1.html){:target="_blank"}
+ - [Example 1](https://sentinel-hub.github.io/custom-scripts/sentinel-2/snow_cover_change/example1.html){:target="_blank"}
 
 
 ## General description of the script
