@@ -19,23 +19,19 @@ Stavros Dafis
 
 ## Description of representative images
 
-Figure 1
-The output of the DC algorithm for North Greece (lat=40.1961&lng=21.8860) on 14 April 2019 at 09:29 UTC, showing with green color the areas covered with deep convection (thunderstorms), with red mid-level clouds (precipitating or not) and with magenta/blue low-level cloudiness.
+Figure 1: The output of the DC algorithm for North Greece (lat=40.1961&lng=21.8860) on 14 April 2019 at 09:29 UTC, showing with green color the areas covered with deep convection (thunderstorms), with red mid-level clouds (precipitating or not) and with magenta/blue low-level cloudiness.
 
 ![Detecting Deep Moist Convection Script figure 1](fig/fig1.jpg)
 
-Figure 2
-The output of the DC algorithm for North Greece (Chalkidiki, 40.2486&lng=23.1576) on 14 April 2019 at 09:29 UTC, showing with green color the areas covered with deep convection (thunderstorms), with red mid-level clouds (precipitating or not) and with magenta/blue low-level cloudiness.
+Figure 2: The output of the DC algorithm for North Greece (Chalkidiki, 40.2486&lng=23.1576) on 14 April 2019 at 09:29 UTC, showing with green color the areas covered with deep convection (thunderstorms), with red mid-level clouds (precipitating or not) and with magenta/blue low-level cloudiness.
 
 ![Detecting Deep Moist Convection Script figure 2](fig/fig2.png)
 
-Figure 3
-Composite radar reflectivity (dBz) in North Greece on 14 April 2019 at 09:28 UTC, showing with green color precipitating areas (light rain/drizzle), with blue intense rainfall, and with orange/pink/red areas with heavy rain and/or hail. The red box corresponds to the domains in Fig. 1 and the blue box to the same domain in Fig. 2 with 1-minute lag.
+Figure 3: Composite radar reflectivity (dBz) in North Greece on 14 April 2019 at 09:28 UTC, showing with green color precipitating areas (light rain/drizzle), with blue intense rainfall, and with orange/pink/red areas with heavy rain and/or hail. The red box corresponds to the domains in Fig. 1 and the blue box to the same domain in Fig. 2 with 1-minute lag.
 
 ![Detecting Deep Moist Convection Script figure 3](fig/fig3.jpg)
 
-Figure 4
-A mask for the DC algorithm for North Greece (lat=40.1961&lng=21.8860) on 14 April 2019 at 09:29 UTC, showing with green color only the areas covered with deep convection (thunderstorms). The domain is almost similar as in Fig 1 and the red box in Fig. 3.
+Figure 4: A mask for the DC algorithm for North Greece (lat=40.1961&lng=21.8860) on 14 April 2019 at 09:29 UTC, showing with green color only the areas covered with deep convection (thunderstorms). The domain is almost similar as in Fig 1 and the red box in Fig. 3.
 
 ![Detecting Deep Moist Convection Script figure 4](fig/fig4.png)
 
