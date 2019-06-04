@@ -39,12 +39,12 @@ The script shows around the southeast tip of Lesbos island some vessels and an i
 
 [1] Konstantinos Topouzelis, Apostolos Papakonstantinou, Shungudzemwoyo P. Garaba. Detection of floating plastics from satellite and unmanned aerial systems (Plastic Litter Project 2018). Int J Appl Earth Obs Geoinformation 79 (2019) 175ñ183.
 
-[2] [Plastic Litter Project 2018](https://mrsg.aegean.gr/?content=&nav=55)
+[2] [Plastic Litter Project 2018](https://mrsg.aegean.gr/?content=&nav=55){:target="_blank"} 
 
-[3] [Plastic Litter Project 2019](https://mrsg.aegean.gr/?content=&nav=65)
+[3] [Plastic Litter Project 2019](https://mrsg.aegean.gr/?content=&nav=65){:target="_blank"} 
 
 [4] Lauren Biermann, Victor Martinez Vincente, Sevrine Sailley, Aser Mata, and Christopher Steele. Towards a method for detecting macroplastics by satellite: examining Sentinel-2 earth observation data for floating debris in the coastal zone. Geophysical Research Abstracts Vol. 21, EGU2019-17469, 2019. European Geosciences Union General Assembly 2019.
 
-[5] Jonathan Amos. [Can you spot ocean plastic from space?](https://www.bbc.com/news/science-environment-47910600), BBC News, 12 April 2019.
+[5] Jonathan Amos. [Can you spot ocean plastic from space?](https://www.bbc.com/news/science-environment-47910600){:target="_blank"}, BBC News, 12 April 2019.
 
-[6] Sentinel satellites track ocean plastic. [Interview with Dr Lauren Biermann by Jonathan Amos.](https://www.bbc.com/news/av/science-environment-47910604/sentinel-satellites-track-ocean-plastic) BBC News, 12 Apr 2019.
+[6] Sentinel satellites track ocean plastic. [Interview with Dr Lauren Biermann by Jonathan Amos.](https://www.bbc.com/news/av/science-environment-47910604/sentinel-satellites-track-ocean-plastic){:target="_blank"} BBC News, 12 Apr 2019.
