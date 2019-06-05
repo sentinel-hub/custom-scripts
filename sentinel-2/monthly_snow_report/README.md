@@ -18,7 +18,7 @@ The limitations are essentially:
 * a few white rooftops
 * when no uncloudy pixel is available in the previous 30 days
 
-Thus, it is possible to make the script working with 90 days in order to have a trimonthly synthesis by changing settings to : "numberOfMonthsToUse = 3".
+Thus, it is possible to make the script working with 90 days in order to have a trimonthly synthesis by changing settings to: "numberOfMonthsToUse = 3".
 
 ## Author of the script
 
@@ -26,18 +26,19 @@ Nicolas Karasiak
 
 ## Description of representative images
 
-The description of the images is available in the [supplementary material](supplementary_material.pdf).
-It represents the persistent snow cover.
+Persistent snow cover in February 2019 in Corsica
 
-![Monthly Snow Report script for Corsica in January 2019](fig/01_corsica_2019-01-29.jpg)
+![Persistent snow cover in February 2019 in Corsica](fig/02_corsica_2019-02-28.jpg)
 
-![Monthly Snow Report script for Corsica in February 2019](fig/02_corsica_2019-02-28.jpg)
+Persistent snow cover in Pyrénées in March 2019
 
-![Monthly Snow Report script for Corsica in February 2019, zoom from the previous image](fig/03_corsica_zoom_2019-02-28.jpg)
+![Pyrénées persistent snow cover in March 2019](fig/04_pyrenees_2019-03-30.jpg)
 
-![Monthly Snow Report script for Pyrénées in March 2019](fig/04_pyrenees_2019-03-30.jpg)
+Mer de Glace / Alpes persistent snow cover in the previous 30 days of 24 april 2019.
 
-![Monthly Snow Report script for Chamonix in April 2019](fig/05_chamonix_2019-04-24.jpg)
+![Chamonix persistent snow cover in the previous 30 days of 24 april 2019.](fig/05_chamonix_2019-04-24.jpg)
+
+See the [supplementary material](supplementary_material.pdf) for more examples.
 
 ## Credits
 
