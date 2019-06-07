@@ -22,12 +22,16 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
  - [Forest Hurricane](sentinel-1/forest_hurricane)
 
+#### Urban planning algorithm
+ - [Urban areas](sentinel-1/urban_areas)
+
+#### Marine environment algorithm
+ - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
+
 #### Other available scripts
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
  - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
- - [Urban areas](sentinel-1/urban_areas)
- - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
-
+ 
 
 ## <a name="sentinel-2"></a>Sentinel-2
 Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
