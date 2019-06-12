@@ -76,7 +76,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Fire boundary](sentinel-2/fire_boundary)
 
 #### Land use/cover classification algorithms
- - [Land use](sentinel-2/land_use)
+ - [False Color Composite](sentinel-2/sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
 
 #### Agriculture and forestry algorithms
