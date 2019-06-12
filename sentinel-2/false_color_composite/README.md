@@ -1,4 +1,4 @@
-# Land Use Script
+# False Color Composite Script
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=45.068671318263945&lng=14.827766418457031&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-10-01%7C2019-04-16&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yOiBNb25qYSBTZWJlbGEKKi8KCi8qVmVyc2lvbiAxOiBuYXR1cmFsIGNvbG9yOgpyZXR1cm4gW0IxMiAqIDIuNSwgQjA3ICogMS41LCBCMDkgKiAyLjUgXTsgIAoqLwoKLy9WZXJzaW9uIDI6IGxpZ2h0ZXIsIHZpdmlkIGNvbG9yczoKbGV0IGdhaW4gPSAxLjUKcmV0dXJuIFtCMTIgKiAyLjUsIEIwNyAqIDEuNSwgQjA5ICogMi41IF0ubWFwKGEgPT4gZ2FpbiAqIGEpOyAgIAo%3D){:target="_blank"}    
@@ -19,6 +19,6 @@ Monja Sebela
 
 ## Description of representative images
 
-Land Use script showing the area around Senj, Croatia.
+False Color Composite script showing the area around Senj, Croatia.
 
-![Land Use script showing the area around Senj, Croatia](fig/land_use.png)
+![False Color Composite script showing the area around Senj, Croatia](fig/false_color_composite.png)
