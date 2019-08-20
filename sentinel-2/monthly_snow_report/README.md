@@ -36,7 +36,7 @@ Persistent snow cover in Pyrénées in March 2019
 
 Mer de Glace / Alpes persistent snow cover in the previous 30 days of 24 april 2019.
 
-![Chamonix persistent snow cover in the previous 30 days of 24 april 2019.](fig/05_chamonix_2019-04-24.jpg)
+![Chamonix persistent snow cover in the previous 30 days of 24 April 2019.](fig/05_chamonix_2019-04-24.jpg)
 
 See the [supplementary material](supplementary_material.pdf) for more examples.
 
