@@ -1,5 +1,12 @@
 # ForestHurricane Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](forest_hurricane.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative forest_hurricane.js %}
+{% endhighlight %}
+</div>
+
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=53.7405&lng=17.7210&zoom=12&time=2017-08-16&preset=CUSTOM&datasource=Sentinel-1%20GRD%20IW&layers=VH,VH,VH&evalscript=cmV0dXJuIFtWViozLFZIKjgsVkgqM10%3D){:target="_blank"} 
 

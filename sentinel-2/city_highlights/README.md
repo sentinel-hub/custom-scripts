@@ -1,5 +1,12 @@
 # City Highlights Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](city_highlights.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative city_highlights.js %}
+{% endhighlight %}
+</div>
+
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=-23.26295352597338&lng=-46.00567817687988&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-11-01%7C2019-05-31&atmFilter=&showDates=false&evalscript=Ly8gZGV0ZWN0aW9uIG9mIHZlZ2V0YXRpb24KTkRWSV9SZWRFZGdlID0gKEIwOCAtIEIwNSkvKEIwOCArIEIwNSkKdGhyZXNob2xkX3ZlZ2V0YXRpb24gPSAwLjQ1ClZlZ2V0YXRpb24gPSBORFZJX1JlZEVkZ2UgPiB0aHJlc2hvbGRfdmVnZXRhdGlvbgoKLy8gY2VyYW1pYyByb29mdG9wIGRldGVjdGlvbgpSQVRJT19SZWQgPSBCMDQvW0IwMStCMDIrQjAzK0IwNCtCMDUrQjA2K0IwN10KTkRCSSA9IChCMTEgLSBCMDgpLyhCMTEgKyBCMDgpCnRocmVzaG9sZF9yb29mdG9wID0gMC4xNApSb29mdG9wID0gKFJBVElPX1JlZCA%2BIHRocmVzaG9sZF9yb29mdG9wKSAmJiAoTkRCSSA%2BIHRocmVzaG9sZF9yb29mdG9wKQoKLy8gd2F0ZXIgZGV0ZWN0aW9uCk5EV0kgPSAoQjAzIC0gQjA4KS8oQjAzICsgQjA4KQp0aHJlc2hvbGRfd2F0ZXIgPSAwLjIKV2F0ZXIgPSBORFdJID4gdGhyZXNob2xkX3dhdGVyCgovLyBnYWluIHRvIG9idGFpbiBzbW9vdGggdmlzdWFsaXphdGlvbgpnYWluID0gMC43CnJldHVybiBbZ2FpbipSb29mdG9wLCBnYWluKlZlZ2V0YXRpb24sIGdhaW4qV2F0ZXJd){:target="_blank"}    
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.27588&lng=-46.02095&zoom=13&time=2019-05-27&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8gZGV0ZWN0aW9uIG9mIHZlZ2V0YXRpb24KTkRWSV9SZWRFZGdlID0gKEIwOCAtIEIwNSkvKEIwOCArIEIwNSkKdGhyZXNob2xkX3ZlZ2V0YXRpb24gPSAwLjQ1ClZlZ2V0YXRpb24gPSBORFZJX1JlZEVkZ2UgPiB0aHJlc2hvbGRfdmVnZXRhdGlvbgoKLy8gY2VyYW1pYyByb29mdG9wIGRldGVjdGlvbgpSQVRJT19SZWQgPSBCMDQvW0IwMStCMDIrQjAzK0IwNCtCMDUrQjA2K0IwN10KTkRCSSA9IChCMTEgLSBCMDgpLyhCMTEgKyBCMDgpCnRocmVzaG9sZF9yb29mdG9wID0gMC4xNApSb29mdG9wID0gKFJBVElPX1JlZCA%2BIHRocmVzaG9sZF9yb29mdG9wKSAmJiAoTkRCSSA%2BIHRocmVzaG9sZF9yb29mdG9wKQoKLy8gd2F0ZXIgZGV0ZWN0aW9uCk5EV0kgPSAoQjAzIC0gQjA4KS8oQjAzICsgQjA4KQp0aHJlc2hvbGRfd2F0ZXIgPSAwLjIKV2F0ZXIgPSBORFdJID4gdGhyZXNob2xkX3dhdGVyCgovLyBnYWluIHRvIG9idGFpbiBzbW9vdGggdmlzdWFsaXphdGlvbgpnYWluID0gMC43CnJldHVybiBbZ2FpbipSb29mdG9wLCBnYWluKlZlZ2V0YXRpb24sIGdhaW4qV2F0ZXJd){:target="_blank"} 
