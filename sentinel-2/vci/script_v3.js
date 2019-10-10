@@ -1,6 +1,10 @@
-function setup (dss) {
-  setInputComponents([dss.B04,dss.B08]);
-  setOutputComponentCount(1);
+//VERSION=3
+function setup() {
+  return {
+    input: ["B04", "B08"],
+    output: { bands: 1},
+    mosaicking: "ORBIT"
+  }  
 }
 
 const msInDay = 24 * 60 * 60 * 1000;
