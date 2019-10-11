@@ -15,7 +15,7 @@
 <summary>Sentinel Hub RESTful API (click to expand)</summary>
 <p>
 Save ```script_v3.js``` to your current directory and run the below command.
-Don't forget to inser your actual access token.
+Don't forget to insert your actual access token.
 
 ```bash
 curl -X POST \
@@ -69,22 +69,20 @@ Because of the multi-temporal nature of this index, be sure to use it in the tem
 
 The actual scenes (dates) used can be returned as meta-data in case of API requests by replacing the ```responses``` part of the request with:
 ```json
-    "responses":  [{
-        "identifier": "userdata",
-        "format": {
-          "type": "application/json"
-        }
-    }]
+  "responses":  [{
+    "identifier": "userdata",
+    "format": { "type": "application/json" }
+  }]
 ```  
 Example response:
 ```json
 {
-    "historical": [
-        "2018-09-08T00:00:00.000Z",
-        "2016-09-13T00:00:00.000Z",
-        "2015-09-09T00:00:00.000Z"
-    ],
-    "observed": "2019-09-13T00:00:00.000Z"
+  "historical": [
+    "2018-09-08T00:00:00.000Z",
+    "2016-09-13T00:00:00.000Z",
+    "2015-09-09T00:00:00.000Z"
+  ],
+  "observed": "2019-09-13T00:00:00.000Z"
 }
 ```
 
