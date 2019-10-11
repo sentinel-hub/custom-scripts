@@ -14,7 +14,7 @@
 <details>
 <summary>Sentinel Hub RESTful API (click to expand)</summary>
 <p>
-Save ```script-v3.js``` to your current directory and run the below command.
+Save script_v3.js to your current directory and run the below command.
 Don't forget to insert your actual access token.
 
 ```bash
