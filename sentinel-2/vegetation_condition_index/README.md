@@ -1,6 +1,6 @@
 # Vegetation Condition Index 
 
-<a href="#" id='toggle script_view'>Show</a> script or [download](script.js) it or [download V3](script_v3.js) for use with <a href="https://docs.sentinel-hub.com/api/latest">Sentinel Hub RESTful API</a>.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it or [download V3](script_v3.js){:target="_blank"} for use with <a href="https://docs.sentinel-hub.com/api/latest">Sentinel Hub RESTful API</a>.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
       {% include_relative script.js %}
