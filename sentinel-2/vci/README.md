@@ -67,13 +67,16 @@ The script takes the newest (latest) available scene as the observed one -- thus
 
 Because of the multi-temporal nature of this index, be sure to use it in the temporal version of Sentinel Hub Playground with "Enable temporal data" checked in the "Effects" tab, or in case of API request, set the ```dataFilter.timeRange.to``` field far enough back to include all available history.
 
-The actual scenes (dates) used can be returned as meta-data in case of API requests by replacing the ```responses``` part of the request with:
+<details>
+<summary>The actual scenes (dates) used can be returned as meta-data (click to see details).</summary>
+
+Meta-data can be retrieved with an API requests by replacing the ```responses``` part of the request with:
 ```json
   "responses":  [{
     "identifier": "userdata",
     "format": { "type": "application/json" }
   }]
-```  
+```
 Example response:
 ```json
 {
@@ -85,6 +88,7 @@ Example response:
   "observed": "2019-09-13T00:00:00.000Z"
 }
 ```
+</details>
 
 ## References
 
