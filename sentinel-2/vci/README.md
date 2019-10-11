@@ -14,6 +14,8 @@
 <details>
 <summary>Sentinel Hub RESTful API (click to expand)</summary>
 <p>
+Save ```script_v3.js``` to your current directory and run the below command.
+Don't forget to inser your actual access token.
 
 ```bash
 curl -X POST \
@@ -47,7 +49,7 @@ curl -X POST \
       }]
     }
   }' \
-  -F "evalscript=@script_v3.js" --output a.png
+  -F "evalscript=@script_v3.js" --output output.png
 ```
 
 </p>
