@@ -20,7 +20,7 @@ function filterScenes(scenes, inputMetadata) {
   newScenes = newScenes.filter(scene => scene != null);
   metadata = {
     observed: observed.toISOString(),
-    reference: newScenes.slice(1).map(scene => scene.date.toISOString())
+    historical: newScenes.slice(1).map(scene => scene.date.toISOString())
   }
   return newScenes;
 }
