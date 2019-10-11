@@ -30,7 +30,7 @@ function filterScenes(scenes, inputMetadata) {
 }
 
 function findClosest(scenes, date) {
-  var closestDt = toleranceMs, closestScene = null;
+  var closestDt = toleranceMs + 1, closestScene = null;
   for (var i = 0; i < scenes.length; i++) {
     const dt = Math.abs(scenes[i].date - date);
     if (dt < closestDt) {
