@@ -13,6 +13,7 @@
  - <details>
     <summary>Sentinel Hub RESTful API (click to expand)</summary>
 
+<p>
 ```bash
 curl -X POST \
   https://services.sentinel-hub.com/api/v1/process \
@@ -48,6 +49,7 @@ curl -X POST \
   -F "evalscript=@script_v3.js" --output a.png
 ```
 
+</p>
 </details>
 
 ## General description of the script
