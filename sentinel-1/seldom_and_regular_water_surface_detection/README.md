@@ -1,5 +1,12 @@
 # Seldom and Regular Water Surface Detection Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](seldom_and_regular_water_surface_detection.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative seldom_and_regular_water_surface_detection.js %}
+{% endhighlight %}
+</div>
+
 ## Evaluate and visualize
 - [Example 1](https://sentinel-hub.github.io/custom-scripts/sentinel-1/seldom_and_regular_water_surface_detection/example1.html){:target="_blank"}
 

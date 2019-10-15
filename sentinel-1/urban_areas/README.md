@@ -1,5 +1,12 @@
 # Urban Areas Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](urban_areas_script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative urban_areas_script.js %}
+{% endhighlight %}
+</div>
+
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=44.51260&lng=11.35008&zoom=13&time=2019-05-26&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=cmV0dXJuIFs1LjUgKiBWSCA%2BIDAuNSwgVlYsIFZIICogOF07){:target="_blank"}
  Constrains: the script works only on data located on AWS.
