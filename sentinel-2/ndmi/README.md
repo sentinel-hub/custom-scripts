@@ -28,7 +28,7 @@ Aferpo 83, Monja Šebela
 
 The NDMI script applied to the Sentinel-2 image of northern Italy. Image acquired on 11.9.2019, processed by Sentinel Hub.
 
-![NDMI script applied to the Sentinel-2 image of northern Italy](fig/fig1.jpg)
+![NDMI script applied to the Sentinel-2 image of northern Italy](fig/fig1.jpg) 
 
 ## Credits
 
