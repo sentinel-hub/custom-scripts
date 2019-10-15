@@ -1,5 +1,12 @@
 # Fire Boundary Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](fire_boundary_script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative fire_boundary_script.js %}
+{% endhighlight %}
+</div>
+
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=-37.654266597292256&lng=146.74816131591797&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-09-01%7C2019-03-04&atmFilter=&showDates=false&evalscript=ZnVuY3Rpb24gc2V0dXAoZGF0YVNvdXJjZSkgewogIHNldElucHV0Q29tcG9uZW50cyhbZGF0YVNvdXJjZS5CMTEsIGRhdGFTb3VyY2UuQjEyXSk7CiAgc2V0T3V0cHV0Q29tcG9uZW50Q291bnQoMSk7Cn0KCmxldCB2aXogPSBuZXcgSGlnaGxpZ2h0Q29tcHJlc3NWaXN1YWxpemVyU2luZ2xlKC0xLjAsIDEuMCk7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICBsZXQgdmFsID0gOC41ICogKHNhbXBsZXNbMF0uQjEyIC0gc2FtcGxlc1swXS5CMTEpIC8gKHNhbXBsZXNbMF0uQjEyICsgc2FtcGxlc1swXS5CMTEgKyAwLjI1KTsgcmV0dXJuIHZpei5wcm9jZXNzKHZhbCk7Cn0%3D){:target="_blank"}    
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-37.66174&lng=146.74456&zoom=13&time=2019-03-04&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=ZnVuY3Rpb24gc2V0dXAoZGF0YVNvdXJjZSkgewogIHNldElucHV0Q29tcG9uZW50cyhbZGF0YVNvdXJjZS5CMTEsIGRhdGFTb3VyY2UuQjEyXSk7CiAgc2V0T3V0cHV0Q29tcG9uZW50Q291bnQoMSk7Cn0KCmxldCB2aXogPSBuZXcgSGlnaGxpZ2h0Q29tcHJlc3NWaXN1YWxpemVyU2luZ2xlKC0xLjAsIDEuMCk7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICBsZXQgdmFsID0gOC41ICogKHNhbXBsZXNbMF0uQjEyIC0gc2FtcGxlc1swXS5CMTEpIC8gKHNhbXBsZXNbMF0uQjEyICsgc2FtcGxlc1swXS5CMTEgKyAwLjI1KTsgcmV0dXJuIHZpei5wcm9jZXNzKHZhbCk7Cn0%3D){:target="_blank"} 
