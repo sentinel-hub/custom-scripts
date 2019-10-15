@@ -10,7 +10,7 @@
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=44.77696106840196&lng=11.09619140625&zoom=9&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-03-01%7C2019-09-16&atmFilter=&showDates=false&evalscript=Ly8gTm9ybWFsaXplZCBEaWZmZXJlbmNlIDgyMC8xNjAwIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBNb2lzdHVyZSBJbmRleCAoYWJicnYuIE5ETUkpCi8vCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgyMG5tIC0gMTYwMG5tKSAvICg4MjBubSArIDE2MDBubSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD01NgovLwp2YXIgaW5kZXggPSAoQjA4IC0gQjExKSAvIChCMDggKyBCMTEpOwppZiAoaW5kZXggPD0gMCl7CiAgcmV0dXJuIFsxLCAxLCAxXTsKfQppZiAoaW5kZXggPD0gMC4yKXsKICByZXR1cm4gWzAsIDAuOCwgMC45XTsKfSAKaWYgKGluZGV4IDw9IDAuNCl7CiAgcmV0dXJuIFswLCAwLjUsIDAuOV07Cn0gCmVsc2V7CiAgcmV0dXJuIFswLCAwLCAwLjddOwp9CiAgCg%3D%3D){:target="_blank"}    
- - [EO Browser]https://apps.sentinel-hub.com/eo-browser/?lat=44.595&lng=10.734&zoom=9&time=2019-09-11&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8KLy8gTm9ybWFsaXplZCBEaWZmZXJlbmNlIDgyMC8xNjAwIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBNb2lzdHVyZSBJbmRleCAoYWJicnYuIE5ETUkpCi8vCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgyMG5tIC0gMTYwMG5tKSAvICg4MjBubSArIDE2MDBubSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD01NgovLwp2YXIgaW5kZXggPSAoQjA4IC0gQjExKSAvIChCMDggKyBCMTEpOwppZiAoaW5kZXggPD0gMCl7CiAgcmV0dXJuIFsxLCAxLCAxXTsKfQppZiAoaW5kZXggPD0gMC4yKXsKICByZXR1cm4gWzAsIDAuOCwgMC45XTsKfSAKaWYgKGluZGV4IDw9IDAuNCl7CiAgcmV0dXJuIFswLCAwLjUsIDAuOV07Cn0gCmVsc2V7CiAgcmV0dXJuIFswLCAwLCAwLjddOwp9CiAg){:target="_blank"} 
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=44.595&lng=10.734&zoom=9&time=2019-09-11&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8KLy8gTm9ybWFsaXplZCBEaWZmZXJlbmNlIDgyMC8xNjAwIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBNb2lzdHVyZSBJbmRleCAoYWJicnYuIE5ETUkpCi8vCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgyMG5tIC0gMTYwMG5tKSAvICg4MjBubSArIDE2MDBubSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD01NgovLwp2YXIgaW5kZXggPSAoQjA4IC0gQjExKSAvIChCMDggKyBCMTEpOwppZiAoaW5kZXggPD0gMCl7CiAgcmV0dXJuIFsxLCAxLCAxXTsKfQppZiAoaW5kZXggPD0gMC4yKXsKICByZXR1cm4gWzAsIDAuOCwgMC45XTsKfSAKaWYgKGluZGV4IDw9IDAuNCl7CiAgcmV0dXJuIFswLCAwLjUsIDAuOV07Cn0gCmVsc2V7CiAgcmV0dXJuIFswLCAwLCAwLjddOwp9CiAg){:target="_blank")} 
 
 
 ## General description of the script
@@ -28,7 +28,7 @@ Aferpo 83, Monja Šebela
 
 The NDMI script applied to the Sentinel-2 image of northern Italy.
 
-![NDMI script applied to the Sentinel-2 image of northern Italy](fig/.jpg)
+![NDMI script applied to the Sentinel-2 image of northern Italy](fig/fig.jpg)
 
 ## Credits
 
