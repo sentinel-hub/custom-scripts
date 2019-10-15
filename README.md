@@ -57,7 +57,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NBR](sentinel-2/nbr) - normalized burn ratio  
  - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
- - [NDWI](sentinel-2/ndwi) - normalized difference water index  
+ - [NDWI](sentinel-2/ndwi) - normalized difference water index
+ - [NDMI](sentinel-2/ndmi) - normalized difference moisture index
  - [PSSRB1](sentinel-2/pssrb1) - simple ratio 800/650 pigment specific simple ratio B1  
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
