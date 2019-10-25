@@ -66,13 +66,11 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [LAI](sentinel-2/lai) - Leaf Area Index
  - [Leaf chlorophyll content](sentinel-2/cab)
  - [Canopy chlorophyll content](sentinel-2/ccc)
- - [False color infrared](sentinel-2/false_color_infrared)
  - [FAPAR](sentinel-2/fapar) - the fraction of absorbed photosynthetically active radiation
- - [normalized difference vegetation index with uncertainty](sentinel-2/ndvi_uncertainty)
- - [color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
+ - [Color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
- - [global mosaic best pixel selection script](sentinel-2/s2gm)
- - [vegetation condition index ](sentinel-2/vegetation_condition_index)
+ - [Global mosaic best pixel selection script](sentinel-2/s2gm)
+ - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
 
  
 #### Cloud detection algorithms
