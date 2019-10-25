@@ -1,4 +1,4 @@
-# Collection of custom scripts
+﻿# Collection of custom scripts
 
 ## Custom Scripts Repository
 
@@ -21,6 +21,7 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
  - [Forest Hurricane](sentinel-1/forest_hurricane)
+ - [burned area index for sentinel-2](sentinel-2/bais2)
 
 #### Urban planning algorithm
  - [Urban areas](sentinel-1/urban_areas)
@@ -63,6 +64,15 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index
+ - [Leaf chlorophyll content](sentinel-2/cab)
+ - [Canopy chlorophyll content](sentinel-2/ccc)
+ - [False color infrared](sentinel-2/false_color_infrared)
+ - [FAPAR](sentinel-2/fapar) - the fraction of absorbed photosynthetically active radiation
+ - [normalized difference vegetation index with uncertainty](sentinel-2/ndvi_uncertainty)
+ - [color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
+ - [PSRI](sentinel-2/psri) - plant senescence reflectance index
+ - [global mosaic best pixel selection script](sentinel-2/s2gm)
+ - [vegetation condition index ](sentinel-2/vegetation_condition_index)
 
  
 #### Cloud detection algorithms
