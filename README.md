@@ -62,6 +62,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [PSSRB1](sentinel-2/pssrb1) - simple ratio 800/650 pigment specific simple ratio B1  
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
+ - [LAI](sentinel-2/lai) - Leaf Area Index
+
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
