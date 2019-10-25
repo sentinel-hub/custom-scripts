@@ -94,6 +94,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDVI anomaly detection](sentinel-2/ndvi_anomaly_detection)
  - [Forest cut temporal detection](sentinel-2/forest_cut_temporal_detection)
  - [Pseudo forest canopy density (pseudo-FCD)](sentinel-2/pseudo_forest_canopy_density)
+ - [Infrared agriculture display](sentinel-2/infrared_agriculture_display)
 
 #### Marine environment algorithms
  - [White-water detection](sentinel-2/white_water)
