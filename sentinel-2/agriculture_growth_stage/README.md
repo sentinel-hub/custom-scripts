@@ -16,12 +16,12 @@
 Source: @HarelDan - https://github.com/hareldunn/GIS_Repo/blob/master/Multi-Temporal%20NDVI%20for%20Sentinel%20Hub%20Custom%20Scripts
 
 ## General description of the script
-Agricultural growth stage is a script visualizing NDVI multi-temporal trends in Sentinel-2 imagery. It takes the current image as baseline and calculates the average NDVI for the previous 2 months.
+Agricultural growth stage is a script visualizing the multi-temporal NDVI trends in Sentinel-2 imagery. It takes the current image as baseline and calculates the average NDVI for the previous 2 months.
 The script requires multi-temporal processing, so the parameter TEMPORAL=true should be added to the request.
 
 ## Description of representative images
 
-The Agricultural growth stage script applied to agricultural fields of Italy. 
+The Agricultural growth stage script applied to the agricultural fields of Italy (Veneto). 
 
 ![The Agricultural growth stage script applied to agricultural fields of Italy.](fig/fig1.jpg)
 
