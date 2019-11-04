@@ -15,5 +15,12 @@
 
 The true color product maps Sentinel-2 band values B04, B03, and B02 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components.
 
+## Description of representative images
+
+True color visualization of Rome, on 8.10.2017.
+
+![True color visualization of Rome, on 8.10.2017.](fig/fig1.png)
+
+
 ## References
  - Wikipedia, [False color](https://en.wikipedia.org/wiki/False_color#True_color). Accessed October 10th 2017.
