@@ -11,7 +11,7 @@
 
 ## Description
 This script offers different false color visualizations and the ability to easily add more visualizations. Variables allow you to influence the resulting image regarding the content you would like to point out.  
-More info here: https://pierre-markuse.net/2019/10/22/sentinel-1-sar-data-visualization-in-eo-browser-using-a-custom-script/
+More info [here.](https://pierre-markuse.net/2019/10/22/sentinel-1-sar-data-visualization-in-eo-browser-using-a-custom-script/){:target="_blank"}   
 
 ## Description of representative images
 
