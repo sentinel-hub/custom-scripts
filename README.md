@@ -21,7 +21,6 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
  - [Forest Hurricane](sentinel-1/forest_hurricane)
- - [burned area index for sentinel-2](sentinel-2/bais2)
 
 #### Urban planning algorithm
  - [Urban areas](sentinel-1/urban_areas)
@@ -86,6 +85,9 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](sentinel-2/deep_moist_convection)
  - [Fire boundary](sentinel-2/fire_boundary)
+ - [burned area index for sentinel-2](sentinel-2/bais2)
+ - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
+
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
