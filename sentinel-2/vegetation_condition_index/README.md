@@ -90,6 +90,12 @@ Example response:
 ```
 </details>
 
+## Description of representative images
+
+Vegetation condition index of Rome. Acquired on 8.10.2017.
+
+![Vegetation condition index of Rome](fig/fig1.png)
+
 ## References
 
 [1] https://www.indexdatabase.de/db/i-single.php?id=249

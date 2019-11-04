@@ -11,7 +11,7 @@
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/snow_classifier/script.js){:target="_blank"}    
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/snow_classifier/script.js){:target="_blank"}   
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=46.35647&lng=13.47542&zoom=13&time=2019-10-26&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=ICB2YXIgTkRTSSA9IChCMDMgLSBCMTEpIC8gKEIwMyArIEIxMSk7CnZhciBORFZJID0gKEIwOCAtIEIwNCkgLyAoQjA4ICsgQjA0KTsKdmFyIGdhaW4gPSAyLjU7CgpmdW5jdGlvbiBzaShhKSB7CiAgICByZXR1cm4gKGE%2BPTAuNCkgPyAxIDogKE1hdGguYWJzKE5EVkkgLSAwLjEpIDw9IDAuMDI1ID8gMSA6IDApOwp9CgpmdW5jdGlvbiBicihhKSB7CiAgICByZXR1cm4gYT4wLjM7Cn0KICAgCnZhciB2ID0gc2koTkRTSSkgJiYgYnIoQjAzKTsKCnJldHVybiAodj09MSkgPyBbMS4wLDAuOCwwLjRdIDogW0IwNCwgQjAzLCBCMDJdLm1hcChhID0%2BIGdhaW4gKiBhKTs%3D){:target="_blank"}   
 
 ## General description of the script
 
@@ -27,6 +27,12 @@ In addition to that, they mention that NDSI values even lower than that could im
 Difference Vegetation Index (NDVI) value is close enough to 0.1.
 
 This algorithm classifies pixels based on all three values. Different brightness and NDSI thresholds were tested and 0.3 and 0.4, respectively, proved to give the best results.
+
+## Description of representative images
+
+Snow classifier, Bovec, Slovenia. Acquired on 26.10.2019.
+
+![snow classifier](fig/fig1.png)
 
 ## References
 [1] Olivier Hagolle, Mireille Huc, Camille Desjardins, Stefan Auer, & Rudolf Richter. (2017, December 7). MAJA Algorithm Theoretical Basis Document (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.1209633
