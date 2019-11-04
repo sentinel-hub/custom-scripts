@@ -24,9 +24,7 @@ Monja Sebela
 
 Barren Soil script applied to Sentinel-2 image south of Ljubljana, Slovenia.
 
-![Barren Soil script applied to Sentinel-2 south of Ljubljana, Slovenia](fig/barren_soil_agriculture.jpg)
-
-More examples and details are available in the [supplementary material](supplementary_material.pdf).
+![Barren Soil script applied to Sentinel-2 south of Ljubljana, Slovenia](fig/fig1.jpg)
 
 ## Credits
 

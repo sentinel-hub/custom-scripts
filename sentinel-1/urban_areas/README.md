@@ -24,4 +24,4 @@ Monja Sebela
 ## Description of representative images
 
 Visualization of urban areas in Bologna, Italy with the urban areas script:
-![Urban Areas script example in Bologna (Italy)](fig/Sentinel-1_urban_areas.png)
+![Urban Areas script example in Bologna (Italy)](fig/fig1.jpg)
