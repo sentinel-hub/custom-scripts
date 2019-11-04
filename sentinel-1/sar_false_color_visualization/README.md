@@ -16,17 +16,17 @@ It helps in maritime monitoring (ice monitoring, ship monitoring,...) land monit
 ## Contributors:
 
  - [Annamaria Luongo](https://twitter.com/annamaria_84){:target="_blank"} 
-
-
+ 
 ## Examples non-ehanced:
 ### Veira glacier 
- - [Veira glacier, 2017](https://apps.sentinel-hub.com/eo-browser/?lat=-49.4601&lng=-73.1207&zoom=12&time=2017-03-20&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gc2NyaXB0IFNBUiBmYWxzZSBjb2xvcnMuCmMxID0gMTBlLTQ7CmMyID0gMC4wMTsKYzMgPSAwLjAyOwpjNCA9IDAuMDM7CmM1ID0gMC4wNDU7CmM2ID0gMC4wNTsKYzcgPSAwLjk7CmM4ID0gMC4yNTsKCmJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7CmJhbmQyID0gYzYgKyBNYXRoLmV4cCAoYzggKiAoTWF0aC5sb2cgKGMyICsgMiAqIFZWKSArIE1hdGgubG9nIChjMyArIDUgKiBWSCkpKTsKYmFuZDMgPSAgMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsKCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOyA%3D  
-){:target="_blank"}
+ - [Veira glacier, 2017](https://apps.sentinel-hub.com/eo-browser/?lat=-49.4601&lng=-73.1207&zoom=12&time=2017-03-20&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gc2NyaXB0IFNBUiBmYWxzZSBjb2xvcnMuCmMxID0gMTBlLTQ7CmMyID0gMC4wMTsKYzMgPSAwLjAyOwpjNCA9IDAuMDM7CmM1ID0gMC4wNDU7CmM2ID0gMC4wNTsKYzcgPSAwLjk7CmM4ID0gMC4yNTsKCmJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7CmJhbmQyID0gYzYgKyBNYXRoLmV4cCAoYzggKiAoTWF0aC5sb2cgKGMyICsgMiAqIFZWKSArIE1hdGgubG9nIChjMyArIDUgKiBWSCkpKTsKYmFuZDMgPSAgMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsKCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOyA%3D){:target="_blank"}
 
  - [Veira glacier, 2019](https://apps.sentinel-hub.com/eo-browser/?lat=-49.4601&lng=-73.1207&zoom=12&time=2019-03-15&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gc2NyaXB0IFNBUiBmYWxzZSBjb2xvcnMuCmMxID0gMTBlLTQ7CmMyID0gMC4wMTsKYzMgPSAwLjAyOwpjNCA9IDAuMDM7CmM1ID0gMC4wNDU7CmM2ID0gMC4wNTsKYzcgPSAwLjk7CmM4ID0gMC4yNTsKCmJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7CmJhbmQyID0gYzYgKyBNYXRoLmV4cCAoYzggKiAoTWF0aC5sb2cgKGMyICsgMiAqIFZWKSArIE1hdGgubG9nIChjMyArIDUgKiBWSCkpKTsKYmFuZDMgPSAgMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsKCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOyA%3D){:target="_blank"}   
 
 ### Anak Krakatau 
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-6.11086&lng=105.41905&zoom=13&time=2018-12-31&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gc2NyaXB0IFNBUiBmYWxzZSBjb2xvcnMuCmMxID0gMTBlLTQ7CmMyID0gMC4wMTsKYzMgPSAwLjAyOwpjNCA9IDAuMDM7CmM1ID0gMC4wNDU7CmM2ID0gMC4wNTsKYzcgPSAwLjk7CmM4ID0gMC4yNTsKCmJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7CmJhbmQyID0gYzYgKyBNYXRoLmV4cCAoYzggKiAoTWF0aC5sb2cgKGMyICsgMiAqIFZWKSArIE1hdGgubG9nIChjMyArIDUgKiBWSCkpKTsKYmFuZDMgPSAgMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsKCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOyA%3D){:target="_blank"}
+
+(fig/Krakatau.png)
 
 ### Mozambique Flood
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-19.7667&lng=34.7065&zoom=10&time=2019-03-20&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gc2NyaXB0IFNBUiBmYWxzZSBjb2xvcnMuCmMxID0gMTBlLTQ7CmMyID0gMC4wMTsKYzMgPSAwLjAyOwpjNCA9IDAuMDM7CmM1ID0gMC4wNDU7CmM2ID0gMC4wNTsKYzcgPSAwLjk7CmM4ID0gMC4yNTsKCmJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7CmJhbmQyID0gYzYgKyBNYXRoLmV4cCAoYzggKiAoTWF0aC5sb2cgKGMyICsgMiAqIFZWKSArIE1hdGgubG9nIChjMyArIDUgKiBWSCkpKTsKYmFuZDMgPSAgMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsKCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOyA%3D){:target="_blank"}
