@@ -15,6 +15,12 @@
 
 The [False color](https://en.wikipedia.org/wiki/False_color) infrared product maps near-infrared spectral band B8 with red and green bands, B4 and B3, to [sRGB](https://en.wikipedia.org/wiki/SRGB) components directly. This product yields the image in which vegetation is shown in the red component.
 
+## Description of representative images
+
+False color composite of Rome. Acquired on 8.10.2017.
+
+![False color composite of Rome](fig/fig1.png)
+
 ## References
 - [1] Wikipedia, [False color](https://en.wikipedia.org/wiki/False_color). Accessed October 10th 2017.
 - [2] Wikipedia, [sRGB](https://en.wikipedia.org/wiki/SRGB). Accessed October 10th 2017.

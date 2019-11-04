@@ -31,6 +31,12 @@ where $\Delta_{B4}$ and $\Delta_{B8}$ are uncertainties of red and near infrared
 The script encodes the uncertainty with darkness, as can be seen in following figure [[2]](#ref2)  
 ![Color map of the NDVI uncertainty script from [2][1]](fig/cmap.jpg)
 
+## Description of representative images
+
+NDVI with uncertainty of Madrid. Acquired on 10.26.2019.
+
+![NDVI of Rome](fig/fig1.png)
+
 ## References
 <a name="ref1"></a>[1] Wikipedia, [Normalized Difference Vegetation Index
 ](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.   

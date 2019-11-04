@@ -27,5 +27,12 @@ _Poor Man's Atmospheric Adjustment for a Pretty Glacier Picture_ (see <a href="h
 
 The product produces natural color images using Sentinel-2 bands 4, 3 and 2. It performs a very basic linear atmospheric correction, and applies a curve to the color components to enhance details in the dark areas, while preserving contrast in very bright snow-covered slopes. It has been fine-tuned to use on the Sentinel-2 image of Monte Sarmiento in Tierra del Fuego taken 2016-05-05.
 
+## Description of representative images
+
+Color correction of Rome. Acquired on 8.10.2017.
+
+![Color correction of Rome](fig/fig1.png)
+
 ## References
  - Sentinel Hub Blog, [Color Correction with Sentinel Hub](https://medium.com/p/d721e12a919).
+ 
