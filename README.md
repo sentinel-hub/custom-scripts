@@ -120,6 +120,9 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 #### Enhanced true color scripts
  - [Enhanced true color](sentinel-3/enhanced_true_color)
  - [Enhanced true color-2](sentinel-3/enhanced_true_color-2)
+ 
+#### Remote sensing indices
+ - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
 
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
