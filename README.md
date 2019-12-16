@@ -89,6 +89,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Detecting deep moist convection](sentinel-2/deep_moist_convection)
  - [Fire boundary](sentinel-2/fire_boundary)
  - [burned area index for sentinel-2](sentinel-2/bais2)
+ - [Multitemporal burnt area analysis](sentinel-2/burned_area)
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
 
 
