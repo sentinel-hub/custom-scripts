@@ -7,3 +7,4 @@
 
 let index = 1.0 / B03 - 1.0 / B05;
 return [index]
+
