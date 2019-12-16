@@ -1,4 +1,4 @@
-# Red edge position index (REPO)
+# Normalized Difference Chlorophyll Index
 
 <a href="#" id='togglescript'>Show</a> script or [download](green_city.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
@@ -9,18 +9,18 @@
 
 ## Evaluate and visualize
 
-  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.102&lng=13.041&zoom=7&time=2019-06-30&preset=CUSTOM&datasource=Sentinel-3%20OLCI&layers=B01,B02,B03&evalscript=aWYgKChCMDUrQjA0KT09MCkgcmV0dXJuIFsxLDEsMV0KCnZhciB2YWwgPSAoQjA1LUIwNCkvKEIwNStCMDQpOwoKcmV0dXJuIGNvbG9yQmxlbmQoCiAgdmFsLAogIFstMSwtMC43NSwtMC41LC0wLjI1LDAsMC4yNSwwLjUsMC43NSwxXSwKICBbWzgwLzI1NSwwLDEzMy8yNTVdLAogICBbMjkvMjU1LDAsMjA0LzI1NV0sCiAgIFswLDAsMV0sCiAgIFs1Mi8yNTUsMTA2LzI1NSwxXSwKICAgWzAsMSwwXSwKICAgWzEsMSwwXSwKICAgWzEsMTYwLzI1NSwwXSwKICAgWzEsOTIvMjU1LDBdLAogICBbMSwwLDBdXSk7){:target="_blank"}
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.8928&lng=11.2459&zoom=11&time=2019-12-10&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=LyoKTm9ybWFsaXplZCBkaWZmZXJlbmNlIGNobG9yb3BoeWwgaW5kZXgKaHR0cHM6Ly9wZGZzLnNlbWFudGljc2Nob2xhci5vcmcvMmZiYS9jYWExNGFkYjQzZDViYzhkMmRkMjc0MzA0ZjYwODE0ZDkzM2MucGRmCmh0dHBzOi8vd3d3LnNjaWVuY2VkaXJlY3QuY29tL3NjaWVuY2UvYXJ0aWNsZS9waWkvUzAzODAxMzMwMTgzMDE4MDEgCmh0dHBzOi8vd3d3LnJlc2VhcmNoZ2F0ZS5uZXQvcHVibGljYXRpb24vMjk3NzE4OTY0X0NvbXBhcmlzb25fb2Zfc2F0ZWxsaXRlX3JlZmxlY3RhbmNlX2FsZ29yaXRobXNfZm9yX2VzdGltYXRpbmdfY2hsb3JvcGh5bGwtYV9pbl9hX3RlbXBlcmF0ZV9yZXNlcnZvaXJfdXNpbmdfY29pbmNpZGVudF9oeXBlcnNwZWN0cmFsX2FpcmNyYWZ0X2ltYWdlcnlfYW5kX2RlbnNlX2NvaW5jaWRlbnRfc3VyZmFjZV9vYnNlcnZhdGlvbnMgCiovCgovL3doaXRlIGNvbG9yIHJlcHJlc2VudHMgcGl4ZWxzIHdpdGggbm8gZGF0YQppZiAoKEIwNStCMDQpPT0wKSByZXR1cm4gWzEsMSwxXQoKdmFyIHZhbCA9IChCMDUtQjA0KS8oQjA1K0IwNCk7CgpyZXR1cm4gY29sb3JCbGVuZCgKICB2YWwsCiAgWy0xLC0wLjc1LC0wLjUsLTAuMjUsMCwwLjI1LDAuNSwwLjc1LDFdLAogIFtbODAvMjU1LDAsMTMzLzI1NV0sCiAgIFsyOS8yNTUsMCwyMDQvMjU1XSwKICAgWzAsMCwxXSwKICAgWzUyLzI1NSwxMDYvMjU1LDFdLAogICBbMCwxLDBdLAogICBbMSwxLDBdLAogICBbMSwxNjAvMjU1LDBdLAogICBbMSw5Mi8yNTUsMF0sCiAgIFsxLDAsMF1dKTsK){:target:"_blank"}
 
 ## General description of the script
-The red edge position index is sensitive to changes in chlorophyll concentrations, as higher chlorophyll concentrations absorb longer wavelengths. It is calculated as: 700+40*((670nm+780nm/2)-700nm/(740nm-700nm)
-
+NDCI is an index that aims to predict the plant chlorophyll content. It is calculated using the red spectral band B04 with the red edge spectral band B05. 
 
 ## Description of representative images
 
-Visualization of the REPO index above Italy.
-![REPO](fig/fig1.png)
+Visualization of the NDCI index above Rome.
+![NDCI](fig/fig1.png)
 
-## Credits
+## References
 
-The script is based on [Gholizadeh et al., 2016.](http://www.mdpi.com/1999-4907/7/10/226){:target="_blank"}
-It is described in the [Index database](https://www.indexdatabase.de/db/i-single.php?id=196){:target="_blank"} as well. 
+ - [Normalized difference chlorophyll index: A novel model for remote estimation of chlorophyll-a concentration in turbid productive waters](https://www.semanticscholar.org/paper/Normalized-difference-chlorophyll-index%3A-A-novel-of-Mishra-Mishra/2fbacaa14adb43d5bc8d2dd274304f60814d933c){:target="_blank"}
+ - [A spectral space partition guided ensemble method for retrieving chlorophyll-a concentration in inland waters from Sentinel-2A satellite imagery](https://www.sciencedirect.com/science/article/abs/pii/S0380133018301801){:target="_blank"}
+ - [Comparison of satellite reflectance algorithms for estimating chlorophyll-a in a temperate reservoir using coincident hyperspectral aircraft imagery and dense coincident surface observations](https://www.researchgate.net/publication/297718964_Comparison_of_satellite_reflectance_algorithms_for_estimating_chlorophyll-a_in_a_temperate_reservoir_using_coincident_hyperspectral_aircraft_imagery_and_dense_coincident_surface_observations){:target="_blank"}

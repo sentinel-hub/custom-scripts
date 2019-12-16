@@ -53,6 +53,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [ARI](sentinel-2/ari) - anthocyanin reflectance index
  - [ARVI](sentinel-2/arvi) - atmospherically resistant vegetation index 
  - [CHL_REDEDGE](sentinel-2/chl_rededge) - chlorophyll red-edge
+ - [REDEDGE_POSITION](sentinel-2/red_edge_position) - red edge position index
  - [EVI](sentinel-2/evi) - enhanced vegetation index
  - [EVI2](sentinel-2/evi2) - enhanced vegetation index 2
  - [GNDVI](sentinel-2/gndvi) - green normalized difference vegetation index
@@ -60,6 +61,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [MSI](sentinel-2/msi) - moisture stress index
  - [NBR](sentinel-2/nbr) - normalized burn ratio  
  - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
+ - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
  - [NDWI](sentinel-2/ndwi) - normalized difference water index
  - [NDMI](sentinel-2/ndmi) - normalized difference moisture index
