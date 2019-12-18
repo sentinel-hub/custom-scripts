@@ -22,4 +22,4 @@ Values description: The values of this index range from 0 to more than 3. The co
 
 The MSI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
 
-![max NDVI of Madrid.](fig/fig1.png)
+![MSI(fig/fig1.png)
