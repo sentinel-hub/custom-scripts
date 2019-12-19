@@ -5,11 +5,7 @@
 {% highlight javascript %}
       {% include_relative L2A-first_quartille.js %}
 {% endhighlight %}
-<a href="#" id='togglescript'>Show</a> script2 or [download](L2A-first_quartile_4bands_V2.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
-{% highlight javascript %}
-      {% include_relative L2A-first_quartile_4bands_V2.js %}
-{% endhighlight %}
+
 </div>
 
 ## General description of the script
