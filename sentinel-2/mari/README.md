@@ -1,4 +1,4 @@
-# ARI - Anthocyanin Reflectance Index
+# mARI - Modified Anthocyanin Reflectance Index
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
