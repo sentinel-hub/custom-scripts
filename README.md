@@ -62,7 +62,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [MSI](sentinel-2/msi) - moisture index
  - [NDMI](sentinel-2/ndmi) - normalized difference moisture index
  - [NDWI](sentinel-2/ndwi) - normalized difference water index
- - [NDMI_stress](sentinel-2/ndmi_special) - normalized difference moisture index for crop moisture stress
+ - [NDMI STRESS](sentinel-2/ndmi_special) - normalized difference moisture index for crop moisture stress
  - [NBR](sentinel-2/nbr) - normalized burn ratio  
  - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
  - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
@@ -83,6 +83,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
+ - [Cloudless Mosaic](sentinel-2/cloudless_mosaic)
 
 #### Snow and glaciers algorithms
  - [Snow classifier](sentinel-2/snow_classifier/)
