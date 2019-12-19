@@ -50,6 +50,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDVI](sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+ - [MAX NDVI](sentinel-2/max_ndvi)
  - [ARI](sentinel-2/ari) - anthocyanin reflectance index
  - [mARI](sentinel-2/mari) - modified anthocyanin reflectance index
  - [ARVI](sentinel-2/arvi) - atmospherically resistant vegetation index 
