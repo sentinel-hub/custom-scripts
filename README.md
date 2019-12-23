@@ -68,7 +68,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
  - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
- - [PSSRB1](sentinel-2/pssrb1) - simple ratio 800/650 pigment specific simple ratio B1  
+ - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index

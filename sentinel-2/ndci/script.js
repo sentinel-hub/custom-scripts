@@ -1,4 +1,4 @@
-/*
+      /*
 Normalized difference chlorophyl index
 https://pdfs.semanticscholar.org/2fba/caa14adb43d5bc8d2dd274304f60814d933c.pdf
 https://www.sciencedirect.com/science/article/pii/S0380133018301801 
@@ -6,15 +6,21 @@ https://www.researchgate.net/publication/297718964_Comparison_of_satellite_refle
 */
 
 //white color represents pixels with no data
-if ((B05+B04)==0) return [1,1,1]
+if ((B05+B04)==0){ 
+  return [1,1,1]
+};
+var val = (B05-B04)/(B05+B04);
 
-return colorBlend(
+return colorBlend
+(
   val,
-  [-0.5,0, 0.1, 0.2, 0.3,1],
+  [-0.5,0,0.1,0.2,0.3,1],
   [
    [0,0,1],
    [0,0.5,0.5],
    [1,0.3,0],
    [1,1,0],
    [0.2,0.8,0],
-   [0,0.5,0]]);
+   [0,0.5,0]
+  ]
+);
