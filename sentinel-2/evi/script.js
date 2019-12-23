@@ -1,32 +1,27 @@
-//
 // Enhanced Vegetation Index  (abbrv. EVI)
-//
 // General formula: 2.5 * (NIR - RED) / ((NIR + 6*RED - 7.5*BLUE) + 1)
-//
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=16
-//
 
-let index = 2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0);
-let min = -8.026;
-let max = 7.804;
-let zero = 0.0;
+let EVI = 2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0);
 
-// colorBlend will return a color when the index is between min and max and white when it is less than min.
-// To see black when it is more than max, uncomment the last line of colorBlend.
-// The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
-// This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
-
-let underflow_color = [1, 1, 1];
-let low_color = [208/255, 88/255, 126/255];
-let high_color = [241/255, 234/255, 200/255];
-let zero_color = [0, 147/255, 146/255];
-let overflow_color = [0, 0, 0];
-
-return colorBlend(index, [min, min, zero, max],
-[
-	underflow_color,
-	low_color,
-	zero_color, // divergent step at zero
-	high_color,
-	//overflow_color // uncomment to see overflows
-]);
+if (EVI<-1.1) return [0,0,0];
+else if (EVI<-0.2) return [0.75,0.75,0.75];
+else if (EVI<-0.1) return [0.86,0.86,0.86];
+else if (EVI<0) return [1,1,0.88];
+else if (EVI<0.025) return [1,0.98,0.8];
+else if (EVI<0.05) return [0.93,0.91,0.71];
+else if (EVI<0.075) return [0.87,0.85,0.61];
+else if (EVI<0.1) return [0.8,0.78,0.51];
+else if (EVI<0.125) return [0.74,0.72,0.42];
+else if (EVI<0.15) return [0.69,0.76,0.38];
+else if (EVI<0.175) return [0.64,0.8,0.35];
+else if (EVI<0.2) return [0.57,0.75,0.32];
+else if (EVI<0.25) return [0.5,0.7,0.28];
+else if (EVI<0.3) return [0.44,0.64,0.25];
+else if (EVI<0.35) return [0.38,0.59,0.21];
+else if (EVI<0.4) return [0.31,0.54,0.18];
+else if (EVI<0.45) return [0.25,0.49,0.14];
+else if (EVI<0.5) return [0.19,0.43,0.11];
+else if (EVI<0.55) return [0.13,0.38,0.07];
+else if (EVI<0.6) return [0.06,0.33,0.04];
+else return [0,0.27,0];

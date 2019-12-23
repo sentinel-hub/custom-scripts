@@ -14,36 +14,31 @@
 
 ## General description of the script
 
-//Source: https://en.wikipedia.org/wiki/Normalized_difference_water_index
 
-//option 1, used to monitor changes in water content of leaves, proposed by Gao
-//http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf
-var ndwi = (B08-B11)/(B08+B11);
-
-//option 2, used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996):
-//var ndwi = (B03 - B08) / (B03 + B08);
-
-
-The NDMI is a normalized difference moisture/water index, that uses NIR and SWIR bands to display moisture. 
+The NDMI is a normalized difference moisture index, that uses NIR and SWIR bands to display moisture. 
 The SWIR band reflects changes in both the vegetation water content and the spongy mesophyll structure in vegetation canopies, 
 while the NIR reflectance is affected by leaf internal structure and leaf dry matter content but not by water content. 
 The combination of the NIR with the SWIR removes variations induced by leaf internal structure and leaf dry matter content, improving the accuracy in retrieving the vegetation water content. 
 The amount of water available in the internal leaf structure largely controls the spectral reflectance in the SWIR interval of the electromagnetic spectrum. 
 SWIR reflectance is therefore negatively related to leaf water content. NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR) reflectance’s:
 
-**NDMI = (NIR - SWIR) / (NIR + SWIR)**
-**NDMI = (B08 - B11) / (B08 + B11)**
+###Option 1###
+Used to monitor changes in water content of leaves, [proposed by Gao](http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf){:target="_blank"}
+**NDWI = (B08 - B11) / (B08 + B11)**
 
-With the increase of water content of leaves in vegetation canopies increases also the strength of absorption around 1599nm. 
-Absorption at 819nm is used as a reference, since it’s nearly unaffected by changing water content. 
-Applications of the MSI include canopy stress analysis, productivity prediction and modelling, fire hazard condition analysis, and studies of ecosystem physiology. 
-This index is inverted relative to other water vegetation indices; higher values indicate greater water stress and less water content.
-Values description: The values of this index range from 0 to more than 3. The common range for green vegetation is 0.4 to 2.
+###Option 2###
+Used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996).
+**NDWI = (B03 - B08) / (B03 + B08)**
 
 
 ## Description of representative images
 
 The NDMI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
 
-![NDMI/NDWI](fig/fig1.png)
+![NDWI](fig/fig1.png)
+
+## References
+
+[Normalize difference water index](https://en.wikipedia.org/wiki/Normalized_difference_water_index){:target="_blank"}
+
 
