@@ -8,6 +8,6 @@
 
 // Initialize parameters
 let y = 0.106;
-let index = (B09 - B04 - y * (B04 - B02)) / (B09 + B04 - y * (B04 - B02));
+let index = (B8A - B04 - y * (B04 - B02)) / (B8A + B04 - y * (B04 - B02));
 
 return[index];
