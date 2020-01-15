@@ -2,11 +2,9 @@
 
 > Water quality visualization script for Sentinel-2 and Sentinel-3 imagery data
 
-<div style="text-align:justify">
-
 [Show](dist/script.min.js) minified, optimized script (recommended for usage).
 
-[Show](src/script.js) unminified script (for debugging puropses).
+[Show](src/script.js) unminified script (for debugging purposes).
 
 ## Evaluate and visualize
 
@@ -16,7 +14,7 @@
      - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=46.8797&lng=17.7402&zoom=11&time=2019-09-05&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B04,B03,B02&evalscript=cmV0dXJuIFtCMDQqMi41LEIwMyoyLjUsQjAyKjIuNV07) (Sentinel-2)
      - [Sentinel-hub Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.8797&lng=17.7402&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-03-01%7C2019-09-05&atmFilter=&showDates=false&evalscript=cmV0dXJuIFtCMDQqMi41LEIwMyoyLjUsQjAyKjIuNV0%3D) (Sentinel-2)
      - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=46.8797&lng=17.7402&zoom=11&time=2019-09-05&preset=CUSTOM&datasource=Sentinel-3%20OLCI&layers=B08,B06,B04&evalscript=cmV0dXJuIFtCMDgqMi41LEIwNioyLjUsQjA0KjIuNV07) (Sentinel-3)
-   - Lake Pontchartrain, Louisiniana, USA (2020-01-06)
+   - Lake Pontchartrain, Louisiana, USA (2020-01-06)
      - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=30.2012&lng=-90.1009&zoom=11&time=2020-01-06&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C) (Sentinel-2)
      - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=30.2012&lng=-90.1009&zoom=11&time=2020-01-06&preset=1_TRUE_COLOR&datasource=Sentinel-3%20OLCI) (Sentinel-3)
    - Balaclava Island, Australia (2019-09-05)
@@ -51,7 +49,7 @@ and
 
 By default, all pixels identified as "not water" (cloud, snow or land) are shown in true colour. All pixels identifed as water are coloured with an algorithm that evaluates chlorophyll and suspended sediment concentration together. This visualization can be compared to a GIS map with two raster layers, sediment on top and chlorophyll below. The sediment "layer" is semi-transparent and can cover the chlorophyll "layer". Just like clouds in the atmosphere, sediment in the water reduces transparency and obscures chlorophyll. Therefore water pixels with high sediment concentrations are coloured dark brown regardless of their chlorophyll concentration. Medium sediment concentrations are coloured wheat (light brown) with increasing transparency towards lower sediment concentrations. At low sediment concentrations the sediment "layer" is completely transparent. Below the semi-transparent sediment "layer", the chlorophyll concentration is visualized. High chlorophyll concentrations are marked in red, medium concentrations green, and low concentrations dark blue (see palette image below).
 
-<div style="text-align:center"><img src="assets/palette.png" width="500"/></div>
+<img src="assets/palette.png" width="500"/>
 
 By changing input parameters of the script it is also possible to:
 
@@ -230,5 +228,3 @@ The next step is to optimize chlorophyll and sediment visualization. Accepting t
 ![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Creative Commons License")
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
-
-</div>
