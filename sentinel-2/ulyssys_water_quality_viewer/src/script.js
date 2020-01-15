@@ -14,7 +14,7 @@ const PARAMS = {
   foreground: 'default',
   foregroundOpacity: 1.0,
   background: 'default',
-  backgroundOpacity: 1.0,
+  backgroundOpacity: 1.0
 };
 //* PARAMS END
 
