@@ -79,6 +79,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
  
 #### Cloud detection algorithms
@@ -113,6 +114,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Marine environment algorithms
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
@@ -133,6 +135,7 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
  
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
