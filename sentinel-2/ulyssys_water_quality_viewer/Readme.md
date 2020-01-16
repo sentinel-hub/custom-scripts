@@ -10,21 +10,21 @@
 
 1. Visit one of the following example sites or find your own area of interest:
    - Lake Balaton, Hungary, Europe (2019-09-05)
-     - [EO Browser](https://tinyurl.com/tvvgooj) (Sentinel-2)
-     - [Sentinel-hub Playground](https://tinyurl.com/shwu5ty) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/s45ev7l) (Sentinel-3)
+     - [EO Browser](https://tinyurl.com/stdt8q9) (Sentinel-2)
+     - [Sentinel-hub Playground](https://tinyurl.com/u4tlenl) (Sentinel-2)
+     - [EO Browser](https://tinyurl.com/r9vmpfd) (Sentinel-3)
    - Lake Pontchartrain, Louisiana, USA (2020-01-06)
-     - [EO Browser](https://tinyurl.com/sfj3rwz) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/wqqhpfy) (Sentinel-3)
+     - [EO Browser](https://tinyurl.com/vwtv4ql) (Sentinel-2)
+     - [EO Browser](https://tinyurl.com/uw339kd) (Sentinel-3)
    - Balaclava Island, Australia (2019-09-05)
-     - [EO Browser](https://tinyurl.com/uv6q5xc) (Sentinel-2)
+     - [EO Browser](https://tinyurl.com/wabpktf) (Sentinel-2)
    - Tsimlyansk Reservoir, Russia (2019-09-05)
-     - [EO Browser](https://tinyurl.com/teoj82e)
+     - [EO Browser](https://tinyurl.com/vnt2ona)
    - North Azadegan Oil Field, Iraqian/Iranian border (2019-09-08)
-     - [EO Browser](https://tinyurl.com/ru2y2oo) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/vrfllo3) (Sentinel-3)
+     - [EO Browser](https://tinyurl.com/v4yptnt) (Sentinel-2)
+     - [EO Browser](https://tinyurl.com/whkgzlz) (Sentinel-3)
    - Lake Francis Case, South Dakota, USA (2019-09-13)
-     - [EO Browser](https://tinyurl.com/yxxyxykn) (Sentinel-2)
+     - [EO Browser](https://tinyurl.com/w7rphzg) (Sentinel-2)
 2. Interpret what you see
 3. Modify the values in the `PARAMS` object according to your needs (for possible values see `Understanding and fine tuning PARAMS`)
 4. Hit `Refresh` after modifying any of the properties !['Refresh'](assets/refresh_button.png)
@@ -84,9 +84,9 @@ const PARAMS = {
 Possible values:
 
 - `chlIndex`: selected chlorophyll index (see Technical details for more information)
-  - `'flh'` or `'rlh'` for Sentinel-2
+  - `'mci'` or `'rlh'` for Sentinel-2
   - `'flh'` or `'rlh'` or `'mci'` for Sentinel-3
-  - `'default'` for default value (`'flh'` for both Sentinel-2 and Sentinel-3)
+  - `'default'` for default value (`'mci'` for Sentinel-2, `'flh'` for Sentinel-3)
   - `null` (without quotation marks) if not set, in this case chlorophyll is not visualized
 - `tssIndex`: selected sediment index (see Technical details for more information)
   - `'b05'` for Sentinel-2
@@ -170,15 +170,15 @@ András Zlinszky PhD and Gergely Padányi-Gulyás at [Ulyssys Ltd](https://www.u
 
 We illustrate the visualization of different chlorophyll concentrations on the example of an algae bloom on Lake Balaton, Hungary. The lake shows a clear gradient from the Southwest (high chlorophyll - up to 400 &#181;g/l) to the Northeast (lower chlorophyll - about 20 &#181;g/l). The red arrow marks a location where chlorophyll concentration was so high that the NDWI water masking mistook the water for land. The white arrow shows a location where chlorophyll concentration is high but also suspended sediment is present, here the transparent grey of the sediment is overlain on the colouring of the chlorophyll. The orange arrow shows a location where suspended sediment is locally relatively high but chlorophyll is low, while the blue arrow points to a place where both chlorophyll and suspended sediment are relatively low.
 
-Lake Balaton, **Sentinel-2A**, 2019-09-05, [**True Colour**](https://tinyurl.com/wlmaqbk). The true colour image shows the intensity of the algae bloom in the western part of the lake and also the relatively bright colour of the suspended sediment.
+Lake Balaton, **Sentinel-2A**, 2019-09-05, [**True Colour**](https://tinyurl.com/qoxmess). The true colour image shows the intensity of the algae bloom in the western part of the lake and also the relatively bright colour of the suspended sediment.
 
 !['2019-09-05_Sentinel-2A_Balaton'](fig/Fig2c_sen2.png)
 
-Lake Balaton, **Sentinel-2A**, 2019-09-05, [**UWQV Default settings**](https://tinyurl.com/rbvwh7h). The chlorophyll visualization shows the extremely high concentrations in the western basin of the lake. The Sentinel-2 algorithm we use is less sensitive to suspended sediment concentration, with only the small area marked by the orange arrow coloured for sediment.
+Lake Balaton, **Sentinel-2A**, 2019-09-05, [**UWQV Default settings**](https://tinyurl.com/stdt8q9). The chlorophyll visualization shows the extremely high concentrations in the western basin of the lake. The Sentinel-2 algorithm we use is less sensitive to suspended sediment concentration, with only the small area marked by the orange arrow coloured for sediment.
 
 !['2019-09-05_Sentinel-3_Balaton'](fig/Fig2b_sen2.png)
 
-Lake Balaton, **Sentinel-3**, 2019-09-05, [**UWQV Default settings**](https://tinyurl.com/s45ev7l). While Sentinel-3 has lower spatial resolution than Sentinel-2, the chlorophyll and suspended sediment algorithms are more selective than for Sentinel-2, therefore they discern chlorophyll and sediment more successfully. The Western basin of the lake is coloured transparent grey (with the chlorophyll visualization "underneath"), the small patch of sediment in the central part of the lake is well identified and the lower concentrations in the eastern basin are not mistaken for chlorophyll.
+Lake Balaton, **Sentinel-3**, 2019-09-05, [**UWQV Default settings**](https://tinyurl.com/r9vmpfd). While Sentinel-3 has lower spatial resolution than Sentinel-2, the chlorophyll and suspended sediment algorithms are more selective than for Sentinel-2, therefore they discern chlorophyll and sediment more successfully. The Western basin of the lake is coloured transparent grey (with the chlorophyll visualization "underneath"), the small patch of sediment in the central part of the lake is well identified and the lower concentrations in the eastern basin are not mistaken for chlorophyll.
 
 !['2019-09-05_Sentinel-3_OLCI_L1C_Balaton'](fig/Fig2a_sen3.png)
 
@@ -186,19 +186,19 @@ Lake Balaton, **Sentinel-3**, 2019-09-05, [**UWQV Default settings**](https://ti
 
 We show an example of selecting appropriate algorithms and limits in order to enhance the visualization to show more details on the example of an algae bloom on Lake Pontchartrain, Louisiana, United States. Optimum settings for visualizing this situation would suggest minimum and maximum limits defined by the minimum and maximum values observed in the scene. Water masking also has to be adjusted: similar to the previous example, chlorophyll and sediment concentrations are high enough in some small areas to cause problems.
 
-Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**True Colour**](https://tinyurl.com/vnbnmkc). In the first step, the true colour image is visualized, in order to take a look at the general situation. High suspended sediment concentrations are evident in the Mississippi River, the bright green streak of a severe algae bloom along the southern third of the lake is also clear - these represent the maximum values while clear waters at the northern corner of the lake seem to hold the minimum.
+Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**True Colour**](https://tinyurl.com/rcywk5d). In the first step, the true colour image is visualized, in order to take a look at the general situation. High suspended sediment concentrations are evident in the Mississippi River, the bright green streak of a severe algae bloom along the southern third of the lake is also clear - these represent the maximum values while clear waters at the northern corner of the lake seem to hold the minimum.
 
 !['2020-01-06-Sentinel_2A_Lake_Pontchartrain'](fig/Fig3a_sen2.jpg)
 
-Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**UWQV Default settings**](https://tinyurl.com/v7kn37j). Using the default settings of UWQV, many more streaks of high chlorophlyll become visible, but the most affected area of the bloom is masked as non-water. Fluorescence Line Height is apparently sensitive to small amounts of chlorophyll but saturates at very high amounts, without reaching the values represented by the red colour. Along the southern shore of the lake, suspended sediment also has a strong influence on water colour, as marked by the grey transparent visualization. The Mississippi River is also visualized with a combination of greens and greys, as expected from water with relatively high sediment and chlorophyll content.
+Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**UWQV Default settings**](https://tinyurl.com/vwtv4ql). Using the default settings of UWQV, many more streaks of high chlorophlyll become visible, but the most affected area of the bloom is masked as non-water. Fluorescence Line Height is apparently sensitive to small amounts of chlorophyll but saturates at very high amounts, without reaching the values represented by the red colour. Along the southern shore of the lake, suspended sediment also has a strong influence on water colour, as marked by the grey transparent visualization. The Mississippi River is also visualized with a combination of greens and greys, as expected from water with relatively high sediment and chlorophyll content.
 
 !['2020-01-06-Sentinel_2A_Lake_Pontchartrain'](fig/Fig3b_sen2.jpg)
 
-Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Modified water masking**](https://tinyurl.com/s57njn5). Cloud masking is not necessary at all in this cloud-free scene, so the Hollstein cloud masking algorithm used as default is disabled by deleting `'hol'` from `watermaskIndices`. However, NDWI-based water masking is problematic: within part of the area affected by the bloom, high chlorophyll and sediment content causes high reflectivity in near-infrared atypical for water, and therefore with the default `waterMax` value of 0, a masking error is caused. `waterMax` has to be lowered all the way to -0.62 if all pixels in the affected area are to be kept as water. To study the effect of changing the masking threshold, the parameter `background` was set to `'black'`; this made all pixels labelled as non-water to appear black. The image shows that with such a low NDWI threshold most of the scene is mistaken as water. Note that Hollstein cloud masking could also have been used to identify water areas, but in our implementation the parameters of this algorithm are not tuneable.
+Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Modified water masking**](https://tinyurl.com/u6hu8f4). Cloud masking is not necessary at all in this cloud-free scene, so the Hollstein cloud masking algorithm used as default is disabled by deleting `'hol'` from `watermaskIndices`. However, NDWI-based water masking is problematic: within part of the area affected by the bloom, high chlorophyll and sediment content causes high reflectivity in near-infrared atypical for water, and therefore with the default `waterMax` value of 0, a masking error is caused. `waterMax` has to be lowered all the way to -0.62 if all pixels in the affected area are to be kept as water. To study the effect of changing the masking threshold, the parameter `background` was set to `'black'`; this made all pixels labelled as non-water to appear black. The image shows that with such a low NDWI threshold most of the scene is mistaken as water. Note that Hollstein cloud masking could also have been used to identify water areas, but in our implementation the parameters of this algorithm are not tuneable.
 
 !['2020-01-06-Sentinel_2A_Lake_Pontchartrain'](fig/Fig3c_sen2.jpg)
 
-Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Enhanced visualization**](https://tinyurl.com/rw8392t). The next step is to optimize chlorophyll and sediment visualization. Accepting the compromise that some water pixels will be lost, but also false positives will be created, Hollstein cloud masking has been disabled, but `waterMax` was left at the default value. Instead of Fluorescence Line Height, the Reflectance Line Height algorithm was selected by setting the `chlIndex` parameter to `'rlh'`. Reflectance Line Height seems to perform better for the high chlorophyll concentrations observed here, and is apparently less influenced by suspended sediment in the Mississippi river. In order to stretch the colouring scheme to the pixel values occurring within the image, `chlMin` was increased to 0.006 and `chlMax` was reduced slightly to 0.045. Suspended sediment visualization was left at the default values. Finally, in order to emphasize the water quality patterns further, the non-water pixels were slightly darkened by setting the `background` parameter to `'black'` and the `backgroundOpacity` to 0.3.
+Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Enhanced visualization**](https://tinyurl.com/r55or2k). The next step is to optimize chlorophyll and sediment visualization. Accepting the compromise that some water pixels will be lost, but also false positives will be created, Hollstein cloud masking has been disabled, but `waterMax` was left at the default value. Instead of Fluorescence Line Height, the Reflectance Line Height algorithm was selected by setting the `chlIndex` parameter to `'rlh'`. Reflectance Line Height seems to perform better for the high chlorophyll concentrations observed here, and is apparently less influenced by suspended sediment in the Mississippi river. In order to stretch the colouring scheme to the pixel values occurring within the image, `chlMin` was increased to 0.006 and `chlMax` was reduced slightly to 0.045. Suspended sediment visualization was left at the default values. Finally, in order to emphasize the water quality patterns further, the non-water pixels were slightly darkened by setting the `background` parameter to `'black'` and the `backgroundOpacity` to 0.3.
 
 !['2020-01-06-Sentinel_2A_Lake_Pontchartrain'](fig/Fig3d_sen2.jpg)
 

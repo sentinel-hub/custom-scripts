@@ -48,8 +48,8 @@ function getIndices(isSentinel3) {
   } : {
       natural: "[2.5*B04,2.5*B03,2.5*B02]",
       chl: {
-        flh: "B05-((0.74-0.705)/(0.74-0.665))*B04-(1.0-(0.74-0.705)/(0.74-0.665))*B06",
-        rlh: "B05-B04-(B07-B04*((0.705-0.665)*1000.0))/((0.783-0.665)*1000.0)"
+        rlh: "B05-B04-(B07-B04*((0.705-0.665)*1000.0))/((0.783-0.665)*1000.0)",
+        mci: "B05-((0.74-0.705)/(0.74-0.665))*B04-(1.0-(0.74-0.705)/(0.74-0.665))*B06"
       },
       tss: {
         b05: "B05"
@@ -293,7 +293,7 @@ function getValue(params) {
   // Define the chlorophyll layer if needed
   if (chl !== null) {
     // In case of 'default' set proper algorighm
-    const alg = chl === 'default' ? 'flh' : chl;
+    const alg = chl === 'default' ? (isSentinel3 ? 'flh' : 'mci') : chl;
     chlIndex = getEval(indices.chl[alg]);
     chlLayer = getColors('chl', chlIndex, params.chlMin, params.chlMax, (isSentinel3 && alg === 'flh'));
   }
