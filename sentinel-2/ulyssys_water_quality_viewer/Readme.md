@@ -161,7 +161,7 @@ If you want to include another water quality algorithm or make other major chang
 
 ## Authors of the script
 
-András Zlinszky PhD (@azlinszky) and Gergely Padányi-Gulyás (@fegyi001) at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
+András Zlinszky PhD ([@azlinszky](https://twitter.com/azlinszky)) and Gergely Padányi-Gulyás ([@fegyi001](https://twitter.com/fegyi001)) at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
 
 <img src="assets/ulyssys_logo.png" width="250"/>
 
@@ -208,7 +208,6 @@ Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Enhanced visualization**](ht
 - [Braaten-Cohen-Yang cloud detector](https://github.com/sentinel-hub/custom-scripts/tree/master/sentinel-2/cby_cloud_detection) (custom script): Braaten, Justin D., Warren B. Cohen, and Zhiqiang Yang. "Automated cloud and cloud shadow identification in Landsat MSS imagery for temperate ecosystems." Remote Sensing of Environment 169 (2015): 128-138.
 - [Gitelson 1994 (Fluorescence Line Height)](https://academic.oup.com/plankt/article-abstract/16/8/993/1468385): Gitelson, A., M. Mayo, Y. Z. Yacobi, A. Parparov, and T. Berman. "The use of high-spectral-resolution radiometer data for detection of low chlorophyll concentrations in Lake Kinneret." Journal of Plankton Research 16, no. 8 (1994): 993-1002.
 - [Gower 2005 (Maximum Chlorophyll Index)](https://www.tandfonline.com/doi/abs/10.1080/01431160500075857): Gower, J., S. King, G. Borstad, and L. Brown. "Detection of intense plankton blooms using the 709 nm band of the MERIS imaging spectrometer." International Journal of Remote Sensing 26, no. 9 (2005): 2005-2012.
-
 - A. Hollstein et al., 2016 - [Ready-to-Use Methods for the Detection of Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels in Sentinel-2 MSI Images](https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/hollstein/): Hollstein, André, Karl Segl, Luis Guanter, Maximilian Brell, and Marta Enesco. "Ready-to-use methods for the detection of clouds, cirrus, snow, shadow, water and clear sky pixels in Sentinel-2 MSI images." Remote Sensing 8, no. 8 (2016): 666.
 - Pierre Markuse, 2019 - [Sentinel-3 data Visualization in EO Browser using a Custom Script](https://pierre-markuse.net/2019/03/26/sentinel-3-data-visualization-in-eo-browser-using-a-custom-script/)
 - [McFeeters 1996 (NDWI)](https://www.tandfonline.com/doi/abs/10.1080/01431169608948714): McFeeters, Stuart K. "The use of the Normalized Difference Water Index (NDWI) in the delineation of open water features." International journal of remote sensing 17, no. 7 (1996): 1425-1432.
