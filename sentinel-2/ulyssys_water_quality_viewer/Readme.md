@@ -84,9 +84,9 @@ const PARAMS = {
 Possible values:
 
 - `chlIndex`: selected chlorophyll index (see Technical details for more information)
-  - `'flh'` or `'rlh'` for Sentinel-2
+  - `'mci'` or `'rlh'` for Sentinel-2
   - `'flh'` or `'rlh'` or `'mci'` for Sentinel-3
-  - `'default'` for default value (`'flh'` for both Sentinel-2 and Sentinel-3)
+  - `'default'` for default value (`'mci'` for Sentinel-2, `'flh'` for Sentinel-3)
   - `null` (without quotation marks) if not set, in this case chlorophyll is not visualized
 - `tssIndex`: selected sediment index (see Technical details for more information)
   - `'b05'` for Sentinel-2
