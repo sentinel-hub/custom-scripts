@@ -150,7 +150,7 @@ The [`dist/script.min.js`](dist/script.min.js) file is a minified version of the
 
 ### Modify the script
 
-If you find that modifying the parameters is not enough for your needs and you wish to alter the script itself you have to (1) modify the unminified source file (2) re-create the minified version of the script. We recommend doing it the following way:
+If you want to include another water quality algorithm or make other major changes and you wish to alter the script itself, you have to (1) modify the unminified source file (2) re-create the minified version of the script. We recommend doing it the following way:
 
 1. Copy the contents of this folder on your machine (maybe the easiest way is to [download the whole repository](https://github.com/sentinel-hub/custom-scripts/archive/master.zip) and unzip it somewhere on your machine).
 2. Install [Node.js](https://nodejs.org/en/) if you don't have it yet.
@@ -161,7 +161,7 @@ If you find that modifying the parameters is not enough for your needs and you w
 
 ## Authors of the script
 
-András Zlinszky PhD and Gergely Padányi-Gulyás at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
+András Zlinszky PhD (@azlinszky) and Gergely Padányi-Gulyás (@fegyi001) at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
 
 <img src="assets/ulyssys_logo.png" width="250"/>
 
