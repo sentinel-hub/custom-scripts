@@ -6,7 +6,7 @@
 
 [Show](src/script.js) unminified script (for debugging purposes).
 
-<img src="http://188.166.116.137/eo/Sentinel-2_L1C-2019-jan_dec_balaton.gif" width="300"/>
+<img src="fig/gif/Sentinel-2_L1C-2019-jan_dec_balaton.gif" width="300"/>
 
 # Evaluate and visualize
 
