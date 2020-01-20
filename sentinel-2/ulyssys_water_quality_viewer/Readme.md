@@ -6,7 +6,7 @@
 
 [Show](src/script.js) unminified script (for debugging purposes).
 
-|                                      Example 1                                       |                                Example 2                                 |
+|                          Example 1 (Lake Balaton, close-up)                          |                         Example 2 (Lake Balaton)                         |
 | :----------------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
 | <img src="fig/gif/Sentinel-2_L1C-2019_jan_dec_keszthely_szigliget.gif" width="350"/> | <img src="fig/gif/Sentinel-2_L1C-2019-jan_dec_balaton.gif" width="350"/> |
 
