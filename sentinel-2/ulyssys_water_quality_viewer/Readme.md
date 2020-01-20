@@ -6,7 +6,13 @@
 
 [Show](src/script.js) unminified script (for debugging purposes).
 
-<img src="fig/gif/Sentinel-2_L1C-2019-jan_dec_balaton.gif" width="300"/>
+[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.7587&lng=17.3728&zoom=12&time=2019-02-27&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
+
+<img src="fig/gif/Sentinel-2_L1C-2019_jan_dec_keszthely_szigliget.gif" width="400"/>
+
+[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.8795&lng=17.7214&zoom=11&time=2019-09-05&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
+
+<img src="fig/gif/Sentinel-2_L1C-2019-jan_dec_balaton.gif" width="400"/>
 
 # Evaluate and visualize
 
