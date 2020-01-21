@@ -5,8 +5,9 @@
 [Show](dist/script.min.js) minified, optimized script (recommended for usage).
 
 [Show](src/script.js) unminified script (for debugging purposes).
-
-!['Timelapse of 2019'](fig/gif/Sentinel-2-3_2019_jan_dec_balaton_with_closeup.gif)
+| Timelapse (2019) of Lake Balaton with Sentinel-2 and Sentinel-3 imagery side by side           |
+|:-------------:|
+| !['Timelapse of 2019'](fig/gif/Sentinel-2-3_2019_jan_dec_balaton_with_closeup.gif) |
 
 [//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.7587&lng=17.3728&zoom=12&time=2019-02-27&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
 [//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.8795&lng=17.7214&zoom=10&time=2019-09-05&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
