@@ -99,7 +99,7 @@ Possible values:
   - `'default'` for default value (`'b05'` for Sentinel-2, `'b11'` for Sentinel-3)
   - `null` (without quotation marks) if not set, in this case sediment is not visualized
 - `watermaskIndices`: selected water/cloud mask indices (see Technical details for more information)
-  - an array of `'ndwi'`, `'hol'`, `'bcy'` or any combination of them (`'bcy'` is only applicable for Sentinel-3)
+  - an array of `'ndwi'`, `'hol'`, `'bcy'` or any combination of them
   - `[]` (empty array) if not set
 - `chlMin`: lower limit of `chlIndex`; decrease this for more sensitivity to low chlorophyll concentrations
 - `chlMax`: upper limit of `chlIndex`; decrease this for stronger highlighting of high chlorophyll concentrations
