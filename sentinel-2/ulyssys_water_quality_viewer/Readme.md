@@ -88,17 +88,17 @@ const PARAMS = {
 
 Possible values:
 
-- `chlIndex`: selected chlorophyll index (see Technical details for more information)
+- `chlIndex`: selected chlorophyll index (see Technical background for more information)
   - `'mci'` or `'rlh'` for Sentinel-2
   - `'flh'` or `'rlh'` or `'mci'` for Sentinel-3
   - `'default'` for default value (`'mci'` for Sentinel-2, `'flh'` for Sentinel-3)
   - `null` (without quotation marks) if not set, in this case chlorophyll is not visualized
-- `tssIndex`: selected sediment index (see Technical details for more information)
+- `tssIndex`: selected sediment index (see Technical background for more information)
   - `'b05'` for Sentinel-2
   - `'b07'` or `'b11'` for Sentinel-3
   - `'default'` for default value (`'b05'` for Sentinel-2, `'b11'` for Sentinel-3)
   - `null` (without quotation marks) if not set, in this case sediment is not visualized
-- `watermaskIndices`: selected water/cloud mask indices (see Technical details for more information)
+- `watermaskIndices`: selected water/cloud mask indices (see Technical background for more information)
   - an array of `'ndwi'`, `'hol'`, `'bcy'` or any combination of them
   - `[]` (empty array) if not set
 - `chlMin`: lower limit of `chlIndex`; decrease this for more sensitivity to low chlorophyll concentrations
@@ -124,14 +124,14 @@ Possible values:
 
 ### Scientific background
 
-From an ecological perspective, the term "water quality" refers to the status of the most important abiotic and biotic properties of the water column in a given time and location. The most important water quality parameters from a habitat management perspective are chlorophyll concentration and suspended sediment concentration, and these are also strongly linked to bathing and drinking water quality for human use (see supplementary for further details).
+From an ecological perspective, the term "water quality" refers to the status of the most important abiotic and biotic properties of the water column in a given time and location. The most important water quality parameters from a habitat management perspective are chlorophyll concentration and suspended sediment concentration, and these are also strongly linked to bathing and drinking water quality for human use (see [supplementary](doc/Ulyssys_Water_Quality_Viewer_supplementary_v1.0.pdf) for further details).
 Chlorophyll concentration is a proxy for the amount of algae and therefore of energy and biomass input into the aquatic food web via photosynthesis. Since algae growth is often limited by the availability of nutrients, high chlorophyll concentrations are frequently a result of pollution from communal sewage or agricultural runoff.
 Suspended sediment can originate from currents or waves moving the sediment up from the bottom of the water (called resuspension), or from tributary rivers that carry sediment as they flow. The amount of sediment in the water column also depends strongly on grain size: fine-grained sediment can be picked up by slow currents and takes long to settle down again, while larger grained sediment is only moved by very strong currents and settles very quickly.
 
 ### Technical background
 
 The script uses pre-existing and relatively widely tested algorithms for masking and visualization. Water surfaces are masked by NDWI thresholding, (McFeeters 1996), and two existing cloud mask scripts in the Sentinel Hub repository are integrated, `hol` and `bcy` (Hollstein 2015; Cohen, Braaten and Young 2016). For suspended sediment, we use simple intensities of a single band near 700 nm or 620 nm (Nechad 2010, Sentinel 3 user guide).
-For chlorophyll concentration, various indices area available, all based on the reflectance line height (RLH) algorithm. RLH involves calculating the difference ("height") of reflectance in one spectral band compared to a baseline calculated by linear interpolation between the values of two other bands (Yacobi 1995). Two specific spectral bands have been identified where chlorophyll flourescence produces a peak, at 685 nm and at 709 nm, and by calculating a RLH compared to the neighbouring bands defines two spectral indices, named Fluorescence Line Height (FLH) (Gitelson 1994) and Maximum Chlorophyll Index (MCI) respectively for studies with the MERIS satellite sensor (Gower 2005). Both of these indices can be calculated for Sentinel-3 data, and it has been shown that `flh` is more suitable for low chlorophyll concentrations while `mci` performs better for high chlorophyll concentrations. However, Sentinel-2 does not have a spectral band at 700 nm, so FLH cannot be used, but Band 05 at 705 nm is suitable for calculating `mci`. Additionally, for the sake of continuity we provide two RLH-based indices that were part of the functionality of Global Lake Watch (Zlinszky Supan Koma 2017), under the name `rlh`. These are both modified versions of the MCI with different baseline bands that we believe could be less sensitive to chlorophyll (Schalles 1998). Please see the References section for full citations and the supplementary material for full discussion of the methods selected.
+For chlorophyll concentration, various indices area available, all based on the reflectance line height (RLH) algorithm. RLH involves calculating the difference ("height") of reflectance in one spectral band compared to a baseline calculated by linear interpolation between the values of two other bands (Yacobi 1995). Two specific spectral bands have been identified where chlorophyll flourescence produces a peak, at 685 nm and at 709 nm, and by calculating a RLH compared to the neighbouring bands defines two spectral indices, named Fluorescence Line Height (FLH) (Gitelson 1994) and Maximum Chlorophyll Index (MCI) respectively for studies with the MERIS satellite sensor (Gower 2005). Both of these indices can be calculated for Sentinel-3 data, and it has been shown that `flh` is more suitable for low chlorophyll concentrations while `mci` performs better for high chlorophyll concentrations. However, Sentinel-2 does not have a spectral band at 700 nm, so FLH cannot be used, but Band 05 at 705 nm is suitable for calculating `mci`. Additionally, for the sake of continuity we provide two RLH-based indices that were part of the functionality of Global Lake Watch (Zlinszky Supan Koma 2017), under the name `rlh`. These are both modified versions of the MCI with different baseline bands that we believe could be less sensitive to chlorophyll (Schalles 1998). Please see the References section for full citations and the [supplementary material](doc/Ulyssys_Water_Quality_Viewer_supplementary_v1.0.pdf) for full discussion of the methods selected.
 
 ### Limitations and typical problems
 
