@@ -6,9 +6,11 @@
 
 [Show](src/script.js) unminified script (for debugging purposes).
 
-| Timelapse of Lake Balaton, 2019.           |
-|:-------------:|
-|!['Timelapse of 2019'](fig/gif/Sentinel-2-3_2019_jan_dec_balaton_with_closeup.gif)
+!['Timelapse of 2019'](fig/gif/Sentinel-2-3_2019_jan_dec_balaton_with_closeup.gif)
+
+[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.7587&lng=17.3728&zoom=12&time=2019-02-27&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
+[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.8795&lng=17.7214&zoom=10&time=2019-09-05&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
+
 ## Evaluate and visualize
 
 1. Visit one of the following example sites or find your own area of interest:
@@ -31,9 +33,6 @@
 2. Interpret what you see
 3. Modify the values in the `PARAMS` object according to your needs (for possible values see `Understanding and fine tuning PARAMS`)
 4. Hit `Refresh` after modifying any of the properties !['Refresh'](assets/refresh_button.png)
-
-[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.7587&lng=17.3728&zoom=12&time=2019-02-27&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
-[//]: # (https://apps.sentinel-hub.com/eo-browser/?lat=46.8795&lng=17.7214&zoom=10&time=2019-09-05&preset=1_TRUE_COLOR&datasource=Sentinel-2%20L1C)
 
 ## Description of the script
 
