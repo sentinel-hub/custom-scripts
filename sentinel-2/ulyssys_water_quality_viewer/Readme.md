@@ -172,6 +172,10 @@ András Zlinszky PhD ([@azlinszky](https://twitter.com/azlinszky)) and Gergely P
 
 ### How to cite
 
+In order to make this script fully citeable, we obtained a doi via [preprints.org](https://www.preprints.org/) and uploaded the supplementary document as a technical note, available under [this link.](https://www.preprints.org/manuscript/202001.0386/v1)
+
+In a document bibliography, please use the following citation:
+
 Zlinszky, A.; Padányi-Gulyás, G. Ulyssys Water Quality Viewer Technical Description Supplementary. Preprints 2020, 2020010386 (doi: 10.20944/preprints202001.0386.v1).
 
 <img src="assets/ulyssys_logo.png" width="250"/>
