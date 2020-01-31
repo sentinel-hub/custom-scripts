@@ -170,6 +170,10 @@ If you want to include another water quality algorithm or make other major chang
 
 András Zlinszky PhD ([@azlinszky](https://twitter.com/azlinszky)) and Gergely Padányi-Gulyás ([@fegyi001](https://twitter.com/fegyi001)) at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
 
+### How to cite
+
+ Zlinszky, A.; Padányi-Gulyás, G. Ulyssys Water Quality Viewer Technical Description Supplementary. Preprints 2020, 2020010386 (doi: 10.20944/preprints202001.0386.v1).
+
 <img src="assets/ulyssys_logo.png" width="250"/>
 
 ## Description of representative images
