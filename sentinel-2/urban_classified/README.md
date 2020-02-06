@@ -7,9 +7,6 @@
 {% endhighlight %}
 </div>
 
-## Author of the script
-Monja Šebela
-
 ## General description of the script
 
 The script uses the NDWI, NDVI, [BarrenSoil](https://custom-scripts.sentinel-hub.com/sentinel-2/barren_soil/){:target="_blank"} and B11 to differntiate between water, built up areas, barren areas and vegetated areas. In the script, water is colored blue, vegetation green, built up areas white, barren soil brown and all other pixels dark green. 
@@ -18,7 +15,7 @@ The script does a good job (although not perfect) at separating barren soil from
 
 ## Examples 
 
-###Tamara###
+### Tamara
 
 Urban Classified script (right) in Tamara, Morocco. This example showcases the usefulness of the script in differentiating bare ground from buildings. 
 
@@ -26,14 +23,21 @@ Urban Classified script (right) in Tamara, Morocco. This example showcases the u
 
 ![Tamara](fig/fig1.jpg)
 
-###Baltimore###
+### Baltimore
+
 Urban Classified script (right) in Baltimore, USA. This example showcases the shortcomings of the script in differentiating buildings from vegetation in suburbs of Baltimore. 
 
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=39.3064&lng=-76.6193&zoom=12&time=2019-09-08&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=39.3064&lng=-76.6193&zoom=12&time=2019-09-08&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"} 
+ 
 ![Baltimore](fig/fig2.jpg)
 
-###Taizhou###
+### Taizhou
+
 Urban Classified script (right) in Taizhou, China. 
 
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=32.4481&lng=119.9824&zoom=11&time=2019-12-30&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
+ 
 ![Taizhou](fig/fig3.jpg)
+
+## Author of the script
+Monja Šebela
