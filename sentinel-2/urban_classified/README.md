@@ -1,4 +1,4 @@
-# Burned Area Visualization 
+# Urban Classified Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
@@ -7,30 +7,33 @@
 {% endhighlight %}
 </div>
 
-## Evaluate and visualize
-
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-21.9126&lng=116.6697&zoom=12&time=2019-01-05&preset=BURNED-AREAS-DETECTION&datasource=Sentinel-2%20L2A%20-%20wildfires){:target="_blank"}  
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-23.6580&lng=129.8370&zoom=12&time=2019-01-02&preset=BURNED-AREAS-DETECTION&datasource=Sentinel-2%20L2A%20-%20wildfires){:target="_blank"} 
-
 ## Author of the script
 Monja Šebela
 
 ## General description of the script
 
-The script was developed to be used in the EO Browser wildfires theme. It uses the normalized difference vegetation index (NDVI), normalized difference moisture index (NDMI) and a custom index using bands 12, 11 and 8 to detect burned areas. SWIR bands 11 and 12 detect heat. They have low reflectance values where land was recently burned (and has already cooled), and high reflectance values where the heat is still high. They were used in a normalized difference SWIR index. As band 8 also has low reflectance values in recently burned areas, it is added to the index to increase its accuracy. Pixel values that have either high index values, dense vegetation or high moisture, are not burned and are returned in natural colors. All other pixels are considered burned and are returned in red. The script does well ar detecting burned areas and covers burned land well in most cases. The script is not perfect, as it sometimes fails to completely cover the burned area or overestimates them. It is however useful for detecting burned areas nonetheless, as it consistently detects large scale recently burned areas. 
+The script uses the NDWI, NDVI, [BarrenSoil](https://custom-scripts.sentinel-hub.com/sentinel-2/barren_soil/){:target="_blank"} and B11 to differntiate between water, built up areas, barren areas and vegetated areas. In the script, water is colored blue, vegetation green, built up areas white, barren soil brown and all other pixels dark green. 
+All pixels with NDWI values greater than 0.2 are considered to be water; all other pixels with B11 values greater than 0.8 OR NDVI values lower than 0.1 to be built up; all other pixels with NDVI values greater than 0.2 to be vegetation (returnint NDVI in the green channel) and all other pixels to be barren soil or else (returnint BareSoil index in the red channel and dark green in the green channel.). 
+The script does a good job (although not perfect) at separating barren soil from buildings, which is often an issuewith urban scripts. It is thus most valuable in arid regions, where most other visualizations fail to distinguish buildings from the surrounding sand or soil. The script fails at differentiating between buildings and vegetation in dense alternating between houses and yards in for example, suburbs of Baltimore. 
 
-## Description of the representative images
+## Examples 
 
-Burned area (right) during the Australian wildfires in january 2019. Image acquired on 5.1.2019, processed by Sentinel Hub. 
-![Australia wildfires](fig/fig1.jpg)
+###Tamara###
 
-Burned area (right) during the Australian wildfires in january 2019. Image acquired on 2.1.2019, processed by Sentinel Hub. 
-![Australia wildfires2](fig/fig2.jpg)
+Urban Classified script (right) in Tamara, Morocco. This example showcases the usefulness of the script in differentiating bare ground from buildings. 
 
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=33.8610&lng=-6.9688&zoom=12&time=2019-08-15&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
 
+![Tamara](fig/fig1.jpg)
 
+###Baltimore###
+Urban Classified script (right) in Baltimore, USA. This example showcases the shortcomings of the script in differentiating buildings from vegetation in suburbs of Baltimore. 
 
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=39.3064&lng=-76.6193&zoom=12&time=2019-09-08&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
+![Baltimore](fig/fig2.jpg)
 
+###Taizhou###
+Urban Classified script (right) in Taizhou, China. 
 
-
-
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=32.4481&lng=119.9824&zoom=11&time=2019-12-30&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
+![Taizhou](fig/fig3.jpg)
