@@ -22,12 +22,14 @@ The combination of the NIR with the SWIR removes variations induced by leaf inte
 The amount of water available in the internal leaf structure largely controls the spectral reflectance in the SWIR interval of the electromagnetic spectrum. 
 SWIR reflectance is therefore negatively related to leaf water content. NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR) reflectance’s:
 
-###Option 1###
-Used to monitor changes in water content of leaves, [proposed by Gao](http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf){:target="_blank"}
+### Option 1 ###
+Used to monitor changes in water content of leaves, [proposed by Gao.](http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf){:target="_blank"}
+
 **NDWI = (B08 - B11) / (B08 + B11)**
 
-###Option 2###
+### Option 2 ###
 Used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996).
+
 **NDWI = (B03 - B08) / (B03 + B08)**
 
 
