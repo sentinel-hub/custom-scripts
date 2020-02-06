@@ -97,7 +97,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [burned area index for sentinel-2](sentinel-2/bais2)
  - [Multitemporal burnt area analysis](sentinel-2/burned_area)
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
-
+ - [Burned Area Visualization](sentinel-2/burned_area_ms)
+ 
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
@@ -118,7 +119,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Green city](sentinel-2/green_city)
  - [City highlights](sentinel-2/city_highlights)
  - [Urban land infrared color](sentinel-2/urban_land_infrared)
-
+ - [Urban classified](sentinel-2/urban_classified)
+ 
 #### Other multi-temporal scripts
  - [Monthly composite](sentinel-2/monthly_composite)
 
