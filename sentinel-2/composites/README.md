@@ -1,12 +1,5 @@
 # Simple RGB Composites (Sentinel-2)
 
-<a href="#" id='togglescript'>Show</a> script or [download](deep_moist_convection.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
-{% highlight javascript %}
-      {% include_relative deep_moist_convection.js %}
-{% endhighlight %}
-</div>
-
 ## True Color
 
 ### RGB (4, 3, 2)
