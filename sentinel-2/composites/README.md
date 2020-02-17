@@ -17,6 +17,8 @@ Custom script: ** return [B04, B03, B02];
 
 ![True color sample](fig/fig1.png)
 
+ - [Reference](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/definitions)
+
 ## False Color
 
 ### RGB (8,4,3)
@@ -28,6 +30,8 @@ Custom script: ** return [B08, B04, B03];
 
 ![False color sample](fig/fig2.png)
 
+ - [Reference](https://earthobservatory.nasa.gov/features/FalseColor/page6.php)
+
 ## SWIR
 
 ### RGB (12,8,4)
@@ -38,6 +42,9 @@ Custom script: ** return [B12, B08, B04];
 
 ![SWIR sample](fig/fig3.png)
 
+ - [Reference 1](https://earthobservatory.nasa.gov/features/FalseColor/page5.php)
+ - [Refreence 2](https://gisgeography.com/sentinel-2-bands-combinations/)
+
 ## Agriculture
 
 ### RGB (11,8,2)
@@ -47,6 +54,9 @@ This composite, often called the Agriculture RGB composite, uses bands SWIR-1 (B
 Custom script: ** return [B11, B08, B02];
 
 ![Agriculture sample](fig/fig4.png)
+
+ - [Reference 1](https://earthobservatory.nasa.gov/features/FalseColor/page5.php)
+ - [Refreence 2](https://gisgeography.com/sentinel-2-bands-combinations/)
 
 ## Geology
 
