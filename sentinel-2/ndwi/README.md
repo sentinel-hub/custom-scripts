@@ -13,6 +13,8 @@
 
 ## General description of the script
 
+The NDWI is useful for water body mapping, as water bodies strongly absorb light in visible to infrared electromagnetic spectrum. NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies.
+
 Normalized Difference Water Index (NDWI) may refer to one of at least two remote sensing-derived indexes related to liquid water:
 
 One is used to monitor changes in water content of leaves, using near-infrared (NIR) and short-wave infrared (SWIR) wavelengths, proposed by Gao in 1996.
@@ -22,6 +24,8 @@ One is used to monitor changes in water content of leaves, using near-infrared (
 Another is used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996).
 
 **NDWI = (B03 - B08) / (B03 + B08)**
+
+Values description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas to values between zero and 0.2.
 
 ## Description of representative images
 

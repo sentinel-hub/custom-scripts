@@ -13,9 +13,9 @@
 
 ## General description of the script
 
-The SIPI index maximizes sensitivity to the ratio of bulk carotenoids to chlorophyll while minimizing the impact of the variable canopy structure. It is very useful in areas with high variability in the canopy structure, or leaf area index..
+The SIPI index maximizes sensitivity to the bulk carotenoids to chlorophyll ratio, while minimizing the impact of the variable canopy structure. It is very useful in areas with high variability in the canopy structure, or leaf area index..
 
-Values description: The range of a SIPI is from 0 to 2, where healthy green vegetation is from 0.8 to 1.8.
+Values description: SIPI values range from 0 to 2, where healthy green vegetation ranges from 0.8 to 1.8.
 
 ## Description of representative images
 

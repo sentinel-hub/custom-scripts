@@ -13,9 +13,10 @@
 
 ## General description of the script
 
-To detect burned areas, the NBR-RAW index is the most appropriate choice. It highlights burned areas in large fire zones greater than 500 acres. Create pre- and post-fire NBR images, subtract the post-fire image from the pre-fire image to create a differenced (or delta) NBR image that indicates burn severity.
+To detect burned areas, the NBR-RAW index is the most appropriate choice. Using bands 8 and 12 it highlights burnt areas in large fire zones greater than 500 acres. To observe burn severity, you may subtract the post-fire NBR image from the pre-fire NBR image.
 
 Values description: Darker pixels indicate burned areas.
+
 
 **NBR = (B08 - B12) / (B08 + B12)**
 
