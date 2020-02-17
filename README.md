@@ -40,6 +40,8 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 ## <a name="sentinel-2"></a>Sentinel-2
 Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
 
+ - [Simple RGB composites](sentinel-2/composites)
+
 #### Popular RGB composites
  - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
  - [True color](sentinel-2/true_color) simplistic true color image from red, green and blue bands.
