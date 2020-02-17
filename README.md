@@ -131,13 +131,15 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 
 Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small launchers including VEGA and ROCKOT. The main objective of the mission is to measure sea surface topography, sea and land surface temperature, and ocean and land surface color with high accuracy and reliability to support ocean forecasting systems, environmental monitoring and climate monitoring. Ocean and Land Colour Instrument (OLCI) provides a set of 21 bands ranging from the visible to the near infrared light (400 nm < λ< 1 020 nm). The Sentinel-3 provides imagery in 300 m spatial resolution. Sentinel-3 OLCI instrument ensures continuity of the ENVISAT MERIS.
 
+ - [Simple RGB composites](sentinel-3/composites)
+
 #### Enhanced true color scripts
  - [Enhanced true color](sentinel-3/enhanced_true_color)
  - [Enhanced true color-2](sentinel-3/enhanced_true_color-2)
+ - [Tristimulus](Sentinel-3/tristimulus)
  
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
-
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
@@ -147,7 +149,8 @@ Sentinel-5P provides atmospheric measurements, relating to air quality, climate 
  - [Nitrogen Dioxide tropospheric column](sentinel-5p/nitrogen_dioxide_tropospheric_column)
 
 
-## <a name="landsat-8"></a>Landsat-8
+
+## <a name="landsat-8"></a>Landsat 8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
 
 #### Remote sensing indices
@@ -156,6 +159,14 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
+
+## <a name="landsat-8"></a>Landsat 5 and 7
+
+Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar orbits, flying at an altitude of 705 km (438 mi). Landsat 5 long outlived its original three-year design life. Developed by NASA and launched in 1984, Landsat 5 has orbited the planet over 150,000 times while transmitting over 2.5 million images of land surface conditions around the world. The Landsat 7 satellite still orbits the the Earth in a sun-synchronous, near-polar orbit, at an altitude of 705 km (438 mi). The satellites are multispectra, providing visible, near infrared, mid infrared and thermal bands. 
+
+For more on Landsat 5, including its available bands, read [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"} and for Landsat 7, read [here.](https://www.usgs.gov/land-resources/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"}. 
+
+
 
 
 ## <a name="modis"></a>MODIS

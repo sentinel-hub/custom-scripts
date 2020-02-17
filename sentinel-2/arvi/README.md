@@ -12,7 +12,7 @@
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.3641&lng=12.1880&zoom=10&time=2017-10-08&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8KLy8gQXRtb3NwaGVyaWNhbGx5IFJlc2lzdGFudCBWZWdldGF0aW9uIEluZGV4ICAgKGFiYnJ2LiBBUlZJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6IChOSVIgLSBSRUQgLSB5ICogKFJFRCAtIEJMVUUpKS8gKE5JUiArIFJFRCAtIHkqKFJFRC1CTFVFKSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD00Ci8vCgovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKbGV0IHkgPSAwLjEwNjsKbGV0IGluZGV4ID0gKEIwOSAtIEIwNCAtIHkgKiAoQjA0IC0gQjAyKSkgLyAoQjA5ICsgQjA0IC0geSAqIChCMDQgLSBCMDIpKTsKCnJldHVybltpbmRleF07){:target="_blank"}
 ## General description of the script
 
-The ARVI is most useful in regions of high atmospheric aerosol content. It works by using reflectance measurements in the blue wavelengths to correct for atmospheric scattering effects that register in the red reflectance spectrum..
+ARVI is most useful in regions of high atmospheric aerosol content. It uses blue light reflectance measurements to correct for the atmospheric scattering effects, that also influence reflectance of red light.
 
 General formula: 
 
@@ -25,5 +25,6 @@ Values description: The range for an ARVI is -1 to 1 where green vegetation gene
 The ARVI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
 
 ![ARVI](fig/fig1.png)
+
 
 

@@ -13,9 +13,10 @@
 
 ## General description of the script
 
-In areas of dense canopy where the leaf area index (LAI) is high, the NDVI values can be improved by leveraging information in the blue wavelength. Information in this portion of the spectrum can help correct for soil background signals and atmospheric influences.
+In areas of dense canopy cover, where leaf area index (LAI) is high, the blue wavelengths can be used to improve the accuracy of NDVI, as it corrects for soil background signals and atmospheric influences.
 
-Values description: The range of values for the EVI is -1 to 1, where healthy vegetation generally falls between values of 0.20 to 0.80.
+Values description: The range of values for EVI is -1 to 1, with healthy vegetation generally around 0.20 to 0.80.
+
 
 ## Description of representative images
 
