@@ -9,6 +9,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-2](#sentinel-2)
   - [Sentinel-3](#sentinel-3)
   - [Sentinel-5P](#sentinel-5P)
+  - [Landsat 5 and 7](#landsat-57)
   - [Landsat-8](#landsat-8)
   - [MODIS](#modis)
 
@@ -38,8 +39,9 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
  
 
 ## <a name="sentinel-2"></a>Sentinel-2
-Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
+Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*. 
 
+ - [Sentinel-2 bands](sentinel-2/bands)
  - [Simple RGB composites](sentinel-2/composites)
 
 #### Popular RGB composites
@@ -81,7 +83,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
-
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -101,7 +103,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
  - [Burned Area Visualization](sentinel-2/burned_area_ms)
  
-
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
@@ -116,6 +117,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Marine environment algorithms
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
@@ -126,20 +128,21 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Other multi-temporal scripts
  - [Monthly composite](sentinel-2/monthly_composite)
 
-
-## <a name="sentinel-3"></a>Sentinel-3
+## <a name="sentinel-3"></a>Sentinel-3 OLCI
 
 Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small launchers including VEGA and ROCKOT. The main objective of the mission is to measure sea surface topography, sea and land surface temperature, and ocean and land surface color with high accuracy and reliability to support ocean forecasting systems, environmental monitoring and climate monitoring. Ocean and Land Colour Instrument (OLCI) provides a set of 21 bands ranging from the visible to the near infrared light (400 nm < λ< 1 020 nm). The Sentinel-3 provides imagery in 300 m spatial resolution. Sentinel-3 OLCI instrument ensures continuity of the ENVISAT MERIS.
 
+ - [Sentinel-3 OLCI bands](sentinel-3/bands)
  - [Simple RGB composites](sentinel-3/composites)
 
 #### Enhanced true color scripts
  - [Enhanced true color](sentinel-3/enhanced_true_color)
  - [Enhanced true color-2](sentinel-3/enhanced_true_color-2)
- - [Tristimulus](Sentinel-3/tristimulus)
+ - [Tristimulus](sentinel-3/tristimulus)
  
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
+ - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
@@ -148,36 +151,39 @@ Sentinel-5P provides atmospheric measurements, relating to air quality, climate 
 #### Available scripts
  - [Nitrogen Dioxide tropospheric column](sentinel-5p/nitrogen_dioxide_tropospheric_column)
 
-
-
 ## <a name="landsat-8"></a>Landsat 8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
+
+ - [Landsat 8 bands](landsat-8/bands)
+ - [Simple RGB composites](landsat-8/composites)
 
 #### Remote sensing indices
   - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
   - [Build-up index](landsat-8/built_up_index)
+  - [NDVI](landsat-8/ndvi)
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
 
 ## <a name="landsat-57"></a>Landsat 5 and 7
 
-Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar orbits, flying at an altitude of 705 km (438 mi). Landsat 5 long outlived its original three-year design life. Developed by NASA and launched in 1984, Landsat 5 has orbited the planet over 150,000 times while transmitting over 2.5 million images of land surface conditions around the world. The Landsat 7 satellite still orbits the the Earth in a sun-synchronous, near-polar orbit, at an altitude of 705 km (438 mi). The satellites are multispectra, providing visible, near infrared, mid infrared and thermal bands. 
+Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar orbits, flying at an altitude of 705 km (438 mi). Landsat 5 long outlived its original three-year design life. Developed by NASA and launched in 1984, Landsat 5 has orbited the planet over 150,000 times while transmitting over 2.5 million images land surface images around the world. The Landsat 7 satellite still orbits the the Earth in a sun-synchronous, near-polar orbit, at an altitude of 705 km (438 mi). The satellites are multispectra, providing visible, near infrared, mid infrared and thermal bands. 
 
 For more on Landsat 5, including its available bands, read [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"} and for Landsat 7, read [here.](https://www.usgs.gov/land-resources/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"}. 
 
+ - [Landsat 5 and 7 bands](landsat-57/bands)
  - [Simple RGB composites](landsat-57/composites)
-
+ 
 ## <a name="modis"></a>MODIS
 The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.
+
+  - [MODIS bands](modis/bands)
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
 
-
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.  
-
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
