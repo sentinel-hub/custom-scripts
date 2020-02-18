@@ -172,8 +172,8 @@ Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar
 
 For more on Landsat 5, including its available bands, read [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"} and for Landsat 7, read [here.](https://www.usgs.gov/land-resources/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"}. 
 
-- [Landsat 5 and 7 bands](landsat-57/bands)
-- [Simple RGB composites](landsat-57/composites)
+- [Landsat 5 and 7 bands](Landsat-57/bands)
+- [Simple RGB composites](Landsat-57/composites)
  
 ## <a name="modis"></a>MODIS
 The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.
