@@ -13,7 +13,7 @@ Source:
 
 Use: Aerosol correction, improved water constituent retrieval.
 
-Custom script: ** return [B01];**
+Custom script: **return [B01];**
 
 ![B1](fig/fig1.jpg)
 
@@ -27,7 +27,7 @@ Custom script: ** return [B01];**
 
 Use: Yellow substance and detrital pigments (turbidity). 
 
-Custom script: ** return [B02];**
+Custom script: **return [B02];**
 
 ![B2](fig/fig2.jpg)
 
@@ -41,7 +41,7 @@ Custom script: ** return [B02];**
 
 Use: Chl absorption max., biogeochemistry, vegetation.
 
-Custom script: ** return [B03];**
+Custom script: **return [B03];**
 
 ![B3](fig/fig3.jpg)
 
@@ -55,7 +55,7 @@ Custom script: ** return [B03];**
 
 Use: High Chl, other pigments.
 
-Custom script: ** return [B04];**
+Custom script: **return [B04];**
 
 ![B4](fig/fig4.jpg)
 
@@ -69,7 +69,7 @@ Custom script: ** return [B04];**
 
 Use: Chl, sediment, turbidity, red tide.
 
-Custom script: ** return [B05];**
+Custom script: **return [B05];**
 
 ![B5](fig/fig5.jpg)
 
@@ -83,7 +83,7 @@ Custom script: ** return [B05];**
 
 Use: Chlorophyll reference (Chl minimum).
 
-Custom script: ** return [B06];**
+Custom script: **return [B06];**
 
 ![B6](fig/fig6.jpg)
 
@@ -97,7 +97,7 @@ Custom script: ** return [B06];**
 
 Use: Sediment loading.
 
-Custom script: ** return [B07];**
+Custom script: **return [B07];**
 
 ![B7](fig/fig7.jpg)
 
@@ -111,7 +111,7 @@ Custom script: ** return [B07];**
 
 Use: Chl (2nd Chl abs. max.), sediment, yellow substance/vegetation.
 
-Custom script: ** return [B08];**
+Custom script: **return [B08];**
 
 ## Band 9
 
@@ -123,7 +123,7 @@ Custom script: ** return [B08];**
 
 Use: For improved fluorescence retrieval and to better account for smile together with the bands 665 and 680 nm.
 
-Custom script: ** return [B09];**
+Custom script: **return [B09];**
 
 ![B09](fig/fig9.jpg)
 
@@ -137,7 +137,7 @@ Custom script: ** return [B09];**
 
 Use: Chl fluorescence peak, red edge.
 
-Custom script: ** return [B10];**
+Custom script: **return [B10];**
 
 ![B10](fig/fig10.jpg)
 
@@ -152,7 +152,7 @@ Custom script: ** return [B10];**
 
 Use: Chl fluorescence baseline, red edge transition.
 
-Custom script: ** return [B11];**
+Custom script: **return [B11];**
 
 ![B11](fig/fig11.jpg)
 
@@ -166,7 +166,7 @@ Custom script: ** return [B11];**
 
 Use: O2 absorption/clouds, vegetation.
 
-Custom script: ** return [B12];**
+Custom script: **return [B12];**
 
 ![B12](fig/fig12.jpg)
 
@@ -180,7 +180,7 @@ Custom script: ** return [B12];**
 
 Use: O2 absorption band/aerosol corr.
 
-Custom script: ** return [B13];**
+Custom script: **return [B13];**
 
 ![B13](fig/fig13.jpg)
 
@@ -194,7 +194,7 @@ Custom script: ** return [B13];**
 
 Use: Atmospheric correction.
 
-Custom script: ** return [B14];**
+Custom script: **return [B14];**
 
 ![B14](fig/fig14.jpg)
 
@@ -208,7 +208,7 @@ Custom script: ** return [B14];**
 
 Use: O2A used for cloud top pressure, fluorescence over land.
 
-Custom script: ** return [B15];**
+Custom script: **return [B15];**
 
 ![B15](fig/fig15.jpg)
 
@@ -222,7 +222,7 @@ Custom script: ** return [B15];**
 
 Use: Atmospheric correction /aerosol correction.
 
-Custom script: ** return [B16];**
+Custom script: **return [B16];**
 
 ![B16](fig/fig16.jpg)
 
@@ -236,7 +236,7 @@ Custom script: ** return [B16];**
 
 Use: Atmospheric correction / aerosol correction, clouds, pixel co-registration.
 
-Custom script: ** return [B17];**
+Custom script: **return [B17];**
 
 ![B17](fig/fig17.jpg)
 
@@ -250,7 +250,7 @@ Custom script: ** return [B17];**
 
 Use: Water vapour absorption reference band. Common reference band with SLSTR instrument. Vegetation monitoring.
 
-Custom script: ** return [B18];**
+Custom script: **return [B18];**
 
 ![B18](fig/fig18.jpg)
 
@@ -264,7 +264,7 @@ Custom script: ** return [B18];**
 
 Use: Water vapour absorption/vegetation monitoring (max. reflectance).
 
-Custom script: ** return [B19];**
+Custom script: **return [B19];**
 
 ![B19](fig/fig19.jpg)
 
@@ -278,7 +278,7 @@ Custom script: ** return [B19];**
 
 Use: Water vapour absorption, atmospheric/aerosol correction.
 
-Custom script: ** return [B20];**
+Custom script: **return [B20];**
 
 ![B20](fig/fig20.jpg)
 
@@ -292,7 +292,7 @@ Custom script: ** return [B20];**
 
 Use: Atmospheric/aerosol correction.
 
-Custom script: ** return [B21];**
+Custom script: **return [B21];**
 
 ![B21](fig/fig21.jpg)
 

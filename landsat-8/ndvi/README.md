@@ -18,11 +18,11 @@ The value range of the NDVI is -1 to 1. Negative values of NDVI (values approach
 
 The normalized difference vegetation index, abbreviated NDVI, is calculated using near infrared and red wavelengths. 
 
-** NDVI = (NIR - RED) / (NIR + RED)**
+**NDVI = (NIR - RED) / (NIR + RED)**
 
 For Landsat 8, the NDVI is calculated using NIR band 5 and red band 4: 
 
-** NDVI = (B05 - B04) / (B05 + B04)**
+**NDVI = (B05 - B04) / (B05 + B04)**
 
 ## Description of representative images
 
