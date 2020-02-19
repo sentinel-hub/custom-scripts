@@ -13,7 +13,7 @@
 
 Use: red light, used for Land/Cloud/Aerosols Boundaries
 
-Custom script: ** return [B01];**
+Custom script: **return [B01];**
 
 ![B1](fig/fig1.jpg)
 
@@ -28,7 +28,7 @@ Custom script: ** return [B01];**
 
 Use: Land/Cloud/Aerosols Boundaries
 
-Custom script: ** return [B02];**
+Custom script: **return [B02];**
 
 ![B2](fig/fig2.jpg)
 
@@ -43,7 +43,7 @@ Custom script: ** return [B02];**
 
 Use: blue light, used for Land/Cloud/Aerosols Properties
 
-Custom script: ** return [B03];**
+Custom script: **return [B03];**
 
 ![B3](fig/fig3.jpg)
 
@@ -58,7 +58,7 @@ Custom script: ** return [B03];**
 
 Use: green light, used for Land/Cloud/Aerosols Properties
 
-Custom script: ** return [B04];**
+Custom script: **return [B04];**
 
 ![B4](fig/fig4.jpg)
 
@@ -73,7 +73,7 @@ Custom script: ** return [B04];**
 
 Use: Land/Cloud/Aerosols Properties
 
-Custom script: ** return [B05];**
+Custom script: **return [B05];**
 
 ![B5](fig/fig5.jpg)
 
@@ -88,7 +88,7 @@ Required Signal-to-noise ratio = 275
 
 Use: Land/Cloud/Aerosols Properties
 
-Custom script: ** return [B06];**
+Custom script: **return [B06];**
 
 ![B6](fig/fig6.jpg)
 
@@ -103,6 +103,6 @@ Custom script: ** return [B06];**
 
 Use: Land/Cloud/Aerosols Properties
 
-Custom script: ** return [B07];**
+Custom script: **return [B07];**
 
 ![B7](fig/fig7.jpg)

@@ -9,7 +9,7 @@
 
 Use: scattered by the atmosphere and illuminates material in shadows better than longer wavelengths; penetrates clear water better than other colors; absorbed by chlorophyll, so plants don’t show up very brightly in this band; useful for soil/vegetation discrimination, forest type mapping, and identifying man-made features.
 
-Custom script: ** return [B01];**
+Custom script: **return [B01];**
 
 ![B1](fig/fig1.jpg)
 
@@ -22,7 +22,7 @@ Custom script: ** return [B01];**
 
 Use: penetrates clear water fairly well, gives excellent contrast between clear and turbid (muddy) water; helps find oil on the surface of water, and vegetation (plant life); reflects more green light than any other visible color; man-made features are still visible.
 
-Custom script: ** return [B02];**
+Custom script: **return [B02];**
 
 ![B2](fig/fig2.jpg)
 
@@ -35,7 +35,7 @@ Custom script: ** return [B02];**
 
 Use: limited water penetration; reflects well from dead foliage, but not well from live foliage with chlorophyll; useful for identifying vegetation types, soils, and urban (city and town) features.
 
-Custom script: ** return [B03];**
+Custom script: **return [B03];**
 
 ![B3](fig/fig3.jpg)
 
@@ -48,7 +48,7 @@ Custom script: ** return [B03];**
 
 Use: good for mapping shorelines and biomass content; very good at detecting and analyzing vegetation.
 
-Custom script: ** return [B04];**
+Custom script: **return [B04];**
 
 ![B4](fig/fig4.jpg)
 
@@ -61,7 +61,7 @@ Custom script: ** return [B04];**
 
 Use: limited cloud penetration; provides good contrast between different types of vegetation; useful for measuring the moisture content of soil and vegetation; helps differentiate between snow and clouds.
 
-Custom script: ** return [B05];**
+Custom script: **return [B05];**
 
 ![B5](fig/fig5.jpg)
 
@@ -74,7 +74,7 @@ Custom script: ** return [B05];**
 
 Use: useful to observe temperature and its effects, such as daily and seasonal variations; useful to identify some vegetation density, moisture, and cover type.
 
-Custom script: ** return [B06];**
+Custom script: **return [B06];**
 
 ![B6](fig/fig6.jpg)
 
@@ -87,7 +87,7 @@ Custom script: ** return [B06];**
 
 Use: limited cloud penetration; provides good contrast between different types of vegetation; useful for measuring the moisture content of soil and vegetation; helps differentiate between snow and clouds.
 
-Custom script: ** return [B07];**
+Custom script: **return [B07];**
 
 ![B7](fig/fig7.jpg)
 
@@ -100,7 +100,7 @@ Custom script: ** return [B07];**
 
 Use: The near infrared band is good for mapping shorelines and biomass content, as well as at detecting and analyzing vegetation.
 
-Custom script: ** return [B08];**
+Custom script: **return [B08];**
 
 ![B8](fig/fig8.jpg)
 
