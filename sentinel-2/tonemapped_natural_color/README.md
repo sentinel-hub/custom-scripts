@@ -21,16 +21,20 @@ Resulted images should never have clipped values on bright objects like clouds o
 The script is perfect for complex scenes with vastly varying surfaces like volcanoes with dark volcanic soils, sunlit icecap slopes and smoke clouds. Even allowing creation of multi-seasonal time lapse with changing snow cover without adjusting parameters along the way. Cumulus clouds will look so tasty, you'll want to leave them on your image.
 
 Several tonemapping functions are provided:
+
 0 - Simple Reinhard. C/(1+C) formula applied to each of the channels. May cause slight desaturation.
+
 1 - Luma based Reinhard, applied to luminance only. More accurate representation of colors.
+
 2 - Unhcarted 2 Filmic tonemapping. It's curve has a kind of an S-shape, producing darker shadows. Trying to mimic analog film behavior.
+
 3,4 - tonemapping in ACES color space (Academy Color Encoding System). 
 
 Because different channels have vastly different luminance (blue color being darkest, and green - brightest), they also overflow at different rate, when with growing luminance one channel reached its maximum before others distortions in hue and luminance may occur. Applying tonemapping in ACES color space fixes it by preserving luminance and desaturating very bright values. It is probably an overkill, as changes are subtle, visible only on very bright and saturated colors.
 
 Improved luma based saturation function is also provided.
 
-Parameters:
+**Parameters:**
 
 * tonemapMethod (0-4) - Choose one of tonemapping methods described above
 * debug (true/false) - Paint pixels blue if one of the channels becomes negative after atmospheric correction. Paint pixels red if all three channels are brighter than 1.0 after tonemapping.
@@ -49,19 +53,18 @@ Gregory Ivanov
 ## Description of representative images
 
 1) Shiveluch volcano eruption. Smoke plume lit with low sun.
-2) Uda river delta in April. Patches of green land are seen while Baikal lake is still covered with ice.
-3) Florida keys and beautiful cumulus clouds.
-4) Sun beams and beautiful weather patterns near southern Ireland shore. Date is very close to winter solstice, making sun beams particularly long.
-5) Eastern Bosphorus strait Vladivostok year-around time-lapse.
-
 ![The script example 1](fig/2019-01-03_Sentinel-2A_L1C_Shiveluch_volcano_fallout_and_smoke_plume.png)
 
+2) Uda river delta in April. Patches of green land are seen while Baikal lake is still covered with ice.
 ![The script example 2](fig/2019-04-23_Sentinel-2A_L1C_Uda_river_delta_lake_Baikal.png)
 
+3) Florida keys and beautiful cumulus clouds.
 ![The script example 3](fig/2019-12-12_Sentinel-2A_L1C_Tasty_cumulus_clouds_over_Florida_Keys.png)
 
+4) Sun beams and beautiful weather patterns near southern Ireland shore. Date is very close to winter solstice, making sun beams particularly long.
 ![The script example 4](fig/2019-12-20_Sentinel-2A_L1C_Sun_beams_near_southern_Ireland.png)
 
+5) Eastern Bosphorus strait Vladivostok year-around time-lapse.
 ![The script example 5](fig/Sentinel-2_L1C_Vladivostok_year-around.gif)
 
 ## References
