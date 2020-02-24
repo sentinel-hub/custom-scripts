@@ -1,4 +1,4 @@
-# ARVI
+# Atmospherically Resistant Vegetation Index (ARVI)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
@@ -8,11 +8,23 @@
 </div>
 
 ## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/arvi/script.js){:target="_blank"}    
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/arvi/script.js){:target="_blank"}   
-
+ - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.190118425644556&lng=11.9970703125&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=6&gain=1.0&gamma=1.0&time=2018-05-01%7C2018-11-07&atmFilter=&showDates=false&evalscript=Ly8KLy8gQXRtb3NwaGVyaWNhbGx5IFJlc2lzdGFudCBWZWdldGF0aW9uIEluZGV4ICAgKGFiYnJ2LiBBUlZJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6IChOSVIgLSBSRUQgLSB5ICogKFJFRCAtIEJMVUUpKS8gKE5JUiArIFJFRCAtIHkqKFJFRC1CTFVFKSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD00Ci8vCgovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKbGV0IHkgPSAwLjEwNjsKbGV0IGluZGV4ID0gKEIwOSAtIEIwNCAtIHkgKiAoQjA0IC0gQjAyKSkgLyAoQjA5ICsgQjA0IC0geSAqIChCMDQgLSBCMDIpKTsKCnJldHVybltpbmRleF07){:target="_blank"} 
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.3641&lng=12.1880&zoom=10&time=2017-10-08&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8KLy8gQXRtb3NwaGVyaWNhbGx5IFJlc2lzdGFudCBWZWdldGF0aW9uIEluZGV4ICAgKGFiYnJ2LiBBUlZJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6IChOSVIgLSBSRUQgLSB5ICogKFJFRCAtIEJMVUUpKS8gKE5JUiArIFJFRCAtIHkqKFJFRC1CTFVFKSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD00Ci8vCgovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKbGV0IHkgPSAwLjEwNjsKbGV0IGluZGV4ID0gKEIwOSAtIEIwNCAtIHkgKiAoQjA0IC0gQjAyKSkgLyAoQjA5ICsgQjA0IC0geSAqIChCMDQgLSBCMDIpKTsKCnJldHVybltpbmRleF07){:target="_blank"}
 ## General description of the script
 
-The ARVI is most useful in regions of high atmospheric aerosol content. It works by using reflectance measurements in the blue wavelengths to correct for atmospheric scattering effects that register in the red reflectance spectrum..
+ARVI is most useful in regions of high atmospheric aerosol content. It uses blue light reflectance measurements to correct for the atmospheric scattering effects, that also influence reflectance of red light.
+
+General formula: 
+
+**(NIR - RED - y * (RED - BLUE))/ (NIR + RED - y*(RED-BLUE))**
 
 Values description: The range for an ARVI is -1 to 1 where green vegetation generally falls between values of 0.20 to 0.80.
+
+## Description of representative images
+
+The ARVI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
+
+![ARVI](fig/fig1.png)
+
+
+

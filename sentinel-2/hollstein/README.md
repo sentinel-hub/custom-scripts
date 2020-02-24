@@ -19,6 +19,11 @@ A paper about cloud detection [1], shows a fairly complex classification decisio
 
 The colours correspond to the colours from the article, apart from the colours for clear and shadow, which are made into natural (true) colour from red, green and blue bands.
 
+## Description of representative images
+
+Hollstein cloud detection, Slovenia. Acquired on 9.10.2017.
+
+![Hollstein](fig/fig1.png)
 
 ## References
 

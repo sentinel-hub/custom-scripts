@@ -1,5 +1,13 @@
 # Infrared Agriculture Display Script
 
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
+
+
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=-29.428459541897272&lng=-61.45829200744629&zoom=14&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-09-01%7C2019-03-18&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yIG9mIHRoZSBzY3JpcHQ6IFJvYmVydG8gR2FnbGlhcmRpCiovCgpyZXR1cm4gW0IwNCoyLjUsQjA4KjIuNSxCMDIqMi41XTs%3D){:target="_blank"}    
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-29.41840&lng=-61.45701&zoom=14&time=2019-03-18&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=LyoKQXV0aG9yIG9mIHRoZSBzY3JpcHQ6IFJvYmVydG8gR2FnbGlhcmRpCiovCgpyZXR1cm4gW0IwNCoyLjUsQjA4KjIuNSxCMDIqMi41XTs%3D){:target="_blank"} 

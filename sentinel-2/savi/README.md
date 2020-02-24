@@ -8,9 +8,8 @@
 </div>
 
 ## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/savi/script.js){:target="_blank"}    
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/savi/script.js){:target="_blank"}   
-
+ - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-06-01%7C2019-12-23&atmFilter=&showDates=false&evalscript=Ly8gU29pbCBBZGp1c3RlZCBWZWdldGF0aW9uIEluZGV4ICAoYWJicnYuIFNBVkkpCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgwMG5tIC0gNjcwbm0pIC8gKDgwMG5tICsgNjcwbm0gKyBMKSAqICgxICsgTCkKLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD04NwovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKCmxldCBMID0gMC40Mjg7CmxldCBpbmRleCA9IChCMDggLSBCMDQpIC8gKEIwOCArIEIwNCArIEwpICogKDEuMCArIEwpOwpyZXR1cm5baW5kZXhd&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ndwi/script.js){:target="_blank"}
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=41.9000&lng=12.5000&zoom=10&time=2017-10-08&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8gU29pbCBBZGp1c3RlZCBWZWdldGF0aW9uIEluZGV4ICAoYWJicnYuIFNBVkkpCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgwMG5tIC0gNjcwbm0pIC8gKDgwMG5tICsgNjcwbm0gKyBMKSAqICgxICsgTCkKLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD04NwovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKCmxldCBMID0gMC40Mjg7CmxldCBpbmRleCA9IChCMDggLSBCMDQpIC8gKEIwOCArIEIwNCArIEwpICogKDEuMCArIEwpOwpyZXR1cm5baW5kZXhd){:target="_blank"}
 
 ## General description of the script
 
@@ -18,3 +17,9 @@ Empirically derived NDVI products have been shown to be unstable, varying with s
 
 ## References
 Source: https://en.wikipedia.org/wiki/Soil-adjusted_vegetation_index
+
+## Description of representative images
+
+SAVI, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
+
+![SAVI](fig/fig1.png)
