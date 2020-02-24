@@ -95,6 +95,7 @@ Mohor Gartner
 ## Description of representative images
 
 1) The Gulf of Trieste, Northern Adriatic Sea, Sentinel-2 L1C, 2018-08-09
+
 Input parameters:  MNDWI_thr=0.42, NDWI_thr=0.4, filter_UABS=true, filter_SSI=false, SDBgreen=true, m1=184.362, m0=190.037, nConst=1000
 
 Image is analysed on the basis of Sentinel-2 data source from 9.8.2018. Pre-analysis procedure to obtain m1 and m0 values are described in Supplementary materials. General identification of water surface appropriate. Bathymetry depth is shown with blue ramp color scheme: from bright blue for depths from 0 to 1 meter to dark blue for depths more than 18 meters. Former can be observed more on the north and latter can be observed on the south part of the analysed area. Compared to bathymetry model, more of the open waters should have dark blue color as depth is deeper than 18 meters. Difference can be accounted to definition of m1 and m0 on linear regression of one cross section with 9 locations. As it can be seen for multi-temporal example in VISUALIZATION shared link, open waters have more appropriate color scheme. 
@@ -107,6 +108,7 @@ Some brighter spots can be seen in the water, which are most probably ships. Nor
 ![The Gulf of Trieste, Northern Adriatic Sea](fig/ex1_TheGulfOfTrieste_2018-08-09_S2_custom_script+legend.jpg)
 
 2) West Palm Beach, USA, Sentinel L2A, 2019-12-07
+
 Input parameters:  MNDWI_thr=0.42, NDWI_thr=0.4, filter_UABS=false, filter_SSI=false, SDBgreen=true/false, m1=59.9/6.5, m0=59.1/7, nConst=1000
 
 Image is composed of two scenes. On the top is scene with blue/green ratio and on the bottom is the scene with blue/red ratio. Former is better for depths between 5 to 18 meters and latter is better suited for depths between 0 and 5 meters. Tunable constants m1 and m0 are result of research in an article [1]. Sentinel Hub does not have access to Sentinel L2A data for the scenes on which constants were obtained in the article (7.12.2017). Therefore scene from 7.12.2019 is used in this case. 
@@ -121,18 +123,21 @@ Both scenes have some image noise.
 ![West Palm Beach, USA](fig/ex2_WestPalmBeach-Florida-USA_2019-12-07_Sentinel-2B_L2A_SDBgreen_vs_SDBred+legend.jpg)
 
 3) Tampa Bay, USA, Landsat 8, 2015-02-20
+
 Input parameters:  MNDWI_thr=0.42, NDWI_thr=0.4, filter_UABS=true, filter_SSI=false, SDBgreen=true, m1=-66.05, m0=-65.89, nConst=1
 
 Scene is analysed on a basis of constants m1 and m0 from article [6]. Also image (2015-02-20) is the same, but this script has no pre-processing to correct the image (atmospheric correction-DOS, water reflectance). Nevertheless, bathymetry identification is satisfactory for depths between 5 to 12 meters. Most probably depths identified as from 0 to 1 meter are too low because of blue/green ratio band.
 ![Tampa Bay, USA](fig/ex3_TampaBay-USA_2015-02-20_Landsat8_USGS_Custom_script+legend.jpg)
 
 4) Mobile Bay, USA, Sentinel L1C, 2019-11-19
+
 Input parameters:  MNDWI_thr=0.42, NDWI_thr=0.4, filter_UABS=true, filter_SSI=false, SDBgreen=true, m1=87.722, m0=86.63, nConst=1000
 
 Constants m1 and m0 are based on linear regression analysis for 55 locations on selected cross sections with calculated pSDB from script pre-analysis and online bathymetry [7]. Scene is in the area of Mobile bay in front of Fort Morgan. Even though blue/green ratio is used, shallower depths (0-5 meters) are appropriately identified. Less appropriate is identified depths in more open waters on south, which are underestimated. Parallel to the shoreline there is identified strip from west to east, which it seems is underwater sandbar.
 ![Mobile Bay, USA](fig/ex4_MobileBay_USA_Sentinel-2_L1C_from_2019-11-19+legend.jpg)
 
 5) San Luis Obispo Bay, USA, Sentinel L1C, 2018-02-16
+
 Input parameters:  MNDWI_thr=0.42, NDWI_thr=0.4, filter_UABS=true, filter_SSI=false, SDBgreen=true, m1=242.06, m0=253.02, nConst=1000
 
 Constants m1 and m0 are based on linear regression analysis for 170 locations on selected cross sections with calculated pSDB from script pre-analysis and online bathymetry [7].
