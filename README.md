@@ -31,6 +31,8 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 
 #### Marine environment algorithm
  - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
+ - [Satellite Derived Bathymetry Mapping - SDBM](sentinel-2/satellite_derived_bathymetry_mapping-sdbm)
+ - [SAR-Ice: A Sea Ice RGB Composite](sentinel-1/sar-ice)
 
 #### Other available scripts
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
@@ -82,6 +84,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
+ - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
 
@@ -119,6 +122,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+ - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
