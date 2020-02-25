@@ -55,7 +55,7 @@ RIGHT: Using only NATURAL_SWIR for both land and water: enhances land, but loses
 LEFT: Script highly enhances geology differentiation, while selectively enhancing waterways.
 
 RIGHT: True Color shows not much differentiation in geology itself, and with waterways, all in similar colors.
-![The script example 2](fig/2-bolivia.png.png)
+![The script example 2](fig/2-bolivia.png)
 
 3) Visualization of NAMIBIA, Aussenkehr Farm 2020-01-09
 
