@@ -57,7 +57,7 @@ In general, the colors for each zone are:
 
 [3] [List of spectral indexes for Sentinel and Landsat.](http://www.gisandbeers.com/listado-indices-espectrales-sentinel-landsat/){:target="_blank"} 
 
-[4] Borr‡s, J. & Delegido, Jes˙s & Pezzola, Alejandro & Pereira, M. & Morassi, G. & Camps-Valls, Gustau. (2017). [Clasificación de usos del suelo a partir de imágenes Sentinel-2. Revista de Teledeteccion.](https://www.researchgate.net/publication/317715999_Clasificacion_de_usos_del_suelo_a_partir_de_imagenes_Sentinel-2){:target="_blank"}
+[4] Borras, J. & Delegido, Jes˙s & Pezzola, Alejandro & Pereira, M. & Morassi, G. & Camps-Valls, Gustau. (2017). [Clasificación de usos del suelo a partir de imágenes Sentinel-2. Revista de Teledeteccion.](https://www.researchgate.net/publication/317715999_Clasificacion_de_usos_del_suelo_a_partir_de_imagenes_Sentinel-2){:target="_blank"}
 
 [5] Pirotti, Francesco & Sunar, Filiz & Piragnolo, M.. (2016). [BENCHMARK OF MACHINE LEARNING METHODS FOR CLASSIFICATION OF A SENTINEL-2 IMAGE. ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences.](https://www.researchgate.net/publication/314501156_BENCHMARK_OF_MACHINE_LEARNING_METHODS_FOR_CLASSIFICATION_OF_A_SENTINEL-2_IMAGE){:target="_blank"}
 
