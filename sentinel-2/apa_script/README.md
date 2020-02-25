@@ -46,7 +46,7 @@ The results obtained here are compiled in the [supplementary material](supplemen
 
 ## Author of the script
 
-Anna Péliová, Carla Garcia-Lozano, Josep Sitjar
+Anna Péliova, Carla Garcia-Lozano and Josep Sitjar from Service of Geographical Information Systems and Remote Sensing (SIGTE) of the University of Girona
 
 ## Description of representative images
 

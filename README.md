@@ -37,6 +37,9 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
  - [SAR false color visualization 2](sentinel-1/sar_false_color_visualization-2)
  - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
+
+#### Other multi-temporal scripts
+ - [soil_moisture_estimation](sentinel-1/soil_moisture_estimation)
  
 
 ## <a name="sentinel-2"></a>Sentinel-2
@@ -74,7 +77,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
  - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
- - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
+ - [SAVI](sentinel-2/savi) - soil adjusted vegetation index
+ - [se2waq](sentinel-2/se2waq) 
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index
  - [Leaf chlorophyll content](sentinel-2/cab)
@@ -86,6 +90,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+ - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
 
  
 #### Cloud detection algorithms
@@ -109,6 +114,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
+ - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
 
 #### Agriculture and forestry algorithms
  - [NDVI anomaly detection](sentinel-2/ndvi_anomaly_detection)
@@ -169,6 +175,7 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
+  - [Water In Wetlands Index](landsat-8/wiw_L8_script)
 
 ## <a name="landsat-57"></a>Landsat 5 and 7
 

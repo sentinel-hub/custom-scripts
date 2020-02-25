@@ -81,9 +81,9 @@ In this recipe we look at the following features that can be captured with our c
 
 See also the [supplementary material](supplementary_material.pdf) for details.
 
-## Author of the script
+## Authors of the script
 
-Martin Raspaud
+Martin Raspaud, Mikhail Itkin
 
 ## Description of representative images
 
