@@ -89,9 +89,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script](sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1)
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
- - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
- 
-
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
