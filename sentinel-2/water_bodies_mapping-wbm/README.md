@@ -1,4 +1,4 @@
-# Water Bodies` Mapping - WBM Script
+# Water Bodies' Mapping - WBM Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](water_bodies_mapping-wbm.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
