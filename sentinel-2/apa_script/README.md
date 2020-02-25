@@ -44,7 +44,7 @@ Additionally, the detection of turbid waters can also be used to detect the flow
 
 The results obtained here are compiled in the [supplementary material](supplementary_material.pdf).
 
-## Author of the script
+## Authors of the script
 
 Anna Péliova, Carla Garcia-Lozano and Josep Sitjar from Service of Geographical Information Systems and Remote Sensing (SIGTE) of the University of Girona
 
