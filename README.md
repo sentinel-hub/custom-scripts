@@ -87,6 +87,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
+ - [TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script](sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1)
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
@@ -138,6 +139,10 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  
 #### Other multi-temporal scripts
  - [Monthly composite](sentinel-2/monthly_composite)
+ - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
+
+#### Enhanced scripts
+ - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
 
 ## <a name="sentinel-3"></a>Sentinel-3 OLCI
 
@@ -154,6 +159,9 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+
+#### Other available scripts
+ - [OLCI Natural Colours with Sigmoid](sentinel-3/natural_colors_sigmoid)
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
