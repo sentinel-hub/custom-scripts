@@ -90,7 +90,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
- - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
+ 
 
  
 #### Cloud detection algorithms
@@ -130,6 +130,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Satellite Derived Bathymetry Mapping - SDBM](sentinel-2/satellite_derived_bathymetry_mapping-sdbm)
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
  - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
+ - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
