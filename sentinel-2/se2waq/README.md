@@ -1,4 +1,4 @@
-# Se2WaQ Script
+# Se2WaQ - Sentinel-2 Water Quality Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](se2waq.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
