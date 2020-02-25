@@ -26,7 +26,7 @@ Jérôme LOUIS
 ## Description of representative images
 
 1) The graph shows the shape of the modified sigmoid function for different value of Lambda (steepness of the curve).
-![Figure - Modified function](fig/name1.png)
+![Figure - Modified function](fig/Figure_Modified_Sigmoid.png)
 
 2) The image of California acquired on 24/01/2020 used lambda = 7.
 ![The script example 1](fig/2020-01-24_Sentinel-3_OLCI_Custom_script_California.jpg)
