@@ -78,7 +78,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
  - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index
- - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index
  - [Leaf chlorophyll content](sentinel-2/cab)
@@ -130,6 +129,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
  - [Satellite Derived Bathymetry Mapping - SDBM](sentinel-2/satellite_derived_bathymetry_mapping-sdbm)
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
+ - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
