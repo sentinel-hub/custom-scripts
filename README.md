@@ -39,7 +39,7 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
  - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
 
 #### Other multi-temporal scripts
- - [soil_moisture_estimation](sentinel-1/soil_moisture_estimation)
+ - [Soil Moisture Estimation](sentinel-1/soil_moisture_estimation)
  
 
 ## <a name="sentinel-2"></a>Sentinel-2
