@@ -1,0 +1,55 @@
+# Tracking Radar Vegetation Index (Agriculture Development) Script
+
+<a href="#" id='togglescript'>Show</a> script or [download](sar_rvi_temporal_analysis.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative sar_rvi_temporal_analysis.js %}
+{% endhighlight %}
+</div>
+
+## Evaluate and visualize   
+ - [Sentinel Playground Temporal](https://apps.sentinel-hub.com/sentinel-playground-temporal/?source=S1-AWS-IW-VVVH&lat=46.548944380517646&lng=38.01544189453125&zoom=11&preset=CUSTOM&layers=VV,VV,VV&maxcc=20&gain=1.0&gamma=1.0&time=2017-01-01%7C2019-07-30&atmFilter=ATMCOR&showDates=false&evalscript=ZnVuY3Rpb24gICAgc2V0dXAgKGRzcykgewogIHNldElucHV0Q29tcG9uZW50cyhbZHNzLlZWLGRzcy5WSF0pOwogIHNldE91dHB1dENvbXBvbmVudENvdW50KDMpOwp9CgpmdW5jdGlvbiBjYWxjUlZJKHNhbXBsZSkgewogIHZhciBkZW5vbSA9IHNhbXBsZS5WSCoyK3NhbXBsZS5WVioyOwogIHJldHVybiAoKGRlbm9tIT0wKSA%2FIChzYW1wbGUuVkgqOCkgLyBkZW5vbSA6IDAuMCk7Cn0KZnVuY3Rpb24gIHN0cmV0Y2godmFsLCBtaW4sIG1heCkgIHsKIHJldHVybiAodmFsLW1pbikvKG1heC1taW4pOwp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMsc2NlbmVzKSB7ICAKICB2YXIgYXZnMSA9IDAuMjsKICB2YXIgY291bnQxID0gMDsKICB2YXIgYXZnMiA9IDAuMjsKICB2YXIgY291bnQyID0gMDsKICB2YXIgYXZnMyA9IDAuMjsKICB2YXIgY291bnQzID0gMDsKICB2YXIgZW5kTW9udGggPSBzY2VuZXNbMF0uZGF0ZS5nZXRNb250aCgpOwogIAogIGZvciAodmFyIGk9MDtpPHNhbXBsZXMubGVuZ3RoO2krKykgewogICAgICB2YXIgcnZpICA9IGNhbGNSVkkoc2FtcGxlc1tpXSk7CiAgICAgIGlmIChzY2VuZXNbaV0uZGF0ZS5nZXRNb250aCgpPT1lbmRNb250aCkKICAgICAgewoJCWF2ZzMgPSBhdmczICsgcnZpOwogICAgICAgIGNvdW50MysrOwogICAgICB9CiAgICAgIGVsc2UgaWYgKHNjZW5lc1tpXS5kYXRlLmdldE1vbnRoKCk9PShlbmRNb250aC0xKSkKICAgICAgewoJCWF2ZzIgPSBhdmcyICsgcnZpOwogICAgICAgIGNvdW50MisrOwogICAgICB9CiAgICAgIGVsc2UKICAgICAgeyAgICAgIAoJCWF2ZzE9IGF2ZzEgKyBydmk7CiAgICAgICAgY291bnQxKys7CiAgICAgIH0KICAgICAgCiAgfQogIGF2ZzEgPSBhdmcxL2NvdW50MTsKICBhdmcyID0gYXZnMi9jb3VudDI7CiAgYXZnMyA9IGF2ZzMvY291bnQzOwogIGF2ZzEgPSBzdHJldGNoKGF2ZzEsIDAuMjUsIDAuNzUpOwogIGF2ZzIgPSBzdHJldGNoKGF2ZzIsIDAuMjUsIDAuNzUpOwogIGF2ZzMgPSBzdHJldGNoKGF2ZzMsIDAuMjUsIDAuNzUpOwogIAogIHJldHVybiBbYXZnMSxhdmcyLGF2ZzNdOwoKCn0KZnVuY3Rpb24gZmlsdGVyU2NlbmVzIChzY2VuZXMsIGlucHV0TWV0YWRhdGEpIHsKICAgIHJldHVybiBzY2VuZXMuZmlsdGVyKGZ1bmN0aW9uIChzY2VuZSkgewoJICByZXR1cm4gc2NlbmUuZGF0ZS5nZXRUaW1lKCk%2BPShpbnB1dE1ldGFkYXRhLnRvLmdldFRpbWUoKS0zKjMxKjI0KjM2MDAqMTAwMCkgOwogICAgfSk7Cn0KCg%3D%3D&temporal=true){:target="_blank"} 
+
+
+## General description of the script
+
+The script analyses and compares the RVI values using all available radar images. The script calculates the average RVI for the current and previous 2 months and takes the current image as the reference.
+
+## Details of the script
+
+The script works best in lowland areas during active vegetation periods. In addition to terrain mismatches in highlands, other image distortions are possible, that are probably related to satellite orbit and image acquisition mode changes (also regarding Linear to Db problems?).
+
+Images can be over-saturated during prolonged periods of drought/floods and no vegetation change (mostly winter). Usually best idea is to select the reference date in the end of the month and sometimes the date should be changed to better fit the available images (due to change of orbits and acquisition schemes).
+
+Crop properties and VV/VH radar signal limitations have impact on RVI sensitivity (author's understanding is that soybeans are best targets).
+
+It is definitely beneficial to tinker with the pixel evaluation, and value stretch settings, as well as the time-frame of analysis. 
+
+[Some output images.](https://twitter.com/Valtzen/status/1221548334520905729){:target="_blank"}
+
+## Author of the script
+
+Valters Zeizis
+
+## Description of representative images
+
+In the image you can see agriculture fields around Yeya river, Krasnodar region, Russia.
+
+Under the current settings the images would be colored based on the Change of RV (increase, stable, decrease), so:
+
+* black/dark and white/grey areas are where the index is stable, like water (low RVI) or forests (high RVI)
+* blue/light blue areas indicate increasing crop growth
+* green/yellow areas indicate ripening or ripe crops
+* orange/red areas indicate areas of harvested areas
+
+![The script example](fig/Sentinel-1_(IW-VVVH)_2018-07-31.jpg)
+
+## Credits and references
+
+[1] The script is made using [Sentinel-2 Agricultural growth stage script](https://github.com/hareldunn){:target="_blank"} by Harel Dan and posted on [Twitter](https://twitter.com/sentinel_hub/status/922813457145221121){:target="_blank"}.
+
+[2] Some ideas were also gathered in [SNAP/STEP forums](https://forum.step.esa.int/t/creating-radar-vegetation-index/12444/2){:target="_blank"}.
+
+[3] ResearchGate, [Radar Vegetation Index as an Alternative to NDVI for Monitoring of Soyabean and Cotton](https://www.researchgate.net/publication/267020154_Radar_Vegetation_Index_as_an_Alternative_to_NDVI_for_Monitoring_of_Soyabean_and_Cotton){:target="_blank"}.
+
+[4] MDPI, [Sensitivity of Sentinel-1 Backscatter to Vegetation Dynamics: An Austrian Case Study](https://www.mdpi.com/2072-4292/10/9/1396){:target="_blank"}.
