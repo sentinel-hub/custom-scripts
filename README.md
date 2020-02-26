@@ -21,15 +21,17 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 
 #### Agriculture and forestry algorithms 
  - [SAR for deforestation](sentinel-1/sar_for_deforestation)
+ - [Tracking radar vegetation index](sentinel-1/sar_rvi_temporal_analysis)
 
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
  - [Forest Hurricane](sentinel-1/forest_hurricane)
+ - [Flood mapping](sentinel-1/flood_mapping)
 
 #### Urban planning algorithm
  - [Urban areas](sentinel-1/urban_areas)
 
-#### Marine environment algorithm
+#### Marine and other water bodies environment algorithms
  - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
  - [SAR-Ice: A Sea Ice RGB Composite](sentinel-1/sar-ice)
 
@@ -120,7 +122,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Pseudo forest canopy density (pseudo-FCD)](sentinel-2/pseudo_forest_canopy_density)
  - [Infrared agriculture display](sentinel-2/infrared_agriculture_display)
 
-#### Marine environment algorithms
+#### Marine and other water bodies environment algorithms
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
@@ -139,8 +141,10 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Monthly composite](sentinel-2/monthly_composite)
  - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
 
-#### Enhanced scripts
+#### Other available scripts
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
+ - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
+ - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
 
 ## <a name="sentinel-3"></a>Sentinel-3 OLCI
 
