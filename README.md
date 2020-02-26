@@ -20,10 +20,9 @@ You are invited to publish your own scripts - see [howto](#howto).
 The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. Main applications are for monitoring sea ice, oil spills, marine winds, waves & currents, land-use change, land deformation among others, and to respond to emergencies such as floods and earthquakes. The identical satellites orbit Earth 180° apart and at an altitude of almost 700 km, offering a global revisit time of 6-12 days depending on the area (check observation scenario). Sentinel-1’s radar can operate in four modes. The spatial resolution depends on the mode: approx. 5 m x 20 m for IW mode and approx. 20 m x 40 m for EW mode. See [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-1/) for more details.
 
 #### Agriculture and forestry algorithms 
- - [SAR for deforestation](sentinel-1/sar_for_deforestation)
  - [Tracking radar vegetation index](sentinel-1/sar_rvi_temporal_analysis)
  - [Agricultural crop monitoring from space](sentinel-1/crop_monitoring)
- - [SAR for deforestation detection](sentinel-1/sar_deforestatio_detection)
+ - [SAR for deforestation detection](sentinel-1/sar_deforestation_detection)
 
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
