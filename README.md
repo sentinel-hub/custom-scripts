@@ -78,7 +78,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
  - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index
- - [se2waq](sentinel-2/se2waq) 
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index
  - [Leaf chlorophyll content](sentinel-2/cab)
@@ -90,9 +89,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script](sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1)
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
- - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
- - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
-
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -130,6 +126,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
  - [Satellite Derived Bathymetry Mapping - SDBM](sentinel-2/satellite_derived_bathymetry_mapping-sdbm)
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
+ - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
+ - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
