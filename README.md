@@ -20,8 +20,9 @@ You are invited to publish your own scripts - see [howto](#howto).
 The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. Main applications are for monitoring sea ice, oil spills, marine winds, waves & currents, land-use change, land deformation among others, and to respond to emergencies such as floods and earthquakes. The identical satellites orbit Earth 180° apart and at an altitude of almost 700 km, offering a global revisit time of 6-12 days depending on the area (check observation scenario). Sentinel-1’s radar can operate in four modes. The spatial resolution depends on the mode: approx. 5 m x 20 m for IW mode and approx. 20 m x 40 m for EW mode. See [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-1/) for more details.
 
 #### Agriculture and forestry algorithms 
- - [SAR for deforestation](sentinel-1/sar_for_deforestation)
  - [Tracking radar vegetation index](sentinel-1/sar_rvi_temporal_analysis)
+ - [Agricultural crop monitoring from space](sentinel-1/crop_monitoring)
+ - [SAR for deforestation detection](sentinel-1/sar_deforestation_detection)
 
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
@@ -38,10 +39,12 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 #### Other available scripts
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
  - [SAR false color visualization 2](sentinel-1/sar_false_color_visualization-2)
- - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
+ - [Radar vegetation index for Sentinel-1 - RVI4S1 script](sentinel-1/radar_vegetation_index)
+ - [Radar vegetation index code for dual polarimetric](sentinel-1/radar_vegetation_index_code_dual_polarimetric)
 
 #### Other multi-temporal scripts
- - [Soil Moisture Estimation](sentinel-1/soil_moisture_estimation)
+  - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
+  - [Soil Moisture Estimation](sentinel-1/soil_moisture_estimation)
  
 
 ## <a name="sentinel-2"></a>Sentinel-2
@@ -145,6 +148,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
+ - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
 
 ## <a name="sentinel-3"></a>Sentinel-3 OLCI
 
