@@ -18,7 +18,19 @@ The well known and widely used NDVI is a simple, but effective index for quantif
 The value range of the NDVI is -1 to 1. Negative values of NDVI (values approaching -1) correspond to water. Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1). It is a good proxy for live green vegetation; see [1] for details.
 
 The normalized difference vegetation index, abbreviated NDVI, is defined as   
+
+$$NDVI := \mathtt{Index}(NIR,RED) = \frac{NIR-RED}{NIR+RED}.$$  
+
+For Sentinel-2, the index looks like this:
+
 $$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$   
+
+NDVI composites for other datasets: 
+
+Landsat 8 NDVI = **(B05 - B04) / (B05 + B04)**
+Landsat 5 and 7 NDVI = **(B04 - B03) / (B04 + B03)**
+MODIS NDVI = **(B02 - B01) / (B02 + B01)**
+ENVISAT MERIS NDVI = **(B13 - B07) / (B13 + B07)**
 
 
 ## Description of representative images
