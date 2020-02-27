@@ -28,8 +28,11 @@ $$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$
 NDVI composites for other datasets: 
 
 Landsat 8 NDVI = **(B05 - B04) / (B05 + B04)**
+
 Landsat 5 and 7 NDVI = **(B04 - B03) / (B04 + B03)**
+
 MODIS NDVI = **(B02 - B01) / (B02 + B01)**
+
 ENVISAT MERIS NDVI = **(B13 - B07) / (B13 + B07)**
 
 
