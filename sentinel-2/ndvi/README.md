@@ -25,7 +25,7 @@ For Sentinel-2, the index looks like this:
 
 $$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$   
 
-NDVI composites for other datasets: 
+## NDVI composites for other datasets: 
 
 Landsat 8 NDVI = **(B05 - B04) / (B05 + B04)**
 
