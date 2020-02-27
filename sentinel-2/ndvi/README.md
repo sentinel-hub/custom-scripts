@@ -27,7 +27,7 @@ $$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$
 
 ## NDVI for other datasets: 
 
-Landsat 8 NDVI = **(B05 - B04) / (B05 + B04)**
+[Landsat 8 NDVI](https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/){:target="_blank"} = **(B05 - B04) / (B05 + B04)**
 
 Landsat 5 and 7 NDVI = **(B04 - B03) / (B04 + B03)**
 
