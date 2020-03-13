@@ -13,7 +13,6 @@
 
 ## General description of the script
 
-Describe how your script works, what your script can be used for and explain how it is achieving that. The description can be up to 5000 characters long.
 The script uses the VV and VH bands of the Sentinel-1 and transforms the cartesian space of VV and VH to polar coordinates computing the length and angle of the resulting vector and also the area of the square defined by VV and VH. Then it uses the length of the vector as a classifier to discriminate between water, forest and soil.
 
 The script paints in black the water and bare soil areas, and uses both the length and the angle to draw a scale for the forest (green) and soil (red), drawing a stronger green where more forest has been classified and a stronger red or black where more soil has been found.
