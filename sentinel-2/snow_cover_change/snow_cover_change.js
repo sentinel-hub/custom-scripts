@@ -1,12 +1,22 @@
+//VERSION=3 (auto-converted from 1)
 /*
 Author: Karl Chastko
 */
 
 
-function    setup (dss) {
-  setInputComponents([dss.B03,dss.B11]);
-  setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+          "B03",
+          "B11"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function calcNDSI(sample) {
   ndsi = (sample.B03 - sample.B11)/ (0.01 + sample.B03 + sample.B11);

@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 Script works on Sentinel-2 L2A data and requires scene classification (SCL) band. 
 It takes one year of data, which is quite compute and time intensive, which is why it is recommended to run it on small area (e.g. 256x256 px).
@@ -7,10 +8,19 @@ For the output value for each pixel it uses the first quartile value of valid va
 When using SCL its very important to use nearest neighbor resampling with a resolution of about 20m/px or more. 
 */
 
-function    setup (dss) {
- setInputComponents([dss.B04,dss.B03,dss.B02,dss.SCL]);
- setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B04",
+          "B03",
+          "B02",
+          "SCL"
+      ]
+    }],
+    output: { bands: 3 }  }
 }
+
 function filterScenes (scenes, inputMetadata) {
    return scenes.filter(function (scene) {
      return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000) ;
@@ -59,7 +69,7 @@ function validate (samples) {
  return true;
 }
 
-function evaluatePixel(samples, scenes) {
+function evaluatePixelOrig(samples, scenes) {
  var clo_b02 = [];var clo_b03 = [];
  var clo_b04 = [];var clo_b08 = [];
  var clo_b02_invalid = [];var clo_b03_invalid = [];
@@ -107,4 +117,8 @@ function evaluatePixel(samples, scenes) {
  return [rValue,
          gValue,
          bValue];
+}
+
+function evaluatePixel(sample, scene, metadata, customData, outputMetadata) {
+  return evaluatePixelOrig([sample], [scene], metadata, customData, outputMetadata);
 }

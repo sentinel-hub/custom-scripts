@@ -1,7 +1,4 @@
-/*
-Author: Karasiak Nicolas
-*/
-
+//VERSION=3 (auto-converted from 1)
 // Minimum difference between the two mean NDVIs
 var thresold = 0.25;
 // Thresold to dismiss clouds to calculate the mean
@@ -12,10 +9,23 @@ var minimunNDVI = 0.7;
 var stretchMin = 0;
 var stretchMax = 0.8;
 
-function setup(dss) {
-    setInputComponents([dss.B02, dss.B03, dss.B04, dss.B05, dss.B08, dss.B12]);
-    setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B08",
+          "B12"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function stretch(val, min, max) {
     return (val - min) / (max - min);

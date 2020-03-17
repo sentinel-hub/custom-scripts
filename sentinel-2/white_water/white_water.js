@@ -1,12 +1,28 @@
+//VERSION=3 (auto-converted from 1)
 /*
-Author: Mohor Gartner
+Author: Mohor Gartner (Linkedin: https://www.linkedin.com/in/mohor-gartner/)
 */
 
 // setup values
-function setup(ds) {
-    setInputComponents([ds.B02,ds.B03,ds.B04,ds.B08,ds.B8A,ds.B10,ds.B11,ds.B12]);
-    setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B02",
+          "B03",
+          "B04",
+          "B08",
+          "B8A",
+          "B10",
+          "B11",
+          "B12"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 // change colour if needed
 function colourChange(currC,newC) {
@@ -92,4 +108,10 @@ function evaluatePixel(pix) {
 	if (WW==2) return RGBww2;
 	else if (WW==1) return RGBww1;
 	else return RGB;
+}
+
+function filterScenes(scenes, inputMetadata) {
+    return scenes.filter(scene => (
+		scene.date.getTime() >= new Date("2015-07-01T00:00:00Z") && scene.date.getTime() < new Date("2019-04-17T00:00:00Z") 
+    ));
 }
