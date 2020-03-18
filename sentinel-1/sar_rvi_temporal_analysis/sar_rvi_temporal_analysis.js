@@ -1,7 +1,17 @@
-function    setup (dss) {
-  setInputComponents([dss.VV,dss.VH]);
-  setOutputComponentCount(3);
+//VERSION=3 (auto-converted from 1)
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "VV",
+          "VH"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function calcRVI(sample) {
   var denom = sample.VH*2+sample.VV*2;

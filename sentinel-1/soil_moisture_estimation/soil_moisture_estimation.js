@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 
 Surface Soil Moisture (SSM) retrieval using change detection approach.
@@ -19,11 +20,19 @@ in IEEE Transactions on Geoscience and Remote Sensing, vol. 57, no. 1, pp. 520-5
 
 */
 
-function  setup (dss) 
-  {
-    setInputComponents([dss.VV,dss.VH]); // selecting the datasets
-    setOutputComponentCount(3); // For RGB output no of channels =3
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "VV",
+          "VH"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
   }
+}
+
 function filterScenes (scenes, inputMetadata) 
   {
     return scenes.filter(function (scene) {
