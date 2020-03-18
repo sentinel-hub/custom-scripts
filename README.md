@@ -19,23 +19,32 @@ You are invited to publish your own scripts - see [howto](#howto).
 ## <a name="sentinel-1"></a>Sentinel-1
 The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. Main applications are for monitoring sea ice, oil spills, marine winds, waves & currents, land-use change, land deformation among others, and to respond to emergencies such as floods and earthquakes. The identical satellites orbit Earth 180° apart and at an altitude of almost 700 km, offering a global revisit time of 6-12 days depending on the area (check observation scenario). Sentinel-1’s radar can operate in four modes. The spatial resolution depends on the mode: approx. 5 m x 20 m for IW mode and approx. 20 m x 40 m for EW mode. See [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-1/) for more details.
 
-#### Agriculture and forestry algorithms 
- - [SAR for deforestation](sentinel-1/sar_for_deforestation)
+#### Vegetation in agriculture algorithms 
+ - [Tracking radar vegetation index](sentinel-1/sar_rvi_temporal_analysis)
+ - [Agricultural crop monitoring from space](sentinel-1/crop_monitoring)
+ - [SAR for deforestation detection](sentinel-1/sar_deforestation_detection)
+ - [Radar vegetation index for Sentinel-1 - RVI4S1 script](sentinel-1/radar_vegetation_index)
+ - [Radar vegetation index code for dual polarimetric](sentinel-1/radar_vegetation_index_code_dual_polarimetric)
 
 #### Disaster management and prevention algorithms
  - [Seldom and regular water surface detection](sentinel-1/seldom_and_regular_water_surface_detection)
  - [Forest Hurricane](sentinel-1/forest_hurricane)
+ - [Flood mapping](sentinel-1/flood_mapping)
 
 #### Urban planning algorithm
  - [Urban areas](sentinel-1/urban_areas)
 
-#### Marine environment algorithm
+#### Marine and other water bodies environment algorithms
  - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
+ - [SAR-Ice: A Sea Ice RGB Composite](sentinel-1/sar-ice)
 
 #### Other available scripts
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
  - [SAR false color visualization 2](sentinel-1/sar_false_color_visualization-2)
- - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
+
+#### Other multi-temporal scripts
+  - [SAR multi-temporal backscatter coefficient composite](sentinel-1/sar_multi-temporal_backscatter_coefficient_composite)
+  - [Soil Moisture Estimation](sentinel-1/soil_moisture_estimation)
  
 
 ## <a name="sentinel-2"></a>Sentinel-2
@@ -73,7 +82,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
  - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
  - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
- - [SAVI](sentinel-2/savi) - soil adjusted vegetation index  
+ - [SAVI](sentinel-2/savi) - soil adjusted vegetation index
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](sentinel-2/lai) - Leaf Area Index
  - [Leaf chlorophyll content](sentinel-2/cab)
@@ -82,9 +91,9 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
+ - [TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script](sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1)
+ - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
- - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
-
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -107,6 +116,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
+ - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
 
 #### Agriculture and forestry algorithms
  - [NDVI anomaly detection](sentinel-2/ndvi_anomaly_detection)
@@ -115,10 +125,14 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Pseudo forest canopy density (pseudo-FCD)](sentinel-2/pseudo_forest_canopy_density)
  - [Infrared agriculture display](sentinel-2/infrared_agriculture_display)
 
-#### Marine environment algorithms
+#### Marine and other water bodies environment algorithms
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+ - [Satellite Derived Bathymetry Mapping - SDBM](sentinel-2/satellite_derived_bathymetry_mapping-sdbm)
+ - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
+ - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
+ - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
@@ -128,6 +142,13 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  
 #### Other multi-temporal scripts
  - [Monthly composite](sentinel-2/monthly_composite)
+ - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
+
+#### Other available scripts
+ - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
+ - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
+ - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
+ - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
 
 ## <a name="sentinel-3"></a>Sentinel-3 OLCI
 
@@ -144,6 +165,9 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+
+#### Other available scripts
+ - [OLCI Natural Colours with Sigmoid](sentinel-3/natural_colors_sigmoid)
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
@@ -165,6 +189,7 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
+  - [Water In Wetlands Index](landsat-8/wiw_L8_script)
 
 ## <a name="landsat-57"></a>Landsat 5 and 7
 
@@ -172,8 +197,8 @@ Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar
 
 For more on Landsat 5, including its available bands, read [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"} and for Landsat 7, read [here.](https://www.usgs.gov/land-resources/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con){:target="_blank"}. 
 
-- [Landsat 5 and 7 bands](landsat-57/bands)
-- [Simple RGB composites](landsat-57/composites)
+- [Landsat 5 and 7 bands](Landsat-57/bands)
+- [Simple RGB composites](Landsat-57/composites)
  
 ## <a name="modis"></a>MODIS
 The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.

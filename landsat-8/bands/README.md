@@ -1,4 +1,4 @@
-# Landsat 5 and 7 Bands
+# Landsat 8 Bands
 
  - [Refference](https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands/}
 
