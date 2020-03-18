@@ -1,7 +1,7 @@
-//VERSION=2
+//VERSION=3 (auto-converted from 2)
 var degToRad = Math.PI / 180;
 
-function evaluatePixel(samples) {
+function evaluatePixelOrig(samples) {
   var sample = samples[0];
   var b03_norm = normalize(sample.B03, 0, 0.253061520471542);
   var b04_norm = normalize(sample.B04, 0, 0.290393577911328);
@@ -255,15 +255,34 @@ function tansig(input) {
   return 2 / (1 + Math.exp(-2 * input)) - 1; 
 }
 
-function setup(ds) {
-   return {
-        components: [ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B8A, ds.B11, ds.B12, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles],
-        output: [
-            {
-                id: "default",
-                sampleType: SampleType.AUTO,
-                componentCount: 1
-            }
-        ]
-    }
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B8A",
+          "B11",
+          "B12",
+          "viewZenithMean",
+          "viewAzimuthMean",
+          "sunZenithAngles",
+          "sunAzimuthAngles"
+      ]
+    }],
+    output: [
+        {
+          id: "default",
+          sampleType: "AUTO",
+          bands: 1
+        }
+    ]  }
+}
+
+function evaluatePixel(sample, scene, metadata, customData, outputMetadata) {
+  const result = evaluatePixelOrig([sample], [scene], metadata, customData, outputMetadata);
+  return result[Object.keys(result)[0]];
 }

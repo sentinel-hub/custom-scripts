@@ -1,10 +1,22 @@
+//VERSION=3 (auto-converted from 1)
 
-function setup (dss) {
-  // get all bands for display and analysis
-  setInputComponents([dss.B02,dss.B03,dss.B04,dss.B05,dss.B08,dss.B12]);
-  // return as RGB
-  setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B08",
+          "B12"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function stretch(val, min, max) {return (val - min) / (max - min);}
 

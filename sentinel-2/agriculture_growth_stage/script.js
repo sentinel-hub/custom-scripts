@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 Source: @HarelDan - https://github.com/hareldunn/GIS_Repo/blob/master/Multi-Temporal%20NDVI%20for%20Sentinel%20Hub%20Custom%20Scripts
 Visualizing NDVI multi-temporal trends in Sentinel-2 imagery.
@@ -9,10 +10,19 @@ https://twitter.com/sentinel_hub/status/1020755996359225344
 Script requires multi-temporal processing so parameter TEMPORAL=true should be added to the request.
 */
 
-function    setup (dss) {
-  setInputComponents([dss.B04,dss.B08]);
-  setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B04",
+          "B08"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function calcNDVI(sample) {
   var denom = sample.B04+sample.B08;

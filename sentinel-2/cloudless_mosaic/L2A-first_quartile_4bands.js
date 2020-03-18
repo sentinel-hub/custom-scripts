@@ -1,17 +1,25 @@
-//VERSION=2
-function setup(ds) {
-    return {
-        components: [ds.B04,ds.B03,ds.B02,ds.B08,ds.SCL],
-        output: [
-            {
-                id: "default",
-                sampleType: SampleType.UINT16,
-                componentCount: 4 
-            }
-        ],
-        normalization: false 
-    }
+//VERSION=3 (auto-converted from 2)
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B04",
+          "B03",
+          "B02",
+          "B08",
+          "SCL"
+      ]
+        , units: "DN"
+    }],
+    output: [
+        {
+          id: "default",
+          sampleType: "UINT16",
+          bands: 4
+        }
+    ]  }
 }
+
 function filterScenes (scenes, inputMetadata) {
     return scenes.filter(function (scene) {
        return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000);
@@ -59,7 +67,7 @@ function validate (samples) {
   return true;
 }
 
-function evaluatePixel(samples, scenes) {
+function evaluatePixelOrig(samples, scenes) {
   var clo_b02 = [];var clo_b03 = [];
   var clo_b04 = [];var clo_b08 = [];
   var clo_b02_invalid = [];var clo_b03_invalid = [];
@@ -114,4 +122,9 @@ function evaluatePixel(samples, scenes) {
             bValue,
             nValue]
   }
+}
+
+function evaluatePixel(sample, scene, metadata, customData, outputMetadata) {
+  const result = evaluatePixelOrig([sample], [scene], metadata, customData, outputMetadata);
+  return result[Object.keys(result)[0]];
 }

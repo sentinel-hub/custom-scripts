@@ -1,127 +1,147 @@
-//VERSION=2
+//VERSION=3 (auto-converted from 2)
 //NOTE: This Custom script requires Sentinel Hub API v.2 to operate properly. It is however possible to use some parts of it already now.
 
-function setup(ds) {
-    return {
-        components: [ds.B01, ds.B02, ds.B03, ds.B04, ds.B05, ds.B06, ds.B07, ds.B08, ds.B8A, ds.B11, ds.B12,
-            ds.AOT, ds.CLD, ds.SNW, ds.SCL, ds.viewZenithMean, ds.viewAzimuthMean, ds.sunZenithAngles, ds.sunAzimuthAngles],
-        output: [
-            {
-                id: "B01",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B02",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B03",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B04",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B05",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B06",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B07",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B08",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B8A",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B11",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "B12",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "source_index",
-                sampleType: SampleType.INT16,
-                componentCount: 1
-            },
-            {
-                id: "quality_aot",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "quality_cloud_confidence",
-                sampleType: SampleType.UINT8,
-                componentCount: 1
-            },
-            {
-                id: "quality_snow_confidence",
-                sampleType: SampleType.UINT8,
-                componentCount: 1
-            },
-            {
-                id: "quality_scene_classification",
-                sampleType: SampleType.UINT8,
-                componentCount: 1
-            },
-            {
-                id: "view_zenith_mean",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "view_azimuth_mean",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "sun_zenith",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "sun_azimuth",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "medoid_mos",
-                sampleType: SampleType.UINT16,
-                componentCount: 1
-            },
-            {
-                id: "valid_obs",
-                sampleType: SampleType.UINT8,
-                componentCount: 1
-            }
-            
-        ],
-        temporal: true,
-        mosaicking: Mosaicking.TILE
-    };
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B01",
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B8A",
+          "B11",
+          "B12",
+          "AOT",
+          "CLD",
+          "SNW",
+          "SCL",
+          "viewZenithMean",
+          "viewAzimuthMean",
+          "sunZenithAngles",
+          "sunAzimuthAngles"
+      ]
+    }],
+    output: [
+        {
+          id: "quality_aot",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B11",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B01",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B12",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "quality_cloud_confidence",
+          sampleType: "UINT8",
+          bands: 1
+        },
+        {
+          id: "B02",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "valid_obs",
+          sampleType: "UINT8",
+          bands: 1
+        },
+        {
+          id: "B03",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B04",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B05",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B06",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B07",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "view_azimuth_mean",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B08",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "sun_zenith",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "B8A",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "source_index",
+          sampleType: "INT16",
+          bands: 1
+        },
+        {
+          id: "view_zenith_mean",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "sun_azimuth",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "quality_snow_confidence",
+          sampleType: "UINT8",
+          bands: 1
+        },
+        {
+          id: "medoid_mos",
+          sampleType: "UINT16",
+          bands: 1
+        },
+        {
+          id: "quality_scene_classification",
+          sampleType: "UINT8",
+          bands: 1
+        }
+    ],
+    mosaicking: "TILE"
+  }
 }
+
 
 function evaluatePixel(samples, scenes) {
     var filteredSamples = filterByOrbitId(samples, scenes);
