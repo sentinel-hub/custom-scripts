@@ -1,9 +1,9 @@
 # Satellite Derived Bathymetry Mapping - SDBM Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](satellite_derived_bathymetry_mapping-sdbm.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative satellite_derived_bathymetry_mapping-sdbm.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

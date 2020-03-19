@@ -1,9 +1,9 @@
 # Water In Wetlands Index (WIW) - Sentinel-2 Version
 
-<a href="#" id='togglescript'>Show</a> script or [download](wiw_s2_script.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative wiw_s2_script.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

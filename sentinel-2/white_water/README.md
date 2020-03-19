@@ -1,9 +1,9 @@
 # White-Water Detection Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](white_water.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative white_water.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

@@ -1,9 +1,9 @@
 # NDVI on L2A Vegetation and Natural Colours Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](ndvi-on-vegetation-natural_colours.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative ndvi-on-vegetation-natural_colours.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 
