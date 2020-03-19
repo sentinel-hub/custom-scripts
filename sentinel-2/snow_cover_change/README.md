@@ -1,9 +1,9 @@
 # Snow Cover Change Detection
 
-<a href="#" id='togglescript'>Show</a> script or [download](snow_cover_change.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative snow_cover_change.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

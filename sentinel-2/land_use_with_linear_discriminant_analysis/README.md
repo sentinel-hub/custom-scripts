@@ -1,9 +1,9 @@
 # Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](land_use_with_linear_discriminant_analysis.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative land_use_with_linear_discriminant_analysis.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

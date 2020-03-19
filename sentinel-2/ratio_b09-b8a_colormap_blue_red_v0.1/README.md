@@ -1,9 +1,9 @@
 # TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](ratio_b09-b8a_colormap_blue_red_v0.1.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative ratio_b09-b8a_colormap_blue_red_v0.1.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 
