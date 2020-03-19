@@ -1,9 +1,9 @@
 # Tracking Radar Vegetation Index (Agriculture Development) Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](sar_rvi_temporal_analysis.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative sar_rvi_temporal_analysis.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

@@ -1,9 +1,9 @@
 # Flood Mapping With Sentinel-1 Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](flood_mapping.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative flood_mapping.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 

@@ -1,9 +1,9 @@
 # Agricultural Crop Monitoring from Space Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](crop_monitoring.js){:target="_blank"} it.
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative crop_monitoring.js %}
+      {% include_relative script.js %}
 {% endhighlight %}
 </div>
 
