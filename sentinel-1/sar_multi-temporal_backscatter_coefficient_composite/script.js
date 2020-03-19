@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 // ***
 // Sentinel-1 Multi-temporal Backscatter Coefficient Composite
 // For use in Sinergise EO Browser (http://apps.sentinel-hub.com/eo-browser).
@@ -25,10 +26,18 @@ var stretch_min = 0.0; var stretch_max = 1.1; // default value are stretch_min =
 // ***********************************
 
 // Selection of polarization
-function setup (dss) {   
-  setInputComponents([dss.VV]);
-  setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "VV"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 // Selection of dates for composite / analysis
 function filterScenes (scenes) {  

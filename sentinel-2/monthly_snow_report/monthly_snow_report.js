@@ -1,9 +1,18 @@
+//VERSION=3 (auto-converted from 1)
 /*
-Author: Nicolas Karasiak
+Source: @nkarasiak / www.karasiak.net
+
+Monthly snow report.
+Tired of waiting the perfect image with no cloud to show the snow cover ? This monthly snow report is here for you.
+This script will find where the snow is persistent within the last 31 days (from chosen date).
+In order to well represent the land-cover, the script will store each pertinent date in a list and will represents the median value.
+
+This sentinel-2 script voluntarily color in green the image to better differentiate the snow from the other land-cover.
+
+Script requires multi-temporal processing.
 */
 
-
-// Put 3 to have synthesis of the last 90 days
+// Put 3 to have synthesis of the last 3 months
 var numberOfMonthsToUse = 1;
 // Thresold to consider pixel as snow
 var NDSIthresold = 0.20;
@@ -12,10 +21,21 @@ var redThresold = 0.2;
 // In order to dismiss clouds
 var blueThresold = 0.18;
 
-function setup(dss) {
-    setInputComponents([dss.B02, dss.B03, dss.B04, dss.B11]);
-    setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B02",
+          "B03",
+          "B04",
+          "B11"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function NDSI(sample) {
     return ((sample.B03 - sample.B11) / (0.01 + sample.B03 + sample.B11));
@@ -91,6 +111,6 @@ function evaluatePixel(samples, scenes) {
 
 function filterScenes(scenes, inputMetadata) {
     return scenes.filter(function(scene) {
-        return scene.date.getTime() >= (inputMetadata.to.getTime() - (numberOfMonthsToUse * 30 * 24 * 3600 * 1000));
+        return scene.date.getTime() >= (inputMetadata.to.getTime() - (numberOfMonthsToUse * 31 * 24 * 3600 * 1000));
     });
 }

@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 //
 // SAR for deforestation detection
 // ------------
@@ -5,10 +6,17 @@
 // License: CC BY 4.0
 // https://creativecommons.org/licenses/by/4.0/
 //
-function setup(ds) {
-  setInputComponents([ds.VV, ds.VH]);
-  setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "VV",
+          "VH"
+      ]
+    }],
+    output: { bands: 3 }  }
 }
+
 
 const GAIN = 2.5;
 const WATER_LIMIT = 0.1;
@@ -33,8 +41,8 @@ const GREEN_VIZ = new ColorGradientVisualizer(GREEN_GRADIENT, 0, 1);
 const RED_VIZ = new ColorGradientVisualizer(RED_GRADIENT, 0, 1);
 
 const evaluatePixel = function (samples, scenes) {
-	let vv = samples[0].VV;
-	let vh = samples[0].VH;
+	let vv = samples.VV;
+	let vh = samples.VH;
 
     let area = vv * vh;
 	let v_len = Math.sqrt(vv * vv + vh * vh);

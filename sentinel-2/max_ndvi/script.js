@@ -1,9 +1,19 @@
+//VERSION=3 (auto-converted from 1)
+
 //Basic initialization setup function
-function    setup (dss) {
-//List of all bands, that will be used in the script, either for visualization or for choosing best pixel
-  setInputComponents([dss.B04,dss.B08]);
-//This can always be the same if one is doing RGB images
-  setOutputComponentCount(3);
+function setup() {
+  return {
+	//List of all bands, that will be used in the script, either for visualization or for choosing best pixel
+    input: [{
+      bands: [
+         "B04",
+         "B08"
+      ]
+    }],
+	//This can always be the same if one is doing RGB images
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
 
 /*

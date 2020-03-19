@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 Author: Karasiak Nicolas
 */
@@ -17,10 +18,23 @@ var numberOfTimesForWater = 2; // minimum number of times to identify as water
 var stretchMin = 0;
 var stretchMax = 1;
 
-function setup(dss) {
-    setInputComponents([dss.B02, dss.B03, dss.B04, dss.B05, dss.B08, dss.B11]);
-    setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+                  "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B08",
+          "B11"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 function NDSI(sample) {
     return ((sample.B03 - sample.B11) / (0.01 + sample.B03 + sample.B11));
