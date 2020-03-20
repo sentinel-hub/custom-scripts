@@ -1,17 +1,17 @@
-//VERSION=3 (auto-converted from 1)
 /*
 SATELLITE DERIVED BATHYMETRY MAPPING
 Author: Mohor Gartner (https://www.linkedin.com/in/mohor-gartner/)
+Example settings: The Gulf of Trieste 2019-08-09
 */
 
 ////// INPUT SETTINGS
 //// 1. Select MULTI-TEMPORAL SCENES (Playground)
-var scenes = ["2019-08-09","2019-07-20","2018-08-29","2017-08-24","2018-07-30"];
+var scenes = ["2019-08-09"];
 
 //// 2. Set water surface detection THRESHOLDS
 //Calibration might be needed, depends on the scene
-var MNDWI_thr=0.2;
-var NDWI_thr=0.2;
+var MNDWI_thr=0.42;
+var NDWI_thr=0.4;
 //// 3. Turn on/off filtering of false water surface detections
 //urban areas&bare soil. Recommended=true
 var filter_UABS=true;
@@ -28,10 +28,10 @@ var SDBgreen=true;
 var cs=0;
 
 //// 6. IMPORTANT! a.) false - if m1 and m0 already known OR b.) true - pre-analysis to evaluate m1 and m0
-var preAnalysis=false;
+var preAnalysis=true;
 // 6.a) set already known (from articles or calculated) m1 (scale) and m0 (offset)
-var m1=155.86;
-var m0=146.46;
+var m1=184.362;
+var m0=190.037;
 // 6.b) If m1 and m0 unknown, preAnalysis=true (above) and pre-analysis of pSDB is necessary to evaluate m1 and m0! This step is done "off the platform" (EXAMPLE TUTORIAL IN SUPPLEMENTARY MATERIAL). In this case mp, pSDBmin, pSDBmax, nConst are applicable
 //multiplier for pSDB output value in GREEN CHANNEL, recommended 1000
 var mp=1000; 
@@ -81,29 +81,21 @@ function datef(t){
 	return y+'-'+m+'-'+d;
 }
 // setup values
-function setup() {
-  return {
-    input: [{
-      bands: [
-          "B02",
-          "B03",
-          "B04",
-          "B08",
-          "B11",
-          "B12"
-      ]
-    }],
-    output: { bands: 3 },
-    mosaicking: "ORBIT",
-  }
+function setup(i){
+	try {
+		setInputComponents([i.B12]);
+		//if B12 is, S2
+		nrDS="B08";s1DS="B11";s2DS="B12";
+	}catch(err){
+		//if no B12, it is L8
+		nrDS="B05";s1DS="B06";s2DS="B07";
+	}
+	setInputComponents([i.B02,i.B03,i.B04,i[nrDS],i[s1DS],i[s2DS]]);
+	setOutputComponentCount(3);
 }
-
 
 //eval
 function evaluatePixel(p) {
-    nrDS="B08";s1DS="B11";s2DS="B12"; //for Sentinel-2
-	//nirDS="B05";swir1DS="B06";swir2DS="B07";  For Landsat 8 --> don't forget to modify bands in setup
-
 	////N,avg,sum+reduce avg
 	var N=p.length,wAvg=0,bAvg=0,gAvg=0,rAvg=0,psdbAvg=0,sdbAvg=0,w=0,psdb=0,sdb=0,trimNavg=0;
 	//loop scenes
