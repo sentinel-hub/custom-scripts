@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 WATER BODIES MAPPING
 Can be used on single image or multi-temporal processing. It is recommended to use scenes with low cloud coverage, higher levels of illumination, no/low shadow zones (mountains, clouds), no/low waves and no/low water turbidity. Primary for use on Sentinel-2 L1C, applicable also for Landsat8.
@@ -9,8 +10,8 @@ Author: Mohor Gartner (Linkedin: https://www.linkedin.com/in/mohor-gartner/)
 //This setting is only applicable for Sentinal Playground. For EO Browser analysis duration does not affect the final result.
 //Specify scene filter "from" "to" dates. Note: if result returns black image, it might be that scene filtering by from-to and cloud coverage returns no images. Be careful that maximum cloud coverage is low as possible.
 //Hint: set the max. cloud coverage by changing maxcc value in URL link.
-var fromD="2019-11-05T00:00:00Z";
-var toD="2019-12-05T00:00:00Z";
+var fromD="2019-06-01T00:00:00Z";
+var toD="2019-09-01T00:00:00Z";
 
 //// 2. Set water surface detection THRESHOLDS for MNDWI and NDWI
 // Water surface detection is partialy done on the basis of MNDWI, NDWI [1]
@@ -76,24 +77,30 @@ function filterScenes(scenes, inputMetadata) {
 }
 
 // setup values
-function setup(i){
-	//Sentinel-2 L1C. B02(blue),B03(green),B04(red),B08(NIR),B11(SWIR1),B12(SWIR2)
-	//Landsat8. B02(blue),B03(green),B04(red),B05(NIR),B06(SWIR1),B07(SWIR2)
-	try {
-		//try to get B12
-		setInputComponents([i.B12]);
-		//if B12 is, Sentinel-2
-		nirDS="B08";swir1DS="B11";swir2DS="B12";
-	}catch(err){
-		//if not B12, it is Landsat8
-		nirDS="B05";swir1DS="B06";swir2DS="B07";
-	}
-	setInputComponents([i.B02,i.B03,i.B04,i[nirDS],i[swir1DS],i[swir2DS]]);
-	setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+          "B02",
+          "B03",
+          "B04",
+          "B08",
+          "B11",
+          "B12"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 //////// EVALUATE PIXEL
 function evaluatePixel(p) {
+  	nirDS="B08";swir1DS="B11";swir2DS="B12"; //for Sentinel-2
+	//nirDS="B05";swir1DS="B06";swir2DS="B07";  For Landsat 8 --> don't forget to modify bands in setup
+
+
 	////N and average values for multi-temporal
 	var N=p.length,waterAvg=0,bAvg=0,gAvg=0,rAvg=0;
 	//sum+reduce part of avg
