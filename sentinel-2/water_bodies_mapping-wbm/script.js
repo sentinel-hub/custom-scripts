@@ -1,3 +1,4 @@
+//VERSION=3 (auto-converted from 1)
 /*
 WATER BODIES MAPPING
 Can be used on single image or multi-temporal processing. It is recommended to use scenes with low cloud coverage, higher levels of illumination, no/low shadow zones (mountains, clouds), no/low waves and no/low water turbidity. Primary for use on Sentinel-2 L1C, applicable also for Landsat8.
@@ -76,24 +77,29 @@ function filterScenes(scenes, inputMetadata) {
 }
 
 // setup values
-function setup(i){
-	//Sentinel-2 L1C. B02(blue),B03(green),B04(red),B08(NIR),B11(SWIR1),B12(SWIR2)
-	//Landsat8. B02(blue),B03(green),B04(red),B05(NIR),B06(SWIR1),B07(SWIR2)
-	try {
-		//try to get B12
-		setInputComponents([i.B12]);
-		//if B12 is, Sentinel-2
-		nirDS="B08";swir1DS="B11";swir2DS="B12";
-	}catch(err){
-		//if not B12, it is Landsat8
-		nirDS="B05";swir1DS="B06";swir2DS="B07";
-	}
-	setInputComponents([i.B02,i.B03,i.B04,i[nirDS],i[swir1DS],i[swir2DS]]);
-	setOutputComponentCount(3);
+function setup() {
+  return {
+    input: [{
+      bands: [
+          "B02",
+          "B03",
+          "B04",
+          "B08",
+          "B11",
+          "B12"
+      ]
+    }],
+    output: { bands: 3 },
+    mosaicking: "ORBIT"
+  }
 }
+
 
 //////// EVALUATE PIXEL
 function evaluatePixel(p) {
+    nirDS="B08";swir1DS="B11";swir2DS="B12"; // Bands for Sentinel-2
+	//nirDS="B05";swir1DS="B06";swir2DS="B07"; Bands for Landsat 8; don't forget to also change the input bands
+	
 	////N and average values for multi-temporal
 	var N=p.length,waterAvg=0,bAvg=0,gAvg=0,rAvg=0;
 	//sum+reduce part of avg
