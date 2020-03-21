@@ -85,7 +85,7 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B02",
+          "B02",
           "B03",
           "B04",
           "B08",
@@ -102,7 +102,7 @@ function setup() {
 //eval
 function evaluatePixel(p) {
     nrDS="B08";s1DS="B11";s2DS="B12"; //S2 bands
-    //nrDS="B05";s1DS="B06";s2DS="B07";  B Bands for Landsat 8; don't forget to also change the input bands
+    //nrDS="B05";s1DS="B06";s2DS="B07"; Bands for Landsat 8; don't forget to also change the input bands
 
 	////N,avg,sum+reduce avg
 	var N=p.length,wAvg=0,bAvg=0,gAvg=0,rAvg=0,psdbAvg=0,sdbAvg=0,w=0,psdb=0,sdb=0,trimNavg=0;
