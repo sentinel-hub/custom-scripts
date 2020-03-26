@@ -112,6 +112,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
  - [TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script](sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1)
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
+ - [Highlight Optimized Natural Color](Sentinel-2/highlight_optimized_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  
 #### Cloud detection algorithms
