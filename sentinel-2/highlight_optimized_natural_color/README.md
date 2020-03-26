@@ -37,9 +37,9 @@ Marko Repše
 
 ## Description of representative images
 
-1) Beautiful Glacier Grey, Chile. Image acquired on 2019-05-08, processed by Sentinel Hub. 
+Glacier Grey, Chile. Image acquired on 2019-05-08, processed by Sentinel Hub. 
 ![Glacier Grey](fig/fig1.jpg)
 
 ## Credits
 
-[1] [Tonemapped Natural Color Script](https://custom-scripts.sentinel-hub.com/sentinel-2/tonemapped_natural_color/){:target="_blank"} 
+ - [Tonemapped Natural Color Script](https://custom-scripts.sentinel-hub.com/sentinel-2/tonemapped_natural_color/){:target="_blank"} 
