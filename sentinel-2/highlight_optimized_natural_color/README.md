@@ -37,7 +37,7 @@ Marko Repše
 
 ## Description of representative images
 
-1) Beautiful Glacier Grey
+1) Beautiful Glacier Grey, Chile. Image acquired on 2019-05-08, processed by Sentinel Hub. 
 ![Glacier Grey](fig/fig1.jpg)
 
 ## Credits
