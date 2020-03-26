@@ -13,9 +13,9 @@
 
 ## General description of the script
 
-This script aims to display the Earth in beautiful natural color images. It uses highlight optimization to avoid burnt out pixels and to even out the exposure. The script was inspired by the [Tonemapped Natural Color Script](https://custom-scripts.sentinel-hub.com/sentinel-2/tonemapped_natural_color/){:target="_blank"}. The script is very simple, needing only 3 code lines. 
+This script aims to display the Earth in beautiful natural color images. It uses highlight optimization to avoid burnt out pixels and to even out the exposure. The script needs only 3 code lines and was inspired by the [Tonemapped Natural Color Script](https://custom-scripts.sentinel-hub.com/sentinel-2/tonemapped_natural_color/){:target="_blank"}. 
 
-For Sentinel-2 L2A, the script only uses bicubic root and lowers the values of the true color bands: 
+For Sentinel-2 L2A, the script applies the cubic root of the lowered values of the true color bands: 
 
 ```javascript
 return [Math.cbrt(0.6 * B04),
@@ -23,7 +23,7 @@ return [Math.cbrt(0.6 * B04),
         Math.cbrt(0.6 * B02)]
 ```
 
-For Sentinel-2 L1C, the contrast was increased for better visualization: 
+For Sentinel-2 L1C, the contrast is additionally increased for better visualization: 
 
 ```javascript
 return [Math.cbrt(0.6 * B04 - 0.035),
