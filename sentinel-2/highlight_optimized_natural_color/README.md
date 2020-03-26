@@ -38,7 +38,7 @@ Marko Repše
 ## Description of representative images
 
 1) Beautiful Glacier Grey
-![Glacier Grey](fig1.jpg)
+![Glacier Grey](fig/fig1.jpg)
 
 ## Credits
 
