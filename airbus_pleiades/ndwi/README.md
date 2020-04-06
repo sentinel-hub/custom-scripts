@@ -15,7 +15,7 @@ As Airbus Pleiades is commercial data, brought into Sentinel Hub as Bring Your O
 
 The NDWI is useful for water body mapping, as water bodies strongly absorb light in visible to infrared electromagnetic spectrum. NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies.
 
-**NDWI = (B01 - B03) / (B01 + B03)**
+**NDWI = (B1 - B3) / (B1 + B3)**
 
 Values description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas to values between zero and 0.2.
 
