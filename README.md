@@ -237,8 +237,11 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
 The spectral bands of PlanetScope data are the following: 
 
 *B1 - Blue, resolution 3m*
+
 *B2 - Green, resolution 3m*
+
 *B3 - Red, resolution 3m*
+
 *B4 - Near Infrared, resolution 3m*
 
  - [True Color](planet_scope/true_color)
@@ -254,11 +257,15 @@ The Pléiades data with its high spatial resolution is suitable for a wide range
 
 The spectral bands of Pleiades data are the following: 
 
-B0 - Blue (430-550 nm),	resolution 2m	
-B1 - Green (490-610 nm), resolution	2m	
-B2 - Red (600-720 nm), resolution 2m	
-B3 - Near Infrared (750-950 nm), resolution 2m	
-PAN	- Panchromatic (480-830 nm), resolution 0.5m	
+*B0 - Blue (430-550 nm,	resolution 2m)*
+
+*B1 - Green (490-610 nm, resolution	2m)*
+
+*B2 - Red (600-720 nm), resolution 2m*	
+
+*B3 - Near Infrared (750-950 nm), resolution 2m*
+
+*PAN	- Panchromatic (480-830 nm), resolution 0.5m*
 
 Pleiades's RGB bands are in 2 meter spatial resolution. To take advantage of the 0.5 m PAN band, the pansharpening process is required. 
  
