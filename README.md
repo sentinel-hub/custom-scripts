@@ -12,6 +12,8 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Landsat 5 and 7](#landsat-57)
   - [Landsat-8](#landsat-8)
   - [MODIS](#modis)
+  - [PlanetScope](#planet_scope)
+  - [Airbus Pleiades](#airbus_pleiades)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -227,6 +229,46 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+  
+## <a name="planet_scope"></a>PlanetScope (commercial)
+
+<a href="https://www.planet.com/products/monitoring/">PlanetScope</a> satellite constellation consists of more than 130 small satellites called Doves. The satellites are launched in groups, which constantly improves mission's characteristics such as revisit times, spatial and spectral resolutions. PlanetScope data complements Sentinel-2 with better spatial resolution (3m) and almost global daily coverage. It is an excellent source for vegetation monitoring. For more information on PlanetScope, visit our <a href="https://docs.sentinel-hub.com/api/latest/#/data/PlanetScope">documentation page</a>. 
+
+The spectral bands of PlanetScope data are the following: 
+
+*B1 - Blue, resolution 3m*
+*B2 - Green, resolution 3m*
+*B3 - Red, resolution 3m*
+*B4 - Near Infrared, resolution 3m*
+
+ - [True Color](planet_scope/true_color)
+ - [False Color](planet_scope/false_color)
+ - [NDVI](planet_scope/ndvi)
+ - [NDWI](planet_scope/ndwi)
+ - [Green City](planet_scope/green_city)
+ 
+## <a name="planet_scope"></a>Airbus Pleiades (commercial)
+
+<a href="https://www.intelligence-airbusds.com/en/8692-pleiades">Pléiades</a> constelation is composed of two twin satellites orbiting the Earth 180° apart. The satellites deliver the incredible global 0.5 m spectral resolution imagery. Pleiades' satellites share the orbit with SPOT satellites, which makes it possible to combine the data form both sources.
+The Pléiades data with its high spatial resolution is suitable for a wide range of remote sensing applications such as vegetation monitoring, precise mapping, as well as risk and disaster management. To learn more about Pleiades, visit our <a href="https://docs.sentinel-hub.com/api/latest/#/data/Airbus-Pleiades"> documentation page.</a> 
+
+The spectral bands of Pleiades data are the following: 
+
+B0 - Blue (430-550 nm),	resolution 2m	
+B1 - Green (490-610 nm), resolution	2m	
+B2 - Red (600-720 nm), resolution 2m	
+B3 - Near Infrared (750-950 nm), resolution 2m	
+PAN	- Panchromatic (480-830 nm), resolution 0.5m	
+
+Pleiades's RGB bands are in 2 meter spatial resolution. To take advantage of the 0.5 m PAN band, the pansharpening process is required. 
+ 
+ - [True Color](airbus_pleiades/true_color)
+ - [Pansharpened True Color](airbus_pleiades/true_color_pansharpened)
+ - [False Color](airbus_pleiades/false_color)
+ - [NDVI](airbus_pleiades/ndvi)
+ - [NDWI](airbus_pleiades/ndwi)
+ - [Green City](airbus_pleiades/green_city)
+ - [Pansharpened Green City](airbus_pleiades/green_city_pansharpened)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.  
