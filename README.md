@@ -230,7 +230,7 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
   
-## <a name="planet_scope"></a>PlanetScope (commercial)
+## <a name="planet_scope"></a>PlanetScope (Commercial)
 
 <a href="https://www.planet.com/products/monitoring/">PlanetScope</a> satellite constellation consists of more than 130 small satellites called Doves. The satellites are launched in groups, which constantly improves mission's characteristics such as revisit times, spatial and spectral resolutions. PlanetScope data complements Sentinel-2 with better spatial resolution (3m) and almost global daily coverage. It is an excellent source for vegetation monitoring. For more information on PlanetScope, visit our <a href="https://docs.sentinel-hub.com/api/latest/#/data/PlanetScope">documentation page</a>. 
 
@@ -250,7 +250,7 @@ The spectral bands of PlanetScope data are the following:
  - [NDWI](planet_scope/ndwi)
  - [Green City](planet_scope/green_city)
  
-## <a name="planet_scope"></a>Airbus Pleiades (commercial)
+## <a name="airbus_pleiades"></a>Airbus Pleiades (Commercial)
 
 <a href="https://www.intelligence-airbusds.com/en/8692-pleiades">Pléiades</a> constelation is composed of two twin satellites orbiting the Earth 180° apart. The satellites deliver the incredible global 0.5 m spectral resolution imagery. Pleiades' satellites share the orbit with SPOT satellites, which makes it possible to combine the data form both sources.
 The Pléiades data with its high spatial resolution is suitable for a wide range of remote sensing applications such as vegetation monitoring, precise mapping, as well as risk and disaster management. To learn more about Pleiades, visit our <a href="https://docs.sentinel-hub.com/api/latest/#/data/Airbus-Pleiades"> documentation page.</a> 
