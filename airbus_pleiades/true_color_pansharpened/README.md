@@ -13,7 +13,7 @@ As Airbus Pleiades is commercial data, brought into Sentinel Hub as Bring Your O
 
 ## General description
 
-The true color product maps Sentinel-2 band values B3, B2, and B1 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components. The RGB bands with spectral resolution of 2 meters were pansharpened using the PAN band with spectral resolution of 0.5 meters. The result is a true colorimage with the resolution of 0.5 meters. 
+The true color product maps Pleiades' band values B2, B1, and B0 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components. The RGB bands with spectral resolution of 2 meters were pansharpened using the PAN band with spectral resolution of 0.5 meters. The result is a true colorimage with the resolution of 0.5 meters. 
 
 ## Description of representative images
 
