@@ -1,13 +1,9 @@
-//VERSION=3
-//True Color
+//Pansharpened True Color
 
-function setup() {
-  return {
-    input: ["B1", "B2", "B3"],
-    output: { bands: 3 }
-  };
+let weight = (B2 + B1 + B0 * 0.4) / 2.4;
+if (weight == 0) {
+ return [0, 0, 0];
 }
-
-function evaluatePixel(sample) {
-  return [sample.B3/3000, sample.B2/3000, sample.B1/3000];
-}
+let ratio = PAN/weight * 2.5;
+return [(B2/10000)*ratio, (B1/10000)*ratio, (B0/10000)*ratio];
+  
