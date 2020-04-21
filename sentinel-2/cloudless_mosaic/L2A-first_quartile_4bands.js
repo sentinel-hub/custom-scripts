@@ -3,13 +3,13 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B04",
+          "B04",
           "B03",
           "B02",
           "B08",
           "SCL"
-      ]
-        , units: "DN"
+      ],
+      units: "DN"
     }],
     output: [
         {
@@ -17,7 +17,8 @@ function setup() {
           sampleType: "UINT16",
           bands: 4
         }
-    ]  }
+    ]
+  }
 }
 
 function filterScenes (scenes, inputMetadata) {

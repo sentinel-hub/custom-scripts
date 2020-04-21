@@ -11,7 +11,8 @@ function setup() {
           "B12"
       ]
     }],
-    output: { bands: 1 }  }
+    output: { bands: 1 }
+  }
 }
 
 

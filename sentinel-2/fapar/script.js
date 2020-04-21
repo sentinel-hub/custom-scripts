@@ -145,7 +145,7 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B03",
+          "B03",
           "B04",
           "B05",
           "B06",
@@ -165,7 +165,8 @@ function setup() {
           sampleType: "AUTO",
           bands: 1
         }
-    ]  }
+    ]
+  }
 }
 
 

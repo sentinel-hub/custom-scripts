@@ -10,13 +10,14 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B02",
+          "B02",
           "B04",
           "B08",
           "B11",
           "B12"
       ]
     }],
-    output: { bands: 3 }  }
+    output: { bands: 3 }
+  }
 }
 
