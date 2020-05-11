@@ -187,6 +187,7 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 #### Remote sensing indices
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
+ - [NDBI](sentinel-3/ndbi) - Normalized Bare ice Index
 
 #### Other available scripts
  - [OLCI Natural Colours with Sigmoid](sentinel-3/natural_colors_sigmoid)
