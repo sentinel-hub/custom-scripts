@@ -14,7 +14,7 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B04",
+          "B04",
           "B08"
       ]
     }],

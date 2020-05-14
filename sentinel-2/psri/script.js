@@ -19,6 +19,7 @@ function setup() {
           "B06"
       ]
     }],
-    output: { bands: 1 }  }
+    output: { bands: 1 }
+  }
 }
 

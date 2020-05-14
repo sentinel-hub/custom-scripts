@@ -50,14 +50,15 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B03",
+          "B03",
           "B04",
           "B05",
           "B10",
           "B11"
       ]
     }],
-    output: { bands: 3 }  }
+    output: { bands: 3 }
+  }
 }
 
 

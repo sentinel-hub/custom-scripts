@@ -22,7 +22,7 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B02",
+          "B02",
           "B03",
           "B04",
           "B05",

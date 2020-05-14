@@ -12,13 +12,14 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "B04",
+          "B04",
           "B03",
           "B02",
           "SCL"
       ]
     }],
-    output: { bands: 3 }  }
+    output: { bands: 3 }
+  }
 }
 
 function filterScenes (scenes, inputMetadata) {

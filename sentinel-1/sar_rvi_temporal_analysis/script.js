@@ -3,7 +3,7 @@ function setup() {
   return {
     input: [{
       bands: [
-                  "VV",
+          "VV",
           "VH"
       ]
     }],
