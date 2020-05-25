@@ -14,6 +14,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [MODIS](#modis)
   - [PlanetScope](#planet_scope)
   - [Airbus Pleiades](#airbus_pleiades)
+  - [Data fusion](#data-fusion)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -277,6 +278,13 @@ Pleiades's RGB bands are in 2 meter spatial resolution. To take advantage of the
  - [NDWI](airbus_pleiades/ndwi)
  - [Green City](airbus_pleiades/green_city)
  - [Pansharpened Green City](airbus_pleiades/green_city_pansharpened)
+
+## <a name="data-fusion"></a>Data fusion
+
+The combination of multiple remote sensing data sources can provide invaluable information that would not be obtained with a single sensor alone. Observation-level or pixel-based fusion combines pixels from different sources to form an image containing new information ([more information](https://ieeexplore.ieee.org/document/7740215)). Two widely used examples of pixel-based fusion are pan-sharpening and the fusion of radar and multispectral optical images. On the one hand, pan-sharpening consists of blending a high-resolution panchromatic image with a lower resolution multispectral image to obtain a high-resolution multispectral image. On the other hand, the combination of radar and optical imagery provides images with increased spectral resolution that can mitigate the drawbacks of each product (such as cloud cover for optical images), but also provide increased temporal resolution with more frequent overpasses.
+
+#### Available scripts
+ - [Mapping crop NDVI with Sentinel-1 and Sentinel-2](data-fusion/ndvi_s1_s2)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.  
