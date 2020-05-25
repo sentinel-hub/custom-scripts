@@ -285,6 +285,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
 
 #### Available scripts
  - [Mapping crop NDVI with Sentinel-1 and Sentinel-2](data-fusion/ndvi_s1_s2)
+ - [Sentinel-2 with cloudy parts replaced by Sentinel-1](data-fusion/s2l1c_s1grd_cloud_replacement)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.  
