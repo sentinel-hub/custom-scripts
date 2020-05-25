@@ -11,7 +11,6 @@
   
 ## Evaluate and visualize  
  - [EO Browser](http://apps.sentinel-hub.com/eo-browser/?lat=37.7235&lng=-100.8442&zoom=11&time=2019-04-26&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/data-fusion/ndvi_s1_s2/script.js){:target="_blank"}
- 
  When EO Browser loads, switch to **code view**, check the **Use URL** checkbox, then check the **Use additional datasets (advanced)** and **S-1 GRD** boxes. Finnally press **Refresh**.
  - [Euro Data Cube](https://eurodatacube.com/marketplace/notebooks/contributions/EDC_SentinelHub_DataFusion_NDVI.ipynb){:target="_blank"}   
   
