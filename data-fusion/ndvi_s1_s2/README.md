@@ -4,14 +4,15 @@
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  
 <div id='script_view' style="display:none">  
 {% highlight javascript %}  
-      {% include_relative script.js %}  
+{% include_relative script.js %}  
 {% endhighlight %}  
   
 </div>  
   
 ## Evaluate and visualize  
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=37.7235&lng=-100.8442&zoom=11&time=2019-04-26&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=Ly9WRVJTSU9OPTMKdmFyIHNldHVwID0gKCkgPT4gKHsKICBpbnB1dDogWwogICAge2RhdGFzb3VyY2U6ICJzMWdyZCIsIGJhbmRzOlsiVlYiLCAiVkgiXX0sCiAgICB7ZGF0YXNvdXJjZTogInMybDJhIiwgYmFuZHM6WyJCMDgiLCAiQjA0IiwgIkNMTSJdLCB1bml0czogIlJFRkxFQ1RBTkNFIn0sCiAgXSwKICBvdXRwdXQ6IFsKICAgIHsgaWQ6ICJkZWZhdWx0IiwgYmFuZHM6IDMsIHNhbXBsZVR5cGU6IFNhbXBsZVR5cGUuQVVUTyB9LAogIF0sCn0pOwoKZnVuY3Rpb24gdG9EYihsaW5lYXIpIHsKICAvLyBDb252ZXJ0IHRoZSBsaW5lYXIgYmFja3NjYXR0ZXIgdG8gREIgKEZpbGd1ZWlyYXMgZXQgYWwuICgyMDE5KSwgZXEuIDMpCiAgcmV0dXJuIDEwICogTWF0aC5MTjEwICogbGluZWFyCn07CgpmdW5jdGlvbiBjYWxjX3MxX25kdmkoc2lnbWFWViwgc2lnbWFWSCl7CiAgICAvLyBDb252ZXJ0IHNpZ21hMCB0byBEZWNpYmVscwogICAgbGV0IHZoX0RiID0gdG9EYihzaWdtYVZIKQogICAgbGV0IHZ2X0RiID0gdG9EYihzaWdtYVZWKQoKICAgIC8vIENhbGN1bGF0ZSBOUlBCIChGaWxndWVpcmFzIGV0IGFsLiAoMjAxOSksIGVxLiA0KQogICAgbGV0IE5SUEIgPSAodmhfRGIgLSB2dl9EYikgLyAodmhfRGIgKyB2dl9EYikKCiAgICAvLyBDYWxjdWxhdGUgTkRWSV9uYyB3aXRoIGFwcHJvYWNoIEEzIChGaWxndWVpcmFzIGV0IGFsLiAoMjAxOSksIGVxLiAxNCkKICAgIGxldCBORFZJbmMgPSAyLjU3MiAtIDAuMDUwNDcgKiB2aF9EYiArIDAuMTc2ICogdnZfRGIgKyAzLjQyMiAqIE5SUEIKCiAgICByZXR1cm4gTkRWSW5jCn07CgoKZnVuY3Rpb24gZXZhbHVhdGVQaXhlbChzYW1wbGVzLCBpbnB1dERhdGEsIGlucHV0TWV0YWRhdGEsIGN1c3RvbURhdGEsIG91dHB1dE1ldGFkYXRhKSB7CiAgdmFyIHMyID0gc2FtcGxlcy5zMmwyYVswXTsKICB2YXIgczEgPSBzYW1wbGVzLnMxZ3JkWzBdOwogIAogIC8vIENhbGN1bGF0ZSBTMiBORFZJCiAgbGV0IG5kdmkgPSBpbmRleChzMi5CMDgsIHMyLkIwNCk7CiAgCiAgLy8gQ2FsY3VsYXRlIFMxIE5EVkkKICBsZXQgczFfbmR2aSA9IGNhbGNfczFfbmR2aShzMS5WViwgczEuVkgpOwogIAogIC8vIENyZWF0ZSBhbiBORFZJIHZpc3VhbGlzZXIKICB2YXIgdml6PW5ldyBDb2xvck1hcFZpc3VhbGl6ZXIoW1swLjAsMHhhNTAwMjZdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzAuMSwweGQ3MzAyN10sIFswLjIsMHhmNDZkNDNdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzAuMywweGZkYWU2MV0sIFswLjQsMHhmZWUwOGJdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzAuNSwweGZmZmZiZl0sIFswLjYsMHhkOWVmOGJdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzAuNywweGE2ZDk2YV0sIFswLjgsMHg2NmJkNjNdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgWzAuOSwweDFhOTg1MF0sIFsxLjAsMHgwMDY4MzddXSk7CiAgaWYgKHMyLkNMTSA9PSAxKSB7CiAgICAvLyBJZiBjbG91ZHMgYXJlIHByZXNlbnQgdXNlIFMxIE5EVkkKICAgIHJldHVybiB7CiAgICAgIGRlZmF1bHQ6IHZpei5wcm9jZXNzKHMxX25kdmkpCiAgICB9CiAgfSBlbHNlIHsKICAgIC8vIE90aGVyd2lzZSB1c2UgczIgTkRWSQogICAgcmV0dXJuIHsKICAgICAgZGVmYXVsdDogdml6LnByb2Nlc3MobmR2aSkKICAgIH0KICB9Cn0%3D&dataFusion={%22enabled%22:true,%22supplementalDatasets%22:{%22AWSEU_S1GRD%22:{%22enabled%22:true}}}){:target="_blank"}
- - [Euro Data Cube](https://eurodatacube.com/marketplace/notebooks/contributions/EDC_SentinelHub_DataFusion_NDVI.ipynb)   
+ - [EO Browser](http://apps.sentinel-hub.com/eo-browser/?lat=37.7235&lng=-100.8442&zoom=11&time=2019-04-26&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/data-fusion/ndvi_s1_s2/script.js){:target="_blank"}
+ When EO Browser loads, switch to **code view**, check the **Use URL** checkbox, then check the **Use additional datasets (advanced)** and **S-1 GRD** boxes. Finnally press **Refresh**.
+ - [Euro Data Cube](https://eurodatacube.com/marketplace/notebooks/contributions/EDC_SentinelHub_DataFusion_NDVI.ipynb){:target="_blank"}   
   
   
 ## General description of the script  
@@ -27,7 +28,8 @@ In this example, we combine a Sentinel-2 L2A NDVI product partly occulted by clo
 
 **Note:**
 
-The method developed by Filgueiras et al. (2019) is based on regression algorithms between Sentinel-2 and Sentinel-1 images. For simplicity, the A3 approach with a linear regression is used in this example. However, it should be noted that the approach is less accurate for areas with low biomass (NDVI < 0.25). Although the method enables the monitoring of vegetation independently of optical sensors, calibration for the type of crop is needed. For illustration purposes here, the algorithm was applied to an area consisting mostly of sorghum and wheat. However, the regression parameters obtained from Filgueiras et al. (2019) for soybean and maize were not changed, thus leading to a bias in the absolute values of NDVI. 
+The method developed by Filgueiras et al. (2019) is based on regression algorithms between Sentinel-2 and Sentinel-1 images. For simplicity, the A3 approach with a linear regression is used in this example. However, it should be noted that the approach is less accurate for areas with low biomass (NDVI < 0.25). Although the method enables the monitoring of vegetation independently of optical sensors, calibration for the type of crop is needed. For illustration purposes here, the algorithm was applied to an area consisting mostly of sorghum and wheat. However, the regression parameters obtained from Filgueiras et al. (2019) for soybean and maize
+ were not changed, thus leading to a bias in the absolute values of NDVI. 
 
 <sub><sup>[1] _Quarmby et al., 1993, The use of multi-temporal NDVI measurements from AVHRR data for crop yield estimation and prediction, DOI: [10.1080/01431169308904332](https://www.tandfonline.com/doi/abs/10.1080/01431169308904332)._</sup></sub>
 
