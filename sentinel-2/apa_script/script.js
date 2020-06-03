@@ -18,13 +18,15 @@ function clip(a) {
  return Math.max(0, Math.min(1, a));
 }
 
-if (B11>0.1 && bRatio > 1) { //cloud
- var v = 0.5*(bRatio - 1);
- return natural_color;
-}
-if (B11 > 0.1 && bRatio > 0 && NDGR>0) { //cloud
- var v = 5 * Math.sqrt(bRatio * NDGR);
- return natural_color;
+if (B11 > 0.1){
+  if (bRatio > 1) { //cloud
+     var v = 0.5*(bRatio - 1);
+     return natural_color;
+  }
+  else if (bRatio > 0 && NDGR>0) { //cloud
+     var v = 5 * Math.sqrt(bRatio * NDGR);
+     return natural_color;
+  }
 }
 //classify the presence of algae and water plants over water surfaces
 if (NDWI < 0 && water_bodies > 0) return natural_color;
