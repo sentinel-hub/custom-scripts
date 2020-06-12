@@ -1,26 +1,23 @@
-//VERSION=3 (auto-converted from 2)
+//VERSION=3
 function setup() {
   return {
     input: [{
       bands: [
-          "B04",
-          "B03",
-          "B02",
-          "B08",
-          "SCL"
+        "B04",
+        "B03",
+        "B02",
+        "B08",
+        "SCL"
       ],
       units: "DN"
     }],
-    output: [
-        {
-          id: "default",
-          sampleType: "UINT16",
-          bands: 4
-        }
-    ]
+    output: {
+      bands: 4,
+      sampleType: SampleType.UINT16
+    },
+    mosaicking: "ORBIT"
   }
 }
-
 function filterScenes (scenes, inputMetadata) {
     return scenes.filter(function (scene) {
        return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000);
@@ -38,15 +35,8 @@ function getFirstQuartile(sortedValues) {
 function getDarkestPixel(sortedValues) {
    return sortedValues[0]; // darkest pixel
 }
-function getSecondDarkestPixel(sortedValues) {
-   if (sortedValues.length > 1) { // second darkest pixel
-      return sortedValues[1];
-   }
-   return sortedValues[0]; // darkest pixel
-}
-
 function validate (samples) {
-  var scl = Math.round(samples.SCL);
+  var scl = samples.SCL;
   
   if (scl === 3) { // SC_CLOUD_SHADOW
     return false;
@@ -68,7 +58,7 @@ function validate (samples) {
   return true;
 }
 
-function evaluatePixelOrig(samples, scenes) {
+function evaluatePixel(samples, scenes) {
   var clo_b02 = [];var clo_b03 = [];
   var clo_b04 = [];var clo_b08 = [];
   var clo_b02_invalid = [];var clo_b03_invalid = [];
@@ -77,23 +67,24 @@ function evaluatePixelOrig(samples, scenes) {
   var a_invalid = 0;
   
   for (var i = 0; i < samples.length; i++) {
-      if (samples[i].B02 > 0 && samples[i].B03 > 0 && samples[i].B04 > 0 && samples[i].B08 > 0) {
-        var isValid = validate(samples[i]);
+    var sample = samples[i];
+    if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0 && sample.B08 > 0) {
+      var isValid = validate(sample);
       
-        if (isValid) {
-          clo_b02[a] = samples[i].B02;
-          clo_b03[a] = samples[i].B03;
-          clo_b04[a] = samples[i].B04;
-          clo_b08[a] = samples[i].B08;
-          a = a + 1;
-        } else {
-          clo_b02_invalid[a_invalid] = samples[i].B02;
-          clo_b03_invalid[a_invalid] = samples[i].B03;
-          clo_b04_invalid[a_invalid] = samples[i].B04;
-          clo_b08_invalid[a_invalid] = samples[i].B08;
-          a_invalid = a_invalid + 1;
-        }
-     }
+      if (isValid) {
+        clo_b02[a] = sample.B02;
+        clo_b03[a] = sample.B03;
+        clo_b04[a] = sample.B04;
+        clo_b08[a] = sample.B08;
+        a = a + 1;
+      } else {
+        clo_b02_invalid[a_invalid] = sample.B02;
+        clo_b03_invalid[a_invalid] = sample.B03;
+        clo_b04_invalid[a_invalid] = sample.B04;
+        clo_b08_invalid[a_invalid] = sample.B08;
+        a_invalid = a_invalid + 1;
+      }
+    }
   }
   
   var rValue;
@@ -116,16 +107,5 @@ function evaluatePixelOrig(samples, scenes) {
     bValue = 0;
     nValue = 0;
   }
-  return {
-        default: [
-            rValue,
-            gValue,
-            bValue,
-            nValue]
-  }
-}
-
-function evaluatePixel(sample, scene, metadata, customData, outputMetadata) {
-  const result = evaluatePixelOrig([sample], [scene], metadata, customData, outputMetadata);
-  return result[Object.keys(result)[0]];
+  return [rValue, gValue, bValue, nValue]
 }
