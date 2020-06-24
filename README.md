@@ -117,6 +117,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Tonemapped Natural Color script](sentinel-2/tonemapped_natural_color)
  - [Highlight Optimized Natural Color](sentinel-2/highlight_optimized_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
+ - [Vegetation productivity indicator](sentinel-2/vegetation_productivity_indicator)
  
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
