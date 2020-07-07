@@ -13,7 +13,13 @@
 {% endraw %}
 
 ## General description
-The script uses cloud masks to identify cloudy areas and replace the data with terrain visualisation based on Sentinel-1 data. 
+The script uses cloud masks to identify cloudy sentinel-2 areas and replace the data with terrain visualisation based on Sentinel-1 data. 
+
+## Description of representative images  
+
+Sevastopol with cloudy areas in Sentinel-1, and non-cloudy areas in Sentinel-2. 
+
+![RGB](fig/fig1.png)
 
 ## Contributors:
  - Pierre Markuse, (Twitter: @pierre_markuse)
