@@ -1,22 +1,23 @@
-//Burned Area visualization
-//by Monja Sebela
+//VERSION=3
+// Burneed area detection
+// Author: Monja B. Šebela
 
-var NDWI=index(B03,B08); 
-var NDVI=index(B08, B04);
-var INDEX= ((B11 - B12) / (B11 + B12))+(B08);
- 
-//For Sentinel-2 L1C
-if((INDEX>0.15)||(NDVI>0.3)||(NDWI > 0.1)){
-  return[2.5*B04, 2.5*B03, 2.5*B02]
-}
-else {
- return [1,0,0]
+function setup() {
+    return {
+        input: ["B02", "B03", "B04", "B08", "B11", "B12", "dataMask"],
+        output: { bands: 4 }
+      };
 }
 
-//For Sentinel-2 L2A
-if((INDEX>0.1)||(NDVI>0.3)||(NDWI > 0.1)){
-  return[2.5*B04, 2.5*B03, 2.5*B02]
-}
-else {
- return [1,0,0]
+function evaluatePixel(samples) {
+	var NDWI=index(samples.B03, samples.B08); 
+	var NDVI=index(samples.B08, samples.B04);
+	var INDEX= ((samples.B11 - samples.B12) / (samples.B11 + samples.B12))+(samples.B08);
+
+  	if((INDEX>0.1)||(samples.B02>0.1)||(samples.B11<0.1)||(NDVI>0.3)||(NDWI > 0.1)){
+  		return[2.5*samples.B04, 2.5*samples.B03, 2.5*samples.B02, samples.dataMask]
+	}
+	else {
+ 	return [1, 0, 0, samples.dataMask]
+	}
 }
