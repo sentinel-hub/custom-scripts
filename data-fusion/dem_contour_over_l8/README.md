@@ -9,7 +9,7 @@
   
 </div>  
 
-# Authors
+## Authors
 
 **Author of the datafusion script:**
 - Monja B. Šebela
