@@ -289,6 +289,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sentinel-2 with cloudy parts replaced by Sentinel-1](data-fusion/s2l1c_s1grd_cloud_replacement)
  - [Ship detection with Sentinel-1 and Sentinel-2](data-fusion/ship_detection_s1_s2)
  - [Built-up area detection with Sentinel-1 and Sentinel-2](data-fusion/urban_s1_s2)
+ - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
 
 # <a name="howto"></a>Adding new custom scripts
