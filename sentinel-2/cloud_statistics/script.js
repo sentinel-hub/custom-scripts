@@ -8,7 +8,7 @@ function setup() {
   };
 }
 
-function isCloudy(smp) {
+function isNotCloudy(smp) {
   // Check if cloud using s2cloudless and scene classification
   let clm = smp.CLM;
   let scl = smp.SCL;
@@ -38,7 +38,7 @@ function evaluatePixel(samples) {
 
     //Criteria for cloudless pixel
     if (
-      isCloudy(samples[i])
+      isNotCloudy(samples[i])
      ) noOfClearPx++;
   }
 
