@@ -4,19 +4,20 @@
 function setup() {
   return {
     input: [
-        {datasource: "s2l1c", bands:["B02", "B03", "B04", "B08", "B11"]},
-        {datasource: "s1grd", bands:["VV", "VH"], orthorectify:"TRUE"},
-        {datasource: "s2l2a", bands:["B02", "B03", "B04"]}
+        {datasource: "S2L1C", bands:["B02", "B03", "B04", "B08", "B11"]},
+        {datasource: "S1GRD", bands:["VV", "VH"], orthorectify:"TRUE"},
+        {datasource: "S2L2A", bands:["B02", "B03", "B04"]}
     ],
     output: [
         { id: "default", bands: 3}
     ]
-}}
+  };
+}
 
 function evaluatePixel(samples) {
- var S2L1C = samples.s2l1c[0]
- var S2L2A = samples.s2l2a[0]
- var S1 = samples.s1grd[0]
+ var S2L1C = samples.S2L1C[0]
+ var S2L2A = samples.S2L2A[0]
+ var S1 = samples.S1GRD[0]
  let ndvi = (S2L1C.B08 - S2L1C.B04) / (S2L1C.B08 + S2L1C.B04)
  let ndmi = (S2L1C.B08 - S2L1C.B11) / (S2L1C.B08 + S2L1C.B11)
 
