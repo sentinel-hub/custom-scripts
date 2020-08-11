@@ -1,61 +1,50 @@
 //VERSION=3
-//Author: Maxim Lamare
+//Multitemporal forest fire progression monitoring script utilizing a) Sentinel-2 data from 7 September 2019 for the visualization of burned areas
+//and b) Sentinel-1 SAR data from 7 September and 12 September 2019 to monitor forest fire progression in overcast conditions.
+//Author: Max Kampen
+
 function setup() {
   return {
     input: [
-      {datasource: "S1GRD", bands:["VV", "VH"]},
-      {datasource: "S2L2A", bands:["B02", "B03", "B08", "B04", "SCL"], units:"REFLECTANCE"}],
+      {datasource: "s1_t1", bands:["VH"]},                                  // S1 data from 7 September 2019 (t1)
+      {datasource: "s1_t2", bands:["VV", "VH"]},                            // S1 data from 12 September 2019 (t2)
+      {datasource: "l2a_t1", bands:["B03", "B04", "B08", "B11", "B12"]}],   // S2 data from 7 September 2019 (t1)
     output: [
       {id: "default", bands: 3, sampleType: SampleType.AUTO}
     ]
-  }
+  };
 }
 
-function toDb(linear) {
-  // Convert the linear backscatter to DB (Filgueiras et al. (2019), eq. 3)
-  return 10 * Math.LN10 * linear
-}
 
-function calc_s1_ndvi(sigmaVV, sigmaVH){
-    // Convert sigma0 to Decibels
-    let vh_Db = toDb(sigmaVH)
-    let vv_Db = toDb(sigmaVV)
+function evaluatePixel(samples, inputData, inputMetadata, customData, outputMetadata) {
+  var s1_1 = samples.s1_t1[0];     //Assigns S1 data from t1
+  var s1_2 = samples.s1_t2[0];     //Assigns S1 data from t2
+  var s2_1 = samples.l2a_t1[0];    //Assigns S2 data from t1
 
-    // Calculate NRPB (Filgueiras et al. (2019), eq. 4)
-    let NRPB = (vh_Db - vv_Db) / (vh_Db + vv_Db)
+  // Calculate indices with S2 data from t1 for 'Burned Area Visualization' by Monja Sebela
+  var NDWI = index(s2_1.B03, s2_1.B08);
+  var NDVI = index(s2_1.B08, s2_1.B04);
+  var INDEX = ((s2_1.B11 - s2_1.B12) / (s2_1.B11 + s2_1.B12))+(s2_1.B08);
 
-    // Calculate NDVI_nc with approach A3 (Filgueiras et al. (2019), eq. 14)
-    let NDVInc = 2.572 - 0.05047 * vh_Db + 0.176 * vv_Db + 3.422 * NRPB
+  // Calculate difference in S1 VH backscatter between second (t2) and first scene (t1) (Belenguer-Plomer et al. 2019)
+  var VH_diff = (s1_2.VH - s1_1.VH);
 
-    return NDVInc
-}
+  // Set classification threshholds
+  var thr_VH = 0.03;
+  var thr_VH_diff = -0.015;
+  var thr_VV = 0.2;
 
-function evaluatePixel(samples) {
-  var s1 = samples.S1GRD[0]
-  var s2 = samples.S2L2A[0]
-
-  // Create an NDVI visualiser
-  var viz=new ColorMapVisualizer([[0.0,0xa50026],
-                                  [0.0,0xd73027], [0.2,0xf46d43],
-                                  [0.3,0xfdae61], [0.4,0xfee08b],
-                                  [0.5,0xffffbf], [0.6,0xd9ef8b],
-                                  [0.7,0xa6d96a], [0.8,0x66bd63],
-                                  [0.9,0x1a9850], [1.0,0x006837]]);
-  // Calculate S2 NDVI
-  let ndvi = index(s2.B08, s2.B04)
-  // Calculate S1 NDVI
-  let s1_ndvi = calc_s1_ndvi(s1.VV, s1.VH)
-
-  // Use the S2-L2A classification to identify clouds
-  if ([7, 8, 9, 10].includes(s2.SCL)) {
-    // If clouds are present use S1 NDVI
-    return {
-      default: viz.process(s1_ndvi)
+  if((NDWI > 0.15)||(NDVI > 0.35)||(INDEX > 0.2)){                   // If non-burned areas in S2 image from t1
+    if ((s1_2.VH < thr_VH) & (VH_diff < thr_VH_diff)){               // are classified as burned in S1 image from t2 via threshholds for VH backscatter and the calculated difference layer
+      return{default: [1,0,0]};                                       // Return red color
+    }else{
+      return{default: [2.5*s2_1.B12, 2.5*s2_1.B08, 2.5*s2_1.B04]};    // Else return SWIR composite
     }
-  } else {
-    // Otherwise use s2 NDVI
-    return {
-      default: viz.process(ndvi)
+  }else{
+    if (s1_2.VV < thr_VV){              // Else, if already burnt area is also burned in S1 image from t2
+      return{default:[0.9,0.9,0.7]};    // Return light yellow color
+    }else{
+      return{default:[0,0,1]};          // Else return blue for areas that are no longer burned in S1 image from t2
     }
   }
 }
