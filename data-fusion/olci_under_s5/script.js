@@ -2,17 +2,20 @@
 //True color S3OLCI under S5P
 //Author: Monja B. Šebela
 
-var setup = () => ({
-  input: [
-    {datasource: "s3olci", bands:["B04", "B06", "B08"]},
-    {datasource: "s5pl2", bands:["CLOUD_TOP_PRESSURE"]}], //CLOUD_TOP_PRESSURE product chosen. 
-  output: [
-    {id: "default", bands: 3}
-  ],
-});
-function evaluatePixel(samples, inputData, inputMetadata, customData, outputMetadata){ 
-var S5 = samples.s5pl2[0]
-var S3 = samples.s3olci[0]
+function setup() {
+  return {
+    input: [
+      {datasource: "S3OLCI", bands:["B04", "B06", "B08"]},
+      {datasource: "S5PL2", bands:["CLOUD_TOP_PRESSURE"]}],
+    output: [
+      {id: "default", bands: 3, sampleType: SampleType.AUTO}
+    ]
+  }
+}
+
+function evaluatePixel(samples, inputData, inputMetadata, customData, outputMetadata){
+var S5 = samples.S5PL2[0]
+var S3 = samples.S3OLCI[0]
 var CLOUD_TOP_PRESSURE = S5.CLOUD_TOP_PRESSURE
 //CLOUD_TOP_PRESSURE visualization
 var minVal = 10000.0;
@@ -22,9 +25,9 @@ var limits = [minVal, minVal + 0.125 * diff, minVal + 0.375 * diff, minVal + 0.6
 var colors = [[0, 0, 0.5], [0, 0, 1], [0, 1, 1], [1, 1, 0], [1, 0, 0], [0.5, 0, 0]];
 //End of CLOUD_TOP_PRESSURE visualization
   if (CLOUD_TOP_PRESSURE>0){
-   return{default:colorBlend(CLOUD_TOP_PRESSURE, limits, colors)}
-}
-  return{default:[S3.B08*3, S3.B06*3, S3.B04*3.5]}
+    return{default:colorBlend(CLOUD_TOP_PRESSURE, limits, colors)}
+  }
+    return{default:[S3.B08*3, S3.B06*3, S3.B04*3.5]}
 }
 
 /*To replace the CLOUD_TOP_PRESSURE product with other products, replace all "CLOUD_TOP_PRESSURE" mentions in the script with the other available products: 
