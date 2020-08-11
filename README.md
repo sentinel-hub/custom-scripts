@@ -292,6 +292,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Built-up area detection with Sentinel-1 and Sentinel-2](data-fusion/urban_s1_s2)
  - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
+ - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.  
