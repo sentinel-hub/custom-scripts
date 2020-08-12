@@ -5,7 +5,6 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
 
 ## Author: 
@@ -22,6 +21,3 @@ This script masks water areas using Sentinel-2 NDWI, and returns the high NDWI p
   
 **Ship traffic of Yangtze river, at Zhenjiang and Yangzhong, China**
 ![ships](fig/fig1.jpg) 
-
-
-
