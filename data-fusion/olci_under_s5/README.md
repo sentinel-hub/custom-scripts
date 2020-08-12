@@ -5,7 +5,6 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
 
 ## Authors
@@ -25,6 +24,3 @@ The script can be modified to fit any Sentinel-5P product, by just replacing the
   
 **Cloud base pressure over OLCI true color**
 ![base pressure](fig/fig1.jpg) 
-
-
-

@@ -5,7 +5,6 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
 
 # Author: 
@@ -25,5 +24,3 @@ This script is based on the [Urban areas composite for Sentinel-1](https://custo
 
 **Venice, Italy**
 ![Venice](fig/fig2.jpg)  
-
-

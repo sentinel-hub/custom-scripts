@@ -3,11 +3,10 @@
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative script.js %}
+{% include_relative script.js %}
 {% endhighlight %}
 </div>
 
-{% raw %}
 ## Evaluate and visualize
  - [EO Browser](https://sentinelshare.page.link/KoE7)
 
