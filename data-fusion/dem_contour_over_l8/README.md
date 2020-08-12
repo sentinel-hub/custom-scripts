@@ -1,4 +1,3 @@
-
 # DEM Contour Lines Over Landsat 8
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  
@@ -6,7 +5,6 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
 
 ## Authors
@@ -29,6 +27,3 @@ This script uses DEM to calculate contour lines and displays them over Landsat-8
   
 **Contour lines over L8**
 ![contour](fig/fig1.jpg) 
-
-
-
