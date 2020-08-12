@@ -1,4 +1,3 @@
-
 # Mapping crop NDVI with Sentinel-1 and Sentinel-2
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  
@@ -6,13 +5,11 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
   
 ## Evaluate and visualize  
  - [EO Browser](https://sentinelshare.page.link/i7t2)
  - [Euro Data Cube](https://eurodatacube.com/marketplace/notebooks/contributions/EDC_SentinelHub_DataFusion_NDVI.ipynb){:target="_blank"}   
-  
   
 ## General description of the script  
   
@@ -24,12 +21,10 @@ Studies have linked Synthetic Aperture Radar (SAR) backscattering data to vegeta
 
 In this example, we combine a Sentinel-2 L2A NDVI product partly occulted by clouds with Sentinel-1 GRD observation to produce a seamless NDVI product, based on the relationship between radar backscatter and NDVI [5].
 
-
 **Note:**
 
 The method developed by Filgueiras et al. (2019) is based on regression algorithms between Sentinel-2 and Sentinel-1 images. For simplicity, the A3 approach with a linear regression is used in this example. However, it should be noted that the approach is less accurate for areas with low biomass (NDVI < 0.25). Although the method enables the monitoring of vegetation independently of optical sensors, calibration for the type of crop is needed. For illustration purposes here, the algorithm was applied to an area consisting mostly of sorghum and wheat. However, the regression parameters obtained from Filgueiras et al. (2019) for soybean and maize
  were not changed, thus leading to a bias in the absolute values of NDVI. 
-
 
 ## Description of representative images  
   
