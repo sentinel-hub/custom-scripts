@@ -1,4 +1,3 @@
-
 # Mapping forest fire progression with Sentinel-2 and Sentinel-1
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  
@@ -6,10 +5,7 @@
 {% highlight javascript %}  
 {% include_relative script.js %}  
 {% endhighlight %}  
-  
 </div>  
-  
- 
   
 ## General description of the script  
 
