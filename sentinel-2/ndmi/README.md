@@ -20,18 +20,10 @@ The SWIR band reflects changes in both the vegetation water content and the spon
 while the NIR reflectance is affected by leaf internal structure and leaf dry matter content but not by water content. 
 The combination of the NIR with the SWIR removes variations induced by leaf internal structure and leaf dry matter content, improving the accuracy in retrieving the vegetation water content. 
 The amount of water available in the internal leaf structure largely controls the spectral reflectance in the SWIR interval of the electromagnetic spectrum. 
-SWIR reflectance is therefore negatively related to leaf water content. NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR) reflectance’s:
-
-### Option 1 ###
-Used to monitor changes in water content of leaves, [proposed by Gao.](http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf){:target="_blank"}
+SWIR reflectance is therefore negatively related to leaf water content. In short, NDMI is used to monitor changes in water content of leaves, and was [proposed by Gao.](http://ceeserver.cee.cornell.edu/wdp2/cee6150/Readings/Gao_1996_RSE_58_257-266_NDWI.pdf){:target="_blank"}
+NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR) reflectance’s:
 
 **NDWI = (B08 - B11) / (B08 + B11)**
-
-### Option 2 ###
-Used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996).
-
-**NDWI = (B03 - B08) / (B03 + B08)**
-
 
 ## Description of representative images
 
@@ -39,8 +31,12 @@ The NDMI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub.
 
 ![NDWI](fig/fig1.png)
 
+The NDMI of Betsiboka river, Madagascar. Acquired on 2020-08-01, processed by Sentinel Hub. 
+
+![NDWI](fig/fig2.jpg)
+
 ## References
 
-[Normalize difference water index](https://en.wikipedia.org/wiki/Normalized_difference_water_index){:target="_blank"}
+[Normalize difference water index](https://www.usgs.gov/land-resources/nli/landsat/normalized-difference-moisture-index){:target="_blank"}
 
 

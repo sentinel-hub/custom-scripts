@@ -8,34 +8,28 @@
 </div>
 
 ## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ndwi/script.js){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=41.9000&lng=12.5000&zoom=10&time=2017-10-08&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=aWYgKEIwOCA9PSAwIHx8IEIxMSA9PSAwKXsKICByZXR1cm4gWzAsMCwwXTsKfSBlbHNlIHsKICB2YXIgdmFsID0gKEIwOCAtIEIxMSkvKEIwOCArIEIxMSk7CiAgCiAgdmFyIHZtaW4gPSAtMC44OwogIHZhciB2bWF4ID0gMC44OwogIHZhciBkdiA9IHZtYXggLSB2bWluOwogIAogIHZhciByID0gMC4wOwogIHZhciBnID0gMC4wOwogIHZhciBiID0gMC4wOwoKICAKICB2YXIgdiA9IHZhbDsKCiAgaWYgKHYgPCB2bWluKXsKICAgIHYgPSB2bWluOwogIH0KICBpZiAodiA%2BIHZtYXgpewogICAgdiA9IHZtYXg7CiAgfQogIAogIHZhciBsMSA9IDAuMzU7CiAgdmFyIGwyID0gMC40ODsKICB2YXIgbDMgPSAwLjUyOwogIHZhciBsNCA9IDAuNjU7CiAgCiAgdmFyIGxldmVsMSA9ICh2bWluICsgbDEgKiBkdik7CiAgdmFyIGxldmVsMiA9ICh2bWluICsgbDIgKiBkdik7CiAgdmFyIGxldmVsMyA9ICh2bWluICsgbDMgKiBkdik7CiAgdmFyIGxldmVsNCA9ICh2bWluICsgbDQgKiBkdik7CgogIGlmICh2IDwgbGV2ZWwxKXsKICAgICByID0gMC41ICsgICh2IC0gdm1pbikgLyAobGV2ZWwxIC0gdm1pbikgLyAyOwogIH0gZWxzZSBpZiAodiA8IGxldmVsMikgewogICAgIHIgPSAxOwogICAgIGcgPSAodiAtIGxldmVsMSkgLyAobGV2ZWwyIC0gbGV2ZWwxKTsKICAgICBiID0gMDsKICB9IGVsc2UgaWYgKHYgPCBsZXZlbDMpIHsKICAgICByID0gMSArIChsZXZlbDIgLSB2KSAvIChsZXZlbDMgLSBsZXZlbDIpOwogICAgIGcgPSAxOwogICAgIGIgPSAodiAtIGxldmVsMikgLyAobGV2ZWwzIC0gbGV2ZWwyKTsKICB9IGVsc2UgaWYgKHYgPCBsZXZlbDQpIHsKICAgICByID0gMDsKICAgICBnID0gMSArIChsZXZlbDMgLSB2KSAvIChsZXZlbDQgLSBsZXZlbDMpOwogICAgIGIgPSAxOwogIH0gZWxzZSB7CiAgICAgYiA9IDEuMCArIChsZXZlbDQgLSB2KSAvICh2bWF4IC0gbGV2ZWw0KSAvIDI7CiAgfQoKICAgcmV0dXJuIFtyLCBnLCBiXTsKICAKfQ%3D%3D){:target="_blank"}
+ - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=44.95167902304322&lng=12.337989807128906&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=Ly9uZHdpCnZhciBjb2xvclJhbXAxID0gWwogIAlbMCwgMHhGRkZGRkZdLAogIAlbMSwgMHgwMDgwMDBdCiAgXTsKdmFyIGNvbG9yUmFtcDIgPSBbCiAgCVswLCAweEZGRkZGRl0sCiAgCVsxLCAweDAwMDBDQ10KICBdOwoKbGV0IHZpejEgPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihjb2xvclJhbXAxKTsKbGV0IHZpejIgPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihjb2xvclJhbXAyKTsKCmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwoc2FtcGxlcykgewogIHZhciB2YWwgPSBpbmRleChzYW1wbGVzWzBdLkIwMywgc2FtcGxlc1swXS5CMDgpOwoKICBpZiAodmFsIDwgLTApIHsKICAgIHJldHVybiB2aXoxLnByb2Nlc3MoLXZhbCk7CiAgfSBlbHNlIHsKICAgIHJldHVybiB2aXoyLnByb2Nlc3MoTWF0aC5zcXJ0KE1hdGguc3FydCh2YWwpKSk7CiAgfQp9CgpmdW5jdGlvbiBzZXR1cChkcykgewogIHNldElucHV0Q29tcG9uZW50cyhbZHMuQjAzLCBkcy5CMDhdKTsKICBzZXRPdXRwdXRDb21wb25lbnRDb3VudCgzKTsKfQ%3D%3D){:target="_blank"}    
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=44.94637&lng=12.10183&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-08-01T00%3A00%3A00.000Z&toTime=2020-08-01T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=Ly9uZHdpCnZhciBjb2xvclJhbXAxID0gWwogIAlbMCwgMHhGRkZGRkZdLAogIAlbMSwgMHgwMDgwMDBdCiAgXTsKdmFyIGNvbG9yUmFtcDIgPSBbCiAgCVswLCAweEZGRkZGRl0sCiAgCVsxLCAweDAwMDBDQ10KICBdOwoKbGV0IHZpejEgPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihjb2xvclJhbXAxKTsKbGV0IHZpejIgPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihjb2xvclJhbXAyKTsKCmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwoc2FtcGxlcykgewogIHZhciB2YWwgPSBpbmRleChzYW1wbGVzWzBdLkIwMywgc2FtcGxlc1swXS5CMDgpOwoKICBpZiAodmFsIDwgLTApIHsKICAgIHJldHVybiB2aXoxLnByb2Nlc3MoLXZhbCk7CiAgfSBlbHNlIHsKICAgIHJldHVybiB2aXoyLnByb2Nlc3MoTWF0aC5zcXJ0KE1hdGguc3FydCh2YWwpKSk7CiAgfQp9CgpmdW5jdGlvbiBzZXR1cChkcykgewogIHNldElucHV0Q29tcG9uZW50cyhbZHMuQjAzLCBkcy5CMDhdKTsKICBzZXRPdXRwdXRDb21wb25lbnRDb3VudCgzKTsKfQ%3D%3D){:target="_blank"}
 
 ## General description of the script
 
-The NDWI is useful for water body mapping, as water bodies strongly absorb light in visible to infrared electromagnetic spectrum. NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies.
-
-Normalized Difference Water Index (NDWI) may refer to one of at least two remote sensing-derived indexes related to liquid water:
-
-One is used to monitor changes in water content of leaves, using near-infrared (NIR) and short-wave infrared (SWIR) wavelengths, proposed by Gao in 1996.
-
-**NDWI = (B08 - B11) / (B08 + B11)**
-
-Another is used to monitor changes related to water content in water bodies, using green and NIR wavelengths, defined by McFeeters (1996).
+The NDWI is used to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum,  NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies. The index was proposed by McFeeters, 1996.
 
 **NDWI = (B03 - B08) / (B03 + B08)**
 
 Values description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas to values between zero and 0.2.
 
+_Note: NDWI index is often used synonymously with the NDMI index, often using NIR-SWIR combination as one of the two options. NDMI seems to be consistently described using NIR-SWIR combination. As the indices with these two combinations work very differently, with NIR-SWIR highlighting differences in water content of leaves, and GREEN-NIR highlighting differences in water content of water bodies, we have decided to separate the indices on our repository as NDMI using NIR-SWIR, and NDWI using GREEN-NIR._
+
 ## Description of representative images
 
-NDWI (for water content in leaves) of Rome. Acquired on 8.10.2017.
+NDWI of Italy. Acquired on 2020-08-01.
 
-![NDWI of Rome](fig/fig1.png)
+![NDWI of Italy](fig/fig1.jpg)
 
-NDWI (for water content in water bodies) of Rome. Acquired on 8.10.2017.
+NDWI of Canadian lakes. Acquired on 2020-08-05.
 
-![NDWI of Rome](fig/fig2.png)
+![NDWI of Canada](fig/fig2.jpg)
 
 ## References
 Source: https://en.wikipedia.org/wiki/Normalized_difference_water_index
