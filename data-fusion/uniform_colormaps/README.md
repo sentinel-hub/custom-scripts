@@ -14,7 +14,7 @@ SentinelHub custom scripts have limited support for custom colormaps: `colorBlen
 
 [Isoluminant NDVI of Troy, New York, USA (blue-gray-green `IsoluminantColormap`](https://tinyurl.com/y4uhg7t9). Visualized with relief derived from elevation data at the [New York State GIS Clearinghouse](https://gis.ny.gov/).
 
-![ndvi_qgis](images/qgis_isoluminant.jpg)
+![ndvi_qgis](images/qgis_isoluminant.JPG)
 
 [Brightness temperature of Hurricane Matthew in October 2016 (blue-white-red `DivergentColormap`)](https://tinyurl.com/y4ybe7te). The classes are sensor-agnostic, so we can use any satellite available for scripting.
 
