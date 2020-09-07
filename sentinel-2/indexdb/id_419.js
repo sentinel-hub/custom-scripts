@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 800/550 Green NDVI hyper 2 (abbrv. GNDVIhyper2)
 //
 // General formula: (800nm-550nm)/(800nm+550nm)

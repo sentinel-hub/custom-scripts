@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Red edge 2  (abbrv. Rededge2)
 //
 // General formula: ([708:716]-[676:685])/([708:716]+[676:685])
@@ -7,8 +7,8 @@
 //
 
 let index = (B05 - B04) / (B05 + B04);
-let min = -0.89;
-let max = 0.89;
+let min = -0.892;
+let max = 0.888;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

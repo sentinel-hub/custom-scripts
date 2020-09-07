@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Modified Simple Ratio 670,800  (abbrv. MSR670)
 //
 // General formula: (800nm/670nm-1)/sqrt(800nm/670nm+1)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 / B04 - 1.0) / Math.sqrt(B08 / B04 + 1.0);
-let min = -0.915;
-let max = 3.78;
+let min = -0.914;
+let max = 3.759;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

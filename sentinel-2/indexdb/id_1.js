@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Alteration   (abbrv. )
 //
 // General formula: [1600:1700] / [2145:2185]
@@ -7,8 +7,8 @@
 //
 
 let index = B11 / B12;
-let min = 0.058;
-let max = 17.114;
+let min = 0.059;
+let max = 17.133;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

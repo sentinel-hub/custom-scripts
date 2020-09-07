@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 675/555  (abbrv. SR675/555)
 //
 // General formula: 675nm/555nm
@@ -8,7 +8,7 @@
 
 let index = B04 / B03;
 let min = 0.058;
-let max = 17.16;
+let max = 17.388;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

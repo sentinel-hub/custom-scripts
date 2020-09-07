@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Tasselled Cap - Non Such Index MSS  (abbrv. NSIMSS)
 //
 // General formula: -0.016*[500:600] + 0.131*[600:700] - 0.425*[700:800] + 0.882*[800:1100]

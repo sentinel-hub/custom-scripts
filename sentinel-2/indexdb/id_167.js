@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Modified Simple Ratio  (abbrv. mSR)
 //
 // General formula: (800nm-445nm)/(680nm-445nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B01) / (B04 - B01);
-let min = -32.931;
-let max = 33.576;
+let min = -32.943;
+let max = 32.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

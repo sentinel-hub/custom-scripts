@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Canopy Chlorophyll Content Index  (abbrv. CCCI)
 //
 // General formula: ((NIR - rededge)/( NIR + rededge))/((NIR - Red)/( NIR + Red))
@@ -7,8 +7,8 @@
 //
 
 let index = ((B08 - B05) / (B08 + B05)) / ((B08 - B04) / (B08 + B04));
-let min = -32.359;
-let max = 33.644;
+let min = -32.988;
+let max = 32.84;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

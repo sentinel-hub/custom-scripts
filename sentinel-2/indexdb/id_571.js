@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Misra Green Vegetation Index  (abbrv. MGVI)
 //
 // General formula: -0.386*[500:600] - 0.530*[600:700] + 0.535*[700:800] + 0.532*[800:1100]

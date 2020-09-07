@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio NIR/700-715  (abbrv. SRNir/700-715)
 //
 // General formula: NIR/[700:715]
@@ -7,8 +7,8 @@
 //
 
 let index = B08 / B05;
-let min = 0.059;
-let max = 17.17;
+let min = 0.057;
+let max = 16.993;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

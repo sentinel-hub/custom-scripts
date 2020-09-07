@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Enhanced Vegetation Index  (abbrv. EVI)
 //
 // General formula: 2.5 * (NIR - RED) / ((NIR + 6*RED - 7.5*BLUE) + 1)
@@ -7,8 +7,8 @@
 //
 
 let index = 2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0);
-let min = -8.026;
-let max = 7.804;
+let min = -8.155;
+let max = 7.894;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

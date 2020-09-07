@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ashburn Vegetation Index  (abbrv. AVI)
 //
 // General formula: 2.0*[800:1100] - [600:700]
@@ -7,8 +7,8 @@
 //
 
 let index = 2.0 * B09 - B04;
-let min = -0.302;
-let max = 0.712;
+let min = -0.298;
+let max = 0.713;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

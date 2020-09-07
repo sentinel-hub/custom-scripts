@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 520/670  (abbrv. SR520/670)
 //
 // General formula: 520nm/670nm
@@ -8,7 +8,7 @@
 
 let index = B02 / B04;
 let min = 0.058;
-let max = 17.234;
+let max = 17.131;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

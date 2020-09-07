@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Soil Background Line  (abbrv. SBL)
 //
 // General formula: [800:1100] - 2.4*[600:700]
@@ -7,8 +7,8 @@
 //
 
 let index = B09 - 2.4 * B04;
-let min = -0.865;
-let max = 0.29;
+let min = -0.863;
+let max = 0.291;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference Green/Red Normalized green red difference index, Visible Atmospherically Resistant Indices Green (VIgreen) (abbrv. NGRDI)
 //
 // General formula: (GREEN - RED) / (GREEN + RED)
@@ -7,8 +7,8 @@
 //
 
 let index = (B03 - B04) / (B03 + B04);
-let min = -0.89;
-let max = 0.891;
+let min = -0.888;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

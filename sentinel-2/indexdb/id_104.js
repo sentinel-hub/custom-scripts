@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Weighted Difference Vegetation Index  (abbrv. WDVI)
 //
 // General formula: NIR - a * RED
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let a = 0.460;
+let a = 0.752;
 
 let index = B08 - a * B04;
-let min = -0.242;
-let max = 0.371;
+let min = -0.244;
+let max = 0.344;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

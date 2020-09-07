@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Log Ratio  (abbrv. LogR)
 //
 // General formula: log(NIR/RED)
@@ -7,8 +7,8 @@
 //
 
 let index = Math.log(B08 / B04);
-let min = -2.842;
-let max = 2.839;
+let min = -2.828;
+let max = 2.837;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

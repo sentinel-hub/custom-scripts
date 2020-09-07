@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Misra Soil Brightness Index  (abbrv. MSBI)
 //
 // General formula: 0.406*[500:600] + 0.600*[600:700] + 0.645*[700:800] + 0.243*[800:1100]

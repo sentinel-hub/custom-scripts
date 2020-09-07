@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 800/675 Pigment specific normalised difference A1 (abbrv. PSNDa1)
 //
 // General formula: (800nm - 675nm)/(800nm+675nm)
@@ -7,7 +7,7 @@
 //
 
 let index = (B08 - B04) / (B08 + B04);
-let min = -0.89;
+let min = -0.887;
 let max = 0.89;
 let zero = 0.0;
 

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ratio Analysis of Reflectance Spectra A4  (abbrv. RARSa4)
 //
 // General formula: (680nm /800nm)/(r680/r800)
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let r800 = 0.910;
-let r680 = 0.781;
+let r680 = 0.523;
+let r800 = 0.866;
 
 let index = (B04 / B08) / (r680 / r800);
-let min = 0.01;
-let max = 97.89;
+let min = 0.097;
+let max = 28.672;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 819/1600 NDII (abbrv. NDII)
 //
 // General formula: (819nm-1600nm)/(819nm+1600nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B11) / (B08 + B11);
-let min = -0.889;
-let max = 0.89;
+let min = -0.89;
+let max = 0.891;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

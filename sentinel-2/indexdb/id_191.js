@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // TCARI/OSAVI  (abbrv. TCARI/OSAVI)
 //
 // General formula: (3*(700nm-670nm)-0.2*(700nm-550nm)*700nm/670nm)/((1+0.16)*(800nm-670nm)/(800nm+670nm+0.16))
@@ -7,8 +7,8 @@
 //
 
 let index = (3.0 * (B05 - B04) - 0.2 * (B05 - B03) * B05 / B04) / ((1.0 + 0.16) * (B08 - B04) / (B08 + B04 + 0.16));
-let min = -45.828;
-let max = 47.312;
+let min = -45.198;
+let max = 46.958;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

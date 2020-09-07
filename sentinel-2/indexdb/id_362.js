@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Modified Simple Ratio NIR/RED  (abbrv. MSRNir/Red)
 //
 // General formula: ((NIR/RED)-1)/sqrt((NIR/RED)+1)
@@ -7,8 +7,8 @@
 //
 
 let index = ((B08 / B04) - 1.0) / Math.sqrt((B08 / B04) + 1.0);
-let min = -0.915;
-let max = 3.8;
+let min = -0.918;
+let max = 3.768;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Atmospherically Resistant Vegetation Index   (abbrv. ARVI)
 //
 // General formula: (NIR - RED - y * (RED - BLUE))/ (NIR + RED - y*(RED-BLUE))
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let y = 0.106;
+let y = 0.812;
 
 let index = (B09 - B04 - y * (B04 - B02)) / (B09 + B04 - y * (B04 - B02));
-let min = -2.4;
-let max = 0.92;
+let min = -3.292;
+let max = 0.93;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

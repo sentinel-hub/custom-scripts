@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Red-Edge Inflection Point 3  (abbrv. REIP3)
 //
 // General formula: 705+35((((665nm+783nm)/2)-705nm)/(740nm-705nm))
@@ -7,8 +7,8 @@
 //
 
 let index = 705.0 + 35.0 * ((((B04 + B07) / 2.0) - B05) / (B06 - B05));
-let min = -269.413;
-let max = 1732.43;
+let min = -281.46;
+let max = 1726.494;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

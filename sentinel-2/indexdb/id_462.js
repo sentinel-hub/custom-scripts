@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 800/2170  (abbrv. ND800/2170)
 //
 // General formula: (800nm-2170nm)/(800nm+2170nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B12) / (B08 + B12);
-let min = -0.889;
-let max = 0.891;
+let min = -0.89;
+let max = 0.892;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

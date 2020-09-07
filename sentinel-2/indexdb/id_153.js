@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Datt4  (abbrv. Datt4)
 //
 // General formula: 672nm/(550nm*708nm)
@@ -8,7 +8,7 @@
 
 let index = B04 / (B03 * B05);
 let min = 0.253;
-let max = 206.322;
+let max = 208.643;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Vegetation Index 700  (abbrv. VI700)
 //
 // General formula: (700nm-[660:680])/(700nm+[660:680])
@@ -7,8 +7,8 @@
 //
 
 let index = (B05 - B04) / (B05 + B04);
-let min = -0.89;
-let max = 0.889;
+let min = -0.891;
+let max = 0.89;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

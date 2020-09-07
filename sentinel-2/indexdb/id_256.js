@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // EPI  (abbrv. EPI)
 //
 // General formula: a*[672]/([550]*[708])^b
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let a = 0.083;
-let b = 0.357;
+let a = 0.331;
+let b = 0.329;
 
 let index = a * B04 / Math.pow((B03 * B05), b);
-let min = 0.004;
-let max = 23.393;
+let min = 0.014;
+let max = 0.871;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

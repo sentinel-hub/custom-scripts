@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 550/800  (abbrv. SR550/800)
 //
 // General formula: 550nm/800nm
@@ -8,7 +8,7 @@
 
 let index = B03 / B08;
 let min = 0.058;
-let max = 17.264;
+let max = 17.495;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Shape Index  (abbrv. IF)
 //
 // General formula: (2 * R - G - B) / (G - B)
@@ -7,8 +7,8 @@
 //
 
 let index = (2.0 * B04 - B03 - B02) / (B03 - B02);
-let min = -64.626;
-let max = 66.517;
+let min = -66.488;
+let max = 65.829;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

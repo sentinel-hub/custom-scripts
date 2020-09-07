@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // SQRT(IR/R)  (abbrv. SQRT(IR/R))
 //
 // General formula: sqrt(NIR / RED)
@@ -8,7 +8,7 @@
 
 let index = Math.sqrt(B08 / B04);
 let min = 0.241;
-let max = 4.145;
+let max = 4.135;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

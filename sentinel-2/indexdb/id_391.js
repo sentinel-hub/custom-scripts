@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Chlorophyll vegetation index  (abbrv. CVI)
 //
 // General formula: NIR*RED/GREEN ^2
@@ -8,7 +8,7 @@
 
 let index = B08 * B04 / Math.pow(B03, 2.0);
 let min = 0.016;
-let max = 214.213;
+let max = 220.152;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

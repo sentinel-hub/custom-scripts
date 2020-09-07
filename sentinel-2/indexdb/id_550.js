@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 833/658  (abbrv. ND833/658)
 //
 // General formula: (833nm-658nm)/(833nm+658nm)

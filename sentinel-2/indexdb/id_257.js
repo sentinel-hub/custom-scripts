@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // mCRIG  (abbrv. mCRIG)
 //
 // General formula: ([510:520] ^(-1)-[560:570] ^(-1))*NIR
@@ -7,8 +7,8 @@
 //
 
 let index = (Math.pow(B02, (-1.0)) - Math.pow(B03, (-1.0))) * B08;
-let min = -15.019;
-let max = 14.918;
+let min = -14.929;
+let max = 14.894;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

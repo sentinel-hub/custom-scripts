@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 550/450 Plant pigment ratio (abbrv. PPR)
 //
 // General formula: (550nm-450nm)/(550nm+450nm)
@@ -8,7 +8,7 @@
 
 let index = (B03 - B01) / (B03 + B01);
 let min = -0.889;
-let max = 0.889;
+let max = 0.892;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

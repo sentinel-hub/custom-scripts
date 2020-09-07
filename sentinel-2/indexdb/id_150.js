@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Datt1  (abbrv. Datt1)
 //
 // General formula: (850nm-710nm)/(850nm-680nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B05) / (B08 - B04);
-let min = -32.436;
-let max = 33.409;
+let min = -32.692;
+let max = 33.539;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

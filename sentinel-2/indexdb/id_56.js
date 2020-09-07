@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 820/1600 Normalized Difference Moisture Index (abbrv. NDMI)
 //
 // General formula: (820nm - 1600nm) / (820nm + 1600nm)

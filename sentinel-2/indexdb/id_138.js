@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Red-Edge Inflection Point 2  (abbrv. REIP2)
 //
 // General formula: 702+40((((667nm+782nm)/2)-702nm)/(742nm-702nm))
@@ -7,8 +7,8 @@
 //
 
 let index = 702.0 + 40.0 * ((((B04 + B07) / 2.0) - B05) / (B06 - B05));
-let min = -440.438;
-let max = 1863.862;
+let min = -425.467;
+let max = 1867.294;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

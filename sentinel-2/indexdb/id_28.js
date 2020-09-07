@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Green Normalized Difference Vegetation Index   (abbrv. GNDVI)
 //
 // General formula: (NIR - [540:570]) / (NIR + [540:570])
@@ -7,7 +7,7 @@
 //
 
 let index = (B08 - B03) / (B08 + B03);
-let min = -0.892;
+let min = -0.889;
 let max = 0.891;
 let zero = 0.0;
 

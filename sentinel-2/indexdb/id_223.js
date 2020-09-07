@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Rededge Normalized Difference Red-Edge (abbrv. NDRE)
 //
 // General formula: (NIR - rededge)/( NIR + rededge)
@@ -7,7 +7,7 @@
 //
 
 let index = (B08 - B05) / (B08 + B05);
-let min = -0.89;
+let min = -0.887;
 let max = 0.89;
 let zero = 0.0;
 

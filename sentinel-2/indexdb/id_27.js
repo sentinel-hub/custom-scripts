@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Difference NIR/Green Green Difference Vegetation Index (abbrv. GDVI)
 //
 // General formula: NIR - G
@@ -8,7 +8,7 @@
 
 let index = B08 - B03;
 let min = -0.335;
-let max = 0.336;
+let max = 0.335;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
