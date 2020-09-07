@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Specific Leaf Area Vegetation Index   (abbrv. SLAVI)
 //
 // General formula: NIR / (RED + SWIR)
@@ -8,7 +8,7 @@
 
 let index = B08 / (B04 + B12);
 let min = 0.032;
-let max = 3.247;
+let max = 3.228;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

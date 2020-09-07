@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Reflectance at the inflexion point  (abbrv. Rre)
 //
 // General formula: ([670]+[780])/2
@@ -7,7 +7,7 @@
 //
 
 let index = (B04 + B07) / 2.0;
-let min = 0.037;
+let min = 0.038;
 let max = 0.372;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

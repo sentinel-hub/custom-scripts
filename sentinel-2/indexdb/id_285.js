@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 800/650 Pigment specific normalised difference B1 (abbrv. PSNDb1)
 //
 // General formula: (800nm - 650nm)/(800nm+650nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B04) / (B08 + B04);
-let min = -0.89;
-let max = 0.89;
+let min = -0.891;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

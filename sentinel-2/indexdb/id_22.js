@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ferrous Silicates   (abbrv. )
 //
 // General formula: [2145:2185]/[1600:1700]
@@ -7,8 +7,8 @@
 //
 
 let index = B12 / B11;
-let min = 0.058;
-let max = 16.788;
+let min = 0.059;
+let max = 17.424;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 833/1649 MSIhyper (abbrv. SR833/1649)
 //
 // General formula: 833nm/1649nm
@@ -8,7 +8,7 @@
 
 let index = B08 / B11;
 let min = 0.058;
-let max = 17.118;
+let max = 17.336;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

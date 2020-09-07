@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Differenced Vegetation Index MSS  (abbrv. DVIMSS)
 //
 // General formula: 2.4*[800:1100]-[600:700]
@@ -7,7 +7,7 @@
 //
 
 let index = 2.4 * B09 - B04;
-let min = -0.291;
+let min = -0.288;
 let max = 0.865;
 let zero = 0.0;
 

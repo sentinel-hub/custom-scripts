@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Chlorophyll Absorption Ratio Index  (abbrv. CARI)
 //
 // General formula: (700nm/670nm)*(sqrt((a*670+670nm+b)^2))/((a^2+1)^0.5)
@@ -8,7 +8,7 @@
 
 let index = (B05 / B04) * (Math.sqrt(Math.pow(((B05 - B03) / 150.0 * 670.0 + B04 + (B03 - ((B05 - B03) / 150.0 * 550.0))), 2.0))) / (Math.pow(((B05 - B03) / Math.pow(150.0, 2.0) + 1.0), 0.5));
 let min = 0.018;
-let max = 5.351;
+let max = 5.295;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

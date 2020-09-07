@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 895/675  (abbrv. ND895/675)
 //
 // General formula: (895nm-675nm)/(895nm+675nm)
@@ -7,7 +7,7 @@
 //
 
 let index = (B08 - B04) / (B08 + B04);
-let min = -0.89;
+let min = -0.889;
 let max = 0.89;
 let zero = 0.0;
 

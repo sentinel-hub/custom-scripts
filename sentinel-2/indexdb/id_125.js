@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Wide Dynamic Range Vegetation Index  (abbrv. WDRVI)
 //
 // General formula: (0.1*NIR-RED)/(0.1*NIR+RED)
@@ -8,7 +8,7 @@
 
 let index = (0.1 * B08 - B04) / (0.1 * B08 + B04);
 let min = -0.988;
-let max = 0.263;
+let max = 0.264;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

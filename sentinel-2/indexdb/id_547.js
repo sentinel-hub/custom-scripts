@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 1599/819 Moisture Stress Index 2 (abbrv. MSI2)
 //
 // General formula: 1599nm/819nm
@@ -8,7 +8,7 @@
 
 let index = B11 / B08;
 let min = 0.058;
-let max = 17.186;
+let max = 17.467;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

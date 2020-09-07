@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference Red/Green Redness Index (abbrv. RI)
 //
 // General formula: (R - G) / (R + G)
@@ -7,8 +7,8 @@
 //
 
 let index = (B04 - B03) / (B04 + B03);
-let min = -0.888;
-let max = 0.886;
+let min = -0.891;
+let max = 0.89;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

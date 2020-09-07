@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Visible Atmospherically Resistant Index Green  (abbrv. VARIgreen)
 //
 // General formula: ( [545:565] - [620:680] ) / ( [545:565] + [620:680] - [459:490] )
@@ -7,8 +7,8 @@
 //
 
 let index = (B03 - B04) / (B03 + B04 - B02);
-let min = -15.64;
-let max = 15.592;
+let min = -15.455;
+let max = 15.386;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

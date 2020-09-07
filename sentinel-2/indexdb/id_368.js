@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Inverse reflectance 550  (abbrv. IR550)
 //
 // General formula: 550nm ^(-1)
@@ -7,8 +7,8 @@
 //
 
 let index = Math.pow(B03, (-1.0));
-let min = 2.524;
-let max = 71.97;
+let min = 0.013900000000000001;
+let max = 0.7861;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

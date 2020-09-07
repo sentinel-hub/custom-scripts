@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 560/658 GRVIhyper (abbrv. SR560/658)
 //
 // General formula: 560nm/658nm
@@ -7,8 +7,8 @@
 //
 
 let index = B03 / B04;
-let min = 0.058;
-let max = 17.149;
+let min = 0.06;
+let max = 17.007;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

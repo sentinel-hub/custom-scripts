@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ferric iron, Fe2+   (abbrv. Fe2+)
 //
 // General formula: [2145:2185]/[760:860]+[520:600]/[630:690]
@@ -7,8 +7,8 @@
 //
 
 let index = B12 / B08 + B03 / B04;
-let min = 0.355;
-let max = 23.914;
+let min = 0.359;
+let max = 23.837;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Difference 678/500  (abbrv. D678/500)
 //
 // General formula: 678nm-500nm

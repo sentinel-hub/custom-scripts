@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 860/1640  (abbrv. SIWSI)
 //
 // General formula: (860nm-1640nm)/(860nm+1640nm)
@@ -7,7 +7,7 @@
 //
 
 let index = (B8A - B11) / (B8A + B11);
-let min = -0.891;
+let min = -0.889;
 let max = 0.89;
 let zero = 0.0;
 

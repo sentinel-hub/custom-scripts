@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Coloration Index  (abbrv. CI)
 //
 // General formula: (RED - BLUE) / RED
@@ -7,8 +7,8 @@
 //
 
 let index = (B04 - B02) / B04;
-let min = -16.29;
-let max = 0.941;
+let min = -16.339;
+let max = 0.942;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

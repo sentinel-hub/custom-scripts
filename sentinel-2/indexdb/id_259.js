@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // mND680  (abbrv. mND680)
 //
 // General formula: (800nm-680nm)/(800nm+680nm-2*445nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B04) / (B08 + B04 - 2.0 * B01);
-let min = -16.893;
-let max = 16.562;
+let min = -16.803;
+let max = 16.613;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

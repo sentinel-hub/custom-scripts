@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Transformed Vegetation Index  (abbrv. TVI)
 //
 // General formula: sqrt((NDVI)+0,5)

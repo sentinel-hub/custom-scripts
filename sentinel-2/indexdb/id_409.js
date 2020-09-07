@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 735/710  (abbrv. SR735/710)
 //
 // General formula: 735nm/[700:710]
@@ -7,8 +7,8 @@
 //
 
 let index = B06 / B05;
-let min = 0.058;
-let max = 17.121;
+let min = 0.059;
+let max = 17.229;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

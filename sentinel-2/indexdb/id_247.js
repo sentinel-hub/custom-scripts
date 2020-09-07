@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Transformed Soil Adjusted Vegetation Index 2  (abbrv. TSAVI)
 //
 // General formula: (a*NIR-a*RED-b)/(RED+a*NIR-a*b)
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let a = 0.690;
-let b = 0.295;
+let a = 0.419;
+let b = 0.787;
 
 let index = (a * B08 - a * B04 - b) / (B04 + a * B08 - a * b);
-let min = -88.395;
-let max = 86.756;
+let min = -211.158;
+let max = 200.042;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

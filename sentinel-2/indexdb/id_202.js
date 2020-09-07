@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Transformed NDVI  (abbrv. TNDVI)
 //
 // General formula: sqrt((NIR - RED)/(NIR + RED) + 0.5)
@@ -7,8 +7,8 @@
 //
 
 let index = Math.sqrt((B08 - B04) / (B08 + B04) + 0.5);
-let min = 0.134;
-let max = 1.181;
+let min = 0.136;
+let max = 1.182;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

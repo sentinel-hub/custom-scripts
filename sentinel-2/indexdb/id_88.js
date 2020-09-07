@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Soil Composition Index  (abbrv. )
 //
 // General formula: ([1600:1700]-[760:860])/([1600:1700]+[760:860])
@@ -7,8 +7,8 @@
 //
 
 let index = (B11 - B08) / (B11 + B08);
-let min = -0.89;
-let max = 0.89;
+let min = -0.889;
+let max = 0.891;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

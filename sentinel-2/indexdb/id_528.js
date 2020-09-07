@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 827/668  (abbrv. ND827/668)
 //
 // General formula: (827nm-668nm)/(827nm+668nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B04) / (B08 + B04);
-let min = -0.89;
-let max = 0.89;
+let min = -0.891;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

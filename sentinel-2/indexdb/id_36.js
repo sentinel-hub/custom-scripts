@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Intensity  (abbrv. I )
 //
 // General formula: (1 / (30.5)) * (R + G + B)

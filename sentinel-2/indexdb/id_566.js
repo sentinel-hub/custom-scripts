@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Tasselled Cap - Yellow Vegetation Index MSS  (abbrv. YVIMSS)
 //
 // General formula: -0.899*[500:600] + 0.428*[600:700] + 0.076*[700:800] - 0.041*[800:1100]

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Global Vegetation Moisture Index  (abbrv. GVMI)
 //
 // General formula: ((NIR+ 0.1) -(SWIR+0.02) )/((NIR+0.1) +(SWIR+0.02))
@@ -7,8 +7,8 @@
 //
 
 let index = ((B08 + 0.1) - (B12 + 0.02)) / ((B08 + 0.1) + (B12 + 0.02));
-let min = -0.494;
-let max = 0.828;
+let min = -0.492;
+let max = 0.826;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

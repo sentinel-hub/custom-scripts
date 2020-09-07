@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ratio Analysis of Reflectance Spectra A3  (abbrv. RARSa3)
 //
 // General formula: (675nm /800nm)/(r670/r800)
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let r800 = 0.356;
-let r670 = 0.192;
+let r670 = 0.382;
+let r800 = 0.935;
 
 let index = (B04 / B08) / (r670 / r800);
-let min = 0.01;
-let max = 96.827;
+let min = 0.144;
+let max = 41.524;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

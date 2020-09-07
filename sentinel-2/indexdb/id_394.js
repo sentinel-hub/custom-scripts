@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // SAVImir  (abbrv. SAVImir)
 //
 // General formula: (NIR-MIR)*(1+L)/(NIR+MIR+L)
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let L = 0.401;
+let L = 0.781;
 
 let index = (B08 - B12) * (1.0 + L) / (B08 + B12 + L);
-let min = -0.65;
-let max = 0.65;
+let min = -0.505;
+let max = 0.505;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

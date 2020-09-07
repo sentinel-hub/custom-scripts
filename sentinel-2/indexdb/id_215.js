@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Modified anthocyanin reflectance index  (abbrv. mARI)
 //
 // General formula: ([530:570] ^(-1) - [690:710] ^(-1))*NIR
@@ -7,8 +7,8 @@
 //
 
 let index = (Math.pow(B03, (-1.0)) - Math.pow(B05, (-1.0))) * B08;
-let min = -15.031;
-let max = 14.853;
+let min = -14.739;
+let max = 14.963;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
