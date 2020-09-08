@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Hue  (abbrv. H)
 //
 // General formula: arctan ((2 * R - G - B) / 30.5 * (G - B))

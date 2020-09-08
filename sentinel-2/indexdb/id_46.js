@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Modified Triangular Vegetation Index 1  (abbrv. MTVI1)
 //
 // General formula: 1.2 * (1.2 * (800nm - 550nm) - 2.5 * (670nm - 550nm))
@@ -7,8 +7,8 @@
 //
 
 let index = 1.2 * (1.2 * (B08 - B03) - 2.5 * (B04 - B03));
-let min = -0.882;
-let max = 0.881;
+let min = -0.88;
+let max = 0.882;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

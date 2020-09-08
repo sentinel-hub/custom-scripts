@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ferric Oxides   (abbrv. )
 //
 // General formula: [1600:1700]/[760:860]
@@ -7,8 +7,8 @@
 //
 
 let index = B11 / B08;
-let min = 0.057;
-let max = 17.346;
+let min = 0.06;
+let max = 17.079;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

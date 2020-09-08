@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Green Optimized Soil Adjusted Vegetation Index  (abbrv. GOSAVI)
 //
 // General formula: (NIR - G) / (NIR + G + Y) 
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let Y = 0.723;
+let Y = 0.120;
 
 let index = (B08 - B03) / (B08 + B03 + Y);
-let min = -0.58;
-let max = 0.579;
+let min = -0.657;
+let max = 0.653;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

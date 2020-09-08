@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 440/740  (abbrv. SR440/740)
 //
 // General formula: 440nm/740nm
@@ -8,7 +8,7 @@
 
 let index = B01 / B06;
 let min = 0.059;
-let max = 17.284;
+let max = 17.003;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

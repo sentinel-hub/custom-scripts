@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Norm G  (abbrv. Norm G)
 //
 // General formula: G / (NIR + R + G)

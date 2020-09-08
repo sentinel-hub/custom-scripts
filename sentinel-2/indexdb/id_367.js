@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Inverse reflectance 700  (abbrv. IR700)
 //
 // General formula: 700nm ^(-1)
@@ -7,8 +7,8 @@
 //
 
 let index = Math.pow(B05, (-1.0));
-let min = 2.525;
-let max = 72.027;
+let min = 0.013900000000000001;
+let max = 0.7861;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

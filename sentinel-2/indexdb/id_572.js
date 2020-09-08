@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Misra Yellow Vegetation Index  (abbrv. MYVI)
 //
 // General formula: 0.723*[500:600] - 0.597*[600:700] + 0.206*[700:800] - 0.278*[800:1100]

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Adjusted transformed soil-adjusted VI  (abbrv. ATSAVI)
 //
 // General formula: a*(NIR-a*RED - b)/(a*NIR+RED-a*b+X*(1+a^2))

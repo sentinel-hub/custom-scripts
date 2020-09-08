@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Soil Adjusted Vegetation Index  (abbrv. SAVI)
 //
 // General formula: (800nm - 670nm) / (800nm + 670nm + L) * (1 + L)
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let L = 0.428;
+let L = 0.725;
 
 let index = (B08 - B04) / (B08 + B04 + L) * (1.0 + L);
-let min = -0.65;
-let max = 0.65;
+let min = -0.512;
+let max = 0.512;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

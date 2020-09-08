@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // CRI550  (abbrv. CRI550)
 //
 // General formula: [510] ^(-1) - [550] ^(-1)
@@ -7,8 +7,8 @@
 //
 
 let index = Math.pow(B02, (-1.0)) - Math.pow(B03, (-1.0));
-let min = -64.363;
-let max = 64.456;
+let min = -65.066;
+let max = 64.541;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference NIR/SWIR Normalized Burn Ratio (abbrv. NBR)
 //
 // General formula: (NIR - SWIR) / (NIR + SWIR)

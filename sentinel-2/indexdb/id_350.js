@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Single Band 801  (abbrv. SB801)
 //
 // General formula: 801nm
@@ -7,8 +7,8 @@
 //
 
 let index = B08;
-let min = 0.014;
-let max = 0.396;
+let min = 0.013900000000000001;
+let max = 0.7861;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

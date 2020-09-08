@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Global Environment Monitoring Index  (abbrv. GEMI)
 //
 // General formula: ( n * ( 1 - 0.25 * n ) - (RED - 0.125 ) / ( 1 - RED))
@@ -7,8 +7,8 @@
 //
 
 let index = ((2.0 * (Math.pow(B08, 2.0) - Math.pow(B04, 2.0)) + 1.5 * B08 + 0.5 * B04) / (B08 + B04 + 0.5) * (1.0 - 0.25 * (2.0 * (Math.pow(B08, 2.0) - Math.pow(B04, 2.0)) + 1.5 * B08 + 0.5 * B04) / (B08 + B04 + 0.5)) - (B04 - 0.125) / (1.0 - B04));
-let min = -0.438;
-let max = 0.807;
+let min = -0.433;
+let max = 0.808;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 550/680 Disease-Water Stress Index 4 (abbrv. DSWI-4)
 //
 // General formula: 550nm/680nm
@@ -8,7 +8,7 @@
 
 let index = B03 / B04;
 let min = 0.058;
-let max = 17.226;
+let max = 17.183;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

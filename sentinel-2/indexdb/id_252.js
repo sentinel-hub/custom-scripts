@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Chlorophyll Red-Edge  (abbrv. Chlred-edge)
 //
 // General formula: ([760:800]/[690:720])^(-1)
@@ -8,7 +8,7 @@
 
 let index = Math.pow((B07 / B05), (-1.0));
 let min = 0.058;
-let max = 17.149;
+let max = 16.732;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

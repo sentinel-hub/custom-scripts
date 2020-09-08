@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Renormalized Difference Vegetation Index   (abbrv. RDVI)
 //
 // General formula: (800nm - 670nm) /sqrt(800nm + 670nm)0.5

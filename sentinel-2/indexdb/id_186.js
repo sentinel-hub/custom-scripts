@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Green-Blue NDVI  (abbrv. GBNDVI)
 //
 // General formula: (NIR-(GREEN+BLUE))/(NIR+(GREEN+BLUE))
@@ -7,7 +7,7 @@
 //
 
 let index = (B08 - (B03 + B02)) / (B08 + (B03 + B02));
-let min = -0.939;
+let min = -0.938;
 let max = 0.529;
 let zero = 0.0;
 

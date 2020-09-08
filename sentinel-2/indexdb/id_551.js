@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Difference 833/658  (abbrv. D833/658)
 //
 // General formula: 833nm-658nm
@@ -7,8 +7,8 @@
 //
 
 let index = B08 - B04;
-let min = -0.335;
-let max = 0.335;
+let min = -0.334;
+let max = 0.336;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

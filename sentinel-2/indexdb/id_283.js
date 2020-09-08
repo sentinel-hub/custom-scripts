@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 800/650 Pigment specific simple ratio B1 (abbrv. PSSRb1)
 //
 // General formula: 800nm/650nm
@@ -7,8 +7,8 @@
 //
 
 let index = B08 / B04;
-let min = 0.058;
-let max = 17.157;
+let min = 0.06;
+let max = 16.668;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio NIR/Rededge RedEdge Ratio Index 1 (abbrv. RRI1)
 //
 // General formula: NIR/rededge
@@ -8,7 +8,7 @@
 
 let index = B08 / B05;
 let min = 0.058;
-let max = 17.162;
+let max = 17.154;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

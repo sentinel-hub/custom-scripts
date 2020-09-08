@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Maccioni  (abbrv. )
 //
 // General formula: (780nm-710nm)/(780nm-680nm)
@@ -7,8 +7,8 @@
 //
 
 let index = (B07 - B05) / (B07 - B04);
-let min = -32.478;
-let max = 32.892;
+let min = -33.128;
+let max = 33.474;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

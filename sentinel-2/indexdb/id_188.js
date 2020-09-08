@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Pan NDVI  (abbrv. PNDVI)
 //
 // General formula: (NIR-(GREEN+RED+BLUE))/(NIR+(GREEN+RED+BLUE))
@@ -8,7 +8,7 @@
 
 let index = (B08 - (B03 + B04 + B02)) / (B08 + (B03 + B04 + B02));
 let min = -0.957;
-let max = 0.178;
+let max = 0.177;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

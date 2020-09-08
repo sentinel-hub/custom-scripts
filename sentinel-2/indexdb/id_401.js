@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Green Green NDVI (abbrv. GNDVI)
 //
 // General formula: (NIR-GREEN)/(NIR+GREEN)
@@ -8,7 +8,7 @@
 
 let index = (B08 - B03) / (B08 + B03);
 let min = -0.89;
-let max = 0.89;
+let max = 0.888;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

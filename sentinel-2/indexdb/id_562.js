@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Simple Ratio 774/677  (abbrv. SR774/677)
 //
 // General formula: 774nm/677nm
@@ -8,7 +8,7 @@
 
 let index = B07 / B04;
 let min = 0.058;
-let max = 17.06;
+let max = 17.039;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

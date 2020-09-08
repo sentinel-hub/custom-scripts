@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // RDVI2  (abbrv. RDVI2)
 //
 // General formula: (833nm-658nm)/sqrt(833nm+658nm)

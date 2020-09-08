@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Ratio Analysis of Reflectance Spectra C3  (abbrv. RARSc3)
 //
 // General formula: (800nm /500nm)/(r800/r500)
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let r800 = 0.133;
-let r500 = 0.310;
+let r500 = 0.535;
+let r800 = 0.712;
 
 let index = (B08 / B02) / (r800 / r500);
-let min = 0.01;
-let max = 97.939;
+let min = 0.044;
+let max = 12.54;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

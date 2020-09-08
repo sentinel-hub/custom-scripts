@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Nonlinear vegetation index  (abbrv. NLI)
 //
 // General formula: ([780:1400] ^2-RED)/([780:1400] ^2+RED)
@@ -8,7 +8,7 @@
 
 let index = (Math.pow(B08, 2.0) - B04) / (Math.pow(B08, 2.0) + B04);
 let min = -0.998;
-let max = 0.686;
+let max = 0.683;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

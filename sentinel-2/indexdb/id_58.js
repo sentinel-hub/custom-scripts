@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Red Normalized Difference Vegetation Index, Calibrated NDVI - CDVI (abbrv. NDVI)
 //
 // General formula: (NIR - RED) / (NIR + RED)

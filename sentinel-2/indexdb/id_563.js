@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 774/677  (abbrv. ND774/677)
 //
 // General formula: (774nm-677nm)/(774nm+677nm)
@@ -8,7 +8,7 @@
 
 let index = (B07 - B04) / (B07 + B04);
 let min = -0.889;
-let max = 0.89;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

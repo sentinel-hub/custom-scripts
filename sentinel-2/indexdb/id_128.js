@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Chlorophyll Index Green  (abbrv. CIgreen)
 //
 // General formula: NIR/GREEN-1
@@ -7,8 +7,8 @@
 //
 
 let index = B08 / B03 - 1.0;
-let min = -0.941;
-let max = 16.117;
+let min = -0.942;
+let max = 16.3;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

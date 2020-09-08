@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Leaf Chlorophyll Index  (abbrv. LCI)
 //
 // General formula: ([850]-[710])/([850]+[680])
@@ -7,8 +7,8 @@
 //
 
 let index = (B08 - B05) / (B08 + B04);
-let min = -2.798;
-let max = 0.735;
+let min = -2.77;
+let max = 0.736;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

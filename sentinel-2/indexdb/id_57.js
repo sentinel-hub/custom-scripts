@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference Salinity Index  (abbrv. NDSI)
 //
 // General formula: ([1600:1700]-[2145:2185])/([1600:1700]+[2145:2185])
@@ -7,8 +7,8 @@
 //
 
 let index = (B11 - B12) / (B11 + B12);
-let min = -0.888;
-let max = 0.889;
+let min = -0.889;
+let max = 0.892;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

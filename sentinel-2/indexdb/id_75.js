@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Reduced Simple Ratio  (abbrv. RSR)
 //
 // General formula: NIR / RED * MIRmax - MIR / MIRmax - MIRmin
@@ -7,12 +7,12 @@
 //
 
 // Initialize parameters
-let MIRmax = 0.778;
-let MIRmin = 0.660;
+let MIRmin = 0.259;
+let MIRmax = 0.640;
 
 let index = B08 / B04 * MIRmax - B12 / MIRmax - MIRmin;
-let min = -21.137;
-let max = 8.916;
+let min = -0.734;
+let max = 10.383;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

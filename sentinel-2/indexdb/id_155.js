@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Datt6  (abbrv. Datt6)
 //
 // General formula: 860nm/(550nm*708nm)
@@ -7,8 +7,8 @@
 //
 
 let index = B8A / (B03 * B05);
-let min = 0.253;
-let max = 208.643;
+let min = 0.256;
+let max = 207.696;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

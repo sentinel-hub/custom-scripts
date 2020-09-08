@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Difference 800/680  (abbrv. D800/680)
 //
 // General formula: 800nm-680nm
@@ -8,7 +8,7 @@
 
 let index = B08 - B04;
 let min = -0.335;
-let max = 0.335;
+let max = 0.336;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

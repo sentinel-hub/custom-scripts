@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Normalized Difference 780/550 Green NDVI hyper (abbrv. GNDVIhyper)
 //
 // General formula: (780nm-550nm)/(780nm+550nm)
@@ -7,7 +7,7 @@
 //
 
 let index = (B07 - B03) / (B07 + B03);
-let min = -0.889;
+let min = -0.888;
 let max = 0.889;
 let zero = 0.0;
 

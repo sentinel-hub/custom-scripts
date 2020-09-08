@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Green leaf index  (abbrv. GLI)
 //
 // General formula: (2 * GREEN - RED - BLUE)/(2 * GREEN + RED + BLUE)
@@ -7,8 +7,8 @@
 //
 
 let index = (2.0 * B03 - B04 - B02) / (2.0 * B03 + B04 + B02);
-let min = -0.881;
-let max = 0.733;
+let min = -0.88;
+let max = 0.735;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

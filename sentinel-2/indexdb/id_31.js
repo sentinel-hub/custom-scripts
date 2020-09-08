@@ -1,4 +1,4 @@
-//
+//VERSION=3
 // Green Soil Adjusted Vegetation Index  (abbrv. GSAVI)
 //
 // General formula: (NIR - G) / (NIR + G + L) * (1 + L)
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let L = 0.752;
+let L = 0.482;
 
 let index = (B08 - B03) / (B08 + B03 + L) * (1.0 + L);
-let min = -0.649;
-let max = 0.65;
+let min = -0.563;
+let max = 0.563;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
