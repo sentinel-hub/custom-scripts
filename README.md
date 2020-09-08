@@ -137,6 +137,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Multitemporal burnt area analysis](sentinel-2/burned_area)
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
  - [Burned Area Visualization](sentinel-2/burned_area_ms)
+ - [Active Fire Detection](sentinel-2/active_fire_detection)
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
