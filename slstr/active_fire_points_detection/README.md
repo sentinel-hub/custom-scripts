@@ -1,4 +1,4 @@
-# High Accuracy Active Fire Point Detection for Sentinel-3 SLSTR
+# High Accuracy Active Fire Point Detection 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
@@ -31,7 +31,7 @@ The Active fire detection script is also available for [Sentinel-2](https://cust
 
 ![Democratic Republic of Congo wildfires](fig/fig2.png)
 
-[Australia wildfires, 2019] (https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=-21.90514&lng=116.75789&themeId=WILDFIRES-NORMAL-MODE&datasetId=S3SLSTR&fromTime=2019-01-05T00%3A00%3A00.000Z&toTime=2019-01-05T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2F616409b9-173e-4012-a580-c0ef4799bc36&evalscript=Ly8gaGlnaCBhY2N1cmFjeSBEZXRlY3QgYWN0aXZlIGZpcmUgcG9pbnRzIAovL1NlbnRpbmVsLTMgU0xTVFIKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgp2YXIgU0FITT0gKChTNiAtIFM1KSAvIChTNiArIFM1KSk7CgppZihTQUhNPi4wNSAmJiBTMTwuMjMpewogIHJldHVybls1KlMzLCAxKlMyLCAxKlMxXQp9CgplbHNlIHsKIHJldHVybiBbUzYsUzMsUzJdCn0KCi8vUmVkIGNvbG9yIGluZGljYXRlcyBhY3RpdmUgZmlyZSBhcmVhcyBhbmQgcG9pbnRz#custom-script), acquired on January 5, 2019, processed by Sentinel Hub.
+[Australia wildfires, 2019](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=-21.90514&lng=116.75789&themeId=WILDFIRES-NORMAL-MODE&datasetId=S3SLSTR&fromTime=2019-01-05T00%3A00%3A00.000Z&toTime=2019-01-05T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2F616409b9-173e-4012-a580-c0ef4799bc36&evalscript=Ly8gaGlnaCBhY2N1cmFjeSBEZXRlY3QgYWN0aXZlIGZpcmUgcG9pbnRzIAovL1NlbnRpbmVsLTMgU0xTVFIKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgp2YXIgU0FITT0gKChTNiAtIFM1KSAvIChTNiArIFM1KSk7CgppZihTQUhNPi4wNSAmJiBTMTwuMjMpewogIHJldHVybls1KlMzLCAxKlMyLCAxKlMxXQp9CgplbHNlIHsKIHJldHVybiBbUzYsUzMsUzJdCn0KCi8vUmVkIGNvbG9yIGluZGljYXRlcyBhY3RpdmUgZmlyZSBhcmVhcyBhbmQgcG9pbnRz#custom-script), acquired on January 5, 2019, processed by Sentinel Hub.
 
 ![Australia wildfire](fig/fig3.png)
 
