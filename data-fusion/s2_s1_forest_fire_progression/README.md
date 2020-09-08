@@ -7,6 +7,9 @@
 {% endhighlight %}  
 </div>  
   
+## Evaluate and visualize  
+ - [EO Browser](https://sentinelshare.page.link/4ZVo)
+
 ## General description of the script  
 
 One big advantage of using data fusion techniques is that the combined sensors can compensate for difficulties of the other.
