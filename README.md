@@ -176,9 +176,11 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
 
-## <a name="sentinel-3"></a>Sentinel-3 OLCI
+## <a name="sentinel-3"></a>Sentinel-3 
 
 Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small launchers including VEGA and ROCKOT. The main objective of the mission is to measure sea surface topography, sea and land surface temperature, and ocean and land surface color with high accuracy and reliability to support ocean forecasting systems, environmental monitoring and climate monitoring. Ocean and Land Colour Instrument (OLCI) provides a set of 21 bands ranging from the visible to the near infrared light (400 nm < λ< 1 020 nm). The Sentinel-3 provides imagery in 300 m spatial resolution. Sentinel-3 OLCI instrument ensures continuity of the ENVISAT MERIS.
+
+### Sentinel-3 OLCI
 
  - [Sentinel-3 OLCI bands](sentinel-3/bands)
  - [Simple RGB composites](sentinel-3/composites)
@@ -195,6 +197,10 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 
 #### Other available scripts
  - [OLCI Natural Colours with Sigmoid](sentinel-3/natural_colors_sigmoid)
+ 
+### Sentinel-3 SLSTR
+
+- [Active Fire Detection](slstr\active_fire_points_detection)
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
