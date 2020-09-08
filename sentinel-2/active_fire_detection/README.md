@@ -13,7 +13,9 @@
 
 ## General description
 
-The script identifies active fire points, offering valuable information for monitoring fire spots in any area. The data output of this script is equivalent to generating an online database of active fire points, such as firms.modaps.eosdis.nasa.gov, but for a smaller range and with a time interval of once every 5 days.
+The script for Sentinel-2 identifies active fire points, offering valuable information for monitoring fire spots in any area. The data output of this script is equivalent to generating an online database of active fire points, such as firms.modaps.eosdis.nasa.gov, but for a smaller range and with a time interval of once every 5 days.
+
+This script is also available for [Sentinel-3 SLSTR](https://custom-scripts.sentinel-hub.com/slstr/active_fire_points_detection/).
 
 ## Author of the script
 
