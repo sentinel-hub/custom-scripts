@@ -200,7 +200,7 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
  
 ### Sentinel-3 SLSTR
 
-- [Active Fire Detection](slstr\active_fire_points_detection)
+- [Active Fire Detection](slstr/active_fire_points_detection)
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
