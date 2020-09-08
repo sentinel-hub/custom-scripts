@@ -17,7 +17,7 @@ The script identifies active fire points, offering valuable information for moni
 
 ## Author of the script
 
- - [Tiznger startup co](www.tiznegar.com)
+ - [Tiznger startup co](http://tiznegar.com/)
 
 ## Description of representative images
 
