@@ -1,4 +1,4 @@
-//VERSION=3
+// VERSION=3
 // Atmospherically Resistant Vegetation Index   (abbrv. ARVI)
 //
 // General formula: (NIR - RED - y * (RED - BLUE))/ (NIR + RED - y*(RED-BLUE))
@@ -7,11 +7,11 @@
 //
 
 // Initialize parameters
-let y = 0.812;
+let y = 0.069;
 
-let index = (B09 - B04 - y * (B04 - B02)) / (B09 + B04 - y * (B04 - B02));
-let min = -3.292;
-let max = 0.93;
+let index = (B8A - B04 - y * (B04 - B02)) / (B8A + B04 - y * (B04 - B02));
+let min = -0.942;
+let max = 0.895;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -19,11 +19,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-let underflow_color = [1, 1, 1];
-let low_color = [208/255, 88/255, 126/255];
-let high_color = [241/255, 234/255, 200/255];
-let zero_color = [0, 147/255, 146/255];
-let overflow_color = [0, 0, 0];
+var underflow_color = [1,1,1];
+var low_color = [208/255, 88/255, 126/255];
+var high_color = [241/255, 234/255, 200/255];
+var zero_color = [0, 147/255, 146/255];
+var overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [
