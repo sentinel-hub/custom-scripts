@@ -19,7 +19,7 @@ This script is also available for [Sentinel-3 SLSTR](https://custom-scripts.sent
 
 ## Author of the script
 
- - [Tiznger startup co](http://tiznegar.com/)
+ - [TIZNEGAR Startup co](http://tiznegar.com/)
 
 ## Description of representative images
 
