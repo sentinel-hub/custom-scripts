@@ -175,6 +175,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
+ - [Observation outlier detection](sentinel-2/obs_outlier_detector/v2)
 
 ## <a name="sentinel-3"></a>Sentinel-3 
 
