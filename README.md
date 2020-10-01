@@ -145,6 +145,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [False Color Composite](sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
  - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
+ - [Bare soil detector](sentinel-2/bare_soil_detector)
 
 #### Agriculture and forestry algorithms
  - [NDVI anomaly detection](sentinel-2/ndvi_anomaly_detection)
