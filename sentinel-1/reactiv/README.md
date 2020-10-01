@@ -55,17 +55,20 @@ Thomas Di Martino, Elise Colin-Koeniguer, Regis Guinvarc'h, Laetitia Thirion-Lef
 ## Description of representative images
 
 1. Maritime Routes: Shanghai Port
+
 In this Shanghai Port image, and thanks to the REACTIV method, maritime routes are very explicit. Additionally, the time dimension represented by the chosen color seems to indicate that the northern entry path to the port is only opened during certain parts of the year as only red and shaded blue boats appear to be there. This provides insights on the functioning of ports and possible maritime legislation.
 
 ![Maritime Routes: Shanghai Port](fig/shanghai_port.png)
 
 2. Vegetation monitoring: Shanghai Wetlands
+
 Situated close to the Chongming Dongtan birds national nature reserve in Shanghai, the Shanghai wetlands are a very distinct ecosystem that is usually flooded with water on seasonal occasions, inducing huge variability in its environment and in its dielectric properties, crucial for SAR imagery. This variability is expected to be found and to be localised. As we can see this picture, we do have change being detected cohesively across the different subsurfaces of wetland. This is manifested by regions portrayed as green for some and pink for others. 
 When checking the Hue range, we notice that green is located around the first third of the time interval, meaning around the end of 2018 while the pink values are located at the end of the interval, meaning the end of 2020. These similar yearly periods show how the REACTIV method successfully captured a seasonal and periodical event within the Shanghai wetlands.
 
 ![Vegetation monitoring: Shanghai Wetlands](fig/shanghai_wetland.png)
 
 3. Urban sprawl: Wuhan City
+
 Given recent events and the efforts deployed by the Chinese government to build emergency hospitals, the city of Wuhan displayed interesting results with regards to change detection tasks. Most recent buildings, plots with colors of the end of the Hue spectrum (i.e. shades of pink) are noticeable throughout this map. One particular example is the Huoshenshan Hospital located on the Zhiyinhu Boulevard. As displayed in the zoomed image, we notice violet (shaded dark-pink) which represents high activity spike in the last months of recording, which correlates with the cityís plans to build emergency hospitals. Other locations around the city have similar color spots that most probably also are constructions built in the context of COVID-19.
 
 ![Urban sprawl: Wuhan City](fig/wuhan.png)
