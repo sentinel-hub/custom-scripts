@@ -125,6 +125,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](sentinel-2/hollstein)
  - [Cloudless Mosaic](sentinel-2/cloudless_mosaic)
  - [Cloud statistics](sentinel-2/cloud_statistics)
+ - [Observation outlier detection](sentinel-2/obs_outlier_detector/v2)
 
 #### Snow and glaciers algorithms
  - [Snow classifier](sentinel-2/snow_classifier/)
@@ -176,7 +177,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
- - [Observation outlier detection](sentinel-2/obs_outlier_detector/v2)
 
 ## <a name="sentinel-3"></a>Sentinel-3 
 
