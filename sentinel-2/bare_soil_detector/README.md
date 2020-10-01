@@ -13,6 +13,7 @@ The bare soil marker identifies all observations in which the feature of interes
 
 For detailed information about the marker read the relative [blog post](https://medium.com/sentinel-hub/area-monitoring-bare-soil-marker-608bc95712ae).
 
+Pixels identifies as bare soil are colored in blue.
 
 ## Author of the script
 
