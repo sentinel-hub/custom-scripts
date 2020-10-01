@@ -1,5 +1,6 @@
-
 //VERSION=3
+
+//Author: Domagoj Korais
 
 function setup() {
     return {
