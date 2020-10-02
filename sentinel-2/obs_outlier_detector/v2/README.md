@@ -22,6 +22,7 @@ In this script the results of two masking algorithms is shown using two differen
 * red: pixels detected as clouds by the cloud detector (s2cloudless).
 * blue: pixels detected as outliers by the outlier detector, setting a detection threshold of 0.5.
 
+More information about the approach in the [blog post](https://medium.com/sentinel-hub/area-monitoring-observation-outlier-detection-34f86b7cc63)
 
 ## Description of representative images
 
