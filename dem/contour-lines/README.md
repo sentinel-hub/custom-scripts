@@ -6,8 +6,6 @@
 {% endhighlight %}
 </div>
 
-## Evaluate and visualize
-
 ## Description
 
 This script uses DEM to calculate and display contour lines. They are calculated using  `c = 20 * Math.floor(d / 20)`. The visualization can be manipulated in a number of ways. The number `35` in the first conditional statement below sets the increments between the contour lines; in this case, the contour lines will be 35 meter apart. The number `5` in the script below sets the contour line thickness to be pretty low. The first return statement `return [0,0,0]` sets the color of the contour lines to black, and the colorBlend maps the areas in between in terrain colors, based on the terrain elevation model borders. 
