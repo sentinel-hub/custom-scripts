@@ -12,7 +12,7 @@
 **Author of the datafusion script:**
 - Monja B. Šebela
 
-**Authors of the DEM contour line script:**
+**Authors of the [DEM contour line script](https://custom-scripts.sentinel-hub.com/dem/contour-lines/):**
 - Marko Repše
 - Peter Gabrovšek
   
@@ -21,7 +21,7 @@
   
 ## General description of the script  
   
-This script uses DEM to calculate contour lines and displays them over Landsat-8 true color image. The contour lines can be modified in color, interval and width. 
+This script uses DEM to calculate contour lines and displays them over Landsat-8 true color image. The contour lines can be modified in color, interval and width. The contour lines script can be found [here](https://custom-scripts.sentinel-hub.com/dem/contour-lines/).
 
 ## Description of representative images  
   
