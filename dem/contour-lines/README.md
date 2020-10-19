@@ -56,6 +56,7 @@ Making contour lines very thick and white will give the impression of colored co
 It is also possible to return contour lines of any color on top of a true color visualization of anoter satellite. However, for this, data fusion is needed. In the example below, Landsat 8 true color visualization was used under white contour lines. 
 
 - [DEM contour lines over Landsat 8 data fusion script](https://custom-scripts.sentinel-hub.com/data-fusion/dem_contour_over_l8/)
+![dem contour lines](fig/fig3.jpg)
 
 ## Authors of the scripts
 
