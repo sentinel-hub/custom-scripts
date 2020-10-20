@@ -21,11 +21,11 @@ The script applies the square root of the OLCI true color bands, which have lowe
 
 ```javascript
 return [Math.sqrt(0.9*B08 - 0.055),
-        Math.sqrt(0.9*B06 - 0.055),
-        Math.sqrt(0.9*B04 - 0.055)]
+          Math.sqrt(0.9*B06 - 0.055),
+          Math.sqrt(0.9*B04 - 0.055)]
 ```
 
-It's also possible to use a cubic root (Math.cbrt) instead of a square root. This will decrease the contrast, improve the vibrancy of the land, but decrease the visual information of the clouds. 
+It's also possible to use a cubic root (Math.cbrt) instead of a square root. This will decrease the contrast, improve the vibrancy of the ocean and land, but decrease the visual information of the clouds. 
 
 ## Author of the script
 
