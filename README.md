@@ -112,6 +112,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Leaf chlorophyll content](sentinel-2/cab)
  - [Canopy chlorophyll content](sentinel-2/ccc)
  - [FAPAR](sentinel-2/fapar) - the fraction of absorbed photosynthetically active radiation
+ - [FCOVER](sentinel-2/fcover) - the fraction of green vegetation cover
  - [Color correction with Sentinel Hub](sentinel-2/poor_mans_atcor)
  - [PSRI](sentinel-2/psri) - plant senescence reflectance index
  - [Global mosaic best pixel selection script](sentinel-2/s2gm)
