@@ -1,0 +1,38 @@
+// Sentinel-3 OLCI - Vegetation monitoring
+//by TIZNEGAR startup co
+//www.tiznegar.com
+
+var NDVI = (B17 - B07) / (B17 + B07);
+var NGDR = index(B04, B06);
+var Inverse = (B04 - 0.2) / (0.5 - 0.2);
+if (Inverse > 1) { 
+    return [5 * B06, 5 * B04, 5 * B02 ];
+}
+
+if (Inverse > 0 && NGDR>0) { 
+    return [10 * B08  , 10 * B04, 10 * B02];
+}
+
+if (NDVI > -1 && NDVI<1) { 
+    return colorBlend   
+    (NDVI,	            
+        [ -.2, 0, .05, .1, .2, .3, .4, .5, .6, .7, .8, .9], 
+        [     
+            [0, 0, .4],
+            [0, .7, 1],
+            [.54,.27,.07],
+            [.63,.32,.18],
+            [1,.45,.05],
+            [.9, 1, 0],
+            [0, .8,0],
+            [0, .5, 0],
+            [0, .4, 0],
+            [0, .3, 0],
+            [0, .2, 0],
+            [0, .1, 0],
+
+      ]);
+}
+else {
+ return [2.5*B08,2.5*B06,2.5*B04]
+}
