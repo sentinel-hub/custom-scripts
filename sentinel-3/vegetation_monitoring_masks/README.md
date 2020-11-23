@@ -37,16 +37,14 @@ The index shows a very good separation of vegetation, that can be used to monito
 
 **The range of VMI3 index display can be changed by the user. For example:**
 
-- if (VMI3 > [ 0.4 ] && VMI3< [ 1 ])
+- `if (VMI3 > [ 0.4 ] && VMI3< [ 1 ])`
 
 ![A2](fig/fig2.jpg)
-[Show in EO Browser](https://sentinelshare.page.link/6T81)
-In this case, only the areas with the VMI3 index in range of 0.4 to 1 are visualized in a continuous color scale, highlighting Hyrcanian forests in Gilan and agricultural areas around Lake Urmia with green colors. Other areas are returned in true color, with cloud masks in white. 
+In this case, only the areas with the VMI3 index in range of 0.4 to 1 are visualized in a continuous color scale, highlighting Hyrcanian forests in Gilan and agricultural areas around Lake Urmia with green colors. Other areas are returned in true color, with cloud masks in white. [Show in EO Browser](https://sentinelshare.page.link/6T81)
 
-- if (VMI3 > [ -1 ] && VMI3< [ 0 ])
+- `if (VMI3 > [ -1 ] && VMI3< [ 0 ])`
 
 ![A3](fig/fig3.jpg)
-[Show in EO Browser](https://sentinelshare.page.link/vysg)
-In this image, only areas with an VMI3 index range of 0.0 to -1 are visualized in a continuous color scale, displaying water areas in blue colors. The water levels of Lake Urmia and Sefidrud Dam in Gilan province are well visible. Other areas are returned in true color, with cloud masks in white. 
+In this image, only areas with an VMI3 index range of 0.0 to -1 are visualized in a continuous color scale, displaying water areas in blue colors. The water levels of Lake Urmia and Sefidrud Dam in Gilan province are well visible. Other areas are returned in true color, with cloud masks in white. [Show in EO Browser](https://sentinelshare.page.link/vysg)
 
 
