@@ -10,7 +10,7 @@ var VMI3 = (B17 - B08) / (B17 + B08);
 
 var NGDR = index(B04, B06);
 var CM  = (B04 - 0.2) / (0.5 - 0.2);
-if (CM > 1.8) { 
+if (CM > 0.8) { 
     return [10 * B03, 10 * B02, 10 * B01 ];
 }
 
