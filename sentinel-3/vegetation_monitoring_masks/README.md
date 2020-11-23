@@ -19,7 +19,6 @@ www.tiznegar.com
 Vegetation monitoring index for Sentinel 3 OLCI (VMI3) has the same functionality as NDVI, using NIR* and RED wavelengths in a normalized difference index. The script displays the vegetation index with continuous colour scale and uses cloud masks to display clouds and snow in white. It also provides a preprepared conditional statement for classifying vegetation, by only changing the visualized range. 
 
 The index is calculated as:
-VMI3 = (NIR - RED) / (NIR + RED)
 
 **VMI3 = (B17 - B08) / (B17 + B08)**
 
