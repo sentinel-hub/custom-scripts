@@ -7,7 +7,7 @@
 {% endhighlight %}
 </div>
 
-## Author of the script**
+## Author of the script
 By TIZNEGAR Startup Co, 
 [www.tiznegar.com](http://www.tiznegar.com/){:target="_blank"}
 
