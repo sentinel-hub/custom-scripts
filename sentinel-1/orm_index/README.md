@@ -29,21 +29,26 @@ Dense clouds and severe storms negatively affect the accuracy of this indicator.
 
 **Example 1**
 
-Oil slick caused by the collision of a Sabiti tanker 108 km from the Saudi port of Jeddah in the Red Sea. [Show in EO Browser.](https://sentinelshare.page.link/5vH6){:target="_blank"}
+Oil slick caused by the collision of a Sabiti tanker 108 km from the Saudi port of Jeddah in the Red Sea. 
 
 ![A1](fig/fig1.jpg)
 
+[Show in EO Browser.](https://sentinelshare.page.link/5vH6){:target="_blank"}
+
 **Example 2**
 
-Changes in quality of incoming waters due to higher density of algae in the Persian Gulf. [Show in EO Browser.](https://sentinelshare.page.link/a7F6){:target="_blank"}
+Changes in quality of incoming waters due to higher density of algae in the Persian Gulf. 
 
 ![A2](fig/fig2.jpg)
 
+[Show in EO Browser.](https://sentinelshare.page.link/a7F6){:target="_blank"}
+
 **Example 3**
 
-River waters enter into the Caspian Sea with higher concentration of algae, industrial pollutants and mud. [Show in EO Browser.](https://sentinelshare.page.link/vpVp){:target="_blank"}
+River waters enter into the Caspian Sea with higher concentration of algae, industrial pollutants and mud. 
 
 ![A3](fig/fig3.jpg)
 
+[Show in EO Browser.](https://sentinelshare.page.link/vpVp){:target="_blank"}
 
 
