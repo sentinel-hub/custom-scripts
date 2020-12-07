@@ -60,7 +60,7 @@ The Sentinel-1 imagery is provided by two polar-orbiting satellites, operating d
 #### Marine and other water bodies environment algorithms
  - [Water surface roughness visualization](sentinel-1/water_surface_roughness_visualization)
  - [SAR-Ice: A Sea Ice RGB Composite](sentinel-1/sar-ice)
- - [Oil slicks and Red tide monitoring](sentinel-1/orm_index)
+ - [Oil Slicks and Red Tide Monitoring](sentinel-1/orm_index)
 
 #### Other available scripts
  - [SAR false color visualization](sentinel-1/sar_false_color_visualization)
