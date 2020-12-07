@@ -39,7 +39,7 @@ Oil slick caused by the collision of a Sabiti tanker 108 km from the Saudi port 
 Changes in quality of incoming waters due to algae density change in the Persian Gulf. 
 
 ![A2](fig/fig2.jpg)
-[Show in EO Browser.](https://sentinelshare.page.link/a7F6){:target="_blank"}
+[Show in EO Browser.](https://sentinelshare.page.link/d2c1){:target="_blank"}
 
 **Example 3**
 
