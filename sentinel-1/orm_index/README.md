@@ -16,7 +16,7 @@ By TIZNEGAR Startup Co,
 - [EO Browser](https://sentinelshare.page.link/5vH6){:target="_blank"}
 
 ## General description
-This script is capable of detecting oil slicks and [red tides (harmful algeal blooms)](https://oceanservice.noaa.gov/facts/redtide.html) at sea. In this script we use the ORM (Oil slicks and Red tide monitoring) index, calculated as: 
+This script is capable of detecting oil slicks and [red tides (harmful algal blooms)](https://oceanservice.noaa.gov/facts/redtide.html) at sea. In this script we use the ORM (Oil slicks and Red tide monitoring) index, calculated as: 
 
 **ORM = Math.log(0.01/(0.01+VV*2))**
 
