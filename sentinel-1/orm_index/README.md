@@ -21,7 +21,7 @@ This script is capable of detecting oil slicks and [red tides (harmful algeal bl
 **ORM = Math.log(0.01/(0.01+VV*2))**
 
 The pixels where both ORM index values are lower than zero, and VV and VH values are low, are visualized with a continuous color visualization. Other areas are returned as grayscale VV visualization. 
-Differences in color of ORM values below 0 correspond to changes in water roughness, making it posible to detect oil pollution (which is characterized by a very shiny surface), and red tides (characterized by rough surface changes). Aside from oil spills and red ocean tides, the script can also be used to monitor water quality; it can detect pollution of wetlands and rivers connected to the sea, caused by industrial pollutants, municipal sewage, algae density and mud. Increased water pollution is indicated by bright yellow, orange and red colors in the script. 
+Differences in color of ORM values below 0 correspond to changes in water roughness, making it posible to detect oil pollution (which is characterized by a very shiny surface), and red tides (characterized by rough surface changes). Aside from oil spills and red ocean tides, the script can also be used to monitor water quality of wetlands and rivers connected to the sea, by detecting pollution caused by industrial pollutants, municipal sewage, algae density and mud. Increased water pollution is indicated by bright yellow, orange and red colors in the script. 
 
 Dense clouds and severe storms negatively affect the accuracy of this indicator.
 
