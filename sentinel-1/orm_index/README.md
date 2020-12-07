@@ -43,7 +43,7 @@ Changes in quality of incoming waters due to algae density change in the Persian
 
 **Example 3**
 
-River waters enter into the Caspian Sea with higher concentration of algae, industrial pollutants and mud. 
+River waters enter into the Caspian Sea, bringing a higher concentration of algae, industrial pollutants and mud. 
 
 ![A3](fig/fig3.jpg)
 [Show in EO Browser.](https://sentinelshare.page.link/vpVp){:target="_blank"}
