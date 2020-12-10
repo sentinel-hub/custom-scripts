@@ -150,6 +150,10 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
  - [Bare soil detector](sentinel-2/bare_soil_detector)
 
+#### Vegetation algorithms
+
+ - [Deep GNDVI](sentinel-2/deep_gndvi)
+
 #### Agriculture and forestry algorithms
  - [NDVI anomaly detection](sentinel-2/ndvi_anomaly_detection)
  - [Agricultural growth stage](sentinel-2/agriculture_growth_stage) - multitemporal NDVI
@@ -181,6 +185,10 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
+
+#### Scripts including machine learning techniques (eo-learn)
+
+ - [Deep GNDVI](sentinel-2/deep_gndvi)
 
 ## <a name="sentinel-3"></a>Sentinel-3 
 
