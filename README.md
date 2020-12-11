@@ -138,11 +138,12 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](sentinel-2/deep_moist_convection)
  - [Fire boundary](sentinel-2/fire_boundary)
- - [burned area index for sentinel-2](sentinel-2/bais2)
+ - [Burned area index for sentinel-2](sentinel-2/bais2)
  - [Multitemporal burnt area analysis](sentinel-2/burned_area)
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
  - [Burned Area Visualization](sentinel-2/burned_area_ms)
  - [Active Fire Detection](sentinel-2/active_fire_detection)
+ - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
@@ -189,6 +190,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Scripts including machine learning techniques (eo-learn)
 
  - [Deep GNDVI](sentinel-2/deep_gndvi)
+ - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
 
 ## <a name="sentinel-3"></a>Sentinel-3 
 

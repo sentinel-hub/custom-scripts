@@ -80,7 +80,7 @@ BAI = 1/((0.1 -RED)^2 + (0.06 - NIR)^2)
 
 The images here are in grayscale. They represent predicted vs actual data.
 
-[Deep BAIS2 script result](fig/deepbais2_result.png)
+![Deep BAIS2 script result](fig/deepbais2_result.png)
 
 ## References
 
