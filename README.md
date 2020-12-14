@@ -186,6 +186,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
+ - [PUCK](sentinel-2/puck) - Perceptually-Uniform Color Map Kit
 
 #### Scripts including machine learning techniques (eo-learn)
 
