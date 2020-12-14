@@ -188,6 +188,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
  - [PUCK](sentinel-2/puck) - Perceptually-Uniform Color Map Kit
  - [MixLAI](sentinel-2/mixlai) - Mix Leaf Area Index
+ - [Detection of evapotranspiration levels](sentinel-2/evapotranspiration_levels)
 
 #### Scripts including machine learning techniques (eo-learn)
 

@@ -89,11 +89,11 @@ Keenan Ganz
 
 Not used specifically for defining color mapping, but useful reading for designing color maps:
 
-OíDonoghue, Se·n I., et al. ìVisualization of Biomedical Data.î Annual Review of Biomedical Data Science, vol. 1, no. 1, 2018, pp. 275ñ304. Annual Reviews, doi:10.1146/annurev-biodatasci-080917-013424.
+[1] OíDonoghue, Se·n I., et al. ìVisualization of Biomedical Data.î Annual Review of Biomedical Data Science, vol. 1, no. 1, 2018, pp. 275ñ304. Annual Reviews, doi:10.1146/annurev-biodatasci-080917-013424.
 
-Moreland, Kenneth. ìWhy We Use Bad Color Maps and What You Can Do About It.î Electronic Imaging, vol. 2016, no. 16, Feb. 2016, pp. 1ñ6. IngentaConnect, doi:10.2352/ISSN.2470-1173.2016.16.HVEI-133.
+[2] Moreland, Kenneth. ìWhy We Use Bad Color Maps and What You Can Do About It.î Electronic Imaging, vol. 2016, no. 16, Feb. 2016, pp. 1ñ6. IngentaConnect, doi:10.2352/ISSN.2470-1173.2016.16.HVEI-133.
 
-Mason, Betsy. ìWhy Scientists Need to Be Better at Data Visualization.î Knowable Magazine | Annual Reviews, Annual Reviews, Nov. 2019. www.knowablemagazine.org, doi:10.1146/knowable-110919-1.
+[3] Mason, Betsy. ìWhy Scientists Need to Be Better at Data Visualization.î Knowable Magazine | Annual Reviews, Annual Reviews, Nov. 2019. www.knowablemagazine.org, doi:10.1146/knowable-110919-1.
 
 ## Credits
 
