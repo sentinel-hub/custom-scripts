@@ -144,6 +144,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Burned Area Visualization](sentinel-2/burned_area_ms)
  - [Active Fire Detection](sentinel-2/active_fire_detection)
  - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
+ - [Landslide detection for rapid Mapping](sentinel-2/landslide_detection_rapid_mapping)
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
