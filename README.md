@@ -181,12 +181,13 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Monthly composite](sentinel-2/monthly_composite)
  - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
 
-#### Other available scripts
+#### Other available scripts and indices
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
  - [NDVI on L2A Vegetation and natural Colours](sentinel-2/ndvi-on-vegetation-natural_colours)
  - [PUCK](sentinel-2/puck) - Perceptually-Uniform Color Map Kit
+ - [MixLAI](sentinel-2/mixlai) - Mix Leaf Area Index
 
 #### Scripts including machine learning techniques (eo-learn)
 
