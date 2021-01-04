@@ -27,7 +27,7 @@ See also [author's GitHub repository](https://github.com/Alexanderariza/Landslid
 
 ## Authors of the script
 
-Alexander Ariza, Norma Davila (normadavilahernandez@gmail.com)
+Alexander Ariza, Norma Davila
 
 ## Description of representative images
 
