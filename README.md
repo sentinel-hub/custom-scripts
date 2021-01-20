@@ -320,7 +320,7 @@ Pleiades's RGB bands are in 2 meter spatial resolution. To take advantage of the
  - [Green City](airbus_pleiades/green_city)
  - [Pansharpened Green City](airbus_pleiades/green_city_pansharpened)
   
- ## <a name="airbus_spot"></a>Airbus SPOT (Commercial)
+## <a name="airbus_spot"></a>Airbus SPOT (Commercial)
 
 <a href="https://www.intelligence-airbusds.com/en/8693-spot-67">SPOT 6/7</a> is a satellite constellation providing very high-resolution optical imagery and is owned by Airbus. It is composed of two twin satellites orbiting the Earth 180° apart. The satellites deliver 1.5 m optical imagery and offer a daily revisit capability to any point on the globe. SPOT 6/7 data with its high spatial resolution is suitable for a range of remote sensing applications such as vegetation monitoring, precise mapping, risk and disaster management. To learn more about SPOT, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/airbus/spot/"> documentation page.</a>
 
