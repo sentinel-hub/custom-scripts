@@ -23,6 +23,7 @@ Carlos Bentes
 ## Description of representative images
 
 Visualization of Zgornje Konjišče, Slovenia with the Green City script. 
+
 ![Green City script over Zgornje Konjišče, Slovenia](fig/fig1.jpg)
 
 ## References
