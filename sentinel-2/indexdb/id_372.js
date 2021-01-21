@@ -2,7 +2,7 @@
 // Global Vegetation Moisture Index  (abbrv. GVMI)
 //
 // General formula: ((NIR+ 0.1) -(SWIR+0.02) )/((NIR+0.1) +(SWIR+0.02))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=372
 //
 

@@ -2,7 +2,7 @@
 // Modified Soil Adjusted Vegetation Index  (abbrv. MSAVI)
 //
 // General formula: (2 * NIR + 1 - sqrt((2 * NIR + 1)^2- 8 * (NIR - RED)))/2)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=44
 //
 

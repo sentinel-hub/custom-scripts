@@ -2,7 +2,7 @@
 // Transformed Soil Adjusted Vegetation Index  (abbrv. TSAVI)
 //
 // General formula: (B * (NIR - B * R - A)) / (RED + B * (NIR - A) + X * (1 + B^2))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=97
 //
 

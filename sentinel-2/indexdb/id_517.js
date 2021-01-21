@@ -2,7 +2,7 @@
 // Single Band 2130  (abbrv. SB2130)
 //
 // General formula: 2130nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=517
 //
 

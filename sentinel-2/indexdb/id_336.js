@@ -2,7 +2,7 @@
 // Red edge 2  (abbrv. Rededge2)
 //
 // General formula: ([708:716]-[676:685])/([708:716]+[676:685])
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=336
 //
 

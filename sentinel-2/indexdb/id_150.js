@@ -2,7 +2,7 @@
 // Datt1  (abbrv. Datt1)
 //
 // General formula: (850nm-710nm)/(850nm-680nm)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=150
 //
 

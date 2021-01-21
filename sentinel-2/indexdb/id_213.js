@@ -2,7 +2,7 @@
 // Simple Ratio Red/Green Red-Green Ratio (abbrv. RGR)
 //
 // General formula: RED / GREEN
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=213
 //
 

@@ -2,7 +2,7 @@
 // Red-Edge Position Linear Interpolation  (abbrv. REP)
 //
 // General formula: 700+40*(((670nm+780nm)/2)-700nm)/(740nm-700nm))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=196
 //
 

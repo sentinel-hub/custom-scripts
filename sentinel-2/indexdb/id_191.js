@@ -2,7 +2,7 @@
 // TCARI/OSAVI  (abbrv. TCARI/OSAVI)
 //
 // General formula: (3*(700nm-670nm)-0.2*(700nm-550nm)*700nm/670nm)/((1+0.16)*(800nm-670nm)/(800nm+670nm+0.16))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=191
 //
 

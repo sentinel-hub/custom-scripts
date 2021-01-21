@@ -2,7 +2,7 @@
 // Simple Ratio 672/708  (abbrv. SR672/708)
 //
 // General formula: 672nm/708nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=342
 //
 

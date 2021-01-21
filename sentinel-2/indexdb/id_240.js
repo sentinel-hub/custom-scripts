@@ -2,7 +2,7 @@
 // RDVI  (abbrv. RDVI)
 //
 // General formula: (800nm-670nm)/(800nm+670nm)^0.5
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=240
 //
 

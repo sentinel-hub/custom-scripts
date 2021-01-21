@@ -2,7 +2,7 @@
 // Simple Ratio 560/658 GRVIhyper (abbrv. SR560/658)
 //
 // General formula: 560nm/658nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=552
 //
 

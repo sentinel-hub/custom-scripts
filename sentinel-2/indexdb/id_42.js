@@ -2,7 +2,7 @@
 // Modified Chlorophyll Absorption in Reflectance Index 1  (abbrv. MCARI1)
 //
 // General formula: 1.2 * (2.5 * (800nm - 670nm) - 1.3 * (800nm - 550nm))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=42
 //
 

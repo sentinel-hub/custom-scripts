@@ -2,7 +2,7 @@
 // Chlorophyll Red-Edge  (abbrv. Chlred-edge)
 //
 // General formula: ([760:800]/[690:720])^(-1)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=252
 //
 

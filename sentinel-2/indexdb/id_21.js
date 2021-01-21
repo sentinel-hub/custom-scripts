@@ -2,7 +2,7 @@
 // Ferrous iron  (abbrv. )
 //
 // General formula: [2145:2185]/[760:860]+[520:600]/[630:690]
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=21
 //
 

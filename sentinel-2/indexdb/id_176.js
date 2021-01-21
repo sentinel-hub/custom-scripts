@@ -2,7 +2,7 @@
 // Simple Ratio 800/680 Pigment Specific Simple Ratio (Cholophyll a) (PSSRa) (abbrv. SR800/680)
 //
 // General formula: 800nm/680nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=176
 //
 

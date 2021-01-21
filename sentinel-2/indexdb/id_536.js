@@ -2,7 +2,7 @@
 // Single Band 675  (abbrv. SB675)
 //
 // General formula: 675nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=536
 //
 

@@ -2,7 +2,7 @@
 // Normalized Difference 800/680  Pigment specific normalised difference A2, Lichtenthaler indices 1, NDVIhyper (abbrv. ND800/680)
 //
 // General formula: (800nm - 680nm)/(800nm+680nm)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=260
 //
 

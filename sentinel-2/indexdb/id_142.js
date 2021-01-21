@@ -2,7 +2,7 @@
 // Chlorophyll Absorption Ratio Index  (abbrv. CARI)
 //
 // General formula: (700nm/670nm)*(sqrt((a*670+670nm+b)^2))/((a^2+1)^0.5)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=142
 //
 

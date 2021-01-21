@@ -2,7 +2,7 @@
 // Green Normalized Difference Vegetation Index   (abbrv. GNDVI)
 //
 // General formula: (NIR - [540:570]) / (NIR + [540:570])
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=28
 //
 

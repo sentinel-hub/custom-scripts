@@ -2,7 +2,7 @@
 // Simple Ratio 810/560 Plant biochemical index (abbrv. PBI)
 //
 // General formula: 810nm/560nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=212
 //
 

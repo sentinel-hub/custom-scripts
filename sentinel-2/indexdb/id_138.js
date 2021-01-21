@@ -2,7 +2,7 @@
 // Red-Edge Inflection Point 2  (abbrv. REIP2)
 //
 // General formula: 702+40((((667nm+782nm)/2)-702nm)/(742nm-702nm))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=138
 //
 
