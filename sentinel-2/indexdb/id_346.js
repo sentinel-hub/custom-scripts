@@ -2,7 +2,7 @@
 // Simple Ratio 801/550 NIR/Green (abbrv. SR801/550)
 //
 // General formula: 801nm/550nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=346
 //
 

@@ -2,7 +2,7 @@
 // Laterite   (abbrv. )
 //
 // General formula: [1600:1700]/[2145:2185]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=38
 
 let index = B06 / B07;

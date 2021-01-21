@@ -2,7 +2,7 @@
 // Modified Simple Ratio NIR/RED  (abbrv. MSRNir/Red)
 //
 // General formula: ((NIR/RED)-1)/sqrt((NIR/RED)+1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=362
 
 let index = ((B05 / B04) - 1.0) / Math.sqrt((B05 / B04) + 1.0);

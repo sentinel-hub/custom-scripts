@@ -2,7 +2,7 @@
 // Soil-adjusted vegetation index 2  (abbrv. SAVI2)
 //
 // General formula: NIR/(RED+b/a)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=310
 
 // Initialize parameters

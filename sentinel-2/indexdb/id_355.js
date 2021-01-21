@@ -2,7 +2,7 @@
 // Simple Ratio 674/553  (abbrv. SR674/553)
 //
 // General formula: 674nm/553nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=355
 //
 

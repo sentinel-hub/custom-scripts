@@ -2,7 +2,7 @@
 // Normalized Difference 860/1640  (abbrv. SIWSI)
 //
 // General formula: (860nm-1640nm)/(860nm+1640nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=219
 //
 

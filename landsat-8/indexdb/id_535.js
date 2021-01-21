@@ -2,7 +2,7 @@
 // Single Band 655  (abbrv. SB0655)
 //
 // General formula: 655nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=535
 
 let index = B04;

@@ -2,7 +2,7 @@
 // Single Band 555  (abbrv. SB0555)
 //
 // General formula: 555nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=534
 
 let index = B03;

@@ -2,7 +2,7 @@
 // Soil and Atmospherically Resistant Vegetation Index  (abbrv. SARVI)
 //
 // General formula: (1+L)*(800nm-(Rr-y(RB-Rr)))/(800nm+-(Rr-y(RB-Rr))+L)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=134
 //
 

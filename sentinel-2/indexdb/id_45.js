@@ -2,7 +2,7 @@
 // Modified Soil Adjusted Vegetation Index hyper  (abbrv. MSAVIhyper)
 //
 // General formula: (0.5) * ((2 *800nm + 1) - sqrt((2 * 800nm + 1)^2- 8 * (800nm - 670nm)))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=45
 //
 

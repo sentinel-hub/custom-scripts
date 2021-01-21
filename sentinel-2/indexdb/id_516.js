@@ -2,7 +2,7 @@
 // Single Band 2100  (abbrv. SB2100)
 //
 // General formula: 2100nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=516
 //
 

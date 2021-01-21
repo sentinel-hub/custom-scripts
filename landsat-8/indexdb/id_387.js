@@ -2,7 +2,7 @@
 // Soil and Atmospherically Resistant Vegetation Index 2  (abbrv. SARVI2)
 //
 // General formula: 2,5*(NIR-RED)/(1+NIR+6*RED-7,5*BLUE)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=387
 
 let index = 2.5 * (B05 - B04) / (1.0 + B05 + 6.0 * B04 - 7.5 * B02);

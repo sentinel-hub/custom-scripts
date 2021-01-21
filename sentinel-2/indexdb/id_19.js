@@ -2,7 +2,7 @@
 // Ferric iron, Fe3+   (abbrv. Fe3+)
 //
 // General formula: [630:690]/[520:600]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=19
 //
 

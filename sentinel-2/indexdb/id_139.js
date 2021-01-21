@@ -2,7 +2,7 @@
 // Red-Edge Inflection Point 3  (abbrv. REIP3)
 //
 // General formula: 705+35((((665nm+783nm)/2)-705nm)/(740nm-705nm))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=139
 //
 

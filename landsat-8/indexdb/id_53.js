@@ -2,7 +2,7 @@
 // Normalized Difference NIR/SWIR Normalized Burn Ratio (abbrv. NBR)
 //
 // General formula: (NIR - SWIR) / (NIR + SWIR)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=53
 
 let index = (B05 - B07) / (B05 + B07);

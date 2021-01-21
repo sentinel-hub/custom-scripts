@@ -2,7 +2,7 @@
 // Simple Ratio 800/550  (abbrv. SR800/550)
 //
 // General formula: 800nm/550nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=123
 //
 

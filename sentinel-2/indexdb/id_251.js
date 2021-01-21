@@ -2,7 +2,7 @@
 // Chlorophyll Green  (abbrv. Chlgreen)
 //
 // General formula: ([760:800]/[540:560])^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=251
 //
 

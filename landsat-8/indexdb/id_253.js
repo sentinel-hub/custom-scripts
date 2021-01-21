@@ -2,7 +2,7 @@
 // CRI550  (abbrv. CRI550)
 //
 // General formula: [510] ^(-1) - [550] ^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=253
 
 let index = Math.pow(B02, (-1.0)) - Math.pow(B03, (-1.0));

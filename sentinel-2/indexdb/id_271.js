@@ -2,7 +2,7 @@
 // Simple Ratio 550/680 Disease-Water Stress Index 4 (abbrv. DSWI-4)
 //
 // General formula: 550nm/680nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=271
 //
 

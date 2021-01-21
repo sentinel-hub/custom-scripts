@@ -2,7 +2,7 @@
 // Simple Ratio 800/2170  (abbrv. SR800/2170)
 //
 // General formula: 800nm/2170nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=427
 //
 

@@ -2,7 +2,7 @@
 // CRI700  (abbrv. CRI700)
 //
 // General formula: [510] ^(-1)-[700] ^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=254
 //
 

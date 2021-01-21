@@ -2,7 +2,7 @@
 // Single Band 660  (abbrv. SB0660)
 //
 // General formula: 660nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=490
 
 let index = B04;

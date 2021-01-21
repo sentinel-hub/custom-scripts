@@ -2,7 +2,7 @@
 // Normalized Difference Green/Red Normalized green red difference index, Visible Atmospherically Resistant Indices Green (VIgreen) (abbrv. NGRDI)
 //
 // General formula: (GREEN - RED) / (GREEN + RED)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=390
 
 let index = (B03 - B04) / (B03 + B04);

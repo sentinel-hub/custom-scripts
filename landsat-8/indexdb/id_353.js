@@ -2,7 +2,7 @@
 // Soil Background Line  (abbrv. SBL)
 //
 // General formula: [800:1100] - 2.4*[600:700]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=353
 
 let index = B05 - 2.4 * B04;

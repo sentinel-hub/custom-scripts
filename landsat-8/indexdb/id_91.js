@@ -2,7 +2,7 @@
 // Tasselled Cap - brightness  (abbrv. SBI)
 //
 // General formula: 0.3037*[450:520] + 0.2793*[520:600] + 0.4743*[630:690] + 0.5585*[760:900] + 0.5082*[1150:1750] + 0.1863*[2080:2350]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=91
 
 let index = 0.3037 * B02 + 0.2793 * B03 + 0.4743 * B04 + 0.5585 * B05 + 0.5082 * B09 + 0.1863 * B07;

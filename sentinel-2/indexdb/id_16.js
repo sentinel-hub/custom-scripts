@@ -2,7 +2,7 @@
 // Enhanced Vegetation Index  (abbrv. EVI)
 //
 // General formula: 2.5 * (NIR - RED) / ((NIR + 6*RED - 7.5*BLUE) + 1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=16
 //
 

@@ -2,7 +2,7 @@
 // Single Band 885  (abbrv. SB885)
 //
 // General formula: 885nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=538
 //
 
