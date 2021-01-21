@@ -2,7 +2,7 @@
 // Simple Ratio MIR/SWIR Cley Mineral-Index, Salinity Index (abbrv. SI)
 //
 // General formula: MIR / SWIR
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=95
 
 let index = B07 / B07;

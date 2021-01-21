@@ -2,7 +2,7 @@
 // Corrected Transformed Vegetation Index  (abbrv. CTVI)
 //
 // General formula: (NDVI+0,5)/abs(NDVI+0,5)*sqrt(abs((NDVI)+0,5))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=244
 
 let index = (((B04 - B03) / (B04 + B03)) + 0.5) / Math.abs(((B04 - B03) / (B04 + B03)) + 0.5) * Math.sqrt(Math.abs((((B04 - B03) / (B04 + B03))) + 0.5));

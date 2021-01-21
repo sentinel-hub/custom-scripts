@@ -2,7 +2,7 @@
 // Ideal vegetation index  (abbrv. IVI)
 //
 // General formula: (NIR-b)/(a*RED)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=276
 
 // Initialize parameters

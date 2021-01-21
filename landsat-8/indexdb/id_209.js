@@ -2,7 +2,7 @@
 // Adjusted transformed soil-adjusted VI  (abbrv. ATSAVI)
 //
 // General formula: a*(NIR-a*RED - b)/(a*NIR+RED-a*b+X*(1+a^2))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=209
 
 let index = 1.22 * (B05 - 1.22 * B04 - 0.03) / (1.22 * B05 + B04 - 1.22 * 0.03 + 0.08 * (1.0 + Math.pow(1.22, 2.0)));

@@ -2,7 +2,7 @@
 // Normalized Difference NIR/Green Green NDVI (abbrv. GNDVI)
 //
 // General formula: (NIR-GREEN)/(NIR+GREEN)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=401
 
 let index = (B05 - B03) / (B05 + B03);

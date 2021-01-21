@@ -2,7 +2,7 @@
 // mCRIG  (abbrv. mCRIG)
 //
 // General formula: ([510:520] ^(-1)-[560:570] ^(-1))*NIR
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=257
 
 let index = (Math.pow(B02, (-1.0)) - Math.pow(B03, (-1.0))) * B05;

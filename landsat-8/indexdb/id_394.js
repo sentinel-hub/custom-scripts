@@ -2,7 +2,7 @@
 // SAVImir  (abbrv. SAVImir)
 //
 // General formula: (NIR-MIR)*(1+L)/(NIR+MIR+L)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=394
 
 // Initialize parameters

@@ -2,7 +2,7 @@
 // Simple Ratio SWIRI/NIR Ferrous Minerals (abbrv. SRSWIRI/NIR)
 //
 // General formula: SWIRI/NIR
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=205
 
 let index = B07 / B05;

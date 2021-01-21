@@ -2,7 +2,7 @@
 // Perpendicular Vegetation Index  (abbrv. PVI)
 //
 // General formula: (1 / sqrt(a^2+ 1)) * (NIR - ar - b)
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=64
 
 // Initialize parameters

@@ -2,7 +2,7 @@
 // Hue  (abbrv. H)
 //
 // General formula: arctan ((2 * R - G - B) / 30.5 * (G - B))
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=34
 
 let index = Math.atan((2.0 * B04 - B03 - B02) / 30.5 * (B03 - B02));

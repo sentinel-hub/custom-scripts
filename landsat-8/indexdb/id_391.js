@@ -2,7 +2,7 @@
 // Chlorophyll vegetation index  (abbrv. CVI)
 //
 // General formula: NIR*RED/GREEN ^2
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=391
 
 let index = B05 * B04 / Math.pow(B03, 2.0);

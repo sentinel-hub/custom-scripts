@@ -2,7 +2,7 @@
 // Simple Ratio 860/550  (abbrv. SR860/550)
 //
 // General formula: 860nm/550nm
-//
+// This is an auto-generated script. Double checking with the URL below is recommendated.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=343
 
 let index = B05 / B03;
