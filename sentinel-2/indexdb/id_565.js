@@ -2,7 +2,7 @@
 // Tasselled Cap - Soil Brightness Index MSS  (abbrv. SBIMSS)
 //
 // General formula: 0.332*[500:600] + 0.603*[600:700] + 0.675*[700:800] + 0.262*[800:1100]
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=565
 //
 

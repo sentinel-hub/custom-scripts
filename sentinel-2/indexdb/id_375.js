@@ -2,7 +2,7 @@
 // Green leaf index  (abbrv. GLI)
 //
 // General formula: (2 * GREEN - RED - BLUE)/(2 * GREEN + RED + BLUE)
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=375
 //
 

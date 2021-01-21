@@ -2,7 +2,7 @@
 // Aerosol free vegetation index 2100  (abbrv. AFRI2100)
 //
 // General formula: (NIR-0.5*2100nm/(NIR + 0.56*2100nm)
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=395
 //
 

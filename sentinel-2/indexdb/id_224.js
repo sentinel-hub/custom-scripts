@@ -2,7 +2,7 @@
 // Canopy Chlorophyll Content Index  (abbrv. CCCI)
 //
 // General formula: ((NIR - rededge)/( NIR + rededge))/((NIR - Red)/( NIR + Red))
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=224
 //
 

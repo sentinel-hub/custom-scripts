@@ -2,7 +2,7 @@
 // Simple Ratio 1599/819 Moisture Stress Index 2 (abbrv. MSI2)
 //
 // General formula: 1599nm/819nm
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=547
 //
 

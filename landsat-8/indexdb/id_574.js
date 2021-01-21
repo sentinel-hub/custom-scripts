@@ -2,7 +2,7 @@
 // Ashburn Vegetation Index  (abbrv. AVI)
 //
 // General formula: 2.0*[800:1100] - [600:700]
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=574
 
 let index = 2.0 * B05 - B04;

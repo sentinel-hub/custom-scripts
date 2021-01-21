@@ -2,7 +2,7 @@
 // Simple Ratio NIR/G Green Ratio Vegetation Index (abbrv. GRVI)
 //
 // General formula: NIR / G
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=30
 
 let index = B05 / B03;

@@ -2,7 +2,7 @@
 // Global Environment Monitoring Index  (abbrv. GEMI)
 //
 // General formula: ( n * ( 1 - 0.25 * n ) - (RED - 0.125 ) / ( 1 - RED))
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=25
 
 let index = ((2.0 * (Math.pow(B05, 2.0) - Math.pow(B04, 2.0)) + 1.5 * B05 + 0.5 * B04) / (B05 + B04 + 0.5) * (1.0 - 0.25 * (2.0 * (Math.pow(B05, 2.0) - Math.pow(B04, 2.0)) + 1.5 * B05 + 0.5 * B04) / (B05 + B04 + 0.5)) - (B04 - 0.125) / (1.0 - B04));

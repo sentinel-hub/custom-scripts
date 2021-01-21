@@ -2,7 +2,7 @@
 // Tasselled Cap - wetness  (abbrv. WET)
 //
 // General formula: 0.1509*[450:520] + 0.1973*[520:600] + 0.3279*[630:690] + 0.3406*[760:900] - 0.7112*[1550:1750] - 0.4572*[2080:2350]
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=93
 
 let index = 0.1509 * B02 + 0.1973 * B03 + 0.3279 * B04 + 0.3406 * B05 - 0.7112 * B06 - 0.4572 * B07;

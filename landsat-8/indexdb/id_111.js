@@ -2,7 +2,7 @@
 // Nonlinear vegetation index  (abbrv. NLI)
 //
 // General formula: ([780:1400] ^2-RED)/([780:1400] ^2+RED)
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=111
 
 let index = (Math.pow(B05, 2.0) - B04) / (Math.pow(B05, 2.0) + B04);

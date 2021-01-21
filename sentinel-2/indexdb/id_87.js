@@ -2,7 +2,7 @@
 // Soil Adjusted Vegetation Index  (abbrv. SAVI)
 //
 // General formula: (800nm - 670nm) / (800nm + 670nm + L) * (1 + L)
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=87
 //
 

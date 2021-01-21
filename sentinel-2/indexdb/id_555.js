@@ -2,7 +2,7 @@
 // Soil and Atmospherically Resistant Vegetation Index 3  (abbrv. SAVI3)
 //
 // General formula: (1+0,5)*(833nm-658nm)/(833nm+658nm +0,5)
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=555
 //
 

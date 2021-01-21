@@ -2,7 +2,7 @@
 // Tasselled Cap - Non Such Index MSS  (abbrv. NSIMSS)
 //
 // General formula: -0.016*[500:600] + 0.131*[600:700] - 0.425*[700:800] + 0.882*[800:1100]
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=567
 //
 

@@ -2,7 +2,7 @@
 // Single Band 1580  (abbrv. SB1580)
 //
 // General formula: 1580nm
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=505
 
 let index = B06;

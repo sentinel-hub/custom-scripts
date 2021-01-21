@@ -2,7 +2,7 @@
 // Single Band 495  (abbrv. SR495)
 //
 // General formula: 495nm
-// This is an auto-generated script. Double checking with the URL below is recommendated.
+// This is an auto-generated script. Double checking with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=533
 
 let index = B02;
