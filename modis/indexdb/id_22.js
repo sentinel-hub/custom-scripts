@@ -1,4 +1,5 @@
 // Ferrous Silicates
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=22=&sensor_id=14
 
 let index = (B07)/(B06);

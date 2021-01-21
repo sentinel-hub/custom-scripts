@@ -1,4 +1,5 @@
 // Normalized Difference 860/1640
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=219=&sensor_id=14
 
 let index = (B02-B06)/(B02+B06);

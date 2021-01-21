@@ -1,4 +1,5 @@
 // Silica 3
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=82=&sensor_id=14
 
 let index = (B31)/(B29);

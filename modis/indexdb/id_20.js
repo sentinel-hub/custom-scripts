@@ -1,4 +1,5 @@
 // Ferric Oxides
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=20=&sensor_id=14
 
 let index = (B06)/(B02);
