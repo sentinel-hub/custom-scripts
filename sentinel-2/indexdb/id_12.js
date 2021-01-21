@@ -2,7 +2,7 @@
 // Simple Ratio NIR/RED Difference Vegetation Index, Vegetation Index Number (VIN) (abbrv. DVI)
 //
 // General formula: NIR / RED
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=12
 //
 

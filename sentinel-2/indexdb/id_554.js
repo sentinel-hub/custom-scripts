@@ -2,7 +2,7 @@
 // Normalized Difference 833/1649 Infrared Index (abbrv. ND833/1649)
 //
 // General formula: (833nm-1649nm)/(833nm+1649nm)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=554
 //
 

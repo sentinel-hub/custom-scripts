@@ -2,7 +2,7 @@
 // Visible Atmospherically Resistant Indices 700  (abbrv. VARI700)
 //
 // General formula: ( [700] - 1,7 * [660:680] + 0,7 * [470:490] ) / ( [700] + 2,3 * [660:680] - 1,3 * [470:490] )
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=359
 //
 

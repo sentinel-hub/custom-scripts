@@ -2,7 +2,7 @@
 // Ferrous Silicates   (abbrv. )
 //
 // General formula: [2145:2185]/[1600:1700]
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=22
 //
 

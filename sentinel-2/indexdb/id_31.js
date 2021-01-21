@@ -2,7 +2,7 @@
 // Green Soil Adjusted Vegetation Index  (abbrv. GSAVI)
 //
 // General formula: (NIR - G) / (NIR + G + L) * (1 + L)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=31
 //
 

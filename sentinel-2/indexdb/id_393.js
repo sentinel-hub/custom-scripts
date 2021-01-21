@@ -2,7 +2,7 @@
 // Aerosol free vegetation index 1600  (abbrv. AFRI1600)
 //
 // General formula: (NIR-0.66*1600nm/(NIR + 0.66*1600nm)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=393
 //
 

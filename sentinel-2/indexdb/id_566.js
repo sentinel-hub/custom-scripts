@@ -2,7 +2,7 @@
 // Tasselled Cap - Yellow Vegetation Index MSS  (abbrv. YVIMSS)
 //
 // General formula: -0.899*[500:600] + 0.428*[600:700] + 0.076*[700:800] - 0.041*[800:1100]
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=566
 //
 

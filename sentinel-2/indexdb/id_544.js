@@ -2,7 +2,7 @@
 // Normalized Difference 895/675  (abbrv. ND895/675)
 //
 // General formula: (895nm-675nm)/(895nm+675nm)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=544
 //
 

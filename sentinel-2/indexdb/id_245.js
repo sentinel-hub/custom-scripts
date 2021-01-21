@@ -2,7 +2,7 @@
 // Normalized Difference NIR/MIR Modified Normalized Difference Vegetation Index (abbrv. MNDVI)
 //
 // General formula: (NIR-MIR)/(NIR+MIR)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=245
 //
 

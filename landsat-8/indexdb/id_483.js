@@ -2,7 +2,7 @@
 // Normalized Difference 550/450 Plant pigment ratio (abbrv. PPR)
 //
 // General formula: (550nm-450nm)/(550nm+450nm)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=483
 
 let index = (B03 - B02) / (B03 + B02);

@@ -2,7 +2,7 @@
 // Soil Composition Index  (abbrv. )
 //
 // General formula: ([1600:1700]-[760:860])/([1600:1700]+[760:860])
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=88
 
 let index = (B06 - B05) / (B06 + B05);

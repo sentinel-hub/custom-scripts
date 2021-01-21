@@ -2,7 +2,7 @@
 // Simple Ratio 1650/2218  (abbrv. TM5/TM7)
 //
 // General formula: 1650nm/2218nm
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=337
 
 let index = B06 / B07;

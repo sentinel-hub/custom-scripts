@@ -2,7 +2,7 @@
 // Single Band 470 Blackburn3 (abbrv. BB03)
 //
 // General formula: 470nm
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=309
 
 let index = B02;

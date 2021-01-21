@@ -2,7 +2,7 @@
 // Shape Index  (abbrv. IF)
 //
 // General formula: (2 * R - G - B) / (G - B)
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=79
 
 let index = (2.0 * B04 - B03 - B02) / (B03 - B01);

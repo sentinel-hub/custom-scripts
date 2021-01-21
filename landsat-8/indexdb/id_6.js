@@ -2,7 +2,7 @@
 // Carbonate   (abbrv. )
 //
 // General formula: [10250:10950]/[10950:11650]
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=6
 
 let index = B10 / B11;

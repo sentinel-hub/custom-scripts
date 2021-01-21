@@ -2,7 +2,7 @@
 // Pan NDVI  (abbrv. PNDVI)
 //
 // General formula: (NIR-(GREEN+RED+BLUE))/(NIR+(GREEN+RED+BLUE))
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=188
 //
 

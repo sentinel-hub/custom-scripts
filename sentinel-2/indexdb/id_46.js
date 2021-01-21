@@ -2,7 +2,7 @@
 // Modified Triangular Vegetation Index 1  (abbrv. MTVI1)
 //
 // General formula: 1.2 * (1.2 * (800nm - 550nm) - 2.5 * (670nm - 550nm))
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=46
 //
 

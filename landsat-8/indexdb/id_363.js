@@ -2,7 +2,7 @@
 // Green atmospherically resistant vegetation index  (abbrv. GARI)
 //
 // General formula: ( NIR - (GREEN-(BLUE- RED))) /  ( NIR- (GREEN+(BLUE - RED)))
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=363
 
 let index = (B05 - (B03 - (B02 - B04))) / (B05 - (B03 + (B01 - B04)));

@@ -2,7 +2,7 @@
 // Visible Atmospherically Resistant Index Green  (abbrv. VARIgreen)
 //
 // General formula: ( [545:565] - [620:680] ) / ( [545:565] + [620:680] - [459:490] )
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=356
 //
 

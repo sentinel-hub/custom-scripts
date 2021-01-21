@@ -2,7 +2,7 @@
 // Anthocyanin reflectance index  (abbrv. ARI)
 //
 // General formula: 1/550nm-1/700nm
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=214
 //
 

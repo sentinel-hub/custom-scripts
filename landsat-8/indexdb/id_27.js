@@ -2,7 +2,7 @@
 // Difference NIR/Green Green Difference Vegetation Index (abbrv. GDVI)
 //
 // General formula: NIR - G
-// This is an auto-generated script. Double checking with the URL below is recommended.
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=27
 
 let index = B05 - B03;
