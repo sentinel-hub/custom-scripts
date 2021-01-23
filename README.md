@@ -103,10 +103,10 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDMI](sentinel-2/ndmi) - normalized difference moisture index
  - [NDWI](sentinel-2/ndwi) - normalized difference water index
  - [NDMI STRESS](sentinel-2/ndmi_special) - normalized difference moisture index for crop moisture stress
- - [NBR](sentinel-2/nbr) - normalized burn ratio  
+ - [NBR](sentinel-2/nbr) - normalized burn ratio
  - [NDII](sentinel-2/ndii) - normalized difference 819/1600 NDII
  - [NDCI](sentinel-2/ndci) - normalized difference chlorophyll index
- - [NDSI](sentinel-2/ndsi) - normalised difference snow index  
+ - [NDSI](sentinel-2/ndsi) - normalised difference snow index
  - [PSSRB1](sentinel-2/pssrb1) - pigment specific simple ratio for chlorophyll b (800/650 )
  - [SAVI](sentinel-2/savi) - soil adjusted vegetation index
  - [SIPI1](sentinel-2/sipi1) - structure insensitive pigment index
@@ -182,6 +182,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 #### Other multi-temporal scripts
  - [Monthly composite](sentinel-2/monthly_composite)
  - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
+ - [Interpolated time-series](sentinel-2/interpolated_time_series)
 
 #### Other available scripts and indices
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
@@ -197,7 +198,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Deep GNDVI](sentinel-2/deep_gndvi)
  - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
 
-## <a name="sentinel-3"></a>Sentinel-3 
+## <a name="sentinel-3"></a>Sentinel-3
 
 Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small launchers including VEGA and ROCKOT. The main objective of the mission is to measure sea surface topography, sea and land surface temperature, and ocean and land surface color with high accuracy and reliability to support ocean forecasting systems, environmental monitoring and climate monitoring. Ocean and Land Colour Instrument (OLCI) provides a set of 21 bands ranging from the visible to the near infrared light (400 nm < λ< 1 020 nm). The Sentinel-3 provides imagery in 300 m spatial resolution. Sentinel-3 OLCI instrument ensures continuity of the ENVISAT MERIS.
 
@@ -263,7 +264,7 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
-  
+
 ## <a name="dem"></a>DEM
 
 DEM (digital elevation model) is a 3D representation of the terrain's surface created from terrain elevation data. It can be used for terrain analysis and orthorectification, which helps improve the accuracy of satellite imagery. With DEM, you are able to measure and analyze your area of interest or integrate data into a 3D application as a terrain data source. Sentinel Hub is using MapZen's DEM, available through Amazon Web Services (AWS) in US. This dataset is based on SRTM30 (30 m resolution) but is in several places improved with local datasets. It is static and does not depend on the date (the values are updating as MapZen is improving the dataset). Read the blog post on [how to explore the DEM dataset](https://medium.com/sentinel-hub/digital-elevation-model-dem-3c05141bb03d) and [see our API documentation for details](https://docs.sentinel-hub.com/api/latest/data/dem/).
@@ -319,7 +320,7 @@ Pleiades's RGB bands are in 2 meter spatial resolution. To take advantage of the
  - [NDWI](airbus_pleiades/ndwi)
  - [Green City](airbus_pleiades/green_city)
  - [Pansharpened Green City](airbus_pleiades/green_city_pansharpened)
-  
+
 ## <a name="airbus_spot"></a>Airbus SPOT (Commercial)
 
 <a href="https://www.intelligence-airbusds.com/en/8693-spot-67">SPOT 6/7</a> is a satellite constellation providing very high-resolution optical imagery and is owned by Airbus. It is composed of two twin satellites orbiting the Earth 180° apart. The satellites deliver 1.5 m optical imagery and offer a daily revisit capability to any point on the globe. SPOT 6/7 data with its high spatial resolution is suitable for a range of remote sensing applications such as vegetation monitoring, precise mapping, risk and disaster management. To learn more about SPOT, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/airbus/spot/"> documentation page.</a>
@@ -345,8 +346,8 @@ SPOT's RGB bands are in 6 meter spatial resolution. To take advantage of the 1.5
  - [NDWI](airbus_spot/ndwi)
  - [Green City](airbus_spot/green_city)
  - [Pansharpened Green City](airbus_spot/green_city_pansharpened)
- 
-_Note: Because Pleiades and SPOT bands are very similar in wavelengths, the same custom scripts are used for both constellations._ 
+
+_Note: Because Pleiades and SPOT bands are very similar in wavelengths, the same custom scripts are used for both constellations._
 
 ## <a name="data-fusion"></a>Data fusion
 
@@ -362,7 +363,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
 
 # <a name="howto"></a>Adding new custom scripts
-Have a look at the [template](example) and follow the procedure described there.  
+Have a look at the [template](example) and follow the procedure described there.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
