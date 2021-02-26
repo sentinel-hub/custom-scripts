@@ -17,6 +17,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Airbus Pleiades](#airbus_pleiades)
   - [Airbus SPOT](#airbus_spot)
   - [Data fusion](#data-fusion)
+  - [Copernicus services](#copernicus_services)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -361,6 +362,12 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
+
+## <a name="copernicus_services"></a>Copernicus services
+
+### CORINE Land Cover
+
+- [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.
