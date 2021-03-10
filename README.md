@@ -369,6 +369,9 @@ The combination of multiple remote sensing data sources can provide invaluable i
 
 - [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
 
+### Global Land Cover
+- [Global Land Cover discrete classification map  visualisation script](copernicus_services/global_land_cover)
+
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.
 
