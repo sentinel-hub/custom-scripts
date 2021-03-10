@@ -1,9 +1,13 @@
-// Chlorophyll Index Green
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=128=&sensor_id=168
+//VERSION=3
+// Chlorophyll Index Green  (abbrv. CIgreen)
+//
+// General formula: NIR/GREEN-1
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=128
 
-let index = (B05)/(B03)-1;
-let min = -0.941;
-let max = 15.93;
+let index = B05 / B03 - 1.0;
+let min = -0.942;
+let max = 16.332;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

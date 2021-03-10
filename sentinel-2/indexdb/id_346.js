@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio 801/550 NIR/Green (abbrv. SR801/550)
 //
 // General formula: 801nm/550nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=346
 //
 
 let index = B08 / B03;
-let min = 0.058;
-let max = 17.274;
+let min = 0.057;
+let max = 17.048;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

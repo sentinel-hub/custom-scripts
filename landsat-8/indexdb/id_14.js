@@ -1,9 +1,13 @@
-// Simple Ratio MIR/Red Eisenhydroxid-Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=14=&sensor_id=168
+//VERSION=3
+// Simple Ratio MIR/Red Eisenhydroxid-Index (abbrv. SRMIR/Red)
+//
+// General formula: MIR / RED
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=14
 
-let index = (B07)/(B04);
+let index = B07 / B04;
 let min = 0.058;
-let max = 17.109;
+let max = 16.856;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

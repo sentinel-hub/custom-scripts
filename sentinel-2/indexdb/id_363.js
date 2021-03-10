@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Green atmospherically resistant vegetation index  (abbrv. GARI)
 //
 // General formula: ( NIR - (GREEN-(BLUE- RED))) /  ( NIR- (GREEN+(BLUE - RED)))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=363
 //
 
 let index = (B08 - (B03 - (B02 - B04))) / (B08 - (B03 + (B02 - B04)));
-let min = -33.737;
-let max = 33.528;
+let min = -33.268;
+let max = 33.294;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

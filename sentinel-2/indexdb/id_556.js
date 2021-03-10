@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // RDVI2  (abbrv. RDVI2)
 //
 // General formula: (833nm-658nm)/sqrt(833nm+658nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=556
 //
 

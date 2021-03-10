@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Misra Soil Brightness Index  (abbrv. MSBI)
 //
 // General formula: 0.406*[500:600] + 0.600*[600:700] + 0.645*[700:800] + 0.243*[800:1100]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=570
 //
 

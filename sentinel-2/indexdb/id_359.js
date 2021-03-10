@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Visible Atmospherically Resistant Indices 700  (abbrv. VARI700)
 //
 // General formula: ( [700] - 1,7 * [660:680] + 0,7 * [470:490] ) / ( [700] + 2,3 * [660:680] - 1,3 * [470:490] )
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=359
 //
 
 let index = (B05 - 1.7 * B04 + 0.7 * B02) / (B05 + 2.3 * B04 - 1.3 * B02);
-let min = -13.76;
-let max = 14.097;
+let min = -13.584;
+let max = 14.331;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

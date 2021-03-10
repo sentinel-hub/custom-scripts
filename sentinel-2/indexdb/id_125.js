@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Wide Dynamic Range Vegetation Index  (abbrv. WDRVI)
 //
 // General formula: (0.1*NIR-RED)/(0.1*NIR+RED)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=125
 //
 
 let index = (0.1 * B08 - B04) / (0.1 * B08 + B04);
 let min = -0.988;
-let max = 0.263;
+let max = 0.264;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

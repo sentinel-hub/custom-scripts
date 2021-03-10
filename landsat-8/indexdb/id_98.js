@@ -1,9 +1,13 @@
-// Transformed Vegetation Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=98=&sensor_id=168
+//VERSION=3
+// Transformed Vegetation Index  (abbrv. TVI)
+//
+// General formula: sqrt((NDVI)+0,5)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=98
 
-let index = Math.sqrt((((B04-B03)/(B04+B03)))+0.5);
+let index = Math.sqrt((((B04 - B03) / (B04 + B03))) + 0.5);
 let min = 0.132;
-let max = 1.182;
+let max = 1.183;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

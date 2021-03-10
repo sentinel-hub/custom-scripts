@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Transformed Chlorophyll Absorbtion Ratio   (abbrv. TCARI)
 //
 // General formula: 3 * ((700nm - 670nm) - 0.2 * (700nm - 550nm) * (700nm / 670nm))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=96
 //
 
 let index = 3.0 * ((B05 - B04) - 0.2 * (B05 - B03) * (B05 / B04));
-let min = -1.064;
-let max = 1.071;
+let min = -1.066;
+let max = 1.073;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

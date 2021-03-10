@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Chlorophyll Green  (abbrv. Chlgreen)
 //
 // General formula: ([760:800]/[540:560])^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=251
 //
 
 let index = Math.pow((B07 / B03), (-1.0));
-let min = 0.058;
-let max = 17.12;
+let min = 0.059;
+let max = 17.114;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

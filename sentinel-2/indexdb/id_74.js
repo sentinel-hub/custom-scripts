@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference Red/Green Redness Index (abbrv. RI)
 //
 // General formula: (R - G) / (R + G)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=74
 //
 
 let index = (B04 - B03) / (B04 + B03);
-let min = -0.888;
-let max = 0.886;
+let min = -0.891;
+let max = 0.89;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

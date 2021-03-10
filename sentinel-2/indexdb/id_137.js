@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Red-Edge Inflection Point 1  (abbrv. REIP1)
 //
 // General formula: 700+40((((670nm+780nm)/2)-700nm)/(740nm-700nm))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=137
 //
 
 let index = 700.0 + 40.0 * ((((B04 + B07) / 2.0) - B05) / (B06 - B05));
-let min = -422.772;
-let max = 1868.659;
+let min = -425.302;
+let max = 1865.673;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

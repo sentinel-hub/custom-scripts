@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Shape Index  (abbrv. IF)
 //
 // General formula: (2 * R - G - B) / (G - B)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=79
 //
 
 let index = (2.0 * B04 - B03 - B02) / (B03 - B02);
-let min = -64.626;
-let max = 66.517;
+let min = -66.488;
+let max = 65.829;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

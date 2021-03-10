@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio 774/677  (abbrv. SR774/677)
 //
 // General formula: 774nm/677nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=562
 //
 
 let index = B07 / B04;
 let min = 0.058;
-let max = 17.06;
+let max = 17.039;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Normalized Difference 800/550 Green NDVI hyper 2 (abbrv. GNDVIhyper2)
 //
 // General formula: (800nm-550nm)/(800nm+550nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=419
 //
 

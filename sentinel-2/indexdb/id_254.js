@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // CRI700  (abbrv. CRI700)
 //
 // General formula: [510] ^(-1)-[700] ^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=254
 //
 
 let index = Math.pow(B02, (-1.0)) - Math.pow(B05, (-1.0));
-let min = -64.16;
-let max = 64.068;
+let min = -64.099;
+let max = 64.37;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

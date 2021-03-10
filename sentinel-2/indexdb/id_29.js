@@ -1,17 +1,17 @@
-//
+//VERSION=3
 // Green Optimized Soil Adjusted Vegetation Index  (abbrv. GOSAVI)
 //
 // General formula: (NIR - G) / (NIR + G + Y) 
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=29
 //
 
 // Initialize parameters
-let Y = 0.723;
+let Y = 0.120;
 
 let index = (B08 - B03) / (B08 + B03 + Y);
-let min = -0.58;
-let max = 0.579;
+let min = -0.657;
+let max = 0.653;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

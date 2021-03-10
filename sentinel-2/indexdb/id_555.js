@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Soil and Atmospherically Resistant Vegetation Index 3  (abbrv. SAVI3)
 //
 // General formula: (1+0,5)*(833nm-658nm)/(833nm+658nm +0,5)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=555
 //
 
 let index = (1.0 + 0.5) * (B08 - B04) / (B08 + B04 + 0.5);
-let min = -0.558;
-let max = 0.559;
+let min = -0.56;
+let max = 0.558;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

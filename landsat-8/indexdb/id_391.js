@@ -1,9 +1,13 @@
-// Chlorophyll vegetation index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=391=&sensor_id=168
+//VERSION=3
+// Chlorophyll vegetation index  (abbrv. CVI)
+//
+// General formula: NIR*RED/GREEN ^2
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=391
 
-let index = B05*(B04)/(Math.pow((B03),(2)));
-let min = 0.017;
-let max = 217.071;
+let index = B05 * B04 / Math.pow(B03, 2.0);
+let min = 0.016;
+let max = 218.463;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

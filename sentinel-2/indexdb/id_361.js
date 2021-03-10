@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference Vegetation Index 690-710  (abbrv. NDVI690-710)
 //
 // General formula: (NIR-[690:710])/(NIR+[690:710])
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=361
 //
 
 let index = (B08 - B05) / (B08 + B05);
-let min = -0.89;
-let max = 0.89;
+let min = -0.892;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

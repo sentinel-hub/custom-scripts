@@ -1,4 +1,4 @@
-//VERSION=3 (auto-converted from 1)
+//VERSION=3
 /*
 Script works on Sentinel-2 L2A data and requires scene classification (SCL) band. 
 It takes one year of data, which is quite compute and time intensive, which is why it is recommended to run it on small area (e.g. 256x256 px).
@@ -12,22 +12,25 @@ function setup() {
   return {
     input: [{
       bands: [
-          "B04",
-          "B03",
-          "B02",
-          "SCL"
-      ]
+        "B04",
+        "B03",
+        "B02",
+        "SCL"
+      ],
+      units: "DN"
     }],
-    output: { bands: 3 }
+    output: {
+      bands: 3,
+      sampleType: SampleType.UINT16
+    },
+    mosaicking: "ORBIT"
   }
 }
-
 function filterScenes (scenes, inputMetadata) {
-   return scenes.filter(function (scene) {
-     return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000) ;
-   });
+  return scenes.filter(function (scene) {
+    return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000);
+  });
 }
-
 function getValue(values) {
   values.sort( function(a,b) {return a - b;} );
   return getFirstQuartile(values);
@@ -40,86 +43,68 @@ function getFirstQuartile(sortedValues) {
 function getDarkestPixel(sortedValues) {
   return sortedValues[0]; // darkest pixel
 }
-function getSecondDarkestPixel(sortedValues) {
-  if (sortedValues.length > 1) { // second darkest pixel
-     return sortedValues[1];
-  }
-  return sortedValues[0]; // darkest pixel
-}
-
 function validate (samples) {
- var scl = Math.round(samples.SCL);
-
- if (scl == 3) { // SC_CLOUD_SHADOW
-   return false;
- } else if (scl == 9) { // SC_CLOUD_HIGH_PROBA
-   return false;
- } else if (scl == 8) { // SC_CLOUD_MEDIUM_PROBA
-   return false;
- } else if (scl == 7) { // SC_CLOUD_LOW_PROBA / UNCLASSIFIED
-   // return false;
- } else if (scl == 10) { // SC_THIN_CIRRUS
-   return false;
- } else if (scl == 11) { // SC_SNOW_ICE
-   return false;
- } else if (scl == 1) { // SC_SATURATED_DEFECTIVE
-   return false;
- } else if (scl == 2) { // SC_DARK_FEATURE_SHADOW
-   // return false;
- }
- return true;
+  var scl = samples.SCL;
+  
+  if (scl === 3) { // SC_CLOUD_SHADOW
+    return false;
+  } else if (scl === 9) { // SC_CLOUD_HIGH_PROBA
+    return false; 
+  } else if (scl === 8) { // SC_CLOUD_MEDIUM_PROBA
+    return false;
+  } else if (scl === 7) { // SC_CLOUD_LOW_PROBA / UNCLASSIFIED
+    // return false;
+  } else if (scl === 10) { // SC_THIN_CIRRUS
+    return false;
+  } else if (scl === 11) { // SC_SNOW_ICE
+    return false;
+  } else if (scl === 1) { // SC_SATURATED_DEFECTIVE
+    return false;
+  } else if (scl === 2) { // SC_DARK_FEATURE_SHADOW
+    // return false;
+  }
+  return true;
 }
 
-function evaluatePixelOrig(samples, scenes) {
- var clo_b02 = [];var clo_b03 = [];
- var clo_b04 = [];var clo_b08 = [];
- var clo_b02_invalid = [];var clo_b03_invalid = [];
- var clo_b04_invalid = [];var clo_b08_invalid = [];
- var a = 0;
- var a_invalid = 0;
- var BRIGHTNESS = 1;
-
- for (var i = 0; i < samples.length; i++) {
-   if (samples[i].B02 > 0 && samples[i].B03 > 0 && samples[i].B04 > 0) {
-
-     var isValid = validate(samples[i]);
-
-     if (isValid) {
-       clo_b02[a] = samples[i].B02;
-       clo_b03[a] = samples[i].B03;
-       clo_b04[a] = samples[i].B04;
-       a = a + 1;
-     } else {
-       clo_b02_invalid[a_invalid] = samples[i].B02;
-       clo_b03_invalid[a_invalid] = samples[i].B03;
-       clo_b04_invalid[a_invalid] = samples[i].B04;
-       a_invalid = a_invalid + 1;
-     }
-   }
- }
-
- var rValue;
- var gValue;
- var bValue;
- if (a > 0) {
-   rValue = getValue(clo_b04)*BRIGHTNESS;
-   gValue = getValue(clo_b03)*BRIGHTNESS;
-   bValue = getValue(clo_b02)*BRIGHTNESS;
- } else if (a_invalid > 0) {
-   rValue = getValue(clo_b04_invalid)*BRIGHTNESS;
-   gValue = getValue(clo_b03_invalid)*BRIGHTNESS;
-   bValue = getValue(clo_b02_invalid)*BRIGHTNESS;
- } else {
-   rValue = 0;
-   gValue = 0;
-   bValue = 0;
- }
-
- return [rValue,
-         gValue,
-         bValue];
-}
-
-function evaluatePixel(sample, scene, metadata, customData, outputMetadata) {
-  return evaluatePixelOrig([sample], [scene], metadata, customData, outputMetadata);
+function evaluatePixel(samples, scenes) {
+  var clo_b02 = []; var clo_b03 = []; var clo_b04 = [];
+  var clo_b02_invalid = []; var clo_b03_invalid = []; var clo_b04_invalid = [];
+  var a = 0; var a_invalid = 0;
+  
+  for (var i = 0; i < samples.length; i++) {
+    var sample = samples[i];
+    if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0) {
+      var isValid = validate(sample);
+      
+      if (isValid) {
+        clo_b02[a] = sample.B02;
+        clo_b03[a] = sample.B03;
+        clo_b04[a] = sample.B04;
+        a = a + 1;
+      } else {
+        clo_b02_invalid[a_invalid] = sample.B02;
+        clo_b03_invalid[a_invalid] = sample.B03;
+        clo_b04_invalid[a_invalid] = sample.B04;
+        a_invalid = a_invalid + 1;
+      }
+    }
+  }
+  
+  var rValue;
+  var gValue;
+  var bValue;
+  if (a > 0) {
+    rValue = getValue(clo_b04);
+    gValue = getValue(clo_b03);
+    bValue = getValue(clo_b02);
+  } else if (a_invalid > 0) {
+    rValue = getValue(clo_b04_invalid);
+    gValue = getValue(clo_b03_invalid);
+    bValue = getValue(clo_b02_invalid);
+  } else {
+    rValue = 0;
+    gValue = 0;
+    bValue = 0;
+  }
+  return [rValue, gValue, bValue]
 }

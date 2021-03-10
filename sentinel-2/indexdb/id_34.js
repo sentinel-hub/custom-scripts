@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Hue  (abbrv. H)
 //
 // General formula: arctan ((2 * R - G - B) / 30.5 * (G - B))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=34
 //
 

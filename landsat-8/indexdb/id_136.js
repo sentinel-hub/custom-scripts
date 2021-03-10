@@ -1,9 +1,13 @@
-// Blue-wide dynamic range vegetation index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=136=&sensor_id=168
+//VERSION=3
+// Blue-wide dynamic range vegetation index  (abbrv. BWDRVI)
+//
+// General formula: (0.1 * NIR - BLUE)/(0.1 * NIR + BLUE)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=136
 
-let index = (0.1*B05-B02)/(0.1*B05+B02);
+let index = (0.1 * B05 - B02) / (0.1 * B05 + B02);
 let min = -0.989;
-let max = 0.259;
+let max = 0.261;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

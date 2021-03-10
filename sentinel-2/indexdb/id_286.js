@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference 800/500 Pigment specific normalised difference C1 (abbrv. PSNDc1)
 //
 // General formula: (800nm - 500nm)/(800nm+500nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=286
 //
 
 let index = (B08 - B02) / (B08 + B02);
 let min = -0.889;
-let max = 0.89;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

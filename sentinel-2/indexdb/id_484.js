@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference 550/650 Photosynthetic vigour ratio (abbrv. PVR)
 //
 // General formula: (550nm-650nm)/(550nm+650nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=484
 //
 
 let index = (B03 - B04) / (B03 + B04);
-let min = -0.889;
-let max = 0.889;
+let min = -0.89;
+let max = 0.89;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

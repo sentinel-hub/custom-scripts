@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Renormalized Difference Vegetation Index   (abbrv. RDVI)
 //
 // General formula: (800nm - 670nm) /sqrt(800nm + 670nm)0.5
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=76
 //
 

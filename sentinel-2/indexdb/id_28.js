@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Green Normalized Difference Vegetation Index   (abbrv. GNDVI)
 //
 // General formula: (NIR - [540:570]) / (NIR + [540:570])
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=28
 //
 
 let index = (B08 - B03) / (B08 + B03);
-let min = -0.892;
+let min = -0.889;
 let max = 0.891;
 let zero = 0.0;
 

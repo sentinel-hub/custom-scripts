@@ -1,55 +1,39 @@
+//VERSION=3
+//This script was converted from v1 to v3 using the converter API
 
-if (B08 == 0 || B11 == 0){
-  return [0,0,0];
-} else {
-  var val = (B08 - B11)/(B08 + B11);
-  
-  var vmin = -0.8;
-  var vmax = 0.8;
-  var dv = vmax - vmin;
-  
-  var r = 0.0;
-  var g = 0.0;
-  var b = 0.0;
+//ndwi
+var colorRamp1 = [
+  	[0, 0xFFFFFF],
+  	[1, 0x008000]
+  ];
+var colorRamp2 = [
+  	[0, 0xFFFFFF],
+  	[1, 0x0000CC]
+  ];
 
-  
-  var v = val;
+let viz1 = new ColorRampVisualizer(colorRamp1);
+let viz2 = new ColorRampVisualizer(colorRamp2);
 
-  if (v < vmin){
-    v = vmin;
-  }
-  if (v > vmax){
-    v = vmax;
-  }
-  
-  var l1 = 0.35;
-  var l2 = 0.48;
-  var l3 = 0.52;
-  var l4 = 0.65;
-  
-  var level1 = (vmin + l1 * dv);
-  var level2 = (vmin + l2 * dv);
-  var level3 = (vmin + l3 * dv);
-  var level4 = (vmin + l4 * dv);
+function evaluatePixel(samples) {
+  var val = index(samples.B03, samples.B08);
 
-  if (v < level1){
-     r = 0.5 +  (v - vmin) / (level1 - vmin) / 2;
-  } else if (v < level2) {
-     r = 1;
-     g = (v - level1) / (level2 - level1);
-     b = 0;
-  } else if (v < level3) {
-     r = 1 + (level2 - v) / (level3 - level2);
-     g = 1;
-     b = (v - level2) / (level3 - level2);
-  } else if (v < level4) {
-     r = 0;
-     g = 1 + (level3 - v) / (level4 - level3);
-     b = 1;
+  if (val < -0) {
+    return viz1.process(-val);
   } else {
-     b = 1.0 + (level4 - v) / (vmax - level4) / 2;
+    return viz2.process(Math.sqrt(Math.sqrt(val)));
   }
+}
 
-   return [r, g, b];
-  
+function setup() {
+  return {
+    input: [{
+      bands: [
+        "B03",
+        "B08"
+      ]
+    }],
+    output: {
+      bands: 3
+    }
+  }
 }

@@ -1,7 +1,11 @@
-// Normalized Difference NIR/Blue Blue-normalized difference vegetation index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=135=&sensor_id=168
+//VERSION=3
+// Normalized Difference NIR/Blue Blue-normalized difference vegetation index (abbrv. BNDVI)
+//
+// General formula: (NIR-BLUE)/(NIR+BLUE)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=135
 
-let index = (B05-B02)/(B05+B02);
+let index = (B05 - B02) / (B05 + B02);
 let min = -0.889;
 let max = 0.889;
 let zero = 0.0;

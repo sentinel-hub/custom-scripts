@@ -1,0 +1,32 @@
+curl -X POST \
+  https://services.sentinel-hub.com/api/v1/process \
+  -H 'Authorization: Bearer <your_access_token>' \
+  -F 'request={
+    "input": {
+      "bounds": {
+        "properties": {
+          "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+        },
+        "bbox": [14.4,45.95,14.6,46.15]
+      },
+      "data": [{
+        "dataFilter": {
+          "maxCloudCoverage": 20,
+          "timeRange": {
+            "from": "2015-01-01T00:00Z",
+            "to": "2019-10-10T00:00Z"
+          }
+        },
+        "type": "S2L1C"
+      }]
+    },
+    "output": {
+      "width": 512,
+      "height": 512,
+      "responses": [{
+        "identifier": "default",
+        "format": { "type": "image/png" }
+      }]
+    }
+  }' \
+  -F "evalscript=@script_v3.js" --output output.png

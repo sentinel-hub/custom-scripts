@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Differenced Vegetation Index MSS  (abbrv. DVIMSS)
 //
 // General formula: 2.4*[800:1100]-[600:700]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=569
 //
 
 let index = 2.4 * B09 - B04;
-let min = -0.291;
+let min = -0.288;
 let max = 0.865;
 let zero = 0.0;
 

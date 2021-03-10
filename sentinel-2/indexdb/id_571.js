@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Misra Green Vegetation Index  (abbrv. MGVI)
 //
 // General formula: -0.386*[500:600] - 0.530*[600:700] + 0.535*[700:800] + 0.532*[800:1100]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=571
 //
 

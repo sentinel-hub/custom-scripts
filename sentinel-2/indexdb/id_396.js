@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Atmospherically Resistant Vegetation Index 2  (abbrv. ARVI2)
 //
 // General formula: -0.18 + 1.17 * ((NIR-RED)/(NIR+RED))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=396
 //
 
 let index = -0.18 + 1.17 * ((B08 - B04) / (B08 + B04));
 let min = -1.221;
-let max = 0.861;
+let max = 0.862;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

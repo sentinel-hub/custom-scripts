@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Triangular chlorophyll index  (abbrv. TCI)
 //
 // General formula: 1.2 * (700nm - 550nm) - 1.5 * (670nm - 550nm) * sqrt(700nm/670nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=392
 //
 
 let index = 1.2 * (B05 - B03) - 1.5 * (B04 - B03) * Math.sqrt(B05 / B04);
 let min = -0.353;
-let max = 1.489;
+let max = 1.498;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

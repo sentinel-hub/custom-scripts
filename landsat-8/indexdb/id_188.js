@@ -1,9 +1,13 @@
-// Pan NDVI
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=188=&sensor_id=168
+//VERSION=3
+// Pan NDVI  (abbrv. PNDVI)
+//
+// General formula: (NIR-(GREEN+RED+BLUE))/(NIR+(GREEN+RED+BLUE))
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=188
 
-let index = (B05-(B03+B04+B02))/(B05+(B03+B04+B02));
+let index = (B05 - (B03 + B04 + B02)) / (B05 + (B03 + B04 + B02));
 let min = -0.957;
-let max = 0.178;
+let max = 0.177;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

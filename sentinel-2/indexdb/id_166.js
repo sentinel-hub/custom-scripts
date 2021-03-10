@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Maccioni  (abbrv. )
 //
 // General formula: (780nm-710nm)/(780nm-680nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=166
 //
 
 let index = (B07 - B05) / (B07 - B04);
-let min = -32.478;
-let max = 32.892;
+let min = -33.128;
+let max = 33.474;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

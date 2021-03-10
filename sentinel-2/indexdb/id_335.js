@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Red edge 1  (abbrv. Rededge1)
 //
 // General formula: [708:716]/[676:685]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=335
 //
 
 let index = B05 / B04;
-let min = 0.058;
-let max = 17.08;
+let min = 0.059;
+let max = 17.548;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

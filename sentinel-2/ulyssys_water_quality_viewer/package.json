@@ -13,7 +13,7 @@
     "András Zlinszky PhD",
     "Gergely Padányi-Gulyás"
   ],
-  "license": "CC",
+  "license": "CC-BY-2.5",
   "dependencies": {
     "fs-extra": "^8.1.0",
     "linereader": "^1.1.0",

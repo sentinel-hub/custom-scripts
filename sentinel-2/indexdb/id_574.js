@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Ashburn Vegetation Index  (abbrv. AVI)
 //
 // General formula: 2.0*[800:1100] - [600:700]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=574
 //
 
 let index = 2.0 * B09 - B04;
-let min = -0.302;
-let max = 0.712;
+let min = -0.298;
+let max = 0.713;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

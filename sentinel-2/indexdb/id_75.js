@@ -1,18 +1,18 @@
-//
+//VERSION=3
 // Reduced Simple Ratio  (abbrv. RSR)
 //
 // General formula: NIR / RED * MIRmax - MIR / MIRmax - MIRmin
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=75
 //
 
 // Initialize parameters
-let MIRmax = 0.778;
-let MIRmin = 0.660;
+let MIRmin = 0.259;
+let MIRmax = 0.640;
 
 let index = B08 / B04 * MIRmax - B12 / MIRmax - MIRmin;
-let min = -21.137;
-let max = 8.916;
+let min = -0.734;
+let max = 10.383;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

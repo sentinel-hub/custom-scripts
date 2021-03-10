@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Soil and Atmospherically Resistant Vegetation Index 2  (abbrv. SARVI2)
 //
 // General formula: 2,5*(NIR-RED)/(1+NIR+6*RED-7,5*BLUE)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=387
 //
 
 let index = 2.5 * (B08 - B04) / (1.0 + B08 + 6.0 * B04 - 7.5 * B02);
-let min = -8.064;
-let max = 7.97;
+let min = -8.09;
+let max = 8.065;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,9 +1,13 @@
-// Enhanced Vegetation Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=16=&sensor_id=168
+//VERSION=3
+// Enhanced Vegetation Index  (abbrv. EVI)
+//
+// General formula: 2.5 * (NIR - RED) / ((NIR + 6*RED - 7.5*BLUE) + 1)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=16
 
-let index = 2.5*(B05-B04)/((B05+6*B04-7.5*B02)+1);
-let min = -8.185;
-let max = 7.886;
+let index = 2.5 * (B05 - B04) / ((B05 + 6.0 * B04 - 7.5 * B02) + 1.0);
+let min = -8.139;
+let max = 7.912;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

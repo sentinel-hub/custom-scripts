@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference NIR/MIR Modified Normalized Difference Vegetation Index (abbrv. MNDVI)
 //
 // General formula: (NIR-MIR)/(NIR+MIR)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=245
 //
 
 let index = (B08 - B12) / (B08 + B12);
-let min = -0.89;
-let max = 0.89;
+let min = -0.889;
+let max = 0.888;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

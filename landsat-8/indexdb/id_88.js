@@ -1,9 +1,13 @@
-// Soil Composition Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=88=&sensor_id=168
+//VERSION=3
+// Soil Composition Index  (abbrv. )
+//
+// General formula: ([1600:1700]-[760:860])/([1600:1700]+[760:860])
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=88
 
-let index = (B06-B05)/(B06+B05);
-let min = -0.891;
-let max = 0.892;
+let index = (B06 - B05) / (B06 + B05);
+let min = -0.892;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

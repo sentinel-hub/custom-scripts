@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Optimized Soil Adjusted Vegetation Index  (abbrv. OSAVI)
 //
 // General formula: (1 + Y) * (800nm - 670nm) / (800nm + 670nm + Y) 
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=63
 //
 
 let index = (1.0 + 0.16) * (B08 - B04) / (B08 + B04 + 0.16);
-let min = -0.702;
+let min = -0.705;
 let max = 0.704;
 let zero = 0.0;
 

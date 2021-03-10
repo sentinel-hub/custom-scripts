@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Green-Blue NDVI  (abbrv. GBNDVI)
 //
 // General formula: (NIR-(GREEN+BLUE))/(NIR+(GREEN+BLUE))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=186
 //
 
 let index = (B08 - (B03 + B02)) / (B08 + (B03 + B02));
-let min = -0.939;
+let min = -0.938;
 let max = 0.529;
 let zero = 0.0;
 

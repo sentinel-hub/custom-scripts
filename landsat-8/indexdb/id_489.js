@@ -1,9 +1,13 @@
-// Single Band 640
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=489=&sensor_id=168
+//VERSION=3
+// Single Band 640  (abbrv. SB0640)
+//
+// General formula: 640nm
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=489
 
 let index = B04;
 let min = 0.013900000000000001;
-let max = 0.3961;
+let max = 0.7861;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

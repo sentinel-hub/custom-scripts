@@ -1,3 +1,4 @@
+//VERSION=3
 const PARAMS = {
   // Indices
   chlIndex: 'default',

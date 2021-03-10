@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio 1600/820 Moisture Stress Index (abbrv. MSI)
 //
 // General formula: 1600nm / 820nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=48
 //
 
 let index = B11 / B08;
-let min = 0.058;
-let max = 17.145;
+let min = 0.059;
+let max = 17.357;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

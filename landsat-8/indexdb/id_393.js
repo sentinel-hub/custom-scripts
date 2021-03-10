@@ -1,9 +1,13 @@
-// Aerosol free vegetation index 1600
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=393=&sensor_id=168
+//VERSION=3
+// Aerosol free vegetation index 1600  (abbrv. AFRI1600)
+//
+// General formula: (NIR-0.66*1600nm/(NIR + 0.66*1600nm)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=393
 
-let index = (B05-0.66*(B06)/(B05+0.66*B06));
+let index = B05 - 0.66 * B06 / (B05 + 0.66 * B06);
 let min = -0.901;
-let max = 0.313;
+let max = 0.31;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

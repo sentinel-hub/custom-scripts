@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Modified NDVI  (abbrv. mNDVI)
 //
 // General formula: (800nm-680nm)/(800nm+680nm-2*445nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=164
 //
 
 let index = (B08 - B04) / (B08 + B04 - 2.0 * B01);
-let min = -16.917;
-let max = 16.508;
+let min = -16.52;
+let max = 16.491;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

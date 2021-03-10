@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Normalized Difference 895/675  (abbrv. ND895/675)
 //
 // General formula: (895nm-675nm)/(895nm+675nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=544
 //
 
 let index = (B08 - B04) / (B08 + B04);
-let min = -0.89;
+let min = -0.889;
 let max = 0.89;
 let zero = 0.0;
 

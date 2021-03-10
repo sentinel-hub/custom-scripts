@@ -1,18 +1,18 @@
-//
+//VERSION=3
 // Ratio Analysis of Reflectance Spectra A3  (abbrv. RARSa3)
 //
 // General formula: (675nm /800nm)/(r670/r800)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=299
 //
 
 // Initialize parameters
-let r800 = 0.356;
-let r670 = 0.192;
+let r670 = 0.382;
+let r800 = 0.935;
 
 let index = (B04 / B08) / (r670 / r800);
-let min = 0.01;
-let max = 96.827;
+let min = 0.144;
+let max = 41.524;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

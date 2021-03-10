@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Green leaf index  (abbrv. GLI)
 //
 // General formula: (2 * GREEN - RED - BLUE)/(2 * GREEN + RED + BLUE)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=375
 //
 
 let index = (2.0 * B03 - B04 - B02) / (2.0 * B03 + B04 + B02);
-let min = -0.881;
-let max = 0.733;
+let min = -0.88;
+let max = 0.735;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

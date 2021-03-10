@@ -53,4 +53,4 @@ else if (ndvi<0.5) return [0.19,0.43,0.11];
 else if (ndvi<0.55) return [0.13,0.38,0.07];
 else if (ndvi<0.6) return [0.06,0.33,0.04];
 else return [0,0.27,0];
-/*
+*/

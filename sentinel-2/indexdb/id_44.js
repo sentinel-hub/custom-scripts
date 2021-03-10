@@ -1,9 +1,14 @@
-// Modified Soil Adjusted Vegetation Index
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=44=&sensor_id=96
+//VERSION=3
+// Modified Soil Adjusted Vegetation Index  (abbrv. MSAVI)
+//
+// General formula: (2 * NIR + 1 - sqrt((2 * NIR + 1)^2- 8 * (NIR - RED)))/2)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=44
+//
 
-let index = (2*B09+1-Math.sqrt(Math.pow(((2*B09+1)),(2))-8*(B09-B05)))/(2);
-let min = -0.444;
-let max = 0.583;
+let index = (2.0 * B08 + 1.0 - Math.sqrt(Math.pow((2.0 * B08 + 1.0), 2.0) - 8.0 * (B08 - B04))) / 2.0;
+let min = -0.443;
+let max = 0.579;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [

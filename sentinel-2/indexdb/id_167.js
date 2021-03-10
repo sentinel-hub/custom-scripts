@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Modified Simple Ratio  (abbrv. mSR)
 //
 // General formula: (800nm-445nm)/(680nm-445nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=167
 //
 
 let index = (B08 - B01) / (B04 - B01);
-let min = -32.931;
-let max = 33.576;
+let min = -32.943;
+let max = 32.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

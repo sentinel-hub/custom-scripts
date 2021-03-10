@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Coloration Index  (abbrv. CI)
 //
 // General formula: (RED - BLUE) / RED
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=11
 //
 
 let index = (B04 - B02) / B04;
-let min = -16.29;
-let max = 0.941;
+let min = -16.339;
+let max = 0.942;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

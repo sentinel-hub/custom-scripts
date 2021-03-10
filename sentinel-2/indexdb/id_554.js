@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference 833/1649 Infrared Index (abbrv. ND833/1649)
 //
 // General formula: (833nm-1649nm)/(833nm+1649nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=554
 //
 
 let index = (B08 - B11) / (B08 + B11);
-let min = -0.89;
-let max = 0.889;
+let min = -0.891;
+let max = 0.891;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

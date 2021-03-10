@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Blue Blue-normalized difference vegetation index (abbrv. BNDVI)
 //
 // General formula: (NIR-BLUE)/(NIR+BLUE)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=135
 //
 
 let index = (B08 - B02) / (B08 + B02);
-let min = -0.89;
-let max = 0.89;
+let min = -0.892;
+let max = 0.891;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,9 +1,13 @@
-// Green-Blue NDVI
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=186=&sensor_id=168
+//VERSION=3
+// Green-Blue NDVI  (abbrv. GBNDVI)
+//
+// General formula: (NIR-(GREEN+BLUE))/(NIR+(GREEN+BLUE))
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=186
 
-let index = (B05-(B03+B02))/(B05+(B03+B02));
-let min = -0.939;
-let max = 0.531;
+let index = (B05 - (B03 + B02)) / (B05 + (B03 + B02));
+let min = -0.938;
+let max = 0.53;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

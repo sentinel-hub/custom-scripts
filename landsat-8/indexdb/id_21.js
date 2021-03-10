@@ -1,9 +1,13 @@
-// Ferrous iron
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=21=&sensor_id=168
+//VERSION=3
+// Ferrous iron  (abbrv. )
+//
+// General formula: [2145:2185]/[760:860]+[520:600]/[630:690]
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=21
 
-let index = (B07)/(B05)+(B03)/(B04);
-let min = 0.36;
-let max = 23.796;
+let index = B07 / B05 + B03 / B04;
+let min = 0.359;
+let max = 23.82;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

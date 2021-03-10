@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio 860/550  (abbrv. SR860/550)
 //
 // General formula: 860nm/550nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=343
 //
 
 let index = B8A / B03;
 let min = 0.058;
-let max = 17.173;
+let max = 17.494;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

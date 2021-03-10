@@ -7,6 +7,19 @@
 //
 
 let index = (B08 - B01) / (B08 - B04);
+
+return colorBlend(index, [0.5, 1, 1.1, 1.2, 3, 5],
+[
+  [0,0,0],
+  [0,0.5,0],
+  [0,1,0],
+  [1,1,0],
+  [0.8,0.8,0.8],
+  [1,1,1]
+]);
+
+/*
+let index = (B08 - B01) / (B08 - B04);
 let min = -32.419;
 let max = 33.191;
 let zero = 0.0;
@@ -30,3 +43,4 @@ return colorBlend(index, [min, min, zero, max],
 	high_color,
 	//overflow_color // uncomment to see overflows
 ]);
+*/

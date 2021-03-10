@@ -1,9 +1,13 @@
-// Simple Ratio Red/Blue Iron Oxide
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=203=&sensor_id=168
+//VERSION=3
+// Simple Ratio Red/Blue Iron Oxide (abbrv. IO)
+//
+// General formula: RED/BLUE
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=203
 
-let index = (B04)/(B01);
-let min = 0.059;
-let max = 16.894;
+let index = B04 / B01;
+let min = 0.057;
+let max = 16.886;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

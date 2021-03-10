@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Chlorophyll Red-Edge  (abbrv. Chlred-edge)
 //
 // General formula: ([760:800]/[690:720])^(-1)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=252
 //
 
 let index = Math.pow((B07 / B05), (-1.0));
 let min = 0.058;
-let max = 17.149;
+let max = 16.732;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

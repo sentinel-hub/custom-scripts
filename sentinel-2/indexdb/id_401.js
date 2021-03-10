@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Green Green NDVI (abbrv. GNDVI)
 //
 // General formula: (NIR-GREEN)/(NIR+GREEN)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=401
 //
 
 let index = (B08 - B03) / (B08 + B03);
 let min = -0.89;
-let max = 0.89;
+let max = 0.888;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

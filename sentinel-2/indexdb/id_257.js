@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // mCRIG  (abbrv. mCRIG)
 //
 // General formula: ([510:520] ^(-1)-[560:570] ^(-1))*NIR
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=257
 //
 
 let index = (Math.pow(B02, (-1.0)) - Math.pow(B03, (-1.0))) * B08;
-let min = -15.019;
-let max = 14.918;
+let min = -14.929;
+let max = 14.894;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

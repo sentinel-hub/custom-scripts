@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference 774/677  (abbrv. ND774/677)
 //
 // General formula: (774nm-677nm)/(774nm+677nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=563
 //
 
 let index = (B07 - B04) / (B07 + B04);
 let min = -0.889;
-let max = 0.89;
+let max = 0.889;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

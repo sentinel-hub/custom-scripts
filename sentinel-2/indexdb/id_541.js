@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Mid-infrared vegetation index  (abbrv. MVI)
 //
 // General formula: [700:1300]/[1570:1780]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=541
 //
 
 let index = B09 / B11;
-let min = 0.058;
-let max = 17.18;
+let min = 0.057;
+let max = 17.289;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

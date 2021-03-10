@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Normalized Difference NIR/Rededge Normalized Difference Red-Edge (abbrv. NDRE)
 //
 // General formula: (NIR - rededge)/( NIR + rededge)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=223
 //
 
 let index = (B08 - B05) / (B08 + B05);
-let min = -0.89;
+let min = -0.887;
 let max = 0.89;
 let zero = 0.0;
 

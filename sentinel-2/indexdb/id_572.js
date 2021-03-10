@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Misra Yellow Vegetation Index  (abbrv. MYVI)
 //
 // General formula: 0.723*[500:600] - 0.597*[600:700] + 0.206*[700:800] - 0.278*[800:1100]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=572
 //
 

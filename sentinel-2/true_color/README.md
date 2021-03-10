@@ -23,4 +23,4 @@ True color visualization of Rome, on 8.10.2017.
 
 
 ## References
- - Wikipedia, [False color](https://en.wikipedia.org/wiki/False_color#True_color). Accessed October 10th 2017.
+ - Wikipedia, [True color](https://en.wikipedia.org/wiki/False_color#True_color). Accessed October 10th 2017.

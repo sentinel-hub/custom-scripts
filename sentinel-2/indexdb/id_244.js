@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Corrected Transformed Vegetation Index  (abbrv. CTVI)
 //
 // General formula: (NDVI+0,5)/abs(NDVI+0,5)*sqrt(abs((NDVI)+0,5))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=244
 //
 
 let index = (((B04 - B03) / (B04 + B03)) + 0.5) / Math.abs(((B04 - B03) / (B04 + B03)) + 0.5) * Math.sqrt(Math.abs((((B04 - B03) / (B04 + B03))) + 0.5));
-let min = -0.624;
-let max = 1.179;
+let min = -0.625;
+let max = 1.18;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

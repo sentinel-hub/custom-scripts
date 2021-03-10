@@ -1,17 +1,17 @@
-//
+//VERSION=3
 // SAVImir  (abbrv. SAVImir)
 //
 // General formula: (NIR-MIR)*(1+L)/(NIR+MIR+L)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=394
 //
 
 // Initialize parameters
-let L = 0.401;
+let L = 0.781;
 
 let index = (B08 - B12) * (1.0 + L) / (B08 + B12 + L);
-let min = -0.65;
-let max = 0.65;
+let min = -0.505;
+let max = 0.505;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

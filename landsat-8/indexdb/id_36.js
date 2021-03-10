@@ -1,7 +1,11 @@
-// Intensity
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=36=&sensor_id=168
+//VERSION=3
+// Intensity  (abbrv. I )
+//
+// General formula: (1 / (30.5)) * (R + G + B)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=36
 
-let index = ((1)/(30.5))*(B04+B03+B02);
+let index = (1.0 / (30.5)) * (B04 + B03 + B02);
 let min = 0.006;
 let max = 0.034;
 

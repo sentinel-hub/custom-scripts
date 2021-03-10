@@ -1,4 +1,5 @@
 // Global Vegetation Moisture Index
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=372=&sensor_id=14
 
 let index = ((B05+0.1)-(B07+0.02))/((B05+0.1)+(B07+0.02));

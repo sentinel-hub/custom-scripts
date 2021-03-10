@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio 800/500 Pigment specific simple ratio C1 (abbrv. PSSRc1)
 //
 // General formula: 800nm/500nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=227
 //
 
 let index = B08 / B02;
 let min = 0.058;
-let max = 17.152;
+let max = 17.001;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

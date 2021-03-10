@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Modified Chlorophyll Absorption in Reflectance Index 1  (abbrv. MCARI1)
 //
 // General formula: 1.2 * (2.5 * (800nm - 670nm) - 1.3 * (800nm - 550nm))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=42
 //
 
 let index = 1.2 * (2.5 * (B08 - B04) - 1.3 * (B08 - B03));
-let min = -0.881;
-let max = 0.882;
+let min = -0.88;
+let max = 0.879;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

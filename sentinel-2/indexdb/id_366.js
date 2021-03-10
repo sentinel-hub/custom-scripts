@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Simple Ratio NIR/700-715  (abbrv. SRNir/700-715)
 //
 // General formula: NIR/[700:715]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=366
 //
 
 let index = B08 / B05;
-let min = 0.059;
-let max = 17.17;
+let min = 0.057;
+let max = 16.993;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
 // To see black when it is more than max, uncomment the last line of colorBlend.

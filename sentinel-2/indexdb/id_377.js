@@ -1,19 +1,19 @@
-//
+//VERSION=3
 // Normalized Difference Vegetation Index C  (abbrv. NDVIc)
 //
 // General formula: (NIR-RED)/(NIR+RED)*(1-(SWIR-SWIIRmin)/(SWIRmax-SWIRmin))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=377
 //
 
 // Initialize parameters
-let SWIIRmin = 0.687;
-let SWIRmax = 0.139;
-let SWIRmin = 0.849;
+let SWIRmin = 0.378;
+let SWIRmax = 0.397;
+let SWIIRmin = 0.027;
 
 let index = (B08 - B04) / (B08 + B04) * (1.0 - (B12 - SWIIRmin) / (SWIRmax - SWIRmin));
-let min = -12.609;
-let max = 12.674;
+let min = -12.595;
+let max = 12.598;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

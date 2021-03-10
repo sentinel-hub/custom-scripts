@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Structure Intensive Pigment Index 3  (abbrv. SIPI3)
 //
 // General formula: (800nm - 470nm) / (800nm - 680nm)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=291
 //
 
 let index = (B08 - B02) / (B08 - B04);
-let min = -32.451;
-let max = 33.215;
+let min = -31.864;
+let max = 33.576;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

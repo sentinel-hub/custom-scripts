@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // MCARI/OSAVI  (abbrv. MCARI/OSAVI)
 //
 // General formula: ((700nm-670nm)-0.2*(700nm-550nm)*(700nm/670nm))/((1+0.16)*(800nm-670nm)/(800nm+670nm+0.16))
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=192
 //
 
 let index = ((B05 - B04) - 0.2 * (B05 - B03) * (B05 / B04)) / ((1.0 + 0.16) * (B08 - B04) / (B08 + B04 + 0.16));
-let min = -14.438;
-let max = 15.005;
+let min = -14.522;
+let max = 15.084;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

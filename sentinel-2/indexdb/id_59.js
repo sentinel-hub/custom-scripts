@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Normalized Difference MIR/NIR Normalized Difference Vegetation Index (in case of strong atmospheric disturbances) (abbrv. NDVI)
 //
 // General formula: (MIR - NIR) / (MIR + NIR)
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=59
 //
 
 let index = (B12 - B08) / (B12 + B08);
-let min = -0.891;
-let max = 0.891;
+let min = -0.889;
+let max = 0.892;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

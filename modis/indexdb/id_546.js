@@ -1,4 +1,5 @@
 // Normalized Difference 857/1241 Normalized Difference Water Index
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=546=&sensor_id=14
 
 let index = (B02-B05)/(B02+B05);

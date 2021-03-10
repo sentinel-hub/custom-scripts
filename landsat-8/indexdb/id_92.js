@@ -1,7 +1,11 @@
-// Tasselled Cap - vegetation
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=92=&sensor_id=168
+//VERSION=3
+// Tasselled Cap - vegetation  (abbrv. GVI)
+//
+// General formula: -0.2848*[450:520] - 0.2435*[520:600] - 0.5436*[630:690]+ 0.7243*[760:900] + 0.0840*[1550:1750] - 0.1800*[2080:2350]
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=168&rsindex_id=92
 
-let index = -0.2848*B02-0.2435*B03-0.5436*B04+0.7243*B05+0.0840*B06-0.1800*B07;
+let index = -0.2848 * B02 - 0.2435 * B03 - 0.5436 * B04 + 0.7243 * B05 + 0.084 * B06 - 0.18 * B07;
 let min = -0.337;
 let max = 0.155;
 let zero = 0.0;

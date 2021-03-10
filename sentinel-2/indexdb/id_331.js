@@ -1,13 +1,13 @@
-//
+//VERSION=3
 // Reflectance at the inflexion point  (abbrv. Rre)
 //
 // General formula: ([670]+[780])/2
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=331
 //
 
 let index = (B04 + B07) / 2.0;
-let min = 0.037;
+let min = 0.038;
 let max = 0.372;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

@@ -1,14 +1,14 @@
-//
+//VERSION=3
 // Difference 833/658  (abbrv. D833/658)
 //
 // General formula: 833nm-658nm
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=551
 //
 
 let index = B08 - B04;
-let min = -0.335;
-let max = 0.335;
+let min = -0.334;
+let max = 0.336;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.

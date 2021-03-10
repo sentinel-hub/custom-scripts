@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Misra Non Such Index  (abbrv. MNSI)
 //
 // General formula: 0.404*[500:600] - 0.039*[600:700] - 0.505*[700:800] + 0.762*[800:1100]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=573
 //
 

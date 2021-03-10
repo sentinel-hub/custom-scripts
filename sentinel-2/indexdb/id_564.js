@@ -1,8 +1,8 @@
-//
+//VERSION=3
 // Tasselled Cap - Green Vegetation Index MSS  (abbrv. GVIMSS)
 //
 // General formula: -0.283*[500:600] - 0.660*[600:700] + 0.577*[700:800] + 0.388*[800:1100]
-//
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
 // URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=564
 //
 

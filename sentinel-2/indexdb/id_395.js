@@ -1,9 +1,14 @@
-// Aerosol free vegetation index 2100
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=395=&sensor_id=96
+//VERSION=3
+// Aerosol free vegetation index 2100  (abbrv. AFRI2100)
+//
+// General formula: (NIR-0.5*2100nm/(NIR + 0.56*2100nm)
+// This is an auto-generated script. Double checking the source information with the URL below is recommended.
+// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=395
+//
 
-let index = (B09-0.5*(B12)/(B09+0.56*B12));
-let min = -0.792;
-let max = 0.328;
+let index = B08 - 0.5 * B12 / (B08 + 0.56 * B12);
+let min = -0.79;
+let max = 0.327;
 let zero = 0.0;
 
 // colorBlend will return a color when the index is between min and max and white when it is less than min.
@@ -11,11 +16,11 @@ let zero = 0.0;
 // The min/max values were computed automatically and may be poorly specified, feel free to change them to tweak the displayed range.
 // This index crosses zero, so a diverging color map is used. To tweak the value of the break in the color map, change the variable 'zero'.
 
-var underflow_color = [1, 1, 1];
-var low_color = [208/255, 88/255, 126/255];
-var high_color = [241/255, 234/255, 200/255];
-var zero_color = [0, 147/255, 146/255];
-var overflow_color = [0, 0, 0];
+let underflow_color = [1, 1, 1];
+let low_color = [208/255, 88/255, 126/255];
+let high_color = [241/255, 234/255, 200/255];
+let zero_color = [0, 147/255, 146/255];
+let overflow_color = [0, 0, 0];
 
 return colorBlend(index, [min, min, zero, max],
 [
