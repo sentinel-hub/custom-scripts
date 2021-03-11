@@ -376,17 +376,9 @@ CORINE Land Cover data is available in our [public collections](https://github.c
 
 ### Global Land Cover       
 
-Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc).  
-The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf)
+Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc). The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. The  Global Land Cover data contains one main _land cover discrete classification map_ and several other additional layers. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf). 
 
-Global Land Cover data is available in our [public collections](https://github.com/sentinel-hub/public-collections/tree/main/collections/global-land-cover).The  Global Land Cover data contain the following layers:
-
-_One land cover discrete classification map_  
-_10 Fractional cover maps for the 10 main classes_   
-_One forest type map_  
-_One discrete classification probability map_  
-_One Data Density Indicator for PROBA-V UTM 100m input data_  
-_One Change Confidence Layer_ (only available for consolidated and near real time products)
+Global Land Cover data is available in our [public collections](https://github.com/sentinel-hub/public-collections/tree/main/collections/global-land-cover)
 
 #### Available scripts
 
