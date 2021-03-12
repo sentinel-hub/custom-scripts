@@ -150,7 +150,7 @@ Table 1: Color legend for the 23 discrete classes of land cover classification m
 
 *2019 nrt discrete land cover classification map for Republic of Ecuador's Galápagos Island visualised in EO browser*   
 
-![Discrete classification map for  Republic of Ecuador's Galápagos Island](fig/Galapagos_Island.png)
+![Discrete classification map for  Republic of Ecuador's Galápagos Island](fig/Galapagos_Islands.png)
 
 ## Resources
 
