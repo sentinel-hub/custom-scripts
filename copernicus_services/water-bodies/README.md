@@ -8,9 +8,9 @@
 </div>
 
 ## General description of the script  
-This script visualizes surface water extent derived from water Bodies detection layer (WB) contained in Water Bodies data.
+This script visualizes surface water bodies extent derived from water Bodies detection layer (WB) contained in Water Bodies data.
  
-Table 1: Color legend for the Water Bodies 
+Table 1: Color legend for the water bodies 
 <table>
   <thead>
     <tr>
@@ -29,7 +29,7 @@ Table 1: Color legend for the Water Bodies
 </table>  
 
 ## Description of representative images
- *October 2020 monthly composite map showing surface water extent around Russia's largest freshawater Baikal lake  visualised in EO browser*
+ *October 2020 monthly composite map showing surface water bodies extent around Russia's largest freshawater Baikal lake  visualised in EO browser*
 
 ![Water bodies map Baikal lake ](fig/baikal-water.PNG)
 
