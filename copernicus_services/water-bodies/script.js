@@ -12,14 +12,9 @@ function setup() {
     }
   }
 }
-// create a visualizer
-const map = [
-    [70, 0x0032c8], // water //blue
-	];
-
-const visualizer = new ColorMapVisualizer(map);
 
 // evaluatePixel function
 function evaluatePixel(sample) {
-  return [visualizer.process(sample.WB)[0], visualizer.process(sample.WB)[1], visualizer.process(sample.WB)[2], sample.dataMask];
+  if (sample.WB == 70) return[0,0,1,1]; // blue
+  else return [0,0,0,0] // transparent
 }
