@@ -65,7 +65,7 @@ Custom script: **return [B12, B11, B02];**
 
 ### RGB (4,3,1)
 
-Custom script: **return [B12, B11, B02];**
+Custom script: **return [B04, B03, B01];**
 
 ![Bathymetric sample](fig/fig6.png)
 
