@@ -35,4 +35,6 @@ The BSI used is the following one:
 
 **BSI = ((SWIR2 + R)−(NIR + B)) / ((SWIR2 + R)+(NIR + B))**
 
-It was found in this article, page 3: https://www.mdpi.com/2073-445X/10/3/231/pdf
+It was found in this article, page 3: 
+
+- A Modified Bare Soil Index to Identify Bare Land Features during Agricultural Fallow-Period in Southeast Asia Using Landsat 8. Can Trong Nguyen, Amnat Chidthaisong, Phan Kieu Diem 3, Lian-Zhi Huo. Land 2021, 10, 231. URL: https://www.mdpi.com/2073-445X/10/3/231/pdf
