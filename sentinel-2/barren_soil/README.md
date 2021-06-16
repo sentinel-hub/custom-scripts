@@ -35,4 +35,4 @@ The BSI used is the following one:
 
 **BSI = ((SWIR2 + R)−(NIR + B)) / ((SWIR2 + R)+(NIR + B))**
 
-It was found in this article, page 3 (the first listed BSI): https://www.mdpi.com/2073-445X/10/3/231/pdf
+It was found in this article, page 3: https://www.mdpi.com/2073-445X/10/3/231/pdf
