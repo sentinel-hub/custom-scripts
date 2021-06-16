@@ -13,7 +13,11 @@
 
 ## General description of the script
 
-The bare ground index is the Bare soil index, applied to the red channel. It shows all vegetation in green and the bare ground in red. It could be useful for soil mapping since it informs the user where he can do remote sensing analysis on bare ground, where crops were collected or where crops are not growing, the location of landslides or the extent of erosion in non-vegetated areas. Unfortunately, it also highlights certain buildings, making bare ground areas difficult to separate from dwellings. It should be noted, that the result depends on season vegetation and farming.
+The bare ground index is the Bare soil index, applied to the red channel, with NIR B08 applied to the green channel and . It shows all vegetation in green and the bare ground in red. It could be useful for soil mapping since it informs the user where he can do remote sensing analysis on bare ground, where crops were collected or where crops are not growing, the location of landslides or the extent of erosion in non-vegetated areas. Unfortunately, it also highlights certain buildings, making bare ground areas difficult to separate from dwellings. It should be noted, that the result depends on season vegetation and farming.
+
+The bare soil index for Sentinel-2: 
+
+**BSI = ((B11 + B04) - (B08 + B02)) / ((B11 + B04) + (B08 + B02))**
 
 ## Author of the script
 
@@ -27,4 +31,8 @@ Barren Soil script applied to Sentinel-2 image south of Ljubljana, Slovenia.
 
 ## Credits
 
-For the Barren soil script the Barren soil index was used.
+The BSI used is the following one:  
+
+**BSI = ((SWIR2 + R)−(NIR + B)) / ((SWIR2 + R)+(NIR + B))**
+
+It was found in this article, page 3 (the first listed BSI): file:///C:/Users/msebela/Downloads/land-10-00231-v2.pdf
