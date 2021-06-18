@@ -32,23 +32,23 @@ Compare the amount of information the script provides in dry areas compared to t
 
 Neon imagery of Beijing, China. Image acquired on Beijing, China. Acquired on 2020-01-23. 
 
-![Beijing Neon](fig/fig1.png)
+![Beijing Neon](fig/fig1.jpg)
 
 Australian Landscape. Image acquired on Beijing, China. Acquired on 2021-01-18. 
 
-![Australian Neon](fig/fig5.png)
+![Australian Neon](fig/fig2.jpg)
 
 Desert Landscape of Eastern Algeria, China. Image acquired on Beijing, China. Acquired on 2020-09-22. 
 
-![Algeria Neon](fig/fig3.png)
+![Algeria Neon](fig/fig3.jpg)
 
 Saudi Arabia Dunes. Image acquired on Beijing, China. Acquired on 2020-09-27. 
 
-![Algeria Neon](fig/fig6.png)
+![Algeria Neon](fig/fig6.jpg)
 
 North-eastern Mali Landscape. Image acquired on Beijing, China. Acquired on 2020-09-22. 
 
-![Mali Neon](fig/fig4.png)
+![Mali Neon](fig/fig4.jpg)
 
 On [Sentinel Hub Flickr](https://www.flickr.com/photos/sentinelhub/albums/72157717397821836), there's an album with images created using Aesthetic Neon Script. 
 
