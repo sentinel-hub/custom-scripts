@@ -13,10 +13,8 @@
  - [EO Browser - Desert Landscape of Eastern Algeria](https://sentinelshare.page.link/WgkS){:target="_blank"}
  - [EO Browser - Saudi Arabia Dunes]( https://sentinelshare.page.link/aNfK){:target="_blank"}  
  - [EO Browser - North-eastern Mali Landscape](https://sentinelshare.page.link/BwJC){:target="_blank"} 
- 
 
- 
- ## Author of the script
+## Author of the script
 
 Monja Šebela
  
