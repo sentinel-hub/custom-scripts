@@ -20,7 +20,7 @@ Monja Šebela
  
 ## General description of the script
 
-This Sentinel-2 aesthetic script can be used to produce beautiful, neon looking results over urban and dry areas. The script is especially useful to highlight value differences in deserts. It's essentially an RGB composite, with a [B12 and B04 difference](https://sentinelshare.page.link/1iRd) (which does a good job at displaying certain desert features, like dunes) in the red, [B03](https://sentinelshare.page.link/ya4N) in the green, and [B02](https://sentinelshare.page.link/nu97) in the blue channel. The bands are multiplied for brightness and aesthetic effect. The band B02, which has the highest brightness, is responsible for the neon effect in most cases. 
+This Sentinel-2 aesthetic script can be used to produce beautiful, neon looking results over urban and dry areas. The script is especially useful to highlight value differences in deserts. It's essentially an RGB composite, with a [B12 and B04 difference](https://sentinelshare.page.link/1iRd) (which does a good job at displaying certain desert features, like dunes) in the red, [B03](https://sentinelshare.page.link/ya4N) in the green, and [B02](https://sentinelshare.page.link/nu97) in the blue channel. The bands are multiplied for brightness and aesthetic effect. 
 
 Compare the amount of information the script provides in dry areas compared to the true color composite. 
 
