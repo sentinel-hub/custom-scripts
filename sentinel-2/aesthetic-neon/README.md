@@ -20,7 +20,7 @@ Monja Šebela
  
 ## General description of the script
 
-This Sentinel-2 aesthetic script can be used to produce beautiful, neon looking results over urban and dry areas. The script is especially useful to highlight value differences in deserts. It's essentially an RGB composite, with a [B12 and B04 difference](https://sentinelshare.page.link/1iRd) (which does a good job at displaying certain desert features, like dunes) in the red, [B03](https://sentinelshare.page.link/ya4N) in the green, and [B02](https://sentinelshare.page.link/nu97) in the blue channel. Gain and gamma in the script can be modified to fit the location best; for gamma, -0.55 to -0.95 is recommended, while for gamma, 2.3 fits most locations, but values can range from 1 to 3.
+This Sentinel-2 aesthetic script can be used to produce beautiful, neon looking results over urban and dry areas. The script is especially useful to highlight value differences in deserts. It's essentially an RGB composite, with a [B12 and B04 difference](https://sentinelshare.page.link/1iRd) (which does a good job at displaying certain desert features, like dunes) in the red, [B03](https://sentinelshare.page.link/ya4N) in the green, and [B02](https://sentinelshare.page.link/nu97) in the blue channel. Gain and gamma in the script can be modified to fit the location best; for gamma, -0.55 to -0.95 is recommended, while for gain, 2.3 fits most locations.
 
 Compare the amount of information the script provides in dry areas compared to the true color composite. 
 
