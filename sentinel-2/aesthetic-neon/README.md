@@ -28,23 +28,23 @@ Compare the amount of information the script provides in dry areas compared to t
 
 ## Description of representative images
 
-Neon imagery of Beijing, China. Image acquired on Beijing, China. Acquired on 2020-01-23. 
+Neon imagery of Beijing, China. Acquired on 2020-01-23. 
 
 ![Beijing Neon](fig/fig1.jpg)
 
-Australian Landscape. Image acquired on Beijing, China. Acquired on 2021-01-18. 
+Australian Landscape. Acquired on 2021-01-18. 
 
 ![Australian Neon](fig/fig2.jpg)
 
-Desert Landscape of Eastern Algeria, China. Image acquired on Beijing, China. Acquired on 2020-09-22. 
+Desert Landscape of Eastern Algeria. Acquired on 2020-09-22. 
 
 ![Algeria Neon](fig/fig3.jpg)
 
-Saudi Arabia Dunes. Image acquired on Beijing, China. Acquired on 2020-09-27. 
+Saudi Arabia Dunes. Acquired on 2020-09-27. 
 
 ![Algeria Neon](fig/fig6.jpg)
 
-North-eastern Mali Landscape. Image acquired on Beijing, China. Acquired on 2020-09-22. 
+North-eastern Mali Landscape. Acquired on 2020-09-22. 
 
 ![Mali Neon](fig/fig4.jpg)
 
