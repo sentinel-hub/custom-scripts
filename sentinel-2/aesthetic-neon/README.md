@@ -8,11 +8,11 @@
 </div>
 
 ## Evaluate and visualize   
- - [EO Browser - Beijing, China](https://sentinelshare.page.link/zcvC){:target="_blank"} 
- - [EO Browser - Australian Landscape](https://sentinelshare.page.link/NU4H){:target="_blank"} 
- - [EO Browser - Desert Landscape of Eastern Algeria](https://sentinelshare.page.link/WgkS){:target="_blank"}
- - [EO Browser - Saudi Arabia Dunes]( https://sentinelshare.page.link/aNfK){:target="_blank"}  
- - [EO Browser - North-eastern Mali Landscape](https://sentinelshare.page.link/BwJC){:target="_blank"} 
+ - [EO Browser - Beijing, China](https://sentinelshare.page.link/dMD4){:target="_blank"} 
+ - [EO Browser - Australian Landscape](https://sentinelshare.page.link/jjMp){:target="_blank"} 
+ - [EO Browser - Desert Landscape of Eastern Algeria](https://sentinelshare.page.link/WecN){:target="_blank"}
+ - [EO Browser - Saudi Arabia Dunes](https://sentinelshare.page.link/Saqv){:target="_blank"}  
+ - [EO Browser - North-eastern Mali Landscape](https://sentinelshare.page.link/ifyM){:target="_blank"} 
 
 ## Author of the script
 
