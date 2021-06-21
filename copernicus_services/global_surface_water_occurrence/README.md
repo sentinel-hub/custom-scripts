@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Occurrence layer from the Global Surface Water dataset according to the official symbology (Table 1). The water Occurrence layer shows the (intra- and inter-annual) variations of surface water presence in the time range between March 1984 and December 2019.
+This script visualizes the Occurrence layer from the Global Surface Water dataset according to the official symbology (Table 1). The water Occurrence layer shows the (intra- and inter-annual) variations of surface water presence in the time range between March 1984 and December of the selected review year.
 
 Table 1: Occurrence Symbology
 

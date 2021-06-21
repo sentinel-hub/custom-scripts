@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Seasonality layer from the Global Surface Water dataset according to the official symbology (Table 1). The Seasonality layer provides information on the intra-annual distribution of surface water in 2019.
+This script visualizes the Seasonality layer from the Global Surface Water dataset according to the official symbology (Table 1). The Seasonality layer provides information on the intra-annual distribution of surface water in the selected review year.
 
 Table 1: Seasonality Symbology
 

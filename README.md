@@ -387,14 +387,14 @@ Global Land Cover data is available in our [public collections](https://github.c
 
 ### Global Surface Water
 
-The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2019 at the global scale in six different layers.
+The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
 
-1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the time range between 1984 and 2019.*
-2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2019.*
-3. Seasonality - *Intra-annual distribution of surface water in 2019.*
-4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range from 1984 to 2019.*
-5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the 36-year time period.*
-6. Extent - *Maximum extent of surface water bodies in the 36-year time range.*
+1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
+2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
+3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
+4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
+5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
+6. Extent - *Maximum extent of surface water bodies in the entire time range.*
 
 Global Surface Water data is available in our [public collections](https://collections.sentinel-hub.com/global-surface-water/).
 

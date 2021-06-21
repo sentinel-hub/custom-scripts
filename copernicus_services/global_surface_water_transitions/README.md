@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Transitions layer from the Global Surface Water dataset according to the official symbology (Table 1). The Transitions layer is derived from a seasonality comparison between the first and last year in the 36-year time period and visualises changes in the three surface water classes of not water, seasonal, and permanent water.
+This script visualizes the Transitions layer from the Global Surface Water dataset according to the official symbology (Table 1). The Transitions layer is derived from a seasonality comparison between the first and last year of the entire time period and visualises changes in the three surface water classes of not water, seasonal, and permanent water.
 
 Table 1: Transitions Symbology
 

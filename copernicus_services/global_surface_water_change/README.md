@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Occurrence Change Intensity layer from the Global Surface Water dataset according to the official symbology (Table 1). The Occurrence Change Intensity layer visualises changes in water occurrence between two different epochs, the first ranging from **March 1984 to December 1999**, and the other covering the period from **January 2000 to December 2019**.
+This script visualizes the Occurrence Change Intensity layer from the Global Surface Water dataset according to the official symbology (Table 1). The Occurrence Change Intensity layer visualises changes in water occurrence between two different epochs, the first ranging from **March 1984 to December 1999**, and the other covering the period from **January 2000 to December of the selected review year**.
 
 Table 1: Occurrence Change Intensity Symbology
 
