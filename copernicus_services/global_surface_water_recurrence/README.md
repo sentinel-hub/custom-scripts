@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Recurrence layer from the Global Surface Water dataset according to the official symbology (Table 1). The Recurrence layer captures the degree of interannual variability in surface water presence. It shows how frequently water returned to a particular location between years in a defined water period within the period from 1984 to 2019.
+This script visualizes the Recurrence layer from the Global Surface Water dataset according to the official symbology (Table 1). The Recurrence layer captures the degree of interannual variability in surface water presence. It shows how frequently water returned to a particular location between years in a defined water period within the entire time period.
 
 Table 1: Recurrence Symbology
 

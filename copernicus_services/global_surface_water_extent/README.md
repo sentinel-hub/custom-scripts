@@ -9,7 +9,7 @@
 
 ## General description of the script
 
-This script visualizes the Extent layer from the Global Surface Water dataset according to the official symbology (Table 1). The maximum water Extent layer combines all other layers by visualising all locations for which water presence has ever been detected over the 36-year period.
+This script visualizes the Extent layer from the Global Surface Water dataset according to the official symbology (Table 1). The maximum water Extent layer combines all other layers by visualising all locations for which water presence has ever been detected over entire period.
 
 Table 1: Extent Symbology
 
