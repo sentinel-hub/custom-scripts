@@ -20,3 +20,6 @@ A darker blue colour indicates larger positive differences of Mapzen DEM's value
 
 ![dem difference legend](fig/fig2.png)
  
+ ## Author of the script
+ 
+Chung-Xiang Hong
