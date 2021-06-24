@@ -275,6 +275,7 @@ DEM (digital elevation model) is a 3D representation of the terrain's surface cr
   - [DEM grayscale visualization](dem/dem-grayscale)
   - [DEM sepia visualization](dem/dem-sepia)
   - [DEM contour lines](dem/contour-lines)
+  - [DEM difference visualization](dem/dem-difference)
 
 ## <a name="planet_scope"></a>PlanetScope (Commercial)
 
