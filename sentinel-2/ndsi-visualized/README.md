@@ -18,7 +18,7 @@ The Sentinel-2 normalised difference snow index can be used to differentiate bet
 
 ## Description of representative images
 
-Visualized NDSI over Rome, acquired on 2019-09-19. 
+Visualized NDSI over New Zealand, acquired on 2019-09-19. 
 
 ![NDSI](fig/fig1.png) 
 
