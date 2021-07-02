@@ -1,4 +1,5 @@
-[
+{
+ [
   {
   sentinel-2-l1c: [
     {
@@ -74,6 +75,6 @@
       Title: "Scene Classification",
       URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/scene-classification/script.js"
     }
-    ...
   ]
 ]
+}
