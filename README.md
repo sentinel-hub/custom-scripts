@@ -81,12 +81,13 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Simple RGB composites](sentinel-2/composites)
 
 #### Popular RGB composites
- - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
- - [True color](sentinel-2/true_color) simplistic true color image from red, green and blue bands.
+ - [True color](sentinel-2/true_color) - Simplistic true color image from red, green and blue bands.
+ - [False color infrared](sentinel-2/false_color_infrared) - False Color Infrared RGB Composite
+ - [SWIR](sentinel-2/swir-rgb) - Short Wave Infrared RGB Composite
+ - [False Color Urban](sentinel-2/false-color-urban-rgb) - False Color Urban RGB Composite
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
 
 #### Remote sensing indices
- - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
@@ -136,6 +137,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Snow classifier](sentinel-2/snow_classifier/)
  - [Monthly snow report](sentinel-2/monthly_snow_report)
  - [Snow cover change detection](sentinel-2/snow_cover_change)
+ - [NDSI Visualized](sentinel-2/ndsi-visualized) - Visualized normalized difference snow index 
 
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](sentinel-2/deep_moist_convection)
@@ -153,6 +155,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Barren soil](sentinel-2/barren_soil)
  - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
  - [Bare soil detector](sentinel-2/bare_soil_detector)
+ - [Scene Classification](sentinel-2/scene-classification)
 
 #### Vegetation algorithms
 
@@ -185,7 +188,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
  - [Interpolated time-series](sentinel-2/interpolated_time_series)
 
-#### Other available scripts and indices
+#### Other scripts 
+ - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
