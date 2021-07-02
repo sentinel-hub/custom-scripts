@@ -20,7 +20,7 @@ Short wave infrared (SWIR) measurements can help scientists estimate how much wa
 
 ## Description of representative images
 
-Neon imagery of Beijing, China. Acquired on 2020-01-23. 
+SWIR composite over Rome, Italy. 
 
 ![SWIR Rome](fig/fig1.png)
 
