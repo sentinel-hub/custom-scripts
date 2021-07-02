@@ -20,7 +20,7 @@ This composite is used to visualize urbanized areas more clearly. Vegetation is 
 
 ## Description of representative images
 
-Neon imagery of Beijing, China. Acquired on 2020-01-23. 
+False Color Urban composite  of Rome, Italy. 
 
 ![False Color Urban Rome](fig/fig1.png)
 
