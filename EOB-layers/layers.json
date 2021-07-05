@@ -4,35 +4,35 @@
   sentinel-2-l1c: [
     {
       Title: "True Color",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/true_color/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/true_color/script.js"
     },
     {
       Title: "False color",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/false_color_infrared/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false_color_infrared/script.js"
     },
     {
       Title: "SWIR",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/swir-rgb/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/swir-rgb/script.js"
     },
     {
       Title: "False Color Urban",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/false-color-urban-rgb/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false-color-urban-rgb/script.js"
     },
     {
       Title: "NDVI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndvi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/script.js"
     },
     {
       Title: "NDMI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndmi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndmi/script.js"
     },
     {
       Title: "NDWI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndwi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndwi/script.js"
     },
     {
       Title: "NDSI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndsi-visualized/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndsi-visualized/script.js"
     }
     ...
   ]
@@ -41,39 +41,39 @@
   sentinel-2-l2a: [
     {
       Title: "True Color",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/true_color/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/true_color/script.js"
     },
     {
       Title: "False color",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/false_color_infrared/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false_color_infrared/script.js"
     },
     {
       Title: "SWIR",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/swir-rgb/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/swir-rgb/script.js"
     },
     {
       Title: "False Color Urban",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/false-color-urban-rgb/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false-color-urban-rgb/script.js"
     },
     {
       Title: "NDVI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndvi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/script.js"
     },
     {
       Title: "NDMI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndmi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndmi/script.js"
     },
     {
       Title: "NDWI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndwi/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndwi/script.js"
     },
     {
       Title: "NDSI",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/ndsi-visualized/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndsi-visualized/script.js"
     },
     {
       Title: "Scene Classification",
-      URL: "https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/scene-classification/script.js"
+      URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/scene-classification/script.js"
     }
   ]
 ]
