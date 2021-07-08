@@ -76,5 +76,106 @@
       URL: "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/scene-classification/script.js"
     }
   ]
+},
+{
+  sentinel-1-grd: [
+    {
+      Title: "SAR urban",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-1/urban_areas/script.js"
+    },
+    {
+      Title: "Enhanced visualization",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-1/sar_false_color_visualization-2/script.js"
+    }
+  ]
+},
+{
+  sentinel-3-olci: [
+    {
+      Title: "True color - enhanced",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-3/enhanced_true_color-2/script.js"
+    },
+    {
+      Title: "True color - higlight optimized",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-3/true_color_highlight_optimized/script.js"
+    },
+   {
+      Title: "OTCI",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-3/otci/script.js"
+    },
+    {
+      Title: "Tristimulus",
+      URL: "https://custom-scripts.sentinel-hub.com/sentinel-3/tristimulus/script.js"
+    }
+  ]
+},
+{
+  landsat-8: [
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/script.js"
+    }
+  ]
+},
+{
+  dem: [
+    {
+      Title: "Color",
+      URL: "https://custom-scripts.sentinel-hub.com/dem/dem-color/script.js"
+    },
+    {
+      Title: "Grayscale",
+      URL: "https://custom-scripts.sentinel-hub.com/dem/dem-grayscale/script.js"
+    },
+    {
+      Title: "Sepia",
+      URL: "https://custom-scripts.sentinel-hub.com/dem/dem-sepia/script.js"
+    }
+  ]
+},
+{
+  corine-land-cover: [
+    {
+      Title: "Corine Land Cover",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/corine_land_cover/script.js"
+    }
+  ]
+},
+{
+  global-land-cover: [
+    {
+      Title: "Discrete Classification Map",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_land_cover/script.js"
+    }
+  ]
+},
+{
+  global-surface-water: [
+    {
+      Title: "Global Surface Water Occurrence",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_occurrence/script.js"
+    },
+   {
+      Title: "Global Surface Water Occurrence Change Intensity",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_change/script.js"
+    },
+   {
+      Title: "Global Surface Water Seasonality",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_seasonality/script.js"
+    },
+   {
+      Title: "Global Surface Water Recurrence",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_recurrence/script.js"
+    },
+   {
+      Title: "Global Surface Water Transitions",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_transitions/script.js"
+    },
+   {
+      Title: "Global Surface Water Extent",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_extent/script.js"
+    }
+  ]
+}
 ]
 }
