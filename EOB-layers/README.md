@@ -76,7 +76,7 @@ Same for all 3 DEM collections
 - [3_SEASONALITY](https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_seasonality/) - Global Surface Water Seasonality
 - [4_RECURRENCE](https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_recurrence/) - Global Surface Water Recurrence
 - [5_TRANSITIONS](https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_transitions/) - Global Surface Water Transitions
-- [6_EXTENT](https://custom-scripts.sentinel-hub.com/#modis) - Global Surface Water Extent
+- [6_EXTENT](https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_extent/) - Global Surface Water Extent
 
 ### Water Bodies
 
