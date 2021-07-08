@@ -176,6 +176,18 @@
       URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_extent/script.js"
     }
   ]
+},
+{
+  water-bodies: [
+    {
+      Title: "Water Bodies",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies/script.js"
+    },
+   {
+      Title: "Water Bodies Occurrence",
+      URL: "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies-occurence/script.js"
+    }
+  ]
 }
 ]
 }
