@@ -21,6 +21,6 @@ _Note that in some areas, Landsat 4-5TM images are not georeferenced correctly, 
 
 ## Description of representative images  
   
-On this image we can observe the expansion of urban areas and agricultural land in pink colors over Dakar, between 1990 and 2017. Green areas indicate that no change in vegetation cover occured. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
+On this image we can observe the expansion of urban areas where the vegetation cover diminished (darker purple) and the expansion of agricultural land, where vegetation cover increased (bright pink colors) over Dakar, between 1990 and 2017. Green areas indicate that no change in vegetation cover occured. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
 
 ![Dakar](fig/fig1.png) 
