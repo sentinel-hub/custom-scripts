@@ -24,3 +24,7 @@ _Note that in some areas, Landsat 4-5TM images are not georeferenced correctly, 
 On this image we can observe the expansion of urban areas where the vegetation cover diminished (pink) and the expansion of agricultural land, where vegetation cover increased (green) over Dakar, between 1990 and 2017. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
 
 ![Dakar](fig/fig1.png) 
+
+On the image below, the Dakar Airport and the surrounding roads are clearly seen in pink, indicating the removal of vegetation since 1990. The airport construction began in 2007, and was completed in 2016, thus clearly showing on the 2017 Landsat 8 image. In the surrounding area, several new agricultural fields were created, as is evident by the bright green, indicating the increase in green vegetation since 1990. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
+
+![Dakar](fig/fig2.jpg) 
