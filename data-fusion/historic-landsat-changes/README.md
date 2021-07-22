@@ -21,7 +21,6 @@ _Note that in some areas, Landsat 4-5TM images are not georeferenced correctly, 
 
 ## Description of representative images  
   
-**Urbanization in Dakar**
-On this image we can observe growth of urban areas in Dakar (dark purple), and the expansion of agricultural land (lighter purple), between 1990 and 2017. Green areas indicate that no change in vegetation cover occured. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
+On this image we can observe urban areas growth in Dakar (dark purple), and the expansion of agricultural land (lighter purple), between 1990 and 2017. Green areas indicate that no change in vegetation cover occured. For the earlier image, Landsat 4-5 TM (acquired on 1990-12-05) was used, and for the later image, Landsat 8 (acquired on 2017-12-15) was used.  
 
 ![Dakar](fig/fig1.png) 
