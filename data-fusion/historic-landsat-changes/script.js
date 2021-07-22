@@ -20,10 +20,8 @@ function evaluatePixel(samples, inputData, inputMetadata, customData, outputMeta
  let oldNDVI = (L45.B04 - L45.B03) / (L45.B04 + L45.B03)
  let newNDVI = (L8.B05 - L8.B04) / (L8.B05 + L8.B04)
  
- let difference = oldNDVI + newNDVI
-
-  let val = [2*newNDVI, 2*oldNDVI, 2*newNDVI];
-  return {
+ let val = [2*oldNDVI, 2*newNDVI, 2*oldNDVI];
+ return {
     default: val
-  }
+ }
 }
