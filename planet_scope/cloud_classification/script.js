@@ -1,5 +1,5 @@
 //VERSION=3
-//UDM2 Cloud Classification
+//UDM2 Classification
 
 function setup() {
   return {
