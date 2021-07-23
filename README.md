@@ -300,6 +300,7 @@ The spectral bands of PlanetScope data are the following:
  - [NDVI](planet_scope/ndvi)
  - [NDWI](planet_scope/ndwi)
  - [Green City](planet_scope/green_city)
+ - [UDM2 Cloud/Snow Classification](planet_scope/cloud_classification)
 
 ## <a name="airbus_pleiades"></a>Airbus Pleiades (Commercial)
 
