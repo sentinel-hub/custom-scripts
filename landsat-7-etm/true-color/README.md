@@ -7,6 +7,10 @@
 {% endhighlight %}
 </div>
 
+## Evaluate and Visualize
+
+- [EO Browser](https://sentinelshare.page.link/6cyy)
+
 ## General description
 
 The true color product maps Landsat 1-5 MSS band values B03, B02, and B01 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components. The result is a true color product, that is a good representation of the Earth as humans would see it naturally.
