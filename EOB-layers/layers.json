@@ -110,11 +110,228 @@
   ]
 },
 {
-  landsat-8: [
+  sentinel-3-slstr: [
+    {
+      Title: "False Color based on bands S3, S2, and S1",
+      URL: "https://custom-scripts.sentinel-hub.com/slstr/false-color-321/script.js"
+    },
+    {
+      Title: "F1 Brightness Temperature",
+      URL: "https://custom-scripts.sentinel-hub.com/slstr/f1-brightness-temperature/script.js"
+    }
+  ]
+},
+{
+  landsat-8 Level 1: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/true-color/script.js"
+    },
+    {
+      Title: "True color - pansharpened",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/true-color-pansharpened/script.js"
+    },
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/swir/script.js"
+    }
     {
       Title: "NDVI",
       URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndwi/script.js"
+    },
+    {
+      Title: "NDMI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndmi/script.js"
+    },
+    {
+      Title: "Thermal",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/thermal/script.js"
+    },
+  ]
+},
+{
+  landsat-8 Level 1: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/true-color/script.js"
+    },
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/swir/script.js"
     }
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndwi/script.js"
+    },
+    {
+      Title: "NDMI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/ndmi/script.js"
+    },
+    {
+      Title: "Thermal",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-8/thermal/script.js"
+    },
+  ]
+},
+{
+  landsat 1-5 MSS: [
+    {
+      Title: "False Color Near Infrared",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/false-color-nir/script.js"
+    },
+    {
+      Title: "False Color Ultra Red",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/false-color-ultrared/script.js"
+    },
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndvi/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndwi/script.js"
+    }
+  ]
+},
+{
+  landsat 4-5 TM: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/true-color/script.js"
+    },
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/swir/script.js"
+    },
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndvi/script.js"
+    },
+    {
+      Title: "NDMI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndmi/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndwi/script.js"
+    },
+    {
+      Title: "Thermal",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/thermal/script.js"
+    }
+    
+  ]
+},
+{
+  landsat 7 ETM Level 1: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/script.js"
+    }
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/swir/script.js"
+    },
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndvi/script.js"
+    },
+    {
+      Title: "Moisture Index",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndwi/script.js"
+    }
+  ]
+},
+{
+  landsat 7 ETM Level 2: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/script.js"
+    }
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/swir/script.js"
+    },
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndvi/script.js"
+    },
+    {
+      Title: "Moisture Index",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndwi/script.js"
+    },
+    {
+      Title: "Thermal",
+      URL: "https://custom-scripts.sentinel-hub.com/landsat-7-etm/thermal/script.js"
+    }
+  ]
+},
+{
+  MODIS: [
+    {
+      Title: "True color",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/true-color/script.js"
+    },
+    {
+      Title: "False color",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/false-color/script.js"
+    },
+    {
+      Title: "SWIR",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/swir/script.js"
+    },
+    {
+      Title: "NDVI",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/ndvi/script.js"
+    },
+    {
+      Title: "NDMI",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/ndmi/script.js"
+    },
+    {
+      Title: "NDWI",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/ndwi/script.js"
+    }
+    {
+      Title: "Salinity Index",
+      URL: "https://custom-scripts.sentinel-hub.com/modis/salinity-index/script.js"
+    },
   ]
 },
 {
