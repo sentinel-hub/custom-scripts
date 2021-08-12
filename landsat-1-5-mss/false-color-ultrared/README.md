@@ -1,4 +1,4 @@
-# False Color Ultra Red Composite
+# Landsat 1-5 MSS False Color Ultra Red Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
