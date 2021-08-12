@@ -18,7 +18,7 @@ The composite: **B07, B05, B03**
 
 ## Description of representative images
 
-SWIR composite over northern Tunisia. Acquired on 2002-06-18.
+SWIR composite over northern Tunisia. Acquired on 2001-06-23.
 ![The script example 1](fig/fig1.png)
 
 
