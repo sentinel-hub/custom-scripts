@@ -285,7 +285,7 @@ For more on Landsat 5, including its available bands, read [here](https://www.us
 - [True Color](landsat-4-5-tm/true-color) 
 - [False Color](landsat-4-5-tm/false-color) 
 - [SWIR](landsat-4-5-tm/swir) 
-- [NDVI](landsat-4-5-tm/ndmi) 
+- [NDVI](landsat-4-5-tm/ndvi) 
 - [NDMI](landsat-4-5-tm/ndmi)
 - [NDWI](landsat-4-5-tm/ndwi) 
 - [Thermal](landsat-4-5-tm/thermal) 
