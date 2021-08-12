@@ -16,7 +16,9 @@ Short wave infrared (SWIR) measurements can help scientists estimate how much wa
 
 #### The composite:
 
-**return [2.5 * B12, 2.5 * B8A, 2.5 * B04]**
+For Sentinel-2: **B12, B8A, B04**
+
+For [Landsat 7 ETM+](https://custom-scripts.sentinel-hub.com/landsat-7-etm/swir/): **B07, B05, B03**
 
 ## Description of representative images
 
