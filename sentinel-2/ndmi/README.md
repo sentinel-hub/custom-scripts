@@ -23,7 +23,9 @@ The amount of water available in the internal leaf structure largely controls th
 SWIR reflectance is therefore negatively related to leaf water content. In short, NDMI is used to monitor changes in water content of leaves, and was [proposed by Gao.](https://www.sciencedirect.com/science/article/abs/pii/S0034425796000673){:target="_blank"}
 NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR) reflectance’s:
 
-**NDWI = (B08 - B11) / (B08 + B11)**
+Sentinel-2 NDMI = **(B08 - B11) / (B08 + B11)**
+
+[Landsat 7 ETM+ NDMI](https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/) = **(B04 - B05) / (B04 + B05)**
 
 _Note: NDWI index is often used synonymously with the NDMI index, often using NIR-SWIR combination as one of the two options. Gao, referenced above, also called the index NDWI. NDMI seems to be consistently described using NIR-SWIR combination. As the indices with these two combinations work very differently, with NIR-SWIR highlighting differences in water content of leaves, and GREEN-NIR highlighting differences in water content of water bodies, we have decided to separate the indices on our repository as NDMI using NIR-SWIR, and NDWI using GREEN-NIR._
 
