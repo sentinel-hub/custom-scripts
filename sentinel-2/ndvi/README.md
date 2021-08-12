@@ -35,6 +35,9 @@ MODIS NDVI = **(B02 - B01) / (B02 + B01)**
 
 ENVISAT MERIS NDVI = **(B13 - B07) / (B13 + B07)**
 
+[Landsat 1-5 MSS NDVI](https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndvi/) = **(B04 - B02) / (B04 + B02)**
+
+[Landsat 7 ETM+ NDVI](https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndvi/) = **(B04 - B03) / (B04 + B03)**
 
 ## Description of representative images
 
