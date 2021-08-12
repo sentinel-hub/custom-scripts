@@ -19,7 +19,13 @@ For Sentinel-2: **B08, B04, B02**
 
 For [Landsat 1-5 MSS](https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/false-color-nir/): **B04, B02, B01**
 
-For [Landsat 7 ETM+](https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/#): **B04, B03, B02**
+For [Landsat 7 ETM+](https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/): **B04, B03, B02**
+
+For [Landsat 4-5 TM](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/false-color/): **B04, B03, B02**
+
+For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/false-color/): **B05, B04, B03**
+
+For [MODIS](https://custom-scripts.sentinel-hub.com/modis/false-color/): **B02, B01, B04**
 
 ## Description of representative images
 
