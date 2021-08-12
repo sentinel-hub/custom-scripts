@@ -8,7 +8,7 @@
 
 ## Evaluate and visualize
 
-- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=41.9000&lng=12.5000&zoom=10&time=2020-02-05&preset=4-NDVI&datasource=Landsat%208%20USGS){:target="_blank"}   
+- [EO Browser](https://sentinelshare.page.link/VpUW){:target="_blank"}   
 
 ## Description
 
