@@ -17,5 +17,5 @@ This is a simple RGB composite with NIR band B04 in the red channel, red band B0
 
 ## Description of representative images
 
-The False Color Composite in northern Tunisia. Acquired on 2002-06-18.
+The False Color Composite in northern Tunisia. Acquired on 2001-06-23.
 ![The script example 1](fig/fig1.png)
