@@ -20,5 +20,8 @@ Values description: Index values greater than 0.5 usually correspond to water bo
 
 See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/#).
 
+## Description of representative images
 
+The NDWI over northern Tunisia. Acquired on 2002-06-18.
+![The script example 1](fig/fig1.png)
 
