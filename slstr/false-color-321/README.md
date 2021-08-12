@@ -1,4 +1,4 @@
-# Sentinel-3 SLSTRFalse color composite
+# Sentinel-3 SLSTR False color composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
