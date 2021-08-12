@@ -17,13 +17,13 @@ The true color product maps Sentinel-2 band values B04, B03, and B02 which rough
 
 For Sentinel-2: **BO4, B03, B02**
 
-For [Landsat 4-5 TM](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/true-color/): **BO3, B02, B01**
+For [Landsat 4-5 TM](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/true-color/): **B03, B02, B01**
 
-For [Landsat 7 ETM](https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/#): **BO3, B02, B01**
+For [Landsat 7 ETM](https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/#): **B03, B02, B01**
 
-For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/true-color/): **BO4, B03, B02**
+For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/true-color/): **B04, B03, B02**
 
-For [MODIS](https://custom-scripts.sentinel-hub.com/modis/true-color/): **BO1, B04, B03**
+For [MODIS](https://custom-scripts.sentinel-hub.com/modis/true-color/): **B01, B04, B03**
 
 ## Description of representative images
 
