@@ -16,8 +16,8 @@ The true color product maps Landsat 1-5 MSS band values B03, B02, and B01 which 
 True color over northern Tunisia. Acquired on 2002-06-18.
 ![The script example 1](fig/fig1.png)
 
-
-
+## References
+ - Wikipedia, [True color](https://en.wikipedia.org/wiki/False_color#True_color). Accessed October 10th 2017.
 
 
 
