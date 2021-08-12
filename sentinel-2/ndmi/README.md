@@ -25,7 +25,13 @@ NDWI is computed using the near infrared (NIR) and the short wave infrared (SWIR
 
 Sentinel-2 NDMI = **(B08 - B11) / (B08 + B11)**
 
+[Landsat 4-5 TM NDMI](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndmi/) = **(B04 - B05) / (B04 + B05)**
+
 [Landsat 7 ETM+ NDMI](https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/) = **(B04 - B05) / (B04 + B05)**
+
+[Landsat 8 NDMI](https://custom-scripts.sentinel-hub.com/landsat-8/ndmi/#) = **(B05 - B06) / (B05 + B06)**
+
+[MODIS NDMI](https://custom-scripts.sentinel-hub.com/modis/ndmi/) = **(B02 - B06) / (B02 + B06)**
 
 _Note: NDWI index is often used synonymously with the NDMI index, often using NIR-SWIR combination as one of the two options. Gao, referenced above, also called the index NDWI. NDMI seems to be consistently described using NIR-SWIR combination. As the indices with these two combinations work very differently, with NIR-SWIR highlighting differences in water content of leaves, and GREEN-NIR highlighting differences in water content of water bodies, we have decided to separate the indices on our repository as NDMI using NIR-SWIR, and NDWI using GREEN-NIR._
 
