@@ -11,6 +11,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-5P](#sentinel-5P)
   - [Landsat 5 and 7](#landsat-57)
   - [Landsat 1-5 MSS](#landsat-1-5-mss)
+  - [Landsat 4-5 TM](#landsat-4-5-tm)
   - [Landsat 7 ETM+](#landsat-7-etm)
   - [Landsat-8](#landsat-8)
   - [MODIS](#modis)
@@ -245,17 +246,24 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
  - [Landsat 8 bands](landsat-8/bands)
  - [Simple RGB composites](landsat-8/composites)
+ - [True Color](landsat-8/true-color)
+ - [False Color](landsat-8/false-color)
+ - [SWIR](landsat-8/swir)
 
 #### Remote sensing indices
   - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
   - [Build-up index](landsat-8/built_up_index)
   - [NDVI](landsat-8/ndvi)
+  - [NDMI](landsat-8/ndmi)
+  - [NDWI](landsat-8/ndwi)
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
   - [Water In Wetlands Index](landsat-8/wiw_L8_script)
   - [Clouds Segmentation](landsat-8/clouds_segmentation)
-
+  - [Pansharpened true color](landsat-8/true-color-pansharpened)
+  - [Thermal visualization](landsat-8/thermal)
+  
 ## <a name="landsat-57"></a>Landsat 5 and 7 ESA Archive
 
 Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar orbits, flying at an altitude of 705 km (438 mi). Landsat 5 long outlived its original three-year design life. Developed by NASA and launched in 1984, Landsat 5 has orbited the planet over 150,000 times while transmitting over 2.5 million images land surface images around the world. The Landsat 7 satellite still orbits the the Earth in a sun-synchronous, near-polar orbit, at an altitude of 705 km (438 mi). The satellites are multispectra, providing visible, near infrared, mid infrared and thermal bands.
@@ -271,6 +279,16 @@ For more on Landsat 5, including its available bands, read [here](https://www.us
 - [False Color Ultra Red Composite](landsat-1-5-mss/false-color-ultrared)
 - [NDVI](landsat-1-5-mss/ndvi)
 - [NDWI](landsat-1-5-mss/ndwi)
+
+## <a name="landsat-4-5-tm"></a>Landsat 4-5 TM
+
+- [True Color](landsat-4-5-tm/true-color) 
+- [False Color](landsat-4-5-tm/false-color) 
+- [SWIR](landsat-4-5-tm/swir) 
+- [NDVI](landsat-4-5-tm/ndmi) 
+- [NDMI](landsat-4-5-tm/ndmi)
+- [NDWI](landsat-4-5-tm/ndwi) 
+- [Thermal](landsat-4-5-tm/thermal) 
 
 ## <a name="landsat-7-etm"></a>Landsat 7 ETM+
 
