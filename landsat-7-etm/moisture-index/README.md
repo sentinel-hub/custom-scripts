@@ -25,5 +25,5 @@ See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndmi/).
 
 ## Description of representative images
 
-The NDMI over northern Tunisia. Acquired on 2002-06-18.
+The NDMI over northern Tunisia. Acquired on 2001-06-23.
 ![The script example 1](fig/fig1.png)
