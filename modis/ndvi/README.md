@@ -8,7 +8,7 @@
 
 ## Evaluate and visualize
 
-- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=41.9000&lng=12.5000&zoom=10&time=2020-02-05&preset=4-NDVI&datasource=Landsat%208%20USGS){:target="_blank"}   
+- [EO Browser](https://sentinelshare.page.link/sH51){:target="_blank"}   
 
 ## Description
 
@@ -28,7 +28,7 @@ See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndvi/).
 
 ## Description of representative images
 
-MODIS NDVI of Europe. Acquired on 5. Acquired on 2021-08-02, processed by Sentinel Hub. 
+MODIS NDVI of Europe. Acquired on 5. Acquired on 2021-08-01, processed by Sentinel Hub. 
 
 ![L8 NDVI](fig/fig1.png)
 
