@@ -1,0 +1,36 @@
+# MODIS NDVI
+<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
+<div id='script_view' style="display:none">
+{% highlight javascript %}
+      {% include_relative script.js %}
+{% endhighlight %}
+</div>
+
+## Evaluate and visualize
+
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=41.9000&lng=12.5000&zoom=10&time=2020-02-05&preset=4-NDVI&datasource=Landsat%208%20USGS){:target="_blank"}   
+
+## Description
+
+The well known and widely used NDVI is a simple, but effective index for quantifying green vegetation. It normalizes green leaf scattering in Near Infra-red wavelengths with chlorophyll absorption in red wavelengths.
+
+The value range of the NDVI is -1 to 1. Negative values of NDVI (values approaching -1) correspond to water. Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1). It is a good proxy for live green vegetation; see [1] for details.
+
+The normalized difference vegetation index, abbreviated NDVI, is defined as
+
+**NDVI = (NIR - RED) / (NIR + RED)**
+
+For MODIS, the index looks like this:
+
+**NDVI = (B02 - B01) / (B02 + B01)**
+
+See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndvi/).
+
+## Description of representative images
+
+MODIS NDVI of Europe. Acquired on 5. Acquired on 2021-08-02, processed by Sentinel Hub. 
+
+![L8 NDVI](fig/fig1.png)
+
+
+ 
