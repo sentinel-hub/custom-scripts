@@ -6,6 +6,10 @@
       {% include_relative script.js %}
 {% endhighlight %}
 </div>
+
+## Evaluate and Visualize
+
+- [EO Browser](https://sentinelshare.page.link/YDFp)
  
 ## General description of the script
 The NDWI is used to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum, NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies. 
