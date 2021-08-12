@@ -18,7 +18,7 @@ This thermal visualization is based on a band B06 (a band is a region of the ele
 
 ## Description of representative images
 
-Thermal composite over northern Tunisia. Acquired on 2002-06-18.
+Thermal composite over northern Tunisia. Acquired on 2001-06-23.
 ![The script example 1](fig/fig1.png)
 
 
