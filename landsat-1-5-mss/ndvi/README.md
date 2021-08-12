@@ -7,6 +7,10 @@
 {% endhighlight %}
 </div>
 
+## Evaluate and Visualize
+
+- [EO Browser](https://sentinelshare.page.link/hsVm)
+
 ## General description of the script
 
 The well known and widely used NDVI is a simple, but effective index for quantifying green vegetation. It normalizes green leaf scattering in Near Infra-red wavelengths with chlorophyll absorption in red wavelengths.
