@@ -7,6 +7,10 @@
 {% endhighlight %}
 </div>
 
+## Evaluate and Visualize
+
+- [EO Browser](https://sentinelshare.page.link/FZi2)
+
 ## General description of the script
 
 This is a simple RGB composite with NIR band B03 (700 - 800 nm) in the red channel, red band B02 in the green channel and green band B01 in the blue channel. The script is useful for plant density and health monitoring, as vegetation heavily reflects NIR light while absorbing red. It is commonly used to distinguish between land and water. Vegetation appears red, cities and exposed ground are grey or tan, and water appears blue or black. 
