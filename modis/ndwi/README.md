@@ -18,7 +18,7 @@ NDWI = **(GREEN - NIR) / (GREEN + NIR)**
 
 For MODIS, the index calculates as:
 
-NDWI = **(B02 - B04) / (B02 + B04)**
+NDWI = **(B04 - B02) / (B04 + B02)**
 
 Values description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas to values between zero and 0.2.
 

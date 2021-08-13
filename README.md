@@ -297,12 +297,16 @@ For more on Landsat 5, including its available bands, read [here](https://www.us
 
 ## <a name="landsat-1-5-mss"></a>Landsat 1-5 MSS
 
+Landsat 1-5 MSS (Multispectral Scanner System) collection includes archived data from Landsat missions 1 through 5. It has 4 available bands - green, red and two NIR bands, all in 60 m resolution. Data is available globally since 1972. Learn more about the collection [here](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-1-5-multispectral-scanner-collection?qt-science_center_objects=0#qt-science_center_objects).
+
 - [False Color NIR Composite](landsat-1-5-mss/false-color-nir)
 - [False Color Ultra Red Composite](landsat-1-5-mss/false-color-ultrared)
 - [NDVI](landsat-1-5-mss/ndvi)
 - [NDWI](landsat-1-5-mss/ndwi)
 
 ## <a name="landsat-4-5-tm"></a>Landsat 4-5 TM
+
+Landsat Thematic Mapper (TM) sensor was carried onboard Landsats 4 and 5. The collection provides 6 spectral bands and 1 thermal infrared band in 120 m resolution, resampled to 30 meters. Data is archived, available globally from July 1987 - December 1993 for Landsat 4 and from March 1984 - May 2012 for Landsat 5. Top of the atmosphere level-1, and surface reflectance level-2 products are provided. The collection is useful for monitoring of vegetation, ice and water resources, change detection and the creation of land use - land cover maps. Learn more about the collection [here](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-4-5-thematic-mapper-collection-2?qt-science_center_objects=0#qt-science_center_objects). 
 
 - [True Color](landsat-4-5-tm/true-color) 
 - [False Color](landsat-4-5-tm/false-color) 
@@ -313,6 +317,8 @@ For more on Landsat 5, including its available bands, read [here](https://www.us
 - [Thermal](landsat-4-5-tm/thermal) 
 
 ## <a name="landsat-7-etm"></a>Landsat 7 ETM+
+
+Landsat Enhanced Thematic Mapper + (ETM+) is carried on top of Landsat 7 satellite. There are 8 optical and 1 thermal infrared bands available in 30 meter resolution (with panchromatic band in 15 meter resolution). Global data is available since April 1999, with a revisit time of 16 days. Top of the atmosphere level-1, and surface reflectance level-2 products are provided. The collection is useful for monitoring of vegetation, ice and water resources, change detection and the creation of land use - land cover maps. Note that there are data gaps for all images acquired since 2003-05-30 due to sensor failure. Learn more about the collection [here](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con).
 
 - [True color composite](landsat-7-etm/true-color)
 - [False Color Composite](landsat-7-etm/false-color)

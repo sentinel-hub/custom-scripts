@@ -1,4 +1,4 @@
-# Landsat 8 Normalized Differeence Moisture Index - NDMI
+# Landsat 8 Normalized Difference Moisture Index - NDMI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
