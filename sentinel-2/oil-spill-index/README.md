@@ -28,13 +28,16 @@ The OSI is an Oil spill Index uses visible bands of Sentinel-2 to display spille
 
 ‘Sentinele-2 Images developed using oil spill index (OSI) with other indices showing the occurrence and distribution of oil spill occurred off Mauritius located in the Indian ocean on August 06, 2020 (images acquired a. before (17 July, 2020), b. and c. during (01 and 06 August, 2020) and c. after (05 September, 2020) the oil spill). The results can be compared with the images of decorrelated the spectral bands 4, 3 and 2 given below (Rajendran et al., 2021b, c)’.
 
-a.) **R: (5+6)/7; G: (3+4)/2; B: (11+12)/8**
+a.) **R: (5+6)/7; G: (3+4)/2; B: (11+12)/8** 
+
 ![Sentinele-2 Image using OSI](images/1.jpg)
 
 b.) **R: 3/2; G: (3+4)/2; B: (6+7)/5**
+
 ![Sentinele-2 Image using OSI](images/2.jpg)
 
 Decorrelated images of spectral bands 4, 3 and 2 of Sentinel-2 showing the occurrence and spatial distribution of oil spill (images acquired a. before (17 July, 2020), b. and c. during (01 and 06 August, 2020) and c. after (05 September, 2020) the oil spill).
+
 ![Sentinele-2 Image using OSI](images/3.jpg)
 
 ## References
