@@ -128,6 +128,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Highlight Optimized Natural Color](sentinel-2/highlight_optimized_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Vegetation productivity indicator](sentinel-2/vegetation_productivity_indicator)
+ - [Oil Spill Index](sentinel-2/oil-spill-index)
 
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -152,6 +153,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Active Fire Detection](sentinel-2/active_fire_detection)
  - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
  - [Landslide detection for rapid Mapping](sentinel-2/landslide_detection_rapid_mapping)
+ - [Oil Spill Index](sentinel-2/oil-spill-index)
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
