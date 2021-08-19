@@ -18,7 +18,7 @@ The OSI is an Oil spill Index uses visible bands of Sentinel-2 to display spille
 **OSI = (B03 + B04) / B02**
 
 
-#Author of the script
+# Author of the script
 
 **Sankaran Rajendran**
 
