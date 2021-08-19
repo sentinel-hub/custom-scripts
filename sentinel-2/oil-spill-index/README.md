@@ -7,6 +7,10 @@
 {% endhighlight %}
 </div>
 
+## Evaluate and visualize
+ - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2L2A&lat=-20.43437229834543&lng=57.740750312805176&zoom=14&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.7&time=2020-02-01%7C2020-08-06&atmFilter=&showDates=false&evalscript=bGV0IE9TSSA9IChCMDMgKyBCMDQpIC8gQjAyOwoKcmV0dXJuIFtPU0kvM10%3D){:target="_blank"}    
+ - [EO Browser](https://sentinelshare.page.link/2vSe){:target="_blank"} 
+
 ##General description of the script
 
 The OSI is an Oil spill Index uses visible bands of Sentinel-2 to display spilled oil over water in the costal/marine environment. The OSI is constructed by summing-up the bands representing the shoulders of absorption features of oil as numerator and the band located nearest to the absorption feature as denominator to discriminate oil spill as below.
