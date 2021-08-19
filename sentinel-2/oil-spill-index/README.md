@@ -13,7 +13,7 @@
 
 ## General description of the script
 
-The OSI is an Oil spill Index uses visible bands of Sentinel-2 to display spilled oil over water in the costal/marine environment. The OSI is constructed by summing-up the bands representing the shoulders of absorption features of oil as numerator and the band located nearest to the absorption feature as denominator to discriminate oil spill as below.
+The OSI (Oil Spill Index) uses visible Sentinel-2 bands to display oil spills over water in the costal/marine environment. The OSI is constructed by summing-up the bands representing the shoulders of absorption features of oil as numerator and the band located nearest to the absorption feature as denominator to discriminate oil spill as below.
 
 **OSI = (B03 + B04) / B02**
 
@@ -36,7 +36,7 @@ b.) **R: 3/2; G: (3+4)/2; B: (6+7)/5**
 
 ![Sentinel-2 Image using OSI](images/2.jpg)
 
-Decorrelated images of spectral bands 4, 3 and 2 of Sentinel-2 showing the occurrence and spatial distribution of oil spill (images acquired a. before (17 July, 2020), b. and c. during (01 and 06 August, 2020) and c. after (05 September, 2020) the oil spill).
+Decorrelated images of Sentinel-2  spectral bands 4, 3 and 2, showing the occurrence and spatial distribution of an oil spill (images acquired a. before (17 July, 2020), b. and c. during (01 and 06 August, 2020) and c. after (05 September, 2020) the oil spill).
 
 _Note: Decorrelated images couldn't be converted to a custom script._
 
