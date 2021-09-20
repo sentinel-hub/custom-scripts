@@ -1,8 +1,8 @@
 # Interpolated Time-series script
 
-This evalscript returns a temporally-interpolated stack of band  or band indices values.
+This evalscript returns a temporally-interpolated stack of band or band indices values.
 
-**Warning:** In this `evalscript` the `time_interval` must be defined both in the request as well as in the evalscript itself.
+**Warning:** In this `evalscript` the `time_interval` must be defined **both** in the request as well as in the evalscript itself.
 
 ## General description
 
@@ -26,14 +26,19 @@ request = SentinelHubRequest(
         )
     ],
     responses=[
+        SentinelHubRequest.output_response('B01', MimeType.TIFF),
         SentinelHubRequest.output_response('B02', MimeType.TIFF),
         SentinelHubRequest.output_response('B03', MimeType.TIFF),
         SentinelHubRequest.output_response('B04', MimeType.TIFF),
+        SentinelHubRequest.output_response('B05', MimeType.TIFF),
+        SentinelHubRequest.output_response('B06', MimeType.TIFF),
+        SentinelHubRequest.output_response('B07', MimeType.TIFF),
         SentinelHubRequest.output_response('B08', MimeType.TIFF),
+        SentinelHubRequest.output_response('B8A', MimeType.TIFF),
+        SentinelHubRequest.output_response('B09', MimeType.TIFF),
         SentinelHubRequest.output_response('B11', MimeType.TIFF),
         SentinelHubRequest.output_response('B12', MimeType.TIFF),
-        SentinelHubRequest.output_response('data_mask', MimeType.TIFF),
-        SentinelHubRequest.output_response('userdata', MimeType.JSON),
+        SentinelHubRequest.output_response('QM', MimeType.TIFF),
     ],
     geometry=geometry,
     size=bbox_to_dimensions(bbox, resolution)
@@ -42,6 +47,10 @@ request = SentinelHubRequest(
 ```
 
 ## Output result
+
+<br>
+<img src="fig/world_mosaic_2020.png" alt="world" width="100%"/>
+<br>
 
 ![italy](fig/italy.png)
 
