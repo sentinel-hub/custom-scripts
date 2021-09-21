@@ -444,6 +444,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
  - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](data-fusion/historic-landsat-changes)
+ - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](sand-oriented_land_cover_classification_s1_s2)
 
 ## <a name="copernicus_services"></a>Copernicus services
 
