@@ -1,5 +1,12 @@
 # Interpolated Time-series script
 
+<a href="#" id='togglescript'>Show</a> script or <a href="/custom-scripts/sentinel-2/interpolated_time_series/script.js" target="_blank">download</a> it.
+<div id='script_view' style="display:none">
+   {% highlight javascript %}
+   {% include_relative script.js %}
+   {% endhighlight %}
+</div>
+
 This evalscript returns a temporally-interpolated stack of band or band indices values.
 
 **Warning:** In this `evalscript` the `time_interval` must be defined **both** in the request as well as in the evalscript itself.
