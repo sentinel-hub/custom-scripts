@@ -501,7 +501,7 @@ Water Bodies 100m data is available in our [public collections](https://github.c
 - [Water Bodies visualisation script](copernicus_services/water-bodies)
 - [Water Bodies Occurrence visualisation script](copernicus_services/water-bodies-occurence)
 
-## <a name="#sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
+## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
 
 Sentinel-2 L2A 120m mosaic is a derived product, offering a cloudless mosaic of the whole world for all 12 Sentinel-2 bands. It is thus possible to create Sentinel-2 visualizations on a global level. The resolution of the collection is 120 meters. The product contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As clouds can be missed and as there are some parts of the world which have lengthy cloudy periods, clouds might be remaining in some parts. The collection is available for 2019 (with 6 Sentinel-2 bands) and annually since 2020 (all 12 Sentinel-2 bands). The modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/).
 

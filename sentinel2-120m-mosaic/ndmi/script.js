@@ -1,31 +1,55 @@
-//Identify active fire points
-//by Tiznger startup co
-//www.tiznegar.com
+//VERSION=3
 
-//To increase the accuracy of altitude <3km Or zoom >12
-//For Sentinel-2
-//Cloud mask
+if (B08 == 0 || B11 == 0){
+  return [0,0,0];
+} else {
+  var val = (B08 - B11)/(B08 + B11);
+  
+  var vmin = -0.8;
+  var vmax = 0.8;
+  var dv = vmax - vmin;
+  
+  var r = 0.0;
+  var g = 0.0;
+  var b = 0.0;
 
-var NGDR = index(B02, B03);
-var Inverse = (B02 - 0.2) / (0.5 - 0.2);
-//Fire indicator
-var SAHM_INDEX= ((B12 - B11) / (B12 + B11));
+  
+  var v = val;
 
-if (Inverse > 1) { 
-    return [0.5 * B04, 0.5 * B03, 20 * B02 ];
+  if (v < vmin){
+    v = vmin;
+  }
+  if (v > vmax){
+    v = vmax;
+  }
+  
+  var l1 = 0.35;
+  var l2 = 0.48;
+  var l3 = 0.52;
+  var l4 = 0.65;
+  
+  var level1 = (vmin + l1 * dv);
+  var level2 = (vmin + l2 * dv);
+  var level3 = (vmin + l3 * dv);
+  var level4 = (vmin + l4 * dv);
+
+  if (v < level1){
+     r = 0.5 +  (v - vmin) / (level1 - vmin) / 2;
+  } else if (v < level2) {
+     r = 1;
+     g = (v - level1) / (level2 - level1);
+     b = 0;
+  } else if (v < level3) {
+     r = 1 + (level2 - v) / (level3 - level2);
+     g = 1;
+     b = (v - level2) / (level3 - level2);
+  } else if (v < level4) {
+     r = 0;
+     g = 1 + (level3 - v) / (level4 - level3);
+     b = 1;
+  } else {
+     b = 1.0 + (level4 - v) / (vmax - level4) / 2;
+  }
+
+   return [r, g, b, dataMask];
 }
-
-if (Inverse > 0 && NGDR>0) { 
-    return [0.5 * B04  , 0.5 * B03, 20 * B02];
-}
-
-if((SAHM_INDEX>0.4)||(B12>1)){
-  return[20*B04, 1*B03, 1*B02];
-}
-
-else {
- return [B04,B04,B04]
-}
-
-//Red color indicates active fire areas and points
-//The blue range is a cloud mask

@@ -1,31 +1,18 @@
-//Identify active fire points
-//by Tiznger startup co
-//www.tiznegar.com
+//VERSION=3
+let ndvi = (B08 - B04) / (B08 + B04);
 
-//To increase the accuracy of altitude <3km Or zoom >12
-//For Sentinel-2
-//Cloud mask
-
-var NGDR = index(B02, B03);
-var Inverse = (B02 - 0.2) / (0.5 - 0.2);
-//Fire indicator
-var SAHM_INDEX= ((B12 - B11) / (B12 + B11));
-
-if (Inverse > 1) { 
-    return [0.5 * B04, 0.5 * B03, 20 * B02 ];
-}
-
-if (Inverse > 0 && NGDR>0) { 
-    return [0.5 * B04  , 0.5 * B03, 20 * B02];
-}
-
-if((SAHM_INDEX>0.4)||(B12>1)){
-  return[20*B04, 1*B03, 1*B02];
-}
-
-else {
- return [B04,B04,B04]
-}
-
-//Red color indicates active fire areas and points
-//The blue range is a cloud mask
+return colorBlend(ndvi,
+   [-0.2, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 ],
+   [[0, 0, 0,dataMask],							   //  < -.2 = #000000 (black)
+    [165/255,0,38/255,dataMask],        //  -> 0 = #a50026
+    [215/255,48/255,39/255,dataMask],   //  -> .1 = #d73027
+    [244/255,109/255,67/255,dataMask],  //  -> .2 = #f46d43
+    [253/255,174/255,97/255,dataMask],  //  -> .3 = #fdae61
+    [254/255,224/255,139/255,dataMask], //  -> .4 = #fee08b
+    [255/255,255/255,191/255,dataMask], //  -> .5 = #ffffbf
+    [217/255,239/255,139/255,dataMask], //  -> .6 = #d9ef8b
+    [166/255,217/255,106/255,dataMask], //  -> .7 = #a6d96a
+    [102/255,189/255,99/255,dataMask],  //  -> .8 = #66bd63
+    [26/255,152/255,80/255,dataMask],   //  -> .9 = #1a9850
+    [0,104/255,55/255,dataMask]         //  -> 1.0 = #006837
+   ]);
