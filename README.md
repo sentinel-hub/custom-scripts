@@ -546,7 +546,7 @@ More information about VPP product is outlined in the [product user manual](http
 - [EOSV visualisation script](copernicus_services/vpp-end-of-season-value-eosv)
 - [RSLOPE visualisation script](copernicus_services/vpp-slope-of-senescent-period-rslope)
 - [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
-- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivit-sprod)
+- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
