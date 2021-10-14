@@ -14,7 +14,7 @@ This script visualises season minimum value (MINV) parameter of the VPP product.
 ## Description of representative images
 *2019 season 1 season minimum value over Pina de Ebro Zaragoza Spain * 
 
-![MINV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)   
+![MINV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)   
 
 
 ## Resources

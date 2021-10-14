@@ -15,7 +15,7 @@ This script visualises seasonal productivity (SPROD) parameter of the VPP produc
 ## Description of representative images
 *2019 season 1  seasonal productivity over Pina de Ebro Zaragoza Spain * 
 
-![SPROD Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)   
+![SPROD Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)   
 
 ## Resources
 

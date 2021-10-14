@@ -16,7 +16,7 @@ This script visualises end of season  values (EOSV)  of the VPP product. The col
 ## Description of representative images
 *2019 season 1  end of season value over Pina de Ebro Zaragoza Spain * 
 
-![EOSV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)   
+![EOSV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)   
 
 ## Resources
 
