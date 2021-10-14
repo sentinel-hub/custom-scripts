@@ -14,7 +14,7 @@ Physical values range from -1 to 1.he color map is adopted from https://github.c
 ## Description of representative images
 *August, 2020 NDVI over South Tyrol Northern Italy* 
 
-![NDVI over South Tyrol Northern Italy ](fig/south-tyrol-northern-italy.png)  
+![NDVI over South Tyrol Northern Italy ](fig/south-tyrol-northern-italy.PNG)  
 
 ## Resources
 

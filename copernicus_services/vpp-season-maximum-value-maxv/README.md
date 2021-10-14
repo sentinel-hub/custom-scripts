@@ -14,7 +14,7 @@ This script visualises season maximum value (MAXV) parameter of the VPP product.
 ## Description of representative images
 *2019 season 1 season maximum value over Pina de Ebro Zaragoza Spain * 
 
-![MAXV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)   
+![MAXV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)   
 
 ## Resources
 

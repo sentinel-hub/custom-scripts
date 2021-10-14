@@ -15,7 +15,7 @@ Physical values range from 0 to 8.The color map is adopted from https://github.c
 ## Description of representative images
 *August, 2020 LAI over Emmeloord, Flevoland Netherlands* 
 
-![LAI over Emmeloord, Flevoland Netherlands ](fig/emmeloord-netherlands.png)  
+![LAI over Emmeloord, Flevoland Netherlands ](fig/emmeloord-netherlands.PNG)  
 
 ## Resources
 

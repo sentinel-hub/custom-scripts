@@ -4,10 +4,12 @@
 
 function setup() {
   return {
-    input: ["NDVI", "dataMask"],
-    output: { bands: 4}
-   
-  }
+    input:[{
+      bands: ["NDVI", "dataMask"], 
+      units: "DN"
+    }], 
+    output: { bands: 4 }
+  };
 }
 const map =
 [
@@ -26,6 +28,8 @@ const visualizer = new ColorMapVisualizer(map);
 //EvaluatePixel function
 function evaluatePixel(sample) 
 {
+  var ndvi = ((sample.NDVI&0xFFFF) << 16) >> 16; 
   
-  return [visualizer.process(sample.NDVI)[0], visualizer.process(sample.NDVI)[1], visualizer.process(sample.NDVI)[2], sample.dataMask];
-    }
+  return [visualizer.process(ndvi)[0], visualizer.process(ndvi)[1], visualizer.process(ndvi)[2], sample.dataMask];
+    
+}

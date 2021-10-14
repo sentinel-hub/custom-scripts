@@ -14,7 +14,7 @@ This script visualises total productivity (TPROD) parameter of the VPP product. 
 ## Description of representative images
 *2019 season 1 total productivity over Pina de Ebro Zaragoza Spain * 
 
-![TPROD Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)
+![TPROD Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)
 
 
 ## Resources

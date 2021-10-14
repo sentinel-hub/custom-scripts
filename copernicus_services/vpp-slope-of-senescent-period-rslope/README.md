@@ -14,7 +14,7 @@ This script visualises slope of senescent period (RSLOPE) parameter of the VPP p
 ## Description of representative images
 *2019 season 1 slope of senescent period over Pina de Ebro Zaragoza Spain * 
 
-![RSLOPE Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.png)
+![RSLOPE Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)
 
 
 ## Resources

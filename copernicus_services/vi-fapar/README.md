@@ -15,7 +15,7 @@ Physical values range from 0 to 1. The color map is adopted from https://github.
 ## Description of representative images
 *August, 2020 FAPAR over South Tyrol Northern Italy* 
 
-![FAPAR over South Tyrol Northern Italy ](fig/south-tyrol-northern-italy.png)  
+![FAPAR over South Tyrol Northern Italy ](fig/south-tyrol-northern-italy.PNG)  
 
 ## Resources
 

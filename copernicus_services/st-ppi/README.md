@@ -14,7 +14,7 @@ This script visualises seasonal trajectories PPI . The Seasonal Trajectories PPI
 ## Description of representative images
 *2020 late July seasonal trajectories PPI over  Brăila Romania* 
 
-![Seasonal trajectories Brăila Romania](fig/braila-romania.png)  
+![Seasonal trajectories Brăila Romania](fig/braila-romania.PNG)  
 
 ## Resources
 
