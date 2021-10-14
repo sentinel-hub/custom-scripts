@@ -509,10 +509,10 @@ The raw Vegetation Indices are provided on a daily basis at 10m resolution from 
 based on 5-day revisit period of Sentinel-2. The VIs are accompanied by  a related QFLAG2 band that flags clouds, shadows, snow, open water and other areas where the VI retrieval is less reliable. 
 More information about raw vegetation indices is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/)
 
-- [FAPAR visualisation script](copernicus_services/vi-fapar)
-- [PPI visualisation script](copernicus_services/vi-ppi)
 - [LAI visualisation script](copernicus_services/vi-lai)
+- [PPI visualisation script](copernicus_services/vi-ppi)
 - [NDVI visualisation script](copernicus_services/vi-ndvi)
+- [FAPAR visualisation script](copernicus_services/vi-fapar)
 
 ### Seasonal Trajectories, 10-daily
 Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution . 
@@ -546,7 +546,7 @@ More information about VPP product is outlined in the [product user manual](http
 - [EOSV visualisation script](copernicus_services/vpp-end-of-season-value-eosv)
 - [RSLOPE visualisation script](copernicus_services/vpp-slope-of-senescent-period-rslope)
 - [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
-- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivit-sprod)
+- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
