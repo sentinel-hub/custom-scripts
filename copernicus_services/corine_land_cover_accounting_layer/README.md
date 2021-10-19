@@ -9,7 +9,7 @@
 
 ## General description
 
-This script visualises CORINE Land Cover Accounting Layers according to the official CORINE Land Cover color scheme.
+This script visualises CORINE Land Cover (CLC) Accounting Layers according to the official CORINE Land Cover color scheme. [CLC Accounting Layers](https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers) are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.  
 
 For more details about the classes, please see the official [CORINE Land Cover nomenclature guidelines](https://land.copernicus.eu/user-corner/technical-library/corine-land-cover-nomenclature-guidelines/html/index.html) or the illustrated [nomenclature guidelines document](https://land.copernicus.eu/user-corner/technical-library/corine-land-cover-nomenclature-guidelines/docs/pdf/CLC2018_Nomenclature_illustrated_guide_20190510.pdf).
 
@@ -254,10 +254,10 @@ Table 1: CORINE Land Cover nomenclature and colouring scheme.
 
 ## Description of representative images
 
-*CORINE Land Cover Accountimng Layers, Thessaloniki Greece visualised on EO Browser.*
+*CORINE Land Cover Accounting Layers, Thessaloniki Greece visualised on EO Browser.*
 ![CORINE Land Cover Accounting Layer, Thessaloniki Greece](fig/fig1.png)
 
-*CORINE Land Cover Accountimng Layers, London England visualised on EO Browser.*
+*CORINE Land Cover Accounting Layers, London England visualised on EO Browser.*
 ![CORINE Land Cover Accounting Layers, London England](fig/fig3.png)
 
 ## Resources
