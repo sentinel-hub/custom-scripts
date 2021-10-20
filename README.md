@@ -453,7 +453,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
 
 In 1985 the 'Coordination of Information on the Environment' (CORINE) programme was initiated by the European Commission. It aimed at collecting environmental information on high priority topics for the European Union (air, water, soil, land cover, coastal erosion, biotopes, etc.). Since 1994, the established databases and programmes are managed by the [European Environment Agency (EEA)](https://www.eea.europa.eu/). The [CORINE Land Cover (CLC) inventory](https://land.copernicus.eu/pan-european/corine-land-cover) is a vector-based dataset that consists of 44 land cover and land use classes. There are altogether 5 mapping inventories implemented since 1986, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018), 4 CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018) and 4 CLC Accounting  Layers for 2000, 2006, 201, 2018.  
 [CLC Accounting Layers](https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers) are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.  
-CORINE Land Cover data is available in our [public collections](https://collections.sentinel-hub.com/tag/corine/).
+CORINE Land Cover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/corine/).
 
 #### Available scripts
 - [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
@@ -463,7 +463,7 @@ CORINE Land Cover data is available in our [public collections](https://collecti
 
 Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc). The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. The  Global Land Cover data contains one main _land cover discrete classification map_ and several other additional layers. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf).
 
-Global Land Cover data is available in our [public collections](https://github.com/sentinel-hub/public-collections/tree/main/collections/global-land-cover)
+Global Land Cover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-land-cover/)
 
 #### Available scripts
 
@@ -480,7 +480,7 @@ The Global Surface Water dataset was developed by the European Commission's Join
 5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
 6. Extent - *Maximum extent of surface water bodies in the entire time range.*
 
-Global Surface Water data is available in our [public collections](https://collections.sentinel-hub.com/global-surface-water/).
+Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
 
 Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
 
@@ -496,7 +496,7 @@ Please check the official [Global Surface Water website](https://global-surface-
 ### Water Bodies 
 The Global  Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The  product available here is the  [Water Bodies  100m Version 1](https://land.copernicus.eu/global/products/wb) collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution. The Water Bodies product contains one main water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies  detected using the Modified Normalized Difference Water Index [(MNDWI)](https://en.wikipedia.org/wiki/Normalized_difference_water_index) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence. More information about the data can be obtained from the [Water Bodies product](https://land.copernicus.eu/global/products/wb) page.
 
-Water Bodies 100m data is available in our [public collections](https://github.com/sentinel-hub/public-collections/tree/main/collections/water-bodies)
+Water Bodies 100m data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/water-bodies/)
 
 #### Available scripts
 - [Water Bodies visualisation script](copernicus_services/water-bodies)
@@ -508,7 +508,8 @@ The product is comprised of 4 raw Vegetation Indices; (1) Normalized Difference 
 (3) Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) and (4) Plant Phenology Index (PPI) generated near real-time (NRT) from Sentinel-2 satellite observations. 
 The raw Vegetation Indices are provided on a daily basis at 10m resolution from October 2016 onwards. Therefore VI products are available over the EEA39 region for the respective observation day 
 based on 5-day revisit period of Sentinel-2. The VIs are accompanied by  a related QFLAG2 band that flags clouds, shadows, snow, open water and other areas where the VI retrieval is less reliable. 
-More information about raw vegetation indices is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/)
+More information about raw vegetation indices is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/)  
+Vegetation Indices is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
 
 - [LAI visualisation script](copernicus_services/vi-lai)
 - [PPI visualisation script](copernicus_services/vi-ppi)
@@ -522,6 +523,7 @@ The Seasonal Trajectories PPI is derived through fitting a smoothing and gap fil
 In addition to the PPI band, a  QFLAG band  indicating the quality of the smoothing process is included. 
 The Seasonal Trajectories  provide the vegetation status for each pixel on a regular 10-day time step from January 1 2017 onwards over the  EEA39 region. 
 More information about ST product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)  
+Seasonal Trajectories is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).  
 
 #### Available scripts
 - [PPI visualisation script](copernicus_services/st-ppi)
@@ -535,9 +537,10 @@ derived from Sentinel-2 satellite observations at 10m resolution. Since growing 
 The  parameters include (1) start of season (date, PPI value and slope), (2) end of season (date, PPI value and slope), (3)length of season, (4) minimum of season, 
 (4) peak of the season (date and PPI value), (5) amplitude, (6) small integrated value and (7) large integrated value. 
 VPP parameters are generated over the EEA39 region on a yearly frequency from January 1 2017 onwards. 
-Among other applications, the high-resolution phenology data provides a detailed assessment of the impacts of 
-human or climate change on the ecosystem through monitoring of vegetation responses to disturbances, e.g. droughts, storms, insect infestations, and to human influence from global to local levels. 
-More information about VPP product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)
+Among other applications, the high-resolution phenology data provides a detailed assessment of the impacts of human or climate change on the ecosystem through monitoring of vegetation responses to disturbances, e.g. droughts, storms, insect infestations, and to human influence from global to local levels. 
+More information about VPP product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)  
+Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
+
 
 #### Available scripts
 - [AMPL visualisation script](copernicus_services/vpp-amplitude-ampl)
@@ -549,6 +552,17 @@ More information about VPP product is outlined in the [product user manual](http
 - [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
 - [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
+
+### WorldCover
+  [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
+  In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural 
+  characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. 
+  WorldCover has been produced for 2020 with a global coverage. It provides valuable information for applications such as biodiversity, food security, carbon assessment and climate modelling.  
+  WorldCover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/worldcover/).
+
+#### Available scripts
+- [WorldCover visualisation script](copernicus_services/worldcover)
+
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
 
