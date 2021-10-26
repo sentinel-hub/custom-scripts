@@ -1,4 +1,4 @@
-//VERSION=3
+   //VERSION=3
 /*
 Script works on Sentinel-2 L2A data and requires scene classification (SCL) band. 
 It takes one year of data, which is quite compute and time intensive, which is why it is recommended to run it on small area (e.g. 256x256 px).
@@ -16,13 +16,9 @@ function setup() {
         "B03",
         "B02",
         "SCL"
-      ],
-      units: "DN"
+      ]
     }],
-    output: {
-      bands: 3,
-      sampleType: SampleType.UINT16
-    },
+    output: {bands: 3},
     mosaicking: "ORBIT"
   }
 }
@@ -106,5 +102,5 @@ function evaluatePixel(samples, scenes) {
     gValue = 0;
     bValue = 0;
   }
-  return [rValue, gValue, bValue]
+  return [rValue*3, gValue*3, bValue*3]
 }
