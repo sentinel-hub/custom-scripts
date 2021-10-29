@@ -1,9 +1,8 @@
-   //VERSION=3
+//VERSION=3
 /*
 Script works on Sentinel-2 L2A data and requires scene classification (SCL) band. 
 It takes one year of data, which is quite compute and time intensive, which is why it is recommended to run it on small area (e.g. 256x256 px).
 An example of the results is New Zealand's cloudless mosaic, available here: https://data.linz.govt.nz/layer/93652-nz-10m-satellite-imagery-2017/
-
 For the output value for each pixel it uses the first quartile value of valid values, each band separately. If there are none it uses invalid values instead. 
 When using SCL its very important to use nearest neighbor resampling with a resolution of about 20m/px or more. 
 */
@@ -18,7 +17,7 @@ function setup() {
         "SCL"
       ]
     }],
-    output: {bands: 3},
+    output: {bands: 3, sampleType:"UINT16"},
     mosaicking: "ORBIT"
   }
 }
@@ -69,18 +68,23 @@ function evaluatePixel(samples, scenes) {
   
   for (var i = 0; i < samples.length; i++) {
     var sample = samples[i];
-    if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0) {
+
+    let B04 = sample.B04 * 10000
+    let B03 = sample.B03 * 10000
+    let B02 = sample.B02 * 10000
+
+    if (B02 > 0 && B03 > 0 && B04 > 0) {
       var isValid = validate(sample);
       
       if (isValid) {
-        clo_b02[a] = sample.B02;
-        clo_b03[a] = sample.B03;
-        clo_b04[a] = sample.B04;
+        clo_b02[a] = B02;
+        clo_b03[a] = B03;
+        clo_b04[a] = B04;
         a = a + 1;
       } else {
-        clo_b02_invalid[a_invalid] = sample.B02;
-        clo_b03_invalid[a_invalid] = sample.B03;
-        clo_b04_invalid[a_invalid] = sample.B04;
+        clo_b02_invalid[a_invalid] = B02;
+        clo_b03_invalid[a_invalid] = B03;
+        clo_b04_invalid[a_invalid] = B04;
         a_invalid = a_invalid + 1;
       }
     }
@@ -102,5 +106,5 @@ function evaluatePixel(samples, scenes) {
     gValue = 0;
     bValue = 0;
   }
-  return [rValue*3, gValue*3, bValue*3]
+  return [rValue, gValue, bValue]
 }
