@@ -1,6 +1,6 @@
 //VERSION=3
 
-// This custom script visualises SEasonal Trajectories PPI
+// This custom script visualises Seasonal Trajectories PPI
 
 function setup() {
   return {
@@ -10,15 +10,15 @@ function setup() {
 }
 const map =
 [
-  [0, 0xFFFFE5],
-  [3750, 0xF7FCB9],
-  [7500, 0xD9F0A3],
-  [11250, 0xADDD8E],
-  [15000, 0x78C679],
-  [18750, 0x41AB5D],
-  [22500, 0x238443],
-  [26250, 0x006837],
-  [30000, 0x004529]
+  [0.000, 0xFFFFE5],
+  [0.375, 0xF7FCB9],
+  [0.750, 0xD9F0A3],
+  [1.125, 0xADDD8E],
+  [1.500, 0x78C679],
+  [1.875, 0x41AB5D],
+  [2.250, 0x238443],
+  [2.625, 0x006837],
+  [3.000, 0x004529]
 ]
 
 const visualizer = new ColorMapVisualizer(map);
@@ -26,5 +26,5 @@ const visualizer = new ColorMapVisualizer(map);
 function evaluatePixel(sample) 
 
     {
-  return [visualizer.process(sample.PPI)[0], visualizer.process(sample.PPI)[1], visualizer.process(sample.PPI)[2], sample.dataMask];
+  return [visualizer.process(sample.PPI*0.0001)[0], visualizer.process(sample.PPI*0.0001)[1], visualizer.process(sample.PPI*0.0001)[2], sample.dataMask];
     }

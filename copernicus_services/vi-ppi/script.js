@@ -1,42 +1,31 @@
 //VERSION=3
 
 // This custom script visualises raw PPI values
+
 function setup() {
   return {
     input: ["PPI", "dataMask"],
-    output: { bands: 4},
-    mosaicking: Mosaicking.TILE
+    output: { bands: 4}
+   
   }
 }
 const map =
 [
-  [0, 0xFFFFE5],
-  [3750, 0xF7FCB9],
-  [7500, 0xD9F0A3],
-  [11250, 0xADDD8E],
-  [15000, 0x78C679],
-  [18750, 0x41AB5D],
-  [22500, 0x238443],
-  [26250, 0x006837],
-  [30000, 0x004529]
+  [0.000, 0xFFFFE5],
+  [0.375, 0xF7FCB9],
+  [0.750, 0xD9F0A3],
+  [1.125, 0xADDD8E],
+  [1.500, 0x78C679],
+  [1.875, 0x41AB5D],
+  [2.250, 0x238443],
+  [2.625, 0x006837],
+  [3.000, 0x004529]
 ]
 
 const visualizer = new ColorMapVisualizer(map);
 //EvaluatePixel function
-function evaluatePixel(samples) 
+function evaluatePixel(sample) 
 {
-  for (let i = 0; i < samples.length; i++) 
-  {
-    let sample = samples[i];
-    if (sample.dataMask == 1) 
-    {
-  return [visualizer.process(sample.PPI)[0], visualizer.process(sample.PPI)[1], visualizer.process(sample.PPI)[2], sample.dataMask];
+  
+  return [visualizer.process(sample.PPI*0.0001)[0], visualizer.process(sample.PPI*0.0001)[1], visualizer.process(sample.PPI*0.0001)[2], sample.dataMask];
     }
-  }
-}
-
-
-
-
-
-

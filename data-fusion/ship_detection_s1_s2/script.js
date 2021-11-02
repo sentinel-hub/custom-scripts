@@ -5,8 +5,8 @@
 function setup() {
   return {
   	input: [
-   	 {datasource: "S2L1C", bands:["B02", "B03", "B04", "B08"], units: "REFLECTANCE", mosaicking: "ORBIT"},
-   	 {datasource: "S1GRD", bands:["VV", "VH"], units: "REFLECTANCE", mosaicking: "ORBIT"}
+   	 {datasource: "S2L1C", bands:["B02", "B03", "B04", "B08"], mosaicking: "ORBIT"},
+   	 {datasource: "S1GRD", bands:["VV", "VH"], mosaicking: "ORBIT"}
   	],
   	output: [
    	 { id: "default", bands: 3, sampleType: SampleType.AUTO }

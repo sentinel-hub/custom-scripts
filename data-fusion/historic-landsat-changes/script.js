@@ -5,8 +5,8 @@
 function setup() {
   return {
   	input: [
-   	 {datasource: "landsat45", bands:["B04", "B03","dataMask"], units: "REFLECTANCE", mosaicking: "ORBIT"},
-   	 {datasource: "landsat8", bands:["B05", "B04","B03","dataMask"], units: "REFLECTANCE", mosaicking: "ORBIT"}
+   	 {datasource: "landsat45", bands:["B04", "B03","dataMask"], mosaicking: "ORBIT"},
+   	 {datasource: "landsat8", bands:["B05", "B04","B03","dataMask"], mosaicking: "ORBIT"}
   	],
   	output: [
    	 { id: "default", bands: 3, sampleType: SampleType.AUTO }

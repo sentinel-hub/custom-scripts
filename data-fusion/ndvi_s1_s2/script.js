@@ -5,7 +5,7 @@ function setup() {
   return {
     input: [
       {datasource: "S1GRD", bands:["VV", "VH"]},
-      {datasource: "S2L2A", bands:["B02", "B03", "B08", "B04", "SCL"], units:"REFLECTANCE"}],
+      {datasource: "S2L2A", bands:["B02", "B03", "B08", "B04", "SCL"]}],
     output: [
       {id: "default", bands: 3, sampleType: SampleType.AUTO}
     ]

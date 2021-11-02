@@ -10,25 +10,25 @@ function setup() {
 }
 const map =
 [
-  [0, 0x440154],
-  [50, 0x481668],
-  [100, 0x482878],
-  [150, 0x443983],
-  [200, 0x3E4A89],
-  [250, 0x375A8C],
-  [300, 0x31688E],
-  [350, 0x2B758E],
-  [400, 0x26828E],
-  [450, 0x21918C],
-  [500, 0x1F9E89],
-  [550, 0x25AB82],
-  [600, 0x35B779],
-  [650, 0x4EC36B],
-  [700, 0x6CCD5A],
-  [750, 0x8ED645],
-  [800, 0xB5DE2B],
-  [850, 0xDAE319],
-  [900, 0xFDE725]
+  [0.000, 0x440154],
+  [0.005, 0x481668],
+  [0.010, 0x482878],
+  [0.015, 0x443983],
+  [0.020, 0x3E4A89],
+  [0.025, 0x375A8C],
+  [0.030, 0x31688E],
+  [0.035, 0x2B758E],
+  [0.040, 0x26828E],
+  [0.045, 0x21918C],
+  [0.050, 0x1F9E89],
+  [0.055, 0x25AB82],
+  [0.060, 0x35B779],
+  [0.065, 0x4EC36B],
+  [0.070, 0x6CCD5A],
+  [0.075, 0x8ED645],
+  [0.080, 0xB5DE2B],
+  [0.085, 0xDAE319],
+  [0.090, 0xFDE725]
 ]
 
 const visualizer = new ColorMapVisualizer(map);
@@ -36,15 +36,15 @@ const visualizer = new ColorMapVisualizer(map);
 function evaluatePixel(samples) {
  if (samples.length == 1)
   {
-    return [visualizer.process(samples[0].RSLOPE)[0], visualizer.process(samples[0].RSLOPE)[1], visualizer.process(samples[0].RSLOPE)[2], samples[0].RSLOPE != 32768];
+    return [visualizer.process(samples[0].RSLOPE*0.0001)[0], visualizer.process(samples[0].RSLOPE*0.0001)[1], visualizer.process(samples[0].RSLOPE*0.0001)[2], samples[0].RSLOPE != 32768];
   } 
   else if (samples.length > 1 & samples[0].RSLOPE != 0 & samples[0].RSLOPE != 32768)
   {
-    return [visualizer.process(samples[0].RSLOPE)[0], visualizer.process(samples[0].RSLOPE)[1], visualizer.process(samples[0].RSLOPE)[2], samples[0].RSLOPE != 32768];
+    return [visualizer.process(samples[0].RSLOPE*0.0001)[0], visualizer.process(samples[0].RSLOPE*0.0001)[1], visualizer.process(samples[0].RSLOPE*0.0001)[2], samples[0].RSLOPE != 32768];
   } 
   else if (samples.length > 1 & samples[1].RSLOPE != 0  & samples[1].RSLOPE != 32768)
   {
-    return [visualizer.process(samples[1].RSLOPE)[0], visualizer.process(samples[1].RSLOPE)[1], visualizer.process(samples[1].RSLOPE)[2], samples[1].RSLOPE != 32768];
+    return [visualizer.process(samples[1].RSLOPE*0.0001)[0], visualizer.process(samples[1].RSLOPE*0.0001)[1], visualizer.process(samples[1].RSLOPE*0.0001)[2], samples[1].RSLOPE != 32768];
   }
 
  }

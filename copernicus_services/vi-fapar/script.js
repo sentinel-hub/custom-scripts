@@ -11,15 +11,15 @@ function setup() {
 }
 const map =
 [
-  [0, 0xFFFFE5],
-  [1250, 0xF7FCB9],
-  [2500, 0xD9F0A3],
-  [3750, 0xADDD8E],
-  [5000, 0x78C679],
-  [6250, 0x41AB5D],
-  [7500, 0x238443],
-  [8750, 0x006837],
-  [10000, 0x004529]
+  [0.000, 0xFFFFE5],
+  [0.125, 0xF7FCB9],
+  [0.250, 0xD9F0A3],
+  [0.375, 0xADDD8E],
+  [0.500, 0x78C679],
+  [0.625, 0x41AB5D],
+  [0.750, 0x238443],
+  [0.875, 0x006837],
+  [1.000, 0x004529]
 ]
 
 const visualizer = new ColorMapVisualizer(map);
@@ -27,5 +27,5 @@ const visualizer = new ColorMapVisualizer(map);
 function evaluatePixel(sample) 
 {
   
-  return [visualizer.process(sample.FAPAR)[0], visualizer.process(sample.FAPAR)[1], visualizer.process(sample.FAPAR)[2], sample.dataMask];
+  return [visualizer.process(sample.FAPAR*0.0001)[0], visualizer.process(sample.FAPAR*0.0001)[1], visualizer.process(sample.FAPAR*0.0001)[2], sample.dataMask];
     }
