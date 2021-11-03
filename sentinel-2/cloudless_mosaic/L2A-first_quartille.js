@@ -69,22 +69,18 @@ function evaluatePixel(samples, scenes) {
   for (var i = 0; i < samples.length; i++) {
     var sample = samples[i];
 
-    let B04 = sample.B04 * 10000
-    let B03 = sample.B03 * 10000
-    let B02 = sample.B02 * 10000
-
-    if (B02 > 0 && B03 > 0 && B04 > 0) {
+    if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0) {
       var isValid = validate(sample);
       
       if (isValid) {
-        clo_b02[a] = B02;
-        clo_b03[a] = B03;
-        clo_b04[a] = B04;
+        clo_b02[a] = sample.B02;
+        clo_b03[a] = sample.B03;
+        clo_b04[a] = sample.B04;
         a = a + 1;
       } else {
-        clo_b02_invalid[a_invalid] = B02;
-        clo_b03_invalid[a_invalid] = B03;
-        clo_b04_invalid[a_invalid] = B04;
+        clo_b02_invalid[a_invalid] = sample.B02;
+        clo_b03_invalid[a_invalid] = sample.B03;
+        clo_b04_invalid[a_invalid] = sample.B04;
         a_invalid = a_invalid + 1;
       }
     }
@@ -106,5 +102,7 @@ function evaluatePixel(samples, scenes) {
     gValue = 0;
     bValue = 0;
   }
-  return [rValue, gValue, bValue]
+  return [rValue * 10000, 
+          gValue * 10000, 
+          bValue * 10000]
 }
