@@ -15,12 +15,12 @@
 
 ## General description of the script
 
-Kokhanovsky et al. 2021 propose a simple algorithm to derive the total ozone column and snow properties (spectral albedo and effective light absorption path) from Sentinel-2 L1C measurements over Antarctica. This script is an implementation of the algorithm that calculates the Total Ozone Column over highly-reflective surfaces located beneath a clean Antarctic atmosphere. The algorithm uses reflectance in the spectral range 443–865 nm, more particularly band 3 (559.8 nm) where ozone absorption is subtantial, band 8A (864.7 nm) where ice absorption is high, and band 1 (442.7 nm) where ice and ozone absorption are minimal, to calculate the K parameter which is correlated to the total ozone column.
+Kokhanovsky et al. 2021 propose a simple algorithm to derive the Total Ozone Column and snow properties (spectral albedo and effective light absorption path) from Sentinel-2 L1C measurements over Antarctica. This script is an implementation of the algorithm that calculates the Total Ozone Column over highly-reflective surfaces located beneath a clean Antarctic atmosphere. The algorithm uses reflectance in the spectral range 443–865 nm, more particularly band 3 (559.8 nm) where ozone absorption is subtantial, band 8A (864.7 nm) where ice absorption is high, and band 1 (442.7 nm) where ice and ozone absorption are minimal, to calculate the K parameter which is correlated to the Total Ozone Column.
 
 The authors validated the results of the algorithm at DOME C (Antarctica) between November and December 2020 against multiple other satellite and ground-based sensors. The algorithm was shown to perform in a similar manner to existing products, as shown in Figure 1 below. More details about the validation process and the interpretation of the results can be found in Kokhanovsky et al. 2021.
 
 ![validation](fig/validation.png)
-_Figure 1: Validation results of the total ozone column retrieval algorithm compared to other satellite and ground-based sensors. Source: Figure 2 from Kokhanovsky et al. 2021._
+_Figure 1: Validation results of the Total Ozone Column retrieval algorithm compared to other satellite and ground-based sensors. Source: Figure 2 from Kokhanovsky et al. 2021._
 
 The Evalscript is currently designed to display Ozone Values in Dobson Units (DU), with values between 140 and 340 DU being stretched over the 0-255 display range. To return the actual Ozone values, please return the variable `ozoneDu`, setting the `sampleType` to `FLOAT32`. For values in cm2/molecule, return the variable `ozoneCol` in your Evalscript.
 
