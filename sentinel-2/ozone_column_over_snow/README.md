@@ -15,7 +15,7 @@
 
 ## General description of the script
 
-Kokhanovsky et al. 2021 propose a simple algorithm to derive the total ozone column and snow properties (spectral albedo and effective light absorption path) from Sentinel-2 L1C measurements over Antarctica. This script is an implementation of the algorithm that calculates the Total Ozone Column over highly-reflective surfaces located beneath a clean Antarctic atmosphere. The algorithm uses reflectance in the spectral range 443–865 nm, more particularly the maximal ozone absorption band (559.8 nm), the maximal ice absorption band (864.7 nm), and the minimum ice and ozone absorption band (442.7 nm), to calculate the K parameter which is correlated to the total ozone column.
+Kokhanovsky et al. 2021 propose a simple algorithm to derive the total ozone column and snow properties (spectral albedo and effective light absorption path) from Sentinel-2 L1C measurements over Antarctica. This script is an implementation of the algorithm that calculates the Total Ozone Column over highly-reflective surfaces located beneath a clean Antarctic atmosphere. The algorithm uses reflectance in the spectral range 443–865 nm, more particularly band 3 (559.8 nm) where ozone absorption is subtantial, band 8A (864.7 nm) where ice absorption is high, and band 1 (442.7 nm) where ice and ozone absorption are minimal, to calculate the K parameter which is correlated to the total ozone column.
 
 The authors validated the results of the algorithm at DOME C (Antarctica) between November and December 2020 against multiple other satellite and ground-based sensors. The algorithm was shown to perform in a similar manner to existing products, as shown in Figure 1 below. More details about the validation process and the interpretation of the results can be found in Kokhanovsky et al. 2021.
 
@@ -28,7 +28,7 @@ Note that the script requires Sentinel-2 L1C images to function correctly and wi
 
 ## Description of representative images
 
-Total Column retrieval from a Sentinel-2 L1C image acquired over Dome C, Antarctica on 8th February 2021. On that date, the Total Ozone Column was uniform over the area. Interestingly, the algorithm not being designed to retrieve values over built-up structures highlights the research station quite well!
+Total Column retrieval from a Sentinel-2 L1C image acquired over Dome C, Antarctica on 8th February 2021. On that date, the Total Ozone Column was uniform over the area. Interestingly, the algorithm not being designed to retrieve values over built-up structures highlights the research station quite well! The average Total Ozone Column (excluding the research station) is 296 DU in this figure.
 
 ![ozone](fig/2021-02-08_ozone.jpg)
 
