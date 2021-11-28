@@ -24,22 +24,14 @@ const map =
 
 const visualizer = new ColorMapVisualizer(map);
 //EvaluatePixel function
-function evaluatePixel(samples) {
- if (samples.length == 1)
+function evaluatePixel(samples) 
+{
+  for (let i = 0; i < samples.length; i++) 
   {
-    return [visualizer.process(samples[0].TPROD*0.1)[0], visualizer.process(samples[0].TPROD*0.1)[1], visualizer.process(samples[0].TPROD*0.1)[2], samples[0].TPROD != 65535];
-  } 
-  else if (samples.length > 1 & samples[0].TPROD != 0 & samples[0].TPROD != 65535)
-  {
-    return [visualizer.process(samples[0].TPROD*0.1)[0], visualizer.process(samples[0].TPROD*0.1)[1], visualizer.process(samples[0].TPROD*0.1)[2], samples[0].TPROD != 65535];
-  } 
-  else if (samples.length > 1 & samples[1].TPROD != 0  & samples[1].TPROD != 65535)
-  {
-    return [visualizer.process(samples[1].TPROD*0.1)[0], visualizer.process(samples[1].TPROD*0.1)[1], visualizer.process(samples[1].TPROD*0.1)[2], samples[1].TPROD != 65535];
+    let sample = samples[i];
+    if (sample.dataMask == 1) 
+    {
+  return [visualizer.process(sample.TPROD*0.1)[0], visualizer.process(sample.TPROD*0.1)[1], visualizer.process(sample.TPROD*0.1)[2], sample.dataMask];
+    }
   }
-
- }
-
-
-
-
+}
