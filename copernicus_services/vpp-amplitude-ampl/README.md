@@ -11,7 +11,7 @@
 This script visualises Amplitude (AMPL) parameter of the VPP product. The color map is adopted from https://github.com/jacobs-tim/copernicus-land-monitoring-service-hrvpp-colourmaps 
 
 ## Description of representative images
-*2019 season 1 amplitude over Pina de Ebro Zaragoza Spain * 
+*2019 season 1 amplitude over Pina de Ebro Zaragoza Spain* 
 
 ![Amplitude Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)  
 
