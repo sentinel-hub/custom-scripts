@@ -12,7 +12,7 @@ This script visualises slope of greening up period  (LSLOPE) parameter of the VP
 
   
 ## Description of representative images
-*2019 season 1 slope of greening up period over Pina de Ebro Zaragoza Spain * 
+*2019 season 1 slope of greening up period over Pina de Ebro Zaragoza Spain* 
 
 ![LSLOPE Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)
 

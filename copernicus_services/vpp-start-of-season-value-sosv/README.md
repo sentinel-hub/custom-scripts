@@ -12,7 +12,7 @@ This script visualises start of season value (SOSV) parameter of the VPP product
 
   
 ## Description of representative images
-*2019 season 1 start of season value over Pina de Ebro Zaragoza Spain * 
+*2019 season 1 start of season value over Pina de Ebro Zaragoza Spain* 
 
 ![SOSV Pina de Ebro Zaragoza Spain](fig/pina-de-ebro-spain.PNG)
 
