@@ -11,9 +11,9 @@ function setup() {
 }
 const map =
 [
-  [0.000, 0xFFFFE5],
-  [0.375, 0xF7FCB9],
-  [0.750, 0xD9F0A3],
+  [0.0000, 0xFFFFE5],
+  [0.3750, 0xF7FCB9],
+  [0.7500, 0xD9F0A3],
   [1.1250, 0xADDD8E],
   [1.5000, 0x78C679],
   [1.8750, 0x41AB5D],
