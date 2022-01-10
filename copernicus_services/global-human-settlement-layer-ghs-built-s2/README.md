@@ -15,9 +15,9 @@ This script visualises the built-up probabilities stretched to 0-255.
 
 ## Description of representative images
 
-*Global Human Settlement Layer built-up probabilities over parts of Germany, Netherlands and Belgium* 
+*Global Human Settlement Layer built-up probabilities over parts of Germany, Netherlands and Belgium*  
 
-![Global Human Settlement Layer built-up probabilities over Germany, Netherlands and Belgium](fig/ghsl_overview.PNG)  
+![Global Human Settlement Layer built-up probabilities over Germany, Netherlands and Belgium](fig/ghsl_overview.png)  
 
 ## Resources
 
