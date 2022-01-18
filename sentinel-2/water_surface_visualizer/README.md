@@ -15,14 +15,17 @@
 [@HarelDan](https://twitter.com/HarelDan){:target="_blank"}    
 
 ## General description of the script
-Agricultural growth stage is a script visualizing the multi-temporal NDVI trends in Sentinel-2 imagery. It takes the current image as baseline and calculates the average NDVI for the previous 2 months.
-The script requires multi-temporal processing, so the parameter TEMPORAL=true should be added to the request.
+The script uses the small spectral changes found between adjacent bands to highlight areas of variance
+in and otherwise homogemuous region. This tool works best on flat water surface, and can highlight water
+eddies, temperature induced vortices, suspended matter in shallow water, oil slicks and sheens, and more.
 
 ## Description of representative images
 
-The Agricultural growth stage script applied to the agricultural fields of Italy (Veneto). 
+Water surface artefacs near Baniyas refinery, Syria.
+There has been an ongoing man-made disaster with petroleum distilates spilling into the mediterraen and flowig as far as Cyprus/
 
-![The Agricultural growth stage script applied to agricultural fields of Italy.](fig/fig1.jpg)
+
+![Oils spill outside Baniyas refinery, Syria](fig/baniyas.jpg)
 
 ## References
 Based on: 
