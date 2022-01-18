@@ -2,10 +2,39 @@
 
 // Calculate number of bands needed for all intervals
 // Initialize dates and interval
-var start_date = new Date("2019-01-01");
-var end_date = new Date("2020-01-01");
-var sampled_dates = sample_timestamps(start_date, end_date, 10, 'day').map(d => withoutTime(d));
-var nb_bands = sampled_dates.length;
+var start_date = new Date("2020-01-01");
+var end_date = new Date("2021-01-01");
+var sampled_dates = splitDateIntoEqualIntervals(start_date, end_date, 36, 1000*60*60*24).map(d => withoutTime(d));
+
+// Defaults
+var default_band_values = {
+    'no_data': 0,
+    'min_value': 1,  // meant for UINT16 and UINT8 minimal value
+    'interp_failed': 10000
+};
+var default_mask_values = {
+    'no_data': 0,
+    'interp_passed': 1,
+    'interp_raised': 2,
+    'interp_failed': 3
+};
+
+var bands_list = ["B01", "B02", "B03", "B04", "B05", "B06", "B07", "B08", "B8A", "B09", "B11", "B12"];
+var qmask = "QM";
+var input_bands = bands_list.concat(["CLP", "CLM", "dataMask"]);
+var output_bands = bands_list.concat([qmask]);
+var bands_array_size = 9;
+var bands_array_n = Math.ceil(sampled_dates.length / bands_array_size);
+
+var output_setup = [];
+for (var i = 0; i < output_bands.length; i++) {
+    for (var j = 0; j < bands_array_n; j++) {
+        var col_name = output_bands[i]+"_"+(j).toString();
+        var sample_type = col_name.includes(qmask) ? SampleType.UINT8 : SampleType.UINT16;
+        output_setup.push({ id: col_name, bands: bands_array_size, sampleType: sample_type });
+    }
+}
+
 var sh_dates = [];
 var sum_valid = [];
 
@@ -31,82 +60,52 @@ function interval_search(x, arr) {
   return undefined;
 }
 
-function linearInterpolation(x, x0, y0, x1, y1, no_data_value = NaN) {
+function linearInterpolation(x, x0, y0, x1, y1) {
     if (x < x0 || x > x1) {
-        return no_data_value;
+        return default_band_values['interp_failed'];
     }
     var a = (y1 - y0) / (x1 - x0);
     var b = -a * x0 + y0;
     return a * x + b;
 }
 
-function lininterp(x_arr, xp_arr, fp_arr, no_data_value = NaN) {
+function lininterp(x_arr, xp_arr, fp_arr) {
     results = [];
-    data_mask = [];
-    xp_arr_idx = 0;
+    quality_mask = [];
     for (var i = 0; i < x_arr.length; i++) {
         var x = x_arr[i];
-        interval = interval_search(x, xp_arr);
-        if (interval === undefined) {
-            data_mask.push(0);
-            results.push(no_data_value);
+        var interval = interval_search(x, xp_arr);
+        if (typeof interval == "undefined") {
+            quality_mask.push(default_mask_values['interp_failed']);
+            results.push(default_band_values['interp_failed']);
             continue;
         }
-        data_mask.push(1);
-        results.push(
-            linearInterpolation(
-                x,
-                xp_arr[interval],
-                fp_arr[interval],
-                xp_arr[interval + 1],
-                fp_arr[interval + 1],
-                no_data_value
-            )
-        );
+        var interp_val = linearInterpolation(x, xp_arr[interval], fp_arr[interval], xp_arr[interval + 1], fp_arr[interval + 1]);
+        if (interp_val < default_band_values['min_value']) {
+            quality_mask.push(default_mask_values['interp_raised']);
+            results.push(default_band_values['min_value']);
+            continue;
+        }
+        quality_mask.push(default_mask_values['interp_passed']);
+        results.push(interp_val);
     }
-    return [results, data_mask];
+    return [results, quality_mask];
 }
 
-function interpolated_index(index_a, index_b) {
-    // Calculates the index for all bands in array
-    var index_data = [];
-    for (var i = 0; i < index_a.length; i++) {
-        // UINT index returned
-        let ind = (index_a[i] - index_b[i]) / (index_a[i] + index_b[i]);
-        index_data.push(ind * 10000 + 10000);
-    }
-    return index_data
-}
+function splitDateIntoEqualIntervals(startDate, endDate, numberOfIntervals, roundCoefficient){
 
-function increase(original_date, period, period_unit) {
-    date = new Date(original_date)
-    switch (period_unit) {
-        case 'millisecond':
-            return new Date(date.setMilliseconds(date.getMilliseconds() + period));
-        case 'second':
-            return new Date(date.setSeconds(date.getSeconds() + period));
-        case 'minute':
-            return new Date(date.setMinutes(date.getMinutes() + period));
-        case 'hour':
-            return new Date(date.setHours(date.getHours() + period));
-        case 'day':
-            return new Date(date.setDate(date.getDate() + period));
-        case 'month':
-            return new Date(date.setMonth(date.getMonth() + period));
-        default:
-            return undefined
-    }
-}
+    let diff =  endDate.getTime() - startDate.getTime();
+    let intervalLength = diff/numberOfIntervals;
+    let intervals = [];
 
-function sample_timestamps(start, end, period, period_unit) {
-    var cDate = new Date(start);
-    var sampled_dates = []
-    while (cDate < end) {
-        sampled_dates.push(cDate);
-        cDate = increase(cDate, period, period_unit);
+    for(let i = 0; i < numberOfIntervals; i++) {
+        let ndate = new Date(startDate.getTime()+i*intervalLength);
+        ndate = new Date(Math.round(ndate.getTime() / roundCoefficient) * roundCoefficient);
+        ndate = new Date(ndate.getTime() + ndate.getTimezoneOffset() * 60000);
+      intervals.push(ndate);
     }
-    return sampled_dates;
-}
+    return intervals;
+   }
 
 function is_valid(smp) {
     // Check if the sample is valid (i.e. contains no clouds or snow)
@@ -137,51 +136,44 @@ function withoutTime(intime) {
     return intime;
 }
 
-function fillValues(vals_dict, sample) {
-    for (var band in vals_dict) {
-        vals_dict[band].push(sample[band]);
-    }
-}
-
 // Sentinel Hub functions
 function setup() {
     // Setup input/output parameters
     return {
         input: [{
-            bands: ["B02", "B03", "B04", "B08", "B11", "B12", "CLP", "CLM", "dataMask"],
+            bands: input_bands,
             units: "DN"
         }],
-        output: [
-            { id: "B02", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "B03", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "B04", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "B08", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "B11", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "B12", bands: nb_bands, sampleType: SampleType.UINT16 },
-            { id: "data_mask", bands: nb_bands, sampleType: SampleType.UINT8 }
-        ],
+        output: output_setup,
         mosaicking: "ORBIT"
     }
 }
 
 // Evaluate pixels in the bands
 function evaluatePixel(samples, scenes) {
-    
+
     // Initialise arrays
-    var valid_indices = []
-    var valid_dates = []
-    // Loop over samples.
-    for (var i = 0; i < samples.length; i++){
+    var valid_indices = [];
+    var valid_dates = [];
+
+    // Loop over samples, get valid dates
+    var always_no_data = true;
+    for (var i = 0; i < samples.length; i++) {
+        if (samples[i].dataMask != 0) {
+            always_no_data = false;
+        }
+
         if (is_valid(samples[i])) {
             valid_indices.push(i);
             valid_dates.push(withoutTime(new Date(scenes[i].date)));
         }
     }
-    
-    var clp_thr = 0.0;
-    while (valid_indices.length < 2 || valid_dates[0] > sampled_dates[0] || valid_dates[valid_dates.length-1] < sampled_dates[sampled_dates.length-1]) {
-        var valid_dates = [];
-        var valid_indices = [];
+
+    // Force at least 2 valid dates and valid dates before and after first and last sampled dates
+    var clp_thr = 0.3;
+    while (valid_indices.length < 2 || valid_dates[0] > sampled_dates[0] || valid_dates[valid_dates.length - 1] < sampled_dates[sampled_dates.length - 1]) {
+        valid_dates = [];
+        valid_indices = [];
         for (var i = 0; i < samples.length; i++) {
             if (is_valid_thr(samples[i], clp_thr)) {
                 valid_indices.push(i);
@@ -191,28 +183,55 @@ function evaluatePixel(samples, scenes) {
         clp_thr += 0.05;
         if (clp_thr > 1) { break; }
     }
-    
+
     // Fill data
-    var valid_samples = { 'B02': [], 'B03': [], 'B04': [], 'B08': [], 'B11': [], 'B12': [] };
-    for (var i of valid_indices) { fillValues(valid_samples, samples[i]); }
-    
-    // Calculate indices and return optimised for UINT16 format (will need unpacking)
-    no_data_value = 10000;
-    var [b02_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B02'], no_data_value);
-    var [b03_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B03'], no_data_value);
-    var [b04_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B04'], no_data_value);
-    var [b08_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B08'], no_data_value);
-    var [b11_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B11'], no_data_value);
-    var [b12_interpolated, dm] = lininterp(sampled_dates, valid_dates, valid_samples['B12'], no_data_value);
-    
-    // Return all arrays
-    return {
-        B02: b02_interpolated,
-        B03: b03_interpolated,
-        B04: b04_interpolated,
-        B08: b08_interpolated,
-        B11: b11_interpolated,
-        B12: b12_interpolated,
-        data_mask: dm
+    var valid_samples = {};
+    for (var i = 0; i < output_bands.length - 1; i++) {
+        var band = output_bands[i];
+        valid_samples[band] = [];
+        for (var j = 0; j < valid_indices.length; j++) {
+            var v_id = valid_indices[j];
+            valid_samples[band].push(samples[v_id][band]);
+        }
     }
+
+    // Interpolate
+    var interpolated_output = {};
+    for (var i = 0; i < output_bands.length - 1; i++) {
+        var band = output_bands[i];
+        var [band_data, mask_data] = lininterp(sampled_dates, valid_dates, valid_samples[band]);
+        if (i > 0) {
+            var old_mask_data = interpolated_output[qmask];
+            for (var j = 0; j < old_mask_data.length; j++) {
+                if (old_mask_data[j] > mask_data[j]) {
+                    mask_data[j] = old_mask_data[j];
+                }
+            }
+        }
+        interpolated_output[band] = band_data;
+        interpolated_output[qmask] = mask_data;
+    }
+
+    // Reset values in qm if no data available
+    if (always_no_data) {
+        for (var i = 0; i < output_bands.length - 1; i++) {
+            var band = output_bands[i];
+            interpolated_output[band] = new Array(interpolated_output[band].length).fill(default_band_values['no_data']);
+        }
+        interpolated_output[qmask] = new Array(interpolated_output[qmask].length).fill(default_mask_values['no_data']);
+    }
+
+    // Return all arrays
+    var chunked_output = {}
+    for (var key in interpolated_output) {
+        for (var j = 0; j < interpolated_output[key].length; j++) {
+            col_name = key+"_"+parseInt(j / bands_array_size).toString();
+            if (!(col_name in chunked_output)) {
+                chunked_output[col_name] = [];
+            }
+            chunked_output[col_name].push(interpolated_output[key][j]);
+        }
+    }
+
+    return chunked_output;
 }

@@ -17,7 +17,7 @@
 - Peter Gabrovšek
   
 ## Evaluate and visualize  
- - [EO Browser](https://sentinelshare.page.link/D1ed)
+ - [EO Browser](https://sentinelshare.page.link/2KDE)
   
 ## General description of the script  
   

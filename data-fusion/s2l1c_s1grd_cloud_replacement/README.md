@@ -8,7 +8,7 @@
 </div>
 
 ## Evaluate and visualize
- - [EO Browser](https://sentinelshare.page.link/KoE7)
+ - [EO Browser](https://sentinelshare.page.link/KkvZ)
 
 ## General description
 The script uses cloud masks to identify cloudy sentinel-2 areas and replace the data with terrain visualisation based on Sentinel-1 data. 

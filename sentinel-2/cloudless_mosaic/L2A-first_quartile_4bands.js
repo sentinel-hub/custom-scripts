@@ -8,8 +8,7 @@ function setup() {
         "B02",
         "B08",
         "SCL"
-      ],
-      units: "DN"
+      ]
     }],
     output: {
       bands: 4,
@@ -68,6 +67,7 @@ function evaluatePixel(samples, scenes) {
   
   for (var i = 0; i < samples.length; i++) {
     var sample = samples[i];
+
     if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0 && sample.B08 > 0) {
       var isValid = validate(sample);
       
@@ -107,5 +107,8 @@ function evaluatePixel(samples, scenes) {
     bValue = 0;
     nValue = 0;
   }
-  return [rValue, gValue, bValue, nValue]
+  return [rValue * 10000, 
+          gValue * 10000, 
+          bValue * 10000, 
+          nValue * 10000]
 }

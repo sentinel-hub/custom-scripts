@@ -15,9 +15,9 @@ The script does a good job (although not perfect) at separating barren soil from
 
 ## Examples 
 
-### Tamara
+### Temara
 
-Urban Classified script (right) in Tamara, Morocco. This example showcases the usefulness of the script in differentiating bare ground from buildings. 
+Urban Classified script (right) in Temara, Morocco. This example showcases the usefulness of the script in differentiating bare ground from buildings. 
 
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=33.8610&lng=-6.9688&zoom=12&time=2019-08-15&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIE5EV0k9aW5kZXgoQjAzLEIwOCk7IAp2YXIgTkRWST1pbmRleChCMDgsIEIwNCk7CnZhciBCYXJlU29pbD0yLjUgKigoQjExICsgQjA0KS0oQjA4ICsgQjAyKSkvKChCMTEgKyBCMDQpKyhCMDggKyBCMDIpKTsKIAppZiAoTkRXSSA%2BIDAuMikgewogcmV0dXJuIFswLCAwLjUsIDFdCn0KaWYoKEIxMT4wLjgpfHwoTkRWSTwwLjEpKXsKICByZXR1cm5bMSwxLDFdCn0KaWYgKE5EVkk%2BMC4yKXsKICByZXR1cm4gWzAsIDAuMypORFZJLCAwXQp9CmVsc2UgewogcmV0dXJuIFtCYXJlU29pbCwgMC4yLCAwXQp9){:target="_blank"}  
 

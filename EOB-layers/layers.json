@@ -1,0 +1,435 @@
+ [
+  {
+  "sentinel-2-l1c": [
+    {
+      "Title": "True Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/true_color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false_color_infrared/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/swir-rgb/script.js"
+    },
+    {
+      "Title": "False Color Urban",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false-color-urban-rgb/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndmi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndwi/script.js"
+    },
+    {
+      "Title": "NDSI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndsi-visualized/script.js"
+    }
+  ]
+},
+{
+  "sentinel-2-l2a": [
+    {
+      "Title": "True Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/true_color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false_color_infrared/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/swir-rgb/script.js"
+    },
+    {
+      "Title": "False Color Urban",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/false-color-urban-rgb/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndmi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndwi/script.js"
+    },
+    {
+      "Title": "NDSI",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndsi-visualized/script.js"
+    },
+    {
+      "Title": "Scene Classification",
+      "URL": "https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/scene-classification/script.js"
+    }
+  ]
+},
+{
+  "sentinel-1-grd": [
+    {
+      "Title": "SAR urban",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-1/urban_areas/script.js"
+    },
+    {
+      "Title": "Enhanced visualization",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-1/sar_false_color_visualization-2/script.js"
+    }
+  ]
+},
+{
+  "sentinel-3-olci": [
+    {
+      "Title": "True color - enhanced",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-3/enhanced_true_color-2/script.js"
+    },
+    {
+      "Title": "True color - higlight optimized",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-3/true_color_highlight_optimized/script.js"
+    },
+   {
+      "Title": "OTCI",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-3/otci/script.js"
+    },
+    {
+      "Title": "Tristimulus",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel-3/tristimulus/script.js"
+    }
+  ]
+},
+{
+  "sentinel-3-slstr": [
+    {
+      "Title": "False Color based on bands S3, S2, and S1",
+      "URL": "https://custom-scripts.sentinel-hub.com/slstr/false-color-321/script.js"
+    },
+    {
+      "Title": "F1 Brightness Temperature",
+      "URL": "https://custom-scripts.sentinel-hub.com/slstr/f1-brightness-temperature/script.js"
+    }
+  ]
+},
+{
+  "landsat-8 Level 1": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/true-color/script.js"
+    },
+    {
+      "Title": "True color - pansharpened",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/true-color-pansharpened/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndwi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndmi/script.js"
+    },
+    {
+      "Title": "Thermal",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/thermal/script.js"
+    }
+  ]
+},
+{
+  "landsat-8 Level 1": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/true-color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndwi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/ndmi/script.js"
+    },
+    {
+      "Title": "Thermal",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-8/thermal/script.js"
+    }
+  ]
+},
+{
+  "landsat 1-5 MSS": [
+    {
+      "Title": "False Color Near Infrared",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/false-color-nir/script.js"
+    },
+    {
+      "Title": "False Color Ultra Red",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/false-color-ultrared/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndvi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndwi/script.js"
+    }
+  ]
+},
+{
+  "landsat 4-5 TM": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/true-color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndvi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndmi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/ndwi/script.js"
+    },
+    {
+      "Title": "Thermal",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/thermal/script.js"
+    }
+    
+  ]
+},
+{
+  "landsat 7 ETM Level 1": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndvi/script.js"
+    },
+    {
+      "Title": "Moisture Index",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndwi/script.js"
+    }
+  ]
+},
+{
+  "landsat 7 ETM Level 2": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndvi/script.js"
+    },
+    {
+      "Title": "Moisture Index",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/moisture-index/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/ndwi/script.js"
+    },
+    {
+      "Title": "Thermal",
+      "URL": "https://custom-scripts.sentinel-hub.com/landsat-7-etm/thermal/script.js"
+    }
+  ]
+},
+{
+  "MODIS": [
+    {
+      "Title": "True color",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/true-color/script.js"
+    },
+    {
+      "Title": "False color",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/false-color/script.js"
+    },
+    {
+      "Title": "SWIR",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/swir/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndvi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndmi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndwi/script.js"
+    },
+    {
+      "Title": "Salinity Index",
+      "URL": "https://custom-scripts.sentinel-hub.com/modis/salinity-index/script.js"
+    }
+  ]
+},
+{
+  "dem": [
+    {
+      "Title": "Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/dem/dem-color/script.js"
+    },
+    {
+      "Title": "Grayscale",
+      "URL": "https://custom-scripts.sentinel-hub.com/dem/dem-grayscale/script.js"
+    },
+    {
+      "Title": "Sepia",
+      "URL": "https://custom-scripts.sentinel-hub.com/dem/dem-sepia/script.js"
+    }
+  ]
+},
+{
+  "corine-land-cover": [
+    {
+      "Title": "Corine Land Cover",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/corine_land_cover/script.js"
+    }
+  ]
+},
+{
+  "global-land-cover": [
+    {
+      "Title": "Discrete Classification Map",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_land_cover/script.js"
+    }
+  ]
+},
+{
+  "global-surface-water": [
+    {
+      "Title": "Global Surface Water Occurrence",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_occurrence/script.js"
+    },
+   {
+      "Title": "Global Surface Water Occurrence Change Intensity",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_change/script.js"
+    },
+   {
+      "Title": "Global Surface Water Seasonality",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_seasonality/script.js"
+    },
+   {
+      "Title": "Global Surface Water Recurrence",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_recurrence/script.js"
+    },
+   {
+      "Title": "Global Surface Water Transitions",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_transitions/script.js"
+    },
+   {
+      "Title": "Global Surface Water Extent",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/global_surface_water_extent/script.js"
+    }
+  ]
+},
+{
+  "water-bodies": [
+    {
+      "Title": "Water Bodies",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies/script.js"
+    },
+   {
+      "Title": "Water Bodies Occurrence",
+      "URL": "https://custom-scripts.sentinel-hub.com/copernicus_services/water-bodies-occurence/script.js"
+    }
+  ]
+},
+{
+  "sentinel-2-120m-mosaic": [
+    {
+      "Title": "True Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/true-color/script.js"
+    },
+   {
+      "Title": "False Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/false-color/script.js"
+    },
+    {
+      "Title": "Highlight Optimized Natural Color",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/highlight-optimized/script.js"
+    },
+    {
+      "Title": "NDVI",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndvi/script.js"
+    },
+    {
+      "Title": "NDMI",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndmi/script.js"
+    },
+    {
+      "Title": "NDWI",
+      "URL": "https://custom-scripts.sentinel-hub.com/sentinel2-120m-mosaic/ndwi/script.js"
+    }
+  ]
+}
+]

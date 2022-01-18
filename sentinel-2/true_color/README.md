@@ -15,6 +15,16 @@
 
 The true color product maps Sentinel-2 band values B04, B03, and B02 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components.
 
+For Sentinel-2: **BO4, B03, B02**
+
+For [Landsat 4-5 TM](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/true-color/): **B03, B02, B01**
+
+For [Landsat 7 ETM](https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-color/#): **B03, B02, B01**
+
+For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/true-color/): **B04, B03, B02**
+
+For [MODIS](https://custom-scripts.sentinel-hub.com/modis/true-color/): **B01, B04, B03**
+
 ## Description of representative images
 
 True color visualization of Rome, on 8.10.2017.

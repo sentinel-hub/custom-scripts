@@ -1,5 +1,3 @@
-//This is a visualisation script for CORINE Land Cover data
-
 //VERSION=3
 function setup() {
   return {

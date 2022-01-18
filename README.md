@@ -10,6 +10,9 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-3](#sentinel-3)
   - [Sentinel-5P](#sentinel-5P)
   - [Landsat 5 and 7](#landsat-57)
+  - [Landsat 1-5 MSS](#landsat-1-5-mss)
+  - [Landsat 4-5 TM](#landsat-4-5-tm)
+  - [Landsat 7 ETM+](#landsat-7-etm)
   - [Landsat-8](#landsat-8)
   - [MODIS](#modis)
   - [DEM](#dem)
@@ -18,6 +21,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Airbus SPOT](#airbus_spot)
   - [Data fusion](#data-fusion)
   - [Copernicus services](#copernicus_services)
+  - [Sentinel-2 L2A 120m Mosaic](#sentinel2-120m-mosaic)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -81,12 +85,13 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Simple RGB composites](sentinel-2/composites)
 
 #### Popular RGB composites
- - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
- - [True color](sentinel-2/true_color) simplistic true color image from red, green and blue bands.
+ - [True color](sentinel-2/true_color) - Simplistic true color image from red, green and blue bands.
+ - [False color infrared](sentinel-2/false_color_infrared) - False Color Infrared RGB Composite
+ - [SWIR](sentinel-2/swir-rgb) - Short Wave Infrared RGB Composite
+ - [False Color Urban](sentinel-2/false-color-urban-rgb) - False Color Urban RGB Composite
  - [Wildfire visualization](sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
 
 #### Remote sensing indices
- - [False color infrared](sentinel-2/false_color_infrared)
  - [NDVI](sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [collection](sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
@@ -124,6 +129,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Highlight Optimized Natural Color](sentinel-2/highlight_optimized_natural_color)
  - [Vegetation condition index ](sentinel-2/vegetation_condition_index)
  - [Vegetation productivity indicator](sentinel-2/vegetation_productivity_indicator)
+ - [Oil Spill Index](sentinel-2/oil-spill-index)
 
 #### Cloud detection algorithms
  - [Cohen-Braaten-Yang cloud detection](sentinel-2/cby_cloud_detection/)
@@ -136,6 +142,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Snow classifier](sentinel-2/snow_classifier/)
  - [Monthly snow report](sentinel-2/monthly_snow_report)
  - [Snow cover change detection](sentinel-2/snow_cover_change)
+ - [NDSI Visualized](sentinel-2/ndsi-visualized) - Visualized normalized difference snow index 
 
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](sentinel-2/deep_moist_convection)
@@ -147,12 +154,14 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Active Fire Detection](sentinel-2/active_fire_detection)
  - [Deep BAIS2 (Burned Area Index for Sentinel 2)](sentinel-2/deep_bais2)
  - [Landslide detection for rapid Mapping](sentinel-2/landslide_detection_rapid_mapping)
+ - [Oil Spill Index](sentinel-2/oil-spill-index)
 
 #### Land use/cover classification algorithms
  - [False Color Composite](sentinel-2/false_color_composite)
  - [Barren soil](sentinel-2/barren_soil)
  - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
  - [Bare soil detector](sentinel-2/bare_soil_detector)
+ - [Scene Classification](sentinel-2/scene-classification)
 
 #### Vegetation algorithms
 
@@ -185,7 +194,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Water Bodies Mapping - WBM](sentinel-2/water_bodies_mapping-wbm)
  - [Interpolated time-series](sentinel-2/interpolated_time_series)
 
-#### Other available scripts and indices
+#### Other scripts 
+ - [Natural color](sentinel-2/natural_color) product computed correctly to match the color perceived by the human eye.
  - [Selective Enhancement based on Indices](sentinel-2/selective_enhancement_based_on_indices)
  - [Homage to Mondrian](sentinel-2/homage_to_mondrian) - artistic script
  - [Index visualisation](sentinel-2/index_visualization) - universal script for visualisation of indices
@@ -193,6 +203,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [PUCK](sentinel-2/puck) - Perceptually-Uniform Color Map Kit
  - [MixLAI](sentinel-2/mixlai) - Mix Leaf Area Index
  - [Detection of evapotranspiration levels](sentinel-2/evapotranspiration_levels)
+ - [Aesthetic Neon](sentinel-2/aesthetic-neon) - Aesthetic visualization for urban and dry (desert) areas
+ - [Total Ozone Column over Antarctica snow](sentinel-2/ozone_column_over_snow)
 
 #### Scripts including machine learning techniques (eo-learn)
 
@@ -225,31 +237,60 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 ### Sentinel-3 SLSTR
 
 - [Active Fire Detection](slstr/active_fire_points_detection)
+- [False color composite](slstr/false-color-321)
+- [F1 brightness temperature](slstr/f1-brightness-temperature)
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
 Sentinel-5P provides atmospheric measurements, relating to air quality, climate forcing, ozone and UV radiation with high spatio-temporal resolution. Its data is used for monitoring of concentrations of carbon monoxide (CO), nitrogen dioxide (NO2) and ozone (O3) in air as well as for monitoring of UV aerosol index (AER_AI) and different geophysical parameters of clouds (CLOUD). EO Browser serves level 2 geophysical products. The TROPOspheric Monitoring Instrument (TROPOMI) on board of the satellite operates in the ultraviolet to shortwave infrared range with 7 different spectral bands: UV-1 (270-300nm), UV-2 (300-370nm), VIS (370-500nm), NIR-1 (685-710nm), NIR-2 (755-773nm), SWIR-1 (1590-1675nm) and SWIR-3 (2305-2385nm). Its spatial resolution is below 8km for wavelengths above 300nm and below 50km for wavelength below 300nm. It covers almost the whole globe (95 % coverage for latitudes in the interval [-7°, 7°]).
 
 #### Available scripts
+
+**Pollutants** 
+
  - [Nitrogen Dioxide tropospheric column](sentinel-5p/nitrogen_dioxide_tropospheric_column)
+ - [Carbon monoxide - CO](sentinel-5p/carbon-monoxide)
+ - [Methane - NH4](sentinel-5p/methane)
+ - [Sulphur Dioxide - SO2](sentinel-5p/sulphur-dioxide)
+ - [Ozone - O3](sentinel-5p/ozone)
+ - [Formaldehyde - HCHO](sentinel-5p/formaldehyde)
+ - [Nitrogen Dioxide - NO2](sentinel-5p/nitrogen-dioxide)
+ - [Aerosol 340/380](sentinel-5p/aer-ai-340-380)
+ - [Aerosol 354/388](sentinel-5p/aer-ai-354-388)
+ 
+ **Cloud Products**
+ 
+ - [Cloud Top Height](sentinel-5p/cloud-top-height)
+ - [Cloud Base Height](sentinel-5p/cloud-base-height)
+ - [Cloud Top Pressure](sentinel-5p/cloud-top-pressure)
+ - [Cloud Base Pressure](sentinel-5p/cloud-base-pressure)
+ - [Cloud Optical Thickness](sentinel-5p/cloud-optical-thickness)
+ - [Cloud Effective Radiometric Fraction](sentinel-5p/cloud-radiometric-fraction)
 
 ## <a name="landsat-8"></a>Landsat 8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
 
  - [Landsat 8 bands](landsat-8/bands)
  - [Simple RGB composites](landsat-8/composites)
+ - [True Color](landsat-8/true-color)
+ - [False Color](landsat-8/false-color)
+ - [SWIR](landsat-8/swir)
 
 #### Remote sensing indices
   - [collection](landsat-8/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
   - [Build-up index](landsat-8/built_up_index)
   - [NDVI](landsat-8/ndvi)
+  - [NDMI](landsat-8/ndmi)
+  - [NDWI](landsat-8/ndwi)
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
   - [Water In Wetlands Index](landsat-8/wiw_L8_script)
   - [Clouds Segmentation](landsat-8/clouds_segmentation)
-
-## <a name="landsat-57"></a>Landsat 5 and 7
+  - [Pansharpened true color](landsat-8/true-color-pansharpened)
+  - [Thermal visualization](landsat-8/thermal)
+  
+## <a name="landsat-57"></a>Landsat 5 and 7 ESA Archive
 
 Landsat 7 and the retired Landsat 5 orbit's are sun-synchronous, with near-polar orbits, flying at an altitude of 705 km (438 mi). Landsat 5 long outlived its original three-year design life. Developed by NASA and launched in 1984, Landsat 5 has orbited the planet over 150,000 times while transmitting over 2.5 million images land surface images around the world. The Landsat 7 satellite still orbits the the Earth in a sun-synchronous, near-polar orbit, at an altitude of 705 km (438 mi). The satellites are multispectra, providing visible, near infrared, mid infrared and thermal bands.
 
@@ -258,13 +299,53 @@ For more on Landsat 5, including its available bands, read [here](https://www.us
 - [Landsat 5 and 7 bands](Landsat-57/bands)
 - [Simple RGB composites](Landsat-57/composites)
 
+## <a name="landsat-1-5-mss"></a>Landsat 1-5 MSS
+
+Landsat 1-5 MSS (Multispectral Scanner System) collection includes archived data from Landsat missions 1 through 5. It has 4 available bands - green, red and two NIR bands, all in 60 m resolution. Data is available globally since 1972. Learn more about the collection [here](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-1-5-multispectral-scanner-collection?qt-science_center_objects=0#qt-science_center_objects).
+
+- [False Color NIR Composite](landsat-1-5-mss/false-color-nir)
+- [False Color Ultra Red Composite](landsat-1-5-mss/false-color-ultrared)
+- [NDVI](landsat-1-5-mss/ndvi)
+- [NDWI](landsat-1-5-mss/ndwi)
+
+## <a name="landsat-4-5-tm"></a>Landsat 4-5 TM
+
+Landsat Thematic Mapper (TM) sensor was carried onboard Landsats 4 and 5. The collection provides 6 spectral bands and 1 thermal infrared band in 120 m resolution, resampled to 30 meters. Data is archived, available globally from July 1987 - December 1993 for Landsat 4 and from March 1984 - May 2012 for Landsat 5. Top of the atmosphere level-1, and surface reflectance level-2 products are provided. The collection is useful for monitoring of vegetation, ice and water resources, change detection and the creation of land use - land cover maps. Learn more about the collection [here](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-4-5-thematic-mapper-collection-2?qt-science_center_objects=0#qt-science_center_objects). 
+
+- [True Color](landsat-4-5-tm/true-color) 
+- [False Color](landsat-4-5-tm/false-color) 
+- [SWIR](landsat-4-5-tm/swir) 
+- [NDVI](landsat-4-5-tm/ndvi) 
+- [NDMI](landsat-4-5-tm/ndmi)
+- [NDWI](landsat-4-5-tm/ndwi) 
+- [Thermal](landsat-4-5-tm/thermal) 
+
+## <a name="landsat-7-etm"></a>Landsat 7 ETM+
+
+Landsat Enhanced Thematic Mapper + (ETM+) is carried on top of Landsat 7 satellite. There are 8 optical and 1 thermal infrared bands available in 30 meter resolution (with panchromatic band in 15 meter resolution). Global data is available since April 1999, with a revisit time of 16 days. Top of the atmosphere level-1, and surface reflectance level-2 products are provided. The collection is useful for monitoring of vegetation, ice and water resources, change detection and the creation of land use - land cover maps. Note that there are data gaps for all images acquired since 2003-05-30 due to sensor failure. Learn more about the collection [here](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con).
+
+- [True color composite](landsat-7-etm/true-color)
+- [False Color Composite](landsat-7-etm/false-color)
+- [SWIR composite](landsat-7-etm/swir)
+- [NDVI](landsat-7-etm/ndvi)
+- [NDWI](landsat-7-etm/ndwi)
+- [Moisture Index NDMI](landsat-7-etm/moisture-index)
+- [Thermal visualization](landsat-7-etm/thermal)
+
 ## <a name="modis"></a>MODIS
 The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on Sentinel Hub is hosted at Amazon Web Services (AWS). Dataset is updated daily and provides the 500 meter Nadir Bidirectional reflectance distribution function Adjusted Reflectance (NBAR) data of MODIS "land" bands 1-7: *B01*, *B02*, *B03*, *B04*, *B05*, *B06* and *B07*.
 
   - [MODIS bands](modis/bands)
+  - [True Color](modis/true-color)
+  - [False Color](modis/false-color)
+  - [SWIR](modis/swir)
 
 #### Remote sensing indices
   - [collection](modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+  - [NDVI](modis/ndvi)
+  - [NDMI](modis/ndmi)
+  - [NDWI](modis/ndwi)
+  - [Salinity Index](modis/salinity-index)
 
 ## <a name="dem"></a>DEM
 
@@ -274,6 +355,7 @@ DEM (digital elevation model) is a 3D representation of the terrain's surface cr
   - [DEM grayscale visualization](dem/dem-grayscale)
   - [DEM sepia visualization](dem/dem-sepia)
   - [DEM contour lines](dem/contour-lines)
+  - [DEM difference visualization](dem/dem-difference)
 
 ## <a name="planet_scope"></a>PlanetScope (Commercial)
 
@@ -294,6 +376,7 @@ The spectral bands of PlanetScope data are the following:
  - [NDVI](planet_scope/ndvi)
  - [NDWI](planet_scope/ndwi)
  - [Green City](planet_scope/green_city)
+ - [UDM2 Cloud/Snow Classification](planet_scope/cloud_classification)
 
 ## <a name="airbus_pleiades"></a>Airbus Pleiades (Commercial)
 
@@ -362,12 +445,145 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
+ - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](data-fusion/historic-landsat-changes)
+ - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](data-fusion/sand-oriented_land_cover_classification_s1_s2)
 
 ## <a name="copernicus_services"></a>Copernicus services
 
-### CORINE Land Cover
+### CORINE Land Cover  
 
+In 1985 the 'Coordination of Information on the Environment' (CORINE) programme was initiated by the European Commission. It aimed at collecting environmental information on high priority topics for the European Union (air, water, soil, land cover, coastal erosion, biotopes, etc.). Since 1994, the established databases and programmes are managed by the [European Environment Agency (EEA)](https://www.eea.europa.eu/). The [CORINE Land Cover (CLC) inventory](https://land.copernicus.eu/pan-european/corine-land-cover) is a vector-based dataset that consists of 44 land cover and land use classes. There are altogether 5 mapping inventories implemented since 1986, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018), 4 CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018) and 4 CLC Accounting  Layers for 2000, 2006, 201, 2018.  
+[CLC Accounting Layers](https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers) are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.  
+CORINE Land Cover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/corine/).
+
+#### Available scripts
 - [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
+- [CORINE Land Cover Accounting Layers visualisation script](copernicus_services/corine_land_cover_accounting_layer)
+
+### Global Human Settlements Layer
+
+The Global Human Settlement (GHS) framework produces global maps of built-up, population density and settlements to monitor human presence on Earth over time. The data are managed by the Joint Research Centre (JRC) and the DG for Regional and Urban Policy (DG REGIO) of the European Commission, together with the international partnership GEO Human Planet Initiative of the GEO Human Planet Initiative.
+
+#### Available scripts
+- [GHS-Built-S2 visualisation script](copernicus_services\global-human-settlement-layer-ghs-built-s2)
+
+### Global Land Cover
+
+Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc). The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. The  Global Land Cover data contains one main _land cover discrete classification map_ and several other additional layers. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf).
+
+Global Land Cover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-land-cover/)
+
+#### Available scripts
+
+- [Global Land Cover discrete classification map visualisation script](copernicus_services/global_land_cover)
+
+### Global Surface Water
+
+The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
+
+1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
+2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
+3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
+4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
+5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
+6. Extent - *Maximum extent of surface water bodies in the entire time range.*
+
+Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
+
+Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
+
+#### Available scripts
+
+- [Global Surface Water Occurrence visualisation script](copernicus_services/global_surface_water_occurrence)
+- [Global Surface Water Occurrence Change Intensity visualisation script](copernicus_services/global_surface_water_change)
+- [Global Surface Water Seasonality visualisation script](copernicus_services/global_surface_water_seasonality)
+- [Global Surface Water Recurrence visualisation script](copernicus_services/global_surface_water_recurrence)
+- [Global Surface Water Transitions visualisation script](copernicus_services/global_surface_water_transitions)
+- [Global Surface Water Extent visualisation script](copernicus_services/global_surface_water_extent)
+
+### Water Bodies 
+The Global  Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The  product available here is the  [Water Bodies  100m Version 1](https://land.copernicus.eu/global/products/wb) collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution. The Water Bodies product contains one main water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies  detected using the Modified Normalized Difference Water Index [(MNDWI)](https://en.wikipedia.org/wiki/Normalized_difference_water_index) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence. More information about the data can be obtained from the [Water Bodies product](https://land.copernicus.eu/global/products/wb) page.
+
+Water Bodies 100m data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/water-bodies/)
+
+#### Available scripts
+- [Water Bodies visualisation script](copernicus_services/water-bodies)
+- [Water Bodies Occurrence visualisation script](copernicus_services/water-bodies-occurence)  
+
+### Vegetation Indices, daily
+Vegetation Indices (VI) product is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
+The product is comprised of 4 raw Vegetation Indices; (1) Normalized Difference Vegetation Index (NDVI), (2) Leaf Area Index (LAI), 
+(3) Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) and (4) Plant Phenology Index (PPI) generated near real-time (NRT) from Sentinel-2 satellite observations. 
+The raw Vegetation Indices are provided on a daily basis at 10m resolution from October 2016 onwards. Therefore VI products are available over the EEA39 region for the respective observation day 
+based on 5-day revisit period of Sentinel-2. The VIs are accompanied by  a related QFLAG2 band that flags clouds, shadows, snow, open water and other areas where the VI retrieval is less reliable. 
+More information about raw vegetation indices is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/)  
+Vegetation Indices is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
+
+- [LAI visualisation script](copernicus_services/vi-lai)
+- [PPI visualisation script](copernicus_services/vi-ppi)
+- [NDVI visualisation script](copernicus_services/vi-ndvi)
+- [FAPAR visualisation script](copernicus_services/vi-fapar)
+
+### Seasonal Trajectories, 10-daily
+Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution . 
+It is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
+The Seasonal Trajectories PPI is derived through fitting a smoothing and gap filling function to the yearly time-series raw PPI values generated from Sentinel-2 satellite observations. 
+In addition to the PPI band, a  QFLAG band  indicating the quality of the smoothing process is included. 
+The Seasonal Trajectories  provide the vegetation status for each pixel on a regular 10-day time step from January 1 2017 onwards over the  EEA39 region. 
+More information about ST product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)  
+Seasonal Trajectories is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).  
+
+#### Available scripts
+- [PPI visualisation script](copernicus_services/st-ppi)
+
+### Vegetation Phenology and Productivity Parameters, yearly    
+Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS), 
+pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
+The VPP product is comprised of 13 parameters that describe specific stages of the seasonal vegetation growth cycle. 
+These parameters are extracted from Seasonal Trajectories of the [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) 
+derived from Sentinel-2 satellite observations at 10m resolution. Since growing seasons can traverse years, VPP parameters are provided for a maximum of two growing seasons per year. 
+The  parameters include (1) start of season (date, PPI value and slope), (2) end of season (date, PPI value and slope), (3)length of season, (4) minimum of season, 
+(4) peak of the season (date and PPI value), (5) amplitude, (6) small integrated value and (7) large integrated value. 
+VPP parameters are generated over the EEA39 region on a yearly frequency from January 1 2017 onwards. 
+Among other applications, the high-resolution phenology data provides a detailed assessment of the impacts of human or climate change on the ecosystem through monitoring of vegetation responses to disturbances, e.g. droughts, storms, insect infestations, and to human influence from global to local levels. 
+More information about VPP product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)  
+Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
+
+
+#### Available scripts
+- [AMPL visualisation script](copernicus_services/vpp-amplitude-ampl)
+- [MAXV visualisation script](copernicus_services/vpp-season-maximum-value-maxv)
+- [MINV visualisation script](copernicus_services/vpp-season-minimum-value-minv)
+- [SOSV visualisation script](copernicus_services/vpp-start-of-season-value-sosv)
+- [EOSV visualisation script](copernicus_services/vpp-end-of-season-value-eosv)
+- [RSLOPE visualisation script](copernicus_services/vpp-slope-of-senescent-period-rslope)
+- [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
+- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
+- [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
+
+### WorldCover
+  [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
+  In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural 
+  characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. 
+  WorldCover has been produced for 2020 with a global coverage. It provides valuable information for applications such as biodiversity, food security, carbon assessment and climate modelling.  
+  WorldCover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/worldcover/).
+
+#### Available scripts
+- [WorldCover visualisation script](copernicus_services/worldcover)
+
+
+## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
+
+Sentinel-2 L2A 120m mosaic is a derived product, offering a cloudless mosaic of the whole world for all 12 Sentinel-2 bands. It is thus possible to create Sentinel-2 visualizations on a global level. The resolution of the collection is 120 meters. The product contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As clouds can be missed and as there are some parts of the world which have lengthy cloudy periods, clouds might be remaining in some parts. The collection is available for 2019 (with 6 Sentinel-2 bands) and annually since 2020 (all 12 Sentinel-2 bands). The modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/).
+
+Find related resources and more information about the collection [here](https://collections.sentinel-hub.com/sentinel-s2-l2a-mosaic-120/).
+
+- [True Color](sentinel2-120m-mosaic/true-color)
+- [False Color](sentinel2-120m-mosaic/false-color)
+- [Highlight Optimized Natural Color](sentinel2-120m-mosaic/highlight-optimized)
+- [NDVI](sentinel2-120m-mosaic/ndvi)
+- [NDMI](sentinel2-120m-mosaic/ndmi)
+- [NDWI](sentinel2-120m-mosaic/ndwi)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.
