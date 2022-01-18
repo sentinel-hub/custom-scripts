@@ -25,12 +25,12 @@ Water surface artefacs near Baniyas refinery, Syria.
 There has been an ongoing man-made disaster with petroleum distilates spilling into the mediterraen and flowig as far as Cyprus/
 
 
-![Oils spill outside Baniyas refinery, Syria](fig/baniyas.jpg)
+![Oils spill outside Baniyas refinery, Syria](figs/baniyas.jpg)
 
 ## References
 Based on: 
-[source 1](https://twitter.com/sentinel_hub/status/922813457145221121){:target="_blank"}, 
-[source 2](https://twitter.com/sentinel_hub/status/1020755996359225344){:target="_blank"}
+[source 1](https://twitter.com/HarelDan/status/1483415093014634499){:target="_blank"}, 
+
 
 
 
