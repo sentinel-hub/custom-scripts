@@ -1,5 +1,7 @@
 //VERSION=3
 
+// Author: Matic Pečovnik, Sinergise
+
 function setup() {
     return {
         input: [
