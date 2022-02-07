@@ -162,6 +162,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script](sentinel-2/land_use_with_linear_discriminant_analysis)
  - [Bare soil detector](sentinel-2/bare_soil_detector)
  - [Scene Classification](sentinel-2/scene-classification)
+ - [Built-up Area Classification](sentinel-2/built_up_classifier_mask)
 
 #### Vegetation algorithms
 
