@@ -9,7 +9,7 @@
 
 ## Evaluate and visualize
 
- - [EO Browser](https://sentinelshare.page.link/gjMg){:target="_blank"}
+ - [EO Browser](https://sentinelshare.page.link/RZHb){:target="_blank"}
 
 ## General description
 
