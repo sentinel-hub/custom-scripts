@@ -20,7 +20,7 @@ function evaluatePixel(samples) {
     // Saturated or defective pixel - red 
     case 1: return RGBToColor (255, 0, 0,samples.dataMask);
 
-    // Topographic casted shadows ("Dark features / Shadows" for data before 2022-01-25) - very dark grey
+    // Topographic casted shadows ("Dark features/Shadows" for data before 2022-01-25) - very dark grey
     case 2: return RGBToColor (47,  47,  47,samples.dataMask);
         
     // Cloud shadows - dark brown
