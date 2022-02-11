@@ -5,11 +5,11 @@ var band="B10";
 
 // for analysis of one image (OE Browser), choose option=0. In case of MULTI-TEMPORAL analyis, option values are following:
 // 0 - outputs average LST in selected timeline (% of cloud coverage should be low, e.g. < 10%)
-// 1�- outputs maximum LST in selected timeline (% of cloud coverage can be high)
+// 1 - outputs maximum LST in selected timeline (% of cloud coverage can be high)
 // 2 - outputs standard deviation LST in selected timeline; minTemp and highTemp are overwritten with values 0 and 10 (% of cloud coverage should be low, e.g. < 5%)
 var option = 0;
 
-// minimum and maximum values for output colour chart red to white for temperature in �C. Option 2 overwrites this selection!
+// minimum and maximum values for output colour chart red to white for temperature in °C. Option 2 overwrites this selection!
 var minC = 0;
 var maxC = 50;
 
