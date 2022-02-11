@@ -39,7 +39,7 @@ Scene Classification of Rome.
     <td style="background-color: #ff0000;"></td>
   </tr>
   <tr>
-    <td>Topographic casted shadows (_Dark features / Shadows_ for data before 2022-01-25)</td>
+    <td>Topographic casted shadows (called "Dark features/Shadows" for data before 2022-01-25)</td>
     <td>#2f2f2f</td>
     <td style="background-color: #2f2f2f;"></td>
   </tr>
