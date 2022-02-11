@@ -3,6 +3,14 @@
   Sentinel1-AWS-IW-VVVH
   Author: Monja Sebela
 */
+//VERSION=3
+function setup() {
+  return {
+    input: ["VV", "VH", "dataMask"],
+    output: { bands: 4 }
+  }
+}
 
-
-return [5.5 * VH > 0.5, VV, VH * 8];
+function evaluatePixel(sample) {
+  return [5.5 * sample.VH > 0.5, sample.VV, sample.VH * 8, sample.dataMask]
+} 
