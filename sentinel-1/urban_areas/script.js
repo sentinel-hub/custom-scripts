@@ -1,4 +1,3 @@
-      
 /*URBAN AREAS
   Sentinel1-AWS-IW-VVVH
   Author: Monja Sebela
