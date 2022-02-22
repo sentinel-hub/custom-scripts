@@ -472,30 +472,6 @@ Global Land Cover data is available in Sentinel Hub, read more in our [Public Co
 
 - [Global Land Cover discrete classification map visualisation script](copernicus_services/global_land_cover)
 
-### Global Surface Water
-
-The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
-
-1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
-2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
-3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
-4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
-5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
-6. Extent - *Maximum extent of surface water bodies in the entire time range.*
-
-Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
-
-Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
-
-#### Available scripts
-
-- [Global Surface Water Occurrence visualisation script](copernicus_services/global_surface_water_occurrence)
-- [Global Surface Water Occurrence Change Intensity visualisation script](copernicus_services/global_surface_water_change)
-- [Global Surface Water Seasonality visualisation script](copernicus_services/global_surface_water_seasonality)
-- [Global Surface Water Recurrence visualisation script](copernicus_services/global_surface_water_recurrence)
-- [Global Surface Water Transitions visualisation script](copernicus_services/global_surface_water_transitions)
-- [Global Surface Water Extent visualisation script](copernicus_services/global_surface_water_extent)
-
 ### Water Bodies 
 The Global  Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The  product available here is the  [Water Bodies  100m Version 1](https://land.copernicus.eu/global/products/wb) collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution. The Water Bodies product contains one main water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies  detected using the Modified Normalized Difference Water Index [(MNDWI)](https://en.wikipedia.org/wiki/Normalized_difference_water_index) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence. More information about the data can be obtained from the [Water Bodies product](https://land.copernicus.eu/global/products/wb) page.
 
@@ -590,6 +566,30 @@ The Global Human Settlement (GHS) framework produces global maps of built-up, po
 
 #### Available scripts
 - [GHS-Built-S2 visualisation script](other_collections\global-human-settlement-layer-ghs-built-s2)
+
+### Global Surface Water
+
+The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
+
+1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
+2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
+3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
+4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
+5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
+6. Extent - *Maximum extent of surface water bodies in the entire time range.*
+
+Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
+
+Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
+
+#### Available scripts
+
+- [Global Surface Water Occurrence visualisation script](other_collections/global_surface_water_occurrence)
+- [Global Surface Water Occurrence Change Intensity visualisation script](other_collections/global_surface_water_change)
+- [Global Surface Water Seasonality visualisation script](other_collections/global_surface_water_seasonality)
+- [Global Surface Water Recurrence visualisation script](other_collections/global_surface_water_recurrence)
+- [Global Surface Water Transitions visualisation script](other_collections/global_surface_water_transitions)
+- [Global Surface Water Extent visualisation script](other_collections/global_surface_water_extent)
 
 ### WorldCover
   [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
