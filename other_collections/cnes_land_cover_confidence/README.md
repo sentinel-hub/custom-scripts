@@ -10,7 +10,7 @@
 ## General description of the script
 The script visualises the information on the classifier confidence with values ranging from 1 to 100.
 
-Table 1: Color legend for CNES land cover classification map
+Table 1: Color legend for CNES land cover classifier confidence
 <table>
   <thead>
     <tr>
@@ -41,9 +41,9 @@ Table 1: Color legend for CNES land cover classification map
 
 ![CNES land cover classifier confidence France overview](fig/cnes-classifier-confidence-france-overview.png)
 
-*CNES Land Cover 2020 around Lyon visualised in EO Browser*
+*CNES Land Cover classifier confidence 2020 around Lyon visualised in EO Browser*
 
-![CNES land cover Lyon](fig/cnes-classifier-confidence-lyon.png)
+![CNES land cover classifier confidence Lyon](fig/cnes-classifier-confidence-lyon.png)
 
 ## Resources
 
