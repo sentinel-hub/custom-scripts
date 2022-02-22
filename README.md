@@ -22,6 +22,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Data fusion](#data-fusion)
   - [Copernicus services](#copernicus_services)
   - [Sentinel-2 L2A 120m Mosaic](#sentinel2-120m-mosaic)
+  - [Other collections](#other_collections)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -461,13 +462,6 @@ CORINE Land Cover data is available in Sentinel Hub, read more in our [Public Co
 - [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
 - [CORINE Land Cover Accounting Layers visualisation script](copernicus_services/corine_land_cover_accounting_layer)
 
-### Global Human Settlements Layer
-
-The Global Human Settlement (GHS) framework produces global maps of built-up, population density and settlements to monitor human presence on Earth over time. The data are managed by the Joint Research Centre (JRC) and the DG for Regional and Urban Policy (DG REGIO) of the European Commission, together with the international partnership GEO Human Planet Initiative of the GEO Human Planet Initiative.
-
-#### Available scripts
-- [GHS-Built-S2 visualisation script](copernicus_services\global-human-settlement-layer-ghs-built-s2)
-
 ### Global Land Cover
 
 Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc). The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. The  Global Land Cover data contains one main _land cover discrete classification map_ and several other additional layers. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf).
@@ -477,30 +471,6 @@ Global Land Cover data is available in Sentinel Hub, read more in our [Public Co
 #### Available scripts
 
 - [Global Land Cover discrete classification map visualisation script](copernicus_services/global_land_cover)
-
-### Global Surface Water
-
-The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
-
-1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
-2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
-3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
-4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
-5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
-6. Extent - *Maximum extent of surface water bodies in the entire time range.*
-
-Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
-
-Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
-
-#### Available scripts
-
-- [Global Surface Water Occurrence visualisation script](copernicus_services/global_surface_water_occurrence)
-- [Global Surface Water Occurrence Change Intensity visualisation script](copernicus_services/global_surface_water_change)
-- [Global Surface Water Seasonality visualisation script](copernicus_services/global_surface_water_seasonality)
-- [Global Surface Water Recurrence visualisation script](copernicus_services/global_surface_water_recurrence)
-- [Global Surface Water Transitions visualisation script](copernicus_services/global_surface_water_transitions)
-- [Global Surface Water Extent visualisation script](copernicus_services/global_surface_water_extent)
 
 ### Water Bodies 
 The Global  Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The  product available here is the  [Water Bodies  100m Version 1](https://land.copernicus.eu/global/products/wb) collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution. The Water Bodies product contains one main water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies  detected using the Modified Normalized Difference Water Index [(MNDWI)](https://en.wikipedia.org/wiki/Normalized_difference_water_index) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence. More information about the data can be obtained from the [Water Bodies product](https://land.copernicus.eu/global/products/wb) page.
@@ -562,15 +532,6 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 - [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
 
-### WorldCover
-  [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
-  In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural 
-  characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. 
-  WorldCover has been produced for 2020 with a global coverage. It provides valuable information for applications such as biodiversity, food security, carbon assessment and climate modelling.  
-  WorldCover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/worldcover/).
-
-#### Available scripts
-- [WorldCover visualisation script](copernicus_services/worldcover)
 
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
@@ -585,6 +546,60 @@ Find related resources and more information about the collection [here](https://
 - [NDVI](sentinel2-120m-mosaic/ndvi)
 - [NDMI](sentinel2-120m-mosaic/ndmi)
 - [NDWI](sentinel2-120m-mosaic/ndwi)
+
+
+## <a name="other_collections"></a>Other collections
+
+### CNES Land cover map
+
+The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework. 
+Maps for 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed. 
+
+#### Available scripts
+- [CNES land cover classification visualisation script](other_collections/cnes_land_cover_classification)
+- [CNES land cover classifier confidence visualisation script](other_collections/cnes_land_cover_confidence)
+- [CNES land cover validity visualisation script](other_collections/cnes_land_cover_validity)
+
+### Global Human Settlements Layer
+
+The Global Human Settlement (GHS) framework produces global maps of built-up, population density and settlements to monitor human presence on Earth over time. The data are managed by the Joint Research Centre (JRC) and the DG for Regional and Urban Policy (DG REGIO) of the European Commission, together with the international partnership GEO Human Planet Initiative of the GEO Human Planet Initiative.
+
+#### Available scripts
+- [GHS-Built-S2 visualisation script](other_collections\global-human-settlement-layer-ghs-built-s2)
+
+### Global Surface Water
+
+The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
+
+1. Occurrence - *Intra- and inter-annual frequency of surface water presence in the entire time range.*
+2. Occurrence Change Intensity - *Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2020.*
+3. Seasonality - *Intra-annual distribution of surface water in the selected review year.*
+4. Recurrence - *Inter-annual variability of surface water presence in a defined water period within the entire time range.*
+5. Transitions - *Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the entire time period.*
+6. Extent - *Maximum extent of surface water bodies in the entire time range.*
+
+Global Surface Water data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/global-surface-water/).
+
+Please check the official [Global Surface Water website](https://global-surface-water.appspot.com/) for more details. Detailed information on the processing methodology for the included layers can be found in the [Data Users Guide](https://global-surface-water.appspot.com/download) and [Pekel et al. (2016)](https://www.nature.com/articles/nature20584)  as the associated scientific publication.
+
+#### Available scripts
+
+- [Global Surface Water Occurrence visualisation script](other_collections/global_surface_water_occurrence)
+- [Global Surface Water Occurrence Change Intensity visualisation script](other_collections/global_surface_water_change)
+- [Global Surface Water Seasonality visualisation script](other_collections/global_surface_water_seasonality)
+- [Global Surface Water Recurrence visualisation script](other_collections/global_surface_water_recurrence)
+- [Global Surface Water Transitions visualisation script](other_collections/global_surface_water_transitions)
+- [Global Surface Water Extent visualisation script](other_collections/global_surface_water_extent)
+
+### WorldCover
+  [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
+  In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural 
+  characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. 
+  WorldCover has been produced for 2020 with a global coverage. It provides valuable information for applications such as biodiversity, food security, carbon assessment and climate modelling.  
+  WorldCover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/worldcover/).
+
+#### Available scripts
+- [WorldCover visualisation script](other_collections/worldcover)
 
 # <a name="howto"></a>Adding new custom scripts
 Have a look at the [template](example) and follow the procedure described there.
