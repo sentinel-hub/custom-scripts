@@ -177,6 +177,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Infrared agriculture display](sentinel-2/infrared_agriculture_display)
 
 #### Marine and other water bodies environment algorithms
+ - [Maximum peak height bloom index](sentinel-2/maximum_peak_height_bloom_index)
  - [White-water detection](sentinel-2/white_water)
  - [Ocean plastic detector prototype](sentinel-2/ocean_plastic_detector)
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
