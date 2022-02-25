@@ -26,6 +26,18 @@ or MODIS.
 Uses the [water bodies mapping](https://github.com/sentinel-hub/custom-scripts/tree/master/sentinel-2/water_bodies_mapping-wbm) 
 technique of Mohor Gartner. It visualises land using a simple RGB approach. 
 
+## Representative Images
+
+Bloom Index applied to Tevere river, Italy. Image acquired on 2017-10-08.
+
+![Maximum Peak Height Bloom Index Italy2](fig/fig1.jpg)
+
+Bloom Index applied to Syvash lagoon, Ukraine. Image acquired on 2022-02-15.
+
+![Maximum Peak Height Bloom Index Italy1](fig/fig2.jpg)
+
+## Credits
+
 Credit CyanoLakes, Jeremy Kravitz, Mark Matthews.
 
 ## References

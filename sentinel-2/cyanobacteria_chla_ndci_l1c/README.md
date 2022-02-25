@@ -72,6 +72,15 @@ Table 1: Predictive capability of calibrated NDCI model
 |----------|----------|--------------|----------|-------------------|
 | 0.0023   | 42.3     | 84.2         | 0.99     | 95.8              |
 
+## Representative Images
+
+Cyanobacteria Chlorophyll-a NDCI L1C applied to lagoons of Northeastern Italy. Image acquired on 2022-02-12.
+
+![Cyanobacteria chlorophyll-a Italy2](fig/fig1.jpg)
+
+Cyanobacteria Chlorophyll-a NDCI L1C applied to Roper river, Australia. Image acquired on 2019-02-23.
+
+![Cyanobacteria chlorophyll-a Italy1](fig/fig2.jpg)
 
 ## Citation
 If making use of this algorithm, please cite as follows: 
