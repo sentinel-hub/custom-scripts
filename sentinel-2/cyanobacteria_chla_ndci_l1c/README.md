@@ -66,10 +66,17 @@ with predictive statistics shown in the figure below.
 
 ![Calibration](figures/calibration.png)
 
+Table 1: Predictive capability of calibrated NDCI model
 
+| Log Bias | MAPE (%) | RMSE (mg/m3) | Log RMSE | Relative RMSE (%) |
+|----------|----------|--------------|----------|-------------------|
+| 0.0023   | 42.3     | 84.2         | 0.99     | 95.8              |
+
+
+## Citation
 If making use of this algorithm, please cite as follows: 
 
-Kravitz, J & Matthews M., 2020. Chlorophyll-a for cyanobacteria blooms from Sentinel-2. CyanoLakes.
+**Kravitz, J & Matthews M., 2020. Chlorophyll-a for cyanobacteria blooms from Sentinel-2. CyanoLakes.**
 
 
 ## References
