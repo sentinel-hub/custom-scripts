@@ -64,7 +64,7 @@ with predictive statistics shown in the figure below.
 
     Chl-a = 17.441e(4.7038*NDCI)		(2)
 
-![Calibration](figures/calibration.png)
+![Calibration](fig/calibration.png)
 
 Table 1: Predictive capability of calibrated NDCI model
 
