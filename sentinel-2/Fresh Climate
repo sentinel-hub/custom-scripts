@@ -1,0 +1,20 @@
+////////////////////////////////
+//    Fresh Climate Script    //
+//     Cédric Cabrol 2022     //
+////////////////////////////////
+ 
+// This small Script show freesh component of climate 
+// Photosynthètic activity & lows clouds 
+// In opposition barres soils & bads clouds
+// Ready to have a look on the other side of anthropogenics modifications?
+ 
+ 
+//Photsynthétic activity 
+let NDVI  = ((B08 - B04) / (B08 + B04));
+//Reflectance capacity 
+let Albedo = (B02+B03+B04)/3;
+//Température Square (Racine in french)
+let Temp = Math.sqrt(162*B10);
+return [ Temp -0.38*Albedo -0.00*NDVI, //Red
+                                 NDVI, //Green
+                    Albedo +0.38*NDVI];//Blue
