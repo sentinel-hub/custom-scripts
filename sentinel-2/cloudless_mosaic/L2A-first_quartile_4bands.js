@@ -17,10 +17,12 @@ function setup() {
     mosaicking: "ORBIT"
   }
 }
-function filterScenes (scenes, inputMetadata) {
-    return scenes.filter(function (scene) {
-       return scene.date.getTime()>=(inputMetadata.to.getTime()-12*31*24*3600*1000);
-    });
+function preProcessScenes (collections) {
+    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+        var orbitDateFrom = new Date(orbit.dateFrom)
+        return orbitDateFrom.getTime() >= (collections.to.getTime()-3*31*24*3600*1000);
+    })
+    return collections
 }
 function getValue(values) {
    values.sort( function(a,b) {return a - b;} );
