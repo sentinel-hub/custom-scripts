@@ -33,6 +33,9 @@ For Sentinel-3 OLCI, the NDVI is calculated using NIR band 17 and Red band 8:
 NDVI of France, acquired on 24 July 2022.  
 ![NDVI](fig/figure1.png)   
  
+## References
+ [1] Wikipedia, [Normalized Difference Vegetation Index
+](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.
 
 ## Contributors:  
 William Ray
