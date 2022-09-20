@@ -23,7 +23,7 @@ The normalized difference vegetation index, abbreviated NDVI, is calculated usin
 
 **NDVI = (NIR - RED) / (NIR + RED)**
 
-For Sentinel-3 OLCI, the NDVI is calculated using NIR band 5 and Red band 4: 
+For Sentinel-3 OLCI, the NDVI is calculated using NIR band 17 and Red band 8: 
 
 **NDVI = (B17 - B08) / (B17 + B08)**
 
