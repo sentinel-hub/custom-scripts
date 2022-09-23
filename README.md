@@ -234,6 +234,8 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
  - [Tristimulus](sentinel-3/tristimulus)
 
 #### Remote sensing indices
+ - [NDVI](sentinel-3/ndvi)- normalized difference vegetation index 
+ - [NDWI](sentinel-3/ndwi)- normalized difference water index
  - [VMI3](sentinel-3/vegetation_monitoring_masks) - Vegetation and land monitoring with cloud mask
  - [OTCI](sentinel-3/otci) - Terrestrial chlorophyll index
  - [Ulyssys Water Quality Viewer](sentinel-2/ulyssys_water_quality_viewer) - chlorophyll and suspended sediment for water quality visualization
