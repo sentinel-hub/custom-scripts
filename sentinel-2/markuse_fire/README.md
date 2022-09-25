@@ -21,7 +21,7 @@ Wildfire east of Split, Croatia. Acquired on 17.7.2017.
 ![Fires in Sibiria, Russia.](fig/2020-06-28-Sibiria_fires.jpg)
 
 ## References
-[1] P. Markuse, [QuickFire 1.0 – Visualizing Fires in the Sentinel Hub EO Browser](https://pierre-markuse.net/2022/09/21/quickfire-1-0-visualizing-fires-in-the-sentinel-hub-eo-browser/)
+[1] P. Markuse, [QuickFire 1.0 – Visualizing Fires in the Sentinel Hub EO Browser](https://pierre-markuse.net/2022/09/21/quickfire-1-0-visualizing-fires-in-the-sentinel-hub-eo-browser/)  
 [2] P. Markuse, [Visualizing (Wild)Fires in Sentinel-2 imagery through EO Browser
-](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/). August 2017.
+](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/). August 2017.  
 [3] P. Markuse, [Visualizing Wildfires and Burn Scars with the Sentinel Hub EO Browser V2](https://github.com/sentinel-hub/custom-scripts/blob/master/sentinel-2/markuse_fire/script.js), May 2018
