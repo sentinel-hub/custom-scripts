@@ -8,7 +8,7 @@
 </div>
 
 ## Evaluate and visualize
- - [EO Browser] (https://sentinelshare.page.link/dvmB){:target="_blank"} 
+ - [EO Browser](https://sentinelshare.page.link/dvmB){:target="_blank"} 
 
 ## General description of the script
 
