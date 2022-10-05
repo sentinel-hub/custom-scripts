@@ -68,8 +68,8 @@ The presented script was inspired by the [water body detection script](https://g
 
 ## References
 
-- [1] NASA Earth Observatory 2022 [""Parched Poyang Lake""](https://earthobservatory.nasa.gov/images/150285/parched-poyang-lake)
-- [2] Hanqiu Xu 2006, [""Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery""](https://doi.org/10.1080/01431160600589179)
+- [1] NASA Earth Observatory 2022, [Parched Poyang Lake](https://earthobservatory.nasa.gov/images/150285/parched-poyang-lake)
+- [2] Hanqiu Xu 2006, [Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery](https://doi.org/10.1080/01431160600589179)
   
 ## Contributors:  
 - Jan Landwehrs
