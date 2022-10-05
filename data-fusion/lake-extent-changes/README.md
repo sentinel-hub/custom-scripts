@@ -11,9 +11,8 @@
  - [EO Browser - Poyang Lake](https://sentinelshare.page.link/rLrD) 
 
 ## Data sources used
-- Landsat 8 Collection 2 Level 2, 
-- Landsat 9
-- Landsat 4-5 
+- Landsat 8-9 Level 2
+- Landsat 4-5 Level 2
   
 ## General description of the script  
 
