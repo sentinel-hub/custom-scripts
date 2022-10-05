@@ -62,6 +62,10 @@ Changes in Dead Sea water body extent between 1989-08-16 and 2022-08-27.
 
 [See high resolution version](https://github.com/JanLandwehrs/LakeExtentChangeDetection_SentinelHub-ScriptContest/blob/main/DeadSea_1985-2022_LandsatImages.jpg)
 
+## Author of the script
+
+- Jan Landwehrs
+
 ## Credits
 
 The presented script was inspired by the [water body detection script](https://github.com/sentinel-hub/custom-scripts/tree/master/sentinel-2/water_bodies_mapping-wbm) by Mohor Gartner.
@@ -70,6 +74,3 @@ The presented script was inspired by the [water body detection script](https://g
 
 - [1] NASA Earth Observatory 2022, [Parched Poyang Lake](https://earthobservatory.nasa.gov/images/150285/parched-poyang-lake)
 - [2] Hanqiu Xu 2006, [Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery](https://doi.org/10.1080/01431160600589179)
-  
-## Contributors:  
-- Jan Landwehrs
