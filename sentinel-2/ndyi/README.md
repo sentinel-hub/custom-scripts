@@ -30,29 +30,38 @@ This script was applied for the discrimination and visualisation of the flowerin
 - In some cases bare soil, unvegetated crop fields and roads are not discriminated.
 
 **How the script works**
+
 The script uses the Sentinel-2 blue and green bands (B02 and B03) as input data to calculate the normalised difference yellowness index (NDYI) with formula **NDYI = ((B03 - B02) / (B03 + B02))**. To discriminate and visualise the objects of interest, it was necessary to adjust the conditional NDVI value, empirically NDYI < 0.02 - 0.08 for in bloom trees, while for flowering canola crops NDYI < 0.08 - 0.13 showed to be adequate.
 
-## Author of the script
-
-- Mario Alberto Guzmán Soza
-
 ## Description of representative images
+
+**Example 1**
 
 In the example below, the upper image shows the true colour composition of Huanchaca plateau and evergreen forest, in the Noel Kempff Mercado National Park, located in the northeast of the department of Santa Cruz, Bolivia. The trees in bloom are most likely of the species Schizolobium parahyba. The bottom image shows the result of the application of the script in solid yellow, highlighting the crowns of the individual trees. Image acquired on June 16, 2022.
 
 ![NDYI1](fig/fig1.png)
 
+**Example 2**
+
 The upper image of the below example shows a true colour composite of an area near El Porvenir in the Velasco Province of the department of Santa Cruz, Bolivia. It shows populations of Schizolobium parahyba in bloom (locally known as Serebo). The bottom image shows the result of the application of the script in solid yellow. Image acquired on June 16, 2022.
 
 ![NDYI2](fig/fig2.png)
+
+**Example 3**
 
 On the example below, the left image shows a true colour composite of an area in Haibei prefecture, one of the largest canola-producing regions in northern China [3]. The right image shows the classification of flowering canola crops, presented in solid yellow. Image acqired on September 12, 2017.
 
 ![NDYI3](fig/fig3.png)
 
+**Example 4**
+
 On this example, the top image shows a true colour composite of an agricultural area in the province of Alberta, Canada. The bottom image shows the classification of flowering canola crops, presented in solid yellow. Image acquired on June 29, 2021
 
 ![NDYI4](fig/fig4.png)
+
+## Author of the script
+
+- Mario Alberto Guzmán Soza
 
 ## Credits
 
