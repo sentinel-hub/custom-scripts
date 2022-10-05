@@ -53,7 +53,7 @@ Changes in Aral Sea water body extent between 1985-08-24 and 2022-08-22.
 
 ![image](fig/fig3.jpg)
 
-[See high resolution version](https://github.com/JanLandwehrs/LakeExtentChangeDetection_SentinelHub-ScriptContest/blob/main/DeadSea_1985-2022_LandsatImages.jpg)
+[See high resolution version](https://github.com/JanLandwehrs/LakeExtentChangeDetection_SentinelHub-ScriptContest/blob/main/AralSea_1989-2022_LandsatImages.jpg)
 
 **Example 3: Dead Sea**
 
@@ -61,7 +61,7 @@ Changes in Dead Sea water body extent between 1989-08-16 and 2022-08-27.
 
 ![image](fig/fig2.jpg)
 
-[See high resolution version](https://github.com/JanLandwehrs/LakeExtentChangeDetection_SentinelHub-ScriptContest/blob/main/AralSea_1989-2022_LandsatImages.jpg)
+[See high resolution version](https://github.com/JanLandwehrs/LakeExtentChangeDetection_SentinelHub-ScriptContest/blob/main/DeadSea_1985-2022_LandsatImages.jpg)
 
 ## Credits
 
