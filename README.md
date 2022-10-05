@@ -168,7 +168,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 
 #### Vegetation algorithms
 
- - [Normalized Difference Yellowness Index (NDYI)](sentinel-2/ndyi) - Amazonian tree species and canola crops blooming visualization
+ - [Normalized Difference Yellowness Index (NDYI)](sentinel-2/ndyi) - Visualisation of blooming in an Amazonian tree species and canola crops
  - [Deep GNDVI](sentinel-2/deep_gndvi)
 
 #### Agriculture and forestry algorithms
