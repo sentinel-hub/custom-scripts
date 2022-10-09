@@ -65,7 +65,7 @@ In the timelapse below, one can observe obvious water extent reductions in the n
 
 The scene was also analysed with a point of interest statistics. The point for analysis was selected where a gap connects the island to mainland in summer of 2022. The chart shows that water surface was present through all available time of data source (from 2017) with exception of 2022. There are of course some dips in the graph, which are result of cloud presence.
 
-![The script example 1](fig/fig2.png)
+![The script example 1](fig/fig2.PNG)
 
 We also made the same analysis with Landsat 8, confirming that in the last 9 years (from 2013), the island was only connected to the mainland in 2022.
 
@@ -96,7 +96,7 @@ var NDWI_thr = -0.04;
 var SWI_thr = -0.11;
 ```
 
-![The script example 1](fig/fig3.png)
+![The script example 1](fig/fig3.gif)
 
 #### Kandhkot, Sindh, Pakistan
 _Landsat 8-9 L2. Timelapse 2022-06-10 and 2022-09-06_
