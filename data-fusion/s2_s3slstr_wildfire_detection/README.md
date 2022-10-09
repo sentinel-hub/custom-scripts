@@ -17,7 +17,7 @@
   
 ## General description of the script  
   
-This script uses a combination of two different satellites -- S2L2A and S3SLTR -- to better highlight areas burning due to wildfires. The way this script works is it adjusts the brightness of the S2L2A, true color image using a scaled value of the S3SLSTR F2 value, which increases the brightness of areas that are burning, and decreases the value of areas which are not burning.
+This script uses a combination of two different satellites -- S2L2A and S3SLTR -- to better highlight areas burning due to wildfires. The script adjusts the brightness of the S2L2A true color composite by using scaled values of the S3SLSTR F2 band, which increases the brightness of burning areas and decreases the values of areas which are not burning.
 
 **Limitations**
 
