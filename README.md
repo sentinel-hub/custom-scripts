@@ -188,6 +188,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
  - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
  - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
+ - [Simple Water Bodies' Mapping - SWBM ](sentinel-2/simple_water_bodies_mapping-swbm)
 
 #### Urban planning algorithms
  - [Green city](sentinel-2/green_city)
@@ -327,6 +328,7 @@ Landsat Thematic Mapper (TM) sensor was carried onboard Landsats 4 and 5. The co
 - [NDMI](landsat-4-5-tm/ndmi)
 - [NDWI](landsat-4-5-tm/ndwi) 
 - [Thermal](landsat-4-5-tm/thermal) 
+- [Multi-temporal assessment of lake water level variations](landsat-4-5-tm/variations_water_level_lakes)
 
 ## <a name="landsat-7-etm"></a>Landsat 7 ETM+
 
@@ -455,6 +457,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
+ - [S2L2A Enhancement using S3SLTR F2 For Wildfire Detection](data-fusion/s2_s3slstr_wildfire_detection)
  - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](data-fusion/historic-landsat-changes)
  - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](data-fusion/sand-oriented_land_cover_classification_s1_s2)
 
