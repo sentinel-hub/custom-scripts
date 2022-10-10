@@ -45,7 +45,7 @@ In EO Browser, the user must select Landsat 8-9 source, preferably L1, but also 
 The user then configures settings in the script. Below is an example of primary and one additional data source.
 
 ```javascript
-var dataSourcesNames = [""LOTL1"", ""LOTL1-1""];
+var dataSourcesNames = ["LOTL1", "LOTL1-1"];
 ```
 
 Primary data source should be element “0” of the above list!
@@ -53,7 +53,7 @@ Primary data source should be element “0” of the above list!
 The next option is band selection for calculation of LST. B10 is usually used:
 
 ```javascript
-var band = ""B10"";
+var band = "B10";
 ```
 
 However for Landsat 8 L1, B11 could be used as well. 
@@ -74,6 +74,7 @@ The script loops through all the available samples for each data source. It incl
 ## Description of representative images
 
 **London, UK**
+
 _Landsat 8-9 L1, July 2013-2022_
 
 The highest temperature was observed at Heathrow Airport on 19.7.2022. On the basis of this information, the maximum LST can be compared for the July 2022 (primary data source) with the maximum LST in July for previous years.
@@ -96,19 +97,21 @@ Generally, it is expected that the output would be a red gradient, which would m
 
 Comparing with an additional data source for July:
 
-![LST](fig/fig1.png)
-
 - 2013: In July 2013 there was a heat wave. Therefore, we can see mixed maximum LST, some from 2013 (blue) and some from 2022 (red). In addition, it can be seen on the right of the image that other pass of the satellite indicates maximum temperatures only for 2022. As mentioned, this is probably an effect of limitations related to data availability.
 - 2014, 2015, 2016, 2017, 2020: Maximum LST from 2022 is predominant (red)
 - 2018: UK experienced a heat wave, where for many areas in UK, temperatures exceeded 30 C for over 15 days in a row. This could be one reason for the predominantly maximum LST for 2018 (blue). However, again as in 2013, we can see on the right side of the image another pass of the satellite, where maximum LST from 2022 is predominant (red).
 - 2019: Till 2019, temperature records were broken in many locations in the UK. Therefore, as temperature differences between 2019 in 2022 is not significant, we can see a predominant maximum LST from 2019. And again we can see on the right side of the image a predominant maximum LST from 2022.
-- 2021 (representative image 2)– the maximum LST from 2022 is predominant (red). An exception is the left side of the scene, which could be an effect of the script limitations.
+
+![LST](fig/fig1.png)
+
+- 2021 (image below)– the maximum LST from 2022 is predominant (red). An exception is the left side of the scene, which could be an effect of the script limitations.
 
 ![LST](fig/fig2.png)
 
 From the analysis above, it could be said that just looking at the comparison of maximum LST, July had the highest temperatures in 2013, 2018, 2019 and 2022.
 
 **Lake Bohinj & Lake Bled, Slovenia**
+
 _Landsat 8-9 L1, July and August 2013-2022._
 
 As for the rest of the Europe, summer 2022 brought an extreme heat wave to Slovenia as well. The monthly mean temperature of Lake Bohinj was measured as the highest in the time period between 1939 and 2022 [11]. The focus of this example is therefore to compare maximum LST of 2022 with previous years in July and August. As there is Lake Bled nearby, that one was also added to the example.
