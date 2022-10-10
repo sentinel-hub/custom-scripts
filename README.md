@@ -294,6 +294,7 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
+  - [Land surface temperature (LST) comparison](landsat-8/land_surface_temperature_comparison)
   - [Water In Wetlands Index](landsat-8/wiw_L8_script)
   - [Clouds Segmentation](landsat-8/clouds_segmentation)
   - [Pansharpened true color](landsat-8/true-color-pansharpened)
