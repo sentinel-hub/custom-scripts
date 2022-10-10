@@ -12,6 +12,8 @@
 
 ## Description
 
+### General description
+
 The main purpose of the script is to compare maximum land surface temperature (LST) of a primary selected time period with one or multiple additional time periods. The result tells us if maximum LST was higher in primary or in any of the additional time periods. For every time period, an individual data source should be selected (primary or additional).
 
 Climate change has an impact on extreme heat waves and record high temperatures, making them more frequent. For example, summer of 2022 brought record high temperatures in Europe. One can compare maximum LST for summer months of 2022 in relation to previous years for the period of the same months. In addition, maximum LST of two specific images can also be compared.
@@ -20,9 +22,9 @@ The script is a simplified version of the Land Surface Temperature Mapping Scrip
 
 How exactly LST is calculated is explained in the Land Surface Temperature Mapping Script [1], which is based on multiple scientific articles [2,3,4]. Calculation is done on the basis of bands 4, 5 and 10. If the user chooses so, it can be also calculated on the basis of band 11 for Landsat 8 L1. Preselected coefficients and indices are used (surface roughness, NDVI, etc.). Nevertheless, user can adjust that according to the scene.
 
-In this script (maximum) LST is calculated for at least two instances of Landsat L8 data sources. The color of the output tells us if (maximum) LST was higher in primary (red) or additional data source(s) (blue). For each color a gradient is used in order to have visible areas with higher and lower LST.
+In this script, maximum LST is calculated for at least two instances of Landsat L8 data sources. The color of the output tells us if (maximum) LST was higher in primary (red) or additional data source(s) (blue). For each color a gradient is used in order to have visible areas with higher and lower LST.
 
-### Applicabiltiy*
+### Applicabiltiy
 
 The script is globally applicable. As the analysis is multi-temporal, it should be somewhat resilient to clouds, when there is s significant number of images with no cloud coverage. 
 
