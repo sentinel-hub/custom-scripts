@@ -22,10 +22,11 @@ How exactly LST is calculated is explained in the Land Surface Temperature Mappi
 
 In this script (maximum) LST is calculated for at least two instances of Landsat L8 data sources. The color of the output tells us if (maximum) LST was higher in primary (red) or additional data source(s) (blue). For each color a gradient is used in order to have visible areas with higher and lower LST.
 
-**Applicabiltiy**
+### Applicabiltiy*
+
 The script is globally applicable. As the analysis is multi-temporal, it should be somewhat resilient to clouds, when there is s significant number of images with no cloud coverage. 
 
-**False detection problems and limitations**
+### False detection problems and limitations
 LST calculation is based on preselected coefficients and indices, which are approximate in land type detection (bare soil, water, etc.). This then affects calculation of LST.
 
 When comparing data sources with non-significant LST temperature differences, result on which data source for specific time period had higher maximum LST can be mixed. This could be because of already mentioned approximate land type detection. In addition, there could be also other reasons. Usage of this script is limited by how many images are actually available and in which part of the day satellite recorded the image. This means short heat wave could be easily missed, image was not recorded at the hour of the peak for specific day or it was recorded right after a short storm which cooled down surface. This was not tested, but probably fires and snow coverage affect the result as well.
@@ -36,8 +37,7 @@ Script should easily work with 2 data sources and for both selected timespan of 
 
 Even with mentioned limitations script can be used at least for fast comparison of (maximum) LST between selected periods as a basis for further detailed analysis.
 
-
-**How the script works**
+### How the script works
 In EO Browser, the user must select Landsat 8-9 source, preferably L1, but also L2 can be used. At least one additional data source must be added for Landsat 8-9. For all data sources, a desired time period is selected, to compare maximum LST. Alternately, users can also compare specific images (non multitemporal) or even a mix of both - LST from a single image with the maximum LST for a specific time period.
 
 The user then configures settings in the script. Below is an example of primary and one additional data source.
@@ -71,12 +71,13 @@ The script loops through all the available samples for each data source. It incl
 
 ## Description of representative images
 
-**London, UK
+**London, UK**
 _Landsat 8-9 L1, July 2013-2022_
 
 The highest temperature was observed at Heathrow Airport on 19.7.2022. On the basis of this information, the maximum LST can be compared for the July 2022 (primary data source) with the maximum LST in July for previous years.
 
-_OE Browser settings:_
+_EO Browser settings:_
+
 - timespan for the primary data source: 2022-07-01 – 2022-07-31
 - timespan for the additional data source: July for years 2013 to 2020
 
