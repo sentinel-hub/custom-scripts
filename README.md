@@ -461,6 +461,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [S2L2A Enhancement using S3SLTR F2 For Wildfire Detection](data-fusion/s2_s3slstr_wildfire_detection)
  - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](data-fusion/historic-landsat-changes)
  - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](data-fusion/sand-oriented_land_cover_classification_s1_s2)
+ - [Thermal visualization and water in wetlands with Landsat 8 L1 & L2](data-fusion/thermal_visualization_and_water_in_wetlands)
 
 ## <a name="copernicus_services"></a>Copernicus services
 
