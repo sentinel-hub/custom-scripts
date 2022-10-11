@@ -21,6 +21,6 @@ Values description: Index values greater than 0.5 usually correspond to water bo
 
 ## Description of representative images
 
-The NDWI over Rome. Acquired on 2022-07-24, processed by Sentinel Hub. 
+HLS NDWI over Rome. Acquired on 2022-07-24, processed by Sentinel Hub. 
 
 ![HLS](fig/fig1.jpeg)
