@@ -9,6 +9,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-2](#sentinel-2)
   - [Sentinel-3](#sentinel-3)
   - [Sentinel-5P](#sentinel-5P)
+  - [Harmonized Landsat Sentinel](#harmonized-landsat-sentinel)
   - [Landsat 5 and 7](#landsat-57)
   - [Landsat 1-5 MSS](#landsat-1-5-mss)
   - [Landsat 4-5 TM](#landsat-4-5-tm)
@@ -275,6 +276,19 @@ Sentinel-5P provides atmospheric measurements, relating to air quality, climate 
  - [Cloud Base Pressure](sentinel-5p/cloud-base-pressure)
  - [Cloud Optical Thickness](sentinel-5p/cloud-optical-thickness)
  - [Cloud Effective Radiometric Fraction](sentinel-5p/cloud-radiometric-fraction)
+
+## <a name="harmonized-landsat-sentinel"></a>Harmonized Landsat Sentinel
+
+Harmonized Landsat Sentinel is a NASA initiative to produce a Virtual Constellation of surface reflectance (SR) data from the Operational Land Imager (OLI) and Multi-Spectral Instrument (MSI) aboard the Landsat 8-9 and Sentinel-2 remote sensing satellites, respectively. The combined measurement enables global observations of the land every 2–3 days. Input products are Landsat 8-9 Collection 2 Level 1 top-of-atmosphere reflectance and Sentinel-2 L1C top-of-atmosphere reflectance, which NASA radiometrically harmonizes to the maximum extent, resamples to common 30-meter resolution, and grids using the Sentinel-2 Military Grid Reference System (MGRS) UTM grid. Because of this, the products are different from Landsat 8-9 Collection 2 Level 2 surface reflectance and Sentinel-2 L2A surface reflectance. For more information about the available bands and data, check the [HLS documentation](https://docs.sentinel-hub.com/api/latest/data/hls/#available-bands-and-data).
+
+#### Available scripts
+
+- [True Color](hls/true_color)
+- [False Color](hls/false_color)
+- [SWIR](hls/swir)
+- [NDVI](hls/ndvi)
+- [NDMI](hls/ndmi)
+- [NDWI](hls/ndwi)
 
 ## <a name="landsat-8"></a>Landsat 8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
