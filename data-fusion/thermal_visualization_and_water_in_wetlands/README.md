@@ -7,11 +7,11 @@
 {% endhighlight %}  
 </div>  
 
- ## Evaluate and visualize
+## Evaluate and visualize
  
-- [EO Browser](https://sentinelshare.page.link/zeUH) {:target="_blank"}
+- [EO Browser](https://sentinelshare.page.link/zeUH)
 
- ## General description of the script
+## General description of the script
  
 In the midst of an unprecedented heat wave and ongoing drought, northeastern Argentina suffered a series of forest fires in nature reserves and fields. In mid-January 2022, sweltering heat gripped central South America and temperatures soared to more than 40°C (104°F). At the time, Argentina was the hottest place on the planet.[2] 
 
@@ -34,7 +34,7 @@ Wetlands are areas that remain in flooded conditions or with soil saturated with
 
 WIW is a remote sensing tool for monitoring water in wetlands. One of the main challenges is to detect the water under the vegetation cover and wetlands are usually characterized by the presence of emergent plants of variable height and density. The reflectance values of the corresponding pixels of the optical spectral bands of the Landsat sensors were used as reference. The overall accuracy of the water maps constructed using the WIW ranged from 89% to 94% for both the training and validation samples. Landsat 8: WIW = NIR = 0.1735 and SWIR2 = 0.1035 [6]
 
- ## Details of the script
+## Details of the script
  
 In the next figure is possible to observe in detail different critical points of February 16, 2022, being 1, 2 and 3 the main sources of fire. Script A indicates temperature and humidity of the wetlands, where the darker the red color, the higher the temperature. Script C is a temperature impact analysis reference. This indicates higher temperature with white color. [4]
  
@@ -48,11 +48,11 @@ In addition, Timelapse of the area analyzed from November 2021 to March 2022 is 
 
 ![AWS_LOTL1-500618976762302-timelapse](fig/fig4.gif)
  
- ## Author of the script
+## Author of the script
  
  - Barbara de los Angeles Ortiz
  
- ## References
+## References
  
 - [1] Earthobservatory Nasa, March 01 2022,  [Earthobservatory.nasa.gov/Wildfires Ravage Corrientes, Argentina](https://earthobservatory.nasa.gov/images/149478/wildfires-ravage-corrientes-argentina)
  
