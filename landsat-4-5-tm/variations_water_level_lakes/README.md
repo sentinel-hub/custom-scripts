@@ -10,6 +10,7 @@
 ## Evaluate and visualize
 
 - [EO Browser](https://sentinelshare.page.link/gJEu){:target="_blank"}   
+
 ## General description of the script
 
 Lakes interact with all components of the hydrological system: atmospheric water, surface water, and groundwater. The fluxes of water to and from lakes with regard to each of these components represent the water budget of a lake [1]. The water level of a lake is a key response variable and an effective indicator of climate change. This response variable reflects either a direct influence of climate on the lake or an indirect change via the effect of climate on the catchment [2]. Measurements of water level are especially useful in the case of closed-basin lakes, where long-term fluctuations in water level can be related to similar fluctuations in large-scale climate oscillations [3].
@@ -107,23 +108,23 @@ The colors and their intermediate tones reflect the presence or absence of water
 
 ## Description of representative images
 
-Image of Mar Chiquita Lake (C—rdoba, Argentina) processed by the script in the dates between 2003 and 2011. In this timespan the lake underwent a considerable decreasment of his water level. Notice in red, yellow and white the decreasement of the water levels at each particular date (t1, t2 and t3).
+Image of Mar Chiquita Lake (C—rdoba, Argentina) between 2003 and 2011. In this timespan the lake underwent a considerable water level decrease. Notice in red, yellow and white the decrease of water levels at each particular date (t1, t2 and t3).
 
 ![Mar Chiquita Lake](fig/fig1.png)
 
-Image of Mar Chiquita Lake (C—rdoba, Argentina) processed by the script in the dates between 1990 and 1996. In this timespan, initially the lake increased his water level (between t1 and t2) and then decreased his water level (between t2 and t3). This difference is displayed in the area in green color.
+Image of Mar Chiquita Lake (C—rdoba, Argentina) between 1990 and 1996. In this timespan, initially the water level increased (between t1 and t2), then decreased (between t2 and t3). This difference is displayed in green color.
 
 ![Mar Chiquita Lake](fig/fig2.png)
 
-Output image for dates between 2003 and 2011. In this timespan, Mar Chiquita Lake (C—rdoba, Argentina) underwent a decreasment of his water level. Notice the differents changes in the water level of the wetlands, diplayed in red, yellow and green between this dates (t1, t2 and t3).
+Output image for dates between 2003 and 2011. In this timespan, Mar Chiquita Lake (C—rdoba, Argentina) underwent a water level decrease. Notice the changes in water level diplayed in red, yellow and green between the three dates (t1, t2 and t3).
 
 ![Mar Chiquita Lake](fig/fig3.png)
 
-Output image for dates between 1990 and 1996. In this timespan, initially Mar Chiquita Lake (C—rdoba, Argentina) increased his water level (between t1 and t2) and then decreased his water level (t2 and t3). Notice the green area corresponding to this behaviour.
+Output image for dates between 1990 and 1996. In this timespan, initially Mar Chiquita Lake (C—rdoba, Argentina) water level increased (between t1 and t2) and then decreased (t2 and t3). Notice the green area corresponding to this behaviour.
 
 ![Mar Chiquita Lake](fig/fig4.png)
 
-Image of Quillcay catchment (Cordillera Blanca, Peru) processed by the script in the dates between 1990 and 2010. Notice the spatio-temporal variation of the water level of Palcacocha, Cuchillacocha and Tullparaju Lakes, according to the differents colors.
+Image of Quillcay catchment (Cordillera Blanca, Peru) between 1990 and 2010. Notice the spatio-temporal variation of the water level of Palcacocha, Cuchillacocha and Tullparaju Lakes, according to the differents colors.
 
 ![Mar Chiquita Lake](fig/fig5.png)
 
