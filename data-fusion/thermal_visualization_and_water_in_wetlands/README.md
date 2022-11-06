@@ -13,38 +13,38 @@
 
 ## General description of the script
  
+This script uses data fusion to combine both, the temperature of the surface and the humidity of the wetlands in a single script. Landsat 8-9 OLI-TIRS Collection 2 Level 1 Data was used. The aim is to prevent and be able to carry out the necessary tasks to minimize natural disasters and protect the wetlands.
+
+### Thermal Visualization Script: 
+This heat shield is based on Level 1 band 10. At the central wavelength of 10895nm, it measures in the thermal infrared or TIR. Instead of measuring the temperature of the air, as weather stations do, band 10 reports on the ground, which is usually much hotter. Thermal band 10 is useful for providing surface temperatures and is collected at 100 meter resolution.[5]
+
+### Water In Wetlands Script:
+
+Wetlands are areas that remain in flooded conditions or with soil saturated with water for considerable periods of time. These dynamic and productive ecosystems are home to an important part of the world's biodiversity and contribute to reducing the level of atmospheric greenhouse gases that fuel global warming. In addition, they prevent soil erosion and flooding damage by dispersing and absorbing excess water. Extent of wetlands is estimated to have declined rapidly, with losses of 35% since 1970 due to agricultural and urban development. [7]
+
+WIW is a remote sensing tool for monitoring water in wetlands. One of the main challenges is to detect the water under the vegetation cover. Wetlands are usually characterized by the presence of emergent plants of variable height and density. The reflectance values of the corresponding pixels of the optical spectral bands of the Landsat sensors were used as reference. The overall accuracy of the water maps constructed using the WIW ranged from 89% to 94% for both the training and validation samples. Landsat 8: WIW = NIR = 0.1735 and SWIR2 = 0.1035 [6]
+
+## Descriptions of representative images
+
 In the midst of an unprecedented heat wave and ongoing drought, northeastern Argentina suffered a series of forest fires in nature reserves and fields. In mid-January 2022, sweltering heat gripped central South America and temperatures soared to more than 40°C (104°F). At the time, Argentina was the hottest place on the planet.[2] 
-
-La Niña coupling of the atmosphere and ocean alters global atmospheric circulation and can cause shifts in the path of mid-latitude jet streams in ways that intensify rainfall in some regions and bring drought to others.[3] Corrientes, which normally averages 162 millimeters (6.5 inches) of rain during February, has received less than 20 millimeters (1 inch) so far, according to the National Meteorological Service (SMN).[1]
-
-Since the fires began in December, more than 520,000 hectares (1.3 million acres) have burned, killing wildlife and livestock, decimating pasturelands, and destroying crops such as yerba mate and rice. [1] On February 7, 2022, Corrientes was declared a state of emergency and an agricultural disaster.
-
-Through the Sentinel Hub EO Browser tool, these 2 custom scripts are programmed, using satellite data from Landsat 8-9 OLI-TIRS Collection 2 Level 1 Data. The fusions of data are the temperature of the surface and the humidity of the wetlands in a single graph. The aim is to prevent and be able to carry out the necessary tasks to minimize this natural disaster, whose protagonists which are perpetrated by and the protection of wetlands.
 
 The images acquired by the Operational Land Imager-2 (OLI-2) on Landsat 9 on February 16, 2022, show the scorched fields and heavy smoke from the multiple wildfires still burning near Iberá National Park.[1]
  
 ![Figura 0](fig/fig1.jpg)
 
-### Thermal Visualization Script: 
-This heat shield is based on band 10. At the central wavelength of 10895nm, it measures in the thermal infrared or TIR. Instead of measuring the temperature of the air, as weather stations do, band 10 reports on the ground, which is usually much hotter. Thermal band 10 is useful for providing surface temperatures and is collected at 100 meter resolution.[5]
+La Niña coupling of the atmosphere and the ocean alters global atmospheric circulation and can cause shifts in the path of mid-latitude jet streams in ways that intensify rainfall in some regions and bring drought to others.[3] Corrientes, which normally averages 162 millimeters (6.5 inches) of rain during February, has received less than 20 millimeters (1 inch) so far, according to the National Meteorological Service (SMN).[1]
 
-### Water In Wetlands Script:
-
-Wetlands are areas that remain in flooded conditions or with soil saturated with water for considerable periods of time. These dynamic and productive ecosystems are home to an important part of the world's biodiversity and contribute to reducing the level of atmospheric greenhouse gases that fuel global warming. In addition, they prevent soil erosion and flood damage by dispersing and absorbing excess water. Its extent is estimated to have declined rapidly, with losses of 35% since 1970 due to agricultural and urban development. [7]
-
-WIW is a remote sensing tool for monitoring water in wetlands. One of the main challenges is to detect the water under the vegetation cover and wetlands are usually characterized by the presence of emergent plants of variable height and density. The reflectance values of the corresponding pixels of the optical spectral bands of the Landsat sensors were used as reference. The overall accuracy of the water maps constructed using the WIW ranged from 89% to 94% for both the training and validation samples. Landsat 8: WIW = NIR = 0.1735 and SWIR2 = 0.1035 [6]
-
-## Details of the script
+Since the fires began in December, more than 520,000 hectares (1.3 million acres) have burned, killing wildlife and livestock, decimating pasturelands, and destroying crops such as yerba mate and rice. [1] On February 7, 2022, Corrientes was declared a state of emergency and an agricultural disaster.
  
-In the next figure is possible to observe in detail different critical points of February 16, 2022, being 1, 2 and 3 the main sources of fire. Script A indicates temperature and humidity of the wetlands, where the darker the red color, the higher the temperature. Script C is a temperature impact analysis reference. This indicates higher temperature with white color. [4]
+In the next figure we can observe different critical points in detail. On February 16, 2022, points 1, 2 and 3 were the main sources of fire. Script A indicates temperature and humidity of the wetlands, where the darker the red color, the higher the temperature. Script C is a temperature impact analysis reference. This indicates higher temperature with white color. [4]
  
 ![aFig2_16-2-22](fig/fig2.png)
 
-Point 4 and 5 are critical fire points. In the analysis of the area marked by point 6, it is possible see that on February 8, 2022 the temperature on the surface was high and if we compare the humidity of the area with the previous scripts on February 16, there is a drought mark causing more outbreaks of forest fire.
+Point 4 and 5 are critical fire points. In the analysis of the area marked by point 6, it is possible see that on February 8, 2022 the temperature on the surface was high and if we compare the humidity of the area with the previous scripts on February 16, there is a drought mark causing additional forest fire outbreaks.
 
 ![aFig1_8-2-22](fig/fig3.png)
 
-In addition, Timelapse of the area analyzed from November 2021 to March 2022 is observed below (week interval), where it can be how the humidity of the wetlands and the temperature on the surface vary. 
+In addition, Timelapse of the area analyzed from November 2021 to March 2022 is observed below (weekly interval), where it can be seen how the humidity of the wetlands and the temperature on the surface vary. 
 
 ![AWS_LOTL1-500618976762302-timelapse](fig/fig4.gif)
  
