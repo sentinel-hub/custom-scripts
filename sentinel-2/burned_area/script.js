@@ -20,15 +20,13 @@ function setup() {
 
 function stretch(val, min, max) {return (val - min) / (max - min);}
 
-function filterScenes (scenes, inputMetadata) {  
-return scenes.filter(function (scene) {
-// set dates for pre-and-post fire analysis
-var allowedDates = ["2017-05-15","2017-06-24"]; // Knysna fires
-// format scene date timestamp to match allowed dates 
-var sceneDateStr = dateformat(scene.date);
-if (allowedDates.indexOf(sceneDateStr)!= -1) return true;
-else return false;
-  });
+function preProcessScenes (collections) {
+  var allowedDates = ["2017-05-15", "2017-06-24"]; //before and after Knysna fires
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+      var orbitDateFrom = orbit.dateFrom.split("T")[0];
+      return allowedDates.includes(orbitDateFrom);
+  })
+  return collections
 }
 
 // Normalized Burn Ration calculation
