@@ -40,17 +40,15 @@ function setup() {
 
 
 // Selection of dates for composite / analysis
-function filterScenes (scenes) {  
- return scenes.filter(
-  function (scene) {
+
+function preProcessScenes (collections) {
   var allowedDates = [latest_date, middle_date, earliest_date];  //(1°date/latest image-> red; 2°date-> green;  3°date/earliest image->blue)
-  var sceneDateStr = dateformat(scene.date);  
-   if     (allowedDates.indexOf(sceneDateStr)!= -1) 
-    return true;
-   else   
-    return false; 
-   } ); 
-} 
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+      var orbitDateFrom = orbit.dateFrom.split("T")[0];
+      return allowedDates.includes(orbitDateFrom);
+  })
+  return collections
+}
   
 // Date conversion  
 function dateformat(d){  
