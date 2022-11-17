@@ -17,15 +17,13 @@ function setup() {
   }
 }
 
-
-function filterScenes (scenes) {  
-return scenes.filter(function (scene) {
-// set dates for before-and-during flood analysis
-var allowedDates = [beforeflood_date,duringflood_date]; 
-var sceneDateStr = dateformat(scene.date);
-if (allowedDates.indexOf(sceneDateStr)!= -1) return true;
-else return false;
-  });
+function preProcessScenes (collections) {
+  var allowedDates = [beforeflood_date,duringflood_date]; // set dates for before-and-during flood analysis
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+      var orbitDateFrom = orbit.dateFrom.split("T")[0];
+      return allowedDates.includes(orbitDateFrom);
+  })
+  return collections
 }
 
 // Flood mapping
