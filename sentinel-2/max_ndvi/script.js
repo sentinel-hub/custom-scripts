@@ -1,4 +1,4 @@
-//VERSION=3 (auto-converted from 1)
+//VERSION=3
 
 //Basic initialization setup function
 function setup() {
@@ -26,11 +26,12 @@ The more scenes there are, longer it will take to process the data.
 After 60 seconds of processing, there will be a timeout.
 */
 
-function filterScenes (scenes, inputMetadata) {
-    return scenes.filter(function (scene) {
-//Here we limit data between "(TO date - 1 month) to (TO date)
-	  return scene.date.getTime()>=(inputMetadata.to.getTime()-1*31*24*3600*1000) ;
-    });
+function preProcessScenes (collections) {
+    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+        var orbitDateFrom = new Date(orbit.dateFrom)
+        return orbitDateFrom.getTime() >= (collections.to.getTime()-3*31*24*3600*1000);
+    })
+    return collections
 }
 
 function calcNDVI(sample) {

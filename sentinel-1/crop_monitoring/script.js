@@ -32,15 +32,13 @@ function setup() {
   }
 }
 
-
-function filterScenes (scenes) {  
-return scenes.filter(function (scene) {
-// set dates for master and slave images
-var allowedDates = [master_date,slave_date]; 
-var sceneDateStr = dateformat(scene.date);
-if (allowedDates.indexOf(sceneDateStr)!= -1) return true;
-else return false;
-  });
+function preProcessScenes (collections) {
+  var allowedDates = [master_date,slave_date]; // set dates for master and slave images
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+      var orbitDateFrom = orbit.dateFrom.split("T")[0];
+      return allowedDates.includes(orbitDateFrom);
+  })
+  return collections
 }
 
 // Crop Monitoring

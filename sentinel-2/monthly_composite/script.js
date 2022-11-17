@@ -167,8 +167,10 @@ function evaluatePixel(samples, scenes) {
     return colorMap;
 }
 
-function filterScenes(scenes, inputMetadata) {
-    return scenes.filter(function(scene) {
-        return scene.date.getTime() >= (inputMetadata.to.getTime() - (numberOfMonthsToUse * 31 * 24 * 3600 * 1000));
-    });
+function preProcessScenes (collections) {
+    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+        var orbitDateFrom = new Date(orbit.dateFrom)
+        return orbitDateFrom.getTime() >= (collections.to.getTime() - (numberOfMonthsToUse * 31 * 24 * 3600 * 1000));
+    })
+    return collections
 }

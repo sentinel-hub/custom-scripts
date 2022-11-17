@@ -33,13 +33,13 @@ function setup() {
   }
 }
 
-function filterScenes (scenes, inputMetadata) 
-  {
-    return scenes.filter(function (scene) {
-    // Considering 36 months data to avoid seasonal variations in masking
-    return scene.date.getTime()>=(inputMetadata.to.getTime()-36*30*24*3600*1000) ;  // Data from 36 months to current date
-    });
-  }
+function preProcessScenes (collections) {
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+      var orbitDateFrom = new Date(orbit.dateFrom)
+      return orbitDateFrom.getTime() >= (collections.to.getTime()-36*30*24*3600*1000) ;  // Data from 36 months to current date
+  })
+  return collections
+}
 
 function evaluatePixel(samples, scenes) 
   {  
