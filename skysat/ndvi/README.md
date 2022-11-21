@@ -26,9 +26,9 @@ NDVI in certain intervals to RGBA (RGB+Alpha) values for visualization.
 
 ## Description of representative images
 
-NDVI of Rome. 
+Small example of NDVI visualized.
 
-![NDVI of Rome](fig/fig1.jpg)
+![NDVI](fig/fig1.png)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index
