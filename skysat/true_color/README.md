@@ -9,11 +9,11 @@
 
 ## Evaluate and visualize
 
-As SkySat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials.   
+As SkySat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playground links are not possible due to the personalized data credentials.   
 
 ## General description
 
-The true color product maps Skysat band values B3, B2, and B1 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components.
+The true color product combines Skysat band values Red, Blue, and Green to create a true color image.
 
 ## Description of representative images
 
