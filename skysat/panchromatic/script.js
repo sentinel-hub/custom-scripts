@@ -1,13 +1,13 @@
 //VERSION=3
-//True Color
+//Panchromatic
 
 function setup() {
   return {
-    input: ["B1", "B2", "B3"],
-    output: { bands: 3 }
-  };
+    input: [{"bands": ["PAN","dataMask"]}],
+    output: { bands: 4}
+  }
 }
-
+var f = 10000
 function evaluatePixel(sample) {
-  return [sample.B3/3000, sample.B2/3000, sample.B1/3000];
+  return [sample.PAN/f, sample.PAN/f, sample.PAN/f, sample.dataMask]
 }
