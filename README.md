@@ -18,6 +18,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [MODIS](#modis)
   - [DEM](#dem)
   - [PlanetScope](#planet_scope)
+  - [SkySat](#sky_sat)
   - [Airbus Pleiades](#airbus_pleiades)
   - [Airbus SPOT](#airbus_spot)
   - [Data fusion](#data-fusion)
@@ -404,6 +405,26 @@ The spectral bands of PlanetScope data are the following:
  - [NDWI](planet_scope/ndwi)
  - [Green City](planet_scope/green_city)
  - [UDM2 Cloud/Snow Classification](planet_scope/cloud_classification)
+
+## <a name="sky_sat"></a>SkySat (Commercial)
+
+<a href="https://www.planet.com/products/monitoring/">SkySat</a> satellite constellation consists of 21 satellites, which were launched between 2013 and 2020. The satellites are based on a CubeSat concept but are a bit bigger comparing to the PlanetScope's satellites. Because of its rapid revisit time, this data is suitable to monitor fast changes on earth's surface. However, note that the data acquisition must be tasked, data is not acquired systematically. For more information on SkySat, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/skysat">documentation page</a>.
+
+The spectral bands of SkySat data are the following:
+
+*Blue - 450-515 nm, resolution 0.5m*
+
+*Green - 515-595 nm, resolution 0.5m*
+
+*Red - 605-695 nm, resolution 0.5m*
+
+*NIR - 740-900 nm Near Infrared, resolution 0.5m*
+
+*Pan - 450-900nm Panchromatic, resolution 0.5*
+
+ - [True Color](skysat/true_color)
+ - [Panchromatic](skysat/panchromatic)
+ - [NDVI with visualization](skysat/ndvi)
 
 ## <a name="airbus_pleiades"></a>Airbus Pleiades (Commercial)
 
