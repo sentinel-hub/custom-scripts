@@ -408,7 +408,7 @@ The spectral bands of PlanetScope data are the following:
 
 ## <a name="sky_sat"></a>SkySat (Commercial)
 
-<a href="https://www.planet.com/products/monitoring/">SkySat</a> satellite constellation consists of 21 satellites, which were launched between 2013 and 2020. The satellites are based on a CubeSat concept but are a bit bigger comparing to the PlanetScope's satellites. Because of its rapid revisit time, this data is suitable to monitor fast changes on earth's surface. However, note that the data acquisition must be tasked, data is not acquired systematically. For more information on SkySat, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/skysat">documentation page</a>.
+<a href="https://www.planet.com/products/planet-imagery/">SkySat</a> satellite constellation consists of 21 satellites, which were launched between 2013 and 2020. The satellites are based on a CubeSat concept but are a bit bigger comparing to the PlanetScope's satellites. Because of its rapid revisit time, this data is suitable to monitor fast changes on earth's surface. However, note that the data acquisition must be tasked, data is not acquired systematically. For more information on SkySat, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/planet/skysat/">documentation page</a>.
 
 The spectral bands of SkySat data are the following:
 
