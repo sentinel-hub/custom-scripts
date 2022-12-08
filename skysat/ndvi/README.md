@@ -28,7 +28,7 @@ NDVI in certain intervals to RGBA (RGB+Alpha) values for visualization.
 
 Small example of NDVI visualized.
 
-![NDVI](fig/fig1.png)
+![NDVI](fig/skysat_ndvi.jpeg)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index

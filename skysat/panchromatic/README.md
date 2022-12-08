@@ -19,4 +19,4 @@ The panchromatic product maps Skysat panchromatic single band value that combine
 
 Small example of panchromatic image.
 
-![Small panchromatic visualization.](fig/skysat_panchromatic.png)
+![Small panchromatic visualization.](fig/skysat_panchromatic.jpg)
