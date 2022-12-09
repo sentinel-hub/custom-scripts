@@ -1,13 +1,13 @@
 //VERSION=3
 function setup() {
   return {
-    input: [{ "bands": ["Red", "NIR", "dataMask"] }],
+    input: ["Red", "NIR", "dataMask"],
     output: { bands: 4 }
   }
 }
 var f = 10000
 function evaluatePixel(sample) {
-  var NDVI = index(sample.NIR / f, sample.Red / f)
+  var NDVI = index(sample.NIR, sample.Red)
   return valueInterpolate(NDVI,
     [0, 0.2, 0.3, 0.4, 0.5, 1.0],
     [

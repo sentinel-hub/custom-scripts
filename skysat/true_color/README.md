@@ -17,7 +17,7 @@ The true color product combines Skysat band values Red, Blue, and Green to creat
 
 ## Description of representative images
 
-A small example with true color visualization.
+True color visualisation over Rome, Italy, acquired on 2018/08/28.
 
 ![Small true color image, on 8.10.2017.](fig/skysat_true_color.jpeg)
 

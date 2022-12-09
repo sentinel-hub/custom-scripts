@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: [{ "bands": ["Blue", "Red", "Green", "dataMask"] }],
+    input: ["Blue", "Red", "Green", "dataMask"],
     output: { bands: 4 }
   }
 }
