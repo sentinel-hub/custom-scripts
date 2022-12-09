@@ -17,6 +17,6 @@ The panchromatic product maps Skysat panchromatic single band value that combine
 
 ## Description of representative images
 
-Small example of panchromatic image.
+Panchromatic visualisation over Rome, Italy, acquired on 2020/03/20.
 
-![Small panchromatic visualization.](fig/skysat_panchromatic.png)
+![Small panchromatic visualization.](fig/skysat_panchromatic.jpg)

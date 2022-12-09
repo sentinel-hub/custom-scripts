@@ -26,9 +26,9 @@ NDVI in certain intervals to RGBA (RGB+Alpha) values for visualization.
 
 ## Description of representative images
 
-Small example of NDVI visualized.
+NDVI visualisation over Rome, Italy, acquired on 2018/08/28.
 
-![NDVI](fig/fig1.png)
+![NDVI](fig/skysat_ndvi.jpeg)
 
 ## References
  [1] Wikipedia, [Normalized Difference Vegetation Index
