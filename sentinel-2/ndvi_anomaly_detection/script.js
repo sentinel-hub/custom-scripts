@@ -33,17 +33,17 @@ function setup() {
     output: { bands: 3 },
     mosaicking: "ORBIT"
   }
-}
-;
-
-var filterScenes = function filterScenes(scenes, metadataInput) {
-  const nbPastYears = config2.default.nbPastYears;
-  return scenes.filter(function (scene) {
-    return scene.date.getMonth() === metadataInput.to.getMonth() && scene.date.getFullYear() >= metadataInput.to.getFullYear() - nbPastYears;
-  });
 };
 
-
+function preProcessScenes(collections) {
+  const nbPastYears = config2.default.nbPastYears;
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+    var orbitDateFrom = new Date(orbit.dateFrom);
+    return orbitDateFrom.getMonth() === collections.to.getMonth() && orbitDateFrom.getFullYear() >= collections.to.getFullYear() - nbPastYears;
+  })
+    return collections
+};
+        
 function calculateLoss(currentIndexAverage, pastIndexAverage, minimumAverageValuePremium, lowerTriggerPremium, higherTriggerPremium, minimumPayoutPremium, defaultValue) {
   if (currentIndexAverage === null || pastIndexAverage === null) return defaultValue;
   if (pastIndexAverage < minimumAverageValuePremium || pastIndexAverage <= currentIndexAverage) return 0;
@@ -67,7 +67,7 @@ var calculateNDVI = function calculateNDVI(sample, config) {
 
 const evaluatePixel = function (samples, scenes) {
   var indexesAverages = calculateIndexAverages(samples, scenes, config2["default"], calculateNDVI);
-  return colorBlend(calculateNdviAnomaly(indexesAverages, config2.ndviAnomaly.pixelEvalMaxValue, config2["default"].defaultOutputValue), [config2["default"].defaultOutputValue, 0 - config2.ndviAnomaly.pixelEvalMaxValue, 0, config2.ndviAnomaly.pixelEvalMaxValue], [[0, 0, 0], [1, 0, 0], [1, 1, 1], [0, 1, 0]]);
+  return valueInterpolate(calculateNdviAnomaly(indexesAverages, config2.ndviAnomaly.pixelEvalMaxValue, config2["default"].defaultOutputValue), [config2["default"].defaultOutputValue, 0 - config2.ndviAnomaly.pixelEvalMaxValue, 0, config2.ndviAnomaly.pixelEvalMaxValue], [[0, 0, 0], [1, 0, 0], [1, 1, 1], [0, 1, 0]]);
 };
 
 var isClouds = function isClouds(sample) {
