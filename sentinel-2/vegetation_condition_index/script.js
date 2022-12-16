@@ -16,7 +16,7 @@ var metadata = undefined;
 
 function preProcessScenes(collections) {
   var scenes = collections.scenes.orbits;
-  scenes = scenes.sort((s1, s2) => s2.date - s1.date);
+  scenes = scenes.sort((s1, s2) => s2.dateFrom - s1.dateFrom);
   const observed = new Date(scenes[0].dateFrom)
   var newScenes = [scenes[0]];
   for (var historical = observed - msInYear; historical >= new Date(collections.from) - toleranceMs; historical -= msInYear) {
