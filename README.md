@@ -9,6 +9,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [Sentinel-2](#sentinel-2)
   - [Sentinel-3](#sentinel-3)
   - [Sentinel-5P](#sentinel-5P)
+  - [Harmonized Landsat Sentinel](#harmonized-landsat-sentinel)
   - [Landsat 5 and 7](#landsat-57)
   - [Landsat 1-5 MSS](#landsat-1-5-mss)
   - [Landsat 4-5 TM](#landsat-4-5-tm)
@@ -17,6 +18,7 @@ Scripts are organised by sensors supported on Sentinel Hub:
   - [MODIS](#modis)
   - [DEM](#dem)
   - [PlanetScope](#planet_scope)
+  - [SkySat](#sky_sat)
   - [Airbus Pleiades](#airbus_pleiades)
   - [Airbus SPOT](#airbus_spot)
   - [Data fusion](#data-fusion)
@@ -168,6 +170,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 
 #### Vegetation algorithms
 
+ - [Normalized Difference Yellowness Index (NDYI)](sentinel-2/ndyi) - Visualisation of blooming in an Amazonian tree species and canola crops
  - [Deep GNDVI](sentinel-2/deep_gndvi)
 
 #### Agriculture and forestry algorithms
@@ -187,6 +190,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
  - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
  - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
+ - [MAGO Water Quality Monitoring Tool](sentinel-2/mago_water_quality_monitoring_tool)
+ - [Simple Water Bodies' Mapping - SWBM ](sentinel-2/simple_water_bodies_mapping-swbm)
  - [MAGO Water Quality Monitoring Tool](sentinel-2/mago_water_quality_monitoring_tool)
 
 #### Urban planning algorithms
@@ -275,6 +280,20 @@ Sentinel-5P provides atmospheric measurements, relating to air quality, climate 
  - [Cloud Optical Thickness](sentinel-5p/cloud-optical-thickness)
  - [Cloud Effective Radiometric Fraction](sentinel-5p/cloud-radiometric-fraction)
 
+## <a name="harmonized-landsat-sentinel"></a>Harmonized Landsat Sentinel
+
+Harmonized Landsat Sentinel is a NASA initiative to produce a Virtual Constellation of surface reflectance (SR) data from the Operational Land Imager (OLI) and Multi-Spectral Instrument (MSI) aboard the Landsat 8-9 and Sentinel-2 remote sensing satellites, respectively. The combined measurement enables global observations of the land every 2–3 days. Input products are Landsat 8-9 Collection 2 Level 1 top-of-atmosphere reflectance and Sentinel-2 L1C top-of-atmosphere reflectance, which NASA radiometrically harmonizes to the maximum extent, resamples to common 30-meter resolution, and grids using the Sentinel-2 Military Grid Reference System (MGRS) UTM grid. Because of this, the products are different from Landsat 8-9 Collection 2 Level 2 surface reflectance and Sentinel-2 L2A surface reflectance. For more information about the available bands and data, check the [HLS documentation](https://docs.sentinel-hub.com/api/latest/data/hls/#available-bands-and-data).
+
+#### Available scripts
+
+- [True Color](hls/true_color)
+- [False Color](hls/false_color)
+- [SWIR](hls/swir)
+- [NDVI](hls/ndvi)
+- [NDMI](hls/ndmi)
+- [NDWI](hls/ndwi)
+- [Thermal](hls/thermal)
+
 ## <a name="landsat-8"></a>Landsat 8
 The Landsat program is the longest running enterprise for acquisition of satellite imagery of Earth, running from 1972. The most recent, [Landsat 8](http://landsat.usgs.gov/landsat8.php){:target="_blank"}, was launched on February 11, 2013. Landsat-8 data has 11 spectral bands with spatial resolutions ranging from 15 to 60 meters. The names of the Landsat-8 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B09*, *B10* and *B11*.
 
@@ -293,6 +312,7 @@ The Landsat program is the longest running enterprise for acquisition of satelli
 
 #### Other available scripts
   - [Land surface temperature (LST) mapping](landsat-8/land_surface_temperature_mapping)
+  - [Land surface temperature (LST) comparison](landsat-8/land_surface_temperature_comparison)
   - [Water In Wetlands Index](landsat-8/wiw_L8_script)
   - [Clouds Segmentation](landsat-8/clouds_segmentation)
   - [Pansharpened true color](landsat-8/true-color-pansharpened)
@@ -327,6 +347,7 @@ Landsat Thematic Mapper (TM) sensor was carried onboard Landsats 4 and 5. The co
 - [NDMI](landsat-4-5-tm/ndmi)
 - [NDWI](landsat-4-5-tm/ndwi) 
 - [Thermal](landsat-4-5-tm/thermal) 
+- [Multi-temporal assessment of lake water level variations](landsat-4-5-tm/variations_water_level_lakes)
 
 ## <a name="landsat-7-etm"></a>Landsat 7 ETM+
 
@@ -386,6 +407,26 @@ The spectral bands of PlanetScope data are the following:
  - [NDWI](planet_scope/ndwi)
  - [Green City](planet_scope/green_city)
  - [UDM2 Cloud/Snow Classification](planet_scope/cloud_classification)
+
+## <a name="sky_sat"></a>SkySat (Commercial)
+
+<a href="https://www.planet.com/products/planet-imagery/">SkySat</a> satellite constellation consists of 21 satellites, which were launched between 2013 and 2020. The satellites are based on a CubeSat concept but are a bit bigger comparing to the PlanetScope's satellites. Because of its rapid revisit time, this data is suitable to monitor fast changes on earth's surface. However, note that the data acquisition must be tasked, data is not acquired systematically. For more information on SkySat, visit our <a href="https://docs.sentinel-hub.com/api/latest/data/planet/skysat/">documentation page</a>.
+
+The spectral bands of SkySat data are the following:
+
+*Blue - 450-515 nm, resolution 0.5m*
+
+*Green - 515-595 nm, resolution 0.5m*
+
+*Red - 605-695 nm, resolution 0.5m*
+
+*NIR - 740-900 nm Near Infrared, resolution 0.5m*
+
+*Pan - 450-900nm Panchromatic, resolution 0.5*
+
+ - [True Color](skysat/true_color)
+ - [Panchromatic](skysat/panchromatic)
+ - [NDVI with visualization](skysat/ndvi)
 
 ## <a name="airbus_pleiades"></a>Airbus Pleiades (Commercial)
 
@@ -447,6 +488,7 @@ _Note: Because Pleiades and SPOT bands are very similar in wavelengths, the same
 The combination of multiple remote sensing data sources can provide invaluable information that would not be obtained with a single sensor alone. Observation-level or pixel-based fusion combines pixels from different sources to form an image containing new information ([more information](https://ieeexplore.ieee.org/document/7740215)). Two widely used examples of pixel-based fusion are pan-sharpening and the fusion of radar and multispectral optical images. On the one hand, pan-sharpening consists of blending a high-resolution panchromatic image with a lower resolution multispectral image to obtain a high-resolution multispectral image. On the other hand, the combination of radar and optical imagery provides images with increased spectral resolution that can mitigate the drawbacks of each product (such as cloud cover for optical images), but also provide increased temporal resolution with more frequent overpasses.
 
 #### Available scripts
+ - [Detection of Lake Extent Changes with Landsat](data-fusion/lake-extent-changes)
  - [Mapping Soybean and Maize NDVI with Sentinel-1 and Sentinel-2](data-fusion/ndvi_s1_s2)
  - [Sentinel-2 with cloudy parts replaced by Sentinel-1](data-fusion/s2l1c_s1grd_cloud_replacement)
  - [Ship detection with Sentinel-1 and Sentinel-2](data-fusion/ship_detection_s1_s2)
@@ -454,8 +496,10 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sentinel-3 OLCI true color under Sentinel-5P products](data-fusion/olci_under_s5)
  - [DEM contour lines over true color Landsat 8](data-fusion/dem_contour_over_l8)
  - [Forest fire progression monitoring with Sentinel-2 and Sentinel-1](data-fusion/s2_s1_forest_fire_progression)
+ - [S2L2A Enhancement using S3SLTR F2 For Wildfire Detection](data-fusion/s2_s3slstr_wildfire_detection)
  - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](data-fusion/historic-landsat-changes)
  - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](data-fusion/sand-oriented_land_cover_classification_s1_s2)
+ - [Thermal visualization and water in wetlands with Landsat 8 L1 & L2](data-fusion/thermal_visualization_and_water_in_wetlands)
 
 ## <a name="copernicus_services"></a>Copernicus services
 
