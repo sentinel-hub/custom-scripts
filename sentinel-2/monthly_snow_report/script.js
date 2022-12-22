@@ -1,4 +1,4 @@
-//VERSION=3 (auto-converted from 1)
+//VERSION=3
 /*
 Source: @nkarasiak / www.karasiak.net
 
@@ -109,8 +109,12 @@ function evaluatePixel(samples, scenes) {
     return colorMap;
 }
 
-function filterScenes(scenes, inputMetadata) {
-    return scenes.filter(function(scene) {
-        return scene.date.getTime() >= (inputMetadata.to.getTime() - (numberOfMonthsToUse * 31 * 24 * 3600 * 1000));
-    });
+function preProcessScenes (collections) {
+    var scenes = collections.scenes.orbits;
+    scenes = scenes.sort((s1, s2) => new Date(s2.dateFrom) - new Date(s1.dateFrom));
+    var latest_scene = new Date(scenes[0].dateFrom)
+    collections.scenes.orbits = collections.scenes.orbits.filter(function (scene) {
+        return new Date(scene.dateFrom) >= latest_scene - numberOfMonthsToUse * 31 * 24 * 3600 * 1000
+    })
+    return collections
 }
