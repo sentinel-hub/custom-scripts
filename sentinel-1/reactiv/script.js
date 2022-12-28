@@ -94,7 +94,7 @@ function evaluatePixel(samples, scenes) {
   // Comparison of variation coeff of both polars with SAR constants deduced with the look number L
   var L = 4.9;
   var mu = 0.2286;
-  var alpha = 0.1616/Math.sqrt(samples.length);
+  var alpha = 0.1616;
 
   var R_vv = (variation_coeff_vv - mu)/(alpha*10.0) + 0.25;
   R_vv = clamp(R_vv, 0, 1)
