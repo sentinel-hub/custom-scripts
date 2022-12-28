@@ -1,6 +1,4 @@
 //VERSION=3
-var t2=Date.parse('2020-09-11'); //end date
-var t1=Date.parse('2018-01-01'); //start data
 var polar=['VV', 'VH'];
 var one_day = 1000 * 60 * 60 * 24 ;
 var reducing_coeff = 0.8;
@@ -38,7 +36,6 @@ function get_date_difference_in_days(t1, t2) {
   ));
 }
 
-var delta_date = get_date_difference_in_days(t2, t1)// Selection of polarization
 function setup() {
   return {
     input: [{
@@ -51,9 +48,9 @@ function setup() {
 
 // Selection of dates
 function preProcessScenes (collections) {
-  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
-    return new Date(orbit.dateFrom) >= t1 && new Date(orbit.dateFrom) <= t2;
-  })
+  collections.scenes.orbits = collections.scenes.orbits.sort(
+    (s1, s2) => new Date(s1.dateFrom) - new Date(s2.dateFrom)
+  );
   return collections
 }
 
@@ -77,6 +74,9 @@ function evaluatePixel(samples, scenes) {
   // Compute coefficient of variation
   var Kmax = 0
   var Imax = 0  
+  var delta_date = get_date_difference_in_days(
+    scenes[scenes.length-1].date, scenes[0].date
+  );// Selection of polarization  
 
   ////////////////////////////////
   // Computing saturation value //
@@ -94,7 +94,7 @@ function evaluatePixel(samples, scenes) {
   // Comparison of variation coeff of both polars with SAR constants deduced with the look number L
   var L = 4.9;
   var mu = 0.2286;
-  var alpha = 0.1616
+  var alpha = 0.1616/Math.sqrt(samples.length);
 
   var R_vv = (variation_coeff_vv - mu)/(alpha*10.0) + 0.25;
   R_vv = clamp(R_vv, 0, 1)
@@ -119,7 +119,7 @@ function evaluatePixel(samples, scenes) {
   }
   var indexk = get_date_difference_in_days(
     scenes[imax_idx].date.getTime(),
-    t1
+    scenes[0].date
   )
   var Kmax = indexk / delta_date;
   var imax = clamp(0.8*imax, 0, 1);
@@ -133,7 +133,6 @@ function evaluatePixel(samples, scenes) {
   var mean_intensity = intensities.reduce((a, b) => a + b) / samples.length;
   var value = (imax + 0.8*mean_intensity)/2;
   hsv = {h:0.9*Kmax, s:R, v:value}; // Setting the max possible hue value to 0.9
-  //rgb = [mean_amplitude, mean_amplitude, mean_amplitude]
   rgb = HSVtoRGB(hsv);
   return rgb;
  }
