@@ -6,22 +6,20 @@ function setup() {
     output: { bands: 3, sampleType: "UINT8" }
   };
 }
-// define the BQA decoder function
-
-decodeL8C2Qa(55052);
   
 function evaluatePixel(sample) {
 
 // decoding BQA classes  
+var bqa = decodeL8C2Qa(sample.BQA)
 
-var water_pixels = decodeL8C2Qa(sample.BQA).water
-var snow_pixels = decodeL8C2Qa(sample.BQA).snow
-var clouds = decodeL8C2Qa(sample.BQA).cloud
-var cloud_dilated = decodeL8C2Qa(sample.BQA).dilatedCloud
-var cloudshadows = decodeL8C2Qa(sample.BQA).cloudShadow
-var cirrus_clouds = decodeL8C2Qa(sample.BQA).cirrus
-var fill_pixels = decodeL8C2Qa(sample.BQA).fill
-var clear_pixels = decodeL8C2Qa(sample.BQA).clear
+var water_pixels = bqa.water
+var snow_pixels = bqa.snow
+var clouds = bqa.cloud
+var cloud_dilated = bqa.dilatedCloud
+var cloudshadows = bqa.cloudShadow
+var cirrus_clouds = bqa.cirrus
+var fill_pixels = bqa.fill
+var clear_pixels = bqa.clear
 
 // defining the colormap
 
