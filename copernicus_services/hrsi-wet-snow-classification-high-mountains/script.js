@@ -1,37 +1,25 @@
 //VERSION=3
 
-// This custom script visualises Seasonal Trajectories PPI
-
 function setup() {
   return {
-    input: ["PPI", "dataMask"],
-    output: { bands: 4},
-    mosaicking: Mosaicking.TILE
+    input: ["WSM", "dataMask"],
+    output: {bands: 4,
+    sampleType: "AUTO"
   }
 }
-const map =
-[
-  [0.0000, 0xFFFFE5],
-  [0.3750, 0xF7FCB9],
-  [0.7500, 0xD9F0A3],
-  [1.1250, 0xADDD8E],
-  [1.5000, 0x78C679],
-  [1.8750, 0x41AB5D],
-  [2.2500, 0x238443],
-  [2.6250, 0x006837],
-  [3.0000, 0x004529]
-]
+}
+const map = [
+    [110, 0xff4dff],  //110 - Wet Snow
+    [125, 0xffffff],  //115 - Dry Snow or Snow free or patchy snow
+    [200, 0x000000],  //200 - Radar Shadow
+    [210, 0x4d4dff],  //210 - Water
+    [220, 0x00a600],  //220 - Forest
+    [230, 0xf2a64d],  //230 - Urban Areas
+    [240, 0xccffcc], //240 - Non-mountain areas 
+    [255, 0xff0000]  //255 - NODATA
+  ];
 
 const visualizer = new ColorMapVisualizer(map);
-//EvaluatePixel function
-function evaluatePixel(samples) 
-{
-  for (let i = 0; i < samples.length; i++) 
-  {
-    let sample = samples[i];
-    if (sample.dataMask == 1) 
-    {
-  return [visualizer.process(sample.PPI*0.0001)[0], visualizer.process(sample.PPI*0.0001)[1], visualizer.process(sample.PPI*0.0001)[2], sample.dataMask];
-    }
-  }
-} 
+
+function evaluatePixel(sample) {
+  return [visualizer.process(sample.WSM)[0], visualizer.process(sample.WSM)[1], visualizer.process(sample.WSM)[2], sample.dataMask]};
