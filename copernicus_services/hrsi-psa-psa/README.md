@@ -1,4 +1,4 @@
-# CLMS HR-S&I: Fractional Snow Cover - Normalised difference snow index (%) visualisation script
+# CLMS HR-S&I: Persistent Snow Area visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

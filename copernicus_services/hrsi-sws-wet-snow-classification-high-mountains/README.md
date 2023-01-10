@@ -1,4 +1,4 @@
-# CLMS HR-S&I: Fractional Snow Cover - Normalised difference snow index (%) visualisation script
+# CLMS HR-S&I: SAR Wet Snow in high mountains - Wet Snow classification in high Mountains areas visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
