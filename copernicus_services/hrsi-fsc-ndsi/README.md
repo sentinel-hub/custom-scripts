@@ -1,4 +1,4 @@
-# Seasonal Trajectories PPI visualisation script
+# CLMS HR-S&I: Fractional Snow Cover - Normalised difference snow index (%) visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
@@ -8,16 +8,17 @@
 </div>
 
 ## General description of the script  
-This script visualises seasonal trajectories PPI . The Seasonal Trajectories PPI is derived through fitting a smoothing and gap filling function to the yearly time-series raw PPI values. The color map is adopted from https://github.com/jacobs-tim/copernicus-land-monitoring-service-hrvpp-colourmaps 
+This script visualises Fractional Snow Cover NDSI. The product provides the NDSI values in the detected snow area, i.e. area where
+FSCTOC > 0%.
 
   
 ## Description of representative images
-*2020 late July seasonal trajectories PPI over  Brăila Romania* 
+*24th April 2020, Innsbruck, AT* 
 
-![Seasonal trajectories Brăila Romania](fig/braila-romania.PNG)  
+![NDSI](fig/figure.PNG)  
 
 ## Resources
 
-- [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity/seasonal-trajectories)
+- [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products)
 
-- [Entry in public collections](https://github.com/sentinel-hub/public-collections/tree/main/collections/seasonal-trajectories)
+- Entry in public collections
