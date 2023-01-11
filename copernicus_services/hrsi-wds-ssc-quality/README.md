@@ -33,7 +33,7 @@ Table 1: Classification classes and colouring scheme.
     </tr>
     <tr>
       <td>3</td>
-      <td style="background-color: #xf2a64d;"></td>
+      <td style="background-color: #f2a64d;"></td>
       <td>2 - low quality</td>
     </tr>
     <tr>
