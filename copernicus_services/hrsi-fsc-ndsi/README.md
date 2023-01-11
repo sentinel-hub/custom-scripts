@@ -13,7 +13,7 @@ FSCTOC > 0%.
 
   
 ## Description of representative images
-*24th April 2020, Innsbruck, AT* 
+*23rd April 2020, Innsbruck, AT* 
 
 ![NDSI](fig/figure.png)  
 

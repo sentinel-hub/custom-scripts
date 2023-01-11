@@ -8,14 +8,13 @@
 </div>
 
 ## General description of the script  
-This script visualises Fractional Snow Cover NDSI. The product provides the NDSI values in the detected snow area, i.e. area where
-FSCTOC > 0%.
+This script visualises Fractional Snow Cover - On-ground fractional snow cover(%) (FSCOG).
 
   
 ## Description of representative images
-*24th April 2020, Innsbruck, AT* 
+*23rd April 2020, Innsbruck, AT* 
 
-![NDSI](fig/figure.png)  
+![FSCOG](fig/figure.png)  
 
 ## Resources
 
