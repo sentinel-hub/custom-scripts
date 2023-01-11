@@ -56,7 +56,7 @@ Table 1: Classification classes and colouring scheme.
 
 
 ## Description of representative images
-*PSA over the Mont Blanc Region, FR* 
+*PSA quality over the Mont Blanc Region, FR* 
 
 ![PSA QC](fig/figure.png)  
 
