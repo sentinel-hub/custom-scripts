@@ -14,7 +14,7 @@ This script visualises Daily cumulative Gap-filled Fractional Snow Cover - Fract
 ## Description of representative images
 *23rd April 2020, Innsbruck, AT* 
 
-![NDSI](fig/figure.png)  
+![GFSC FSC](fig/figure.png)  
 
 ## Resources
 

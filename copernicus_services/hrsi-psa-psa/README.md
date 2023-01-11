@@ -8,14 +8,19 @@
 </div>
 
 ## General description of the script  
-This script visualises Fractional Snow Cover NDSI. The product provides the NDSI values in the detected snow area, i.e. area where
-FSCTOC > 0%.
+This script visualises Persistent Snow Area. 
+
+Possible values
+are as follows:
+- 0: no persistent snow
+- 1: persistent snow
+- 255: no data
 
   
 ## Description of representative images
-*24th April 2020, Innsbruck, AT* 
+*PSA over the Mont Blanc Region, FR* 
 
-![NDSI](fig/figure.png)  
+![PSA](fig/figure.png)  
 
 ## Resources
 
