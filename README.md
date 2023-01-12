@@ -584,9 +584,12 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 - [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod)
 
-### High Resolution Snow & Ice Monitoring
+## High Resolution Snow & Ice Monitoring
 
 The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring)) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products measuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). There are aso ice products that measure ice cover (RLIE) and aggregated river and lake ice extent (ARLIE).
+
+### Fractional Snow Cover
+
 
 
 #### Available scripts
@@ -596,12 +599,40 @@ The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.coperni
 - [FSC FSTOC visualisation script](copernicus_services/hrsi-fsc-top-of-canopy)
 - [FSC FSTOC quality visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-quality)
 - [FSC NDSI visualisation script](copernicus_services/hrsi-fsc-ndsi)
+
+### Daily cumulative Gap-filled Fractional Snow Cover
+
+
+
+#### Available scripts
+
 - [GFSC FSC visualisation script](copernicus_services/hrsi-gfsc-fsc)
 - [GFSC FSC quality visualisation script](copernicus_services/hrsi-gfsc-fsc-quality)
+
+### Persistent Snow Area
+
+
+
+#### Available scripts
+
 - [PSA visualisation script](copernicus_services/hrsi-psa-psa)
 - [PSA quality visualisation script](copernicus_services/hrsi-psa-psa-quality)
+
+### SAR Wet Snow in high mountains
+
+
+
+#### Available scripts
+
 - [SWS WSM visualisation script](copernicus_services/hrsi-sws-wet-snow-classification-high-mountains)
 - [SWS WSM quality visualisation script](copernicus_services/hrsi-sws-wet-snow-classification-high-mountains-quality)
+
+### Wet / Dry Snow - Snow state classification
+
+
+
+#### Available scripts
+
 - [WDS SSC visualisation script](copernicus_services/hrsi-wds-ssc)
 - [WDS SSC quality visualisation script](copernicus_services/hrsi-wds-ssc-quality)
 
