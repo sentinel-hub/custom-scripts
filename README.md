@@ -596,8 +596,8 @@ The Fractional Snow Cover (FSC) product provides the snow fraction at the Top Of
 
 - [FSC FSCOG visualisation script](copernicus_services/hrsi-fsc-on-ground-fsi)
 - [FSC FSCOG quality visualisation script](copernicus_services/hrsi-fsc-on-ground-fsi-quality)
-- [FSC FSTOC visualisation script](copernicus_services/hrsi-fsc-top-of-canopy)
-- [FSC FSTOC quality visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-quality)
+- [FSC FSTOC visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-fsi)
+- [FSC FSTOC quality visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-fsi-quality)
 - [FSC NDSI visualisation script](copernicus_services/hrsi-fsc-ndsi)
 
 #### Daily cumulative Gap-filled Fractional Snow Cover
