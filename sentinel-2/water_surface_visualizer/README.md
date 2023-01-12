@@ -2,7 +2,7 @@
 <a href="#" id='togglescript'>Show</a> V3 script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative script.js %}
+{% include_relative script.js %}
 {% endhighlight %}
 </div>
 
