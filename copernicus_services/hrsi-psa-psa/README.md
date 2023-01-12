@@ -25,5 +25,3 @@ are as follows:
 ## Resources
 
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products)
-
-- Entry in public collections

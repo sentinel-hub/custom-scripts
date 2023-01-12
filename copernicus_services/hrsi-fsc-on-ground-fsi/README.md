@@ -20,4 +20,3 @@ This script visualises Fractional Snow Cover - On-ground fractional snow cover(%
 
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products)
 
-- Entry in public collections
