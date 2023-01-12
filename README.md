@@ -582,13 +582,66 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 - [RSLOPE visualisation script](copernicus_services/vpp-slope-of-senescent-period-rslope)
 - [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
 - [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
-- [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod) 
+- [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod)
 
+### High-Resolution Snow & Ice Monitoring
 
+The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring)) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products measuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). There are also ice products that measure ice cover (RLIE) and aggregated river and lake ice extent (ARLIE).
+
+#### Fractional Snow Cover
+
+The Fractional Snow Cover (FSC) product provides the snow fraction at the Top Of Canopy (FSCTOC) and On Ground (FSCOG). NDSI is also provided as part of this service.
+
+##### Available scripts
+
+- [FSC FSCOG visualisation script](copernicus_services/hrsi-fsc-on-ground-fsi)
+- [FSC FSCOG quality visualisation script](copernicus_services/hrsi-fsc-on-ground-fsi-quality)
+- [FSC FSTOC visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-fsi)
+- [FSC FSTOC quality visualisation script](copernicus_services/hrsi-fsc-top-of-canopy-fsi-quality)
+- [FSC NDSI visualisation script](copernicus_services/hrsi-fsc-ndsi)
+
+#### Daily cumulative Gap-filled Fractional Snow Cover
+
+The daily cumulative Gap-filled Fractional Snow Cover (GFSC) product is a more complete version of the FSC product; gap-filled both at a spatial and temporal scale.
+
+##### Available scripts
+
+- [GFSC FSC visualisation script](copernicus_services/hrsi-gfsc-fsc)
+- [GFSC FSC quality visualisation script](copernicus_services/hrsi-gfsc-fsc-quality)
+
+#### SAR Wet Snow in high mountains
+
+The SAR Wet Snow (SWS) product provides information on the wet snow extent in high-mountain areas. 
+
+##### Available scripts
+
+- [SWS WSM visualisation script](copernicus_services/hrsi-sws-wet-snow-classification-high-mountains)
+- [SWS WSM quality visualisation script](copernicus_services/hrsi-sws-wet-snow-classification-high-mountains-quality)
+
+#### Wet / Dry Snow - Snow state classification
+
+The Wet/Dry Snow (WDS) product differentiates the snow state conditions within the snow mask defined by the FSCTOC information.
+
+##### Available scripts
+
+- [WDS SSC visualisation script](copernicus_services/hrsi-wds-ssc)
+- [WDS SSC quality visualisation script](copernicus_services/hrsi-wds-ssc-quality)
+
+#### Persistent Snow Area
+
+The Persistent Snow Area (PSA) product is generated annually from FSC products and provides the extent of persistent snow cover for that year (the area where snow is present throughout the hydrological year).
+
+##### Available scripts
+
+- [PSA visualisation script](copernicus_services/hrsi-psa-psa)
+- [PSA quality visualisation script](copernicus_services/hrsi-psa-psa-quality)
+
+More information about the HR-S&I snow production workflows that highlights the dependencies between the diferent products and how they are derived can be found [here](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products).
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
 
 Sentinel-2 L2A 120m mosaic is a derived product, offering a cloudless mosaic of the whole world for all 12 Sentinel-2 bands. It is thus possible to create Sentinel-2 visualizations on a global level. The resolution of the collection is 120 meters. The product contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As clouds can be missed and as there are some parts of the world which have lengthy cloudy periods, clouds might be remaining in some parts. The collection is available for 2019 (with 6 Sentinel-2 bands) and annually since 2020 (all 12 Sentinel-2 bands). The modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/).
+
 
 Find related resources and more information about the collection [here](https://collections.sentinel-hub.com/sentinel-s2-l2a-mosaic-120/).
 
