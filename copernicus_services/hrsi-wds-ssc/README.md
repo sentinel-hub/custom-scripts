@@ -49,12 +49,12 @@ Table 1: Classification classes and colouring scheme.
     <tr>
       <td>6</td>
       <td style="background-color: #4d4dff;"></td>
-      <td>220 - Water</td>
+      <td>210 - Water</td>
     </tr>
     <tr>
       <td>7</td>
       <td style="background-color: #00a600;"></td>
-      <td>230 - Forest</td>
+      <td>220 - Forest</td>
     </tr>
     <tr>
       <td>8</td>
@@ -64,7 +64,7 @@ Table 1: Classification classes and colouring scheme.
     <tr>
       <td>9</td>
       <td style="background-color: #ff0000;"></td>
-      <td>230 - No data</td>
+      <td>255 - No data</td>
     </tr>
 </tbody>
 </table>  
