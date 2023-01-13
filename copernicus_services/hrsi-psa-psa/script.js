@@ -7,8 +7,8 @@ function setup() {
   };
 }
 const map = [
-  [0, 0xccf24d], //0 - No persistant snow cover
-  [1, 0xccccff], //1 - Persistant snow cover
+  [0, 0x00a600], //0 - No persistant snow cover
+  [1, 0xe6f2ff], //1 - Persistant snow cover
   [255, 0x000000], //255 - NODATA
 ];
 

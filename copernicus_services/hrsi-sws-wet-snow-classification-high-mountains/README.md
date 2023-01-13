@@ -54,12 +54,12 @@ Table 1: Classification classes and colouring scheme.
       <tr>
       <td>6</td>
       <td style="background-color: #ccffcc;"></td>
-      <td>230 - Non-mountain areas</td>
+      <td>240 - Non-mountain areas</td>
     </tr>
       <tr>
       <td>6</td>
       <td style="background-color: #ff0000;"></td>
-      <td>230 - No data</td>
+      <td>255 - No data</td>
     </tr>
 </tbody>
 </table>
