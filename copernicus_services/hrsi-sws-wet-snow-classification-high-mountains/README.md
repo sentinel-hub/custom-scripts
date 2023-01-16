@@ -52,12 +52,12 @@ Table 1: Classification classes and colouring scheme.
       <td>230 - Urban area</td>
     </tr>
       <tr>
-      <td>6</td>
+      <td>7</td>
       <td style="background-color: #ccffcc;"></td>
       <td>240 - Non-mountain areas</td>
     </tr>
       <tr>
-      <td>6</td>
+      <td>8</td>
       <td style="background-color: #ff0000;"></td>
       <td>255 - No data</td>
     </tr>
