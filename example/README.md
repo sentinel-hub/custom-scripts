@@ -26,6 +26,35 @@
 
 Publishing your product should be easy, nevertheless, any feedback and ideas how to improve or make the process simpler is very appreciated.
 
+### Test your changes locally
+
+This is optional but makes Pull Requests quicker to handle since they should have less mistakes.  
+Before you create the PR you can check if everything looks right on the website. To do this follow these steps:
+
+- In the root directory of your fork open a terminal
+- Install ruby
+  - Ubuntu: `sudo apt install ruby ruby-dev`
+  - [For others](https://www.ruby-lang.org/en/documentation/installation/)
+- Install bundler
+  - `gem install bundler`
+  - On Ubuntu you might have to add `sudo`
+- Create a Gemfile
+  - In the root folder of the repository (where the `_config.yml` file is) create a new file `Gemfile`.
+  - i.e  `touch Gemfile`
+  - and add the following content:
+
+```
+source 'https://rubygems.org'
+gem "github-pages", "~> GH_VERSION", group: :jekyll_plugins
+```
+
+Replace `GH_VERSION` with the version number that is displayed next to github-pages [here](https://pages.github.com/versions/). 
+
+- Serve the page
+  - First install all necessary gems with `bundle install`
+  - then the site can be built with `bundle exec jekyll serve`
+  - The site should then be visible on http://127.0.0.1:4000
+
 ---
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
