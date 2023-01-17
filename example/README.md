@@ -29,12 +29,12 @@ Publishing your product should be easy, nevertheless, any feedback and ideas how
 ### Test your changes locally
 
 This is optional but makes Pull Requests quicker to handle since they should have less mistakes.  
-Before you create the PR you can check if everything looks right on the website. To do this follow these steps:
+Before you create the PR you can check if everything looks right on the website. To do this follow these steps which are based on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) page:
 
+#### Linux
 - In the root directory of your fork open a terminal
 - Install ruby
   - Ubuntu: `sudo apt install ruby ruby-dev`
-  - [For others](https://www.ruby-lang.org/en/documentation/installation/)
 - Install bundler
   - `gem install bundler`
   - On Ubuntu you might have to add `sudo`
@@ -52,6 +52,41 @@ Replace `GH_VERSION` with the version number that is displayed next to github-pa
 
 - Serve the page
   - First install all necessary gems with `bundle install`
+  - then the site can be built with `bundle exec jekyll serve`
+  - The site should then be visible on http://127.0.0.1:4000
+
+#### macOS
+- In the root directory of your fork open a terminal
+- Install ruby
+  - `brew install chruby ruby-install xz`
+    - If homebrew hasn't been installed yet, intall homebrew 
+
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+  - `ruby-install ruby 3.1.3`
+  - After installation run the following codes:
+
+  ```
+  echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+  echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+  echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
+  ```
+  - Quit and relaunch Terminal, then check that everything with `ruby -v`
+  - It should show ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) or a newer version
+- Install Jekyll
+  - `gem install jekyll`
+- Install bundler
+  - `gem install bundler`
+- Following the **Create a Gemfile** step in the Linux section
+- Serve the page
+  - First install all necessary gems with `bundle install`
+  - Add the missing webrick package with `bundle add webrick`
+    - Run this command again when the following error message pops out:
+
+    ```
+    bundler: failed to load command: jekyll
+    ```
   - then the site can be built with `bundle exec jekyll serve`
   - The site should then be visible on http://127.0.0.1:4000
 
