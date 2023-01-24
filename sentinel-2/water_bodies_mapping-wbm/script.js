@@ -70,10 +70,13 @@ function wbi(r,g,b,nir,swir1,swir2) {
 	return ws;
 }
 //multi-temp.
-function filterScenes(scenes, inputMetadata) {
-    return scenes.filter(scene => (
-		scene.date.getTime()>=new Date(fromD)&&scene.date.getTime()<new Date(toD) 
-    ));
+function preProcessScenes (collections) {
+    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+        return (new Date(orbit.dateFrom) < new Date(toD)) &&
+               (new Date(orbit.dateFrom) >= new Date(fromD))
+    })
+
+    return collections
 }
 
 // setup values
