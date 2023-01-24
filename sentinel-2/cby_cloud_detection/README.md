@@ -3,7 +3,7 @@
 <a href="#" id='togglescript'>Show</a> original script or [download](script_bcy_original.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}
-      {% include_relative script_bcy_original.js %}
+{% include_relative script_bcy_original.js %}
 {% endhighlight %}
 </div>  
 
