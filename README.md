@@ -190,7 +190,6 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [Aquatic Plants and Algae Custom Script Detector (APA Script)](sentinel-2/apa_script)
  - [se2waq](sentinel-2/se2waq) - water quality for Sentinel-2
  - [Water In Wetlands Index (WIW)](sentinel-2/wiw_s2_script)
- - [MAGO Water Quality Monitoring Tool](sentinel-2/mago_water_quality_monitoring_tool)
  - [Simple Water Bodies' Mapping - SWBM ](sentinel-2/simple_water_bodies_mapping-swbm)
  - [MAGO Water Quality Monitoring Tool](sentinel-2/mago_water_quality_monitoring_tool)
 
