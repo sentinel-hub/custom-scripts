@@ -110,8 +110,10 @@ function evaluatePixel(pix) {
 	else return RGB;
 }
 
-function filterScenes(scenes, inputMetadata) {
-    return scenes.filter(scene => (
-		scene.date.getTime() >= new Date("2015-07-01T00:00:00Z") && scene.date.getTime() < new Date("2019-04-17T00:00:00Z") 
-    ));
-}
+function preProcessScenes(collections) {
+	collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+	  return (new Date(orbit.dateFrom) < new Date("2015-07-01T00:00:00Z")) ||
+			 (new Date(orbit.dateFrom) >= new Date("2019-04-17T00:00:00Z"))   
+	})
+	return collections
+  }
