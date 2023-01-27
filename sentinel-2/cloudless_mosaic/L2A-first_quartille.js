@@ -1,4 +1,4 @@
- //VERSION=3
+//VERSION=3
 /*
 Script works on Sentinel-2 L2A data and requires scene classification (SCL) band. 
 It takes one year of data, which is quite compute and time intensive, which is why it is recommended to run it on small area (e.g. 256x256 px).
@@ -17,19 +17,19 @@ function setup() {
         "SCL"
       ]
     }],
-    output: {bands: 3, sampleType:"UINT16"},
+    output: { bands: 3, sampleType: "UINT16" },
     mosaicking: "ORBIT"
   }
 }
-function preProcessScenes (collections) {
-    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
-        var orbitDateFrom = new Date(orbit.dateFrom)
-        return orbitDateFrom.getTime() >= (collections.to.getTime()-3*31*24*3600*1000);
-    })
-    return collections
+function preProcessScenes(collections) {
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+    var orbitDateFrom = new Date(orbit.dateFrom)
+    return orbitDateFrom.getTime() >= (collections.to.getTime() - 3 * 31 * 24 * 3600 * 1000);
+  })
+  return collections
 }
 function getValue(values) {
-  values.sort( function(a,b) {return a - b;} );
+  values.sort(function (a, b) { return a - b; });
   return getFirstQuartile(values);
 }
 
@@ -40,13 +40,13 @@ function getFirstQuartile(sortedValues) {
 function getDarkestPixel(sortedValues) {
   return sortedValues[0]; // darkest pixel
 }
-function validate (samples) {
+function validate(samples) {
   var scl = samples.SCL;
-  
+
   if (scl === 3) { // SC_CLOUD_SHADOW
     return false;
   } else if (scl === 9) { // SC_CLOUD_HIGH_PROBA
-    return false; 
+    return false;
   } else if (scl === 8) { // SC_CLOUD_MEDIUM_PROBA
     return false;
   } else if (scl === 7) { // SC_CLOUD_LOW_PROBA / UNCLASSIFIED
@@ -67,13 +67,13 @@ function evaluatePixel(samples, scenes) {
   var clo_b02 = []; var clo_b03 = []; var clo_b04 = [];
   var clo_b02_invalid = []; var clo_b03_invalid = []; var clo_b04_invalid = [];
   var a = 0; var a_invalid = 0;
-  
+
   for (var i = 0; i < samples.length; i++) {
     var sample = samples[i];
 
     if (sample.B02 > 0 && sample.B03 > 0 && sample.B04 > 0) {
       var isValid = validate(sample);
-      
+
       if (isValid) {
         clo_b02[a] = sample.B02;
         clo_b03[a] = sample.B03;
@@ -87,7 +87,7 @@ function evaluatePixel(samples, scenes) {
       }
     }
   }
-  
+
   var rValue;
   var gValue;
   var bValue;
@@ -104,7 +104,7 @@ function evaluatePixel(samples, scenes) {
     gValue = 0;
     bValue = 0;
   }
-  return [rValue * 10000, 
-          gValue * 10000, 
-          bValue * 10000]
+  return [rValue * 10000,
+  gValue * 10000,
+  bValue * 10000]
 }
