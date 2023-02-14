@@ -12,7 +12,7 @@
 
 ## Description
 
-True color composite uses visible light bands red, green and blue in the corresponding red, green and blue color channels, resulting in a natural colored product, that is a good representation of the Earth as humans would see it naturally.
+True color composite uses visible light bands red, green and blue in the corresponding red, green and blue color channels, resulting in a natural colored product, that is a good representation of the Earth as humans would see it naturally. This visualization uses highlight compression to ensure no maxing-out of clouds or snow, uses sRGB encoding for no extra darkening of shadows and adds a small amount of saturation boost.
 
 ## Description of representative images
 
