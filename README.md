@@ -89,6 +89,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
 
 #### Popular RGB composites
  - [True color](sentinel-2/true_color) - Simplistic true color image from red, green and blue bands.
+ - [True color optimized L1C](sentinel-2/l1c_optimized) - Optimized L1C True Color image
+ - [True color optimized L2A](sentinel-2/l2a_optimized) - Optimized L2A True Color image
  - [False color infrared](sentinel-2/false_color_infrared) - False Color Infrared RGB Composite
  - [SWIR](sentinel-2/swir-rgb) - Short Wave Infrared RGB Composite
  - [False Color Urban](sentinel-2/false-color-urban-rgb) - False Color Urban RGB Composite
