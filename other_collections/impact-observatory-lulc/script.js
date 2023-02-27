@@ -1,5 +1,19 @@
 //VERSION=3
 
+const colormap = [
+  [1, 0x419bdf],
+  [2, 0x397d49],
+  [4, 0x7a87c6],
+  [5, 0xe49635],
+  [7, 0xc4281b],
+  [8, 0xa59b8f],
+  [9, 0xa8ebff],
+  [10, 0x616161],
+  [11, 0xe3e2c3]
+]
+
+const visualizer = new ColorMapVisualizer(colormap);
+
 function evaluatePixel(samples) {
   let tile_sample = NaN;
   let tile_dataMask = 0;
@@ -9,33 +23,8 @@ function evaluatePixel(samples) {
       tile_dataMask = 1;
     }
   }
-  if (tile_sample === 1) {
-    return [65, 155, 223, tile_dataMask * 255];
-  }
-  if (tile_sample === 2) {
-    return [57, 125, 73, tile_dataMask * 255];
-  }
-  if (tile_sample === 4) {
-    return [122, 135, 198, tile_dataMask * 255];
-  }
-  if (tile_sample === 5) {
-    return [228, 150, 53, tile_dataMask * 255];
-  }
-  if (tile_sample === 7) {
-    return [196, 40, 27, tile_dataMask * 255];
-  }
-  if (tile_sample === 8) {
-    return [165, 155, 143, tile_dataMask * 255];
-  }
-  if (tile_sample === 9) {
-    return [168, 235, 255, tile_dataMask * 255];
-  }
-  if (tile_sample === 10) {
-    return [97, 97, 97, tile_dataMask * 255];
-  }
-  if (tile_sample === 11) {
-    return [227, 226, 195, tile_dataMask * 255];
-  }
+  let rgbVis = visualizer.process(tile_sample);
+  return rgbVis.concat(tile_dataMask);
 }
 
 function setup() {
@@ -47,7 +36,6 @@ function setup() {
     }],
     output: {
       bands: 4,
-      sampleType: "UINT8"
     },
     mosaicking: "TILE"
   }
