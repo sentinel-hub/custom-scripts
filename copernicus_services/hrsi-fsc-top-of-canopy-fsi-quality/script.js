@@ -18,10 +18,6 @@ const map = [
 const visualizer = new ColorMapVisualizer(map);
 
 function evaluatePixel(sample) {
-  return [
-    visualizer.process(sample.QCTOC)[0],
-    visualizer.process(sample.QCTOC)[1],
-    visualizer.process(sample.QCTOC)[2],
-    sample.dataMask,
-  ];
+  let rgbVis = visualizer.process(sample.QCTOC);
+  return rgbVis.concat(sample.dataMask);
 }
