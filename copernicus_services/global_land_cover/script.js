@@ -5,8 +5,8 @@
 function setup() {
   return {
     input: ["Discrete_Classification_map"],
-    output: { 
-      bands: 4, 
+    output: {
+      bands: 4,
       sampleType: "AUTO"
     }
   }
@@ -36,12 +36,11 @@ const map = [
   [125, 0x929900], // Open forest, mixed
   [126, 0x648c00], // Open forest, unknown
   [200, 0x000080]  // Open sea
-    
-    
-  ];
+];
 
 const visualizer = new ColorMapVisualizer(map);
 
 function evaluatePixel(sample) {
-  return [visualizer.process(sample.Discrete_Classification_map)[0], visualizer.process(sample.Discrete_Classification_map)[1], visualizer.process(sample.Discrete_Classification_map)[2], sample.Discrete_Classification_map !=255];
+  let rgbVis = visualizer.process(sample.Discrete_Classification_map);
+  return rgbVis.concat(sample.dataMask);
 }
