@@ -8,9 +8,9 @@
 </div>
 
 ## General description of the script  
-This script visualises 10m Annual Land Use Land Cover Map.
+This script visualises the 10m Annual Land Use Land Cover Map.
 
-Table 1: Color legend for 10m Annual Land Use Land Cover Map. 
+Table 1: Color legend for the 10m Annual Land Use Land Cover Map. 
 <table>
   <thead>
     <tr>
