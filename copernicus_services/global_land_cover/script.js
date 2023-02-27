@@ -42,5 +42,5 @@ const visualizer = new ColorMapVisualizer(map);
 
 function evaluatePixel(sample) {
   let rgbVis = visualizer.process(sample.Discrete_Classification_map);
-  return rgbVis.concat(sample.dataMask);
+  return rgbVis.concat(sample.Discrete_Classification_map != 255);
 }
