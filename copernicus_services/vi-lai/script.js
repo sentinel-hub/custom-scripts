@@ -25,6 +25,6 @@ const map =
 const visualizer = new ColorMapVisualizer(map);
 
 function evaluatePixel(sample) {
-  let rgbVis = visualizer.process(sample.LAI * 0.0001);
+  let rgbVis = visualizer.process(sample.LAI * 0.002);
   return rgbVis.concat(sample.dataMask);
 }
