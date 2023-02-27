@@ -21,7 +21,6 @@ const map = [
   [74, 0x00ffff], // High occurrence      // cyan
   [74, 0x3bb9ff], // Very high occurrence  // deep sky blue
   [76, 0x0032c8]  //Permanent occurrence   //blue
-
 ];
 
 const visualizer = new ColorMapVisualizer(map);
