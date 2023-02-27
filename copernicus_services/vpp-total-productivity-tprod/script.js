@@ -28,7 +28,7 @@ function evaluatePixel(samples) {
   for (let i = 0; i < samples.length; i++) {
     let sample = samples[i];
     if (sample.dataMask == 1) {
-      let rgbVis = visualizer.process(sample.TPROD * 0.0001);
+      let rgbVis = visualizer.process(sample.TPROD * 0.1);
       return rgbVis.concat(sample.dataMask);
     }
   }
