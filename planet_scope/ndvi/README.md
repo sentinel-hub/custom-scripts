@@ -21,10 +21,6 @@ The normalized difference vegetation index, abbreviated NDVI, is defined as
 
 $$NDVI := \mathtt{Index}(NIR,RED) = \frac{NIR-RED}{NIR+RED}.$$  
 
-For PlanetScope, the index looks like this:
-
-$$NDVI := \mathtt{Index}(B4,B3) = \frac{B4-B3}{B4+B3}.$$   
-
 ## Description of representative images
 
 NDVI of Rome. 
@@ -32,5 +28,4 @@ NDVI of Rome.
 ![NDVI of Rome](fig/fig1.jpg)
 
 ## References
- [1] Wikipedia, [Normalized Difference Vegetation Index
-](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.
+ [1] Wikipedia, [Normalized Difference Vegetation Index](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index). Accessed on October 4th 2017.

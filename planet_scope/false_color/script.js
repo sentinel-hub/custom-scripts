@@ -3,11 +3,11 @@
 
 function setup() {
   return {
-    input: ["B2", "B3", "B4"],
+    input: ["NIR", "Green", "Blue"],
     output: { bands: 3 }
   };
 }
 
 function evaluatePixel(sample) {
-  return [sample.B4/3000, sample.B3/3000, sample.B2/3000];
+  return [sample.NIR / 3000, sample.Green / 3000, sample.Blue / 3000];
 }
