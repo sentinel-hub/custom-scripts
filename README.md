@@ -5,26 +5,40 @@
 This repository contains a collection of custom scripts for [Sentinel Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
 
 Scripts are organised by sensors supported on Sentinel Hub:
-  - [Sentinel-1](#sentinel-1)
-  - [Sentinel-2](#sentinel-2)
-  - [Sentinel-3](#sentinel-3)
-  - [Sentinel-5P](#sentinel-5P)
+  - [Sentinel](#sentinel-1)
+    - [Sentinel-1](#sentinel-1)
+    - [Sentinel-2](#sentinel-2)
+    - [Sentinel-3](#sentinel-3)
+    - [Sentinel-5P](#sentinel-5p)
+  - [Landsat](#landsat-1-5-mss)
+    - [Landsat 1-5 MSS](#landsat-1-5-mss)
+    - [Landsat 4-5 TM](#landsat-4-5-tm)
+    - [Landsat 5 and 7](#landsat-57)
+    - [Landsat 7 ETM+](#landsat-7-etm)
+    - [Landsat-8](#landsat-8)
   - [Harmonized Landsat Sentinel](#harmonized-landsat-sentinel)
-  - [Landsat 5 and 7](#landsat-57)
-  - [Landsat 1-5 MSS](#landsat-1-5-mss)
-  - [Landsat 4-5 TM](#landsat-4-5-tm)
-  - [Landsat 7 ETM+](#landsat-7-etm)
-  - [Landsat-8](#landsat-8)
+  - [Sentinel-2 L2A 120m Mosaic](#sentinel2-120m-mosaic)
   - [MODIS](#modis)
   - [DEM](#dem)
-  - [PlanetScope](#planet_scope)
-  - [SkySat](#sky_sat)
-  - [Airbus Pleiades](#airbus_pleiades)
-  - [Airbus SPOT](#airbus_spot)
+  - [Planet Labs](#planet_scope)
+    - [PlanetScope](#planet_scope)
+    - [SkySat](#sky_sat)
+  - [Airbus](#airbus_pleiades)
+    - [Airbus Pleiades](#airbus_pleiades)
+    - [Airbus SPOT](#airbus_spot)
   - [Data fusion](#data-fusion)
   - [Copernicus services](#copernicus_services)
-  - [Sentinel-2 L2A 120m Mosaic](#sentinel2-120m-mosaic)
+    - [CORINE Land Cover](#CLC)
+    - [Global Land Cover](#GLC)
+    - [Water Bodies](#water_bodies)
+    - [High Resolution Vegetation Phenology and Productivity](#HRVPP)
+    - [High Resolution Snow and Ice](#HRSI)
   - [Other collections](#other_collections)
+    - [CNES Land cover map](#cnes)
+    - [Global Human Settlements Layer](#ghsl)
+    - [Global Surface Water](#surface_water)
+    - [WorldCover](#worldcover)
+    - [10m Annual Land Use Land Cover (9-class)](#impact_observatory)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -253,6 +267,7 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 - [Active Fire Detection](slstr/active_fire_points_detection)
 - [False color composite](slstr/false-color-321)
 - [F1 brightness temperature](slstr/f1-brightness-temperature)
+
 
 ## <a name="sentinel-5P"></a>Sentinel-5P
 
@@ -505,7 +520,7 @@ The combination of multiple remote sensing data sources can provide invaluable i
 
 ## <a name="copernicus_services"></a>Copernicus services
 
-### CORINE Land Cover  
+### <a name="CLC"></a>CORINE Land Cover  
 
 In 1985 the 'Coordination of Information on the Environment' (CORINE) programme was initiated by the European Commission. It aimed at collecting environmental information on high priority topics for the European Union (air, water, soil, land cover, coastal erosion, biotopes, etc.). Since 1994, the established databases and programmes are managed by the [European Environment Agency (EEA)](https://www.eea.europa.eu/). The [CORINE Land Cover (CLC) inventory](https://land.copernicus.eu/pan-european/corine-land-cover) is a vector-based dataset that consists of 44 land cover and land use classes. There are altogether 5 mapping inventories implemented since 1986, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018), 4 CLC-Change (CLCC) layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018) and 4 CLC Accounting  Layers for 2000, 2006, 201, 2018.  
 [CLC Accounting Layers](https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers) are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA.  
@@ -515,7 +530,7 @@ CORINE Land Cover data is available in Sentinel Hub, read more in our [Public Co
 - [CORINE Land Cover visualisation script](copernicus_services/corine_land_cover)
 - [CORINE Land Cover Accounting Layers visualisation script](copernicus_services/corine_land_cover_accounting_layer)
 
-### Global Land Cover
+### <a name="GLC"></a>Global Land Cover
 
 Global Land Cover products at 100 m resolution are delivered annually by [ The Copernicus Global Land Service (CGLS)](https://land.copernicus.eu/global/products/lc). The most recent collection 3 (version 3.0.1) of 100 m Land Cover products for the years 2015 - 2019 were generated from the PROBA-V 100 m and 300 m satellite observations and several other ancillary datasets, with global coverage. Global Land Cover products are generated from 3 years input data in three modes: base reference, consolidated or near real time mode.  As from 2020, (2019-conso and 2020-nrt products) are planned to be generated from the combination of Sentinel-1 and Sentinel-2 satellite observations following end of PROBA-V operations. The  Global Land Cover data contains one main _land cover discrete classification map_ and several other additional layers. For more information on Global land cover products, see the [product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf).
 
@@ -525,7 +540,7 @@ Global Land Cover data is available in Sentinel Hub, read more in our [Public Co
 
 - [Global Land Cover discrete classification map visualisation script](copernicus_services/global_land_cover)
 
-### Water Bodies 
+### <a name="water_bodies"></a>Water Bodies 
 The Global  Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The  product available here is the  [Water Bodies  100m Version 1](https://land.copernicus.eu/global/products/wb) collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution. The Water Bodies product contains one main water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies  detected using the Modified Normalized Difference Water Index [(MNDWI)](https://en.wikipedia.org/wiki/Normalized_difference_water_index) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence. More information about the data can be obtained from the [Water Bodies product](https://land.copernicus.eu/global/products/wb) page.
 
 Water Bodies 100m data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/water-bodies/)
@@ -534,7 +549,9 @@ Water Bodies 100m data is available in Sentinel Hub, read more in our [Public Co
 - [Water Bodies visualisation script](copernicus_services/water-bodies)
 - [Water Bodies Occurrence visualisation script](copernicus_services/water-bodies-occurence)  
 
-### Vegetation Indices, daily
+### <a name="HRVPP"></a>High Resolution Vegetation Phenology and Productivity
+
+#### Vegetation Indices, daily
 Vegetation Indices (VI) product is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The product is comprised of 4 raw Vegetation Indices; (1) Normalized Difference Vegetation Index (NDVI), (2) Leaf Area Index (LAI), 
 (3) Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) and (4) Plant Phenology Index (PPI) generated near real-time (NRT) from Sentinel-2 satellite observations. 
@@ -543,12 +560,13 @@ based on 5-day revisit period of Sentinel-2. The VIs are accompanied by  a relat
 More information about raw vegetation indices is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/)  
 Vegetation Indices is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
 
+##### Available scripts
 - [LAI visualisation script](copernicus_services/vi-lai)
 - [PPI visualisation script](copernicus_services/vi-ppi)
 - [NDVI visualisation script](copernicus_services/vi-ndvi)
 - [FAPAR visualisation script](copernicus_services/vi-fapar)
 
-### Seasonal Trajectories, 10-daily
+#### Seasonal Trajectories, 10-daily
 Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution . 
 It is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The Seasonal Trajectories PPI is derived through fitting a smoothing and gap filling function to the yearly time-series raw PPI values generated from Sentinel-2 satellite observations. 
@@ -557,10 +575,10 @@ The Seasonal Trajectories  provide the vegetation status for each pixel on a reg
 More information about ST product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)  
 Seasonal Trajectories is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).  
 
-#### Available scripts
+##### Available scripts
 - [PPI visualisation script](copernicus_services/st-ppi)
 
-### Vegetation Phenology and Productivity Parameters, yearly    
+#### Vegetation Phenology and Productivity Parameters, yearly    
 Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS), 
 pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The VPP product is comprised of 13 parameters that describe specific stages of the seasonal vegetation growth cycle. 
@@ -574,7 +592,7 @@ More information about VPP product is outlined in the [product user manual](http
 Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
 
 
-#### Available scripts
+##### Available scripts
 - [AMPL visualisation script](copernicus_services/vpp-amplitude-ampl)
 - [MAXV visualisation script](copernicus_services/vpp-season-maximum-value-maxv)
 - [MINV visualisation script](copernicus_services/vpp-season-minimum-value-minv)
@@ -585,7 +603,7 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 - [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
 - [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod)
 
-### High-Resolution Snow & Ice Monitoring
+### <a name="HRSI"></a>High-Resolution Snow & Ice Monitoring
 
 The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring)) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products measuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). There are also ice products that measure ice cover (RLIE) and aggregated river and lake ice extent (ARLIE).
 
@@ -656,7 +674,7 @@ Find related resources and more information about the collection [here](https://
 
 ## <a name="other_collections"></a>Other collections
 
-### CNES Land cover map
+### <a name="cnes"></a>CNES Land cover map
 
 The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework. 
 Maps for 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed. 
@@ -666,14 +684,14 @@ Maps for 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps
 - [CNES land cover classifier confidence visualisation script](other_collections/cnes_land_cover_confidence)
 - [CNES land cover validity visualisation script](other_collections/cnes_land_cover_validity)
 
-### Global Human Settlements Layer
+### <a name="ghsl"></a>Global Human Settlements Layer
 
 The Global Human Settlement (GHS) framework produces global maps of built-up, population density and settlements to monitor human presence on Earth over time. The data are managed by the Joint Research Centre (JRC) and the DG for Regional and Urban Policy (DG REGIO) of the European Commission, together with the international partnership GEO Human Planet Initiative of the GEO Human Planet Initiative.
 
 #### Available scripts
 - [GHS-Built-S2 visualisation script](other_collections\global-human-settlement-layer-ghs-built-s2)
 
-### Global Surface Water
+### <a name="surface_water"></a>Global Surface Water
 
 The Global Surface Water dataset was developed by the European Commission's Joint Research Centre (JRC) within the framework of the Copernicus Programme. It is derived from Landsat 5, 7 and 8 imagery and shows various aspects of the spatio-temporal distribution of surface water between 1984 and 2020 (with annual revisions) at the global scale in six different layers.
 
@@ -697,7 +715,7 @@ Please check the official [Global Surface Water website](https://global-surface-
 - [Global Surface Water Transitions visualisation script](other_collections/global_surface_water_transitions)
 - [Global Surface Water Extent visualisation script](other_collections/global_surface_water_extent)
 
-### WorldCover
+### <a name="worldcover"></a>WorldCover
   [WorldCover](https://esa-worldcover.org/en) is a global land cover map produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. 
   In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural 
   characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. 
@@ -707,7 +725,7 @@ Please check the official [Global Surface Water website](https://global-surface-
 #### Available scripts
 - [WorldCover visualisation script](other_collections/worldcover)
 
-### 10m Annual Land Use Land Cover (9-class)
+### <a name="impact_observatory"></a>10m Annual Land Use Land Cover (9-class)
   The [10m Annual Land Use Land Cover (LULC)](https://www.impactobservatory.com/global_maps/) map is collaboratively produced by Impact Observatory, Microsoft, and Esri.
   The data collection is available globally and derived from ESA Sentinel-2 imagery at 10m resolution, using Impact Ovservatory's state of the art deep learning AI land classification model which is trained by billions of human-labeled image pixels.
   There are 9 LULC classes generated by the algorithm, including Built, Crops, Trees, Water, Rangeland, Flooded Vegetation, Snow/Ice, Bare Ground, and Clouds.
