@@ -3,8 +3,7 @@
 
 @import "jekyll-theme-leap-day";
 
-h1, h2, h3, h4, h5, h6 {
-    color:#333;
-    margin:0 0 10px;
+h1, h2, h3, h4, h5, h6, a {
     scroll-margin-top: 180px;
   }
+ul li ul {margin: 0}
