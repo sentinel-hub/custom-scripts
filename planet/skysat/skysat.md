@@ -2,6 +2,7 @@
 layout: default
 title: SkySat
 nav_order: 1
+parent: Planet
 ---
 
 # SkySat (Commercial)

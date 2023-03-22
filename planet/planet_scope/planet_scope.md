@@ -2,6 +2,7 @@
 layout: default
 title: PlanetScope
 nav_order: 1
+parent: Planet
 ---
 
 # PlanetScope (Commercial)
