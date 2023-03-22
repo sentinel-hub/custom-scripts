@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-5p/nitrogen-dioxide/
+nav_exclude: true
+---
+
 # Sentinel-5P Nitrogen Dioxide - NO2
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/burned_area_ms/
+nav_exclude: true
+---
+
 # Burned Area Visualization 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

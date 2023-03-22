@@ -1,3 +1,8 @@
+---
+permalink: /landsat-7-etm/moisture-index/
+nav_exclude: true
+---
+
 # Landsat 7 ETM+ Normalized Differeence Moisture Index - NDMI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

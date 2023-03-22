@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/sand-oriented_land_cover_classification_s1_s2/
+nav_exclude: true
+---
+
 # Data-Fusion Sand-Oriented Land Cover Classification
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

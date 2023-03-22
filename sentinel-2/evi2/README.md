@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/evi2/
+nav_exclude: true
+---
+
 # EVI2 (Enhanced Vegetation Index 2)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

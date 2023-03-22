@@ -1,3 +1,8 @@
+---
+permalink: /planet_scope/ndwi/
+nav_exclude: true
+---
+
 # NDWI Normalized Difference Water Index, PlanetScope
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

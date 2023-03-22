@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-amplitude-ampl/
+nav_exclude: true
+---
+
 # VPP AMPL visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

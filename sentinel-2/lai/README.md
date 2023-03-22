@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/lai/
+nav_exclude: true
+---
+
 # LAI (Leaf Area Index)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

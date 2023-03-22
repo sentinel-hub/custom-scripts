@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/vegetation_productivity_indicator/
+nav_exclude: true
+---
+
 # Vegetation Productivity Indicator 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it 

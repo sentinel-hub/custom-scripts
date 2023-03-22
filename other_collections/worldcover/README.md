@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/worldcover/
+nav_exclude: true
+---
+
 # WorldCover Map visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

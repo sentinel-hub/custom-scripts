@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/ndwi/
+nav_exclude: true
+---
+
 
 # Normalized Difference Water Index, NDWI  
 

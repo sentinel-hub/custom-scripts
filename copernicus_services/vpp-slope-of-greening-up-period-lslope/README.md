@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-slope-of-greening-up-period-lslope/
+nav_exclude: true
+---
+
 # VPP LSLOPE visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/deep_bais2/
+nav_exclude: true
+---
+
 # Deep BAIS2 Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

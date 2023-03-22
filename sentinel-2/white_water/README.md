@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/white_water/
+nav_exclude: true
+---
+
 # White-Water Detection Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

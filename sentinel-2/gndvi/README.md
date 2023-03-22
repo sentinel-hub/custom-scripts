@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/gndvi/
+nav_exclude: true
+---
+
 # GNDVI (Green Normalized Difference Vegetation Index)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

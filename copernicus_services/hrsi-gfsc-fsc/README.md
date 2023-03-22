@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/hrsi-gfsc-fsc/
+nav_exclude: true
+---
+
 # CLMS HR-S&I: Daily cumulative Gap-filled Fractional Snow Cover - Fractional snow cover (%) visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

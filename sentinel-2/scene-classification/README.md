@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/scene-classification/
+nav_exclude: true
+---
+
 # Sentinel-2 L2A Scene Classification Map
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/orm_index/
+nav_exclude: true
+---
+
 # Oil Slicks and Red Tide Monitoring
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

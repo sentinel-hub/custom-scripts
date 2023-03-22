@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/fire_boundary/
+nav_exclude: true
+---
+
 # Fire Boundary Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

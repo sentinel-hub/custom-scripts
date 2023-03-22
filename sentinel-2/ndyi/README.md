@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndyi/
+nav_exclude: true
+---
+
 # Normalized Difference Yellowness Index (NDYI), visualisation of blooming in an Amazonian tree species and canola crops
 
 <a href="#" id='togglescript'>Show</a> script or [download](barren_soil_script.js){:target="_blank"} it.

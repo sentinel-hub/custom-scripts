@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/landslide_detection_rapid_mapping/
+nav_exclude: true
+---
+
 # Landslide Detection for Rapid Mapping Using Sentinel 2
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

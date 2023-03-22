@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/poor_mans_atcor/
+nav_exclude: true
+---
+
 # Color Correction with Sentinel Hub
 _Poor Man's Atmospheric Adjustment for a Pretty Glacier Picture_ (see <a href="https://medium.com/p/d721e12a919">the blog post</a> for details)
 

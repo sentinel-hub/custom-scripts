@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/false-color-urban-rgb/
+nav_exclude: true
+---
+
 # False Color Urban RGB Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

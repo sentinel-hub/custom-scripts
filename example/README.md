@@ -1,3 +1,8 @@
+---
+permalink: /example/
+nav_exclude: true
+---
+
 # Example product
 
 ---

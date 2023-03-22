@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/barren_soil/
+nav_exclude: true
+---
+
 # Barren Soil Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

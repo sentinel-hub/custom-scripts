@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/fapar/
+nav_exclude: true
+---
+
 # FAPAR (The Fraction of Absorbed Photosynthetically Active Radiation)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

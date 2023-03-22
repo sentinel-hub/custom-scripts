@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/false_color_infrared/
+nav_exclude: true
+---
+
 # False color infrared product
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

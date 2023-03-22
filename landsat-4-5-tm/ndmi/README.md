@@ -1,3 +1,8 @@
+---
+permalink: /landsat-4-5-tm/ndmi/
+nav_exclude: true
+---
+
 # Landsat 4-5 TM Normalized Differeence Moisture Index - NDMI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

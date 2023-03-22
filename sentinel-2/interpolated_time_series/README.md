@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/interpolated_time_series/
+nav_exclude: true
+---
+
 # Interpolated Time-series script
 
 <a href="#" id='togglescript'>Show</a> script or <a href="/custom-scripts/sentinel-2/interpolated_time_series/script.js" target="_blank">download</a> it.

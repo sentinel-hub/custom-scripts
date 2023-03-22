@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/ndvi_s1_s2/
+nav_exclude: true
+---
+
 # Mapping Soybean and Maize NDVI with Sentinel-1 and Sentinel-2
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

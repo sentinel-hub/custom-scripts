@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-end-of-season-value-eosv/
+nav_exclude: true
+---
+
 # VPP EOSV visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

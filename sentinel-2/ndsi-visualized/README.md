@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndsi-visualized/
+nav_exclude: true
+---
+
 # Normalised Difference Snow Index, NDSI, Visualized
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

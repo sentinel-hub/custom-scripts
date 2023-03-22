@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndvi_anomaly_detection/
+nav_exclude: true
+---
+
 # NDVI Anomaly Detection Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

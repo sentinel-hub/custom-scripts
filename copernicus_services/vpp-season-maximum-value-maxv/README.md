@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-season-maximum-value-maxv/
+nav_exclude: true
+---
+
 # VPP MAXV visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

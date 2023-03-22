@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/sar-ice/
+nav_exclude: true
+---
+
 # SAR-Ice: A Sea Ice RGB Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

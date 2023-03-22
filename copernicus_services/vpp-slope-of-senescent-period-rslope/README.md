@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-slope-of-senescent-period-rslope/
+nav_exclude: true
+---
+
 # VPP RSLOPE visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/ndvi/
+nav_exclude: true
+---
+
 
 # Normalized Difference Vegetation Index, NDVI  
 

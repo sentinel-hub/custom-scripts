@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/swir-rgb/
+nav_exclude: true
+---
+
 # SWIR - Short Wave Infrared RGB Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

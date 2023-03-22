@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/urban_areas/
+nav_exclude: true
+---
+
 # Urban Areas Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/tonemapped_natural_color/
+nav_exclude: true
+---
+
 # Tonemapped Natural Color Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

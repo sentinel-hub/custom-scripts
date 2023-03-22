@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/land_use_with_linear_discriminant_analysis/
+nav_exclude: true
+---
+
 # Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

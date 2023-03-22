@@ -1,3 +1,8 @@
+---
+permalink: /airbus_pleiades/green_city_pansharpened/
+nav_exclude: true
+---
+
 # Green City - Pleiades Pansharpened Script, Pleiades
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

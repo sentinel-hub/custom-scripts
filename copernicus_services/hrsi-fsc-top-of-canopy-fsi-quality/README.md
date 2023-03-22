@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/hrsi-fsc-top-of-canopy-fsi-quality/
+nav_exclude: true
+---
+
 # CLMS HR-S&I: Fractional Snow Cover - Top of canopy fractional snow cover (%) quality layer visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

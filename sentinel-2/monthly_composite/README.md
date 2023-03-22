@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/monthly_composite/
+nav_exclude: true
+---
+
 # Monthly Composite Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

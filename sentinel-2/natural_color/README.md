@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/natural_color/
+nav_exclude: true
+---
+
 # Natural color product
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

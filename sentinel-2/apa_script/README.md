@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/apa_script/
+nav_exclude: true
+---
+
 # Aquatic Plants and Algae Custom Script Detector (APA Script)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

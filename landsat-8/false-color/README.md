@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/false-color/
+nav_exclude: true
+---
+
 # Landsat 8 False Color Composite
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/satellite_derived_bathymetry_mapping-sdbm/
+nav_exclude: true
+---
+
 # Satellite Derived Bathymetry Mapping - SDBM Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

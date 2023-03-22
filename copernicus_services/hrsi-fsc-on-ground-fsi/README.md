@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/hrsi-fsc-on-ground-fsi/
+nav_exclude: true
+---
+
 # CLMS HR-S&I: Fractional Snow Cover - On-ground fractional snow cover (%) visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

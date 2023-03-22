@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/natural_colors_sigmoid/
+nav_exclude: true
+---
+
 # OLCI Natural Colours with Sigmoid Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

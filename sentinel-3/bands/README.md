@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/bands/
+nav_exclude: true
+---
+
 # Sentinel-3 OLCI Bands
 
 Source: 

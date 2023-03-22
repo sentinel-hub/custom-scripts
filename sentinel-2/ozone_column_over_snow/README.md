@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ozone_column_over_snow/
+nav_exclude: true
+---
+
 # Total Ozone Column over snow in Antarctica
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="\_blank"} it.

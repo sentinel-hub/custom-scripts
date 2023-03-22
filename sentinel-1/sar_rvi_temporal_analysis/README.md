@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/sar_rvi_temporal_analysis/
+nav_exclude: true
+---
+
 # Tracking Radar Vegetation Index (Agriculture Development) Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

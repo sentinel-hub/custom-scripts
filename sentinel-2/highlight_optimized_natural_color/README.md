@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/highlight_optimized_natural_color/
+nav_exclude: true
+---
+
 # Highlight Optimized Natural Color Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

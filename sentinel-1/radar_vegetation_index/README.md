@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/radar_vegetation_index/
+nav_exclude: true
+---
+
 # Radar Vegetation Index for Sentinel-1 SAR data - RVI4S1 Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

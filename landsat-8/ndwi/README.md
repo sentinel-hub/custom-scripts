@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/ndwi/
+nav_exclude: true
+---
+
 # Landsat 8 NDWI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

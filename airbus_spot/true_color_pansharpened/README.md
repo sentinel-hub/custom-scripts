@@ -1,3 +1,8 @@
+---
+permalink: /airbus_spot/true_color_pansharpened/
+nav_exclude: true
+---
+
 # True Color Pansharpened, SPOT
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

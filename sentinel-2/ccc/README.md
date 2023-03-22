@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ccc/
+nav_exclude: true
+---
+
 # CCC (Canopy Chlorophyll Content)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/markuse_fire/
+nav_exclude: true
+---
+
 # Wildfire visualization
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

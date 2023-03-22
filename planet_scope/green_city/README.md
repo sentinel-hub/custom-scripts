@@ -1,3 +1,8 @@
+---
+permalink: /planet_scope/green_city/
+nav_exclude: true
+---
+
 # Green City Script, PlanetScope
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

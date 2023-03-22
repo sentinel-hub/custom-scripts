@@ -1,3 +1,8 @@
+---
+permalink: /landsat-4-5-tm/swir/
+nav_exclude: true
+---
+
 # Landsat 4-5 TM SWIR Composite
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

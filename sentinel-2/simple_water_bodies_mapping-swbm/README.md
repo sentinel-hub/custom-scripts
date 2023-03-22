@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/simple_water_bodies_mapping-swbm/
+nav_exclude: true
+---
+
 # Simple Water Bodies' Mapping - SWBM 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

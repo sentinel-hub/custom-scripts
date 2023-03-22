@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/water_surface_visualizer/
+nav_exclude: true
+---
+
 # Water Surface Visualizer
 <a href="#" id='togglescript'>Show</a> V3 script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

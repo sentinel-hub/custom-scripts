@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/hrsi-sws-wet-snow-classification-high-mountains/
+nav_exclude: true
+---
+
 # CLMS HR-S&I: SAR Wet Snow in high mountains - Wet Snow classification in high Mountains areas visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

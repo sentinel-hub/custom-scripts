@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/vegetation_condition_index/
+nav_exclude: true
+---
+
 # Vegetation Condition Index 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it 

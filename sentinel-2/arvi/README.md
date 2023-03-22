@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/arvi/
+nav_exclude: true
+---
+
 # Atmospherically Resistant Vegetation Index (ARVI)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

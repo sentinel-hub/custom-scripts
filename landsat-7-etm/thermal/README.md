@@ -1,3 +1,8 @@
+---
+permalink: /landsat-7-etm/thermal/
+nav_exclude: true
+---
+
 # Landsat 7 ETM+ Thermal Visualization
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

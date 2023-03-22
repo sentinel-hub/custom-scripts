@@ -1,3 +1,8 @@
+---
+permalink: /airbus_pleiades/true_color_pansharpened/
+nav_exclude: true
+---
+
 # True Color Pansharpened, Pleiades
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

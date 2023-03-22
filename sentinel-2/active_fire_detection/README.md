@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/active_fire_detection/
+nav_exclude: true
+---
+
 # Active Fire Detection
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

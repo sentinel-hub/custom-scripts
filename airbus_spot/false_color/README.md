@@ -1,3 +1,8 @@
+---
+permalink: /airbus_spot/false_color/
+nav_exclude: true
+---
+
 # False color infrared product, SPOT data
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

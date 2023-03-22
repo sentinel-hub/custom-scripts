@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/flood_mapping/
+nav_exclude: true
+---
+
 # Flood Mapping With Sentinel-1 Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

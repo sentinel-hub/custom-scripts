@@ -1,3 +1,8 @@
+---
+permalink: /modis/swir/
+nav_exclude: true
+---
+
 # MODIS SWIR Composite
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/monthly_snow_report/
+nav_exclude: true
+---
+
 # Monthly Snow Report Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

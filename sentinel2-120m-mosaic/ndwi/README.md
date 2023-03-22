@@ -1,3 +1,8 @@
+---
+permalink: /sentinel2-120m-mosaic/ndwi/
+nav_exclude: true
+---
+
 # Sentinel-2 120 m Mosaic - NDWI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

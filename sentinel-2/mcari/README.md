@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/mcari/
+nav_exclude: true
+---
+
 # MCARI (Modified Chlorophyll Absorption in Reflectance Index)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

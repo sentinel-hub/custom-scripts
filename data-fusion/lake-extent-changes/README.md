@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/lake-extent-changes/
+nav_exclude: true
+---
+
 # Detection of Lake Extent Changes
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

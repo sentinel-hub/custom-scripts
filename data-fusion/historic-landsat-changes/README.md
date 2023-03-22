@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/historic-landsat-changes/
+nav_exclude: true
+---
+
 # Historic NDVI Changes with Landsat 4-5TM and Landsat 8
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/msi/
+nav_exclude: true
+---
+
 # Moisture index
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/thermal_visualization_and_water_in_wetlands/
+nav_exclude: true
+---
+
 # Thermal Visualization and Water In Wetlands Script 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

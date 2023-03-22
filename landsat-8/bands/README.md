@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/bands/
+nav_exclude: true
+---
+
 # Landsat 8 Bands
 
  - [Refference](https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands/}

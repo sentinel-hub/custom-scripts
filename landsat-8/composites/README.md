@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/composites/
+nav_exclude: true
+---
+
 # Simple RGB Composites (Landsat 8)
 
 ## True Color

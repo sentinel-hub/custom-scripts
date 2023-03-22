@@ -1,3 +1,8 @@
+---
+permalink: /airbus_pleiades/ndvi/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index, Pleiades
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

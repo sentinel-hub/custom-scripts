@@ -1,3 +1,8 @@
+---
+permalink: /dem/dem-difference/
+nav_exclude: true
+---
+
 # Mapzen and Copernicus DEM difference Visualization
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

@@ -1,3 +1,8 @@
+---
+permalink: /planet_scope/ndvi/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index, PlanetScope
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

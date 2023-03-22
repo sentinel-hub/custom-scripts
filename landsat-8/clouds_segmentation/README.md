@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/clouds_segmentation/
+nav_exclude: true
+---
+
 # Landsat 8 Clouds Segmentation Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

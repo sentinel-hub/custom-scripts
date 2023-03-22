@@ -1,3 +1,8 @@
+---
+permalink: /slstr/false-color-321/
+nav_exclude: true
+---
+
 # Sentinel-3 SLSTR False color composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /landsat-1-5-mss/false-color-nir/
+nav_exclude: true
+---
+
 # Landsat 1-5 MSS False Color Near Infrared Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

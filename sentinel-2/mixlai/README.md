@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/mixlai/
+nav_exclude: true
+---
+
 # Mix Leaf Area Index (MixLAI)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

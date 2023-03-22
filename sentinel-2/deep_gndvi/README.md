@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/deep_gndvi/
+nav_exclude: true
+---
+
 # Deep GNDVI Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

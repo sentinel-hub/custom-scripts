@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/pseudo_forest_canopy_density/
+nav_exclude: true
+---
+
 # Pseudo Forest Canopy Density (Pseudo-FCD)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

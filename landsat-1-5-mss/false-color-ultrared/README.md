@@ -1,3 +1,8 @@
+---
+permalink: /landsat-1-5-mss/false-color-ultrared/
+nav_exclude: true
+---
+
 # Landsat 1-5 MSS False Color Ultra Red Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

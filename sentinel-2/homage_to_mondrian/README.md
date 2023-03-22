@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/homage_to_mondrian/
+nav_exclude: true
+---
+
 # Homage to Mondrian Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

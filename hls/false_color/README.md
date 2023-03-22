@@ -1,3 +1,8 @@
+---
+permalink: /hls/false_color/
+nav_exclude: true
+---
+
 # False Color
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

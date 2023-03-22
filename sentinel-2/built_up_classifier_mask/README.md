@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/built_up_classifier_mask/
+nav_exclude: true
+---
+
 # Built-up binary classifier mask
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js) it.

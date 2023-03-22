@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-5p/cloud-top-pressure/
+nav_exclude: true
+---
+
 # Sentinel-5P Cloud Top Pressure
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

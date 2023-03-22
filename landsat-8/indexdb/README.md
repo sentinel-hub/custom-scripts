@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/indexdb/
+nav_exclude: true
+---
+
 # Landsat-8 indices from indexdatabase
 
 Following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"} for Landsat-8 satellite.

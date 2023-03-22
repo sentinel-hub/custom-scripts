@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/crop_monitoring/
+nav_exclude: true
+---
+
 # Agricultural Crop Monitoring from Space Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

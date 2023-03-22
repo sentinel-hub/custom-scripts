@@ -1,3 +1,8 @@
+---
+permalink: /Landsat-57/bands/
+nav_exclude: true
+---
+
 # Landsat 5 and 7 Bands
 
 ## Band 1

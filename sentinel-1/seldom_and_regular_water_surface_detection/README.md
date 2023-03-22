@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/seldom_and_regular_water_surface_detection/
+nav_exclude: true
+---
+
 # Seldom and Regular Water Surface Detection Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

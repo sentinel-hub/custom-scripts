@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/global-human-settlement-layer-ghs-built-s2/
+nav_exclude: true
+---
+
 # GHS-BUILT-S2
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/wiw_L8_script/
+nav_exclude: true
+---
+
 # Water In Wetlands Index - Landsat-8 Version
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

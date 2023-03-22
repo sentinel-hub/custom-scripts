@@ -1,3 +1,8 @@
+---
+permalink: /landsat-7-etm/true-color/
+nav_exclude: true
+---
+
 # Landsat 7 ETM+ True Color Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

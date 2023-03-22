@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/urban_land_infrared/
+nav_exclude: true
+---
+
 # Urban Land Infrared Color Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

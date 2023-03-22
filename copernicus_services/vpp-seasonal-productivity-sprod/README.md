@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-seasonal-productivity-sprod/
+nav_exclude: true
+---
+
 # VPP SPROD visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

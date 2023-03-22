@@ -1,3 +1,8 @@
+---
+permalink: /airbus_pleiades/ndwi/
+nav_exclude: true
+---
+
 # NDWI Normalized Difference Water Index, Pleiades
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

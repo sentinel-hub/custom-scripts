@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/hollstein/
+nav_exclude: true
+---
+
 # Clouds classification script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

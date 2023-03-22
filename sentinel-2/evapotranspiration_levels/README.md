@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/evapotranspiration_levels/
+nav_exclude: true
+---
+
 # Detection of Evapotranspiration Levels Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

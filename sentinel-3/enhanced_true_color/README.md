@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/enhanced_true_color/
+nav_exclude: true
+---
+
 # Enhanced true color visualization
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

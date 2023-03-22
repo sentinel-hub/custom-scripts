@@ -1,3 +1,8 @@
+---
+permalink: /landsat-4-5-tm/variations_water_level_lakes/
+nav_exclude: true
+---
+
 # Assessment of spatio-temporal variations of water level in lakes using a multitemporal script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/cab/
+nav_exclude: true
+---
+
 # Cab (Leaf Chlorophyll Content)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

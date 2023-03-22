@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ratio_b09-b8a_colormap_blue_red_v0.1/
+nav_exclude: true
+---
+
 # TOA Ratio B09-B8A ColorMap Blue-Red & Natural Colours Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

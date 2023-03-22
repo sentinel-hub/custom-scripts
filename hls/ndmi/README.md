@@ -1,3 +1,8 @@
+---
+permalink: /hls/ndmi/
+nav_exclude: true
+---
+
 # NDMI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

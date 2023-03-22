@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/uniform_colormaps/
+nav_exclude: true
+---
+
 # PUCK: Perceptually-Uniform Color Map Kit
 **A set of visualization utilities that produce beautiful images designed for human perception from single-channel data (NDVI, spectral angle, etc). Generate quality figures that are true to the data.**
 

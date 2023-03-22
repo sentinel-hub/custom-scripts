@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-total-productivity-tprod/
+nav_exclude: true
+---
+
 # VPP TPROD visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

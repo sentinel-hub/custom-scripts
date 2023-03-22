@@ -1,3 +1,8 @@
+---
+permalink: /modis/indexdb/
+nav_exclude: true
+---
+
 # MODIS indices from indexdatabase
 
 Following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"} specifically for MODIS satellites Aqua and Terra.

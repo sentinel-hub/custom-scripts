@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-start-of-season-value-sosv/
+nav_exclude: true
+---
+
 # VPP SOSV visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

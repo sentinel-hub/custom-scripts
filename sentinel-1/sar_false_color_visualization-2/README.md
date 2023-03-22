@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/sar_false_color_visualization-2/
+nav_exclude: true
+---
+
 # False color visualization for Sentinel-1
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

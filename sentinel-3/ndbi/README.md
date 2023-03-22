@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/ndbi/
+nav_exclude: true
+---
+
 
 # Normalized Difference Bare ice Index, NDBI  
 

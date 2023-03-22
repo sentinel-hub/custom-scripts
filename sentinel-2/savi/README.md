@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/savi/
+nav_exclude: true
+---
+
 # SAVI (Soil Adjusted Vegetation Index)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

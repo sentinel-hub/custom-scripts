@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/red_edge_position/
+nav_exclude: true
+---
+
 # Red edge position index (REPO)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/sar_deforestation_detection/
+nav_exclude: true
+---
+
 # SAR for Deforestation Detection Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

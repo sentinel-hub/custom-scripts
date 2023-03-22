@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/bare_soil_detector/
+nav_exclude: true
+---
+
 # Bare Soil Marker
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js) it.

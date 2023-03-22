@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vi-fapar/
+nav_exclude: true
+---
+
 # VI FAPAR visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndvi_uncertainty/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index with uncertainty
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /planet_scope/false_color/
+nav_exclude: true
+---
+
 # False color infrared product, PlanetScope
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

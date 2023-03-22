@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/st-ppi/
+nav_exclude: true
+---
+
 # Seasonal Trajectories PPI visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

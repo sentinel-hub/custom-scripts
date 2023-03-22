@@ -1,3 +1,8 @@
+---
+permalink: /landsat-4-5-tm/ndwi/
+nav_exclude: true
+---
+
 # Landsat 4-5 TM Normalized Difference Water Index - NDWI
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

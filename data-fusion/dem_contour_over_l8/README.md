@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/dem_contour_over_l8/
+nav_exclude: true
+---
+
 # DEM Contour Lines Over Landsat 8
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

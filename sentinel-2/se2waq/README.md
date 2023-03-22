@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/se2waq/
+nav_exclude: true
+---
+
 # Se2WaQ - Sentinel-2 Water Quality Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

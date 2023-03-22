@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/corine_land_cover/
+nav_exclude: true
+---
+
 # CORINE Land Cover visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

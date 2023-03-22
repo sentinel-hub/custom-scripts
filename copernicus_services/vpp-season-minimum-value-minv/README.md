@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vpp-season-minimum-value-minv/
+nav_exclude: true
+---
+
 # VPP MINV visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

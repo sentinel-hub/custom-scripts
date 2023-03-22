@@ -1,3 +1,8 @@
+---
+permalink: /landsat-7-etm/swir/
+nav_exclude: true
+---
+
 # Landsat 7 ETM+ SWIR Composite
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

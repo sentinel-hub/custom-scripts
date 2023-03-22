@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/cloudless_mosaic/
+nav_exclude: true
+---
+
 # Cloudless mosaic
 
 <a href="#" id='togglescript'>Show</a> script or [download](L2A-first_quartille.js){:target="_blank"} it.

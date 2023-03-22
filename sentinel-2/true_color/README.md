@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/true_color/
+nav_exclude: true
+---
+
 # True color product
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

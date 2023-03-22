@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/pssrb1/
+nav_exclude: true
+---
+
 # PSSRb1 (Pigment specific simple ration for Chlorophyll B)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

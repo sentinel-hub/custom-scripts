@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/mago_water_quality_monitoring_tool/
+nav_exclude: true
+---
+
 # MAGO Water Quality Monitoring Tool
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js) it.

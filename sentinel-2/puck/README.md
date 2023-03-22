@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/puck/
+nav_exclude: true
+---
+
 # PUCK - Perceptually-Uniform Color Map Kit Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

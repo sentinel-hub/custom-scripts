@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/water_surface_roughness_visualization/
+nav_exclude: true
+---
+
 # Water Surface Roughness Visualization 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

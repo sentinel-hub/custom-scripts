@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/cnes_land_cover_confidence/
+nav_exclude: true
+---
+
 # CNES land cover classifier confidence visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

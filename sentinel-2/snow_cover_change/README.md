@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/snow_cover_change/
+nav_exclude: true
+---
+
 # Snow Cover Change Detection
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

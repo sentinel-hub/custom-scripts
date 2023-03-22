@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/cnes_land_cover_classification/
+nav_exclude: true
+---
+
 # CNES land cover classification visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

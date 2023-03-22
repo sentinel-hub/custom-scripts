@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/global_surface_water_recurrence/
+nav_exclude: true
+---
+
 # Global Surface Water Recurrence visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/max_ndvi/
+nav_exclude: true
+---
+
 # Max ndvi multitemporal 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

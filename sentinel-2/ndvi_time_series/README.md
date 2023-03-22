@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndvi_time_series/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index time series
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

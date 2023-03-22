@@ -1,3 +1,8 @@
+---
+permalink: /skysat/ndvi/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index with custom visualization, SkySat
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/obs_outlier_detector/v2/
+nav_exclude: true
+---
+
 # Observation outlier detector
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

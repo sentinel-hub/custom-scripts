@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/oil-spill-index/
+nav_exclude: true
+---
+
 # OSI - Oil Spill Index
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

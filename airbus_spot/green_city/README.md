@@ -1,3 +1,8 @@
+---
+permalink: /airbus_spot/green_city/
+nav_exclude: true
+---
+
 # Green City Script, SPOT data
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

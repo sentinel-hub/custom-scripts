@@ -1,3 +1,8 @@
+---
+permalink: /airbus_pleiades/green_city/
+nav_exclude: true
+---
+
 # Green City Script, Pleiades data
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /airbus_spot/ndvi/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index, SPOT
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

@@ -1,3 +1,8 @@
+---
+permalink: /skysat/panchromatic/
+nav_exclude: true
+---
+
 # Skysat - Panchromatic
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

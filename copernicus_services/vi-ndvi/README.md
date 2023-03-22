@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vi-ndvi/
+nav_exclude: true
+---
+
 # VI NDVI visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

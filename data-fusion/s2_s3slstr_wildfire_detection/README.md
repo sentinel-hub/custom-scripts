@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/s2_s3slstr_wildfire_detection/
+nav_exclude: true
+---
+
 # S2L2A Enhancement using S3SLTR F2 For Wildfire Detection
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/cby_cloud_detection/
+nav_exclude: true
+---
+
 # Braaten-Cohen-Yang cloud detector
 
 <a href="#" id='togglescript'>Show</a> original script or [download](script_bcy_original.js){:target="_blank"} it.

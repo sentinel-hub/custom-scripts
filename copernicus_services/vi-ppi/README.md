@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/vi-ppi/
+nav_exclude: true
+---
+
 # VI PPI visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

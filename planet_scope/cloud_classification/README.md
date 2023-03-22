@@ -1,3 +1,8 @@
+---
+permalink: /planet_scope/cloud_classification/
+nav_exclude: true
+---
+
 # UDM2 Mask Classification, PlanetScope
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

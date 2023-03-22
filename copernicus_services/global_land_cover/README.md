@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/global_land_cover/
+nav_exclude: true
+---
+
 # Global Land Cover discrete classification map  visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

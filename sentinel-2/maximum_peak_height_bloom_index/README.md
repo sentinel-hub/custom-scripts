@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/maximum_peak_height_bloom_index/
+nav_exclude: true
+---
+
 # Maximum Peak Height Bloom Index
 
 ---

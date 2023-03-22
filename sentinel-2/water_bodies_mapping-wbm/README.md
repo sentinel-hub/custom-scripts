@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/water_bodies_mapping-wbm/
+nav_exclude: true
+---
+
 # Water Bodies' Mapping - WBM Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

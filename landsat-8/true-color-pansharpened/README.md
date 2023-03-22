@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/true-color-pansharpened/
+nav_exclude: true
+---
+
 # Landsat 8 Pansharpened True Color
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

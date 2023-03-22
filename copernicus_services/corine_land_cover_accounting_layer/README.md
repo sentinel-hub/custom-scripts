@@ -1,3 +1,8 @@
+---
+permalink: /copernicus_services/corine_land_cover_accounting_layer/
+nav_exclude: true
+---
+
 # CORINE Land Cover Accounting Layers visualisation script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

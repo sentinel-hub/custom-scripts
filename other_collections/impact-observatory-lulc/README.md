@@ -1,3 +1,8 @@
+---
+permalink: /other_collections/impact-observatory-lulc/
+nav_exclude: true
+---
+
 # 10m Annual Land Use Land Cover (9-class)
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

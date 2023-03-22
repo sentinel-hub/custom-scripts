@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndvi-on-vegetation-natural_colours/
+nav_exclude: true
+---
+
 # NDVI on L2A Vegetation and Natural Colours Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

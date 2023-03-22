@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndvi/
+nav_exclude: true
+---
+
 # Normalized difference vegetation index
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

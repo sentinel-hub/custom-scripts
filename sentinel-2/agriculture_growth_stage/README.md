@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/agriculture_growth_stage/
+nav_exclude: true
+---
+
 # Agricultural growth stage
 
 <a href="#" id='togglescript'>Show</a> V3 script or [download](script.js){:target="_blank"} it.

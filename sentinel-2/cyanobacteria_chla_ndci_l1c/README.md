@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/cyanobacteria_chla_ndci_l1c/
+nav_exclude: true
+---
+
 # Cyanobacteria Chlorophyll-a NDCI L1C
 
 ---

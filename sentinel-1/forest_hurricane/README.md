@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-1/forest_hurricane/
+nav_exclude: true
+---
+
 # ForestHurricane Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

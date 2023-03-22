@@ -1,3 +1,8 @@
+---
+permalink: /landsat-8/built_up_index/
+nav_exclude: true
+---
+
 # Build Up Index Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

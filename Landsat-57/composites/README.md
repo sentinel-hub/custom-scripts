@@ -1,3 +1,8 @@
+---
+permalink: /Landsat-57/composites/
+nav_exclude: true
+---
+
 # Simple RGB Composites (Landsat 5 and 7)
 
 ## True Color

@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ocean_plastic_detector/
+nav_exclude: true
+---
+
 # Ocean Plastic Detector Prototype Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

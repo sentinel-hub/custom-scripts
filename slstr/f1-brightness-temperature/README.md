@@ -1,3 +1,8 @@
+---
+permalink: /slstr/f1-brightness-temperature/
+nav_exclude: true
+---
+
 # F1 Brightness Temperature Visualization
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

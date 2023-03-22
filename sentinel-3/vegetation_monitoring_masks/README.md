@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/vegetation_monitoring_masks/
+nav_exclude: true
+---
+
 # Vegetation and Land Monitoring with Cloud Mask
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

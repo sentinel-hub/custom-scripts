@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/ndii/
+nav_exclude: true
+---
+
 # NDII (Normalized difference 819/1600)
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">

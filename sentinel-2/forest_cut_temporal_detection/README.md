@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/forest_cut_temporal_detection/
+nav_exclude: true
+---
+
 # Forest Cut Temporal Detection Script
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

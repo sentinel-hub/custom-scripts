@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/olci_under_s5/
+nav_exclude: true
+---
+
 # Sentinel-3 OLCI true color under Sentinel-5 products
   
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  

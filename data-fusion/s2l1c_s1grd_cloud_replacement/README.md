@@ -1,3 +1,8 @@
+---
+permalink: /data-fusion/s2l1c_s1grd_cloud_replacement/
+nav_exclude: true
+---
+
 # Sentinel-2 with cloudy parts replaced by Sentinel-1
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

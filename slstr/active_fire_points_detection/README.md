@@ -1,3 +1,8 @@
+---
+permalink: /slstr/active_fire_points_detection/
+nav_exclude: true
+---
+
 # High Accuracy Active Fire Point Detection 
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

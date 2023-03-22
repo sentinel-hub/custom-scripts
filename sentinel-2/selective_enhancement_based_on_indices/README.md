@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/selective_enhancement_based_on_indices/
+nav_exclude: true
+---
+
 # Selective Enhancement based on Indices
 
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.

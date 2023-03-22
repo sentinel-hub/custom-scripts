@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/snow_classifier/
+nav_exclude: true
+---
+
 # Snow classifier
 ---
 
