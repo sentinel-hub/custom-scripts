@@ -47,7 +47,7 @@ Under the current settings the images would be colored based on the Change of RV
 * green/yellow areas indicate ripening or ripe crops
 * orange/red areas indicate areas of harvested areas
 
-![The script example](fig/Sentinel-1_(IW-VVVH)_2018-07-31.jpg)
+![The script example](fig/Sentinel-1_IW-VVVH_2018-07-31.jpg)
 
 ## Credits and references
 
