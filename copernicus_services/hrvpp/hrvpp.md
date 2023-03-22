@@ -27,10 +27,10 @@ More information about raw vegetation indices is outlined in the [product user m
 Vegetation Indices is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
 
 ##### Available scripts
-- [LAI visualisation script](copernicus_services/vi-lai)
-- [PPI visualisation script](copernicus_services/vi-ppi)
-- [NDVI visualisation script](copernicus_services/vi-ndvi)
-- [FAPAR visualisation script](copernicus_services/vi-fapar)
+- [LAI visualisation script](/copernicus_services/vi-lai)
+- [PPI visualisation script](/copernicus_services/vi-ppi)
+- [NDVI visualisation script](/copernicus_services/vi-ndvi)
+- [FAPAR visualisation script](/copernicus_services/vi-fapar)
 
 #### Seasonal Trajectories, 10-daily
 Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution . 
@@ -42,7 +42,7 @@ More information about ST product is outlined in the [product user manual](https
 Seasonal Trajectories is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).  
 
 ##### Available scripts
-- [PPI visualisation script](copernicus_services/st-ppi)
+- [PPI visualisation script](/copernicus_services/st-ppi)
 
 #### Vegetation Phenology and Productivity Parameters, yearly    
 Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS), 
@@ -59,12 +59,12 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 
 
 ##### Available scripts
-- [AMPL visualisation script](copernicus_services/vpp-amplitude-ampl)
-- [MAXV visualisation script](copernicus_services/vpp-season-maximum-value-maxv)
-- [MINV visualisation script](copernicus_services/vpp-season-minimum-value-minv)
-- [SOSV visualisation script](copernicus_services/vpp-start-of-season-value-sosv)
-- [EOSV visualisation script](copernicus_services/vpp-end-of-season-value-eosv)
-- [RSLOPE visualisation script](copernicus_services/vpp-slope-of-senescent-period-rslope)
-- [LSLOPE visualisation script](copernicus_services/vpp-slope-of-greening-up-period-lslope)
-- [SPROD visualisation script](copernicus_services/vpp-seasonal-productivity-sprod)
-- [TPROD visualisation script](copernicus_services/vpp-total-productivity-tprod)
+- [AMPL visualisation script](/copernicus_services/vpp-amplitude-ampl)
+- [MAXV visualisation script](/copernicus_services/vpp-season-maximum-value-maxv)
+- [MINV visualisation script](/copernicus_services/vpp-season-minimum-value-minv)
+- [SOSV visualisation script](/copernicus_services/vpp-start-of-season-value-sosv)
+- [EOSV visualisation script](/copernicus_services/vpp-end-of-season-value-eosv)
+- [RSLOPE visualisation script](/copernicus_services/vpp-slope-of-senescent-period-rslope)
+- [LSLOPE visualisation script](/copernicus_services/vpp-slope-of-greening-up-period-lslope)
+- [SPROD visualisation script](/copernicus_services/vpp-seasonal-productivity-sprod)
+- [TPROD visualisation script](/copernicus_services/vpp-total-productivity-tprod)
