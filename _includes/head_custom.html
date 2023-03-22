@@ -1,0 +1,6 @@
+{% assign math = page.math | default: layout.math | default: site.math %}
+
+{% case math %}
+{% when "mathjax" %}
+{% include mathjax.html %}
+{% endcase %}
