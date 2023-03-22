@@ -17,7 +17,7 @@ parent: Copernicus Services
 {:toc}
 </details>
 
-#### Vegetation Indices, daily
+## Vegetation Indices, daily
 Vegetation Indices (VI) product is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The product is comprised of 4 raw Vegetation Indices; (1) Normalized Difference Vegetation Index (NDVI), (2) Leaf Area Index (LAI), 
 (3) Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) and (4) Plant Phenology Index (PPI) generated near real-time (NRT) from Sentinel-2 satellite observations. 
@@ -27,12 +27,13 @@ More information about raw vegetation indices is outlined in the [product user m
 Vegetation Indices is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).
 
 ##### Available scripts
+{: .no_toc }
 - [LAI visualisation script](/copernicus_services/vi-lai)
 - [PPI visualisation script](/copernicus_services/vi-ppi)
 - [NDVI visualisation script](/copernicus_services/vi-ndvi)
 - [FAPAR visualisation script](/copernicus_services/vi-fapar)
 
-#### Seasonal Trajectories, 10-daily
+## Seasonal Trajectories, 10-daily
 Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index(PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution . 
 It is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The Seasonal Trajectories PPI is derived through fitting a smoothing and gap filling function to the yearly time-series raw PPI values generated from Sentinel-2 satellite observations. 
@@ -42,9 +43,10 @@ More information about ST product is outlined in the [product user manual](https
 Seasonal Trajectories is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/phenology/).  
 
 ##### Available scripts
+{: .no_toc }
 - [PPI visualisation script](/copernicus_services/st-ppi)
 
-#### Vegetation Phenology and Productivity Parameters, yearly    
+## Vegetation Phenology and Productivity Parameters, yearly    
 Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS), 
 pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite. 
 The VPP product is comprised of 13 parameters that describe specific stages of the seasonal vegetation growth cycle. 
@@ -59,6 +61,7 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 
 
 ##### Available scripts
+{: .no_toc }
 - [AMPL visualisation script](/copernicus_services/vpp-amplitude-ampl)
 - [MAXV visualisation script](/copernicus_services/vpp-season-maximum-value-maxv)
 - [MINV visualisation script](/copernicus_services/vpp-season-minimum-value-minv)

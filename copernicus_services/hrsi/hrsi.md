@@ -24,7 +24,7 @@ The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.coperni
 The Fractional Snow Cover (FSC) product provides the snow fraction at the Top Of Canopy (FSCTOC) and On Ground (FSCOG). NDSI is also provided as part of this service.
 
 ##### Available scripts
-
+{: .no_toc }
 - [FSC FSCOG visualisation script](/copernicus_services/hrsi-fsc-on-ground-fsi)
 - [FSC FSCOG quality visualisation script](/copernicus_services/hrsi-fsc-on-ground-fsi-quality)
 - [FSC FSTOC visualisation script](/copernicus_services/hrsi-fsc-top-of-canopy-fsi)
@@ -36,7 +36,7 @@ The Fractional Snow Cover (FSC) product provides the snow fraction at the Top Of
 The daily cumulative Gap-filled Fractional Snow Cover (GFSC) product is a more complete version of the FSC product; gap-filled both at a spatial and temporal scale.
 
 ##### Available scripts
-
+{: .no_toc }
 - [GFSC FSC visualisation script](/copernicus_services/hrsi-gfsc-fsc)
 - [GFSC FSC quality visualisation script](/copernicus_services/hrsi-gfsc-fsc-quality)
 
@@ -45,7 +45,7 @@ The daily cumulative Gap-filled Fractional Snow Cover (GFSC) product is a more c
 The SAR Wet Snow (SWS) product provides information on the wet snow extent in high-mountain areas. 
 
 ##### Available scripts
-
+{: .no_toc }
 - [SWS WSM visualisation script](/copernicus_services/hrsi-sws-wet-snow-classification-high-mountains)
 - [SWS WSM quality visualisation script](/copernicus_services/hrsi-sws-wet-snow-classification-high-mountains-quality)
 
@@ -54,7 +54,7 @@ The SAR Wet Snow (SWS) product provides information on the wet snow extent in hi
 The Wet/Dry Snow (WDS) product differentiates the snow state conditions within the snow mask defined by the FSCTOC information.
 
 ##### Available scripts
-
+{: .no_toc }
 - [WDS SSC visualisation script](/copernicus_services/hrsi-wds-ssc)
 - [WDS SSC quality visualisation script](/copernicus_services/hrsi-wds-ssc-quality)
 
@@ -63,7 +63,7 @@ The Wet/Dry Snow (WDS) product differentiates the snow state conditions within t
 The Persistent Snow Area (PSA) product is generated annually from FSC products and provides the extent of persistent snow cover for that year (the area where snow is present throughout the hydrological year).
 
 ##### Available scripts
-
+{: .no_toc }
 - [PSA visualisation script](/copernicus_services/hrsi-psa-psa)
 - [PSA quality visualisation script](/copernicus_services/hrsi-psa-psa-quality)
 
