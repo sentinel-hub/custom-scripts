@@ -8,7 +8,7 @@ parent: Sentinel
 # Sentinel-2 L2A 120m Cloudless Mosaic
 {: .no_toc }
 
-<details open markdown="block">
+<details markdown="block">
   <summary>
     Table of contents
   </summary>
