@@ -4,3 +4,18 @@
 {% when "mathjax" %}
 {% include mathjax.html %}
 {% endcase %}
+
+<script>
+    const toggleBtn = document.getElementById('toggle-script');
+    const myDiv = document.getElementById('script');
+
+    toggleBtn.addEventListener('click', function () {
+        if (myDiv.style.display === 'none') {
+            myDiv.style.display = 'block';
+            toggleBtn.innerHTML = 'Hide Script';
+        } else {
+            myDiv.style.display = 'none';
+            toggleBtn.innerHTML = 'Show Script';
+        }
+    });
+</script>

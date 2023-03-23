@@ -5,6 +5,24 @@ nav_exclude: true
 
 # Tracking Radar Vegetation Index (Agriculture Development) Script
 
+
+<details>
+    <summary>
+    Show Script
+    </summary>
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</details>
+
+<button id="toggle-script">Show Script</button>
+
+<div id="script"  style="display:none;"> 
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</div>
+
 <a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
 <div id='script_view' style="display:none">
 {% highlight javascript %}

@@ -6,3 +6,4 @@ author_email: info@sentinel-hub.com
 url: https://custom-scripts.sentinel-hub.com
 
 math: mathjax
+enable_copy_code_button: true
