@@ -7,9 +7,18 @@ nav_exclude: true
 
 > Water quality visualization script for Sentinel-2 and Sentinel-3 imagery data
 
-[Show](dist/script.min.js) minified, optimized script (recommended for usage).
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
 
-[Show](src/script.js) unminified script (for debugging purposes).
+<div id="script" style="display:none;"> 
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</div>
+
+[Show](dist/script.min.js) minified, optimized script (recommended for usage).
 
 | Timelapse (2019) of Lake Balaton with Sentinel-2 and Sentinel-3 imagery side by side |
 | :----------------------------------------------------------------------------------: |

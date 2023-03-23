@@ -5,11 +5,15 @@ nav_exclude: true
 
 # Interpolated Time-series script
 
-<a href="#" id='togglescript'>Show</a> script or <a href="/custom-scripts/sentinel-2/interpolated_time_series/script.js" target="_blank">download</a> it.
-<div id='script_view' style="display:none">
-   {% highlight javascript %}
-   {% include_relative script.js %}
-   {% endhighlight %}
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
 </div>
 
 This evalscript returns a temporally-interpolated stack of band or band indices values.

@@ -5,12 +5,16 @@ nav_exclude: true
 
 # S2L2A Enhancement using S3SLTR F2 For Wildfire Detection
   
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.  
-<div id='script_view' style="display:none">  
-{% highlight javascript %}  
-{% include_relative script.js %}  
-{% endhighlight %}  
-</div>  
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</div>
   
 ## Evaluate and visualize  
  - [EO Browser](https://sentinelshare.page.link/QgcU)

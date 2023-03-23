@@ -5,9 +5,12 @@ nav_exclude: true
 
 # Total Ozone Column over snow in Antarctica
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="\_blank"} it.
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
 
-<div id='script_view' style="display:none">
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
