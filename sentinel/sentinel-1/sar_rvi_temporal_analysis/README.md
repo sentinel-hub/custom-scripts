@@ -5,26 +5,12 @@ nav_exclude: true
 
 # Tracking Radar Vegetation Index (Agriculture Development) Script
 
+{% assign paths = page.dir | split: "/" %}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths[-1] | append: ".js"}}"}
+{: .mt-lg-4 }
 
-<details>
-    <summary>
-    Show Script
-    </summary>
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</details>
-
-<button id="toggle-script">Show Script</button>
-
-<div id="script"  style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
-
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}

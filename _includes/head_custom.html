@@ -6,16 +6,15 @@
 {% endcase %}
 
 <script>
-    const toggleBtn = document.getElementById('toggle-script');
-    const myDiv = document.getElementById('script');
-
-    toggleBtn.addEventListener('click', function () {
-        if (myDiv.style.display === 'none') {
-            myDiv.style.display = 'block';
-            toggleBtn.innerHTML = 'Hide Script';
+    function toggleScript() {
+        const button = document.getElementById('toggle-script');
+        const script = document.getElementById('script');
+        if (script.style.display === 'none') {
+            script.style.display = 'block';
+            button.innerHTML = 'Hide Script';
         } else {
-            myDiv.style.display = 'none';
-            toggleBtn.innerHTML = 'Show Script';
+            script.style.display = 'none';
+            button.innerHTML = 'Show Script';
         }
-    });
+    }
 </script>
