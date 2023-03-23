@@ -6,45 +6,7 @@ nav_order: 1
 
 # Collection of custom scripts
 
-## Custom Scripts Repository
-
 This repository contains a collection of custom scripts for [Sentinel Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
-
-Scripts are organised by sensors supported on Sentinel Hub:
-  - [Sentinel](#sentinel-1)
-    - [Sentinel-1](#sentinel-1)
-    - [Sentinel-2](#sentinel-2)
-    - [Sentinel-3](#sentinel-3)
-    - [Sentinel-5P](#sentinel-5p)
-  - [Landsat](#landsat-1-5-mss)
-    - [Landsat 1-5 MSS](#landsat-1-5-mss)
-    - [Landsat 4-5 TM](#landsat-4-5-tm)
-    - [Landsat 5 and 7](#landsat-57)
-    - [Landsat 7 ETM+](#landsat-7-etm)
-    - [Landsat-8](#landsat-8)
-  - [Harmonized Landsat Sentinel](#harmonized-landsat-sentinel)
-  - [Sentinel-2 L2A 120m Mosaic](#sentinel2-120m-mosaic)
-  - [MODIS](#modis)
-  - [DEM](#dem)
-  - [Planet Labs](#planet_scope)
-    - [PlanetScope](#planet_scope)
-    - [SkySat](#sky_sat)
-  - [Airbus](#airbus_pleiades)
-    - [Airbus Pleiades](#airbus_pleiades)
-    - [Airbus SPOT](#airbus_spot)
-  - [Data fusion](#data-fusion)
-  - [Copernicus services](#copernicus_services)
-    - [CORINE Land Cover](#CLC)
-    - [Global Land Cover](#GLC)
-    - [Water Bodies](#water_bodies)
-    - [High Resolution Vegetation Phenology and Productivity](#HRVPP)
-    - [High Resolution Snow and Ice](#HRSI)
-  - [Other collections](#other_collections)
-    - [CNES Land cover map](#cnes)
-    - [Global Human Settlements Layer](#ghsl)
-    - [Global Surface Water](#surface_water)
-    - [WorldCover](#worldcover)
-    - [10m Annual Land Use Land Cover (9-class)](#impact_observatory)
 
 You are invited to publish your own scripts - see [howto](#howto).
 
@@ -67,3 +29,9 @@ You are invited to publish your own scripts - see [howto](#howto).
 * [Custom scripts: faster, cheaper, better!](https://medium.com/sentinel-hub/custom-scripts-faster-cheaper-better-83f73894658a) (by Monja Šebela)
 * [Water Quality Information for Everyone](https://medium.com/sentinel-hub/water-quality-information-for-everyone-a81faab8ff5e)
 * [New Themes, Multi-Temporal Scripting and Other Improvements in EO Browser](https://medium.com/sentinel-hub/new-themes-multi-temporal-scripting-and-other-improvements-in-eo-browser-725267d09f2f) (by Monja Šebela)
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+<br />
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

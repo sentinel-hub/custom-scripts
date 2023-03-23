@@ -1,9 +1,11 @@
 ---
-permalink: /example/
-nav_exclude: true
+layout: default
+title: Contribute
+nav_order: 99
 ---
 
-# Example product
+# Contribute to Custom Scripts
+Have a look at the [template](example) and follow the procedure described there.
 
 ---
 
@@ -94,21 +96,3 @@ Replace `GH_VERSION` with the version number that is displayed next to github-pa
     ```
   - then the site can be built with `bundle exec jekyll serve`
   - The site should then be visible on http://127.0.0.1:4000
-
----
-
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/example/script.js){:target="_blank"}    
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/example/script.js){:target="_blank"}   
-
-## General description of the script
-
-## References
- - possible references (scientific articles, wiki/web references, ...)
