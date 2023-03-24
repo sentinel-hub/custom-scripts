@@ -63,7 +63,7 @@ Table 1: Classification classes and colouring scheme.
 
 ## Description of representative images
 
-*02nd September 2022, Ghent, BE*
+*31th July 2022, Östersund, SE*
 
 ![RLIES2 QC](fig/figure.png)
 

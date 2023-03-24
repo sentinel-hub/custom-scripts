@@ -57,7 +57,7 @@ Table 1: Classification classes and colouring scheme.
 
 ## Description of representative images
 
-*28th September 2018, Rovigo, IT*
+*13th February 2023, Hamburg, DE*
 
 ![RLIES1 QC](fig/figure.png)
 

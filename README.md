@@ -587,7 +587,7 @@ Vegetation Phenology and Productivity Parameters is available in Sentinel Hub, r
 
 ### High-Resolution Snow & Ice Monitoring
 
-The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring)) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products measuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). There are also ice products that measure ice cover (RLIE) and aggregated river and lake ice extent (ARLIE).
+The High-Resolution Snow & Ice Monitoring service ([HR-S&I](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring)) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products measuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). The River and Lake Ice Extent (RLIE) products measure the presence of ice in water bodies. There are three different products distributed by the service: RLIE S1, RLIE S2, and RLIE S1+S2, which were generated based on Sentinel 1, Sentinel 2, and a combination of both constellations, respectively. Finally, the Aggregated River and Lake Ice Extent (ARLIE) provides the percent of snow-cover or snow-free ice areas in water bodies and on 10km river sections. 
 
 #### Fractional Snow Cover
 
@@ -637,6 +637,33 @@ The Persistent Snow Area (PSA) product is generated annually from FSC products a
 - [PSA visualisation script](copernicus_services/hrsi-psa-psa)
 - [PSA quality visualisation script](copernicus_services/hrsi-psa-psa-quality)
 
+#### RLIE S1
+
+The River and Lake Ice Extent S1 (RLIE S1) product differentiates open water bodies, snow-covered or snow-free ice areas from areas with no data. The product was generated in near-real time based on the revisit time of the Sentinel 1 constellation. 
+
+##### Available scripts
+
+- [RLIE S1 visualisation script](copernicus_services/hrsi-rlie-s1)
+- [RLIE S1 quality visualisation script](copernicus_services/hrsi-rlie-s1-quality)
+
+#### RLIE S2
+
+The River and Lake Ice Extent S2 (RLIE S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product was generated in near-real time based on the revisit time of the Sentinel 2 constellation 
+
+##### Available scripts
+
+- [RLIE S2 visualisation script](copernicus_services/hrsi-rlie-s2)
+- [RLIE S2 quality visualisation script](copernicus_services/hrsi-rlie-s2-quality)
+
+#### RLIE S1+S2
+
+The S1 and S2 River and Lake Ice Extent (RLIE S1+S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product was generated in delayed-time, resulting from the combination of RLIE S1 and RLIE S2 products.  
+
+##### Available scripts
+
+- [RLIE S1+S2 visualisation script](copernicus_services/hrsi-rlie-s1s2)
+- [RLIE S1+S2 quality visualisation script](copernicus_services/hrsi-rlie-s1s2-quality)
+
 More information about the HR-S&I snow production workflows that highlights the dependencies between the diferent products and how they are derived can be found [here](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products).
 
 ## <a name="sentinel2-120m-mosaic"></a>Sentinel-2 L2A 120m Mosaic
@@ -652,7 +679,6 @@ Find related resources and more information about the collection [here](https://
 - [NDVI](sentinel2-120m-mosaic/ndvi)
 - [NDMI](sentinel2-120m-mosaic/ndmi)
 - [NDWI](sentinel2-120m-mosaic/ndwi)
-
 
 ## <a name="other_collections"></a>Other collections
 

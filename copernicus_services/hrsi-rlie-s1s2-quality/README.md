@@ -63,7 +63,7 @@ Table 1: Classification classes and colouring scheme.
 
 ## Description of representative images
 
-*14th November 2022, Salzburg, AT*
+*09th June 2021, Amsterdam, NL*
 
 ![RLIES12 QC](fig/figure.png)
 
