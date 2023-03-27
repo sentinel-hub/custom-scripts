@@ -13,12 +13,6 @@ This script visualises the Sentinel 1 and 2-based River and Lake Ice Extent qual
 Table 1: Classification classes and colouring scheme.
 
 <table>
-
-</tbody>
-
-</table>
-
-<table>
       <thead>
     <tr>
       <th>Value</th>
@@ -47,8 +41,7 @@ Table 1: Classification classes and colouring scheme.
       <td style="background-color: #FF0000;"></td>
       <td>minimal quality</td>
     </tr>
-    </tr>
-        <tr>
+    <tr>
       <td>205</td>
       <td style="background-color: #7B7B7B;"></td>
       <td>cloud or cloud shadow</td>

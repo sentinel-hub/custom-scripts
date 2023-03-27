@@ -639,7 +639,7 @@ The Persistent Snow Area (PSA) product is generated annually from FSC products a
 
 #### RLIE S1
 
-The River and Lake Ice Extent S1 (RLIE S1) product differentiates open water bodies, snow-covered or snow-free ice areas from areas with no data. The product was generated in near-real time based on the revisit time of the Sentinel 1 constellation. 
+The River and Lake Ice Extent S1 (RLIE S1) product differentiates open water bodies, snow-covered or snow-free ice areas from areas with no data. The product is generated in near-real time based on the revisit time of the Sentinel 1 constellation. 
 
 ##### Available scripts
 
@@ -648,7 +648,7 @@ The River and Lake Ice Extent S1 (RLIE S1) product differentiates open water bod
 
 #### RLIE S2
 
-The River and Lake Ice Extent S2 (RLIE S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product was generated in near-real time based on the revisit time of the Sentinel 2 constellation 
+The River and Lake Ice Extent S2 (RLIE S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product is generated in near-real time based on the revisit time of the Sentinel 2 constellation 
 
 ##### Available scripts
 
@@ -657,7 +657,7 @@ The River and Lake Ice Extent S2 (RLIE S2) product differentiates open water bod
 
 #### RLIE S1+S2
 
-The S1 and S2 River and Lake Ice Extent (RLIE S1+S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product was generated in delayed-time, resulting from the combination of RLIE S1 and RLIE S2 products.  
+The S1 and S2 River and Lake Ice Extent (RLIE S1+S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product is generated in delayed-time, resulting from the combination of RLIE S1 and RLIE S2 products.  
 
 ##### Available scripts
 

@@ -13,12 +13,6 @@ This script visualises the Sentinel 1-based River and Lake Ice Extent quality la
 Table 1: Classification classes and colouring scheme.
 
 <table>
-
-</tbody>
-
-</table>
-
-<table>
       <thead>
     <tr>
       <th>Value</th>

@@ -13,12 +13,6 @@ This script visualises the River and Lake Ice Extent based on optical satellite 
 Table 1: Classification classes and colouring scheme.
 
 <table>
-
-</tbody>
-
-</table>
-
-<table>
       <thead>
     <tr>
       <th>Value</th>
