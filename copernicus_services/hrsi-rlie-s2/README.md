@@ -57,7 +57,7 @@ Table 1: Classification classes and colouring scheme.
 
 ## Description of representative images
 
-*02 September, 2022, Ghent, BE*
+*03rd February, 2022, Geneva, IT*, Lausanne, CH
 
 ![RLIES2](fig/figure.png)
 
