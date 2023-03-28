@@ -2,8 +2,9 @@
 function setup() {
     return {
         input: ["RLIE", "dataMask"],
-        output: {bands: 4,
-        sampleType: "Auto"
+        output: {
+            bands: 4,
+            sampleType: "Auto"
         }
     };
 
@@ -20,6 +21,6 @@ const map = [
 const visualizer = new ColorMapVisualizer(map);
 
 function evaluatePixel(sample) {
-  let rgbVis = visualizer.process(sample.RLIE);
-  return rgbVis.concat(sample.dataMask);
+    let rgbVis = visualizer.process(sample.RLIE);
+    return rgbVis.concat(sample.dataMask);
 }

@@ -13,12 +13,6 @@ This script visualises the Sentinel 2-based River and Lake Ice Extent quality la
 Table 1: Classification classes and colouring scheme.
 
 <table>
-
-</tbody>
-
-</table>
-
-<table>
       <thead>
     <tr>
       <th>Value</th>
@@ -47,8 +41,7 @@ Table 1: Classification classes and colouring scheme.
       <td style="background-color: #FF0000;"></td>
       <td>minimal quality</td>
     </tr>
-    </tr>
-        <tr>
+    <tr>
       <td>205</td>
       <td style="background-color: #7B7B7B;"></td>
       <td>cloud or cloud shadow</td>
@@ -69,4 +62,8 @@ Table 1: Classification classes and colouring scheme.
 
 ## Resources
 
+<<<<<<< HEAD
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover)
+=======
+- [Data source]([Ice cover — Copernicus Land Monitoring Service](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover))
+>>>>>>> 74c9fce8b77f05ef51f35d77a14a116b0b8974f0
