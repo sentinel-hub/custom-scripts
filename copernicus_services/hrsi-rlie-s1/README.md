@@ -47,8 +47,4 @@ Table 1: Classification classes and colouring scheme.
 
 ## Resources
 
-<<<<<<< HEAD
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover)
-=======
-- [Data source]([Ice cover — Copernicus Land Monitoring Service](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover))
->>>>>>> 74c9fce8b77f05ef51f35d77a14a116b0b8974f0
