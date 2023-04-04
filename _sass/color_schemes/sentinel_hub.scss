@@ -1,1 +1,13 @@
-@import "./color_schemes/light";
+$body-background-color: $white;
+$body-heading-color: #3b454e;
+$body-text-color: #3b454e;
+$link-color: #a2b228;
+$nav-child-link-color: #a2b228;
+$sidebar-color: $grey-lt-000;
+$base-button-color: #f7f7f7;
+$btn-primary-color: #a2b228;
+$code-background-color: #f5f7f9;
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: $white;
+$search-background-color: #f1f7e7;
+$search-result-preview-color: $grey-dk-000;

@@ -1,4 +1,4 @@
-title: Sentinel-Hub custom scripts
+title: Sentinel Hub custom scripts
 theme: just-the-docs
 description: A repository of custom scripts that can be used with Sentinel-Hub services.
 author: Sentinel-Hub by Sinergise
@@ -7,3 +7,8 @@ url: https://custom-scripts.sentinel-hub.com
 
 math: mathjax
 enable_copy_code_button: true
+
+logo: "/assets/images/sentinel_hub_logo_with_custom_scripts.png"
+favicon_ico: "/assets/images/public_favicon.ico"
+
+color_scheme: sentinel_hub
