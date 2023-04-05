@@ -2,10 +2,13 @@
 layout: default
 title: Contribute
 nav_order: 99
+has_children: true
 ---
 
 # Contribute to Custom Scripts
-Have a look at the [template](example) and follow the procedure described there.
+Have a look at the [template](/contribute/example) for an example of how a script page can be structured.
+
+You can also have a look at other scripts to see how they are structured.
 
 ---
 
