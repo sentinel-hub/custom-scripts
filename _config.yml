@@ -13,7 +13,7 @@ favicon_ico: "/assets/images/public_favicon.ico"
 
 color_scheme: sentinel_hub
 
-footer_content: "This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>"
+footer_content: 'This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"">Creative Commons Attribution-ShareAlike 4.0 International License</a>'
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
