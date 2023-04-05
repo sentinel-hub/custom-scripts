@@ -12,3 +12,13 @@ logo: "/assets/images/sentinel_hub_logo_with_custom_scripts.png"
 favicon_ico: "/assets/images/public_favicon.ico"
 
 color_scheme: sentinel_hub
+
+footer_content: "This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike 4.0 International License</a>"
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/sentinel-hub/custom-scripts" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
