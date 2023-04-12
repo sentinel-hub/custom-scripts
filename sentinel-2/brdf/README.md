@@ -14,7 +14,7 @@
 
 Implementation of a Bidirectional Reflectance Distribution Function (BRDF) normalisation for Sentinel-2 scenes in a Sentinel Hub [Evalscript](https://docs.sentinel-hub.com/api/latest/evalscript/v3/).
 
-The Evascript proposed here is the "semi-empirical BRDF normalisation c-factor correction approach proposed by Luch et al. 2000 [1]. The formula is detailed in eq. 37 (using eq. 38 & 39). To avoid lookup tables and other complex modelling approaches, we use the fixed BRDF spectral model parameters derived from "the global year of highest quality snow-free MODIS BRDF product" conveniently defined for Sentinel-2 in Roy et al. 2017 [2] that were derived from the Landsat ones in Roy et al. 2016 [3].
+The Evalscript proposed here is the "semi-empirical BRDF normalisation c-factor correction approach proposed by Luch et al. 2000 [1]. The formula is detailed in eq. 37 (using eq. 38 & 39). To avoid lookup tables and other complex modelling approaches, we use the fixed BRDF spectral model parameters derived from "the global year of highest quality snow-free MODIS BRDF product" conveniently defined for Sentinel-2 in Roy et al. 2017 [2] that were derived from the Landsat ones in Roy et al. 2016 [3].
 
 The approach seems to perform generally quite well for most surfaces (except snow and ice) and high sun angles. Nevertherless, it relies on a certain number of approximations and may not always be suitable.
 
@@ -22,7 +22,7 @@ The approach seems to perform generally quite well for most surfaces (except sno
 
 BRDF corrections are available for Sentinel 2 bands 2, 3, 4, 8, 11 and 12. In the beginning of the script there is the option to define the bands which the correction should be applied to. It is also possible to set a luminance value in case RGB images are supposed to be generated. 
 
-There are 3 output options available, a True Color and False Color visualization and the option to return Raw Values. Changing what the script does, is just a matter of commenting and uncommenting the output options that are available. The output can also be customized following the same schema of the three available output options. This can for example be done to define custom composites using other bands.
+There are 3 output options available, a True Color and False Color visualization and the option to return Raw Values. Changing what the script does is just a matter of commenting and uncommenting the output options that are available. The output can also be customized following the same schema of the three available output options. This can for example be done to define custom composites using other bands.
 
 
 ## Description of representative images
