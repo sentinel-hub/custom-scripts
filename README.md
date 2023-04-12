@@ -230,8 +230,8 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [MixLAI](sentinel-2/mixlai) - Mix Leaf Area Index
  - [Detection of evapotranspiration levels](sentinel-2/evapotranspiration_levels)
  - [Aesthetic Neon](sentinel-2/aesthetic-neon) - Aesthetic visualization for urban and dry (desert) areas
- - [Total Ozone Column over Antarctica snow](sentinel-2/brdf)
- - [BRDF normalisation](sentinel-2/ozone_column_over_snow)
+ - [Total Ozone Column over Antarctica snow](sentinel-2/ozone_column_over_snow)
+ - [BRDF normalisation](sentinel-2/brdf)
 
 #### Scripts including machine learning techniques (eo-learn)
 

@@ -1,9 +1,28 @@
 //VERSION=3
 
+// TRUE COLOR
+var bands = ["B04", "B03", "B02"]
+var lum = 2.5
+var sample_type = "AUTO"
+
+// FALSE COLOR
+// var bands = ["B08", "B04", "B03"]
+// var lum = 2.5
+// var sample_type = "AUTO"
+
+// RAW VALUES
+// var bands = ["B02", "B03", "B04", "B08", "B11", "B12"]
+// var lum = 1
+// var sample_type = "FLOAT32"
+
+
 function setup() {
     return {
-        input: ["B02", "B03", "B04", "sunAzimuthAngles", "sunZenithAngles", "viewAzimuthMean", "viewZenithMean"],
-        output: { bands: 3 },
+        input: bands.concat(["sunAzimuthAngles", "sunZenithAngles", "viewAzimuthMean", "viewZenithMean"]),
+        output: {
+            bands: bands.length,
+            sampleType: sample_type
+        },
         mosaicking: "TILE"
     };
 }
@@ -14,11 +33,11 @@ function evaluatePixel(sample) {
         // view geometry is available (on the edges of tiles
         // reflectance is available but not view geometry)
         if (sample[i].viewAzimuthMean > 1) {
-            let available = sample[i]
-            let saa = deg2rad(available.sunAzimuthAngles);
-            let sza = deg2rad(available.sunZenithAngles);
-            let vaa = deg2rad(available.viewAzimuthMean);
-            let vza = deg2rad(available.viewZenithMean);
+            var available = sample[i]
+            var saa = deg2rad(available.sunAzimuthAngles);
+            var sza = deg2rad(available.sunZenithAngles);
+            var vaa = deg2rad(available.viewAzimuthMean);
+            var vza = deg2rad(available.viewZenithMean);
 
             let constant = build_constants(sza, vza, saa, vaa);
             let c_vza_zero = build_constants(sza, 0, saa, vaa);
@@ -29,8 +48,6 @@ function evaluatePixel(sample) {
                 kvol_vza_zero: calc_kvol(c_vza_zero)
             }
 
-            let bands = Object.keys(f_values);
-            let lum = 2.5 // brightness of the image
             return bands.map(band => lum * calc_nbar(
                 available[band],
                 f_values[band],
@@ -43,10 +60,13 @@ function evaluatePixel(sample) {
 // Kernel Parameters (Roy et al. 2017, Table 1)
 // [f_iso, f_geo, f_vol]
 var f_values = {
-    "B04": [0.1690, 0.0227, 0.0574],
+    "B02": [0.0774, 0.0079, 0.0372],
     "B03": [0.1306, 0.0178, 0.0580],
-    "B02": [0.0774, 0.0079, 0.0372]
-}
+    "B04": [0.1690, 0.0227, 0.0574],
+    "B08": [0.3093, 0.0330, 0.1535],
+    "B11": [0.3430, 0.0453, 0.1154],
+    "B12": [0.2658, 0.0387, 0.0639]
+};
 
 function build_constants(sza, vza, saa, vaa) {
     // calculates constants from viewing geometry that are often needed in the
