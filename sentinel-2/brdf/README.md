@@ -23,7 +23,7 @@
 
 ## General description of the script
 
-Implementing of a BRDF normalisation for Sentinel-2 scenes in a Sentinel Hub [Evalscript](https://docs.sentinel-hub.com/api/latest/evalscript/v3/).
+Implementing of a Bidirectional Reflectance Distribution Function (BRDF) normalisation for Sentinel-2 scenes in a Sentinel Hub [Evalscript](https://docs.sentinel-hub.com/api/latest/evalscript/v3/).
 
 The Evascript proposed here is the "semi-empirical BRDF normalisation c-factor correction approach proposed by Luch et al. 2000 [1]. The formula is detailed in eq. 37 (using eq. 38 & 39). To avoid lookup tables and other complex modelling approaches, we use the fixed BRDF spectral model parameters derived from "the global year of highest quality snow-free MODIS BRDF product" conveniently defined for Sentinel-2 in Roy et al. 2017 [2] that were derived from the Landsat ones in Roy et al. 2016 [3].
 
