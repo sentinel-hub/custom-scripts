@@ -20,7 +20,7 @@ The approach seems to perform generally quite well for most surfaces (except sno
 
 ## Usage
 
-BRDF corrections are available for Sentinel 2 bands 2, 3, 4, 8, 11 and 12. In the beginning of the script there is the option to define the bands which the correction should be applied to. It is also possible to set a luminance value in case RGB images are supposed to be generated. 
+BRDF corrections are available for Sentinel 2 bands 2, 3, 4, 8, 11 and 12. In the beginning of the script there is the option to define the bands which the correction should be applied to. It is also possible to set a luminance value in case RGB images are supposed to be generated. The luminance value is a multiplication factor designed to brighten the image for a better visualisation. By default, a factor of 2.5 is applied which works for most surface types. For darker surfaces, such as forests, a higher value may be required.
 
 There are 3 output options available, a True Color and False Color visualization and the option to return Raw Values. Changing what the script does is just a matter of commenting and uncommenting the output options that are available. The output can also be customized following the same schema of the three available output options. This can for example be done to define custom composites using other bands.
 
