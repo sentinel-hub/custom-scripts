@@ -123,9 +123,6 @@ function calc_kgeo(c) {
     // Calculate the LiSparse kernel from Lucht et al. 2000
     // Angles in RAD !
 
-    // sza = theta_prime = Math.atan(b / r * Math.tan(sza)) simplifies because b/r = 1
-    // vza = lettheta_prime = Math.atan(b / r * Math.tan(vza)) simplifies because b/r = 1
-
     //c 42 Lucht
     let Dsq = Math.pow(c.tan.sza, 2) + Math.pow(c.tan.vza, 2) - 2 * c.tan.sza * c.tan.vza * c.cos.phi;
     let tantansin = c.tan.sza * c.tan.vza * c.sin.phi;
@@ -149,8 +146,6 @@ function calc_kvol(c) {
     // Angles in RAD !
 
     // eq 44
-    // sza = theta_prime = Math.atan(b / r * Math.tan(sza)) simplifies because b/r = 1
-    // vza = lettheta = Math.atan(b / r * Math.tan(vza)) simplifies because b/r = 1
     let xi = Math.acos(c.cos_xi);
 
     let kvol = ((Math.PI / 2 - xi) * c.cos_xi + Math.sin(xi)) / (c.cos.sza + c.cos.vza) - Math.PI / 4;
