@@ -6,9 +6,12 @@ has_children: true
 ---
 
 # Contribute to Custom Scripts
+
 Have a look at the [template](/contribute/example) for an example of how a script page can be structured.
 
 You can also have a look at other scripts to see how they are structured.
+
+For instructions on how custom scripts are structured have a look at this [tutorial](https://www.sentinel-hub.com/explore/education/custom-scripts-tutorial/), or at the [official documenation](https://docs.sentinel-hub.com/api/latest/evalscript/).
 
 ---
 
