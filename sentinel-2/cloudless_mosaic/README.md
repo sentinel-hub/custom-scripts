@@ -15,5 +15,3 @@ An example of the results is New Zealand's cloudless mosaic, available here: htt
 
 For the output value for each pixel it uses the first quartile value of valid values, each band separately. If there are none it uses invalid values instead. 
 When using SCL its very important to use nearest neighbor resampling with a resolution of about 20m/px or more. 
-
-The script is available in custom script Version-1 and Version-2.
