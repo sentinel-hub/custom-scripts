@@ -18,7 +18,7 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-- [EO Browser - To add](){:target="_blank"}
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat=41.72239&lng=13.15132&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fa10a1628-76ea-4654-8961-6494cb74576d&evalscript=Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkJsdWUiLCJHcmVlbiIsIlJlZCIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIAogIHJldHVybiBbMi41ICogc2FtcGxlLlJlZCwgMi41ICogc2FtcGxlLkdyZWVuLCAyLjUgKiBzYW1wbGUuQmx1ZSwgc2FtcGxlLmRhdGFNYXNrXTsKfQ%3D%3D&datasetId=AWS_HLS&fromTime=2023-04-19T00%3A00%3A00.000Z&toTime=2023-04-19T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script)
 
 ## Description
 

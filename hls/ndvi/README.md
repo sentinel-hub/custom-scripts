@@ -18,7 +18,7 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-- [EO Browser - To add](){:target="_blank"}
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat=41.72239&lng=13.15132&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fa10a1628-76ea-4654-8961-6494cb74576d&datasetId=AWS_HLS&fromTime=2023-04-19T00%3A00%3A00.000Z&toTime=2023-04-19T23%3A59%3A59.999Z&layerId=3_NDVI&demSource3D=%22MAPZEN%22#custom-script)
 
 ## Description
 
