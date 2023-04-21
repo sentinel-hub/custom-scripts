@@ -66,7 +66,7 @@ and
 
 By default, all pixels identified as "not water" (cloud, snow or land) are shown in true colour. All pixels identifed as water are coloured with an algorithm that evaluates chlorophyll and suspended sediment concentration together. This visualization can be compared to a GIS map with two raster layers, sediment on top and chlorophyll below. The sediment "layer" is semi-transparent and can cover the chlorophyll "layer". Just like clouds in the atmosphere, sediment in the water reduces transparency and obscures chlorophyll. Therefore water pixels with high sediment concentrations are coloured dark brown regardless of their chlorophyll concentration. Medium sediment concentrations are coloured wheat (light brown) with increasing transparency towards lower sediment concentrations. At low sediment concentrations the sediment "layer" is completely transparent. Below the semi-transparent sediment "layer", the chlorophyll concentration is visualized. High chlorophyll concentrations are marked in red, medium concentrations green, and low concentrations dark blue (see palette image below).
 
-<img src="assets/palette.png" width="500"/>
+<img src="assets/palette.png" alt="Color legend of values" width="500"/>
 
 By changing input parameters of the script it is also possible to:
 
@@ -192,7 +192,7 @@ In a document bibliography, please use the following citation:
 
 Zlinszky, A.; Padányi-Gulyás, G. Ulyssys Water Quality Viewer Technical Description Supplementary. Preprints 2020, 2020010386 (doi: 10.20944/preprints202001.0386.v1).
 
-<img src="assets/ulyssys_logo.png" width="250"/>
+<img src="assets/ulyssys_logo.png" alt="Ulyssys Logo" width="250"/>
 
 ## Description of representative images
 
