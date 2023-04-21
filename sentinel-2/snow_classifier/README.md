@@ -44,8 +44,8 @@ Snow classifier, Bovec, Slovenia. Acquired on 26.10.2019.
 ![snow classifier](fig/fig1.png)
 
 ## References
-[1] Olivier Hagolle, Mireille Huc, Camille Desjardins, Stefan Auer, & Rudolf Richter. (2017, December 7). MAJA Algorithm Theoretical Basis Document (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.1209633
+[1] Olivier Hagolle, Mireille Huc, Camille Desjardins, Stefan Auer, & Rudolf Richter. (2017, December 7). MAJA Algorithm Theoretical Basis Document (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.1209633
 
 [2] Andreas Juergen Dietz, Claudia Kuenzer, Ursula Gessner & Stefan Dech (2012):
 Remote sensing of snow – a review of available methods, International Journal of Remote Sensing,
-33:13, 4094-4134. http://dx.doi.org/10.1080/01431161.2011.640964
+33:13, 4094-4134. https://dx.doi.org/10.1080/01431161.2011.640964

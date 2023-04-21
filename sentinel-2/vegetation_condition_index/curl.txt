@@ -5,7 +5,7 @@ curl -X POST \
     "input": {
       "bounds": {
         "properties": {
-          "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+          "crs": "https://www.opengis.net/def/crs/EPSG/0/4326"
         },
         "bbox": [14.4,45.95,14.6,46.15]
       },

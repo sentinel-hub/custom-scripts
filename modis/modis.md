@@ -13,7 +13,7 @@ The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 version 6 on S
   - [SWIR](/modis/swir)
 
 #### Remote sensing indices
-  - [collection](/modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+  - [collection](/modis/indexdb) of remote sensing indices from an extensive [Index database (IDB)](https://www.indexdatabase.de/){:target="_blank"}
   - [NDVI](/modis/ndvi)
   - [NDMI](/modis/ndmi)
   - [NDWI](/modis/ndwi)

@@ -5,7 +5,7 @@ nav_exclude: true
 
 # Sentinel-2 RS indices
 
-The following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"} specifically for Sentinel-2 satellite.
+The following collection of remote sensing indices has been constructed from the information available at the [Index database (IDB)](https://www.indexdatabase.de/){:target="_blank"} specifically for Sentinel-2 satellite.
 
 Javascript functions have been parsed from the data automatically, so please note there might be errors and feedback will be appreciated. Also note that the intervals where various indices are mapped to colors are estimations and as such might not work best for all use cases. Tweak the scripts and let us know about your findings.
 

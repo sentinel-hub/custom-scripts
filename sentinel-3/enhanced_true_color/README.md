@@ -28,7 +28,7 @@ Enhanced true color visualization of Beira, Mozambique. Acquired on 25.3.2019.
 ![Enhanced true color visualization of Beira, Mozambique. Acquired on 25.3.2019.](fig/fig1.png)
 
 ## Contributors:
- - Annamaria Luongo, [Twitter: @annamaria_84](http://www.linkedin.com/in/annamaria-luongo-RS){:target="_blank"}
+ - Annamaria Luongo, [Twitter: @annamaria_84](https://www.linkedin.com/in/annamaria-luongo-RS){:target="_blank"}
 
 ## License
 

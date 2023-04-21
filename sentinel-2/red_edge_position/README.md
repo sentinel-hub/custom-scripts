@@ -31,5 +31,5 @@ Visualization of the REPO index above Italy.
 
 ## Credits
 
-The script is based on [Gholizadeh et al., 2016.](http://www.mdpi.com/1999-4907/7/10/226){:target="_blank"}
+The script is based on [Gholizadeh et al., 2016.](https://www.mdpi.com/1999-4907/7/10/226){:target="_blank"}
 It is described in the [Index database](https://www.indexdatabase.de/db/i-single.php?id=196){:target="_blank"} as well. 

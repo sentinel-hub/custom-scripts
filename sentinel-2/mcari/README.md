@@ -32,4 +32,4 @@ MCARI, Italy. Acquired on 08.10.2017, processed by Sentinel Hub.
 
 
 ## References
-http://www.hiphen-plant.com
+https://www.hiphen-plant.com

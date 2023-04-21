@@ -93,7 +93,7 @@ Cleveland, William S., and McGill, Robert. “Graphical Perception: Theory, Expe
 
 Judd, Deane B., et al. “Spectral Distribution of Typical Daylight as a Function of Correlated Color Temperature.” JOSA, vol. 54, no. 8, Optical Society of America, Aug. 1964, pp. 1031–40. www.osapublishing.org, doi:10.1364/JOSA.54.001031.
 
-Kovesi, Peter. “Good Colour Maps: How to Design Them.” ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, http://arxiv.org/abs/1509.03700.
+Kovesi, Peter. “Good Colour Maps: How to Design Them.” ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, https://arxiv.org/abs/1509.03700.
 
 Mason, Betsy. “Why Scientists Need to Be Better at Data Visualization.” Knowable Magazine | Annual Reviews, Annual Reviews, Nov. 2019. www.knowablemagazine.org, doi:10.1146/knowable-110919-1.
 

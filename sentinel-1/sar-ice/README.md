@@ -56,7 +56,7 @@ And finally a gamma correction with value 1.1 is applied to make the resulting i
 
 **Generation of the green channel**
 
-The mixture used for green was chosen to keep Red and Blue dominant while keeping a pleasant overall palette of colours. Our solution is to use a variant of the Soft Light blend mode as described on the Pegtop software documentation pages (http://www.pegtop.net/delphi/articles/blendmodes/softlight.htm) or in the Gimp documentation (as Overlay https://docs.gimp.org/en/gimp-concepts-layer-modes.html), with HH as the top layer and HV as the bottom layer. It translates in our case to:
+The mixture used for green was chosen to keep Red and Blue dominant while keeping a pleasant overall palette of colours. Our solution is to use a variant of the Soft Light blend mode as described on the Pegtop software documentation pages (https://www.pegtop.net/delphi/articles/blendmodes/softlight.htm) or in the Gimp documentation (as Overlay https://docs.gimp.org/en/gimp-concepts-layer-modes.html), with HH as the top layer and HV as the bottom layer. It translates in our case to:
 
 
                         G = HV * (2 * HH + HV * (1 - 2 * HH))

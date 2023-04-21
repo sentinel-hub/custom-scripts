@@ -18,7 +18,7 @@ nav_exclude: true
 
 ## Author of the script
 By TIZNEGAR Startup Co, 
-[www.tiznegar.com](http://www.tiznegar.com/){:target="_blank"}
+[www.tiznegar.com](https://www.tiznegar.com/){:target="_blank"}
 
 ## Evaluate and Visualize
 

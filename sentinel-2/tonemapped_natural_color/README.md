@@ -80,11 +80,11 @@ Gregory Ivanov
 
 [1] [John Hable, Uncharted 2: HDR Lighting, GDC talk](https://www.gdcvault.com/play/1012351/Uncharted-2-HDR){:target="_blank"} 
 
-[2] [John Hableís followup blog post](http://filmicworlds.com/blog/filmic-tonemapping-operators/){:target="_blank"} 
+[2] [John Hableís followup blog post](https://filmicworlds.com/blog/filmic-tonemapping-operators/){:target="_blank"} 
 
 [3] [Tom Madams, Why Reinhard desaturates my blacks](https://imdoingitwrong.wordpress.com/2010/08/19/why-reinhard-desaturates-my-blacks-3/){:target="_blank"} 
 
-[4] [Erik  Reinhard, Photographic tone reproduction for digital images](http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf){:target="_blank"} 
+[4] [Erik  Reinhard, Photographic tone reproduction for digital images](https://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf){:target="_blank"} 
 
 [5] [ACES color space tonemapping Unreal Engine user manual](https://docs.unrealengine.com/en-US/Engine/Rendering/PostProcessEffects/ColorGrading/index.html){:target="_blank"} 
 

@@ -59,5 +59,5 @@ See the [supplementary material](supplementary_material.pdf) for more examples.
 ## Credits
 
 - [Harel Dan temporal script](https://github.com/hareldunn/GIS_Repo/blob/master/Multi-Temporal%20NDVI%20for%20Sentinel%20Hub%20Custom%20Scripts){:target="_blank"}  
-- NDSI/red thresold was adapted from [here](http://www.cesbio.ups-tlse.fr/multitemp/?p=6446){:target="_blank"}  
+- NDSI/red thresold was adapted from [here](https://www.cesbio.ups-tlse.fr/multitemp/?p=6446){:target="_blank"}  
 - [Snow representation by Simon Gascoin](https://apps.sentinel-hub.com/eo-browser/?lat=53.07650&lng=-6.21291&zoom=14&time=2019-02-02&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8gQ3VzdG9tIHNjcmlwdCBieSBTaW1vbiBHYXNjb2luCnZhciBjcDE9WzIuNSpCMDQsMS4yKkIwOCwxLjUqQjAyXTsKdmFyIGNwMj1bMS4xKkIwNCwxLjMqQjAzLDEuMSpCMDJdOwp2YXIgbmRzaT0oQjAzLUIxMSkvKDAuMDErQjAzK0IxMSk7CnJldHVybiAoKG5kc2k%2BMC4yKSYoQjAzPjAuMTUpKSA%2FIGNwMiA6IGNwMTs%3D){:target="_blank"}  

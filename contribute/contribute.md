@@ -66,7 +66,7 @@ Replace `GH_VERSION` with the version number that is displayed next to github-pa
 - Serve the page
   - First install all necessary gems with `bundle install`
   - then the site can be built with `bundle exec jekyll serve`
-  - The site should then be visible on http://127.0.0.1:4000
+  - The site should then be visible on `127.0.0.1:4000`
 
 #### macOS
 - In the root directory of your fork open a terminal
@@ -101,4 +101,4 @@ Replace `GH_VERSION` with the version number that is displayed next to github-pa
     bundler: failed to load command: jekyll
     ```
   - then the site can be built with `bundle exec jekyll serve`
-  - The site should then be visible on http://127.0.0.1:4000
+  - The site should then be visible on `127.0.0.1:4000`

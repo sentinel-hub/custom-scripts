@@ -244,15 +244,15 @@ Lake Pontchartrain, **Sentinel-2A**, 2020-01-06, [**Enhanced visualization**](ht
 - [Schalles 1998 (RLH)](https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1529-8817.1998.340383.x) Schalles, John F., Anatoly A. Gitelson, Yosef Z. Yacobi, and Amy E. Kroenke. "Estimation of chlorophyll a from time series measurements of high spectral resolution reflectance in an eutrophic lake." Journal of Phycology 34, no. 2 (1998): 383-390.
 - [Sentinel-3 User Guide, (Suspended sediment from 620 nm band)](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-3-olci/resolutions/radiometric)
 - [Yacobi 1995 (Reflectance Line Height)](https://academic.oup.com/plankt/article-abstract/17/11/2155/1413463): Yacobi, Yosef Z., Anatoly Gitelson, and Meir Mayo. "Remote sensing of chlorophyll in Lake Kinneret using highspectral-resolution radiometer and Landsat TM: spectral features of reflectance and algorithm development." Journal of Plankton Research 17, no. 11 (1995): 2155-2173.
-- [Zlinszky Supan Koma 2017 (Global Lake Watch)](http://lakes.okologia.mta.hu/): Zlinszky, András, Peter Supan, and Zsófia Koma. "Near real-time qualitative monitoring of lake water chlorophyll globally using GoogleEarth Engine." In EGU General Assembly Conference Abstracts, vol. 19, p. 18950. 2017.
+- [Zlinszky Supan Koma 2017 (Global Lake Watch)](https://lakes.okologia.mta.hu/): Zlinszky, András, Peter Supan, and Zsófia Koma. "Near real-time qualitative monitoring of lake water chlorophyll globally using GoogleEarth Engine." In EGU General Assembly Conference Abstracts, vol. 19, p. 18950. 2017.
 
 ### Special thanks to
 
-- Most of the development and testing that allowed the preparation of this script was carried out for [Global Lake Watch](http://lakes.okologia.mta.hu/) between 2016 and 2019, and we transferred most settings and algorithms from the Global Lake Watch source code, with permission of the authors: Peter Supan, Marc Zobel, Zsófia Koma, and András Zlinszky.
+- Most of the development and testing that allowed the preparation of this script was carried out for [Global Lake Watch](https://lakes.okologia.mta.hu/) between 2016 and 2019, and we transferred most settings and algorithms from the Global Lake Watch source code, with permission of the authors: Peter Supan, Marc Zobel, Zsófia Koma, and András Zlinszky.
 - Balaton Limnological Institute of the [Hungarian Centre for Ecological Research](https://www.okologia.mta.hu/en) for hosting our studies of satellite water quality mapping.
 
 ## License
 
 ![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Creative Commons License")
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -62,7 +62,7 @@ var maxValue = 30;
 * **<span dir="">minValue</span>**: <span dir="">decrease this for more sensitivity to low concentrations of the selected index.</span>
 * **<span dir="">maxValue</span>**<span dir="">: increase this for more sensitivity to high concentrations of the selected index.</span>
 
-<p align="center"><img src="fig/Description_1_scale.png" width="500"> </p>
+<p align="center"><img src="fig/Description_1_scale.png" alt="Color Legend" width="500"> </p>
 
 ```
 var scaleLimits = [minValue, (maxValue + 3*minValue)/4, (maxValue + minValue)/2, (3*maxValue + minValue)/4, maxValue]

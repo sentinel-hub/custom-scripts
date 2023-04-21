@@ -78,6 +78,6 @@ Other helpful references:
 
 [9] Sentinel-Hub Forum, 2018. [Landsat Thermal](https://forum.sentinel-hub.com/t/landsat-thermal/489){:target="_blank"}.
 
-[10] UW-Madison, 2019. [Vegetation Index ñ NDVI. Satellite Meteorlogy, Universoty of Wisconsin-Madison](http://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html){:target="_blank"}.
+[10] UW-Madison, 2019. [Vegetation Index ñ NDVI. Satellite Meteorlogy, Universoty of Wisconsin-Madison](https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html){:target="_blank"}.
 
 [11] Xiaolei, Y., Xulin G., Zhaocong W., 2014. [Land Surface Temperature Retrieval from Landsat 8 TIRSóComparison between Radiative Transfer Equation-Based Method, Split Window Algorithm and Single Channel Method. Department of Geography and Planning, University of Saskatchewan; School of Remote Sensing and Information Engineering](https://www.researchgate.net/publication/266909983_Land_Surface_Temperature_Retrieval_from_Landsat_8_TIRS-Comparison_between_Radiative_Transfer_Equation-Based_Method_Split_Window_Algorithm_and_Single_Channel_Method){:target="_blank"}.

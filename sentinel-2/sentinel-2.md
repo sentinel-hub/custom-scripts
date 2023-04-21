@@ -17,7 +17,7 @@ parent: Sentinel
 {:toc}
 </details>
 
-Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
+Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2), Sentinel-2 carries a multispectral imager with a swath of 290 km. The imager provides a versatile set of 13 spectral bands spanning from the visible and near infrared to the shortwave infrared, featuring four spectral bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution. As indices primarily deal with combining various band reflectances, the table of 13 bands is given here for reference (see [here](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument){:target="_blank"} for details). The names of the Sentinel-2 bands at your disposal are *B01*, *B02*, *B03*, *B04*, *B05*, *B06*, *B07*, *B08*, *B8A*, *B09*, *B10*, *B11* and  *B12*.
 
  - [Sentinel-2 bands](/sentinel-2/bands)
  - [Simple RGB composites](/sentinel-2/composites)
@@ -35,7 +35,7 @@ Dedicated to supplying data for [Copernicus services](http://www.esa.int/Our_Act
  - [NDVI](/sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](/sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
  - [NDVI time series](/sentinel-2/ndvi_time_series) - NDVI time series as a multi-band TIFF with a JSON containg a list of timestamps 
- - [collection](/sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](http://www.indexdatabase.de/){:target="_blank"}
+ - [collection](/sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](https://www.indexdatabase.de/){:target="_blank"}
  - [MAX NDVI](/sentinel-2/max_ndvi)
  - [ARI](/sentinel-2/ari) - anthocyanin reflectance index
  - [mARI](/sentinel-2/mari) - modified anthocyanin reflectance index

@@ -19,7 +19,7 @@ nav_exclude: true
  - [EO Browser](https://sentinelshare.page.link/HVAb){:target="_blank"}   
 
 ## Description
-Carbon monoxide (CO) is an important atmospheric trace gas. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. The carbon monoxide total column is measured in mol per square meter (mol/ m^2). Learn more [here](http://www.tropomi.eu/data-products/carbon-monoxide).
+Carbon monoxide (CO) is an important atmospheric trace gas. In certain urban areas, it is a major atmospheric pollutant. Main sources of CO are combustion of fossil fuels, biomass burning, and atmospheric oxidation of methane and other hydrocarbons. The carbon monoxide total column is measured in mol per square meter (mol/ m^2). Learn more [here](https://www.tropomi.eu/data-products/carbon-monoxide).
 
 ## Description of representative images
 

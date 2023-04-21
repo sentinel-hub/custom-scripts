@@ -28,7 +28,7 @@ The Active fire detection script is also available for [Sentinel-2](https://cust
 
 ## Author of the script
 
- - [TIZNEGAR Startup co](http://tiznegar.com/)
+ - [TIZNEGAR Startup co](https://tiznegar.com/)
 
 ## Description of representative images
 
