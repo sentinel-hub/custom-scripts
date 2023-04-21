@@ -17,7 +17,7 @@ nav_exclude: true
 </div>
 
 ## General description of the script  
-This script visualises Global Land Cover discrete classification map with classes defined using the UN-FAO Land Cover Classification System (LCCS) and with color scheme defined in the [Product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.3.pdf).  
+This script visualises Global Land Cover discrete classification map with classes defined using the UN-FAO Land Cover Classification System (LCCS) and with color scheme defined in the [Product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.4.pdf).  
 
 Table 1: Color legend for the 23 discrete classes of land cover classification map 
 <table>
