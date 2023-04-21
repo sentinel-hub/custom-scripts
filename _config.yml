@@ -11,6 +11,8 @@ enable_copy_code_button: true
 logo: "/assets/images/sentinel_hub_logo_with_custom_scripts.png"
 favicon_ico: "/assets/images/public_favicon.ico"
 
+permalink: pretty
+
 color_scheme: sentinel_hub
 
 footer_content: 'This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"">Creative Commons Attribution-ShareAlike 4.0 International License</a>'
