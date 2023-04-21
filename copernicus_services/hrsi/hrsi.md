@@ -67,5 +67,32 @@ The Persistent Snow Area (PSA) product is generated annually from FSC products a
 - [PSA visualisation script](/copernicus_services/hrsi-psa-psa)
 - [PSA quality visualisation script](/copernicus_services/hrsi-psa-psa-quality)
 
+## RLIE S1
+
+The River and Lake Ice Extent S1 (RLIE S1) product differentiates open water bodies, snow-covered or snow-free ice areas from areas with no data. The product is generated in near-real time based on the revisit time of the Sentinel 1 constellation. 
+
+##### Available scripts
+
+- [RLIE S1 visualisation script](/copernicus_services/hrsi-rlie-s1)
+- [RLIE S1 quality visualisation script](/copernicus_services/hrsi-rlie-s1-quality)
+
+## RLIE S2
+
+The River and Lake Ice Extent S2 (RLIE S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product is generated in near-real time based on the revisit time of the Sentinel 2 constellation 
+
+##### Available scripts
+
+- [RLIE S2 visualisation script](/copernicus_services/hrsi-rlie-s2)
+- [RLIE S2 quality visualisation script](/copernicus_services/hrsi-rlie-s2-quality)
+
+## RLIE S1+S2
+
+The S1 and S2 River and Lake Ice Extent (RLIE S1+S2) product differentiates open water bodies, snow-covered or snow-free ice areas from other features, cloud cover or cloud shadows and areas with no data. The product is generated in delayed-time, resulting from the combination of RLIE S1 and RLIE S2 products.  
+
+##### Available scripts
+
+- [RLIE S1+S2 visualisation script](/copernicus_services/hrsi-rlie-s1s2)
+- [RLIE S1+S2 quality visualisation script](/copernicus_services/hrsi-rlie-s1s2-quality)
+
 More information about the HR-S&I snow production workflows that highlights the dependencies between the diferent products and how they are derived can be found [here](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/snow-products).
 
