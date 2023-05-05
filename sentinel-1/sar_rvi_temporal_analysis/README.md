@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-1/sar_rvi_temporal_analysis/
+nav_exclude: true
+---
+
 # Tracking Radar Vegetation Index (Agriculture Development) Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -42,7 +51,7 @@ Under the current settings the images would be colored based on the Change of RV
 * green/yellow areas indicate ripening or ripe crops
 * orange/red areas indicate areas of harvested areas
 
-![The script example](fig/Sentinel-1_(IW-VVVH)_2018-07-31.jpg)
+![The script example](fig/Sentinel-1_IW-VVVH_2018-07-31.jpg)
 
 ## Credits and references
 

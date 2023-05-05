@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-3/composites/
+nav_exclude: true
+---
+
 # Simple RGB Composites (Sentinel-3)
 
 ## True Color

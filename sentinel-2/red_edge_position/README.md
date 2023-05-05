@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/red_edge_position/
+nav_exclude: true
+---
+
 # Red edge position index (REPO)
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -22,5 +31,5 @@ Visualization of the REPO index above Italy.
 
 ## Credits
 
-The script is based on [Gholizadeh et al., 2016.](http://www.mdpi.com/1999-4907/7/10/226){:target="_blank"}
+The script is based on [Gholizadeh et al., 2016.](https://www.mdpi.com/1999-4907/7/10/226){:target="_blank"}
 It is described in the [Index database](https://www.indexdatabase.de/db/i-single.php?id=196){:target="_blank"} as well. 

@@ -1,8 +1,17 @@
+---
+permalink: /sentinel-2/cyanobacteria_chla_ndci_l1c/
+nav_exclude: true
+---
+
 # Cyanobacteria Chlorophyll-a NDCI L1C
 
 ---
-<a href="#" id='togglescript'>Show</a> script or [download](script.js) it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -10,7 +19,7 @@
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/cyanobacteria_chla_ndci_l1c/script.js)
- - [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/cyanobacteria_chla_ndci_l1c/script.js)   
+ - [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/cyanobacteria_chla_ndci_l1c/script.js)   
 
 ## General description of the script
 
@@ -33,7 +42,7 @@ A chl-a retrieval model was calibrated using a novel, high quality synthetic dat
 coincident S2-MSI remote sensing reflectance (Rrs) and pigment concentrations (figure below). 
 The parameterization of the dataset was informed by 
 the LIMNADES dataset [Lake Bio-optical Measurements and Matchup Data for 
-Remote Sensing](http://www.limnades.org/) and compiled using the 
+Remote Sensing](https://www.limnades.org/) and compiled using the 
 Hydrolight radiative transfer software (version 5.2, Sequoia Scientific, USA; Mobley, 1994). 
 The unique dataset accounts for the optical complexity of mixed cyanobacteria 
 phytoplankton assemblages, and immense optical variability typically found in 

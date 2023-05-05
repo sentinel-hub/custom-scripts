@@ -1,3 +1,8 @@
+---
+permalink: /EOB-layers/
+nav_exclude: true
+---
+
 # Default EO Browser layers
 
 Here you can find the list of all the scripts used in EO Browser, which are also on the repository. They are listed by EO Browser layer name and dashboard ID. 

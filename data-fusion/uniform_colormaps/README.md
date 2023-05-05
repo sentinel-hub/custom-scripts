@@ -1,5 +1,21 @@
+---
+permalink: /data-fusion/uniform_colormaps/
+nav_exclude: true
+---
+
 # PUCK: Perceptually-Uniform Color Map Kit
 **A set of visualization utilities that produce beautiful images designed for human perception from single-channel data (NDVI, spectral angle, etc). Generate quality figures that are true to the data.**
+
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</div>
 
 SentinelHub custom scripts have limited support for custom colormaps: `colorBlend` and `ColorRampVisualizer`. As a result, many users end up hardcoding their colors. Also, these functions use RGB colors instead of a color gamut designed around human perception. The goal of this project is to create tools for custom script developers to generate useful and perceptually uniform colormaps. It provides visualization classes for users familiar with CIELAB color space and works to correct colors in RGB space to be perceptually uniform. The underlying mathematics is used by many scientific plotting applications, such as `matplotlib`, `bokeh`, `chroma.js`, and others.
 
@@ -77,7 +93,7 @@ Cleveland, William S., and McGill, Robert. “Graphical Perception: Theory, Expe
 
 Judd, Deane B., et al. “Spectral Distribution of Typical Daylight as a Function of Correlated Color Temperature.” JOSA, vol. 54, no. 8, Optical Society of America, Aug. 1964, pp. 1031–40. www.osapublishing.org, doi:10.1364/JOSA.54.001031.
 
-Kovesi, Peter. “Good Colour Maps: How to Design Them.” ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, http://arxiv.org/abs/1509.03700.
+Kovesi, Peter. “Good Colour Maps: How to Design Them.” ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, https://arxiv.org/abs/1509.03700.
 
 Mason, Betsy. “Why Scientists Need to Be Better at Data Visualization.” Knowable Magazine | Annual Reviews, Annual Reviews, Nov. 2019. www.knowablemagazine.org, doi:10.1146/knowable-110919-1.
 

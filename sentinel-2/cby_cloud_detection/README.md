@@ -1,15 +1,24 @@
+---
+permalink: /sentinel-2/cby_cloud_detection/
+nav_exclude: true
+---
+
 # Braaten-Cohen-Yang cloud detector
 
-<a href="#" id='togglescript'>Show</a> original script or [download](script_bcy_original.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script_bcy_original.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script_bcy_original.js %}
 {% endhighlight %}
-</div>  
+</div>
 
 ## Evaluate and visualize
 - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.10942153064164&lng=14.8919677734375&zoom=9&maxcc=100&&time=2015-01-01%7C2017-06-06&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Fsentinel-hub%2FcustomScripts%2Fmaster%2Fsentinel-2%2Fcby_cloud_detection%2Fscript.js){:target="_blank"}
-- [EO Browser](http://apps.sentinel-hub.com/eo-browser/#lat=42.437647200108685&lng=11.19283676147461&zoom=12&datasource=Sentinel-2%20L1C&time=2017-10-06&preset=CUSTOM&layers=B01,B02,B03&evalscript=ZnVuY3Rpb24gaW5kZXgoeCwgeSkgewoJcmV0dXJuICh4IC0geSkgLyAoeCArIHkpOwp9CgpmdW5jdGlvbiBjbGlwKGEpIHsKICByZXR1cm4gTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgYSkpOwp9CgpsZXQgTkdEUiA9IGluZGV4KEIwMiwgQjAzKTsKbGV0IGJSYXRpbyA9IChCMDIgLSAwLjE3NSkgLyAoMC4zOSAtIDAuMTc1KTsKbGV0IGdhaW4gPSAyLjU7CgppZiAoYlJhdGlvID4gMSkgeyAvL2Nsb3VkCiAgdmFyIHYgPSAwLjUgKiAoYlJhdGlvIC0gMSk7CiAgcmV0dXJuIFswLjUgKiBjbGlwKEIwNCksIDAuNSAqIGNsaXAoQjAzKSwgMC41ICogY2xpcChCMDIpICsgdl07Cn0KCmlmIChiUmF0aW8gPiAwICYmIE5HRFI%2BMCkgeyAvL2Nsb3VkCiAgdmFyIHYgPSA1ICogTWF0aC5zcXJ0KGJSYXRpbyAqIE5HRFIpOwogIHJldHVybiBbMC41ICogY2xpcChCMDQpICsgdiwgMC41ICogY2xpcChCMDMpLCAwLjUgKiBjbGlwKEIwMildOwp9CgoKcmV0dXJuIFtCMDQsIEIwMywgQjAyXS5tYXAoYSA9PiBnYWluICogYSk7Cg%3D%3D){:target="_blank"}
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=42.437647200108685&lng=11.19283676147461&zoom=12&datasource=Sentinel-2%20L1C&time=2017-10-06&preset=CUSTOM&layers=B01,B02,B03&evalscript=ZnVuY3Rpb24gaW5kZXgoeCwgeSkgewoJcmV0dXJuICh4IC0geSkgLyAoeCArIHkpOwp9CgpmdW5jdGlvbiBjbGlwKGEpIHsKICByZXR1cm4gTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgYSkpOwp9CgpsZXQgTkdEUiA9IGluZGV4KEIwMiwgQjAzKTsKbGV0IGJSYXRpbyA9IChCMDIgLSAwLjE3NSkgLyAoMC4zOSAtIDAuMTc1KTsKbGV0IGdhaW4gPSAyLjU7CgppZiAoYlJhdGlvID4gMSkgeyAvL2Nsb3VkCiAgdmFyIHYgPSAwLjUgKiAoYlJhdGlvIC0gMSk7CiAgcmV0dXJuIFswLjUgKiBjbGlwKEIwNCksIDAuNSAqIGNsaXAoQjAzKSwgMC41ICogY2xpcChCMDIpICsgdl07Cn0KCmlmIChiUmF0aW8gPiAwICYmIE5HRFI%2BMCkgeyAvL2Nsb3VkCiAgdmFyIHYgPSA1ICogTWF0aC5zcXJ0KGJSYXRpbyAqIE5HRFIpOwogIHJldHVybiBbMC41ICogY2xpcChCMDQpICsgdiwgMC41ICogY2xpcChCMDMpLCAwLjUgKiBjbGlwKEIwMildOwp9CgoKcmV0dXJuIFtCMDQsIEIwMywgQjAyXS5tYXAoYSA9PiBnYWluICogYSk7Cg%3D%3D){:target="_blank"}
 
 ## General description
 In  [1] Braaten, Cohen, and Yang describe a very simple cloud detection algorithm. The whole cloud detection is a simple threshold-based test:   

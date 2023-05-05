@@ -1,3 +1,8 @@
+---
+permalink: /modis/bands/
+nav_exclude: true
+---
+
 # MODIS Bands
 
  - [Refference](https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands/}

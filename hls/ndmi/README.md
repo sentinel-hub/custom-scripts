@@ -1,7 +1,16 @@
+---
+permalink: /hls/ndmi/
+nav_exclude: true
+---
+
 # NDMI
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -9,7 +18,7 @@
 
 ## Evaluate and visualize
 
-- [EO Browser - To add](){:target="_blank"}
+- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat=41.72239&lng=13.15132&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fa10a1628-76ea-4654-8961-6494cb74576d&evalscript=Ly9WRVJTSU9OPTMKY29uc3QgbW9pc3R1cmVSYW1wcyA9IFsKICAgICAgICBbLTAuOCwgMHg4MDAwMDBdLAogICAgICAgIFstMC4yNCwgMHhmZjAwMDBdLAogICAgICAgIFstMC4wMzIsIDB4ZmZmZjAwXSwKICAgICAgICBbMC4wMzIsIDB4MDBmZmZmXSwKICAgICAgICBbMC4yNCwgMHgwMDAwZmZdLAogICAgICAgIFswLjgsIDB4MDAwMDgwXQogICAgICBdOwoKY29uc3Qgdml6ID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIobW9pc3R1cmVSYW1wcyk7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICByZXR1cm4gewogICAgaW5wdXQ6IFsiTklSX05hcnJvdyIsICJTV0lSMSIsImRhdGFNYXNrIl0sCiAgICBvdXRwdXQ6IFsKICAgICAgeyBpZDogImRlZmF1bHQiLCBiYW5kczogNCB9LAogICAgICB7IGlkOiAiaW5kZXgiLCBiYW5kczogMSwgc2FtcGxlVHlwZTogIkZMT0FUMzIiIH0KICAgIF0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICBsZXQgdmFsID0gaW5kZXgoc2FtcGxlcy5OSVJfTmFycm93LCBzYW1wbGVzLlNXSVIxKTsgCiAgY29uc3QgaW5kZXhWYWwgPSBzYW1wbGVzLmRhdGFNYXNrID09PSAxID8gdmFsIDogTmFOOwogIHJldHVybiB7CiAgICBkZWZhdWx0OiBbLi4udml6LnByb2Nlc3ModmFsKSxzYW1wbGVzLmRhdGFNYXNrXSwKICAgIGluZGV4OiBbaW5kZXhWYWxdIAogIH07Cn0%3D&datasetId=AWS_HLS&fromTime=2023-04-19T00%3A00%3A00.000Z&toTime=2023-04-19T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script)
 
 ## Description
 

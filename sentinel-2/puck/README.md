@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/puck/
+nav_exclude: true
+---
+
 # PUCK - Perceptually-Uniform Color Map Kit Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -105,6 +114,6 @@ Cleveland, William S., and McGill, Robert. ìGraphical Perception: Theory, Exper
 
 Judd, Deane B., et al. ìSpectral Distribution of Typical Daylight as a Function of Correlated Color Temperature.î JOSA, vol. 54, no. 8, Optical Society of America, Aug. 1964, pp. 1031ñ40. www.osapublishing.org, doi:10.1364/JOSA.54.001031.
 
-Kovesi, Peter. ìGood Colour Maps: How to Design Them.î ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, http://arxiv.org/abs/1509.03700.
+Kovesi, Peter. ìGood Colour Maps: How to Design Them.î ArXiv:1509.03700 [Cs], Sept. 2015. arXiv.org, https://arxiv.org/abs/1509.03700.
 
 Smith, T., and J. Guild. ìThe C.I.E. Colorimetric Standards and Their Use.î Transactions of the Optical Society, vol. 33, no. 3, IOP Publishing, Jan. 1931, pp. 73ñ134. Institute of Physics, doi:10.1088/1475-4878/33/3/301.

@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/mago_water_quality_monitoring_tool/
+nav_exclude: true
+---
+
 # MAGO Water Quality Monitoring Tool
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js) it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -17,15 +26,15 @@ MAGO Water Quality Monitoring tool is a code to estimate water quality parameter
 The following is the display that can be obtained for concentration of Chrlorophyll-a for the day 2022-01-30 at Barrage Lebna (Tunisia)
 - Configuration of variables:
 
-<p align="center"><img src="fig/custom_script_index_selection_jan_22.png" width="600"></p>
+<p align="center"><img src="fig/custom_script_index_selection_jan_22.png" alt="Code of custom script" width="600"></p>
 
 - Map visualization
 
-<p align="center"><img src="fig/viz_jan_22.png" width="600"></p>
+<p align="center"><img src="fig/viz_jan_22.png" alt="Output of script on January 2022" width="600"></p>
 
 - Time series plot
 
-<p align="center"><img src="fig/plot_jan_22.png" width="600"></p>
+<p align="center"><img src="fig/plot_jan_22.png" alt="Output of statistical time series" width="600"></p>
 
 ### Script description
 
@@ -53,7 +62,7 @@ var maxValue = 30;
 * **<span dir="">minValue</span>**: <span dir="">decrease this for more sensitivity to low concentrations of the selected index.</span>
 * **<span dir="">maxValue</span>**<span dir="">: increase this for more sensitivity to high concentrations of the selected index.</span>
 
-<p align="center"><img src="fig/Description_1_scale.png" width="500"> </p>
+<p align="center"><img src="fig/Description_1_scale.png" alt="Color Legend" width="500"> </p>
 
 ```
 var scaleLimits = [minValue, (maxValue + 3*minValue)/4, (maxValue + minValue)/2, (3*maxValue + minValue)/4, maxValue]
@@ -89,11 +98,11 @@ function isCloud(scl)
 
 Scene Classification Map (SCL) aims at providing a pixel classification map, with values from 0 to 11. The labels can be seen in the table below.
 
-<p align="center"><img src="fig/Description_2_codes.png" width="250"></p>
+<p align="center"><img src="fig/Description_2_codes.png" alt="Scene Classification Codes" width="250"></p>
 
 Based on this classification, the function will evaluate every pixel and return true for labels 1, 3, 8, 9, 10 and 11. This will allow images with a high percentage of pixels considered as cloudy to be disregarded in the time series plot display.
 
-<p align="center"><img src="fig/Description_3_filtering.png" width="900"></p>
+<p align="center"><img src="fig/Description_3_filtering.png" alt="Filtering cloudy acquisitions from time series" width="900"></p>
         
 ## Scientific Background
 ### Introduction
@@ -106,7 +115,7 @@ Sentinel 2 offers a greater frequency in the measurement than previous satellite
 
 The MAGO water quality monitoring tool aims at integrating different water quality parameters calculated by using the formulas listed in the table below - listed by **Index Number** from 0 to 7.
 
-<p align="center"><img src="fig/Description_4_index.png" width="1000"></p>
+<p align="center"><img src="fig/Description_4_index.png" alt="Table with overview of indices" width="1000"></p>
 
 The MAGO Water Quality Monitoring Tool was focused on chlorophyll-a and cyanobacteria analysis, as well as some physicochemical parameters were included. A brief explanation of the algorithms selected is the following:
 

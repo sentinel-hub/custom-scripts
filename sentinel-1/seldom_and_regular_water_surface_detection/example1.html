@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,59 +13,60 @@
             height: 100%;
             width: 100%;
         }
-        
+
         #devTestingDemo {
             height: 100%;
             width: 100%;
         }
     </style>
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js"></script>
 
 </head>
 
 <body>
-<div id="devTestingDemo"></div>
-<script>
+    <div id="devTestingDemo"></div>
+    <script>
 
-// OpenStreetMap
-let osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-});
+        // OpenStreetMap
+        let osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+        });
 
-// Sentinel Hub WMS service
-// tiles generated using EPSG:3857 projection - Leaflet takes care of that
-let baseUrl = "https://services.sentinel-hub.com/ogc/wms/bfbfc449-320a-4a56-b493-61c9d4fc67e8";
-let sentinelHub = L.tileLayer.wms(baseUrl, {
-    tileSize: 512,
-    attribution: '&copy; <a href="http://www.sentinel-hub.com/" target="_blank">Sentinel Hub</a>',
-    maxcc:20, 
-    minZoom:6, 
-    maxZoom:16, 
-    preset:"IW-DV-VV-LINEAR-GAMMA0-ORTHORECTIFIED", 
-    layers:"IW-DV-VV-LINEAR-GAMMA0-ORTHORECTIFIED",
-    time:"2018-06-01/2019-03-30",
-    evalscripturl:"https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-1/seldom_and_regular_water_surface_detection/seldom_and_regular_water_surface_detection.js",
-    temporal: true,
+        // Sentinel Hub WMS service
+        // tiles generated using EPSG:3857 projection - Leaflet takes care of that
+        let baseUrl = "https://services.sentinel-hub.com/ogc/wms/bfbfc449-320a-4a56-b493-61c9d4fc67e8";
+        let sentinelHub = L.tileLayer.wms(baseUrl, {
+            tileSize: 512,
+            attribution: '&copy; <a href="https://www.sentinel-hub.com/" target="_blank">Sentinel Hub</a>',
+            maxcc: 20,
+            minZoom: 6,
+            maxZoom: 16,
+            preset: "IW-DV-VV-LINEAR-GAMMA0-ORTHORECTIFIED",
+            layers: "IW-DV-VV-LINEAR-GAMMA0-ORTHORECTIFIED",
+            time: "2018-06-01/2019-03-30",
+            evalscripturl: "https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-1/seldom_and_regular_water_surface_detection/seldom_and_regular_water_surface_detection.js",
+            temporal: true,
 
-});
+        });
 
-let baseMaps = {
-    'OpenStreetMap': osm
-};
-let overlayMaps = {
-    'Sentinel Hub WMS': sentinelHub
-}
+        let baseMaps = {
+            'OpenStreetMap': osm
+        };
+        let overlayMaps = {
+            'Sentinel Hub WMS': sentinelHub
+        }
 
-let map = L.map('devTestingDemo', {
-    center: [39.31969083394751, -94.8281478881836], // lat/lng in EPSG:4326
-    zoom: 12,
-    layers: [osm, sentinelHub]
-});
+        let map = L.map('devTestingDemo', {
+            center: [39.31969083394751, -94.8281478881836], // lat/lng in EPSG:4326
+            zoom: 12,
+            layers: [osm, sentinelHub]
+        });
 
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
 
-        </script>
+    </script>
 </body>
+
 </html>

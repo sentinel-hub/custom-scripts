@@ -1,3 +1,8 @@
+---
+permalink: /sentinel-2/bands/
+nav_exclude: true
+---
+
 # Sentinel-2 Bands
 
 ## Band 1

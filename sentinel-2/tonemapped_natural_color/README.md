@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/tonemapped_natural_color/
+nav_exclude: true
+---
+
 # Tonemapped Natural Color Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -71,11 +80,11 @@ Gregory Ivanov
 
 [1] [John Hable, Uncharted 2: HDR Lighting, GDC talk](https://www.gdcvault.com/play/1012351/Uncharted-2-HDR){:target="_blank"} 
 
-[2] [John Hableís followup blog post](http://filmicworlds.com/blog/filmic-tonemapping-operators/){:target="_blank"} 
+[2] [John Hableís followup blog post](https://filmicworlds.com/blog/filmic-tonemapping-operators/){:target="_blank"} 
 
 [3] [Tom Madams, Why Reinhard desaturates my blacks](https://imdoingitwrong.wordpress.com/2010/08/19/why-reinhard-desaturates-my-blacks-3/){:target="_blank"} 
 
-[4] [Erik  Reinhard, Photographic tone reproduction for digital images](http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf){:target="_blank"} 
+[4] [Erik  Reinhard, Photographic tone reproduction for digital images](https://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf){:target="_blank"} 
 
 [5] [ACES color space tonemapping Unreal Engine user manual](https://docs.unrealengine.com/en-US/Engine/Rendering/PostProcessEffects/ColorGrading/index.html){:target="_blank"} 
 

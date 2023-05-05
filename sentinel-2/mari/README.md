@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/mari/
+nav_exclude: true
+---
+
 # mARI - Modified Anthocyanin Reflectance Index
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -19,7 +28,7 @@ To correct for leaf density and thickness, the near infrared spectral band (in t
 
 **mARI(ARI2) = ((1 / B03) - (1 / B05)) * B07**  for Sentinel-2.
 
-mARI values for the examined trees in [this original article](http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1227&context=natrespapers){:target="_blank"} ranged in values from 0 to 8.
+mARI values for the examined trees in [this original article](https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1227&context=natrespapers){:target="_blank"} ranged in values from 0 to 8.
 
 mARI(ARI2) = ((1 / 550nm) - (1 / 700nm)) * NIR
 
@@ -31,4 +40,4 @@ mARI applied to Rome. Acquired on 10.12.2019, processed by Sentinel Hub.
 ![mARI, Rome](fig/fig1.png)
 
 ## References
-- [Non-Destructive Estimation of Anthocyanins and Chlorophylls in Anthocyanic Leaves (Gitelson, Chivkunova, Merzlyak)](http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1227&context=natrespapers){:target="_blank"}
+- [Non-Destructive Estimation of Anthocyanins and Chlorophylls in Anthocyanic Leaves (Gitelson, Chivkunova, Merzlyak)](https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1227&context=natrespapers){:target="_blank"}

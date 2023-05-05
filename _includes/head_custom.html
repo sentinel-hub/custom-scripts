@@ -1,0 +1,24 @@
+{% assign math = page.math | default: layout.math | default: site.math %}
+
+{% case math %}
+{% when "mathjax" %}
+{% include mathjax.html %}
+{% endcase %}
+
+<script>
+    function toggleScript() {
+        const button = document.getElementById('toggle-script');
+        const script = document.getElementById('script');
+        if (script.style.display === 'none') {
+            script.style.display = 'block';
+            button.innerHTML = 'Hide Script';
+        } else {
+            script.style.display = 'none';
+            button.innerHTML = 'Show Script';
+        }
+    }
+</script>
+
+{% if jekyll.environment == "production" %}
+<script src="https://cdn.usefathom.com/script.js" data-site="YGILKQEA" defer></script>
+{% endif %}

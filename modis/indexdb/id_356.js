@@ -1,6 +1,6 @@
 // Visible Atmospherically Resistant Index Green
 // This is an auto-generated script. Double checking the source information with the URL below is recommended.
-// URL http://www.indexdatabase.de/db/si-single.php?rsindex_id=356=&sensor_id=14
+// URL https:///www.indexdatabase.de/db/si-single.php?rsindex_id=356=&sensor_id=14
 
 let index = (B04-B01)/(B04+B01-B03);
 let min = -15.425;

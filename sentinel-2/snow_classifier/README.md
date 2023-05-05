@@ -1,9 +1,18 @@
+---
+permalink: /sentinel-2/snow_classifier/
+nav_exclude: true
+---
+
 # Snow classifier
 ---
 
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -35,8 +44,8 @@ Snow classifier, Bovec, Slovenia. Acquired on 26.10.2019.
 ![snow classifier](fig/fig1.png)
 
 ## References
-[1] Olivier Hagolle, Mireille Huc, Camille Desjardins, Stefan Auer, & Rudolf Richter. (2017, December 7). MAJA Algorithm Theoretical Basis Document (Version 1.0). Zenodo. http://doi.org/10.5281/zenodo.1209633
+[1] Olivier Hagolle, Mireille Huc, Camille Desjardins, Stefan Auer, & Rudolf Richter. (2017, December 7). MAJA Algorithm Theoretical Basis Document (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.1209633
 
 [2] Andreas Juergen Dietz, Claudia Kuenzer, Ursula Gessner & Stefan Dech (2012):
 Remote sensing of snow – a review of available methods, International Journal of Remote Sensing,
-33:13, 4094-4134. http://dx.doi.org/10.1080/01431161.2011.640964
+33:13, 4094-4134. https://dx.doi.org/10.1080/01431161.2011.640964

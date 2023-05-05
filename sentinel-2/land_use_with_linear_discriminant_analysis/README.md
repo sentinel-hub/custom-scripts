@@ -1,7 +1,16 @@
+---
+permalink: /sentinel-2/land_use_with_linear_discriminant_analysis/
+nav_exclude: true
+---
+
 # Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -55,7 +64,7 @@ In general, the colors for each zone are:
 
 [2] GitHub repository, [Collection of custom scripts.](https://github.com/sentinel-hub/custom-scripts){:target="_blank"} 
 
-[3] [List of spectral indexes for Sentinel and Landsat.](http://www.gisandbeers.com/listado-indices-espectrales-sentinel-landsat/){:target="_blank"} 
+[3] [List of spectral indexes for Sentinel and Landsat.](https://www.gisandbeers.com/listado-indices-espectrales-sentinel-landsat/){:target="_blank"} 
 
 [4] Borras, J. & Delegido, Jes˙s & Pezzola, Alejandro & Pereira, M. & Morassi, G. & Camps-Valls, Gustau. (2017). [Clasificación de usos del suelo a partir de imágenes Sentinel-2. Revista de Teledeteccion.](https://www.researchgate.net/publication/317715999_Clasificacion_de_usos_del_suelo_a_partir_de_imagenes_Sentinel-2){:target="_blank"}
 

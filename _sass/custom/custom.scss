@@ -1,0 +1,7 @@
+.btn {
+    vertical-align: top;
+}
+
+@media (min-width: 50rem) { .main-header { height: 100px;} }
+.site-header { min-height: 100px;  }
+.highlight ::selection { background-color: #a2b228; }

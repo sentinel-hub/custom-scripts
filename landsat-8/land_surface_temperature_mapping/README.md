@@ -1,7 +1,16 @@
+---
+permalink: /landsat-8/land_surface_temperature_mapping/
+nav_exclude: true
+---
+
 # Land Surface Temperature (LST) Mapping Script
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -69,6 +78,6 @@ Other helpful references:
 
 [9] Sentinel-Hub Forum, 2018. [Landsat Thermal](https://forum.sentinel-hub.com/t/landsat-thermal/489){:target="_blank"}.
 
-[10] UW-Madison, 2019. [Vegetation Index ñ NDVI. Satellite Meteorlogy, Universoty of Wisconsin-Madison](http://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html){:target="_blank"}.
+[10] UW-Madison, 2019. [Vegetation Index ñ NDVI. Satellite Meteorlogy, Universoty of Wisconsin-Madison](https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html){:target="_blank"}.
 
 [11] Xiaolei, Y., Xulin G., Zhaocong W., 2014. [Land Surface Temperature Retrieval from Landsat 8 TIRSóComparison between Radiative Transfer Equation-Based Method, Split Window Algorithm and Single Channel Method. Department of Geography and Planning, University of Saskatchewan; School of Remote Sensing and Information Engineering](https://www.researchgate.net/publication/266909983_Land_Surface_Temperature_Retrieval_from_Landsat_8_TIRS-Comparison_between_Radiative_Transfer_Equation-Based_Method_Split_Window_Algorithm_and_Single_Channel_Method){:target="_blank"}.

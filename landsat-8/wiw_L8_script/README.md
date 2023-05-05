@@ -1,7 +1,16 @@
+---
+permalink: /landsat-8/wiw_L8_script/
+nav_exclude: true
+---
+
 # Water In Wetlands Index - Landsat-8 Version
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -49,12 +58,12 @@ Timelapse ChaSca: WIW timelapse at the largest reed marsh in southern France fro
 ## References
 
 [1] Lefebvre G., Davranche A., Willm L., Campagna J., Redmond L., Merle C., Guelmami A., Poulin B. 2019. [Introducing WIW for Detecting the Presence of Water in Wetlands with Landsat and Sentinel Satellites. Remote Sensing 11(19):18.](https://sentinels.copernicus.eu/web/sentinel/news/-/article/copernicus-sentinel-2-helps-track-changes-in-seasonal-water-of-wetlands){:target="_blank"} 
-[DOI](http://dx.doi.org/10.3390/rs11192210){:target="_blank"}
+[DOI](https://dx.doi.org/10.3390/rs11192210){:target="_blank"}
 
 ## Credits
 
 [1] Lefebvre G., Davranche A., Willm L., Campagna J., Redmond L., Merle C., Guelmami A., Poulin B. 2019. [Introducing WIW for Detecting the Presence of Water in Wetlands with Landsat and Sentinel Satellites. Remote Sensing 11(19):18.](https://sentinels.copernicus.eu/web/sentinel/news/-/article/copernicus-sentinel-2-helps-track-changes-in-seasonal-water-of-wetlands){:target="_blank"} 
-[DOI](http://dx.doi.org/10.3390/rs11192210){:target="_blank"}
+[DOI](https://dx.doi.org/10.3390/rs11192210){:target="_blank"}
 
 ## Acknowledgments
 

@@ -24,7 +24,7 @@ var maxC = 60;
 ////INPUT DATA - FOR BETTER RESULTS, THE DATA SHOULD BE ADJUSTED
 // NVDIs for bare soil and NDVIv for full vegetation
 // Note: NVDIs for bare soil and NDVIv for full vegetation are needed to be evaluated for every scene. However in the custom script, default values are set regarding:
-// http://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html 
+// https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html 
 // https://www.researchgate.net/post/Can_anyone_help_me_to_define_a_range_of_NDVI_value_to_extract_bare_soil_pixels_for_Landsat_TM
 // NVDIs=0.2, NDVIv=0.8
 // other source suggests global values: NVDIs=0.2, NDVIv=0.5; https://www.researchgate.net/publication/296414003_Algorithm_for_Automated_Mapping_of_Land_Surface_Temperature_Using_LANDSAT_8_Satellite_Data

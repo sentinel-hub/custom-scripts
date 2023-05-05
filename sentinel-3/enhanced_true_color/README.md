@@ -1,6 +1,15 @@
+---
+permalink: /sentinel-3/enhanced_true_color/
+nav_exclude: true
+---
+
 # Enhanced true color visualization
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -19,7 +28,7 @@ Enhanced true color visualization of Beira, Mozambique. Acquired on 25.3.2019.
 ![Enhanced true color visualization of Beira, Mozambique. Acquired on 25.3.2019.](fig/fig1.png)
 
 ## Contributors:
- - Annamaria Luongo, [Twitter: @annamaria_84](http://www.linkedin.com/in/annamaria-luongo-RS){:target="_blank"}
+ - Annamaria Luongo, [Twitter: @annamaria_84](https://www.linkedin.com/in/annamaria-luongo-RS){:target="_blank"}
 
 ## License
 

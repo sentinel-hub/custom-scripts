@@ -1,7 +1,16 @@
+---
+permalink: /slstr/active_fire_points_detection/
+nav_exclude: true
+---
+
 # High Accuracy Active Fire Point Detection 
 
-<a href="#" id='togglescript'>Show</a> script or [download](script.js){:target="_blank"} it.
-<div id='script_view' style="display:none">
+{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
+<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
+[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
+{: .mt-lg-4 }
+
+<div id="script" style="display:none;"> 
 {% highlight javascript %}
 {% include_relative script.js %}
 {% endhighlight %}
@@ -19,7 +28,7 @@ The Active fire detection script is also available for [Sentinel-2](https://cust
 
 ## Author of the script
 
- - [TIZNEGAR Startup co](http://tiznegar.com/)
+ - [TIZNEGAR Startup co](https://tiznegar.com/)
 
 ## Description of representative images
 
