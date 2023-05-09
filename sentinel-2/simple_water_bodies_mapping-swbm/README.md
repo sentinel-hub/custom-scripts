@@ -156,7 +156,7 @@ var NDWI_thr = 0.3;
 - [6] Script to see statistics in EO Browser. https://gist.github.com/horvatdino/e42a8c3c31c1ee2dc2b96c185551462f#file-statapi-js
 - [7] Water Bodies` Mapping – WBM Script. https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/water_bodies_mapping-wbm/#
 - [8] Sentinel Hub. Normalized difference vegetation index. https://custom-scripts.sentinel-hub.com/sentinel-2/ndvi/
-- [9] Sentinel Hub. NDWI Normalized Difference Water Index. https://bit.ly/35Iaj1x
+- [9] Sentinel Hub. NDWI Normalized Difference Water Index. https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/
 - [10] 2022 Pakistan floods. https://en.wikipedia.org/wiki/2022_Pakistan_floods
 - [11] Kosser, A. 2022. Sea Death Valley`s 1000-Year Flood From Space. https://www.cnet.com/science/space/see-death-valleys-1000-year-rain-event-from-space/
-- [12] Vaibhav, D. and Kumar, D. 2019. Remote Sensing and GIS Approach for Spatiotemporal Mapping of Ramganga Reservoir. https://bit.ly/2RexgWi
+- [12] Vaibhav, D. and Kumar, D. 2019. Remote Sensing and GIS Approach for Spatiotemporal Mapping of Ramganga Reservoir. https://doi.org/10.20546/ijcmas.2019.805.092

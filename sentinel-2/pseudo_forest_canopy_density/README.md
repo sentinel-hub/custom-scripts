@@ -66,4 +66,4 @@ All of the images show the result of the script using the default parameters.
 
 ## Credits
 
-Azadeh ABDOLLAHNEJAD*, Dimitrios PANAGIOTIDIS, Peter SUROV›. "Forest canopy density assessment using different approaches ñ Review". [Journal of Forest Science, 63, 2017 (3): 106ñ115.](https://www.agriculturejournals.cz/publicFiles/210529.pdf){:target="_blank"}
+Azadeh ABDOLLAHNEJAD*, Dimitrios PANAGIOTIDIS, Peter SUROV›. "Forest canopy density assessment using different approaches ñ Review". [Journal of Forest Science, 63, 2017 (3): 106ñ115.](https://doi.org/10.17221/110/2016-JFS){:target="_blank"}

@@ -182,7 +182,7 @@ If you want to include another water quality algorithm or make other major chang
 
 ## Authors of the script
 
-András Zlinszky PhD ([@azlinszky](https://twitter.com/azlinszky)) and Gergely Padányi-Gulyás ([@fegyi001](https://twitter.com/fegyi001)) at [Ulyssys Ltd](https://www.ulyssys.hu/index_en.html), Budapest, Hungary, 2020.
+András Zlinszky PhD ([@azlinszky](https://twitter.com/azlinszky)) and Gergely Padányi-Gulyás ([@fegyi001](https://twitter.com/fegyi001)) at [Ulyssys Ltd](https://ulyssys.hu/ulyssys-home-en/), Budapest, Hungary, 2020.
 
 ### How to cite
 

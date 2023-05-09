@@ -80,7 +80,7 @@ Good visualizations depend on good color maps. However, it is very easy to unint
 
 Issues with color maps generally stem from the fact that humans perceive differences in color lightness better than differences in color hue or saturation. In addition, the colors used in a map should have intuitive meaning. Returning to Roy G. Biv, do you instantly understand yellow-green to be between orange and violet? Is it closer to orange or violet? For most people, the relationship is difficult to understand quantitatively.
 
-To make your own color maps there are many battle-tested maps available at [SciVisColor](sciviscolor.org). If the distribution of data is unknown, it is best to use a perceptually-uniform color map with a strong overall lightness gradient. SciVisColor recommends a [blue-orange divergent map](https://sciviscolor.org/home/colormaps/contrasting-divergent-colormaps/) for general use.
+To make your own color maps there are many battle-tested maps available at [SciVisColor](https://sciviscolor.org). If the distribution of data is unknown, it is best to use a perceptually-uniform color map with a strong overall lightness gradient. SciVisColor recommends a [blue-orange divergent map](https://sciviscolor.org/colormaps/divergent/) for general use.
 
 # References and Further Reading
 

@@ -32,4 +32,4 @@ Visualized NDSI over New Zealand, acquired on 2019-09-19.
 
 ## References
 
-- [ESA, Level-2A Algorithm Overview](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm)
+- [ESA, Level-2A Algorithm Overview](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm-overview)
