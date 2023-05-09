@@ -3,7 +3,7 @@ layout: default
 title: PlanetScope
 nav_order: 1
 parent: Planet
-permalink: /planetscope/
+permalink: /planet/planetscope/
 ---
 
 # PlanetScope (Commercial)

@@ -3,6 +3,7 @@ layout: default
 title: CORINE Land Cover
 nav_order: 1
 parent: Copernicus Services
+permalink: /copernicus_services/corine/
 ---
 
 # CORINE Land Cover 

@@ -3,6 +3,7 @@ layout: default
 title: ESA WorldCover
 nav_order: 4
 parent: Other Collections
+permalink: /other_collections/esa-worldcover/
 ---
 
 # ESA WorldCover

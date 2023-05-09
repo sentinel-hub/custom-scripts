@@ -3,6 +3,7 @@ layout: default
 title: Water Bodies
 nav_order: 3
 parent: Copernicus Services
+permalink: /copernicus_services/water-bodies/
 ---
 
 # Water Bodies 

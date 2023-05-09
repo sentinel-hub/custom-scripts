@@ -3,6 +3,7 @@ layout: default
 title: Global Human Settlement Layer
 nav_order: 3
 parent: Other Collections
+permalink: /other_collections/global-human-settlement-layer/
 ---
 
 # Global Human Settlement Layer

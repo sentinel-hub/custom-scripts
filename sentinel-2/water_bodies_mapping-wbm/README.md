@@ -134,22 +134,22 @@ Image shows south of Democratic Republic of Congo. Biggest detected water body i
 
 [4] Sentinel Hub. [Normalized difference vegetation index.](https://custom-scripts.sentinel-hub.com/sentinel-2/ndvi/){:target="_blank"}
 
-[5] Wikipedia. [Normalized difference vegetation index.](https://bit.ly/36M4JfT){:target="_blank"}
+[5] Wikipedia. [Normalized difference vegetation index.](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index){:target="_blank"}
 
-[6] Sentinel Hub. [Clouds classification script.](https://bit.ly/2uGjGSD){:target="_blank"}
+[6] Sentinel Hub. [Clouds classification script.](https://custom-scripts.sentinel-hub.com/sentinel-2/hollstein/){:target="_blank"}
 
-[7] ESA. [Level-2A Algorithm Overview.](https://bit.ly/387J1DB){:target="_blank"}
+[7] ESA. [Level-2A Algorithm Overview.](https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-2-msi/level-2a/algorithm-overview){:target="_blank"}
 
-[8] Sentinel Hub. [NDWI Normalized Difference Water Index.](https://bit.ly/35Iaj1x){:target="_blank"}
+[8] Sentinel Hub. [NDWI Normalized Difference Water Index.](https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/){:target="_blank"}
 
-[9] Sentinel Hub Forum. [How to have a NDVI anomaly image.](https://bit.ly/35MbZHa){:target="_blank"}
+[9] Sentinel Hub Forum. [How to have a NDVI anomaly image.](https://forum.sentinel-hub.com/t/how-to-have-a-ndvi-anomaly-image/671){:target="_blank"}
 
-[10] Rasul, A., Baltzer, H., Faqe Ibrahim, G.R., Hameed, H.M., Wheeler, J., Adamu, B., Ibrahim, S., Najmaddin, P.M. 2018. [Applying Built-Up and Bare-Soil Indices from Landsat 8 to Cities in Dry Climates.](https://bit.ly/2RykKjn){:target="_blank"}
+[10] Rasul, A., Baltzer, H., Faqe Ibrahim, G.R., Hameed, H.M., Wheeler, J., Adamu, B., Ibrahim, S., Najmaddin, P.M. 2018. [Applying Built-Up and Bare-Soil Indices from Landsat 8 to Cities in Dry Climates.](https://doi.org/10.3390/land7030081){:target="_blank"}
 
-[11] Lefebvre, G., Davranche, A., Willm, L., Campagna, J., Redmond L., Merle, C., Guelmami, A., Poulin, B. 2019. [Introducing WIW for Detecting the Presence of Water in Wetlands with Landsat and Sentinel Satellites.](https://bit.ly/363o3nK){:target="_blank"}
+[11] Lefebvre, G., Davranche, A., Willm, L., Campagna, J., Redmond L., Merle, C., Guelmami, A., Poulin, B. 2019. [Introducing WIW for Detecting the Presence of Water in Wetlands with Landsat and Sentinel Satellites.](https://doi.org/10.3390/rs11192210){:target="_blank"}
 
-[12] Wei, W., Li Q., Zhang, Y., Du, X., Wang, H. 2018. [Two-Step Urban Water Index (TSUWI): A New Technique for High-Resolution Mapping of Urban Surface Water.](https://bit.ly/30KXqTL){:target="_blank"}
+[12] Wei, W., Li Q., Zhang, Y., Du, X., Wang, H. 2018. [Two-Step Urban Water Index (TSUWI): A New Technique for High-Resolution Mapping of Urban Surface Water.](https://doi.org/10.3390/rs10111704){:target="_blank"}
 
-[13] Yanf, X., Qin, Q., Grussenmeyer, P., Koehl, M. 2018. [Urban surface water body detection with suppressed built-up noise based on water indices from Sentinel-2 MSI imagery.](https://bit.ly/2NHKoRz){:target="_blank"}
+[13] Yanf, X., Qin, Q., Grussenmeyer, P., Koehl, M. 2018. [Urban surface water body detection with suppressed built-up noise based on water indices from Sentinel-2 MSI imagery.](https://doi.org/10.1016/j.rse.2018.09.016){:target="_blank"}
 
-[14] Vaibhav, D. and Kumar, D. 2019. [Remote Sensing and GIS Approach for Spatiotemporal Mapping of Ramganga Reservoir.](https://bit.ly/2RexgWi){:target="_blank"}
+[14] Vaibhav, D. and Kumar, D. 2019. [Remote Sensing and GIS Approach for Spatiotemporal Mapping of Ramganga Reservoir.](https://doi.org/10.20546/ijcmas.2019.805.092){:target="_blank"}

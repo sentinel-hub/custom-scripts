@@ -32,7 +32,7 @@ For instructions on how custom scripts are structured have a look at this [tutor
 * Implement the product in the `script.js` file.   
   *The most work is of course the JavaScript implementation of the product. The `example` folder includes an empty custom script with comments that will hopefully help you build your own custom script. Of course the easiest is to do the custom script building/testing on [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/).*
   
-* Add an entry pointing to your script to the [main](../README.md) readme file.   
+* Add an entry pointing to your script to the top level markdown file (i.e. if adding a script for Sentinel 2 add the link to `sentinel-2.md` in the folder `sentinel-2`).   
   *A link and a short description will do.*
   
 * And create a pull request :).

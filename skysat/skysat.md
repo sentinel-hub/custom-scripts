@@ -3,7 +3,7 @@ layout: default
 title: SkySat
 nav_order: 2
 parent: Planet
-permalink: /skysat/
+permalink: /planet/skysat/
 ---
 
 # SkySat (Commercial)

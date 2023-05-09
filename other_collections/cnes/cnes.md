@@ -3,6 +3,7 @@ layout: default
 title: CNES Land Cover
 nav_order: 1
 parent: Other Collections
+permalink: /other_collections/cnes/
 ---
 
 # CNES Land Cover
