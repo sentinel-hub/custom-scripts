@@ -3,6 +3,7 @@ layout: default
 title: Landsat 1-5 MSS
 nav_order: 1
 parent: Landsat
+permalink: /landsat/landsat-1-5/
 ---
 
 # Landsat 1-5 MSS

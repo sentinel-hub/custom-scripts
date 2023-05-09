@@ -2,6 +2,7 @@
 layout: default
 title: MODIS
 nav_order: 5
+permalink: /modis/
 ---
 
 # MODIS

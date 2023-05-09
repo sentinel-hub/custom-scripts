@@ -3,6 +3,7 @@ layout: default
 title: Sentinel-1
 nav_order: 1
 parent: Sentinel
+permalink: /sentinel/sentinel-1/
 ---
 
 # Sentinel-1

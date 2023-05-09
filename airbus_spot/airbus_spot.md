@@ -3,6 +3,7 @@ layout: default
 title: Airbus SPOT
 nav_order: 2
 parent: Airbus
+permalink: /spot/
 ---
 
 # Airbus SPOT (Commercial)

@@ -3,6 +3,7 @@ layout: default
 title: Landsat 8
 nav_order: 5
 parent: Landsat
+permalink: /landsat/landsat-8/
 ---
 
 # Landsat 8

@@ -3,6 +3,7 @@ layout: default
 title: Landsat 4-5 TM
 nav_order: 2
 parent: Landsat
+permalink: /landsat/landsat-4-5/
 ---
 
 # Landsat 4-5 TM

@@ -3,6 +3,7 @@ layout: default
 title: Landsat 7 ETM+
 nav_order: 4
 parent: Landsat
+permalink: /landsat/landsat-7/
 ---
 
 # Landsat 7 ETM+

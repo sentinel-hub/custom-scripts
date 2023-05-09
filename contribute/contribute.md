@@ -3,6 +3,7 @@ layout: default
 title: Contribute
 nav_order: 99
 has_children: true
+permalink: /contribute/
 ---
 
 # Contribute to Custom Scripts

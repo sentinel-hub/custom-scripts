@@ -3,6 +3,7 @@ layout: default
 title: Landsat 5 and 7 ESA Archive
 nav_order: 3
 parent: Landsat
+permalink: /landsat/landsat-57/
 ---
 
 ## Landsat 5 and 7 ESA Archive
