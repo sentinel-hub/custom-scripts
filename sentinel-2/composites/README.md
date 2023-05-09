@@ -60,8 +60,6 @@ Custom script: **return [B11, B08, B02];**
 
 ### RGB (12,11,2)
 
-This composite, often called the Agriculture RGB composite, uses bands SWIR-1 (B11), near-infrared (B08) and blue (B02). It’s mostly used to monitor crop health, as both short-wave and near infrared bands are particularly good at highlighting dense vegetation, which appears dark green in the composite. SWIR measurements can help scientists estimate how much water is present in plants and soil, as water reflects SWIR light. Shortwave-infrared bands are also useful for distinguishing between snow, and ice, all of which appear white in visible light. Newly burned land reflects strongly in SWIR bands, making them valuable for mapping fire damage.
-
 Custom script: **return [B12, B11, B02];**
 
 ![Geology sample](fig/fig5.png)
