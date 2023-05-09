@@ -17,8 +17,8 @@ nav_exclude: true
 </div>
   
 ## Evaluate and visualize  
- - [EO Browser](https://sentinelshare.page.link/i7t2)
- - [Euro Data Cube](https://eurodatacube.com/marketplace/notebooks/contributions/EDC_SentinelHub_DataFusion_NDVI.ipynb){:target="_blank"}   
+ - [EO Browser](https://sentinelshare.page.link/RcMs)
+ - [Euro Data Cube](https://eurodatacube.com/notebooks/curated/EDC_SentinelHub_DataFusion_NDVI.ipynb){:target="_blank"}   
   
 ## General description of the script  
   
