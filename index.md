@@ -16,7 +16,7 @@ Custom scripts are a piece of Javascript code, used to visualize satellite image
 
 ## Contribute
 
-You are invited to publish your own scripts. For this see the section [Contribute]({% link contribute/contribute.md %}). See also the [documentation page](https://docs.sentinel-hub.com/api/latest/evalscript/) for custom scripts. 
+You are invited to publish your own scripts. For this see the section [Contribute]({% link contribute/contribute.md %}). See also the [documentation page](https://docs.sentinel-hub.com/api/latest/evalscript/) for custom scripts.
 
 ## Navigation
 
