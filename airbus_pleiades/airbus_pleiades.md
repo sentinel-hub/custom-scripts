@@ -3,6 +3,7 @@ layout: default
 title: Airbus Pleiades
 nav_order: 1
 parent: Airbus
+permalink: /airbus/pleiades/
 ---
 
 # Airbus Pleiades (Commercial)

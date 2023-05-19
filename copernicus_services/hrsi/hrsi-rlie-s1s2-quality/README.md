@@ -1,5 +1,5 @@
 ---
-permalink: /sentinel-2/hrsi-rlie-s1s2-quality/
+permalink: /copernicus_services/hrsi-rlie-s1s2-quality/
 nav_exclude: true
 ---
 

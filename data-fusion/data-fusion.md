@@ -2,6 +2,7 @@
 layout: default
 title: Data Fusion
 nav_order: 9
+permalink: /data-fusion/
 ---
 
 # Data Fusion

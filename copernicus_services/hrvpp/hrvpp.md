@@ -3,6 +3,7 @@ layout: default
 title: High Resolution Vegetation Phenology and Productivity 
 nav_order: 4
 parent: Copernicus Services
+permalink: /copernicus_services/hrvpp/
 ---
 
 # High Resolution Vegetation Phenology and Productivity

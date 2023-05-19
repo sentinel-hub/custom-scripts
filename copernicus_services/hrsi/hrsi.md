@@ -3,6 +3,7 @@ layout: default
 title: High-Resolution Snow & Ice
 nav_order: 5
 parent: Copernicus Services
+permalink: /copernicus_services/hrsi/
 ---
 
 # High-Resolution Snow & Ice Monitoring

@@ -2,6 +2,7 @@
 layout: default
 title: Harmonized Landsat Sentinel
 nav_order: 4
+permalink: /hls/
 ---
 
 # Harmonized Landsat Sentinel

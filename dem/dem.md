@@ -2,6 +2,7 @@
 layout: default
 title: DEM
 nav_order: 6
+permalink: /dem/
 ---
 
 # DEM

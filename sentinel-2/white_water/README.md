@@ -84,7 +84,7 @@ Bathymetric map from multi-temporal analysis of Sentinel-2 data (Evagorou et al.
 ## References
 
 Some theory/projects, which support usefulness of white-water custom script:
-- Denny, M., 1995. Surfival in the Surf Zone. [American Scientist, Vol. 83., No. 2, pp. 166-173](https://dennylab.stanford.edu/sites/g/files/sbiybj6166/f/denny_american_scientist_1995.pdf){:target="_blank"}
+- Denny, M., 1995. Survival in the Surf Zone. [American Scientist, Vol. 83., No. 2, pp. 166-173](https://www.jstor.org/stable/29775404 ){:target="_blank"}
 - Evagorou, E., Mettas, C., Agapiou, A., Themistocleous, K., Hadjimitsis, D., 2019. [Bathymetric maps from multi-temporal analysis of Sentinel-2 data: the case study of Limassol, Cyprus.](https://www.adv-geosci.net/45/397/2019/adgeo-45-397-2019.pdf){:target="_blank"} Department of Civil Engineering and Geomatics, School of Engineering and Technology, Cyprus University of Technology.
 - ISEAN, 2019. [Wave breaking phenomena.](https://www.insean.cnr.it/content/wave-breaking-phenomena){:target="_blank"} Marine Technology Research Institute.
 - SINERGISE, 2019. [Sentinel 2 EO products.](https://www.sentinel-hub.com/develop/documentation/eo_products/Sentinel2EOproducts){:target="_blank"}

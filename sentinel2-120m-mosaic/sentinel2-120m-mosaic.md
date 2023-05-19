@@ -3,6 +3,7 @@ layout: default
 title: Sentinel-2 L2A 120m Cloudless Mosaic
 nav_order: 5
 parent: Sentinel
+permalink: /sentinel/sentinel2-120m-mosaic/
 ---
 
 # Sentinel-2 L2A 120m Cloudless Mosaic

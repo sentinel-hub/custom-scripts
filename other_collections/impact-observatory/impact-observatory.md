@@ -3,6 +3,7 @@ layout: default
 title: Impact Observatory Land Use Land Cover
 nav_order: 5
 parent: Other Collections
+permalink: /other_collections/impact-observatory/
 ---
 
 # 10m Annual Land Use Land Cover (9-class)

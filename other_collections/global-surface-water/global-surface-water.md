@@ -3,6 +3,7 @@ layout: default
 title: Global Surface Water
 nav_order: 2
 parent: Other Collections
+permalink: /other_collections/global-surface-water/
 ---
 
 # Global Surface Water

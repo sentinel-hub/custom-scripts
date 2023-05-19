@@ -3,6 +3,7 @@ layout: default
 title: Global Land Cover
 nav_order: 2
 parent: Copernicus Services
+permalink: /copernicus_services/global-land-cover/
 ---
 
 # Global Land Cover

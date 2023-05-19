@@ -15,7 +15,7 @@ Custom script: **return [B03, B02, B01];**
 
 ![True color sample](fig/fig1.png)
 
- - [Reference](https://www.usgs.gov/land-resources/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con)
+ - [Reference](https://www.usgs.gov/land-resources/nli/landsat/landsat-5)
 
 ## False Color
 
