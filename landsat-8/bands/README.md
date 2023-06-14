@@ -1,5 +1,7 @@
 ---
 permalink: /landsat-8/bands/
+parent: Landsat 8
+grand_parent: Landsat
 nav_exclude: true
 layout: default
 ---

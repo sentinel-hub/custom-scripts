@@ -1,5 +1,6 @@
 ---
 permalink: /Landsat-57/composites/
+parent: Landsat 5 and 7 ESA Archive
 nav_exclude: true
 layout: default
 ---

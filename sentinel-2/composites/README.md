@@ -1,5 +1,7 @@
 ---
 permalink: /sentinel-2/composites/
+parent: Sentinel-2
+grand_parent: Sentinel
 nav_exclude: true
 layout: default
 ---
