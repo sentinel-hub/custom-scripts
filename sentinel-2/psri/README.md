@@ -1,20 +1,12 @@
 ---
+title: Plant Senescence Reflectance Index (PSRI)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/psri/
 nav_exclude: true
 ---
 
-# Plant Senescence Reflectance Index (PSRI)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-08-01%7C2019-02-20&atmFilter=&showDates=false&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKCmxldCBtaW5WYWwgPSAtMC4yOwpsZXQgbWF4VmFsID0gMC40OwoKbGV0IHZpeiA9IG5ldyBIaWdobGlnaHRDb21wcmVzc1Zpc3VhbGl6ZXJTaW5nbGUobWluVmFsLCBtYXhWYWwpOwoKZnVuY3Rpb24gZXZhbHVhdGVQaXhlbChzYW1wbGVzKSB7CiAgICBsZXQgdmFsID0gKHNhbXBsZXMuQjA2ID4gMCkgPyAoc2FtcGxlcy5CMDQgLSBzYW1wbGVzLkIwMikgLyBzYW1wbGVzLkIwNiA6IEpBVkFfRE9VQkxFX01BWF9WQUw7CiAgICByZXR1cm4gdml6LnByb2Nlc3ModmFsKTsKfQoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbewogICAgICBiYW5kczogWwogICAgICAgICAgIkIwMiIsCiAgICAgICAgICAiQjA0IiwKICAgICAgICAgICJCMDYiCiAgICAgIF0KICAgIH1dLAogICAgb3V0cHV0OiB7IGJhbmRzOiAxIH0gIH0KfQo%3D){:target="_blank"}

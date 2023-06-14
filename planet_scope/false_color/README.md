@@ -1,20 +1,12 @@
 ---
+title: False color infrared product, PlanetScope
+parent: PlanetScope
+grand_parent: Planet
+layout: script
 permalink: /planet_scope/false_color/
 nav_exclude: true
 ---
 
-# False color infrared product, PlanetScope
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
 

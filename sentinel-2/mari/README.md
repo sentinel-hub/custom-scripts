@@ -1,20 +1,12 @@
 ---
+title: mARI - Modified Anthocyanin Reflectance Index
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/mari/
 nav_exclude: true
 ---
 
-# mARI - Modified Anthocyanin Reflectance Index
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.956171100940026&lng=12.29095458984375&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=5&gain=1.0&gamma=1.0&time=2018-05-01%7C2018-11-14&atmFilter=&showDates=false&evalscript=Ly8KLy8gQW50aG9jeWFuaW4gcmVmbGVjdGFuY2UgaW5kZXggIChhYmJydi4gQVJJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6IDEvNTUwbm0tMS83MDBubQovLwovLyBVUkwgaHR0cHM6Ly93d3cuaW5kZXhkYXRhYmFzZS5kZS9kYi9zaS1zaW5nbGUucGhwP3NlbnNvcl9pZD05NiZyc2luZGV4X2lkPTIxNAoKbGV0IGluZGV4ID0gMS4wIC8gQjAzIC0gMS4wIC8gQjA1OwpyZXR1cm4gW2luZGV4XQ%3D%3D){:target="_blank"}    

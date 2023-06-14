@@ -1,20 +1,12 @@
 ---
+title: SWIR - Short Wave Infrared RGB Composite
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/swir-rgb/
 nav_exclude: true
 ---
 
-# SWIR - Short Wave Infrared RGB Composite
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://sentinelshare.page.link/uDnP){:target="_blank"} 

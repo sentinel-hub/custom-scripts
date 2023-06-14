@@ -1,20 +1,12 @@
 ---
+title: Clouds classification script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/hollstein/
 nav_exclude: true
 ---
 
-# Clouds classification script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.43880327782999&lng=14.775924682617188&zoom=11&maxcc=100&time=2015-01-01%7C2017-10-09&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/hollstein/script.js){:target="_blank"}

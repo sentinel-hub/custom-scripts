@@ -1,21 +1,12 @@
 ---
+title: Color Correction with Sentinel Hub
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/poor_mans_atcor/
 nav_exclude: true
 ---
 
-# Color Correction with Sentinel Hub
-_Poor Man's Atmospheric Adjustment for a Pretty Glacier Picture_ (see <a href="https://medium.com/p/d721e12a919">the blog post</a> for details)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?lat=-54.4&lng=-70.8&zoom=12&maxcc=100&time=2015-01-01%7C2016-05-05&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/poor_mans_atcor/script.js){:target="_blank"}    

@@ -1,20 +1,12 @@
 ---
+title: Detecting Deep Moist Convection Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/deep_moist_convection/
 nav_exclude: true
 ---
 
-# Detecting Deep Moist Convection Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=40.1626081299121&lng=21.917037963867188&zoom=10&preset=CUSTOM&layers=B01,B02,B03&maxcc=100&gain=1.0&gamma=1.0&time=2018-10-01%7C2019-04-14&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yIG9mIHRoZSBzY3JpcHQ6IFN0YXZyb3MgRGFmaXMKKi8KCmZ1bmN0aW9uIFMgKGEgLCBiKSB7IHJldHVybiBhIC0gYiB9OwoKbGV0IGdhaW4gPSAyLjU7Cgp2YXIgTUlEQ0wgPSBTKEIwOCwgQjA5KSAKdmFyIERDID0gUyhCMTAsIEIxMikgICAgCnZhciBMT1dDTCA9IFMoQjExLCBCMTApICAgIAoKcmV0dXJuIFtNSURDTCwgREMsIExPV0NMXS5tYXAoYSA9PiBnYWluICogYSk7Cg%3D%3D){:target="_blank"}    

@@ -1,20 +1,12 @@
 ---
+title: Deep BAIS2 Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/deep_bais2/
 nav_exclude: true
 ---
 
-# Deep BAIS2 Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=9&lat=50.76339&lng=3.01712&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-02-25T00%3A00%3A00.000Z&toTime=2020-02-25T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Froshni-b%2Feolearn-scripts%2Fmain%2FBAI_LGBMr_eval.js#custom-script){:target="_blank"} 

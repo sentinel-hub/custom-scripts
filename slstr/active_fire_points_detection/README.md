@@ -1,20 +1,11 @@
 ---
+title: High Accuracy Active Fire Point Detection
+parent: Sentinel-3
+grand_parent: Sentinel
+layout: script
 permalink: /slstr/active_fire_points_detection/
 nav_exclude: true
 ---
-
-# High Accuracy Active Fire Point Detection 
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
 

@@ -1,20 +1,12 @@
 ---
+title: Green City Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/green_city/
 nav_exclude: true
 ---
 
-# Green City Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=59.43739477678559&lng=24.67975616455078&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-10-01%7C2019-04-28&atmFilter=&showDates=false&evalscript=Ly8gTm9ybWFsaXplZCBEaWZmZXJlbmNlIFZlZ2V0YXRpb24gSW5kZXgKdmFyIG5kdmkgPSAoQjA4LUIwNCkvKEIwOCtCMDQpOwoKLy8gVGhyZXNob2xkIGZvciB2ZWdldGF0aW9uCnZhciB2ZWdfdGggPSAwLjQ7CgovLyBTaW1wbGUgUkdCCnZhciBSID0gMi41KkIwNDsKdmFyIEcgPSAyLjUqQjAzOwp2YXIgQiA9IDIuNSpCMDI7CgovLyBUcmFuc2Zvcm0gdG8gQmxhY2sgYW5kIFdoaXRlCnZhciBZID0gMC4yKlIgKyAwLjcqRyArIDAuMSpCOwp2YXIgcGl4ZWwgPSBbWSwgWSwgWV07CgovLyBDaGFuZ2UgdmVnZXRhdGlvbiBjb2xvcgppZihuZHZpID49IHZlZ190aCkKICBwaXhlbCA9IFswLjEqWSwgMS44KlksIDAuMSpZXTsKCnJldHVybiBwaXhlbDs%3D){:target="_blank"}    

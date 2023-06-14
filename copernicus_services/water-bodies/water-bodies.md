@@ -12,5 +12,5 @@ The Global  Water Bodies product shows the surface extent covered by inland wate
 Water Bodies 100m data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/water-bodies/)
 
 #### Available scripts
-- [Water Bodies visualisation script](/copernicus_services/water-bodies)
+- [Water Bodies visualisation script](/copernicus_services/water-bodies-visualisation)
 - [Water Bodies Occurrence visualisation script](/copernicus_services/water-bodies-occurence)  

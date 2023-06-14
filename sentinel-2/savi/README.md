@@ -1,20 +1,12 @@
 ---
+title: SAVI (Soil Adjusted Vegetation Index)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/savi/
 nav_exclude: true
 ---
 
-# SAVI (Soil Adjusted Vegetation Index)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.31184633774461&lng=12.867736984044313&zoom=9&preset=CUSTOM&layers=B01,B02,B03&maxcc=0&gain=1.0&gamma=1.0&time=2019-11-01%7C2020-05-25&atmFilter=&showDates=false&evalscript=Ly8gU29pbCBBZGp1c3RlZCBWZWdldGF0aW9uIEluZGV4ICAoYWJicnYuIFNBVkkpCi8vIEdlbmVyYWwgZm9ybXVsYTogKDgwMG5tIC0gNjcwbm0pIC8gKDgwMG5tICsgNjcwbm0gKyBMKSAqICgxICsgTCkKLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD04NwovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKCmxldCBMID0gMC40Mjg7IC8vIEwgPSBzb2lsIGJyaWdodG5lc3MgY29ycmVjdGlvbiBmYWN0b3IgY291bGQgcmFuZ2UgZnJvbSAoMCAtMSkKbGV0IGluZGV4ID0gKEIwOCAtIEIwNCkgLyAoQjA4ICsgQjA0ICsgTCkgKiAoMS4wICsgTCk7IC8vIGNhbGN1bGF0ZSBzYXZpIGluZGV4CgovLyB1c2luZyBjb2xvcmJsZW5kIHZpc3VhbGl6YXRpb24gIGluIEVPIGJyb3dzZXIgCnJldHVybiBjb2xvckJsZW5kICAgLy8gU3RhcnQgb2YgY29sb3JCbGVuZCBmdW5jdGlvbgooaW5kZXgsCSAgICAgICAgICAgIC8vICBzcGVjaWZ5IHRoZSBpbmRleAogICAgIFsgMCwwLjEsIDAuMiwwLjQsIDAuNSwwLjcsMV0sIC8vICBzcGVjaWZ5IHRoZSBib3JkZXJzCiAgICAgWyBbMC42OSwwLjg4LDAuOTBdLCAgIC8vIHNwZWNpZnkgUkdCIGNvbG9ycyAKICAgICAgIFswLjc0LDAuNzIsMC40Ml0sCiAgICAgICBbMC42MCwwLjgwLDAuMjBdLAogICAgICAgWzAuMTMsIDAuNTQsIDAuMTNdLAogICAgICAgWzAsIDAuNTAsIDBdLAogICAgICAgWzAsIDAuMzksIDBdLAogICAgICAgWzAsIDAuMjAsIDBdLAogICAgIF0KKTsKCi8qCi8vdXNpbmcgaWYgc3RhdGVtZW50cyB2aXN1YWxpemF0aW9uICBpbiBFTyBCcm93c2VyCmlmIChpbmRleCA8LTEpIHJldHVybiBbMSwxLDFdOyAvLyB3aGl0ZSBjb2xvciBmb3IgdmFsdWVzIGxlc3MgdGhhbiAtMQplbHNlIGlmIChpbmRleCA8MCkgcmV0dXJuIFswLjY5LDAuODgsMC45MDFdOyAvLyBibHVlIGNvbG9yIG1ham9ybHkgd2F0ZXIKZWxzZSBpZiAoaW5kZXggPDAuMDkpIHJldHVybiBbMC43NCwwLjcyLDAuNDJdOyAgCmVsc2UgaWYgKGluZGV4IDwwLjEpIHJldHVybiBbMC42NCwwLjgsMC4zNV07IAplbHNlIGlmIChpbmRleCA8MC4yKSByZXR1cm4gWzAuNTcsMC43NSwwLjMyXTsKZWxzZSBpZiAoaW5kZXggPDAuMykgcmV0dXJuIFswLjYwLDAuODAsMC4xOV07CmVsc2UgaWYgKGluZGV4IDwwLjQpIHJldHVybiBbMC4xMywwLjYzLDAuMTNdOwplbHNlIGlmIChpbmRleCA8MC41KSByZXR1cm4gWzAuMTMsMC41NSwwLjEzXTsKZWxzZSBpZiAoaW5kZXggPDAuNikgcmV0dXJuIFswLDAuNTAsMF07CmVsc2UgaWYgKGluZGV4IDwwLjcpIHJldHVybiBbMCwwLjM5LDBdOwplbHNlIGlmIChpbmRleCA8MSkgcmV0dXJuICAgWzAsIDAuMjksMF07IAplbHNlIHJldHVybiBbMCwwLDBdOwoqLwo%3D){:target="_blank"}

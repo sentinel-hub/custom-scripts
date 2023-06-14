@@ -1,20 +1,13 @@
 ---
+title: Assessment of spatio-temporal variations of water level in lakes using a multitemporal
+  script
+parent: Landsat 4-5 TM
+grand_parent: Landsat
+layout: script
 permalink: /landsat-4-5-tm/variations_water_level_lakes/
 nav_exclude: true
 ---
 
-# Assessment of spatio-temporal variations of water level in lakes using a multitemporal script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
 

@@ -1,20 +1,12 @@
 ---
+title: False Color Composite Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/false_color_composite/
 nav_exclude: true
 ---
 
-# False Color Composite Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=45.068671318263945&lng=14.827766418457031&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-10-01%7C2019-04-16&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yOiBNb25qYSBTZWJlbGEKKi8KCi8qVmVyc2lvbiAxOiBuYXR1cmFsIGNvbG9yOgpyZXR1cm4gW0IxMiAqIDIuNSwgQjA3ICogMS41LCBCMDkgKiAyLjUgXTsgIAoqLwoKLy9WZXJzaW9uIDI6IGxpZ2h0ZXIsIHZpdmlkIGNvbG9yczoKbGV0IGdhaW4gPSAxLjUKcmV0dXJuIFtCMTIgKiAyLjUsIEIwNyAqIDEuNSwgQjA5ICogMi41IF0ubWFwKGEgPT4gZ2FpbiAqIGEpOyAgIAo%3D){:target="_blank"}    

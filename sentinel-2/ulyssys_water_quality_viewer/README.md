@@ -1,22 +1,12 @@
 ---
+title: Ulyssys Water Quality Viewer (UWQV)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/ulyssys_water_quality_viewer/
 nav_exclude: true
 ---
 
-# Ulyssys Water Quality Viewer (UWQV)
-
-> Water quality visualization script for Sentinel-2 and Sentinel-3 imagery data
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](src/script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative src/script.js %}
-{% endhighlight %}
-</div>
 
 [Show](dist/script.min.js) minified, optimized script (recommended for usage).
 

@@ -1,20 +1,12 @@
 ---
+title: Urban Land Infrared Color Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/urban_land_infrared/
 nav_exclude: true
 ---
 
-# Urban Land Infrared Color Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=-34.11436278751124&lng=18.665428161621094&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=100&gain=1.0&gamma=1.0&time=2018-10-01%7C2019-04-06&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yIG9mIHRoZSBzY3JpcHQ6IExlbyBUb2xhcmkKKi8KCnJldHVybiBbQjA4KjAuMyArIEIwNCoyLjUgKyAoQjA0KjEuMCtCMTIqMC4zKSwKICAgICAgICAgIEIwOCowLjMgKyBCMDMqMi41ICsgKEIwMyoxLjArQjEyKjAuMyksCiAgICAgICAgICBCMDgqMC4zICsgQjAyKjIuNSArIChCMDIqMS4wK0IxMiowLjMpXTsK){:target="_blank"}    

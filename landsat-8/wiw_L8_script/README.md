@@ -1,20 +1,12 @@
 ---
+title: Water In Wetlands Index - Landsat-8 Version
+parent: Landsat 8
+grand_parent: Landsat
+layout: script
 permalink: /landsat-8/wiw_L8_script/
 nav_exclude: true
 ---
 
-# Water In Wetlands Index - Landsat-8 Version
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=43.61719&lng=4.33574&zoom=13&time=2020-02-24&preset=CUSTOM&datasource=Landsat%208%20USGS&layers=B01,B02,B03&evalscript=Ly8gRGV0ZWN0aW5nIHRoZSBQcmVzZW5jZSBvZiBXYXRlciBpbiBXZXRsYW5kcyB3aXRoIExhbmRzYXQtOCBTYXRlbGxpdGUgKGFiYnJ2LiBXSVcpCi8vCi8vIEdlbmVyYWwgZm9ybXVsYTogSUYgQjA1PDAuMTczNSBBTkQgQjA3PDAuMTAzNSBUSEVOIFdhdGVyIEVMU0UgTm9XYXRlcgovLwovLyBVUkwgaHR0cHM6Ly93d3cuaW5kZXhkYXRhYmFzZS5kZS9kYi94eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4Ly8KCnJldHVybiBCMDU8MC4xNzM1JiZCMDc8MC4xMDM1P1s1MS8yNTUsNjgvMjU1LDE3MC8yNTVdOltCMDQqNSxCMDMqNSxCMDIqNV07CgovLyBjb2xvckJsZW5kIHdpbGwgcmV0dXJuIGEgYmx1ZSBjb2xvciB3aGVuIHN1cmZhY2Ugd2F0ZXIgaXMgZGV0ZWN0ZWQsIGFuZCBsaWdodGVuIHRvIGEgbmF0dXJhbCBjb2xvciB3aGVuIG5vIHdhdGVyIGlzIGRldGVjdGVk){:target="_blank"} 

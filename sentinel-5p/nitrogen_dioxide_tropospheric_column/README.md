@@ -1,19 +1,12 @@
 ---
+title: Sentinel-5P Nitrogen Dioxide tropospheric column
+parent: Sentinel-5P
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-5p/nitrogen_dioxide_tropospheric_column/
 nav_exclude: true
 ---
 
-# Sentinel-5P Nitrogen Dioxide tropospheric column
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=36.71&lng=71.02&zoom=6&time=2019-10-25&preset=CUSTOM&datasource=Sentinel-5P%20NO2&layers=NO2,NO2,NO2&evalscript=ICAgICAgLy8gU2VudGluZWwgNVAgLSBOaXRyb2dlbiBEaW94aWRlIHRyb3Bvc3BoZXJpYyBjb2x1bW4KLy8gQXV0aG9yOiBBbm5hbWFyaWEgTHVvbmdvIChUd2l0dGVyOiBAYW5uYW1hcmlhXzg0LCB3d3cubGlua2VkaW4uY29tL2luL2FubmFtYXJpYS1sdW9uZ28tUlMpCi8vIENDIEJZIDQuMCBJbnRlcm5hdGlvbmFsIC0gaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8KCnZhciB2YWx1ZXMgPSBbIDIuNSoxZS01LCA1KjFlLTUsIDcuNSoxZS01LCAxKjFlLTQsICAyLjUqMWUtNCwgNSoxZS00XTsgLy92YWx1ZSBvZiBOTzIgaW4gbW9sL20yCgpyZXR1cm4gY29sb3JCbGVuZChOTzIsIHZhbHVlcywKICAgWwogICAgWyA2NC8yNTUsICAyNy8yNTUsIDEzNC8yNTVdLCAvLyAgLT4gMi41KjFlLTUgPSAjNDAxQjg2CiAgICBbIDM3LzI1NSwgIDcwLzI1NSwgMjAxLzI1NV0sIC8vICAtPiA1LjAqMWUtNSA9ICMyNTQ2QzkKICAgIFsgNDIvMjU1LCAyMTIvMjU1LCAgMzYvMjU1XSwgLy8gIC0%2BIDcuNSoxZS01ID0gIzJBRDQyNAogICAgWzI0MC8yNTUsIDIzNi8yNTUsICAzNy8yNTVdLCAvLyAgLT4gMS4wKjFlLTQgPSAjRjBFQzI1CiAgICBbMjQwLzI1NSwgMTE3LzI1NSwgIDU1LzI1NV0sIC8vICAtPiAyLjUqMWUtNCA9ICNGMDc1MzcKICAgIFsyMTkvMjU1LCAgNTgvMjU1LCAgNzYvMjU1XSAgLy8gIC0%2BIDUuMCoxZS00ID0gI0RCM0E0QwogICBdCiAgKTs%3D){:target="_blank"}   

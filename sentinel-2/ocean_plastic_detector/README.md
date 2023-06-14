@@ -1,20 +1,12 @@
 ---
+title: Ocean Plastic Detector Prototype Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/ocean_plastic_detector/
 nav_exclude: true
 ---
 
-# Ocean Plastic Detector Prototype Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=39.00782967735243&lng=26.60217046737671&zoom=15&preset=CUSTOM&layers=B01,B02,B03&maxcc=26&gain=1.0&gamma=1.0&time=2017-12-01%7C2018-06-07&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yIG9mIHRoZSBzY3JpcHQ6IEJlbmNlIE3pbHlr%2BnRpLCBEUGhpbCAoT3hmKQoqLwoKCnZhciBlc3RpbWF0b3IgPSAtMS43NmUtMDUgKyAxMDAwMCooLTAuMDAwMzQwMipCMDEgLTAuMDAwNDU4NSpCMDIgKyAwLjAwMTQxNSpCMDMgKyAwLjAxMjU0KkIwNCAtMC4wMTExMipCMDUgLTAuMDEzNDYqQjA2ICsgMC4wMDI3NjIqQjA3ICsgMC4wMDI0ODEqQjA4ICsgMC4wMDk2MDUqQjhBICsgMC4wMDEyNDcqQjA5IC0wLjAxNDYyKkIxMSArIDAuMDA0MDYqQjEyKTsKCmZ1bmN0aW9uIGNsYW1wIChhKSB7CiAgcmV0dXJuIGE8LTEgPyAwIDogYSA%2BIDEgPyAxIDogKDErYSkvMjsKfQoKZnVuY3Rpb24gY2l2aWRpcyAoeCkgewogIC8vIHggbXVzdCBiZSBpbiBbMCwxXQogIC8vIGh0dHBzOi8vZ2l0aHViLmNvbS9tYXRwbG90bGliL21hdHBsb3RsaWIvYmxvYi9tYXN0ZXIvbGliL21hdHBsb3RsaWIvX2NtX2xpc3RlZC5weQogIHJldHVybiBbeCowLjk5NTczNywgeCowLjkwOTM0NCsoMS14KSowLjEzNTExMiwgeCowLjIxNzc3MisoMS14KSowLjMwNDc1MV07Cn0KCnZhciBORFdJID0gKEIwMyAtIEIwOCkgLyAoQjAzICsgQjA4KTsKCnJldHVybiBORFdJIDwgMCA%2FIFsyLjUqQjA0LCAyLjUqQjAzLCAyLjUqQjAyXSA6IGNpdmlkaXMoY2xhbXAoZXN0aW1hdG9yKSk7Cg%3D%3D){:target="_blank"}    

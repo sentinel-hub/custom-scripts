@@ -1,20 +1,12 @@
 ---
+title: PUCK - Perceptually-Uniform Color Map Kit Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/puck/
 nav_exclude: true
 ---
 
-# PUCK - Perceptually-Uniform Color Map Kit Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://tinyurl.com/y6b5hevs){:target="_blank"} 

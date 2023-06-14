@@ -1,20 +1,12 @@
 ---
+title: Build Up Index Script
+parent: Landsat 8
+grand_parent: Landsat
+layout: script
 permalink: /landsat-8/built_up_index/
 nav_exclude: true
 ---
 
-# Build Up Index Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=L8&lat=43.67072749862282&lng=-79.36901092529297&zoom=12&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-12-01%7C2019-06-07&atmFilter=&showDates=false&evalscript=LyoKQXV0aG9yOiBLYXJsIENoYXN0a28KKi8KCmxldCBuZHZpID0gKEIwNSAtIEIwNCkgLyAoQjA1ICsgQjA0KTsKCmxldCBuZGJpID0gKEIwNiAtIEIwNSkgLyAoQjA2ICsgQjA1KTsKCmxldCBCVSA9IChuZHZpIC0gbmRiaSkKCnJldHVybltCVV07Cg%3D%3D){:target="_blank"}    

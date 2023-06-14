@@ -1,20 +1,12 @@
 ---
+title: Sentinel-3 SLSTR False color composite
+parent: Sentinel-3
+grand_parent: Sentinel
+layout: script
 permalink: /slstr/false-color-321/
 nav_exclude: true
 ---
 
-# Sentinel-3 SLSTR False color composite
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
 

@@ -1,20 +1,12 @@
 ---
+title: Cloudless mosaic
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/cloudless_mosaic/
 nav_exclude: true
 ---
 
-# Cloudless mosaic
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](L2A-first_quartille.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative L2A-first_quartille.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script
 

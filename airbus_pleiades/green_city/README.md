@@ -1,20 +1,12 @@
 ---
+title: Green City Script, Pleiades data
+parent: Airbus Pleiades
+grand_parent: Airbus
+layout: script
 permalink: /airbus_pleiades/green_city/
 nav_exclude: true
 ---
 
-# Green City Script, Pleiades data
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
 

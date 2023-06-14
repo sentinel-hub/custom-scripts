@@ -1,19 +1,12 @@
 ---
+title: 'OTCI - OLCI terrestrial chlorophyll index '
+parent: Sentinel-3
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-3/otci/
 nav_exclude: true
 ---
 
-# OTCI - OLCI terrestrial chlorophyll index 
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=44.868&lng=11.415&zoom=7&time=2019-06-30&preset=2_OTCI&datasource=Sentinel-3%20OLCI){:target="_blank"}   

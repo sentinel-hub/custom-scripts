@@ -1,20 +1,12 @@
 ---
+title: Atmospherically Resistant Vegetation Index (ARVI)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/arvi/
 nav_exclude: true
 ---
 
-# Atmospherically Resistant Vegetation Index (ARVI)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.190118425644556&lng=11.9970703125&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=6&gain=1.0&gamma=1.0&time=2018-05-01%7C2018-11-07&atmFilter=&showDates=false&evalscript=Ly8KLy8gQXRtb3NwaGVyaWNhbGx5IFJlc2lzdGFudCBWZWdldGF0aW9uIEluZGV4ICAgKGFiYnJ2LiBBUlZJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6IChOSVIgLSBSRUQgLSB5ICogKFJFRCAtIEJMVUUpKS8gKE5JUiArIFJFRCAtIHkqKFJFRC1CTFVFKSkKLy8KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD00Ci8vCgovLyBJbml0aWFsaXplIHBhcmFtZXRlcnMKbGV0IHkgPSAwLjEwNjsKbGV0IGluZGV4ID0gKEIwOSAtIEIwNCAtIHkgKiAoQjA0IC0gQjAyKSkgLyAoQjA5ICsgQjA0IC0geSAqIChCMDQgLSBCMDIpKTsKCnJldHVybltpbmRleF07){:target="_blank"} 

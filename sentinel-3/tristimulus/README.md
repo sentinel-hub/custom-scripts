@@ -1,19 +1,12 @@
 ---
+title: OTCI - OLCI Tristimulus
+parent: Sentinel-3
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-3/tristimulus/
 nav_exclude: true
 ---
 
-# OTCI - OLCI Tristimulus
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=19.768&lng=93.233&zoom=9&time=2020-01-27&preset=3_TRISTIMULUS&datasource=Sentinel-3%20OLCI){:target="_blank"}   

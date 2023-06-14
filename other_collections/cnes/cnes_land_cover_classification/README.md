@@ -1,20 +1,12 @@
 ---
+title: CNES land cover classification visualisation script
+parent: CNES Land Cover
+grand_parent: Other Collections
+layout: script
 permalink: /other_collections/cnes_land_cover_classification/
 nav_exclude: true
 ---
 
-# CNES land cover classification visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script
 The script visualises land cover over Metropolitan France using a 23-categories nomenclature.

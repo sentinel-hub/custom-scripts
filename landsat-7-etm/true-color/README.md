@@ -1,20 +1,12 @@
 ---
+title: Landsat 7 ETM+ True Color Composite
+parent: Landsat 7 ETM+
+grand_parent: Landsat
+layout: script
 permalink: /landsat-7-etm/true-color/
 nav_exclude: true
 ---
 
-# Landsat 7 ETM+ True Color Composite
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and Visualize
 

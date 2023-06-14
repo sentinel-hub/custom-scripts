@@ -1,20 +1,12 @@
 ---
+title: Oil Slicks and Red Tide Monitoring
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/orm_index/
 nav_exclude: true
 ---
 
-# Oil Slicks and Red Tide Monitoring
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Author of the script
 By TIZNEGAR Startup Co, 

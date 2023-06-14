@@ -1,20 +1,12 @@
 ---
+title: Tracking Radar Vegetation Index (Agriculture Development) Script
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/sar_rvi_temporal_analysis/
 nav_exclude: true
 ---
 
-# Tracking Radar Vegetation Index (Agriculture Development) Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [Sentinel Playground Temporal](https://apps.sentinel-hub.com/sentinel-playground-temporal/?source=S1-AWS-IW-VVVH&lat=46.548944380517646&lng=38.01544189453125&zoom=11&preset=CUSTOM&layers=VV,VV,VV&maxcc=20&gain=1.0&gamma=1.0&time=2017-01-01%7C2019-07-30&atmFilter=ATMCOR&showDates=false&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbewogICAgICBiYW5kczogWwogICAgICAgICAgICAgICAgICAiVlYiLAogICAgICAgICAgIlZIIgogICAgICBdCiAgICB9XSwKICAgIG91dHB1dDogeyBiYW5kczogMyB9LAogICAgbW9zYWlja2luZzogIk9SQklUIgogIH0KfQoKCmZ1bmN0aW9uIGNhbGNSVkkoc2FtcGxlKSB7CiAgdmFyIGRlbm9tID0gc2FtcGxlLlZIKjIrc2FtcGxlLlZWKjI7CiAgcmV0dXJuICgoZGVub20hPTApID8gKHNhbXBsZS5WSCo4KSAvIGRlbm9tIDogMC4wKTsKfQpmdW5jdGlvbiAgc3RyZXRjaCh2YWwsIG1pbiwgbWF4KSAgewogcmV0dXJuICh2YWwtbWluKS8obWF4LW1pbik7Cn0KCmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwoc2FtcGxlcyxzY2VuZXMpIHsgIAogIHZhciBhdmcxID0gMC4yOwogIHZhciBjb3VudDEgPSAwOwogIHZhciBhdmcyID0gMC4yOwogIHZhciBjb3VudDIgPSAwOwogIHZhciBhdmczID0gMC4yOwogIHZhciBjb3VudDMgPSAwOwogIHZhciBlbmRNb250aCA9IHNjZW5lc1swXS5kYXRlLmdldE1vbnRoKCk7CiAgCiAgZm9yICh2YXIgaT0wO2k8c2FtcGxlcy5sZW5ndGg7aSsrKSB7CiAgICAgIHZhciBydmkgID0gY2FsY1JWSShzYW1wbGVzW2ldKTsKICAgICAgaWYgKHNjZW5lc1tpXS5kYXRlLmdldE1vbnRoKCk9PWVuZE1vbnRoKQogICAgICB7CgkJYXZnMyA9IGF2ZzMgKyBydmk7CiAgICAgICAgY291bnQzKys7CiAgICAgIH0KICAgICAgZWxzZSBpZiAoc2NlbmVzW2ldLmRhdGUuZ2V0TW9udGgoKT09KGVuZE1vbnRoLTEpKQogICAgICB7CgkJYXZnMiA9IGF2ZzIgKyBydmk7CiAgICAgICAgY291bnQyKys7CiAgICAgIH0KICAgICAgZWxzZQogICAgICB7ICAgICAgCgkJYXZnMT0gYXZnMSArIHJ2aTsKICAgICAgICBjb3VudDErKzsKICAgICAgfQogICAgICAKICB9CiAgYXZnMSA9IGF2ZzEvY291bnQxOwogIGF2ZzIgPSBhdmcyL2NvdW50MjsKICBhdmczID0gYXZnMy9jb3VudDM7CiAgYXZnMSA9IHN0cmV0Y2goYXZnMSwgMC4yNSwgMC43NSk7CiAgYXZnMiA9IHN0cmV0Y2goYXZnMiwgMC4yNSwgMC43NSk7CiAgYXZnMyA9IHN0cmV0Y2goYXZnMywgMC4yNSwgMC43NSk7CiAgCiAgcmV0dXJuIFthdmcxLGF2ZzIsYXZnM107CgoKfQpmdW5jdGlvbiBmaWx0ZXJTY2VuZXMgKHNjZW5lcywgaW5wdXRNZXRhZGF0YSkgewogICAgcmV0dXJuIHNjZW5lcy5maWx0ZXIoZnVuY3Rpb24gKHNjZW5lKSB7CgkgIHJldHVybiBzY2VuZS5kYXRlLmdldFRpbWUoKT49KGlucHV0TWV0YWRhdGEudG8uZ2V0VGltZSgpLTMqMzEqMjQqMzYwMCoxMDAwKSA7CiAgICB9KTsKfQoK&temporal=true){:target="_blank"} 

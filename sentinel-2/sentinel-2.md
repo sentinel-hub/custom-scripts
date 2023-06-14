@@ -2,7 +2,6 @@
 layout: default
 title: Sentinel-2
 nav_order: 2
-has_children: true
 parent: Sentinel
 permalink: /sentinel/sentinel-2/
 ---

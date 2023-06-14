@@ -1,20 +1,12 @@
 ---
+title: VI NDVI visualisation script
+parent: High Resolution Vegetation Phenology and Productivity
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/vi-ndvi/
 nav_exclude: true
 ---
 
-# VI NDVI visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualises raw NDVI of the VI product. NDVI quantifies vegetation photosynthetic capacity by measuring the difference between the Near-Infrared (NIR) (which vegetation strongly reflects) and red spectral bands (which vegetation absorbs). Although it is not a physical property of vegetation cover, NDVI is widely used as an indicator for live green vegetation monitoring.  

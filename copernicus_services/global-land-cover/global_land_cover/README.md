@@ -1,20 +1,12 @@
 ---
+title: Global Land Cover discrete classification map  visualisation script
+parent: Global Land Cover
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/global_land_cover/
 nav_exclude: true
 ---
 
-# Global Land Cover discrete classification map  visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualises Global Land Cover discrete classification map with classes defined using the UN-FAO Land Cover Classification System (LCCS) and with color scheme defined in the [Product User Manual](https://land.copernicus.eu/global/sites/cgls.vito.be/files/products/CGLOPS1_PUM_LC100m-V3_I3.4.pdf).  

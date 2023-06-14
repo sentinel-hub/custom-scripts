@@ -1,20 +1,11 @@
 ---
+title: Mapping forest fire progression with Sentinel-2 and Sentinel-1
+parent: Data Fusion
+layout: script
 permalink: /data-fusion/s2_s1_forest_fire_progression/
 nav_exclude: true
 ---
 
-# Mapping forest fire progression with Sentinel-2 and Sentinel-1
-  
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
   
 ## Evaluate and visualize  
  - [EO Browser](https://sentinelshare.page.link/4ZVo)

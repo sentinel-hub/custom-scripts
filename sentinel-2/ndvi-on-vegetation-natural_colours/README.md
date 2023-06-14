@@ -1,20 +1,12 @@
 ---
+title: NDVI on L2A Vegetation and Natural Colours Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/ndvi-on-vegetation-natural_colours/
 nav_exclude: true
 ---
 
-# NDVI on L2A Vegetation and Natural Colours Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=49.2831&lng=2.8846&zoom=11&time=2019-07-05&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=dmFyIG5hdHVyYWxDb2xvdXIgPSBbMypCMDQsIDMqQjAzLCAzKkIwMl07CgpsZXQgbmR2aUNvbG9yTWFwID0gWwoJWy0xLjAsIDB4MDAwMDAwXSwKCVstMC4yLCAweEE1MDAyNl0sCglbMC4wLCAgMHhENzMwMjddLAoJWzAuMSwgIDB4RjQ2RDQzXSwKCVswLjIsICAweEZEQUU2MV0sCglbMC4zLCAgMHhGRUUwOEJdLAoJWzAuNCwgIDB4RkZGRkJGXSwKCVswLjUsICAweEQ5RUY4Ql0sCglbMC42LCAgMHhBNkQ5NkFdLAoJWzAuNywgIDB4NjZCRDYzXSwKCVswLjgsICAweDFBOTg1MF0sCiAgICBbMC45LCAgMHgwMDY4MzddCl07CgpmdW5jdGlvbiBpbmRleCh4LCB5KSB7CglyZXR1cm4gKHggLSB5KSAvICh4ICsgeSk7Cn0KCmZ1bmN0aW9uIHRvUkdCKHZhbCkgewoJcmV0dXJuIFt2YWwgPj4%2BIDE2LCB2YWwgPj4%2BIDgsIHZhbF0ubWFwKHggPT4gKHggJiAweEZGKSAvIDB4RkYpOwp9CgpmdW5jdGlvbiBmaW5kQ29sb3IoY29sVmFsUGFpcnMsIHZhbCkgewoJbGV0IG4gPSBjb2xWYWxQYWlycy5sZW5ndGg7Cglmb3IgKGxldCBpID0gMTsgaSA8IG47IGkrKykgewoJCWlmICh2YWwgPD0gY29sVmFsUGFpcnNbaV1bMF0pIHsKCQkJcmV0dXJuIHRvUkdCKGNvbFZhbFBhaXJzW2ktMV1bMV0pOwoJCX0KCX0KCXJldHVybiB0b1JHQihjb2xWYWxQYWlyc1tuLTFdWzFdKTsKfQoKcmV0dXJuIChTQ0wgPT0gNCk%2FIAogIGZpbmRDb2xvcihuZHZpQ29sb3JNYXAsIGluZGV4KEI4QSwgQjA0KSk6IG5hdHVyYWxDb2xvdXI7){:target="_blank"} 

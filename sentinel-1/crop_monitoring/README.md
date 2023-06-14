@@ -1,20 +1,12 @@
 ---
+title: Agricultural Crop Monitoring from Space Script
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/crop_monitoring/
 nav_exclude: true
 ---
 
-# Agricultural Crop Monitoring from Space Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground-temporal/?source=S1-AWS-IW-VVVH&lat=44.683972246144066&lng=12.169933319091797&zoom=13&preset=CUSTOM&layers=VV,VV,VV&maxcc=100&gain=1.0&gamma=1.0&time=2017-01-01%7C2018-08-28&atmFilter=&showDates=true&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKdmFyIG1hc3Rlcl9kYXRlID0gIjIwMTgtMDQtMjAiOyB2YXIgc2xhdmVfZGF0ZSA9ICIyMDE4LTA4LTIyIjsgLy8gQ29tYWNjaGlvLCBGZXJyYXJhLCBJdGFseSAgIAoKLy8gU2VsZWN0aW9uIG9mIHBvbGFyaXphdGlvbnMgCmZ1bmN0aW9uIHNldHVwKCkgewogIHJldHVybiB7CiAgICBpbnB1dDogW3sKICAgICAgYmFuZHM6IFsKICAgICAgICAgICJWViIsCiAgICAgICAgICAiVkgiCiAgICAgIF0KICAgIH1dLAogICAgb3V0cHV0OiB7IGJhbmRzOiAzIH0sCiAgICBtb3NhaWNraW5nOiAiT1JCSVQiCiAgfQp9CgoKZnVuY3Rpb24gZmlsdGVyU2NlbmVzIChzY2VuZXMpIHsgIApyZXR1cm4gc2NlbmVzLmZpbHRlcihmdW5jdGlvbiAoc2NlbmUpIHsKLy8gc2V0IGRhdGVzIGZvciBtYXN0ZXIgYW5kIHNsYXZlIGltYWdlcwp2YXIgYWxsb3dlZERhdGVzID0gW21hc3Rlcl9kYXRlLHNsYXZlX2RhdGVdOyAKdmFyIHNjZW5lRGF0ZVN0ciA9IGRhdGVmb3JtYXQoc2NlbmUuZGF0ZSk7CmlmIChhbGxvd2VkRGF0ZXMuaW5kZXhPZihzY2VuZURhdGVTdHIpIT0gLTEpIHJldHVybiB0cnVlOwplbHNlIHJldHVybiBmYWxzZTsKICB9KTsKfQoKLy8gQ3JvcCBNb25pdG9yaW5nCmZ1bmN0aW9uIGNhbGNCKHNhbXBsZSkgewogIHZhciBvdXRCID0gKC41KihzYW1wbGUuVlYpKTsKICByZXR1cm4gW291dEJdOwp9CmZ1bmN0aW9uIGNhbGNHKHNhbXBsZSkgewogIHZhciBvdXRHID0gKDgqKHNhbXBsZS5WSCkpOwogIHJldHVybiBbb3V0R107Cn0KZnVuY3Rpb24gY2FsY1Ioc2FtcGxlKSB7CiAgdmFyIG91dFIgPSAoMS41KihzYW1wbGUuVlYpKTsKICByZXR1cm4gW291dFJdOwp9CgpmdW5jdGlvbiBkYXRlZm9ybWF0KGQpeyAgCiAgdmFyIGRkID0gZC5nZXREYXRlKCk7CiAgdmFyIG1tID0gZC5nZXRNb250aCgpKzE7CiAgdmFyIHl5eXkgPSBkLmdldEZ1bGxZZWFyKCk7CiAgaWYoZGQ8MTApe2RkPScwJytkZH0KICBpZihtbTwxMCl7bW09JzAnK21tfQogIHZhciBpc29kYXRlID0geXl5eSsnLScrbW0rJy0nK2RkOwogIHJldHVybiBpc29kYXRlOwp9CmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwoc2FtcGxlcyxzY2VuZXMpIHsgIAogIHZhciBSbWFzdGVyID0gMDt2YXIgUnNsYXZlID0gMDsKICB2YXIgR21hc3RlciA9IDA7dmFyIEdzbGF2ZSA9IDA7CiAgdmFyIEJtYXN0ZXIgPSAwO3ZhciBCc2xhdmUgPSAwOwogIFJtYXN0ZXIgPSBjYWxjUihzYW1wbGVzWzFdKTsKICBSc2xhdmUgPSBjYWxjUihzYW1wbGVzWzBdKTsgIAogIEdtYXN0ZXIgPSBjYWxjRyhzYW1wbGVzWzFdKTsKICBHc2xhdmUgPSBjYWxjRyhzYW1wbGVzWzBdKTsgIAogIEJtYXN0ZXIgPSBjYWxjQihzYW1wbGVzWzFdKTsKICBCc2xhdmUgPSBjYWxjQihzYW1wbGVzWzBdKTsKICBSZGlmPVJzbGF2ZS1SbWFzdGVyOwogIEdkaWY9R3NsYXZlLUdtYXN0ZXI7CiAgQmRpZj1Cc2xhdmUtQm1hc3RlcjsKICByZXR1cm4gW1JzbGF2ZSxHZGlmLEJzbGF2ZV0KfQ%3D%3D&temporal=true){:target="_blank"} 

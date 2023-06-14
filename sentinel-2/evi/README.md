@@ -1,20 +1,12 @@
 ---
+title: EVI (Enhanced Vegetation Index)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/evi/
 nav_exclude: true
 ---
 
-# EVI (Enhanced Vegetation Index)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.10051506871418&lng=12.23602294921875&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=Ly8gRW5oYW5jZWQgVmVnZXRhdGlvbiBJbmRleCAgKGFiYnJ2LiBFVkkpCi8vIEdlbmVyYWwgZm9ybXVsYTogMi41ICogKE5JUiAtIFJFRCkgLyAoKE5JUiArIDYqUkVEIC0gNy41KkJMVUUpICsgMSkKLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD0xNgoKbGV0IEVWSSA9IDIuNSAqIChCMDggLSBCMDQpIC8gKChCMDggKyA2LjAgKiBCMDQgLSA3LjUgKiBCMDIpICsgMS4wKTsKCmlmIChFVkk8LTEuMSkgcmV0dXJuIFswLDAsMF07CmVsc2UgaWYgKEVWSTwtMC4yKSByZXR1cm4gWzAuNzUsMC43NSwxXTsKZWxzZSBpZiAoRVZJPC0wLjEpIHJldHVybiBbMC44NiwwLjg2LDAuODZdOwplbHNlIGlmIChFVkk8MCkgcmV0dXJuIFsxLDEsMC44OF07CmVsc2UgaWYgKEVWSTwwLjAyNSkgcmV0dXJuIFsxLDAuOTgsMC44XTsKZWxzZSBpZiAoRVZJPDAuMDUpIHJldHVybiBbMC45MywwLjkxLDAuNzFdOwplbHNlIGlmIChFVkk8MC4wNzUpIHJldHVybiBbMC44NywwLjg1LDAuNjFdOwplbHNlIGlmIChFVkk8MC4xKSByZXR1cm4gWzAuOCwwLjc4LDAuNTFdOwplbHNlIGlmIChFVkk8MC4xMjUpIHJldHVybiBbMC43NCwwLjcyLDAuNDJdOwplbHNlIGlmIChFVkk8MC4xNSkgcmV0dXJuIFswLjY5LDAuNzYsMC4zOF07CmVsc2UgaWYgKEVWSTwwLjE3NSkgcmV0dXJuIFswLjY0LDAuOCwwLjM1XTsKZWxzZSBpZiAoRVZJPDAuMikgcmV0dXJuIFswLjU3LDAuNzUsMC4zMl07CmVsc2UgaWYgKEVWSTwwLjI1KSByZXR1cm4gWzAuNSwwLjcsMC4yOF07CmVsc2UgaWYgKEVWSTwwLjMpIHJldHVybiBbMC40NCwwLjY0LDAuMjVdOwplbHNlIGlmIChFVkk8MC4zNSkgcmV0dXJuIFswLjM4LDAuNTksMC4yMV07CmVsc2UgaWYgKEVWSTwwLjQpIHJldHVybiBbMC4zMSwwLjU0LDAuMThdOwplbHNlIGlmIChFVkk8MC40NSkgcmV0dXJuIFswLjI1LDAuNDksMC4xNF07CmVsc2UgaWYgKEVWSTwwLjUpIHJldHVybiBbMC4xOSwwLjQzLDAuMTFdOwplbHNlIGlmIChFVkk8MC41NSkgcmV0dXJuIFswLjEzLDAuMzgsMC4wN107CmVsc2UgaWYgKEVWSTwwLjYpIHJldHVybiBbMC4wNiwwLjMzLDAuMDRdOwplbHNlIHJldHVybiBbMCwwLjI3LDBdOw%3D%3D){:target="_blank"}

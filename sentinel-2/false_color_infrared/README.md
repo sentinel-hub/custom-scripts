@@ -1,20 +1,12 @@
 ---
+title: False color infrared product
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/false_color_infrared/
 nav_exclude: true
 ---
 
-# False color infrared product
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.77643254375405&lng=12.69744873046875&zoom=10&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/false_color_infrared/script.js){:target="_blank"}

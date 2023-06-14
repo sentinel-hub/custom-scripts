@@ -1,20 +1,12 @@
 ---
+title: Normalised Difference Snow Index, NDSI
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/ndsi/
 nav_exclude: true
 ---
 
-# Normalised Difference Snow Index, NDSI
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=40.39519549132737&lng=-3.739471435546875&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2020-01-01%7C2020-07-13&atmFilter=&showDates=false&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKCi8vIE5vcm1hbGlzZWQgRGlmZmVyZW5jZSBTbm93IEluZGV4Ci8vIFNvdXJjZTogaHR0cHM6Ly9lYXJ0aC5lc2EuaW50L3dlYi9zZW50aW5lbC90ZWNobmljYWwtZ3VpZGVzL3NlbnRpbmVsLTItbXNpL2xldmVsLTJhL2FsZ29yaXRobQovLyB2YWx1ZXMgYWJvdmUgMC40MiBhcmUgdXN1YWxseSBzbm93CgpsZXQgdml6ID0gbmV3IElkZW50aXR5KCk7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICAgIGxldCB2YWwgPSBpbmRleChzYW1wbGVzLkIwMywgc2FtcGxlcy5CMTEpOwogICAgcmV0dXJuIHZpei5wcm9jZXNzKHZhbCk7Cn0KCmZ1bmN0aW9uIHNldHVwKCkgewogIHJldHVybiB7CiAgICBpbnB1dDogW3sKICAgICAgYmFuZHM6IFsKICAgICAgICAgICJCMDMiLAogICAgICAgICAgIkIxMSIKICAgICAgXQogICAgfV0sCiAgICBvdXRwdXQ6IHsgYmFuZHM6IDEgfSAgfQp9Cg%3D%3D&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/ndvi_uncertainty/script.js){:target="_blank"}    

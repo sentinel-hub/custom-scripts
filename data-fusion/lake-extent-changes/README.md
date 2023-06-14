@@ -1,20 +1,11 @@
 ---
+title: Detection of Lake Extent Changes
+parent: Data Fusion
+layout: script
 permalink: /data-fusion/lake-extent-changes/
 nav_exclude: true
 ---
 
-# Detection of Lake Extent Changes
-  
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
   
 ## Evaluate and visualize  
  - [EO Browser - Poyang Lake](https://sentinelshare.page.link/rLrD) 
