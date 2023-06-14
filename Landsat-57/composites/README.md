@@ -1,6 +1,7 @@
 ---
 permalink: /Landsat-57/composites/
 nav_exclude: true
+layout: default
 ---
 
 # Simple RGB Composites (Landsat 5 and 7)

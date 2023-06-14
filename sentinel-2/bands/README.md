@@ -1,6 +1,7 @@
 ---
 permalink: /sentinel-2/bands/
 nav_exclude: true
+layout: default
 ---
 
 # Sentinel-2 Bands

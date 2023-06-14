@@ -1,6 +1,7 @@
 ---
 permalink: /sentinel-2/indexdb/
 nav_exclude: true
+layout: default
 ---
 
 # Sentinel-2 RS indices

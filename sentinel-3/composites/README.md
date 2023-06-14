@@ -1,6 +1,7 @@
 ---
 permalink: /sentinel-3/composites/
 nav_exclude: true
+layout: default
 ---
 
 # Simple RGB Composites (Sentinel-3)

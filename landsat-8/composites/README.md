@@ -1,6 +1,7 @@
 ---
 permalink: /landsat-8/composites/
 nav_exclude: true
+layout: default
 ---
 
 # Simple RGB Composites (Landsat 8)

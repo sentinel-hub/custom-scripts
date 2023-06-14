@@ -1,6 +1,7 @@
 ---
 permalink: /EOB-layers/
 nav_exclude: true
+layout: default
 ---
 
 # Default EO Browser layers

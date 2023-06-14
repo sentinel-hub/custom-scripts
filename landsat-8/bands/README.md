@@ -1,6 +1,7 @@
 ---
 permalink: /landsat-8/bands/
 nav_exclude: true
+layout: default
 ---
 
 # Landsat 8 Bands

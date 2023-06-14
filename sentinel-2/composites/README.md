@@ -1,6 +1,7 @@
 ---
 permalink: /sentinel-2/composites/
 nav_exclude: true
+layout: default
 ---
 
 # Simple RGB Composites (Sentinel-2)
