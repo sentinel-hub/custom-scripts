@@ -2,7 +2,7 @@
 layout: default
 title: Contribute
 nav_order: 99
-has_children: true
+has_children: false
 permalink: /contribute/
 ---
 
