@@ -1,20 +1,12 @@
 ---
+title: Global Water Bodies Occurrence visualisation script
+parent: Water Bodies
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/water-bodies-occurence/
 nav_exclude: true
 ---
 
-# Global Water Bodies Occurrence visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualizes Water Bodies Occurence  derived from Quality layer (QUAL) in the Water Bodies data.The occurrence values rank from low occurrence to permanent occurrence. The Water Bodies Occurrence values and color legend are shown in the table below:

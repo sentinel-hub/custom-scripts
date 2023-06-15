@@ -1,20 +1,12 @@
 ---
+title: Built-up binary classifier mask
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/built_up_classifier_mask/
 nav_exclude: true
 ---
 
-# Built-up binary classifier mask
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.95448061777255&lng=17.67425537109375&zoom=10&preset=CUSTOM&layers=B01,B02,B03&maxcc=58&gain=1.0&gamma=1.0&time=2020-03-01%7C2020-09-14&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/bare_soil_detector/script.js)

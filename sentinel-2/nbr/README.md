@@ -1,20 +1,12 @@
 ---
+title: NBR-RAW (Normalized Burn Ratio)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/nbr/
 nav_exclude: true
 ---
 
-# NBR-RAW (Normalized Burn Ratio)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=40.39519549132737&lng=-3.739471435546875&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=7&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=IC8vIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBOSVIvU1dJUiBOb3JtYWxpemVkIEJ1cm4gUmF0aW8gKGFiYnJ2LiBOQlIpCi8vIEdlbmVyYWwgZm9ybXVsYTogKE5JUiAtIFNXSVIpIC8gKE5JUiArIFNXSVIpCi8vIFVSTCBodHRwczovL3d3dy5pbmRleGRhdGFiYXNlLmRlL2RiL3NpLXNpbmdsZS5waHA%2Fc2Vuc29yX2lkPTk2JnJzaW5kZXhfaWQ9NTMKCmxldCBpbmRleCA9IChCMDggLSBCMTIpIC8gKEIwOCArIEIxMik7CnJldHVybltpbmRleF0%3D){:target="_blank"}

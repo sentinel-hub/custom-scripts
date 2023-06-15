@@ -1,20 +1,12 @@
 ---
+title: GHS-BUILT-S2
+parent: Global Human Settlement Layer
+grand_parent: Other Collections
+layout: script
 permalink: /other_collections/global-human-settlement-layer-ghs-built-s2/
 nav_exclude: true
 ---
 
-# GHS-BUILT-S2
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script
 

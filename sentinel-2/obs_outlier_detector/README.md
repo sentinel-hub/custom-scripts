@@ -1,20 +1,12 @@
 ---
-permalink: /sentinel-2/obs_outlier_detector/v2/
+title: Observation outlier detector
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
+permalink: /sentinel-2/obs_outlier_detector/
 nav_exclude: true
 ---
 
-# Observation outlier detector
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=45.958906975029585&lng=15.492095947265625&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=33&gain=1.0&gamma=1.0&time=2020-09-02%7C2020-09-02&atmFilter=&showDates=false&evalscript=&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/obs_outlier_detector/v2/script.js) 

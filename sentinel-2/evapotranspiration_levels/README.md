@@ -1,20 +1,12 @@
 ---
+title: Detection of Evapotranspiration Levels Composite
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/evapotranspiration_levels/
 nav_exclude: true
 ---
 
-# Detection of Evapotranspiration Levels Composite
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=51.6877&lng=4.80414&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-09-22T00%3A00%3A00.000Z&toTime=2020-09-22T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIxMSIsIkIwOSIsIkIwMiIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIHJldHVybiBbMi41ICogc2FtcGxlLkIxMSwyLjUgKiBzYW1wbGUuQjA5LDIuNSAqIHNhbXBsZS5CMDIsIHNhbXBsZS5kYXRhTWFzayBdOwp9&minQa=NaN){:target="_blank"} 

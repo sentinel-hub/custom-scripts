@@ -1,19 +1,12 @@
 ---
+title: 'Water Surface Roughness Visualization '
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/water_surface_roughness_visualization/
 nav_exclude: true
 ---
 
-# Water Surface Roughness Visualization 
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-1.1912&lng=116.8719&zoom=11&time=2018-04-01&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=ICAgIC8vIFdhdGVyIFN1cmZhY2UgUm91Z2huZXNzIFZpc3VhbGl6YXRpb24gCi8vIEF1dGhvcjogQW5uYW1hcmlhIEx1b25nbyAoVHdpdHRlcjogQGFubmFtYXJpYV84NCwgaHR0cDovL3d3dy5saW5rZWRpbi5jb20vaW4vYW5uYW1hcmlhLWx1b25nby1SUykgCi8vIExpY2Vuc2U6IENDIEJZIDQuMCBJbnRlcm5hdGlvbmFsIC0gaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8gCgp2YXIgdmFsID0gTWF0aC5sb2coMC4wNS8oMC4wMTgrVlYqMS41KSk7IApyZXR1cm4gW3ZhbF07IA%3D%3D){:target="_blank"}   

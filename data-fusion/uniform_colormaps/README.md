@@ -1,21 +1,11 @@
 ---
+title: 'PUCK: Perceptually-Uniform Color Map Kit'
+parent: Data Fusion
+layout: script
 permalink: /data-fusion/uniform_colormaps/
 nav_exclude: true
 ---
 
-# PUCK: Perceptually-Uniform Color Map Kit
-**A set of visualization utilities that produce beautiful images designed for human perception from single-channel data (NDVI, spectral angle, etc). Generate quality figures that are true to the data.**
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 SentinelHub custom scripts have limited support for custom colormaps: `colorBlend` and `ColorRampVisualizer`. As a result, many users end up hardcoding their colors. Also, these functions use RGB colors instead of a color gamut designed around human perception. The goal of this project is to create tools for custom script developers to generate useful and perceptually uniform colormaps. It provides visualization classes for users familiar with CIELAB color space and works to correct colors in RGB space to be perceptually uniform. The underlying mathematics is used by many scientific plotting applications, such as `matplotlib`, `bokeh`, `chroma.js`, and others.
 

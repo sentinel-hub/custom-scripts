@@ -1,6 +1,9 @@
 ---
 permalink: /landsat-8/indexdb/
+parent: Landsat 8
+grand_parent: Landsat
 nav_exclude: true
+layout: default
 ---
 
 # Landsat-8 indices from indexdatabase

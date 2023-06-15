@@ -1,20 +1,12 @@
 ---
+title: CORINE Land Cover Accounting Layers visualisation script
+parent: CORINE Land Cover
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/corine_land_cover_accounting_layer/
 nav_exclude: true
 ---
 
-# CORINE Land Cover Accounting Layers visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description
 

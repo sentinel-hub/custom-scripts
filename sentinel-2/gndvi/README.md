@@ -1,20 +1,12 @@
 ---
+title: GNDVI (Green Normalized Difference Vegetation Index)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/gndvi/
 nav_exclude: true
 ---
 
-# GNDVI (Green Normalized Difference Vegetation Index)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.99483946155798&lng=12.241172790527344&zoom=12&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=Ci8vIEdyZWVuIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBWZWdldGF0aW9uIEluZGV4ICAgKGFiYnJ2LiBHTkRWSSkKLy8gR2VuZXJhbCBmb3JtdWxhOiAoTklSIC0gWzU0MDo1NzBdKSAvIChOSVIgKyBbNTQwOjU3MF0pCi8vIFVSTCBodHRwczovL3d3dy5pbmRleGRhdGFiYXNlLmRlL2RiL3NpLXNpbmdsZS5waHA%2Fc2Vuc29yX2lkPTk2JnJzaW5kZXhfaWQ9MjgKCmxldCBpbmRleCA9IChCMDggLSBCMDMpIC8gKEIwOCArIEIwMyk7CnJldHVybltpbmRleF0%3D){:target="_blank"}

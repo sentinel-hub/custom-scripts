@@ -1,20 +1,12 @@
 ---
+title: PSSRb1 (Pigment specific simple ration for Chlorophyll B)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/pssrb1/
 nav_exclude: true
 ---
 
-# PSSRb1 (Pigment specific simple ration for Chlorophyll B)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-06-01%7C2019-12-23&atmFilter=&showDates=false&evalscript=ICAgLy8gU2ltcGxlIFJhdGlvIDgwMC82NTAgUGlnbWVudCBzcGVjaWZpYyBzaW1wbGUgcmF0aW8gQjEgKGFiYnJ2LiBQU1NSYjEpCi8vIEdlbmVyYWwgZm9ybXVsYTogODAwbm0vNjUwbm0KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD0yODMKCmxldCBpbmRleCA9IEIwOCAvIEIwNDsKcmV0dXJuW2luZGV4XQ%3D%3D&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ndwi/script.js){:target="_blank"}

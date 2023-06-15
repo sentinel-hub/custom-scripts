@@ -1,20 +1,12 @@
 ---
+title: Global Surface Water Occurrence visualisation script
+parent: Global Surface Water
+grand_parent: Other Collections
+layout: script
 permalink: /other_collections/global_surface_water_occurrence/
 nav_exclude: true
 ---
 
-# Global Surface Water Occurrence visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script
 

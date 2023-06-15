@@ -1,6 +1,9 @@
 ---
 permalink: /landsat-8/composites/
+parent: Landsat 8
+grand_parent: Landsat
 nav_exclude: true
+layout: default
 ---
 
 # Simple RGB Composites (Landsat 8)

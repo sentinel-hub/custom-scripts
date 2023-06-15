@@ -1,20 +1,12 @@
 ---
+title: MCARI (Modified Chlorophyll Absorption in Reflectance Index)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/mcari/
 nav_exclude: true
 ---
 
-# MCARI (Modified Chlorophyll Absorption in Reflectance Index)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.04546841166382&lng=12.10968017578125&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=Ci8vIE1vZGlmaWVkIENobG9yb3BoeWxsIEFic29ycHRpb24gaW4gUmVmbGVjdGFuY2UgSW5kZXggICAoYWJicnYuIE1DQVJJKQovLyBHZW5lcmFsIGZvcm11bGE6ICgoNzAwbm0gLSA2NzBubSkgLSAwLjIgKiAoNzAwbm0gLSA1NTBubSkpICogKDcwMG5tIC82NzBubSkKLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD00MQoKbGV0IGluZGV4ID0gKChCMDUgLSBCMDQpIC0gMC4yICogKEIwNSAtIEIwMykpICogKEIwNSAvIEIwNCk7CnJldHVybltpbmRleF0%3D){:target="_blank"}

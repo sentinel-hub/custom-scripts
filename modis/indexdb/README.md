@@ -1,6 +1,8 @@
 ---
 permalink: /modis/indexdb/
+parent: MODIS
 nav_exclude: true
+layout: default
 ---
 
 # MODIS indices from indexdatabase

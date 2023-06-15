@@ -1,20 +1,12 @@
 ---
+title: VI FAPAR visualisation script
+parent: High Resolution Vegetation Phenology and Productivity
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/vi-fapar/
 nav_exclude: true
 ---
 
-# VI FAPAR visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualises raw FAPAR of the VI product. FAPAR corresponds to the fraction of photosynthetically active radiation absorbed by the canopy. FAPAR describes only the green parts of the canopy. FAPAR is very useful in assessing the primary productivity of canopies.  

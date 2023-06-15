@@ -1,20 +1,12 @@
 ---
+title: EVI2 (Enhanced Vegetation Index 2)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/evi2/
 nav_exclude: true
 ---
 
-# EVI2 (Enhanced Vegetation Index 2)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=42.10051506871418&lng=12.23602294921875&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-21&atmFilter=&showDates=false&evalscript=Ly8gRW5oYW5jZWQgVmVnZXRhdGlvbiBJbmRleCAyICAoYWJicnYuIEVWSTIpCi8vIEdlbmVyYWwgZm9ybXVsYTogMi41ICogKE5JUiAtIFJFRCkgLyAoKE5JUiArIFJFRCArIDEpCi8vIFVSTCBodHRwczovL3d3dy5pbmRleGRhdGFiYXNlLmRlL2RiL3NpLXNpbmdsZS5waHA%2Fc2Vuc29yX2lkPTk2JnJzaW5kZXhfaWQ9MTYKCmxldCBFVkkyID0gMi40ICogKEIwOCAtIEIwNCkgLyAoQjA4ICsgQjA0ICsgMS4wKTsKCmlmIChFVkkyPC0xLjEpIHJldHVybiBbMCwwLDBdOwplbHNlIGlmIChFVkkyPC0wLjIpIHJldHVybiBbMC43NSwwLjc1LDFdOwplbHNlIGlmIChFVkkyPC0wLjEpIHJldHVybiBbMC44NiwwLjg2LDAuODZdOwplbHNlIGlmIChFVkkyPDApIHJldHVybiBbMSwxLDAuODhdOwplbHNlIGlmIChFVkkyPDAuMDI1KSByZXR1cm4gWzEsMC45OCwwLjhdOwplbHNlIGlmIChFVkkyPDAuMDUpIHJldHVybiBbMC45MywwLjkxLDAuNzFdOwplbHNlIGlmIChFVkkyPDAuMDc1KSByZXR1cm4gWzAuODcsMC44NSwwLjYxXTsKZWxzZSBpZiAoRVZJMjwwLjEpIHJldHVybiBbMC44LDAuNzgsMC41MV07CmVsc2UgaWYgKEVWSTI8MC4xMjUpIHJldHVybiBbMC43NCwwLjcyLDAuNDJdOwplbHNlIGlmIChFVkkyPDAuMTUpIHJldHVybiBbMC42OSwwLjc2LDAuMzhdOwplbHNlIGlmIChFVkkyPDAuMTc1KSByZXR1cm4gWzAuNjQsMC44LDAuMzVdOwplbHNlIGlmIChFVkkyPDAuMikgcmV0dXJuIFswLjU3LDAuNzUsMC4zMl07CmVsc2UgaWYgKEVWSTI8MC4yNSkgcmV0dXJuIFswLjUsMC43LDAuMjhdOwplbHNlIGlmIChFVkkyPDAuMykgcmV0dXJuIFswLjQ0LDAuNjQsMC4yNV07CmVsc2UgaWYgKEVWSTI8MC4zNSkgcmV0dXJuIFswLjM4LDAuNTksMC4yMV07CmVsc2UgaWYgKEVWSTI8MC40KSByZXR1cm4gWzAuMzEsMC41NCwwLjE4XTsKZWxzZSBpZiAoRVZJMjwwLjQ1KSByZXR1cm4gWzAuMjUsMC40OSwwLjE0XTsKZWxzZSBpZiAoRVZJMjwwLjUpIHJldHVybiBbMC4xOSwwLjQzLDAuMTFdOwplbHNlIGlmIChFVkkyPDAuNTUpIHJldHVybiBbMC4xMywwLjM4LDAuMDddOwplbHNlIGlmIChFVkkyPDAuNikgcmV0dXJuIFswLjA2LDAuMzMsMC4wNF07CmVsc2UgcmV0dXJuIFswLDAuMjcsMF07){:target="_blank"}

@@ -1,20 +1,12 @@
 ---
+title: OSI - Oil Spill Index
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/oil-spill-index/
 nav_exclude: true
 ---
 
-# OSI - Oil Spill Index
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2L2A&lat=-20.43437229834543&lng=57.740750312805176&zoom=14&preset=CUSTOM&layers=B01,B02,B03&maxcc=21&gain=1.0&gamma=1.7&time=2020-02-01%7C2020-08-06&atmFilter=&showDates=false&evalscript=Ly8gT2lsIFNwaWxsIEluZGV4IGluIGdyYXlzY2FsZQpsZXQgT1NJID0gKEIwMyArIEIwNCkgLyBCMDI7CnJldHVybiBbT1NJLzNdCgovLyBSR0IgdmlzdWFsaXphdGlvbiBhKQovKgpsZXQgUiA9IChCMDUrQjA2KS9CMDcKbGV0IEcgPSAoQjAzK0IwNCkvQjAyCmxldCBCID0gKEIxMStCMTIpL0IwOApyZXR1cm4gW1IvMywgRy8zLCBCLzNdCiovCgovLyBSR0IgdmlzdWFsaXphdGlvbiBiKQovKgpsZXQgUiA9IChCMDMvQjAyKQpsZXQgRyA9IChCMDMrQjA0KS9CMDIKbGV0IEIgPSAoQjA2K0IwNykvQjA1CnJldHVybiBbUi8zLCBHLzMsIEIvM10KKi8%3D){:target="_blank"}    

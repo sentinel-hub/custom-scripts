@@ -1,20 +1,12 @@
 ---
-permalink: /copernicus_services/water-bodies/
+title: Global Water Bodies visualisation script
+parent: Water Bodies
+grand_parent: Copernicus Services
+layout: script
+permalink: /copernicus_services/water-bodies-visualisation/
 nav_exclude: true
 ---
 
-# Global Water Bodies visualisation script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualizes surface water bodies extent derived from water Bodies detection layer (WB) contained in Water Bodies data.

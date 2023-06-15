@@ -1,20 +1,12 @@
 ---
+title: Mix Leaf Area Index (MixLAI)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/mixlai/
 nav_exclude: true
 ---
 
-# Mix Leaf Area Index (MixLAI)
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat=34.59422&lng=46.58478&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-09-20T00%3A00%3A00.000Z&toTime=2020-09-20T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=dmFyIE1peExBSSA9ICgoQjA4LyhCMDQrQjExKSkrKEIwOC8oQjA0K0IxMikpKS8yLjA7IC8vIGNhbGN1bGF0ZSB0aGUgaW5kZXgKcmV0dXJuIFtNaXhMQUldCmlmIChNaXhMQUkgPCAwLjUpIHsKcmV0dXJuIFswLjMsIDAuMiwgMC43XSAKfQppZiAoTWl4TEFJIDwgMC43KSB7CnJldHVybiBbMC4yLCAwLjYsIDAuM10gCn0KaWYgKE1peExBSSA8IDEuNSkgewpyZXR1cm4gWzAuNSwgMC44LCAwLjJdIAp9CmVsc2UgewpyZXR1cm4gWzEsIDAuNCwgMF0gCn07Cg%3D%3D#custom-script){:target="_blank"} 

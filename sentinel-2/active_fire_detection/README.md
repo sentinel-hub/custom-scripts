@@ -1,20 +1,12 @@
 ---
+title: Active Fire Detection
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/active_fire_detection/
 nav_exclude: true
 ---
 
-# Active Fire Detection
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=37.5671449422705&lng=-119.72414017072879&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-02-01%7C2018-08-05&atmFilter=&showDates=false&evalscript=Ly9JZGVudGlmeSBhY3RpdmUgZmlyZSBwb2ludHMKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgovL1RvIGluY3JlYXNlIHRoZSBhY2N1cmFjeSBvZiBhbHRpdHVkZSA8M2ttIE9yIHpvb20gPjEyCi8vRm9yIFNlbnRpbmVsLTIKLy9DbG91ZCBtYXNrCnZhciBOR0RSID0gaW5kZXgoQjAyLCBCMDMpOwp2YXIgSW52ZXJzZSA9IChCMDIgLSAwLjIpIC8gKDAuNSAtIDAuMik7Ci8vRmlyZSBpbmRpY2F0b3IKdmFyIFNBSE1fSU5ERVg9ICgoQjEyIC0gQjExKSAvIChCMTIgKyBCMTEpKTsKCmlmIChJbnZlcnNlID4gMSkgeyAKICAgIHJldHVybiBbMC41ICogQjA0LCAwLjUgKiBCMDMsIDIwICogQjAyIF07Cn0KCmlmIChJbnZlcnNlID4gMCAmJiBOR0RSPjApIHsgCiAgICByZXR1cm4gWzAuNSAqIEIwNCAgLCAwLjUgKiBCMDMsIDIwICogQjAyXTsKfQoKaWYoKFNBSE1fSU5ERVg%2BMC40KXx8KEIxMj4xKSl7CiAgcmV0dXJuWzIwKkIwNCwgMSpCMDMsIDEqQjAyXTsKfQoKZWxzZSB7CiByZXR1cm4gW0IwNCxCMDQsQjA0XQp9CgovL1JlZCBjb2xvciBpbmRpY2F0ZXMgYWN0aXZlIGZpcmUgYXJlYXMgYW5kIHBvaW50cwovL1RoZSBibHVlIHJhbmdlIGlzIGEgY2xvdWQgbWFzaw%3D%3D){:target="_blank"}

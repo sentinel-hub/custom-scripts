@@ -1,19 +1,12 @@
 ---
+title: False color visualization for Sentinel-1
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/sar_false_color_visualization-2/
 nav_exclude: true
 ---
 
-# False color visualization for Sentinel-1
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=26.6797&lng=-78.5468&zoom=11&time=2019-09-04&preset=ENHANCED-VISUALIZATION&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)){:target="_blank"}   

@@ -1,20 +1,12 @@
 ---
+title: White-Water Detection Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/white_water/
 nav_exclude: true
 ---
 
-# White-Water Detection Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=15&lat=39.60651&lng=-9.09239&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIwMSIsIkIwMiIsIkIwMyIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIAogIHJldHVybiBbMi41ICogc2FtcGxlLkIwMSwgMi41ICogc2FtcGxlLkIwMiwgMi41ICogc2FtcGxlLkIwMywgc2FtcGxlLmRhdGFNYXNrXTsKfQ%3D%3D&datasetId=S2L2A&fromTime=2023-04-04T00%3A00%3A00.000Z&toTime=2023-04-04T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script){:target="_blank"}

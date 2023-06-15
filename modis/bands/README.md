@@ -1,6 +1,8 @@
 ---
 permalink: /modis/bands/
+parent: MODIS
 nav_exclude: true
+layout: default
 ---
 
 # MODIS Bands

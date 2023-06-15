@@ -1,20 +1,12 @@
 ---
+title: 'SAR-Ice: A Sea Ice RGB Composite'
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/sar-ice/
 nav_exclude: true
 ---
 
-# SAR-Ice: A Sea Ice RGB Composite
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=67.227&lng=46.401&zoom=9&time=2018-02-12&preset=CUSTOM&gainOverride=0.4&gammaOverride=0.6&redRangeOverride=[0,0.608]&greenRangeOverride=[0,0.642]&blueRangeOverride=[0,0.675]&datasource=Sentinel-1%20AWS%20(S1-AWS-EW-HHHV)&layers=HH,HV,HV&evalscript=ZnVuY3Rpb24gb3ZlcmxheSh0b3AsIGJvdHRvbSkgewogIHZhciByZXMgPSAtKCgyICogdG9wIC0gMSkgKiBib3R0b20tIDIgKiB0b3ApICogYm90dG9tOwogIHJldHVybiByZXM7Cn0KCmZ1bmN0aW9uIHN0cmV0Y2goYXJyLCBtaW4sIG1heCkgewogIHZhciBkZWx0YSA9IG1heCAtIG1pbjsKICB2YXIgb2Zmc2V0ID0gLW1pbiAvIGRlbHRhOwogIHJldHVybiBhcnIvZGVsdGEgKyBvZmZzZXQ7Cn0KCmZ1bmN0aW9uIGdhbW1hKGFyciwgdmFsKSB7CiAgcmV0dXJuIGFyciAqKiAoMS4wIC8gdmFsKTsKfQoKdmFyIG1odiA9IE1hdGguc3FydChIViArIDAuMDAyKTsKdmFyIG1oaCA9IE1hdGguc3FydChISCArIDAuMDAyKTsKdmFyIG92ID0gb3ZlcmxheShtaGgsIG1odik7CnZhciByZWQgPSBnYW1tYShzdHJldGNoKG1odiwgMC4wMiwgMC4xKSwgMS4xKTsKdmFyIGdyZWVuID0gZ2FtbWEoc3RyZXRjaChvdiwgMC4wLCAwLjA2KSwgMS4xKTsKdmFyIGJsdWUgPSBnYW1tYShzdHJldGNoKG1oaCwgMC4wLCAwLjMyKSwgMS4xKTsKcmV0dXJuIFtyZWQsIGdyZWVuLCBibHVlXTsK){:target="_blank"}

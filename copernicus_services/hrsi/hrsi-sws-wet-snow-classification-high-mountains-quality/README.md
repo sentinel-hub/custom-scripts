@@ -1,19 +1,13 @@
 ---
+title: 'CLMS HR-S&I: SAR Wet Snow in high mountains - Wet Snow classification in high
+  Mountains areas quality layer visualisation script'
+parent: High-Resolution Snow & Ice
+grand_parent: Copernicus Services
+layout: script
 permalink: /copernicus_services/hrsi-sws-wet-snow-classification-high-mountains-quality/
 nav_exclude: true
 ---
 
-# CLMS HR-S&I: SAR Wet Snow in high mountains - Wet Snow classification in high Mountains areas quality layer visualisation script
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## General description of the script  
 This script visualises SAR Wet Snow in high mountains - Wet Snow classification in high Mountains areas quality layer. 

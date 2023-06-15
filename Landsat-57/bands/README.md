@@ -1,6 +1,7 @@
 ---
 permalink: /Landsat-57/bands/
 nav_exclude: true
+layout: default
 ---
 
 # Landsat 5 and 7 Bands

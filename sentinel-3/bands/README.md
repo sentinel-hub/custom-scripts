@@ -1,6 +1,9 @@
 ---
 permalink: /sentinel-3/bands/
+parent: Sentinel-3
+grand_parent: Sentinel
 nav_exclude: true
+layout: default
 ---
 
 # Sentinel-3 OLCI Bands

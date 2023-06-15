@@ -1,20 +1,12 @@
 ---
+title: Fire Boundary Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/fire_boundary/
 nav_exclude: true
 ---
 
-# Fire Boundary Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=-37.654266597292256&lng=146.74816131591797&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-09-01%7C2019-03-04&atmFilter=&showDates=false&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKLyoKQXV0aG9ycyBvZiB0aGUgc2NyaXB0OiBBZHphbmlsIFJhY2htYWRoaSBQdXRyYSwgRmF0d2EgUmFtZGFuaQoqLwoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbewogICAgICBiYW5kczogWwogICAgICAgICAgIkIxMSIsCiAgICAgICAgICAiQjEyIgogICAgICBdCiAgICB9XSwKICAgIG91dHB1dDogeyBiYW5kczogMSB9ICB9Cn0KCgpsZXQgdml6ID0gbmV3IEhpZ2hsaWdodENvbXByZXNzVmlzdWFsaXplclNpbmdsZSgtMS4wLCAxLjApOwoKZnVuY3Rpb24gZXZhbHVhdGVQaXhlbChzYW1wbGVzKSB7CiAgbGV0IHZhbCA9IDguNSAqIChzYW1wbGVzLkIxMiAtIHNhbXBsZXMuQjExKSAvIChzYW1wbGVzLkIxMiArIHNhbXBsZXMuQjExICsgMC4yNSk7IHJldHVybiB2aXoucHJvY2Vzcyh2YWwpOwp9){:target="_blank"}    

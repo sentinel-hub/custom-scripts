@@ -1,19 +1,12 @@
 ---
+title: NDII (Normalized difference 819/1600)
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/ndii/
 nav_exclude: true
 ---
 
-# NDII (Normalized difference 819/1600)
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize
  - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-06-01%7C2019-12-23&atmFilter=&showDates=false&evalscript=ICAgICAgLy8KLy8gTm9ybWFsaXplZCBEaWZmZXJlbmNlIDgxOS8xNjAwIE5ESUkgKGFiYnJ2LiBORElJKQovLwovLyBHZW5lcmFsIGZvcm11bGE6ICg4MTlubS0xNjAwbm0pLyg4MTlubSsxNjAwbm0pCi8vCi8vIFVSTCBodHRwczovL3d3dy5pbmRleGRhdGFiYXNlLmRlL2RiL3NpLXNpbmdsZS5waHA%2Fc2Vuc29yX2lkPTk2JnJzaW5kZXhfaWQ9MjQyCi8vCgpsZXQgaW5kZXggPSAoQjA4IC0gQjExKSAvIChCMDggKyBCMTEpOwpyZXR1cm5baW5kZXhd&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ndwi/script.js){:target="_blank"}

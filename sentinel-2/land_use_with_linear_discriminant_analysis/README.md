@@ -1,20 +1,12 @@
 ---
+title: Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script
+parent: Sentinel-2
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-2/land_use_with_linear_discriminant_analysis/
 nav_exclude: true
 ---
 
-# Land Use Visualization for Sentinel-2 Using Linear Discriminant Analysis Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=40.3840&lng=-3.6440&zoom=11&time=2019-09-26&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=cmV0dXJuIFtNYXRoLmFicyggMC40ODA5ICogKCgoKEIwMiAqIDIuNSkgLSAwLjMzMjkpICogLTkuNDQyNSkgKyAoKChCMDMgKiAyLjUpIC0gMC4zMTgyKSAqIDIuMTg0NikgKyAoKChCMDQgKiAyLjUpIC0gMC4zMzgwKSAqIDIuNTMzMykgKyAoKChCMTEgKiAyLjUpIC0gMC41NjQ0KSAqIDkuOTI1NikgKyAoKChCMTIgKiAyLjUpIC0gMC40MjE2KSAqIC0xMy42OTExKSkgKyAtMC40NzY2KSwKICAgICAgICBNYXRoLmFicyggMC4zMjc1ICogKCgoKEIwMiAqIDIuNSkgLSAwLjI4NDQpICogMTMuMzY0NCkgKyAoKChCMDMgKiAyLjUpIC0gMC4yNzM2KSAqIC02LjY1ODgpICsgKCgoQjA0ICogMi41KSAtIDAuMjc1MCkgKiAtMS4xOTk0KSArICgoKEIwOCAqIDIuNSkgLSAwLjU5NzIpICogLTAuMjA5MCkgKyAoKChCOEEgKiAyLjUpIC0gMC42NjQ4KSAqIDUuMTYzMCkgKyAoKChCMTEgKiAyLjUpIC0gMC41NjUxKSAqIC03LjIxODMpKSArIDAuMDQ2MyksCiAgICAgICAgTWF0aC5hYnMoIDAuMjM2MSAqICgoKChCMDMgKiAyLjUpIC0gMC4yNDI5KSAqIDIxLjg3NTkpICsgKCgoQjA0ICogMi41KSAtIDAuMjMyMSkgKiAtNi4wNjc5KSArICgoKEIwOCAqIDIuNSkgLSAwLjQzNzEpICogLTMuMDYwOCkgKyAoKChCMTEgKiAyLjUpIC0gMC40MTQ2KSAqIC00LjQ0MjApKSArIDAuMjA2MSldOw%3D%3D){:target="_blank"} 

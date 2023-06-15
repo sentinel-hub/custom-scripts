@@ -1,20 +1,12 @@
 ---
+title: Radar Vegetation Index for Sentinel-1 SAR data - RVI4S1 Script
+parent: Sentinel-1
+grand_parent: Sentinel
+layout: script
 permalink: /sentinel-1/radar_vegetation_index/
 nav_exclude: true
 ---
 
-# Radar Vegetation Index for Sentinel-1 SAR data - RVI4S1 Script
-
-{% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button>
-[Download Script](script.js){: .btn target="_blank" download="{{paths | append: ".js"}}"}
-{: .mt-lg-4 }
-
-<div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div>
 
 ## Evaluate and visualize   
  - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=49.6989&lng=-98.0248&zoom=11&time=2019-06-28&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gUmFkYXIgdmVnZXRhdGlvbiBpbmRleCBmb3IgU2VudGluZWwtMSAoUlZJNFMxKSBTQVIgZGF0YQovLyBJbnN0aXR1dGU6IE1SU0xhYiwgSW5kaWFuIEluc3RpdHV0ZSBvZiBUZWNobm9sb2d5IEJvbWJheSwgSW5kaWEKLy8gRGF0YSByZXF1aXJlbWVudHM6IFNlbnRpbmVsLTEgR1JEIGRhdGEKbGV0IGRvcCA9IChWVi8oVlYrVkgpKTsgLy9lcXVpdmFsZW50IHRvIGNvbXBsZW1lbnQgb2YgdGhlIGRlZ3JlZSBvZiBwb2xhcml6YXRpb24KbGV0IG0gPSAxIC0gZG9wOyAgCmxldCB2YWx1ZSA9IChNYXRoLnNxcnQoZG9wKSkqKCg0KihWSCkpLyhWVitWSCkpOyAgLy9kZXBvbGFyaXphdGlvbiB3aXRoaW4gdGhlIHZlZ2V0YXRpb24gCgovL3JldHVybiBbIHZhbHVlIF0gLy9HcmF5c2NhbGUgcmVzdWx0CgovLyBDb2xvdXIgc2NhbGUKcmV0dXJuIGNvbG9yQmxlbmQgLy8gY2FsbCB0aGUgY29sb3JCbGVuZCBmdW5jdGlvbgoodmFsdWUsIC8vIFBpeGVsIHZhbHVlClswLCAwLjEsIDAuMywgMC41LCAwLjcsIDAuOSwgMS4wXSwgLy8gRGVmaW5lIHRoZSBib3JkZXJzClsgWzAsIDAsIDFdLCAvLyBEZWZpbmUgdGhlIFJHQiBjb2xvcnMgZm9yIGVhY2ggYm9yZGVyClswLjEsMC4yLDAuOF0sClswLjMsIDAuNSwgMC43XSwKWzAuMiwgMSwgMC4zXSwKWzAuNSwgMC44LCAwLjJdLApbMSwgMC40LCAwXSwKWzEsIDAsIDBdLApdKTs%3D){:target="_blank"} 
