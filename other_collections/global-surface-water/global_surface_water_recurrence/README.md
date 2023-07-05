@@ -3,7 +3,7 @@ title: Global Surface Water Recurrence visualisation script
 parent: Global Surface Water
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global_surface_water_recurrence/
+permalink: /other_collections/global-surface-water/global_surface_water_recurrence/
 nav_exclude: true
 ---
 

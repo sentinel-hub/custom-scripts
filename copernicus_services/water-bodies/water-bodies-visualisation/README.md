@@ -3,7 +3,7 @@ title: Global Water Bodies visualisation script
 parent: Water Bodies
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/water-bodies-visualisation/
+permalink: /copernicus_services/water-bodies/water-bodies-visualisation/
 nav_exclude: true
 ---
 

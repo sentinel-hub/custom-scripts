@@ -8,8 +8,8 @@ nav_exclude: true
 ---
 
 
-## Evaluate and visualize
-- [Example 1](https://sentinel-hub.github.io/custom-scripts/sentinel-1/seldom_and_regular_water_surface_detection/example1.html){:target="_blank"}
+<!-- ## Evaluate and visualize
+- [Example 1](https://custom-scripts.sentinel-hub.com/sentinel-1/seldom_and_regular_water_surface_detection/example1.html){:target="_blank"} -->
 
 ## General description of the script
 

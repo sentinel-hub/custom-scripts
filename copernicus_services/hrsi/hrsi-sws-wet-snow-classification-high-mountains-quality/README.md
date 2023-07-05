@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: SAR Wet Snow in high mountains - Wet Snow classification in
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-sws-wet-snow-classification-high-mountains-quality/
+permalink: /copernicus_services/hrsi/hrsi-sws-wet-snow-classification-high-mountains-quality/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: 'CLMS HR-S&I: Persistent Snow Area quality layer visualisation script'
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-psa-psa-quality/
+permalink: /copernicus_services/hrsi/hrsi-psa-psa-quality/
 nav_exclude: true
 ---
 

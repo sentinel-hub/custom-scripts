@@ -3,7 +3,7 @@ title: VPP MINV visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-season-minimum-value-minv/
+permalink: /copernicus_services/hrvpp/vpp-season-minimum-value-minv/
 nav_exclude: true
 ---
 

@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: Sentinel-1 and Sentinel-2 River and Lake Ice Extent quality
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-rlie-s1s2-quality/
+permalink: /copernicus_services/hrsi/hrsi-rlie-s1s2-quality/
 nav_exclude: true
 ---
 

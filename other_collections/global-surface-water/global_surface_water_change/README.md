@@ -3,7 +3,7 @@ title: Global Surface Water Occurrence Change Intensity visualisation script
 parent: Global Surface Water
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global_surface_water_change/
+permalink: /other_collections/global-surface-water/global_surface_water_change/
 nav_exclude: true
 ---
 

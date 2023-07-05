@@ -3,7 +3,7 @@ title: Global Surface Water Seasonality visualisation script
 parent: Global Surface Water
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global_surface_water_seasonality/
+permalink: /other_collections/global-surface-water/global_surface_water_seasonality/
 nav_exclude: true
 ---
 

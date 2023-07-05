@@ -3,7 +3,7 @@ title: VPP SOSV visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-start-of-season-value-sosv/
+permalink: /copernicus_services/hrvpp/vpp-start-of-season-value-sosv/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: 'CLMS HR-S&I: Wet / Dry Snow - Snow state classification visualisation sc
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-wds-ssc/
+permalink: /copernicus_services/hrsi/hrsi-wds-ssc/
 nav_exclude: true
 ---
 

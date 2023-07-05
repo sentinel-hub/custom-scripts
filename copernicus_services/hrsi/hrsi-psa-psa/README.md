@@ -3,7 +3,7 @@ title: 'CLMS HR-S&I: Persistent Snow Area visualisation script'
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-psa-psa/
+permalink: /copernicus_services/hrsi/hrsi-psa-psa/
 nav_exclude: true
 ---
 

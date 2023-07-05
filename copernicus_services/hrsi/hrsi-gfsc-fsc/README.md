@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: Daily cumulative Gap-filled Fractional Snow Cover - Fractio
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-gfsc-fsc/
+permalink: /copernicus_services/hrsi/hrsi-gfsc-fsc/
 nav_exclude: true
 ---
 

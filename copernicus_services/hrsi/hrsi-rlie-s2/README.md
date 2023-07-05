@@ -3,7 +3,7 @@ title: 'CLMS HR-S&I: Sentinel-2 River and Lake Ice Extent visualisation script'
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-rlie-s2/
+permalink: /copernicus_services/hrsi/hrsi-rlie-s2/
 nav_exclude: true
 ---
 

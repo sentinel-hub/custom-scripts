@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: Fractional Snow Cover - On-ground fractional snow cover (%)
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-fsc-on-ground-fsi-quality/
+permalink: /copernicus_services/hrsi/hrsi-fsc-on-ground-fsi-quality/
 nav_exclude: true
 ---
 

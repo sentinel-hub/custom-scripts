@@ -3,7 +3,7 @@ title: Global Surface Water Extent visualisation script
 parent: Global Surface Water
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global_surface_water_extent/
+permalink: /other_collections/global-surface-water/global_surface_water_extent/
 nav_exclude: true
 ---
 

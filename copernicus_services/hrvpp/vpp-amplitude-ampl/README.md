@@ -3,7 +3,7 @@ title: VPP AMPL visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-amplitude-ampl/
+permalink: /copernicus_services/hrvpp/vpp-amplitude-ampl/
 nav_exclude: true
 ---
 

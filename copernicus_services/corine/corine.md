@@ -13,5 +13,5 @@ In 1985 the 'Coordination of Information on the Environment' (CORINE) programme 
 CORINE Land Cover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/corine/).
 
 #### Available scripts
-- [CORINE Land Cover visualisation script](/copernicus_services/corine_land_cover)
-- [CORINE Land Cover Accounting Layers visualisation script](/copernicus_services/corine_land_cover_accounting_layer)
+- [CORINE Land Cover visualisation script](/copernicus_services/corine/corine_land_cover)
+- [CORINE Land Cover Accounting Layers visualisation script](/copernicus_services/corine/corine_land_cover_accounting_layer)

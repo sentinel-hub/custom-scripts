@@ -3,7 +3,7 @@ title: CNES land cover validity visualisation script
 parent: CNES Land Cover
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/cnes_land_cover_validity/
+permalink: /other_collections/cnes/cnes_land_cover_validity/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: WorldCover Map visualisation script
 parent: ESA WorldCover
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/worldcover/
+permalink: /other_collections/esa-worldcover/worldcover/
 nav_exclude: true
 ---
 
