@@ -3,7 +3,7 @@ title: VPP TPROD visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-total-productivity-tprod/
+permalink: /copernicus_services/hrvpp/vpp-total-productivity-tprod/
 nav_exclude: true
 ---
 

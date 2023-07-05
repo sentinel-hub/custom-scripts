@@ -14,4 +14,4 @@ Global Land Cover data is available in Sentinel Hub, read more in our [Public Co
 
 #### Available scripts
 
-- [Global Land Cover discrete classification map visualisation script](/copernicus_services/global_land_cover)
+- [Global Land Cover discrete classification map visualisation script](/copernicus_services/global-land-cover/global_land_cover/)

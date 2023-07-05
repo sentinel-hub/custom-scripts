@@ -3,7 +3,7 @@ title: VI PPI visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vi-ppi/
+permalink: /copernicus_services/hrvpp/vi-ppi/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: CNES land cover classifier confidence visualisation script
 parent: CNES Land Cover
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/cnes_land_cover_confidence/
+permalink: /other_collections/cnes/cnes_land_cover_confidence/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: Seasonal Trajectories PPI visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/st-ppi/
+permalink: /copernicus_services/hrvpp/st-ppi/
 nav_exclude: true
 ---
 

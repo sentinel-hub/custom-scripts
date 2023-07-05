@@ -3,7 +3,7 @@ title: Global Water Bodies Occurrence visualisation script
 parent: Water Bodies
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/water-bodies-occurence/
+permalink: /copernicus_services/water-bodies/water-bodies-occurence/
 nav_exclude: true
 ---
 

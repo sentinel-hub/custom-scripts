@@ -3,7 +3,7 @@ title: VPP LSLOPE visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-slope-of-greening-up-period-lslope/
+permalink: /copernicus_services/hrvpp/vpp-slope-of-greening-up-period-lslope/
 nav_exclude: true
 ---
 

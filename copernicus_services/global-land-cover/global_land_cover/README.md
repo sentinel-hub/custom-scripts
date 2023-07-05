@@ -3,7 +3,7 @@ title: Global Land Cover discrete classification map  visualisation script
 parent: Global Land Cover
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/global_land_cover/
+permalink: /copernicus_services/global-land-cover/global_land_cover/
 nav_exclude: true
 ---
 

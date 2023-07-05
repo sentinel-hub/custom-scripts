@@ -23,9 +23,9 @@ Please check the official [Global Surface Water website](https://global-surface-
 
 #### Available scripts
 
-- [Global Surface Water Occurrence visualisation script](/other_collections/global_surface_water_occurrence)
-- [Global Surface Water Occurrence Change Intensity visualisation script](/other_collections/global_surface_water_change)
-- [Global Surface Water Seasonality visualisation script](/other_collections/global_surface_water_seasonality)
-- [Global Surface Water Recurrence visualisation script](/other_collections/global_surface_water_recurrence)
-- [Global Surface Water Transitions visualisation script](/other_collections/global_surface_water_transitions)
-- [Global Surface Water Extent visualisation script](/other_collections/global_surface_water_extent)
+- [Global Surface Water Occurrence visualisation script](/other_collections/global-surface-water/global_surface_water_occurrence)
+- [Global Surface Water Occurrence Change Intensity visualisation script](/other_collections/global-surface-water/global_surface_water_change)
+- [Global Surface Water Seasonality visualisation script](/other_collections/global-surface-water/global_surface_water_seasonality)
+- [Global Surface Water Recurrence visualisation script](/other_collections/global-surface-water/global_surface_water_recurrence)
+- [Global Surface Water Transitions visualisation script](/other_collections/global-surface-water/global_surface_water_transitions)
+- [Global Surface Water Extent visualisation script](/other_collections/global-surface-water/global_surface_water_extent)

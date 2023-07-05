@@ -3,7 +3,7 @@ title: Global Surface Water Transitions visualisation script
 parent: Global Surface Water
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global_surface_water_transitions/
+permalink: /other_collections/global-surface-water/global_surface_water_transitions/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: VPP RSLOPE visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vpp-slope-of-senescent-period-rslope/
+permalink: /copernicus_services/hrvpp/vpp-slope-of-senescent-period-rslope/
 nav_exclude: true
 ---
 

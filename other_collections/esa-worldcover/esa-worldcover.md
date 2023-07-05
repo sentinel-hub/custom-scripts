@@ -14,4 +14,4 @@ permalink: /other_collections/esa-worldcover/
   WorldCover data is available in Sentinel Hub, read more in our [Public Collections](https://collections.sentinel-hub.com/tag/worldcover/).
 
 #### Available scripts
-- [WorldCover visualisation script](/other_collections/worldcover)
+- [WorldCover visualisation script](/other_collections/esa-worldcover/worldcover)

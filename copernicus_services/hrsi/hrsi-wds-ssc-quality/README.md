@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: Wet / Dry Snow - Snow state classification quality layer vi
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-wds-ssc-quality/
+permalink: /copernicus_services/hrsi/hrsi-wds-ssc-quality/
 nav_exclude: true
 ---
 

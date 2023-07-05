@@ -3,7 +3,7 @@ title: GHS-BUILT-S2
 parent: Global Human Settlement Layer
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/global-human-settlement-layer-ghs-built-s2/
+permalink: /other_collections/global-human-settlement-layer/global-human-settlement-layer-ghs-built-s2/
 nav_exclude: true
 ---
 

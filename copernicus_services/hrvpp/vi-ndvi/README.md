@@ -3,7 +3,7 @@ title: VI NDVI visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vi-ndvi/
+permalink: /copernicus_services/hrvpp/vi-ndvi/
 nav_exclude: true
 ---
 

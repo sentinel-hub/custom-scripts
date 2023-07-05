@@ -3,7 +3,7 @@ title: CNES land cover classification visualisation script
 parent: CNES Land Cover
 grand_parent: Other Collections
 layout: script
-permalink: /other_collections/cnes_land_cover_classification/
+permalink: /other_collections/cnes/cnes_land_cover_classification/
 nav_exclude: true
 ---
 

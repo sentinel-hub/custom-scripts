@@ -3,7 +3,7 @@ title: CORINE Land Cover Accounting Layers visualisation script
 parent: CORINE Land Cover
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/corine_land_cover_accounting_layer/
+permalink: /copernicus_services/corine/corine_land_cover_accounting_layer/
 nav_exclude: true
 ---
 

@@ -3,7 +3,7 @@ title: VI LAI visualisation script
 parent: High Resolution Vegetation Phenology and Productivity
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/vi-lai/
+permalink: /copernicus_services/hrvpp/vi-lai/
 nav_exclude: true
 ---
 

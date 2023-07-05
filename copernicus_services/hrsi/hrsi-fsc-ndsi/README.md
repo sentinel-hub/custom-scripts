@@ -4,7 +4,7 @@ title: 'CLMS HR-S&I: Fractional Snow Cover - Normalised difference snow index (%
 parent: High-Resolution Snow & Ice
 grand_parent: Copernicus Services
 layout: script
-permalink: /copernicus_services/hrsi-fsc-ndsi/
+permalink: /copernicus_services/hrsi/hrsi-fsc-ndsi/
 nav_exclude: true
 ---
 
