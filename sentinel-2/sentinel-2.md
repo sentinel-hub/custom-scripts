@@ -78,7 +78,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Hollstein Clouds, Cirrus, Snow, Shadow, Water and Clear Sky Pixels detection](/sentinel-2/hollstein)
  - [Cloudless Mosaic](/sentinel-2/cloudless_mosaic)
  - [Cloud statistics](/sentinel-2/cloud_statistics)
- - [Observation outlier detection](/sentinel-2/obs_outlier_detector/v2)
+ - [Observation outlier detection](/sentinel-2/obs_outlier_detector/)
 
 #### Snow and glaciers algorithms
  - [Snow classifier](/sentinel-2/snow_classifier/)
