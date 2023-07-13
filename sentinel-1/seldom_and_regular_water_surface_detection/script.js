@@ -36,9 +36,9 @@ var percLim = 0.1;
 var onlySeldomWater = false;
 
 // calculate percentile for the array
-function percentile(sortedArray, legnth, percentile) {
+function percentile(sortedArray, length, percentile) {
 	// position i of the percentile
-	let i = percentile * legnth;
+	let i = percentile * length;
 	// round up, it is needed if not integer
 	i = Math.ceil(i) - 1;// minus 1 because indexing starts with 0
 	// percValue
