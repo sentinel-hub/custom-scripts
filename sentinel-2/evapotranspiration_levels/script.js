@@ -5,7 +5,7 @@
 //Version 3
 function setup() {
     return {
-        input:  [ìB11î,îB09î,îB02î,îdataMaskî],
+        input:  ["B11", "B09", "B02", "dataMask"],
        output: { bands :  4   }
     };
  }
