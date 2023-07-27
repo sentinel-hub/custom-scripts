@@ -1,11 +1,17 @@
 //VERSION=3
+let minVal = 0.0;
+let maxVal = 0.4;
+
+let viz = new HighlightCompressVisualizer(minVal, maxVal);
+
 function setup() {
   return {
-    input: ["B12","B8A","B04", "dataMask"],
+    input: ["B12", "B11", "B04","dataMask"],
     output: { bands: 4 }
   };
 }
 
-function evaluatePixel(sample) {
-  return [2.5 * sample.B12,2.5 * sample.B11,2.5 * sample.B04, sample.dataMask ];
+function evaluatePixel(samples) {
+  let val = [samples.B12, samples.B11, samples.B04,samples.dataMask];
+  return viz.processList(val);
 }
