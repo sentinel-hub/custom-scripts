@@ -7,8 +7,8 @@ permalink: /copernicus_services/hrsi/hrsi-rlie-s1/
 nav_exclude: true
 ---
 
-
 ## General description of the script
+
 This script visualises the River and Lake Ice Extent based on synthetic aperture radar data from the S1 costellation. The product is generated for the entire EEA38+UK zone. 
 
 Table 1: Classification classes and colouring scheme.
@@ -49,3 +49,5 @@ Table 1: Classification classes and colouring scheme.
 ## Resources
 
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover)
+- [Quality assessment report](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-qar)
+- [Product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)

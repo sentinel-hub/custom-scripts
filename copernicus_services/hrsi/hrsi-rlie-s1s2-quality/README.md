@@ -8,9 +8,8 @@ permalink: /copernicus_services/hrsi/hrsi-rlie-s1s2-quality/
 nav_exclude: true
 ---
 
-
-
 ## General description of the script
+
 This script visualises the Sentinel 1 and 2-based River and Lake Ice Extent quality layer.
 
 Table 1: Classification classes and colouring scheme.
@@ -66,3 +65,5 @@ Table 1: Classification classes and colouring scheme.
 ## Resources
 
 - [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover)
+- [Quality assessment report](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-qar)
+- [Product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)
