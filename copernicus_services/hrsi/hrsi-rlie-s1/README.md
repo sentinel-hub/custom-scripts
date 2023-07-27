@@ -9,7 +9,7 @@ nav_exclude: true
 
 ## General description of the script
 
-This script visualises the River and Lake Ice Extent based on synthetic aperture radar data from the S1 costellation. The product is generated for the entire EEA38+UK zone. 
+This script visualises the River and Lake Ice Extent based on synthetic aperture radar data from the S1 constellation. The product is generated for the entire EEA38+UK zone. 
 
 Table 1: Classification classes and colouring scheme.
 

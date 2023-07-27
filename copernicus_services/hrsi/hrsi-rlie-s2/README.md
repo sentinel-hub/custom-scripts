@@ -9,7 +9,7 @@ nav_exclude: true
 
 ## General description of the script
 
-This script visualises the River and Lake Ice Extent based on optical satellite data from the Sentinel-2 costellation. The product is generated for the entire EEA38+UK zone.
+This script visualises the River and Lake Ice Extent based on optical satellite data from the Sentinel-2 constellation. The product is generated for the entire EEA38+UK zone.
 
 Table 1: Classification classes and colouring scheme.
 
