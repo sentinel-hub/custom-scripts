@@ -41,7 +41,7 @@ The spectral bands of PlanetScope data are the following if you order a 8-band p
  - [True Color](/planet_scope/true_color)
  - [False Color](/planet_scope/false_color)
  - [NDVI](/planet_scope/ndvi)
- - [NDVI](/planet_scope/ndvi_statistics)
+ - [NDVI with EO Browser Statistics](/planet_scope/ndvi_statistics)
  - [NDWI](/planet_scope/ndwi)
  - [Green City](/planet_scope/green_city)
  - [UDM2 Cloud/Snow Classification](/planet_scope/cloud_classification)
