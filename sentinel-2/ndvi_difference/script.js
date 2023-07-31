@@ -21,8 +21,9 @@ function setup() {
     // ndvi difference
     let latest = samples[0];
     let prior = samples[1];
-    let combineMask = latest.dataMask * prior.dataMask;
-    const diff = combineMask === 1 ? index(latest.B08, latest.B04) - index(prior.B08, prior.B04) : NaN;
+    let combinedMask = latest.dataMask * prior.dataMask;
+    let combinedSCL = isCloud(latest.SCL) && isCloud(prior.SCL) ? 1:0;
+    const diff = combinedMask === 1 ? index(latest.B08, latest.B04) - index(prior.B08, prior.B04) : NaN;
     
     // visualisation
     const ramps = [
@@ -31,13 +32,13 @@ function setup() {
     ]
     const visualizer = new ColorRampVisualizer(ramps);
     let imgVals = visualizer.process(diff);
-    imgVals.push(combineMask)
+    imgVals.push(combinedMask)
 
     return {
         default: imgVals,
         index: [diff],
-        eobrowserStats: [diff, isCloud(samples.SCL)?1:0],
-        dataMask: [combineMask]
+        eobrowserStats: [diff, combinedSCL],
+        dataMask: [combinedMask]
     };
   }
 
@@ -63,12 +64,7 @@ function setup() {
       diff = Math.abs(current - target);
       closest = scenes[i];
     }
-
-    // filter collections to keep the latest acquisition and the closest acquisitions to the target
-    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
-        var orbitDateFrom = orbit.dateFrom;
-        return [latest.dateFrom, closest.dateFrom].includes(orbitDateFrom);
-    })
+    collections.scenes.orbits = [latest, closest];
     return collections
 }
 
