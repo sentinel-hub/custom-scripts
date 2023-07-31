@@ -21,8 +21,8 @@ function setup() {
     // ndvi difference
     let latest = samples[0];
     let prior = samples[1];
-    let dataMask = latest.dataMask * prior.dataMask;
-    const diff = dataMask === 1 ? index(latest.B08, latest.B04) - index(prior.B08, prior.B04) : NaN;
+    let combineMask = latest.dataMask * prior.dataMask;
+    const diff = combineMask === 1 ? index(latest.B08, latest.B04) - index(prior.B08, prior.B04) : NaN;
     
     // visualisation
     const ramps = [
@@ -31,13 +31,13 @@ function setup() {
     ]
     const visualizer = new ColorRampVisualizer(ramps);
     let imgVals = visualizer.process(diff);
-    imgVals.push(dataMask)
+    imgVals.push(combineMask)
 
     return {
         default: imgVals,
         index: [diff],
         eobrowserStats: [diff, isCloud(samples.SCL)?1:0],
-        dataMask: [dataMask]
+        dataMask: [combineMask]
     };
   }
 

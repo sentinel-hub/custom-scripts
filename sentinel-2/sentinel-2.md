@@ -35,7 +35,8 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
 #### Remote sensing indices
  - [NDVI](/sentinel-2/ndvi) - normalized difference vegetation index
  - [NDVI uncertainty](/sentinel-2/ndvi_uncertainty) - visualization of uncertainty of NDVI due to uncertainty in band values
- - [NDVI time series](/sentinel-2/ndvi_time_series) - NDVI time series as a multi-band TIFF with a JSON containg a list of timestamps 
+ - [NDVI time series](/sentinel-2/ndvi_time_series) - NDVI time series as a multi-band TIFF with a JSON containg a list of timestamps
+ - [NDVI difference](/sentinel-2/ndvi_difference) - NDVI difference between two acquisitions 
  - [collection](/sentinel-2/indexdb) of remote sensing indices from an extensive [Index database (IDB)](https://www.indexdatabase.de/){:target="_blank"}
  - [MAX NDVI](/sentinel-2/max_ndvi)
  - [ARI](/sentinel-2/ari) - anthocyanin reflectance index
