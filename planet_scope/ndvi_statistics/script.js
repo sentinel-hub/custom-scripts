@@ -21,14 +21,6 @@ function setup() {
 }
 
 
-function isClear (udm2_clear) {
-  if (udm2_clear == 0)  {
-    return false;
-  }
-  else {
-    return true;
-  }
-}
   
 function evaluatePixel(samples) {
   
