@@ -7,11 +7,11 @@ function setup() {
       bands: [
         "Red",
         "NIR",
-        "dataMask", 
+        "dataMask",
         "UDM2_Clear"
       ]
     }],
-    output:  [
+    output: [
       { id: "default", bands: 4 },
       { id: "index", bands: 1, sampleType: "FLOAT32" },
       { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
@@ -20,28 +20,22 @@ function setup() {
   }
 }
 
-
-  
 function evaluatePixel(samples) {
-  
-    let ndvi = (samples.NIR-samples.Red)/(samples.NIR+samples.Red);
+  let ndvi = (samples.NIR - samples.Red) / (samples.NIR + samples.Red);
+  const indexVal = samples.dataMask === 1 ? ndvi : NaN;
+  const clear = samples.dataMask * samples.UDM2_Clear;
 
-    const indexVal = samples.dataMask === 1 ? ndvi : NaN;
+  let id_default = colorBlend(ndvi, [0.0, 0.5, 1.0],
+    [
+      [1, 0, 0, clear],
+      [1, 1, 0, clear],
+      [0.1, 0.31, 0, clear],
+    ])
 
-const clear = samples.dataMask * samples.UDM2_Clear;
-
-    let id_default = colorBlend(ndvi,  [0.0, 0.5, 1.0],
-      [
-        [1,0,0,clear], 
-        [1,1,0,clear], 
-        [0.1,0.31,0,clear], 
-      ])
-
-      return {
-        default: id_default,
-        index: [indexVal],
-        eobrowserStats: [indexVal, samples.UDM2_Clear],
-        dataMask: [samples.dataMask],
-      };
-
+  return {
+    default: id_default,
+    index: [indexVal],
+    eobrowserStats: [indexVal, samples.UDM2_Clear],
+    dataMask: [samples.dataMask],
+  };
 }
