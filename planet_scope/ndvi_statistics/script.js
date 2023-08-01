@@ -32,9 +32,9 @@ const clear = samples.dataMask * samples.UDM2_Clear;
 
     let id_default = colorBlend(ndvi,  [0.0, 0.5, 1.0],
       [
-        [1,0,0, samples.dataMask * samples.UDM2_Clear], 
-        [1,1,0,samples.dataMask * samples.UDM2_Clear], 
-        [0.1,0.31,0,samples.dataMask * samples.UDM2_Clear], 
+        [1,0,0,clear], 
+        [1,1,0,clear], 
+        [0.1,0.31,0,clear], 
       ])
 
       return {
