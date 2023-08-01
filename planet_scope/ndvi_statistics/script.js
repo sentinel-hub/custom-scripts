@@ -36,7 +36,7 @@ function evaluatePixel(samples) {
 
     const indexVal = samples.dataMask === 1 ? ndvi : NaN;
 
-    const clear = isClear(samples.UDM2_Clear)?0:1
+const clear = samples.dataMask * samples.UDM2_Clear;
 
     let id_default = colorBlend(ndvi,  [0.0, 0.5, 1.0],
       [
