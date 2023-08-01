@@ -40,7 +40,7 @@ const clear = samples.dataMask * samples.UDM2_Clear;
       return {
         default: id_default,
         index: [indexVal],
-        eobrowserStats: [indexVal, clear],
+        eobrowserStats: [indexVal, samples.UDM2_Clear],
         dataMask: [samples.dataMask],
       };
 
