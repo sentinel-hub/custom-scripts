@@ -22,3 +22,4 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Historic NDVI changes with Landsat 4-5 TM and Landsat 8](/data-fusion/historic-landsat-changes)
  - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](/data-fusion/sand-oriented_land_cover_classification_s1_s2)
  - [Thermal visualization and water in wetlands with Landsat 8 L1 & L2](/data-fusion/thermal_visualization_and_water_in_wetlands)
+ - [Land Surface Temperature with S3 SLSTR and OLCI](/sentinel-3/land_surface_temperature)

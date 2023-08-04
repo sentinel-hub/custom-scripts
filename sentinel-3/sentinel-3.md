@@ -46,3 +46,4 @@ Sentinel-3 is a low Earth-orbit moderate size satellite compatible with small la
 - [Active Fire Detection](/slstr/active_fire_points_detection)
 - [False color composite](/slstr/false-color-321)
 - [F1 brightness temperature](/slstr/f1-brightness-temperature)
+- [Land Surface Temperature](/sentinel-3/land_surface_temperature)
