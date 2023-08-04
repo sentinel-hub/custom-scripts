@@ -45,13 +45,12 @@ The Custom Script Repository already contains a popular script for [Land Surface
 5. Paste the code of this script into the code window.
 6. Click the "Refresh Evalscript" button
 
-7. In the script window, you can choose with the "option" parameter whether to output average (option = 0) or maximum (option = 1) land surface temperature. Standard deviation (option = 2) is currently not functional. If you are looking at a single image, choose 0. If you want to look at a timespan, click "Timespan" at the top right of the panel beside the date selector, and set start and end times. Take care to use a timespan with relatively low cloud cover (<5%>).
+7. In the script window, you can choose with the "option" parameter whether to output average (option = 0), maximum (option = 1) or Standard deviation (option = 2) of the land surface temperature. If you are looking at a single image, choose 0. If you want to look at a timespan, click "Timespan" at the top right of the panel beside the date selector, and set start and end times. Take care to use a timespan with relatively low cloud cover (<5%>).
 8. Set minimum and maximum temperatures for the colour ramp. This will decide what temperature you see as white (hot) and black (cold).
 9. If you want, you can also adjust the NDVI value limits for bare soil and vegetation (NDVIs and NDVIv), currently the script uses global values and the emissivity and surface values for various land covers. These were set based on local case studies in the literature.
 
 **Limitations and typical problems:**
 -  The script does not contain any cloud detection -  please use the True Colour visualization to check for clouds. Clouds will turn up as colder (darker) pixels in the image.
-- Standard deviation calculation for land surface temperature is currently not functional, there is still a bug somewhere. Only options 0 and 1 work.
 - These Land Surface Temperature values are not calibrated or tested in any way. The emissivity figures for the individual land cover classes would probably benefit from fine tuning.  
 
 ## Description of representative images
