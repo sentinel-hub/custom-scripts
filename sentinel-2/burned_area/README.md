@@ -14,7 +14,7 @@ nav_exclude: true
  
 ## General description of the script
 
-The script takes two pre-defined dates as an input (in filterScenes) and calculates changes of the [normalised burn ratio index.](https://custom-scripts.sentinel-hub.com/sentinel-2/nbr/){:target="_blank"} [See the discussion here.](https://forum.sentinel-hub.com/t/temporal-analysis-burned-area/83/6){:target="_blank"}
+The script takes two pre-defined dates as an input (in preProcessScenes) and calculates changes of the [normalised burn ratio index.](https://custom-scripts.sentinel-hub.com/sentinel-2/nbr/){:target="_blank"} [See the discussion here.](https://forum.sentinel-hub.com/t/temporal-analysis-burned-area/83/6){:target="_blank"}
 ## Author of the script
 
 Designed by [FC Basson](https://forum.sentinel-hub.com/u/fcbasson/summary){:target="_blank"} and improved by [@Pierre_Markuse and visually](https://twitter.com/Pierre_Markuse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor){:target="_blank"}

@@ -68,18 +68,14 @@ getPsdb=(b,denum,n)=>(Math.log(n*b))/(Math.log(n*denum));
 //SDB calc
 getSdb=(pSDB,m1,m0)=>m1*pSDB-m0;
 //multi-temp. https://bit.ly/2TQJWnU
-function filterScenes(ss,inputMetadata) {
-	return ss.filter(function(s){
-		var sStr=datef(s.date);
-		return(scenes.indexOf(sStr)>=0)?true:false;
-	});
+function preProcessScenes (collections) {
+	collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+		var orbitDateFrom = orbit.dateFrom.split("T")[0];
+		return scenes.includes(orbitDateFrom);
+	})
+	return collections
 }
-function datef(t){
-	var d=t.getDate(),m=t.getMonth()+1,y=t.getFullYear();
-	if(d<10)d='0'+d;
-	if(m<10)m='0'+m;
-	return y+'-'+m+'-'+d;
-}
+
 // setup values
 function setup() {
   return {
