@@ -3,7 +3,7 @@
 //
 // General formula: (NIR/RE)-1
 //
-// URL https://www.indexdatabase.de/db/si-single.php?sensor_id=96&rsindex_id=252
+// doi: 10.1078/0176-1617-00887
 //
 
 let index = (B07 / B05) - 1;
