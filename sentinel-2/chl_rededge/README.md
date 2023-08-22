@@ -17,7 +17,7 @@ $$ChlRe = \frac{NIR}{RE}-1.$$
 ## Evaluate and visualize
  - [EO Browser](https://sentinelshare.page.link/UzJr){:target="_blank"}   
 
-## Reprezentative Images
+## Representative Images
 
 Chlorophyl red edge above Slovenia and Croatia, on 9.7.2020. 
 
