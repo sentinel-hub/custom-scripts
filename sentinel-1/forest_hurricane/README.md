@@ -1,5 +1,5 @@
 ---
-title: ForestHurricane Script
+title: Forest Hurricane Script
 parent: Sentinel-1
 grand_parent: Sentinel
 layout: script
