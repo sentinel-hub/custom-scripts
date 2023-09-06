@@ -1,25 +1,59 @@
-// DEM Color Visualization
 //VERSION=3
-return colorBlend(DEM, [-12000,-9000,-6000,-1000,-500,-200,-50,-20,-10,0,10,30,50,200,300,400,500,1000,3000,5000,7000,9000],
-[[0.000, 0.000, 0.157],
-[0.118, 0.000, 0.353],
-[0.118, 0.118, 0.471],
-[0.157, 0.196, 0.706],
-[0.235, 0.235, 0.902],
-[0.235, 0.314, 0.961],
-[0.353, 0.333, 0.980],
-[0.471, 0.471, 0.922],
-[0.627, 0.627, 1.000],
-[0.784, 0.784, 0.784],
-[0.392, 0.220, 0.235],
-[0.471, 0.180, 0.157],
-[0.549, 0.298, 0.157],
-[0.667, 0.376, 0.000],
-[0.471, 0.220, 0.353],
-[0.824, 0.573, 0.706],
-[0.549, 0.431, 0.000],
-[0.471, 0.549, 0.706],
-[0.627, 0.667, 0.941],
-[0.745, 0.784, 0.980],
-[0.863, 0.941, 1.000],
-[1.000, 1.000, 1.000]])
+// To set custom max and min values, set
+// defaultVis to false and choose your max and
+// min values. The color map will then be scaled
+// to those max and min values
+const defaultVis = true
+const max = 9000
+const min = -9000
+
+function setup() {
+    return {
+        input: ["DEM", "dataMask"],
+        output: { bands: 4, sampleTYPE: "AUTO" },
+    };
+}
+
+function updateMap(max, min) {
+    const numIntervals = map.length
+    const intervalLength = (max - min) / (numIntervals - 1);
+    for (let i = 0; i < numIntervals; i++) {
+        map[i][0] = max - intervalLength * i
+    }
+}
+
+const map = [
+    [9000, 0xffffff],
+    [7000, 0xdcefff],
+    [5000, 0xbdc7f9],
+    [3000, 0x9faaef],
+    [1000, 0x788bb4],
+    [500, 0x8b6d00],
+    [400, 0xd292b4],
+    [300, 0x78385a],
+    [200, 0xaa5f00],
+    [50, 0x8b4b28],
+    [30, 0x782d28],
+    [10, 0x63383b],
+    [0, 0xc7c7c7],
+    [-10, 0x9f9fff],
+    [-20, 0x7878eb],
+    [-50, 0x5a54f9],
+    [-200, 0x3b50f5],
+    [-500, 0x3b3be6],
+    [-1000, 0x2831b4],
+    [-6000, 0x1e1e78],
+    [-9000, 0x1e005a],
+    [-12000, 0x000028],
+];
+
+if (!defaultVis) updateMap(max, min);
+const visualizer = new ColorRampVisualizer(map);
+
+function evaluatePixel(sample) {
+    let val = sample.DEM;
+    let imgVals = visualizer.process(val)
+
+    // Return the 4 inputs and define content for each one
+    return [...imgVals, sample.dataMask]
+}
