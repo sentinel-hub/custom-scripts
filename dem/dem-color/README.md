@@ -14,7 +14,7 @@ nav_exclude: true
 
 ## Description
 
-This script returns a color visualization of digital elevation model, assigning continuous colors to the elevation borders. 
+This script returns a color visualization of a digital elevation model, assigning continuous colors to the elevation borders. 
 
 It is possible to set custom min and max values in the evalscript by setting `defaultVis` to `false` and setting the min and max variables to the desired values.
 
