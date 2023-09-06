@@ -2,11 +2,10 @@
 title: Normalized difference vegetation index, PlanetScope
 parent: PlanetScope
 grand_parent: Planet
-layout: script
+layout: two_scripts
 permalink: /planet_scope/ndvi/
 nav_exclude: true
 ---
-
 
 ## Evaluate and visualize
 
