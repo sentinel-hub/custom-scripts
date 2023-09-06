@@ -10,7 +10,11 @@ const min = -9000
 function setup() {
     return {
         input: ["DEM", "dataMask"],
-        output: { bands: 4, sampleTYPE: "AUTO" },
+        output: [
+            { id: "default", bands: 4, sampleTYPE: 'AUTO' },
+            { id: "index", bands: 1, sampleType: 'FLOAT32' },
+            { id: "dataMask", bands: 1 }
+        ]
     };
 }
 
@@ -24,27 +28,27 @@ function updateMap(max, min) {
 
 const map = [
     [9000, 0xffffff],
-    [7000, 0xf9f9f9],
-    [5000, 0xf5f5f5],
-    [3000, 0xebebeb],
-    [1000, 0xe0e0e0],
-    [500, 0xd6d6d6],
-    [400, 0xc7c7c7],
-    [300, 0xb4b4b4],
-    [200, 0x9f9f9f],
-    [50, 0x8b8b8b],
-    [30, 0x828282],
-    [10, 0x6d6d6d],
-    [0, 0x636363],
-    [-10, 0x5a5a5a],
-    [-20, 0x545454],
-    [-50, 0x505050],
-    [-200, 0x4a4a4a],
-    [-500, 0x464646],
-    [-1000, 0x3d3d3d],
-    [-5000, 0x373737],
-    [-9000, 0x181818],
-    [-12000, 0x000000],
+    [7000, 0xdcefff],
+    [5000, 0xbdc7f9],
+    [3000, 0x9faaef],
+    [1000, 0x788bb4],
+    [500, 0x8b6d00],
+    [400, 0xd292b4],
+    [300, 0x78385a],
+    [200, 0xaa5f00],
+    [50, 0x8b4b28],
+    [30, 0x782d28],
+    [10, 0x63383b],
+    [0, 0xc7c7c7],
+    [-10, 0x9f9fff],
+    [-20, 0x7878eb],
+    [-50, 0x5a54f9],
+    [-200, 0x3b50f5],
+    [-500, 0x3b3be6],
+    [-1000, 0x2831b4],
+    [-6000, 0x1e1e78],
+    [-9000, 0x1e005a],
+    [-12000, 0x000028],
 ];
 
 if (!defaultVis) updateMap(max, min);
@@ -55,5 +59,9 @@ function evaluatePixel(sample) {
     let imgVals = visualizer.process(val)
 
     // Return the 4 inputs and define content for each one
-    return [...imgVals, sample.dataMask]
+    return {
+        default: [...imgVals, sample.dataMask],
+        index: [val],
+        dataMask: [sample.dataMask]
+    };
 }

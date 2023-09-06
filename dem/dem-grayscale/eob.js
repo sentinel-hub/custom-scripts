@@ -10,7 +10,11 @@ const min = -9000
 function setup() {
     return {
         input: ["DEM", "dataMask"],
-        output: { bands: 4, sampleTYPE: "AUTO" },
+        output: [
+            { id: "default", bands: 4, sampleTYPE: 'AUTO' },
+            { id: "index", bands: 1, sampleType: 'FLOAT32' },
+            { id: "dataMask", bands: 1 }
+        ]
     };
 }
 
@@ -55,5 +59,9 @@ function evaluatePixel(sample) {
     let imgVals = visualizer.process(val)
 
     // Return the 4 inputs and define content for each one
-    return [...imgVals, sample.dataMask]
+    return {
+        default: [...imgVals, sample.dataMask],
+        index: [val],
+        dataMask: [sample.dataMask]
+    };
 }
