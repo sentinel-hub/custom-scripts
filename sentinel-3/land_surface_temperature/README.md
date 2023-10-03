@@ -57,7 +57,7 @@ The Custom Script Repository already contains a popular script for [Land Surface
 
 | Land Surface Temperatures in Western Hungary under heatwave conditions on 16 August 2022 |
 | :----------------------------------------------------------------------------------: |
-|  !['Land Surface Temperatures in Western Hungary during August 16 2022'](img\2022-08-16-00_heatwave_hungary.jpg)  |
+|  !['Land Surface Temperatures in Western Hungary during August 16 2022'](img/2022-08-16-00_heatwave_hungary.jpg)  |
 
 On this image, the colour scale is stretched between 15 and 40 °C. Sentinel-3 overpasses are typically around 10:00, so not the hottest time of the day, yet already temperatures around 40°C can be observed especially in the lowland agricultural areas. Forests and especially lakes and rivers are substantially cooler. The coldest spots are small clouds - in these cases the sensor images the temperature of the cloud and not the land surface.
 

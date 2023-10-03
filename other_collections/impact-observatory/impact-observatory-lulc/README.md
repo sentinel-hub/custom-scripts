@@ -86,7 +86,7 @@ Table 1: Color legend for the 10m Annual Land Use Land Cover Map.
 
 ## Resources
 
-- [Data source](https://www.impactobservatory.com/global_maps/)
+- [Data source](https://www.impactobservatory.com/maps-for-good/)
 
 - [Entry in public collections](https://collections.sentinel-hub.com/impact-observatory-lulc-map/)
 

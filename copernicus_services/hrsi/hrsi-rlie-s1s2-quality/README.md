@@ -64,6 +64,6 @@ Table 1: Classification classes and colouring scheme.
 
 ## Resources
 
-- [Data source](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/ice-products/ice-cover)
+- [Data source](https://land.copernicus.eu/en/products/water-bodies/high-resolution-river-and-lake-ice-extent)
 - [Quality assessment report](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-qar)
 - [Product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)
