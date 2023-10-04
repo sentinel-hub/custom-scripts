@@ -23,51 +23,116 @@ figure.highlight>button {
     opacity:0.5;
 }
 
-.tabcontainer {
-    border-radius: 3px;
-    background-color: $code-background-color;
-    box-shadow: 0 0 5px RGBa(0, 0, 0, 0.1);
-    margin-top: 1em;
-}
+
+div.highlighter-rouge > button:focus, div.listingblock > div.content > button:focus, figure.highlight > button:focus { opacity: 1; }
+div.highlighter-rouge > button:hover, div.listingblock > div.content > button:hover, figure.highlight > button:hover {opacity: 1 !important; cursor: copy !important;}
+div.highlighter-rouge:hover > button, div.listingblock > div.content:hover > button, figure.highlight:hover > button { opacity: 0.5 }
+div.highlighter-rouge > button svg, div.listingblock > div.content > button svg, figure.highlight > button svg { fill: none !important; }
+
+// .tabcontainer {
+//     border-radius: 3px;
+//     background-color: $code-background-color;
+//     box-shadow: 0 0 5px RGBa(0, 0, 0, 0.1);
+//     margin-top: 1em;
+//     position: relative;
+// }
+
+// .tab {
+//     border-top-left-radius: 3px;
+//     border-top-right-radius: 3px;
+//     background-color: white;
+//     overflow: hidden;
+// }
+
+// .tab button {
+//     background-color: inherit;
+//     float: left;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     height: 3.5em; 
+//     padding: 0px 16px;
+//     transition: 0.25s ease;
+//     border-bottom: 2px solid $sidebar-color;
+// }
+
+// .tab button:hover {
+//     border-bottom: 2px solid $feedback-color;
+//     transition: 0.25s ease;
+// }
+
+// .tab button.active {
+//     border-bottom: 2px solid $btn-primary-color;
+// }
+
+// .tab button.download {
+//     background-color: $btn-primary-color;
+//     float: right;
+// }
+
+// .tabcontent {
+//     border-radius: 3px;
+//     display: none;
+//     padding: 6px 12px;
+//     border-top: none;
+//     height: 200px; 
+//     overflow: auto;
+// }
 
 .tab {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: white;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    padding: 0;
+    list-style: none;
+    position: relative;
 }
 
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+.tab > * {
+    flex: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tab > * > a {
+    display: block;
+    text-align: center;
+    padding: 9px 20px;
+    color: #999;
+    border-bottom: 2px solid transparent;
+    border-bottom-color: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .1s ease-in-out;
+    line-height: 20px;
+}
+
+.tab > li::before {
+    display: none
+}
+
+.tab > .active > a {
+    color:#222;
+    border-color: #1e87f0;
+}
+
+.tab > li > a {
+    text-decoration: none;
     cursor: pointer;
-    height: 3.5em; 
-    padding: 0px 16px;
-    transition: 0.25s ease;
-    border-bottom: 2px solid $sidebar-color;
 }
 
-.tab button:hover {
-    border-bottom: 2px solid $feedback-color;
-    transition: 0.25s ease;
+.tab-content {
+    padding: 0;
 }
 
-.tab button.active {
-    border-bottom: 2px solid $btn-primary-color;
-}
-
-.tab button.download {
-    background-color: $btn-primary-color;
-    float: right;
-}
-
-.tabcontent {
-    border-radius: 3px;
+.tab-content > li {
     display: none;
-    padding: 6px 12px;
-    border-top: none;
-    height: 200px; 
-    overflow: auto;
+}
+
+.tab-content > li::before {
+    display: none
+}
+
+.tab-content > li.active {
+    display: initial;
 }

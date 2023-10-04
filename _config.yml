@@ -27,3 +27,4 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-tabs
