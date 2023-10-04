@@ -27,6 +27,7 @@ figure.highlight>button {
     border-radius: 3px;
     background-color: $code-background-color;
     box-shadow: 0 0 5px RGBa(0, 0, 0, 0.1);
+    margin-top: 1em;
 }
 
 .tab {
@@ -42,7 +43,8 @@ figure.highlight>button {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    height: 3.5em; 
+    padding: 0px 16px;
     transition: 0.25s ease;
     border-bottom: 2px solid $sidebar-color;
 }
@@ -66,4 +68,6 @@ figure.highlight>button {
     display: none;
     padding: 6px 12px;
     border-top: none;
+    height: 200px; 
+    overflow: auto;
 }
