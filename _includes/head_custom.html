@@ -6,6 +6,18 @@
 {% endcase %}
 
 <script>
+    function toggleScript() {
+        const button = document.getElementById('toggle-script');
+        const script = document.getElementById('script');
+        if (script.style.display === 'none') {
+            script.style.display = 'block';
+            button.innerHTML = 'Hide Script';
+        } else {
+            script.style.display = 'none';
+            button.innerHTML = 'Show Script';
+        }
+    }
+    
     function expand() {
         const container = document.querySelector('.tabcontainer');
         const button = document.querySelector('.expand');
