@@ -4,4 +4,3 @@ gem "just-the-docs", "0.4.2"
 gem "webrick"
 gem "rake"
 gem "html-proofer", git: "https://github.com/jonasViehweger/html-proofer"
-gem "jekyll-tabs", group: :jekyll_plugins
