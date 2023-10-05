@@ -6,15 +6,18 @@
 {% endcase %}
 
 <script>
-    function toggleScript() {
-        const button = document.getElementById('toggle-script');
-        const script = document.getElementById('script');
-        if (script.style.display === 'none') {
-            script.style.display = 'block';
-            button.innerHTML = 'Hide Script';
+    function expand() {
+        const container = document.querySelector('.tabcontainer');
+        const button = document.querySelector('.expand');
+        const expandedHeight = "auto";
+        if (container.style.height === expandedHeight) {
+            container.style.height = "250px";
+            button.innerHTML = 'Show full evalscript';
+            document.documentElement.style.setProperty("--fade-height", "100px");
         } else {
-            script.style.display = 'none';
-            button.innerHTML = 'Show Script';
+            container.style.height = expandedHeight;
+            button.innerHTML = 'Collapse evalscript';
+            document.documentElement.style.setProperty("--fade-height", "60px");
         }
     }
 

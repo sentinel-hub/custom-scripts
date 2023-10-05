@@ -18,9 +18,12 @@
             copyButton.addEventListener('click', function () {
                 if (timeout === null) {
                     var code = (codeBlock.querySelector('pre:not(.lineno, .highlight)') || codeBlock.querySelector('code')).innerText;
+                    code = code.replace(/\n/g, "%0D%0A"); 
 
                     // create an anchor element that we can programmatically click
                     const a = document.createElement('a');
+
+                    console.log(code)
 
                     // set up a data uri with the text
                     a.href = `data:text/plain,${code}`;
@@ -45,6 +48,8 @@
                 }
             });
         });
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
 
     });
 })(window.jtd = window.jtd || {});

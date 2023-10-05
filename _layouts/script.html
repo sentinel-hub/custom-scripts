@@ -4,52 +4,34 @@ layout: default
 
 <h1 class="d-inline" id={{page.slug}}> {{page.title}} </h1>
 
-<script src="/assets/js/tabs.js"></script>
-
-<!-- {% assign paths = page.dir | remove_first: "/" | split: "/" | join: "-"%}
-<p class="mt-lg-4">
-    <button class="btn btn-primary" id="toggle-script" onclick="toggleScript()">Show Script</button> 
-    <a href="{{ page.dir | append: 'script.js' }}" class="btn" target="_blank" download="{{paths | append: '.js'}}">Download Script</a>
-</p> -->
-
-<!-- <div id="script" style="display:none;"> 
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
-</div> -->
-
 <!-- Tab links -->
 <div class="tabcontainer">
 <div class="tab", id="script">
-    <button class="tablinks" onclick="openTab(event, 'S1')" id="defaultOpen">Script 1</button>
-    <button class="tablinks" onclick="openTab(event, 'S2')">Script 2</button>
-    <button class="tablinks download" onclick="openTab(event, 'S1')">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    </button>
+    <button class="tablinks" onclick="openTab(event, 'Visualization')" id="defaultOpen">Visualization</button>
+{% for script in page.scripts %}
+    <button class="tablinks" onclick="openTab(event, '{{ script[0] }}')">{{ script[0] }}</button>
+{% endfor %}
 </div>
 
 <div class="line"></div>
+<div id="Visualization" class="tabcontent">
+{% highlight javascript %}
+{% include_relative script.js %}
+{% endhighlight %}
+</div>
 
+{% for script in page.scripts %}
+{% assign file = script[1] %}
 <!-- Tab content -->
-<div id="S1" class="tabcontent">
+<div id="{{ script[0] }}" class="tabcontent">
 {% highlight javascript %}
-{% include_relative script.js %}
+{% include_relative {{ file }} %}
 {% endhighlight %}
 </div>
+{% endfor %}
 
-<div id="S2" class="tabcontent">
+<button class="expand" onclick="expand(event)">Show full evalscript</button>
 
-HELLO!
-
-{% highlight javascript %}
-{% include_relative script.js %}
-{% endhighlight %}
 </div>
-</div>
-
-<script>
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
 
 {{content}}
