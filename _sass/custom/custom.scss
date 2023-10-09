@@ -2,6 +2,114 @@
     vertical-align: top;
 }
 
-@media (min-width: 50rem) { .main-header { height: 100px;} }
-.site-header { min-height: 100px;  }
-.highlight ::selection { background-color: #a2b228; }
+@media (min-width: 50rem) {
+    .main-header {
+        height: 100px;
+    }
+}
+
+.site-header {
+    min-height: 100px;
+}
+
+.highlight ::selection {
+    background-color: #a2b228;
+}
+
+div.highlighter-rouge>button,
+div.listingblock>div.content>button,
+figure.highlight>button {
+    width:1rem;
+    opacity:0.5;
+}
+
+
+div.highlighter-rouge > button:focus, div.listingblock > div.content > button:focus, figure.highlight > button:focus { opacity: 1; }
+div.highlighter-rouge > button:hover, div.listingblock > div.content > button:hover, figure.highlight > button:hover {opacity: 1 !important; cursor: copy !important;}
+div.highlighter-rouge:hover > button, div.listingblock > div.content:hover > button, figure.highlight:hover > button { opacity: 0.5 }
+div.highlighter-rouge > button svg, div.listingblock > div.content > button svg, figure.highlight > button svg { fill: none !important; }
+
+.tabcontainer {
+    border-radius: 3px;
+    background-color: $code-background-color;
+    box-shadow: 0 0 5px RGBa(0, 0, 0, 0.1);
+    margin-top: 1em;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    padding-bottom: 1.5em;
+    transition: height .5s ease;
+}
+
+.tab {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 3.5em; 
+    padding: 0px 16px;
+    transition: 0.25s ease;
+    border-bottom: 2px solid $sidebar-color;
+}
+
+.tab button:hover {
+    border-bottom: 3px solid $feedback-color;
+    transition: 0.25s ease;
+}
+
+.tab button.active {
+    border-bottom: 3px solid $btn-primary-color;
+}
+
+.tab button.download {
+    background-color: $btn-primary-color;
+    float: right;
+}
+
+:root {
+    --fade-height: 110px;
+}
+.tabcontent {
+    border-radius: 3px;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: var(--fade-height);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50% );
+      }
+}
+
+.expand { 
+    position: absolute; 
+    bottom: 0px;  
+    margin-bottom: 1em; 
+    left: 50%;
+    transform: translateX(-50%);
+    appearance: none;
+    background: rgba($btn-primary-color, 0.1);
+    color: $btn-primary-color;
+    display: inline-flex;
+    height: 26px;
+    text-decoration: none;
+    line-height: 26px;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 0px solid $btn-primary-color;
+}
+
+.expand:hover {background:rgba($btn-primary-color, 0.2)}

@@ -7,7 +7,6 @@ permalink: /planet_scope/ndvi/
 nav_exclude: true
 ---
 
-
 ## Evaluate and visualize
 
 As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials. 
