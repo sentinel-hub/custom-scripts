@@ -24,11 +24,11 @@
         const expandedHeight = "auto";
         if (container.style.height === expandedHeight) {
             container.style.height = "250px";
-            button.innerHTML = 'Show full evalscript';
+            button.innerHTML = 'Show full evalscript <span class="chevron bottom"></span>';
             document.documentElement.style.setProperty("--fade-height", "100px");
         } else {
             container.style.height = expandedHeight;
-            button.innerHTML = 'Collapse evalscript';
+            button.innerHTML = 'Collapse evalscript <span class="chevron up"></span>';
             document.documentElement.style.setProperty("--fade-height", "60px");
         }
     }
