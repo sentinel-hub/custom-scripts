@@ -2,7 +2,7 @@
 title: Example product
 parent: Contribute
 
-layout: multiscript
+layout: script
 permalink: /contribute/example-multi/
 nav_exclude: true
 scripts:
