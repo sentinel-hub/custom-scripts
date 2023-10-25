@@ -5,11 +5,15 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/ndvi_difference/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
 
 
 ## Evaluate and visualize
-- [EO Browser](https://sentinelshare.page.link/3jcr)
+- [EO Browser](https://sentinelshare.page.link/xc8s)
 
 **Note**: The default output in the script is the visualisation layer for the EO Browser generated via the [ColorRampVisualizer](https://docs.sentinel-hub.com/api/latest/evalscript/functions/#colorrampvisualizer) which interpolates the range of NDVI difference from -2 to 2 with the color ramps defined below. The actual value of the NDVI difference can be obtained from the output `index`.
 
@@ -21,13 +25,13 @@ nav_exclude: true
   </tr>
   <tr>
     <td>-2</td>
-    <td>#d01c8b</td>
-    <td style="background-color: #d01c8b;"></td>
+    <td>#8e0152</td>
+    <td style="background-color: #8e0152;"></td>
   </tr>
   <tr>
     <td>-1</td>
-    <td>#f1b6da</td>
-    <td style="background-color: #f1b6da;"></td>
+    <td>#c51b7d</td>
+    <td style="background-color: #c51b7d;"></td>
   </tr>
   <tr>
     <td>0</td>
@@ -36,13 +40,13 @@ nav_exclude: true
   </tr>
   <tr>
     <td>1</td>
-    <td>#b8e186</td>
-    <td style="background-color: #b8e186;"></td>
+    <td>#4d9221</td>
+    <td style="background-color: #4d9221;"></td>
   </tr>
   <tr>
     <td>2</td>
-    <td>#4dac26</td>
-    <td style="background-color: #4dac26;"></td>
+    <td>#276419</td>
+    <td style="background-color: #276419;"></td>
   </tr>
 </table>
 
@@ -60,4 +64,4 @@ Chung-Xiang Hong
 
 ## Description of representative images
 The following image shows the NDVI difference between the latest acquisition and the acquisition 10-day prior to the latest one during the time period from 29th of June, 2023 to 29th July, 2023.
-![NDVI difference example](fig/ndvi_difference_pink_green.jpg)
+![NDVI difference example](fig/ndvi_difference_pink_green.png)

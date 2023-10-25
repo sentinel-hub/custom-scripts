@@ -5,6 +5,9 @@ grand_parent: Planet
 layout: script
 permalink: /planet_scope/ndvi/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
 ---
 
 ## Evaluate and visualize
