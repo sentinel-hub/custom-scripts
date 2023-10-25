@@ -9,10 +9,10 @@ layout: default
 <div class="tab", id="script">
 
 {% for script in page.scripts %}
-<button class="tablinks" onclick="openTab(event, '{{ script[0] }}' {%- if forloop.first -%} id="defaultOpen" {%- endif -%})">{{ script[0] }}</button>
+<button class="tablinks" onclick="openTab(event, '{{ script[0] }}')" {%- if forloop.first -%} id="defaultOpen" {%- endif -%}>{{ script[0] }}</button>
 {% else %}
 <!-- This will be carried out by default if page.scripts is empty -->
-<button class="tablinks" onclick="openTab(event, 'Evalscript')" id="defaultOpen">Script</button>
+<button class="tablinks" onclick="openTab(event, 'Evalscript')" id="defaultOpen">Evalscript</button>
 {% endfor %}
 </div>
 
