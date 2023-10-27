@@ -60,6 +60,7 @@ Before you create the PR you can check if everything looks right on the website.
 ```
 source 'https://rubygems.org'
 gem "github-pages", "~> GH_VERSION", group: :jekyll_plugins
+gem "just-the-docs"
 ```
 
 Replace `GH_VERSION` with the version number that is displayed next to github-pages [here](https://pages.github.com/versions/). 
