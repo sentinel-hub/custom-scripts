@@ -2,11 +2,12 @@
 title: Example product
 parent: Contribute
 
-layout: multiscript
+layout: script
 permalink: /contribute/example-multi/
 nav_exclude: true
 scripts:
-    - [EO-Browser, eob.js]
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
     - [Raw Values, raw.js]
 ---
 

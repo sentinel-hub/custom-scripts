@@ -1,13 +1,18 @@
 //VERSION=3
 // Script to extract NDVI difference between the latest acquisition and the acquisition 10-day prior to the latest within a specified time range
-// Returns visualized RGB values
+// To be used on EO Browser. Makes statistics work in EOB
 function setup() {
     return {
         input: [{
             bands: ["B04", "B08", "SCL", "dataMask"],
             units: "DN"
         }],
-        output: { bands: 4 },
+        output: [
+            { id: "default", bands: 4 },
+            { id: "index", bands: 1, sampleType: "FLOAT32" },
+            { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
+            { id: "dataMask", bands: 1 }
+        ],
         mosaicking: Mosaicking.ORBIT
     }
 
@@ -34,7 +39,12 @@ function evaluatePixel(samples) {
     let imgVals = visualizer.process(diff);
     imgVals.push(dataMask)
 
-    return imgVals
+    return {
+        default: imgVals,
+        index: [diff],
+        eobrowserStats: [diff, isCloud(samples.SCL) ? 1 : 0],
+        dataMask: [dataMask]
+    };
 }
 
 function preProcessScenes(collections) {
@@ -66,4 +76,25 @@ function preProcessScenes(collections) {
         return [latest.dateFrom, closest.dateFrom].includes(orbitDateFrom);
     })
     return collections
+}
+
+function isCloud(scl) {
+    if (scl == 3) { // SC_CLOUD_SHADOW
+        return false;
+    } else if (scl == 9) { // SC_CLOUD_HIGH_PROBA
+        return true;
+    } else if (scl == 8) { // SC_CLOUD_MEDIUM_PROBA
+        return true;
+    } else if (scl == 7) { // SC_CLOUD_LOW_PROBA
+        return false;
+    } else if (scl == 10) { // SC_THIN_CIRRUS
+        return true;
+    } else if (scl == 11) { // SC_SNOW_ICE
+        return false;
+    } else if (scl == 1) { // SC_SATURATED_DEFECTIVE
+        return false;
+    } else if (scl == 2) { // SC_DARK_FEATURE_SHADOW
+        return false;
+    }
+    return false;
 }

@@ -25,7 +25,7 @@ figure.highlight>button {
 
 
 div.highlighter-rouge > button:focus, div.listingblock > div.content > button:focus, figure.highlight > button:focus { opacity: 1; }
-div.highlighter-rouge > button:hover, div.listingblock > div.content > button:hover, figure.highlight > button:hover {opacity: 1 !important; cursor: copy !important;}
+div.highlighter-rouge > button:hover, div.listingblock > div.content > button:hover, figure.highlight > button:hover {opacity: 1 !important; cursor: pointer !important;}
 div.highlighter-rouge:hover > button, div.listingblock > div.content:hover > button, figure.highlight:hover > button { opacity: 0.5 }
 div.highlighter-rouge > button svg, div.listingblock > div.content > button svg, figure.highlight > button svg { fill: none !important; }
 
@@ -49,6 +49,7 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
 }
 
 .tab button {
+    color: $body-heading-color;
     background-color: inherit;
     float: left;
     border: none;
@@ -106,10 +107,34 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
     height: 26px;
     text-decoration: none;
     line-height: 26px;
-    padding: 0 14px;
+    padding: 0px 20px 0px 14px;
     font-size: 14px;
     border-radius: 3px;
     border: 0px solid $btn-primary-color;
 }
 
-.expand:hover {background:rgba($btn-primary-color, 0.2)}
+.expand:hover {
+    background:rgba($btn-primary-color, 0.2);
+    cursor: pointer
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.2em 0.2em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.5em;
+	position: relative;
+	top: 0.8em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.bottom:before {
+	top: 0.5em;
+	transform: rotate(135deg);
+}
+
+

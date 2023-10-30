@@ -3,6 +3,11 @@
 
         var codeBlocks = document.querySelectorAll('div.highlighter-rouge, div.listingblock > div.content, figure.highlight');
 
+        var copyButtons = document.querySelectorAll('div.highlighter-rouge>button, div.listingblock > div.content>button, figure.highlight>button');
+        copyButtons.forEach(copyButton => {
+            copyButton.title = 'Copy code';
+        })
+
         // note: the SVG svg-copied and svg-copy is only loaded as a Jekyll include if site.enable_copy_code_button is true; see _includes/icons/icons.html
         var svgCDownload = '<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
 
@@ -13,6 +18,7 @@
             copyButton.type = 'button';
             copyButton.ariaLabel = 'Download code';
             copyButton.innerHTML = svgCDownload;
+            copyButton.title = 'Download code'
             codeBlock.append(copyButton);
 
             copyButton.addEventListener('click', function () {
