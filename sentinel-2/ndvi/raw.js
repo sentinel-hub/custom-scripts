@@ -11,5 +11,5 @@ function setup() {
 }
 
 function evaluatePixel(samples) {
-    return index(samples.B08, samples.B04)
+    return [index(samples.B08, samples.B04)]
 }
