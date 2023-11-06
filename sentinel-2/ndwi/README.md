@@ -5,7 +5,13 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/ndwi/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
+
+# TODO Add CDSE link
 
 
 ## Evaluate and visualize
