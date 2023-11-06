@@ -5,7 +5,13 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/ndvi/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
+
+# TODO update links to shortlinks, add CDSE example, update example image, change table
 
 
 ## Evaluate and visualize
