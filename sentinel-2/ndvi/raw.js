@@ -1,5 +1,4 @@
 //VERSION=3
-
 function setup() {
     return {
         input: ["B04", "B08"],

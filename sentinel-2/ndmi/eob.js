@@ -1,7 +1,18 @@
 //VERSION=3
+const moistureRamps = [
+    [-0.8, 0x800000],
+    [-0.24, 0xff0000],
+    [-0.032, 0xffff00],
+    [0.032, 0x00ffff],
+    [0.24, 0x0000ff],
+    [0.8, 0x000080]
+];
+
+const viz = new ColorRampVisualizer(moistureRamps);
+
 function setup() {
     return {
-        input: ["B03", "B04", "B08", "dataMask"],
+        input: ["B03", "B04", "B8A", "B11", "dataMask"],
         output: [
             { id: "default", bands: 4 },
             { id: "index", bands: 1, sampleType: "FLOAT32" },
@@ -11,41 +22,13 @@ function setup() {
     };
 }
 
-const ramp = [
-    [-0.5, 0x0c0c0c],
-    [-0.2, 0xbfbfbf],
-    [-0.1, 0xdbdbdb],
-    [0, 0xeaeaea],
-    [0.025, 0xfff9cc],
-    [0.05, 0xede8b5],
-    [0.075, 0xddd89b],
-    [0.1, 0xccc682],
-    [0.125, 0xbcb76b],
-    [0.15, 0xafc160],
-    [0.175, 0xa3cc59],
-    [0.2, 0x91bf51],
-    [0.25, 0x7fb247],
-    [0.3, 0x70a33f],
-    [0.35, 0x609635],
-    [0.4, 0x4f892d],
-    [0.45, 0x3f7c23],
-    [0.5, 0x306d1c],
-    [0.55, 0x216011],
-    [0.6, 0x0f540a],
-    [1, 0x004400],
-];
-
-const visualizer = new ColorRampVisualizer(ramp);
-
 function evaluatePixel(samples) {
-    let val = index(samples.B08, samples.B04);
+    let val = index(samples.B8A, samples.B11);
     // The library for tiffs works well only if there is only one channel returned.
     // So we encode the "no data" as NaN here and ignore NaNs on frontend.
     const indexVal = samples.dataMask === 1 ? val : NaN;
-    const imgVals = visualizer.process(val);
-
     return {
-        default: imgVals.concat(samples.dataMask),
+        default: [...viz.process(val), samples.dataMask],
         index: [indexVal],
         eobrowserStats: [val, isCloud(samples) ? 1 : 0],
         dataMask: [samples.dataMask]

@@ -1,10 +1,7 @@
-//VERSION=3
-//This script was converted from v1 to v3 using the converter API
+//VERSION 3
 function setup() {
     return {
-        input: [{
-            bands: ["B03", "B08"]
-        }],
+        input: ["B03", "B08"],
         output: {
             bands: 1,
             sampleType: "FLOAT32"
