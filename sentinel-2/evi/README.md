@@ -14,7 +14,7 @@ scripts:
 ## Evaluate and visualize
 
  - [EO Browser](https://sentinelshare.page.link/NnPE){:target="_blank"}
- - [Copernicus Browser](link.dataspace.copernicus.eu/kkf){:target="_blank"}
+ - [Copernicus Browser](https://link.dataspace.copernicus.eu/kkf){:target="_blank"}
 
 ## General description of the script
 
