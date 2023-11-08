@@ -14,5 +14,5 @@ function evaluatePixel(samples) {
     let m = 1 - dop;
     //depolarization within the vegetation
     let value = (Math.sqrt(dop)) * ((4 * (samples.VH)) / (samples.VV + samples.VH));
-    return value
+    return [value]
 }
