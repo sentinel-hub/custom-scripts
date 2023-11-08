@@ -18,6 +18,10 @@ scripts:
 
 ## General description of the script
 
+For Sentinel-2, the index looks like this:
+
+$$EVI = \frac{B8-B4}{B8+6*B6-7.5*B2} + 1$$ 
+
 In areas of dense canopy cover, where leaf area index (LAI) is high, the blue wavelengths can be used to improve the accuracy of NDVI, as it corrects for soil background signals and atmospheric influences.
 
 Values description: The range of values for EVI is -1 to 1, with healthy vegetation generally around 0.20 to 0.80.
