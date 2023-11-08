@@ -23,7 +23,7 @@ For Sentinel-2, the index looks like this:
 
 $$NDCI = \frac{B5-B4}{B5+B4}$$  
 
-NDCI is an index that aims to predict the plant chlorophyll content in turbid productive waters. It is calculated using the red spectral band B04 with the red edge spectral band B05. 
+NDCI is an index that aims to predict the chlorophyll content in turbid productive waters. It is calculated using the red spectral band B04 with the red edge spectral band B05. 
 
 ## Description of representative images
 

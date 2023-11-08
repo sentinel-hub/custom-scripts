@@ -19,7 +19,7 @@ scripts:
 
 ## General description of the script
 
-The goal of the script is to calculate the Radar Vegetation Index for Sentinel-1 (RVI4S1) like dual-pol SAR data. In this script, we utilize Sentinel-1 GRD products as input and calculate the RVI4S1 index for monitoring crop growth. The theoretical value of this index ranges from 0 to 1. The bare soil or pure elementary targets indicate a very low RVI4S1 index towards zero. Conversely, a fully developed crop canopy advance the index towards 1. Zero is indicated by pink, whereas red indicates RVI4S1 == 1.0.
+The goal of the script is to calculate the Radar Vegetation Index for Sentinel-1 (RVI4S1) like dual-pol SAR data. In this script, we utilize Sentinel-1 GRD products as input and calculate the RVI4S1 index for monitoring crop growth. The theoretical value of this index ranges from 0 to 1. The bare soil or pure elementary targets indicate a very low RVI4S1 index towards zero. Conversely, a fully developed crop canopy advance the index towards 1. Zero is indicated by pink, whereas green indicates RVI4S1 == 1.0.
 
 ## Details of the script
 
