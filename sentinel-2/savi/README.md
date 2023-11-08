@@ -26,11 +26,6 @@ SAVI visualized image, Italy. Acquired on 25.05.2020, processed by Sentinel Hub.
 
 ![SAVI](fig/fig1.png)
 
-**COLOR legend**
-
-![legend](fig/legend.png)
-
-
 ## References
 
 [Wikipedia article on Soil adjusted vegetation index](https://en.wikipedia.org/wiki/Soil-adjusted_vegetation_index){:target="_blank"}

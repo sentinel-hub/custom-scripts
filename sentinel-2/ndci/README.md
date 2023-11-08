@@ -5,20 +5,25 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/ndci/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
 
 
 ## Evaluate and visualize
 
-- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.2267&lng=11.9675&zoom=11&time=2019-12-10&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=ICAgICAgLyoKTm9ybWFsaXplZCBkaWZmZXJlbmNlIGNobG9yb3BoeWwgaW5kZXgKaHR0cHM6Ly9wZGZzLnNlbWFudGljc2Nob2xhci5vcmcvMmZiYS9jYWExNGFkYjQzZDViYzhkMmRkMjc0MzA0ZjYwODE0ZDkzM2MucGRmCmh0dHBzOi8vd3d3LnNjaWVuY2VkaXJlY3QuY29tL3NjaWVuY2UvYXJ0aWNsZS9waWkvUzAzODAxMzMwMTgzMDE4MDEgCmh0dHBzOi8vd3d3LnJlc2VhcmNoZ2F0ZS5uZXQvcHVibGljYXRpb24vMjk3NzE4OTY0X0NvbXBhcmlzb25fb2Zfc2F0ZWxsaXRlX3JlZmxlY3RhbmNlX2FsZ29yaXRobXNfZm9yX2VzdGltYXRpbmdfY2hsb3JvcGh5bGwtYV9pbl9hX3RlbXBlcmF0ZV9yZXNlcnZvaXJfdXNpbmdfY29pbmNpZGVudF9oeXBlcnNwZWN0cmFsX2FpcmNyYWZ0X2ltYWdlcnlfYW5kX2RlbnNlX2NvaW5jaWRlbnRfc3VyZmFjZV9vYnNlcnZhdGlvbnMgCiovCgovL3doaXRlIGNvbG9yIHJlcHJlc2VudHMgcGl4ZWxzIHdpdGggbm8gZGF0YQppZiAoKEIwNStCMDQpPT0wKXsgCiAgcmV0dXJuIFsxLDEsMV0KfTsKdmFyIHZhbCA9IChCMDUtQjA0KS8oQjA1K0IwNCk7CgpyZXR1cm4gY29sb3JCbGVuZAooCiAgdmFsLAogIFstMC41LDAsMC4xLDAuMiwwLjMsMV0sCiAgWwogICBbMCwwLDFdLAogICBbMCwwLjUsMC41XSwKICAgWzEsMC4zLDBdLAogICBbMSwxLDBdLAogICBbMC4yLDAuOCwwXSwKICAgWzAsMC41LDBdCiAgXQopOw%3D%3D){:target="_blank"}
-- [SH Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.834525693732765&lng=12.385025024414062&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=9&gain=1.0&gamma=1.0&time=2019-05-01%7C2019-11-20&atmFilter=&showDates=false&evalscript=ICAgICAgLyoKTm9ybWFsaXplZCBkaWZmZXJlbmNlIGNobG9yb3BoeWwgaW5kZXgKaHR0cHM6Ly9wZGZzLnNlbWFudGljc2Nob2xhci5vcmcvMmZiYS9jYWExNGFkYjQzZDViYzhkMmRkMjc0MzA0ZjYwODE0ZDkzM2MucGRmCmh0dHBzOi8vd3d3LnNjaWVuY2VkaXJlY3QuY29tL3NjaWVuY2UvYXJ0aWNsZS9waWkvUzAzODAxMzMwMTgzMDE4MDEgCmh0dHBzOi8vd3d3LnJlc2VhcmNoZ2F0ZS5uZXQvcHVibGljYXRpb24vMjk3NzE4OTY0X0NvbXBhcmlzb25fb2Zfc2F0ZWxsaXRlX3JlZmxlY3RhbmNlX2FsZ29yaXRobXNfZm9yX2VzdGltYXRpbmdfY2hsb3JvcGh5bGwtYV9pbl9hX3RlbXBlcmF0ZV9yZXNlcnZvaXJfdXNpbmdfY29pbmNpZGVudF9oeXBlcnNwZWN0cmFsX2FpcmNyYWZ0X2ltYWdlcnlfYW5kX2RlbnNlX2NvaW5jaWRlbnRfc3VyZmFjZV9vYnNlcnZhdGlvbnMgCiovCgovL3doaXRlIGNvbG9yIHJlcHJlc2VudHMgcGl4ZWxzIHdpdGggbm8gZGF0YQppZiAoKEIwNStCMDQpPT0wKXsgCiAgcmV0dXJuIFsxLDEsMV0KfTsKdmFyIHZhbCA9IChCMDUtQjA0KS8oQjA1K0IwNCk7CgpyZXR1cm4gY29sb3JCbGVuZAooCiAgdmFsLAogIFstMC41LDAsMC4xLDAuMiwwLjMsMV0sCiAgWwogICBbMCwwLDFdLAogICBbMCwwLjUsMC41XSwKICAgWzEsMC4zLDBdLAogICBbMSwxLDBdLAogICBbMC4yLDAuOCwwXSwKICAgWzAsMC41LDBdCiAgXQopOw%3D%3D){:target="_blank"}
+- [EO Browser](https://sentinelshare.page.link/azCy){:target="_blank"}
+- [Copernicus Browser](https://link.dataspace.copernicus.eu/edr){:target="_blank"}
 
 ## General description of the script
-NDCI is an index that aims to predict the plant chlorophyll content. It is calculated using the red spectral band B04 with the red edge spectral band B05. 
+
+NDCI is an index that aims to predict the plant chlorophyll content in turbid productive waters. It is calculated using the red spectral band B04 with the red edge spectral band B05. 
 
 ## Description of representative images
 
-Visualization of the NDCI index above Rome.
+Visualization of the NDCI index September 2021 over Pyramid Lake Nevada.
 ![NDCI](fig/fig1.png)
 
 ## References
