@@ -20,7 +20,7 @@ scripts:
 
 For Sentinel-2, the index looks like this:
 
-$$SAVI = \frac{B8-B4}{B8+B4+L} * (1+L)$$ 
+$$SAVI = \frac{B8-B4}{B8+B4+L} \cdot (1+L)$$ 
 
 where $L$ is the soil brightness correction factor and could range from (0 -1).
 
