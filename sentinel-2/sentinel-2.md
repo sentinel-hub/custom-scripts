@@ -85,7 +85,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Snow classifier](/sentinel-2/snow_classifier/)
  - [Monthly snow report](/sentinel-2/monthly_snow_report)
  - [Snow cover change detection](/sentinel-2/snow_cover_change)
- - [NDSI Visualized](/sentinel-2/ndsi-visualized) - Visualized normalized difference snow index 
+ - [NDSI Visualized](/sentinel-2/ndsi) - Visualized normalized difference snow index 
 
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](/sentinel-2/deep_moist_convection)

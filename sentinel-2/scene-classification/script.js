@@ -1,55 +1,28 @@
 //VERSION=3
-
- function RGBToColor (r, g, b,dataMask){
-	return [r/255, g/255, b/255,dataMask];
-}
-
 function setup() {
-   return {
-    input: ["SCL","dataMask"],
-    output: { bands: 4 }
+  return {
+    input: ["SCL", "dataMask"],
+    output: { bands: 4, sampleType: "UINT8" }
   };
 }
 
+const classes = {
+  0: [0, 0, 0], // No Data (Missing data) - black  
+  1: [255, 0, 0], // Saturated or defective pixel - red 
+  2: [47, 47, 47], // Topographic casted shadows ("Dark features/Shadows" for data before 2022-01-25) - very dark grey
+  3: [100, 50, 0], // Cloud shadows - dark brown
+  4: [0, 160, 0], // Vegetation - green
+  5: [255, 230, 90], // Not-vegetated - dark yellow
+  6: [0, 0, 255], // Water (dark and bright) - blue
+  7: [128, 128, 128], // Unclassified - dark grey
+  8: [192, 192, 192], // Cloud medium probability - grey
+  9: [255, 255, 255], // Cloud high probability - white
+  10: [100, 200, 255], // Thin cirrus - very bright blue
+  11: [255, 150, 255], // Snow or ice - very bright pink
+}
+
 function evaluatePixel(samples) {
-    const SCL=samples.SCL;
-    switch (SCL) {
-    // No Data (Missing data) - black   
-    case 0: return RGBToColor (0, 0, 0,samples.dataMask);
-        
-    // Saturated or defective pixel - red 
-    case 1: return RGBToColor (255, 0, 0,samples.dataMask);
-
-    // Topographic casted shadows ("Dark features/Shadows" for data before 2022-01-25) - very dark grey
-    case 2: return RGBToColor (47,  47,  47,samples.dataMask);
-        
-    // Cloud shadows - dark brown
-    case 3: return RGBToColor (100, 50, 0,samples.dataMask);
-        
-    // Vegetation - green
-    case 4: return RGBToColor (0, 160, 0,samples.dataMask);
-        
-    // Not-vegetated - dark yellow
-    case 5: return RGBToColor (255, 230, 90,samples.dataMask);
-        
-    // Water (dark and bright) - blue
-    case 6: return RGBToColor (0, 0, 255,samples.dataMask);
-    
-    // Unclassified - dark grey
-    case 7: return RGBToColor (128, 128, 128,samples.dataMask);
-    
-    // Cloud medium probability - grey
-    case 8: return RGBToColor (192, 192, 192,samples.dataMask);
-        
-    // Cloud high probability - white
-    case 9: return RGBToColor (255, 255, 255,samples.dataMask);
-    
-    // Thin cirrus - very bright blue
-    case 10: return RGBToColor (100, 200, 255,samples.dataMask);
-        
-    // Snow or ice - very bright pink
-    case 11: return RGBToColor (255, 150, 255,samples.dataMask);
-
-    default : return RGBToColor (0, 0, 0,samples.dataMask);  
-    }
+  // return black if key not available
+  let imgVals = classes[samples.SCL] || [0, 0, 0];
+  return imgVals.concat(samples.dataMask * 255);
 }
