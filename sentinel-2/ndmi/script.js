@@ -12,12 +12,13 @@ const viz = new ColorRampVisualizer(moistureRamps);
 
 function setup() {
    return {
-       input: ["B8A", "B11", "dataMask"],
-       output: { bands: 4 }
+      input: ["B8A", "B11", "dataMask"],
+      output: { bands: 4 }
    };
 }
 
 function evaluatePixel(samples) {
    let val = index(samples.B8A, samples.B11);
-   return [...viz.process(val), samples.dataMask];
+   let imgVals = viz.process(val);
+   return imgVals.concat(samples.dataMask);
 }

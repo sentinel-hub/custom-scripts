@@ -2,7 +2,7 @@
 function setup() {
   return {
     input: ["SCL", "dataMask"],
-    output: { bands: 4 }
+    output: { bands: 4, sampleType: "UINT8" }
   };
 }
 
@@ -23,8 +23,6 @@ const classes = {
 
 function evaluatePixel(samples) {
   // return black if key not available
-  let imgVals = classes[samples.SCL];
-  if (imgVals == undefined) imgVals = [0, 0, 0];
-  // scale to 0-1
-  return imgVals.map(x => x / 0xFF).concat(samples.dataMask);
+  let imgVals = classes[samples.SCL] || [0, 0, 0];
+  return imgVals.concat(samples.dataMask * 255);
 }

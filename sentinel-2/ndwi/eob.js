@@ -10,7 +10,7 @@ let viz = new ColorRampVisualizer(ramp);
 
 function setup() {
     return {
-        input: ["B03", "B08", "SCL", "dataMask"],
+        input: ["B03", "B04", "B08", "dataMask"],
         output: [
             { id: "default", bands: 4 },
             { id: "index", bands: 1, sampleType: "FLOAT32" },
@@ -25,13 +25,12 @@ function evaluatePixel(samples) {
     // The library for tiffs works well only if there is only one channel returned.
     // So we encode the "no data" as NaN here and ignore NaNs on frontend.
     const indexVal = samples.dataMask === 1 ? val : NaN;
-
-    const imgVals = [...viz.process(val), samples.dataMask];
+    let imgVals = viz.process(val);
 
     return {
-        default: imgVals,
+        default: imgVals.concat(samples.dataMask),
         index: [indexVal],
-        eobrowserStats: [val, isCloud(samples.SCL) ? 1 : 0],
+        eobrowserStats: [val, isCloud(samples) ? 1 : 0],
         dataMask: [samples.dataMask]
     };
 }

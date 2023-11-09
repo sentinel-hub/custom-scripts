@@ -3,7 +3,7 @@
 // Data requirements: Sentinel-1 GRD data
 function setup() {
     return {
-        input: ["VV", "VH", "dataMask"],
+        input: ["VV", "VH"],
         output: { bands: 1, sampleType: "FLOAT32" }
     };
 }

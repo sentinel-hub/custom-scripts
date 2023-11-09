@@ -8,7 +8,7 @@
 
 function setup() {
     return {
-        input: ["B01", "B02", "B03", "B04", "B08", "B8A", "B11", "B12", "dataMask"],
+        input: ["B02", "B03", "B04", "B08", "B8A", "B11", "B12", "dataMask"],
         output: { bands: 4 }
     };
 }

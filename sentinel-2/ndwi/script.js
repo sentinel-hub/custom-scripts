@@ -1,7 +1,7 @@
 //VERSION 3
 function setup() {
   return {
-    input: ["B03", "B08"],
+    input: ["B03", "B08", "dataMask"],
     output: { bands: 3 }
   }
 }
@@ -15,6 +15,7 @@ const ramp = [
 let viz = new ColorRampVisualizer(ramp);
 
 function evaluatePixel(samples) {
-  var val = index(samples.B03, samples.B08);
-  return viz.process(val);
+  const val = index(samples.B03, samples.B08);
+  let imgVals = viz.process(val);
+  return imgVals.concat(samples.dataMask);
 }
