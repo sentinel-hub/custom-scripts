@@ -5,10 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/ulyssys_water_quality_viewer/
 nav_exclude: true
+scripts:
+    - [Version 1, script.js]
+    - [Version 3, eob.js]
 ---
 
 
 [Show](dist/script.min.js) minified, optimized script (recommended for usage).
+
+{: .note}
+
+The Sentinel 3 Version of this script can be found [here](/sentinel-3/ulyssys_water_quality_viewer/).  
+Version 1 works for both Sentinel 2 and Sentinel 3 as is. Version 3 adds support for advanced EO-Browser features like statistics and point information.
 
 | Timelapse (2019) of Lake Balaton with Sentinel-2 and Sentinel-3 imagery side by side |
 | :----------------------------------------------------------------------------------: |
@@ -21,21 +29,23 @@ nav_exclude: true
 
 1. Visit one of the following example sites or find your own area of interest:
    - Lake Balaton, Hungary, Europe (2019-09-05)
-     - [EO Browser](https://tinyurl.com/stdt8q9) (Sentinel-2)
-     - [Sentinel-hub Playground](https://tinyurl.com/u4tlenl) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/r9vmpfd) (Sentinel-3)
+     - [EO Browser](https://sentinelshare.page.link/9G2H) 
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/927)
    - Lake Pontchartrain, Louisiana, USA (2020-01-06)
-     - [EO Browser](https://tinyurl.com/vwtv4ql) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/uw339kd) (Sentinel-3)
+     - [EO Browser](https://sentinelshare.page.link/fvRa) 
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/oxf)
    - Balaclava Island, Australia (2019-09-05)
-     - [EO Browser](https://tinyurl.com/wabpktf) (Sentinel-2)
+     - [EO Browser](https://sentinelshare.page.link/ie6i) 
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/lp1)
    - Tsimlyansk Reservoir, Russia (2019-09-05)
-     - [EO Browser](https://tinyurl.com/vnt2ona)
+     - [EO Browser](https://sentinelshare.page.link/wRdt)
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/nxd)
    - North Azadegan Oil Field, Iraqian/Iranian border (2019-09-08)
-     - [EO Browser](https://tinyurl.com/v4yptnt) (Sentinel-2)
-     - [EO Browser](https://tinyurl.com/whkgzlz) (Sentinel-3)
+     - [EO Browser](https://sentinelshare.page.link/BzWn)
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/oz0)
    - Lake Francis Case, South Dakota, USA (2019-09-13)
-     - [EO Browser](https://tinyurl.com/w7rphzg) (Sentinel-2)
+     - [EO Browser](https://sentinelshare.page.link/XMiM)
+     - [Copernicus Browser](https://link.dataspace.copernicus.eu/5nm)
 2. Interpret what you see
 3. Modify the values in the `PARAMS` object according to your needs (for possible values see `Understanding and fine tuning PARAMS`)
 4. Hit `Refresh` after modifying any of the properties !['Refresh'](assets/refresh_button.png)

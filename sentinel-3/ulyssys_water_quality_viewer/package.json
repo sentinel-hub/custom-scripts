@@ -1,0 +1,24 @@
+{
+  "name": "uwqv",
+  "version": "1.0.0",
+  "description": "Ulyssys Water Quality Viewer - Water quality visualization script for Sentinel-2 and Sentinel-3 imagery data",
+  "scripts": {
+    "watch": "npm-watch",
+    "minify": "node src/npm_scripts/minify.js"
+  },
+  "watch": {
+    "minify": "src/script.js"
+  },
+  "contributors": [
+    "András Zlinszky PhD",
+    "Gergely Padányi-Gulyás"
+  ],
+  "license": "CC-BY-2.5",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "linereader": "^1.1.0",
+    "minify": "^5.0.0",
+    "npm-watch": "^0.6.0",
+    "os": "^0.1.1"
+  }
+}
