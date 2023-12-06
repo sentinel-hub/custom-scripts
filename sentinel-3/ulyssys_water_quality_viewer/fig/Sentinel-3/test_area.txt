@@ -1,0 +1,1 @@
+https://apps.sentinel-hub.com/eo-browser/?lat=46.8794&lng=17.7106&zoom=11&time=2018-08-16&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B04,B03,B02&evalscript=cmV0dXJuIFtCMDQqMi41LEIwMyoyLjUsQjAyKjIuNV07
