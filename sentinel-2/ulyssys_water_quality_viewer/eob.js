@@ -297,11 +297,12 @@ function getValue(params, samples) {
   // Decide whether the pixel can be assumed as water
   // Return background layer if it is not water
   const waterMask = !isWater(indices.watermask, params.watermaskIndices, params.waterMax, params.cloudMax, isSentinel3, samples)
+  const dummyOut = Array(nOut).fill(NaN);
   if (waterMask) {
     return {
       default: backgroundLayer,
-      index: [0],
-      eobrowserStats: [NaN, NaN, 0],
+      index: dummyOut,
+      eobrowserStats: dummyOut.concat(0),
       dataMask: [0]
     };
   }
@@ -309,8 +310,8 @@ function getValue(params, samples) {
   if (foreground !== 'default') {
     return {
       default: getForeground(foreground, backgroundLayer, indices.natural, foregroundOpacity, samples),
-      index: [0],
-      eobrowserStats: [NaN, NaN, 0],
+      index: dummyOut,
+      eobrowserStats: dummyOut.concat(0),
       dataMask: [0]
     };
   }
