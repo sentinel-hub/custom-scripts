@@ -356,7 +356,7 @@ function getValue(params, samples) {
   return {
     default: imgVals,
     index: outIndices,
-    eobrowserStats: outIndices.concat(isPureWater(isSentinel3, samples)),
+    eobrowserStats: outIndices.concat(isCloud(params.cloudMax, isSentinel3, samples)),
     dataMask: [samples.dataMask]
   };
 }
