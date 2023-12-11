@@ -1,13 +1,17 @@
 //VERSION=3
-
 const defaultVis = true
-const max = 0
-const min = 100
+const max = 30
+const min = 0
 
 function setup() {
     return {
         input: ["CH", "dataMask"],
-        output: { bands: 4, sampleTYPE: "AUTO" },
+        output: [
+            { id: "default", bands: 4 },
+            { id: "index", bands: 1, sampleType: "UINT8" },
+            { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
+            { id: "dataMask", bands: 1 }
+        ]
     };
 }
 
@@ -33,5 +37,10 @@ function evaluatePixel(sample) {
     let val = sample.CH;
     let imgVals = visualizer.process(val)
 
-    return [...imgVals, sample.dataMask]
+    return {
+        default: imgVals.concat(sample.dataMask),
+        index: [val],
+        eobrowserStats: [val],
+        dataMask: [sample.dataMask]
+    };
 }

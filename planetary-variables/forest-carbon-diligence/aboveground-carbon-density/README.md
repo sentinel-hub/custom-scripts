@@ -5,6 +5,10 @@ grand_parent: Planetary Variables
 layout: script
 permalink: /forest-carbon-diligence/aboveground-carbon-density/
 nav_exclude: true
+scripts:
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
 
 
