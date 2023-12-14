@@ -7,7 +7,7 @@ nav_exclude: false
 ---
 
 ## Evaluate and visualize
-As Soil Water Content (SWC) is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playground links are not possible due to the personalized data credentials.
+As Soil Water Content is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playground links are not possible due to the personalized data credentials.
 
 ## General description
 Soil Water Content (SWC) measures the amount of water in a unit volume of soil, which is crucial information for drought monitoring, water management, and climate risk assessment.
@@ -19,7 +19,7 @@ This script provides 4 outputs. The `default` output is for visualizing SWC in E
 ## Description of representative images
 Soil Water Content (L band 100 m) on Sep 30th, 2023 near Hanover, Germany.
 
-![Soil Water Content Example](fig/swc.jpg)
+![Soil Water Content example](fig/swc.jpg)
 
 ## References
 - [Product specifications](https://planet.widen.net/s/5xtzljjwgg)

@@ -6,24 +6,10 @@ function setup() {
     return {
         input: ["SWC", "dataMask"],
         output: [
-            {
-                id: "default",
-                bands: 4
-            },
-            {
-                id: "index",
-                bands: 1,
-                sampleType: 'FLOAT32'
-            },
-            {
-                id: "eobrowserStats",
-                bands: 2,
-                sampleType: 'FLOAT32'
-            },
-            {
-                id: "dataMask",
-                bands: 1
-            }
+            { id: "default", bands: 4 },
+            { id: "index", bands: 1, sampleType: 'FLOAT32' },
+            { id: "eobrowserStats", bands: 2, sampleType: 'FLOAT32' },
+            { id: "dataMask", bands: 1 }
         ]
     };
 }
