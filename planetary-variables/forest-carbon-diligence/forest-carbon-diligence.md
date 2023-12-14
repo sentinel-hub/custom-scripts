@@ -3,6 +3,7 @@ layout: default
 title: Forest Carbon Diligence
 nav_order: 1
 parent: Planetary Variables
+grand_parent: Planet
 permalink: /planetary-variables/forest-carbon-diligence/
 ---
 

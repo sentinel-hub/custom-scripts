@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Planetary Variables
-nav_order: 7
+nav_order: 3
 has_children: true
-permalink: /planetary-variables/
+parent: Planet
+permalink: planetary-variables/
 ---
 
 # Planetary Variables
