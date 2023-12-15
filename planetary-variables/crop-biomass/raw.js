@@ -6,8 +6,8 @@ function setup() {
   };
 }
 
-let factor = 1/1000;
+let factor = 1 / 1000;
 function evaluatePixel(sample) {
-	return [sample.CH*factor]
-    };
+  return [sample.CH * factor]
+};
 
