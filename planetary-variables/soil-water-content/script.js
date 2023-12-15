@@ -8,7 +8,7 @@ function setup() {
         output: [
             { id: "default", bands: 4 },
             { id: "index", bands: 1, sampleType: 'FLOAT32' },
-            { id: "eobrowserStats", bands: 2, sampleType: 'FLOAT32' },
+            { id: "eobrowserStats", bands: 1, sampleType: 'FLOAT32' },
             { id: "dataMask", bands: 1 }
         ]
     };
@@ -53,12 +53,11 @@ function evaluatePixel(sample) {
     let scaleFactor = 1000
     let val = sample.SWC / scaleFactor;
 
-    [r, g, b] = visualizer.process(val);
-    let imgVals = [r, g, b, sample.dataMask];
+    let imgVals = visualizer.process(val);
     return {
-        default: imgVals,
+        default: [...imgVals, sample.dataMask],
         index: [val],
-        eobrowserStats: [val, sample.dataMask],
+        eobrowserStats: [val],
         dataMask: [sample.dataMask]
     };
 }

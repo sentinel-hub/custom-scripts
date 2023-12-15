@@ -15,7 +15,7 @@ function setup() {
         input: [variable, "dataMask"],
         output: [{ id: "default", bands: 4 },
         { id: "index", bands: 1, sampleType: 'FLOAT32' },
-        { id: "eobrowserStats", bands: 2, sampleType: 'FLOAT32' },
+        { id: "eobrowserStats", bands: 1, sampleType: 'FLOAT32' },
         { id: "dataMask", bands: 1 }],
         mosaicking: "TILE"
     };
@@ -90,10 +90,9 @@ function evaluatePixel(samples) {
     }
 
     // Display
-    [r, g, b] = visualizer.process(indexVal);
-    let imgVals = [r, g, b, datamask];
+    let imgVals = visualizer.process(indexVal);
     return {
-        default: imgVals,
+        default: [...imgVals, datamask],
         index: [array],
         eobrowserStats: [indexVal, datamask],
         dataMask: [datamask]
