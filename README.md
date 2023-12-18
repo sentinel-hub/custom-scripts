@@ -1,7 +1,5 @@
 # Sentinel Hub Custom Script Repository
 
----
-
 ![Examples of visualizations](assets/images/custom-scripts-examples.jpg)
 
 This repository contains a collection of custom scripts for [Sentinel Hub](https://www.sentinel-hub.com/), which can be fed to the services via the URL.
