@@ -1,7 +1,5 @@
 # Sentinel Hub Custom Script Repository
 
-# Collection of custom scripts
-
 ---
 
 ![Examples of visualizations](assets/images/custom-scripts-examples.jpg)
