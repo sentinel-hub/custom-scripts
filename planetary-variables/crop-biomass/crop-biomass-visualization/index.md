@@ -1,13 +1,13 @@
 ---
 title: Crop Biomass
 nav_order: 2
-parent: Planetary Variables
+parent: Crop Biomass
+grand_parent: Planetary Variables
 layout: script
-permalink: /planetary-variables/crop-biomass/
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+  - [Visualization, script.js]
+  - [EO Browser, eob.js]
+  - [Raw Values, raw.js]
 ---
 
 ## Evaluate and visualize
@@ -26,10 +26,8 @@ This is a relative measure of biomass, so each pixel value has a value of 0 (low
 
 It should be computed over agricultural fields.
 
-
 ## Description of representative images
 
 Crop Biomass of agriculture fields in Uruguay.
 
 ![Various fields over Uruguay](fig/fig1.png)
-
