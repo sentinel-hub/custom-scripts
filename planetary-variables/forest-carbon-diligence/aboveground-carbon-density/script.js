@@ -1,5 +1,4 @@
 //VERSION=3
-
 const defaultVis = true
 const max = 175
 const min = 0

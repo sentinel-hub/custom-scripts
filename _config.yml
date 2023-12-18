@@ -8,6 +8,8 @@ url: https://custom-scripts.sentinel-hub.com
 math: mathjax
 enable_copy_code_button: true
 
+exclude: ["README.md"]
+
 logo: "/assets/images/sentinel_hub_logo_with_custom_scripts.png"
 favicon_ico: "/assets/images/public_favicon.ico"
 

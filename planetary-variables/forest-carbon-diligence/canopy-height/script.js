@@ -1,7 +1,7 @@
 //VERSION=3
 const defaultVis = true
-const max = 0
-const min = 30
+const max = 30
+const min = 0
 
 function setup() {
     return {
