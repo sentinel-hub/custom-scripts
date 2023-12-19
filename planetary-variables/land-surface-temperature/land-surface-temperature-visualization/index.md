@@ -4,6 +4,10 @@ grand_parent: Planetary Variables
 parent: Land Surface Temperature
 layout: script
 nav_exclude: false
+scripts:
+  - [Visualization, script.js]
+  - [EO Browser, eob.js]
+  - [Raw Values, raw.js]
 ---
 
 ## Evaluate and visualize

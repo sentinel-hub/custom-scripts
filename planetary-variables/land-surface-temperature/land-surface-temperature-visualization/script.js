@@ -13,10 +13,7 @@ const variable = "LST" // LST or LST_MaskedPixels
 function setup() {
     return {
         input: [variable, "dataMask"],
-        output: [{ id: "default", bands: 4 },
-        { id: "index", bands: 1, sampleType: 'FLOAT32' },
-        { id: "eobrowserStats", bands: 1, sampleType: 'FLOAT32' },
-        { id: "dataMask", bands: 1 }],
+        output: { bands: 4 },
         mosaicking: "TILE"
     };
 }
@@ -91,10 +88,5 @@ function evaluatePixel(samples) {
 
     // Display
     let imgVals = visualizer.process(indexVal);
-    return {
-        default: [...imgVals, datamask],
-        index: [array],
-        eobrowserStats: [indexVal, datamask],
-        dataMask: [datamask]
-    };
+    return [...imgVals, datamask];
 }
