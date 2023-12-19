@@ -7,5 +7,5 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-    return [sample.ACD]
+    return [sample.ACD];
 }
