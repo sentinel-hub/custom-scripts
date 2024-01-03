@@ -20,8 +20,6 @@ Land Surface Temperature (LST) is the thermodynamic temperature of Earth’s sur
 
 Planet's LST product provides near real-time measurements twice a day at 1:30 and 13:30 solar local time and at spatial resolutions of 100 m and 1000 m. It is unhindered by clouds and has a long and consistent data record of more than 20 years. Please check [here](https://docs.sentinel-hub.com/api/latest/data/planet/land-surface-temp/#available-bands) for a list of available bands.
 
-This script provides 4 outputs. The `default` output is for visualizing LST in EO Browser. The `index` output is the actual value of the LST. The `eobrowserStats` and `dataMask` outputs are configured to activate the statistical features in EO Browser.
-
 ## Description of representative images
 
 Land Surface Temperature (100 m) on Oct 8, 2023 at 13:30 near Hanover, Germany.
