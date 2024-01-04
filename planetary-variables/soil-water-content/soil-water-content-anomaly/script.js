@@ -1,6 +1,11 @@
-const vmin = -1;
-const vmax = 1;
+// Visualization
+const vmin = -2;
+const vmax = 2;
+// tolerance in either direction, so i.e. +- 1 days
+const toleranceDays = 1;
+
 const band = "SWC";
+const NODATA = -32768;
 
 function setup() {
     return {
@@ -10,10 +15,6 @@ function setup() {
     };
 }
 
-const NODATA = -32768;
-
-// tolerance in either direction, so i.e. +- 5 days
-const toleranceDays = 1;
 const msInDay = 24 * 60 * 60 * 1000;
 const msInYear = 365.25 * msInDay;
 const msInHalfYear = msInYear / 2;
@@ -28,27 +29,17 @@ function updateColormap(vmin, vmax) {
 }
 
 const cmap = [
-    [0.0, 0xfff7ea],
-    [0.05, 0xfaedda],
-    [0.1, 0xede4cb],
-    [0.15, 0xdedcbd],
-    [0.2, 0xced3af],
-    [0.25, 0xbdcba3],
-    [0.3, 0xaac398],
-    [0.35, 0x96bc90],
-    [0.4, 0x80b48a],
-    [0.45, 0x68ac86],
-    [0.5, 0x4da484],
-    [0.55, 0x269c83],
-    [0.6, 0x009383],
-    [0.65, 0x008a85],
-    [0.7, 0x008186],
-    [0.75, 0x007788],
-    [0.8, 0x006d8a],
-    [0.85, 0x00618c],
-    [0.9, 0x00558d],
-    [0.95, 0x00478f],
-    [1.0, 0x003492],
+    [-3, 0x67001f],
+    [-2, 0xb2182b],
+    [-1, 0xd6604d],
+    [-0.5, 0xf4a582],
+    [-0.25, 0xfddbc7],
+    [0, 0xf7f7f7],
+    [0.25, 0xd1e5f0],
+    [0.5, 0x92c5de],
+    [1, 0x4393c3],
+    [2, 0x2166ac],
+    [3, 0x053061],
 ];
 
 updateColormap(vmin, vmax);
