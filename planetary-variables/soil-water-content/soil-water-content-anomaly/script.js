@@ -1,8 +1,11 @@
-//VERSION=3
+const vmin = -1;
+const vmax = 1;
+const band = "SWC";
+
 function setup() {
     return {
-        input: ["B04", "B08", "CLM", "dataMask"],
-        output: { bands: 1 },
+        input: [band, "dataMask"],
+        output: { bands: 4 },
         mosaicking: "ORBIT",
     };
 }
@@ -10,11 +13,46 @@ function setup() {
 const NODATA = -32768;
 
 // tolerance in either direction, so i.e. +- 5 days
-const toleranceDays = 5;
+const toleranceDays = 1;
 const msInDay = 24 * 60 * 60 * 1000;
 const msInYear = 365.25 * msInDay;
 const msInHalfYear = msInYear / 2;
 const toleranceMs = toleranceDays * msInDay;
+
+function updateColormap(vmin, vmax) {
+    const numIntervals = cmap.length;
+    const intervalLength = (vmax - vmin) / (numIntervals - 1);
+    for (let i = 0; i < numIntervals; i++) {
+        cmap[i][0] = vmin + intervalLength * i;
+    }
+}
+
+const cmap = [
+    [0.0, 0xfff7ea],
+    [0.05, 0xfaedda],
+    [0.1, 0xede4cb],
+    [0.15, 0xdedcbd],
+    [0.2, 0xced3af],
+    [0.25, 0xbdcba3],
+    [0.3, 0xaac398],
+    [0.35, 0x96bc90],
+    [0.4, 0x80b48a],
+    [0.45, 0x68ac86],
+    [0.5, 0x4da484],
+    [0.55, 0x269c83],
+    [0.6, 0x009383],
+    [0.65, 0x008a85],
+    [0.7, 0x008186],
+    [0.75, 0x007788],
+    [0.8, 0x006d8a],
+    [0.85, 0x00618c],
+    [0.9, 0x00558d],
+    [0.95, 0x00478f],
+    [1.0, 0x003492],
+];
+
+updateColormap(vmin, vmax);
+const visualizer = new ColorRampVisualizer(cmap);
 
 var metadata = undefined;
 
@@ -63,29 +101,6 @@ function updateOutputMetadata(scenes, inputMetadata, outputMetadata) {
     outputMetadata.userData = metadata;
 }
 
-function calcNDVI(sample) {
-    return index(sample.B08, sample.B04);
-}
-
-function calcMaxMin(samples) {
-    let ndvi = calcNDVI(samples[0]);
-    let max = ndvi;
-    let min = ndvi;
-    for (let i = 1; i < samples.length; ++i) {
-        ndvi = calcNDVI(samples[i]);
-        if (ndvi > max) {
-            max = ndvi;
-        } else if (ndvi < min) {
-            min = ndvi;
-        }
-    }
-    return [max, min];
-}
-
-function isClear(sample) {
-    return sample.CLM == 0 && sample.dataMask == 1;
-}
-
 function sum(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
@@ -98,20 +113,23 @@ function mean(array) {
     return sum(array) / array.length;
 }
 
-function evaluatePixel(samples) {
-    // if the first value isn't clear, stop
-    if (!isClear(samples[0])) {
-        return [NODATA];
+function std(array, mean) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += Math.pow(array[i] - mean, 2);
     }
-    const clearTs = samples.filter(isClear);
-    const observed = index(clearTs[0].B08, clearTs[0].B04);
-    let max = NODATA,
-        min = NODATA,
-        vci = NODATA;
-    if (clearTs.length > 0) {
-        [max, min] = calcMaxMin(clearTs);
-        vci = (observed - min) / (max - min);
-    }
+    return Math.sqrt(sum / array.length - 1);
+}
 
-    return [vci];
+function evaluatePixel(samples) {
+    const values = samples
+        .filter((sample) => sample.dataMask)
+        .map((sample) => sample[band]);
+    if (values.length === 0) return [0, 0, 0, 0];
+    const valsMean = mean(values);
+    const valsStd = std(values, valsMean);
+    const anomaly = samples[0][band] - valsMean;
+    const val = anomaly / valsStd;
+    let imgVals = visualizer.process(val);
+    return [...imgVals, samples[0].dataMask];
 }

@@ -1,16 +1,16 @@
-//VERSION=3
+const band = "SWC";
+const NODATA = -32768;
+// tolerance in either direction, so i.e. +- 5 days
+const toleranceDays = 1;
+
 function setup() {
     return {
-        input: ["B04", "B08", "CLM", "dataMask"],
-        output: { bands: 1 },
+        input: [band, "dataMask"],
+        output: { bands: 1, sampleType: "FLOAT32" },
         mosaicking: "ORBIT",
     };
 }
 
-const NODATA = -32768;
-
-// tolerance in either direction, so i.e. +- 5 days
-const toleranceDays = 5;
 const msInDay = 24 * 60 * 60 * 1000;
 const msInYear = 365.25 * msInDay;
 const msInHalfYear = msInYear / 2;
@@ -63,29 +63,6 @@ function updateOutputMetadata(scenes, inputMetadata, outputMetadata) {
     outputMetadata.userData = metadata;
 }
 
-function calcNDVI(sample) {
-    return index(sample.B08, sample.B04);
-}
-
-function calcMaxMin(samples) {
-    let ndvi = calcNDVI(samples[0]);
-    let max = ndvi;
-    let min = ndvi;
-    for (let i = 1; i < samples.length; ++i) {
-        ndvi = calcNDVI(samples[i]);
-        if (ndvi > max) {
-            max = ndvi;
-        } else if (ndvi < min) {
-            min = ndvi;
-        }
-    }
-    return [max, min];
-}
-
-function isClear(sample) {
-    return sample.CLM == 0 && sample.dataMask == 1;
-}
-
 function sum(array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
@@ -98,20 +75,21 @@ function mean(array) {
     return sum(array) / array.length;
 }
 
-function evaluatePixel(samples) {
-    // if the first value isn't clear, stop
-    if (!isClear(samples[0])) {
-        return [NODATA];
+function std(array, mean) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += Math.pow(array[i] - mean, 2);
     }
-    const clearTs = samples.filter(isClear);
-    const observed = index(clearTs[0].B08, clearTs[0].B04);
-    let max = NODATA,
-        min = NODATA,
-        vci = NODATA;
-    if (clearTs.length > 0) {
-        [max, min] = calcMaxMin(clearTs);
-        vci = (observed - min) / (max - min);
-    }
+    return Math.sqrt(sum / array.length - 1);
+}
 
-    return [vci];
+function evaluatePixel(samples) {
+    const values = samples
+        .filter((sample) => sample.dataMask)
+        .map((sample) => sample[band]);
+    if (values.length === 0) return [NODATA];
+    const valsMean = mean(values);
+    const valsStd = std(values, valsMean);
+    const anomaly = samples[0][band] - valsMean;
+    return [anomaly / valsStd];
 }
