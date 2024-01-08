@@ -85,9 +85,12 @@ function std(array, mean) {
 }
 
 function evaluatePixel(samples) {
-    const values = samples
-        .filter((sample) => sample.dataMask)
-        .map((sample) => sample[band]);
+    const values = [];
+    for (let i = samples.length; i--; ) {
+        if (samples[i].dataMask) {
+            values.push(samples[i][band]);
+        }
+    }
     if (values.length === 0) return [NODATA];
     const valsMean = mean(values);
     const valsStd = std(values, valsMean);
