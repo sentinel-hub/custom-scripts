@@ -56,3 +56,4 @@ The different times in the day can be selected in the evalscript by changing the
 -   [Product specifications](https://planet.widen.net/s/tltwk6hnps)
 -   [Data sheet](https://planet.widen.net/s/ttvp2rvwzd)
 -   [Sentinel Hub documentation about Land Surface Temperature](https://docs.sentinel-hub.com/api/latest/data/planetary-variables/land-surface-temp/)
+-   [Medium Blog on LST anomalies](https://medium.com/sentinel-hub/product-update-planetary-variables-in-sentinel-hub-963f3e6c0e9b)

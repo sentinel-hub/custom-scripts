@@ -5,9 +5,9 @@ parent: Soil Water Content
 layout: script
 nav_exclude: false
 scripts:
-  - [Visualization, script.js]
-  - [EO Browser, eob.js]
-  - [Raw Values, raw.js]
+    - [Visualization, script.js]
+    - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 ---
 
 ## Evaluate and visualize
@@ -28,6 +28,7 @@ Soil Water Content (L band 100 m) on Sep 30th, 2023 near Hanover, Germany.
 
 ## References
 
-- [Product specifications](https://planet.widen.net/s/5xtzljjwgg)
-- [Data sheet](https://planet.widen.net/s/cv7bfjhhd5)
-- [Sentinel Hub documentation about Soil Water Content](https://docs.sentinel-hub.com/api/latest/data/planetary-variables/soil-water-content/)
+-   [Product specifications](https://planet.widen.net/s/5xtzljjwgg)
+-   [Data sheet](https://planet.widen.net/s/cv7bfjhhd5)
+-   [Sentinel Hub documentation about Soil Water Content](https://docs.sentinel-hub.com/api/latest/data/planetary-variables/soil-water-content/)
+-   [Medium Blog on LST anomalies](https://medium.com/sentinel-hub/product-update-planetary-variables-in-sentinel-hub-963f3e6c0e9b)
