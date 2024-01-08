@@ -66,7 +66,7 @@ function updateOutputMetadata(scenes, inputMetadata, outputMetadata) {
 
 function sum(array) {
     let sum = 0;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = array.length; i--; ) {
         sum += array[i];
     }
     return sum;
@@ -81,7 +81,7 @@ function std(array, mean) {
     for (let i = 0; i < array.length; i++) {
         sum += Math.pow(array[i] - mean, 2);
     }
-    return Math.sqrt(sum / array.length - 1);
+    return Math.sqrt(sum / array.length);
 }
 
 function evaluatePixel(samples) {
