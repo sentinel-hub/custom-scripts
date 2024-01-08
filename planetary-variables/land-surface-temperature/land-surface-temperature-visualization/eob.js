@@ -7,15 +7,14 @@
 // LST has two observations per days: 1h30 and 13h30 solar local time
 
 const defaultVis = true; // true or false
-const color_min = 290; // default min: 263
-const color_max = 330; // default max: 340
-const sensing_time = "0130"; // "0130" or "1330" or ""
-const variable = "LST"; // LST or LST_MaskedPixels
+const color_min = 263; // default min: 263
+const color_max = 340; // default max: 340
+const sensing_time = "1330"; // "0130" or "1330" or ""
 
 //set the data for map and timeserie
 function setup() {
     return {
-        input: [variable, "dataMask"],
+        input: ["LST", "dataMask"],
         output: [
             { id: "default", bands: 4 },
             { id: "index", bands: 1, sampleType: "FLOAT32" },
@@ -31,13 +30,10 @@ function preProcessScenes(collections) {
     collections.scenes.tiles = collections.scenes.tiles.filter(function (tile) {
         return tile.dataPath.includes("T" + sensing_time);
     });
-    collections.scenes.tiles.sort(
-        (a, b) => new Date(b.date) - new Date(a.date)
-    );
     return collections;
 }
 
-//Create color ramp 250 - 340 (full range)
+//Create color ramp 263 - 340 (full range)
 const cmap = [
     [263, 0x000004],
     [266, 0x06051a],
@@ -80,28 +76,22 @@ const visualizer = new ColorRampVisualizer(cmap);
 function evaluatePixel(samples) {
     // LST scale factor
     const scaleFactor = 100;
-    const datamask = samples[0].dataMask;
 
-    // Precompute an array to contain observations
-    var n_observations = samples.length;
-    let array = new Array(n_observations).fill(0);
-
-    // Fill the array with values
-    samples.forEach((sample, index) => {
-        array[index] = samples[index][variable] / scaleFactor;
-    });
-
-    // Get variable and apply scale factor
+    // use the first sample with a datamask of 1
+    let datamask = 0;
+    let val = NaN;
     for (var i = 0; i < samples.length; i++) {
-        indexVal = samples[i][variable] / scaleFactor;
+        datamask = samples[i].dataMask;
+        if (datamask == 1) {
+            val = samples[i].LST / scaleFactor;
+            break;
+        }
     }
 
-    // Display
-    let imgVals = visualizer.process(indexVal);
     return {
-        default: [...imgVals, datamask],
-        index: [array],
-        eobrowserStats: [indexVal, datamask],
+        default: [...visualizer.process(val), datamask],
+        index: [val],
+        eobrowserStats: [val, datamask],
         dataMask: [datamask],
     };
 }
