@@ -1,7 +1,7 @@
 // tolerance in either direction, so i.e. +- 5 days
 const toleranceDays = 1;
 
-const NODATA = -32768;
+const NODATA = NaN;
 const band = "SWC";
 
 function setup() {

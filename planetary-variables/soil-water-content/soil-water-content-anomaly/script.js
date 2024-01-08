@@ -5,7 +5,7 @@ const vmax = 2;
 const toleranceDays = 1;
 
 const band = "SWC";
-const NODATA = -32768;
+const NODATA = NaN;
 
 function setup() {
     return {
