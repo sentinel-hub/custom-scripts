@@ -11,7 +11,7 @@ scripts:
 
 ## Description of representative images
 
-The visualization represents negative soil water content anomalies (less water content than on average) in shades of red and positive soil water content anomalies (more water content than on average) in hues of blue .
+The visualization represents negative soil water content anomalies (less water content than on average) in shades of red and positive soil water content anomalies (more water content than on average) in hues of blue.
 
 Soil Water Content Anomaly (C band 1000 m) on June 3rd, 2023 Graz, Austria.
 
