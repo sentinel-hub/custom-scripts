@@ -31,17 +31,15 @@ function updateColormap(vmin, vmax) {
 }
 
 const cmap = [
-    [3, 0x053061],
-    [2, 0x2166ac],
-    [1, 0x4393c3],
-    [0.5, 0x92c5de],
-    [0.25, 0xd1e5f0],
-    [0, 0xf7f7f7],
-    [-0.25, 0xfddbc7],
-    [-0.5, 0xf4a582],
-    [-1, 0xd6604d],
-    [-2, 0xb2182b],
-    [-3, 0x67001f],
+    [-3, 0x00508f],
+    [-2.25, 0x0083d5],
+    [-1.5, 0x62aee7],
+    [-0.75, 0xbbd8f6],
+    [0, 0xfaf9fa],
+    [0.75, 0xfac9c3],
+    [1.5, 0xe79181],
+    [2.25, 0xc65333],
+    [3, 0x802a07],
 ];
 
 updateColormap(vmin, vmax);
