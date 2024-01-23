@@ -6,16 +6,27 @@ layout: script
 permalink: /sentinel-2/ndsi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '10'
+  lat: '-45.33572'
+  lng: '168.43826'
+  datasetId: S2L2A
+  fromTime: '2019-09-19T00:00:00.000Z'
+  toTime: '2019-09-19T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKLy9SZWZlcmVuY2U6IGh0dHBzOi8vZWFydGguZXNhLmludC93ZWIvc2VudGluZWwvdGVjaG5pY2FsLWd1aWRlcy9zZW50aW5lbC0yLW1zaS9sZXZlbC0yYS9hbGdvcml0aG0KCmxldCB2aXogPSBuZXcgSWRlbnRpdHkoKTsKCmZ1bmN0aW9uIHNldHVwKCkgewogIHJldHVybiB7CiAgICBpbnB1dDogWyJCMDMiLCAiQjExIiwiQjA0IiwiQjAyIiwiZGF0YU1hc2siXSwKICAgICBvdXRwdXQ6IFsKICAgICAgIHsgaWQ6ICJkZWZhdWx0IiwgYmFuZHM6IDQgfSwKICAgICAgIHsgaWQ6ICJpbmRleCIsIGJhbmRzOiAxLCBzYW1wbGVUeXBlOiAiRkxPQVQzMiIgfQogICAgIF0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICAgIGxldCB2YWwgPSBpbmRleChzYW1wbGVzLkIwMywgc2FtcGxlcy5CMTEpOwogIAlsZXQgaW1nVmFscyA9IG51bGw7CiAgICAvLyBUaGUgbGlicmFyeSBmb3IgdGlmZnMgd29ya3Mgd2VsbCBvbmx5IGlmIHRoZXJlIGlzIG9ubHkgb25lIGNoYW5uZWwgcmV0dXJuZWQuCiAgICAvLyBTbyB3ZSBlbmNvZGUgdGhlICJubyBkYXRhIiBhcyBOYU4gaGVyZSBhbmQgaWdub3JlIE5hTnMgb24gZnJvbnRlbmQuCiAgICBjb25zdCBpbmRleFZhbCA9IHNhbXBsZXMuZGF0YU1hc2sgPT09IDEgPyB2YWwgOiBOYU47CiAgCiAgICBpZiAodmFsPjAuNDIpIAogICAgICBpbWdWYWxzID0gWzAsMC44LDEsc2FtcGxlcy5kYXRhTWFza107CiAgICBlbHNlIAogICAgICBpbWdWYWxzID0gWzIuNSpzYW1wbGVzLkIwNCwgMi41KnNhbXBsZXMuQjAzLDIuNSpzYW1wbGVzLkIwMixzYW1wbGVzLmRhdGFNYXNrXTsKCQogIAlyZXR1cm4gewogICAgICBkZWZhdWx0OiBpbWdWYWxzLAogICAgICBpbmRleDogW2luZGV4VmFsXSAKICAgIH07Cn0=
+  additionalQueryParams:
+  - - gain
+    - '1.4'
 ---
-
-## Evaluate and visualize
- - [EO Browser](https://sentinelshare.page.link/twxy){:target="_blank"} 
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/wkj){:target="_blank"}
-
-
 ## General description of the script
 
 For Sentinel-2, the index looks like this:

@@ -7,7 +7,6 @@ Author: Mohor Gartner (Linkedin: https://www.linkedin.com/in/mohor-gartner/)
 
 ////// STARTING SETTINGS
 //// 1. Set ANALYSIS DURATION
-//This setting is only applicable for Sentinal Playground. For EO Browser analysis duration does not affect the final result.
 //Specify scene filter "from" "to" dates. Note: if result returns black image, it might be that scene filtering by from-to and cloud coverage returns no images. Be careful that maximum cloud coverage is low as possible.
 //Hint: set the max. cloud coverage by changing maxcc value in URL link.
 var fromD = "2019-11-05T00:00:00Z";

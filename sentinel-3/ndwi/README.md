@@ -5,12 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-3/ndwi/
 nav_exclude: true
+examples:
+- zoom: '8'
+  lat: '43.86351'
+  lng: '10.54141'
+  datasetId: S3OLCI
+  fromTime: '2022-07-20T00:00:00.000Z'
+  toTime: '2022-07-20T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: ICAgICAgLy9WRVJTSU9OPTMKCi8vIE5vcm1hbGl6ZWQgRGlmZmVyZW5jZSBXYXRlciBJbmRleCwgTkRXSQovLyBJbmRleCB2YWx1ZXMgZ3JlYXRlciB0aGFuIDAuNSB1c3VhbGx5IGNvcnJlc3BvbmQgdG8gd2F0ZXIgYm9kaWVzLiAKLy8gVmVnZXRhdGlvbiB1c3VhbGx5IGNvcnJlc3BvbmRzIHRvIG11Y2ggc21hbGxlciB2YWx1ZXMgYW5kIGJ1aWx0LXVwIGFyZWFzIHRvIHZhbHVlcyBiZXR3ZWVuIHplcm8gYW5kIDAuMi4KCnZhciBjb2xvclJhbXAxID0gWwogIFswLCAweEZGRkZGRl0sCiAgWzEsIDB4MDA4MDAwXQpdOwp2YXIgY29sb3JSYW1wMiA9IFsKICBbMCwgMHhGRkZGRkZdLAogIFsxLCAweDAwMDBDQ10KXTsKCmxldCB2aXoxID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIoY29sb3JSYW1wMSk7CmxldCB2aXoyID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIoY29sb3JSYW1wMik7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKdmFyIHZhbCA9IGluZGV4KHNhbXBsZXMuQjA2LCBzYW1wbGVzLkIxNyk7CgppZiAodmFsIDwgLTApIHsKICByZXR1cm4gdml6MS5wcm9jZXNzKC12YWwpOwp9IGVsc2UgewogIHJldHVybiB2aXoyLnByb2Nlc3MoTWF0aC5zcXJ0KE1hdGguc3FydCh2YWwpKSk7Cn0KfQoKZnVuY3Rpb24gc2V0dXAoKSB7CnJldHVybiB7CiAgaW5wdXQ6IFt7CiAgICBiYW5kczogWwogICAgICAiQjA2IiwKICAgICAgIkIxNyIKICAgIF0KICB9XSwKICBvdXRwdXQ6IHsKICAgIGJhbmRzOiAzCiAgfQp9Cn0=
+  additionalQueryParams:
+  - - handlePositions
+    - 0,1
+  - - gradient
+    - 0xffffff,0x005824
 ---
-
-
-## Evaluate and visualize  
- - [EO Browser](https://sentinelshare.page.link/zBEw){:target="_blank"}   
-
 
 ## General description of the script  
 

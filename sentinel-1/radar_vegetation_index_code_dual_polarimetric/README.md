@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/radar_vegetation_index_code_dual_polarimetric/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '15.9973'
+  lng: '80.5751'
+  fromTime: '2019-11-21T00:00:00.000Z'
+  toTime: '2019-11-21T23:59:59.999Z'
+  datasetId: S1_AWS_IW_VVVH
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/radar_vegetation_index_code_dual_polarimetric/script.js
+  platform:
+  - CDSE
+  - EOB
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=15.9973&lng=80.5751&zoom=11&time=2019-11-21&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=LyoKUmFkYXIgVmVnZXRhdGlvbiBpbmRleCBmb3IgU2VudGluZWwtMQpTdWJoYWRpcCBEZXkKSUlUIEJvbWJheQoKVGhpcyBjb2RlIGlzIGJhc2VkIG9uOgpOYXNpcnphZGVoZGl6YWppLCBSb3Vob2xsYWgsIGV0IGFsLiAiU2Vuc2l0aXZpdHkgQW5hbHlzaXMgb2YgTXVsdGktVGVtcG9yYWwgU2VudGluZWwtMSBTQVIgUGFyYW1ldGVycyB0byBDcm9wIEhlaWdodCBhbmQgQ2Fub3B5IENvdmVyYWdlLiIgQXBwbGllZCBTY2llbmNlcyA5LjQgKDIwMTkpOiA2NTUuCiovCgpyZXR1cm4gWyg0KlZIKS8oVlYrVkgpXTs%3D){:target="_blank"} 
-
 
 ## General description of the script
 

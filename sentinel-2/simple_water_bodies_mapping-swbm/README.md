@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/simple_water_bodies_mapping-swbm/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '43.77556'
+  lng: '6.18101'
+  datasetId: S2L2A
+  fromTime: '2022-10-06T00:00:00.000Z'
+  toTime: '2022-10-06T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/simple_water_bodies_mapping-swbm/script.js
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://sentinelshare.page.link/mMsZ){:target="_blank"} 
-
 
 ## General description of the script
 

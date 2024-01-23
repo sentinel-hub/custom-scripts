@@ -26,7 +26,7 @@ For instructions on how custom scripts are structured have a look at this [tutor
   _Obviously, you'll want to remove this chapter, but use the rest of the file as a template._  
   _Have a look around at other `README.md` files to see how to include images, format the text and generally use the GitHub [markdown](https://help.github.com/categories/writing-on-github/) (e.g. [here](../sentinel-2/cby_cloud_detection/README.md) for mathematical formulas or [here](../sentinel-2/ndvi_uncertainty/README.md) for adding images)._
 - Implement the product in the `script.js` file.  
-  _The most work is of course the JavaScript implementation of the product. The `example` folder includes an empty custom script with comments that will hopefully help you build your own custom script. Of course the easiest is to do the custom script building/testing on [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/)._
+  _The most work is of course the JavaScript implementation of the product. The `example` folder includes an empty custom script with comments that will hopefully help you build your own custom script._
 - Add an entry pointing to your script to the top level markdown file (i.e. if adding a script for Sentinel 2 add the link to `sentinel-2.md` in the folder `sentinel-2`).  
   _A link and a short description will do._
 - And create a pull request :).  

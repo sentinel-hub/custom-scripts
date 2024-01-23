@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-3/otci/
 nav_exclude: true
+examples:
+- zoom: '7'
+  lat: '44.868'
+  lng: '11.415'
+  fromTime: '2019-06-30T00:00:00.000Z'
+  toTime: '2019-06-30T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  datasetId: S3OLCI
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-3/otci/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=44.868&lng=11.415&zoom=7&time=2019-06-30&preset=2_OTCI&datasource=Sentinel-3%20OLCI){:target="_blank"}   
 
 ## Description
 OTCI, the Terrestrial Chlorophyll Index, can be used to assess chlorophyll content over land to monitor vegetation condition and health. 

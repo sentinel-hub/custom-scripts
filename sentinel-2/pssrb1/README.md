@@ -5,19 +5,25 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/pssrb1/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '42.76703'
+  lng: '11.22847'
+  datasetId: S2L2A
+  fromTime: '2020-07-12T00:00:00.000Z'
+  toTime: '2020-07-12T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/pssrb1/script.js
 ---
 
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2019-06-01%7C2019-12-23&atmFilter=&showDates=false&evalscript=ICAgLy8gU2ltcGxlIFJhdGlvIDgwMC82NTAgUGlnbWVudCBzcGVjaWZpYyBzaW1wbGUgcmF0aW8gQjEgKGFiYnJ2LiBQU1NSYjEpCi8vIEdlbmVyYWwgZm9ybXVsYTogODAwbm0vNjUwbm0KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD0yODMKCmxldCBpbmRleCA9IEIwOCAvIEIwNDsKcmV0dXJuW2luZGV4XQ%3D%3D&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ndwi/script.js){:target="_blank"}
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=42.8594&lng=11.0550&zoom=10&time=2019-12-10&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8gU2ltcGxlIFJhdGlvIDgwMC82NTAgUGlnbWVudCBzcGVjaWZpYyBzaW1wbGUgcmF0aW8gQjEgKGFiYnJ2LiBQU1NSYjEpCi8vIEdlbmVyYWwgZm9ybXVsYTogODAwbm0vNjUwbm0KLy8gVVJMIGh0dHBzOi8vd3d3LmluZGV4ZGF0YWJhc2UuZGUvZGIvc2ktc2luZ2xlLnBocD9zZW5zb3JfaWQ9OTYmcnNpbmRleF9pZD0yODMKCmxldCBpbmRleCA9IEIwOCAvIEIwNDsKcmV0dXJuW2luZGV4XQ%3D%3D){:target="_blank"}
- 
- ## General description of the script
+## General description of the script
 
 Pigment specific simple ratio for chlorophyll b is calculated as: 
 
-**  PSSRb=800nm / 650nm**
-**  PSSRb = B08 / B04**
+**PSSRb = 800nm / 650nm**  
+**PSSRb = B08 / B04**
 
 ## Description of representative images
 

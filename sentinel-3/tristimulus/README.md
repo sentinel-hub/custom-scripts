@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-3/tristimulus/
 nav_exclude: true
+examples:
+- zoom: '9'
+  lat: '19.768'
+  lng: '93.233'
+  fromTime: '2020-01-27T00:00:00.000Z'
+  toTime: '2020-01-27T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  datasetId: S3OLCI
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-3/tristimulus/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=19.768&lng=93.233&zoom=9&time=2020-01-27&preset=3_TRISTIMULUS&datasource=Sentinel-3%20OLCI){:target="_blank"}   
 
 ## Description
 

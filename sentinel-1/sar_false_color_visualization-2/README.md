@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/sar_false_color_visualization-2/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '26.6797'
+  lng: '-78.5468'
+  fromTime: '2019-09-04T00:00:00.000Z'
+  toTime: '2019-09-04T23:59:59.999Z'
+  datasetId: S1_AWS_IW_VVVH
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/sar_false_color_visualization-2/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=26.6797&lng=-78.5468&zoom=11&time=2019-09-04&preset=ENHANCED-VISUALIZATION&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)){:target="_blank"}   
 
 ## Description
 This script offers different false color visualizations and the ability to easily add more visualizations. Variables allow you to influence the resulting image regarding the content you would like to point out.  

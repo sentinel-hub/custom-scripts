@@ -2,17 +2,24 @@
 title: CCC (Canopy Chlorophyll Content)
 parent: Sentinel-2
 grand_parent: Sentinel
-layout: script
+layout: example_test
 permalink: /sentinel-2/ccc/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '41.82046'
+  lng: '12.51823'
+  datasetId: S2L2A
+  fromTime: '2023-12-21T00:00:00.000Z'
+  toTime: '2023-12-21T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ccc/script.js
+  additionalQueryParams:
+  - - cloudCoverage
+    - '30'
 ---
-
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=43.514198796857976&lng=16.601028442382812&zoom=11&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ccc/script.js){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ccc/script.js){:target="_blank"}   
- When EO Browser loads, switch to **code view**, then check the **Use URL** checkbox and press **Refresh**.
-
 
 ## General description of the script
 

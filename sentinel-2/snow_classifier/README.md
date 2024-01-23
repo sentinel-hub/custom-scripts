@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/snow_classifier/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '46.35647'
+  lng: '13.47542'
+  datasetId: S2L1C
+  fromTime: '2019-10-26'
+  toTime: '2019-10-27'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/snow_classifier/script.js
 ---
-
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=41.9027835&lng=12.496365500000024&zoom=12&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/snow_classifier/script.js){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=46.35647&lng=13.47542&zoom=13&time=2019-10-26&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=ICB2YXIgTkRTSSA9IChCMDMgLSBCMTEpIC8gKEIwMyArIEIxMSk7CnZhciBORFZJID0gKEIwOCAtIEIwNCkgLyAoQjA4ICsgQjA0KTsKdmFyIGdhaW4gPSAyLjU7CgpmdW5jdGlvbiBzaShhKSB7CiAgICByZXR1cm4gKGE%2BPTAuNCkgPyAxIDogKE1hdGguYWJzKE5EVkkgLSAwLjEpIDw9IDAuMDI1ID8gMSA6IDApOwp9CgpmdW5jdGlvbiBicihhKSB7CiAgICByZXR1cm4gYT4wLjM7Cn0KICAgCnZhciB2ID0gc2koTkRTSSkgJiYgYnIoQjAzKTsKCnJldHVybiAodj09MSkgPyBbMS4wLDAuOCwwLjRdIDogW0IwNCwgQjAzLCBCMDJdLm1hcChhID0%2BIGdhaW4gKiBhKTs%3D){:target="_blank"}   
 
 ## General description of the script
 

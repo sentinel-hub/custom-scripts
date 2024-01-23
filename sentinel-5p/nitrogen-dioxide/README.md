@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-5p/nitrogen-dioxide/
 nav_exclude: true
+examples:
+- zoom: '7'
+  lat: '51.696'
+  lng: '16.864'
+  datasetId: S5_NO2
+  fromTime: '2020-01-24T00:00:00.000Z'
+  toTime: '2020-01-24T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: "https://custom-scripts.sentinel-hub.com/sentinel-5p/nitrogen-dioxide/script.js"
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://sentinelshare.page.link/AK1U){:target="_blank"}   
 
 ## Description
 Methane is, after carbon dioxide, the most important contributor to the anthropogenically (caused by human activity) enhanced greenhouse effect. Measurements are provided in parts per billion (ppb) with a spatial resolution of 7 km x 3.5 km.

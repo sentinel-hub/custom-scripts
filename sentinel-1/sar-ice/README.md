@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/sar-ice/
 nav_exclude: true
+examples:
+- zoom: '9'
+  lat: '67.227'
+  lng: '46.401'
+  fromTime: '2018-02-12T00:00:00.000Z'
+  toTime: '2018-02-12T23:59:59.999Z'
+  datasetId: S1_AWS_EW_HHHV
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/sar-ice/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=67.227&lng=46.401&zoom=9&time=2018-02-12&preset=CUSTOM&gainOverride=0.4&gammaOverride=0.6&redRangeOverride=[0,0.608]&greenRangeOverride=[0,0.642]&blueRangeOverride=[0,0.675]&datasource=Sentinel-1%20AWS%20(S1-AWS-EW-HHHV)&layers=HH,HV,HV&evalscript=ZnVuY3Rpb24gb3ZlcmxheSh0b3AsIGJvdHRvbSkgewogIHZhciByZXMgPSAtKCgyICogdG9wIC0gMSkgKiBib3R0b20tIDIgKiB0b3ApICogYm90dG9tOwogIHJldHVybiByZXM7Cn0KCmZ1bmN0aW9uIHN0cmV0Y2goYXJyLCBtaW4sIG1heCkgewogIHZhciBkZWx0YSA9IG1heCAtIG1pbjsKICB2YXIgb2Zmc2V0ID0gLW1pbiAvIGRlbHRhOwogIHJldHVybiBhcnIvZGVsdGEgKyBvZmZzZXQ7Cn0KCmZ1bmN0aW9uIGdhbW1hKGFyciwgdmFsKSB7CiAgcmV0dXJuIGFyciAqKiAoMS4wIC8gdmFsKTsKfQoKdmFyIG1odiA9IE1hdGguc3FydChIViArIDAuMDAyKTsKdmFyIG1oaCA9IE1hdGguc3FydChISCArIDAuMDAyKTsKdmFyIG92ID0gb3ZlcmxheShtaGgsIG1odik7CnZhciByZWQgPSBnYW1tYShzdHJldGNoKG1odiwgMC4wMiwgMC4xKSwgMS4xKTsKdmFyIGdyZWVuID0gZ2FtbWEoc3RyZXRjaChvdiwgMC4wLCAwLjA2KSwgMS4xKTsKdmFyIGJsdWUgPSBnYW1tYShzdHJldGNoKG1oaCwgMC4wLCAwLjMyKSwgMS4xKTsKcmV0dXJuIFtyZWQsIGdyZWVuLCBibHVlXTsK){:target="_blank"}
-
 
 ## General description of the script
 

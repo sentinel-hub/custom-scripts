@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/hollstein/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '46.17032'
+  lng: '14.19571'
+  datasetId: S2L1C
+  fromTime: '2015-10-08'
+  toTime: '2017-10-09'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/hollstein/script.js
 ---
-
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=46.43880327782999&lng=14.775924682617188&zoom=11&maxcc=100&time=2015-01-01%7C2017-10-09&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/hollstein/script.js){:target="_blank"}
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscript=ZnVuY3Rpb24gUyAoYSwgYikgeyByZXR1cm4gYSAtIGIgfTsKZnVuY3Rpb24gUiAoYSwgYikgeyByZXR1cm4gYSAvIGIgfTsKCmxldCBnYWluID0gMi41OwoKbGV0IG5hdHVyYWxDb2xvdXIgPSBbQjA0LCBCMDMsIEIwMl0ubWFwKGEgPT4gZ2FpbiAqIGEpOwoKbGV0IENMRUFSICA9IG5hdHVyYWxDb2xvdXI7CmxldCBTSEFET1cgPSBuYXR1cmFsQ29sb3VyOwpsZXQgV0FURVIgID0gWzAuMSwwLjEsMC43XTsKbGV0IENJUlJVUyA9IFswLjgsMC4xLDAuMV07CmxldCBDTE9VRCAgPSBbMC4zLDAuMywxLjBdOwpsZXQgU05PVyAgID0gWzEuMCwwLjgsMC40XTsKCnJldHVybiAoQjAzIDwgMC4zMTkpCj8gKEI4QSA8IDAuMTY2KQogICAgPyAoUyhCMDMsQjA3KSA8IDAuMDI3KQogICAgICAgID8gKFMoQjA5LEIxMSkgPCAtMC4wOTcpID8gQ0xFQVIgOiBTSEFET1cKICAgICAgICA6IChTKEIwOSxCMTEpIDwgMC4wMjEpID8gV0FURVIgOiBTSEFET1cKICAgIDogKFIoQjAyLEIxMCkgPCAxNC42ODkpCiAgICAgICAgPyAoUihCMDIsQjA5KSA8IDAuNzg4KSA%2FIENMRUFSIDogQ0lSUlVTCiAgICAgICAgOiBDTEVBUgo6IChSKEIwNSxCMTEpIDwgNC4zMykKICAgID8gKFMoQjExLCBCMTApIDwgMC4yNTUpCiAgICAgICAgPyAoUyhCMDYsIEIwNykgPCAtMC4wMTYpID8gQ0xPVUQgOiBDSVJSVVMKICAgICAgICA6IChCMDEgPCAwLjMpID8gQ0xFQVIgOiBDTE9VRAogICAgOiAoQjAzIDwgMC41MjUpCiAgICAgICAgPyAoUihCMDEsIEIwNSkgPCAxLjE4NCkgPyBDTEVBUiA6IFNIQURPVwogICAgICAgIDogU05PVzsK%3D){:target="_blank"}
 
 ## General description
 

@@ -5,12 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/active_fire_detection/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '37.56714'
+  lng: '-119.72414'
+  datasetId: S2L1C
+  fromTime: '2018-02-05T00:00:00.000Z'
+  toTime: '2018-08-05T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/active_fire_detection/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '20'
 ---
-
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=37.5671449422705&lng=-119.72414017072879&zoom=13&preset=CUSTOM&layers=B01,B02,B03&maxcc=20&gain=1.0&gamma=1.0&time=2018-02-01%7C2018-08-05&atmFilter=&showDates=false&evalscript=Ly9JZGVudGlmeSBhY3RpdmUgZmlyZSBwb2ludHMKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgovL1RvIGluY3JlYXNlIHRoZSBhY2N1cmFjeSBvZiBhbHRpdHVkZSA8M2ttIE9yIHpvb20gPjEyCi8vRm9yIFNlbnRpbmVsLTIKLy9DbG91ZCBtYXNrCnZhciBOR0RSID0gaW5kZXgoQjAyLCBCMDMpOwp2YXIgSW52ZXJzZSA9IChCMDIgLSAwLjIpIC8gKDAuNSAtIDAuMik7Ci8vRmlyZSBpbmRpY2F0b3IKdmFyIFNBSE1fSU5ERVg9ICgoQjEyIC0gQjExKSAvIChCMTIgKyBCMTEpKTsKCmlmIChJbnZlcnNlID4gMSkgeyAKICAgIHJldHVybiBbMC41ICogQjA0LCAwLjUgKiBCMDMsIDIwICogQjAyIF07Cn0KCmlmIChJbnZlcnNlID4gMCAmJiBOR0RSPjApIHsgCiAgICByZXR1cm4gWzAuNSAqIEIwNCAgLCAwLjUgKiBCMDMsIDIwICogQjAyXTsKfQoKaWYoKFNBSE1fSU5ERVg%2BMC40KXx8KEIxMj4xKSl7CiAgcmV0dXJuWzIwKkIwNCwgMSpCMDMsIDEqQjAyXTsKfQoKZWxzZSB7CiByZXR1cm4gW0IwNCxCMDQsQjA0XQp9CgovL1JlZCBjb2xvciBpbmRpY2F0ZXMgYWN0aXZlIGZpcmUgYXJlYXMgYW5kIHBvaW50cwovL1RoZSBibHVlIHJhbmdlIGlzIGEgY2xvdWQgbWFzaw%3D%3D){:target="_blank"}
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=37.67429&lng=-119.76883&themeId=WILDFIRES-NORMAL-MODE&datasetId=S2L2A&fromTime=2018-08-05T00%3A00%3A00.000Z&toTime=2018-08-05T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Faae18701-6b25-4001-8b2a-b98a1b3806c1&evalscript=Ly9JZGVudGlmeSBhY3RpdmUgZmlyZSBwb2ludHMKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgovL1RvIGluY3JlYXNlIHRoZSBhY2N1cmFjeSBvZiBhbHRpdHVkZSA8M2ttIE9yIHpvb20gPjEyCi8vRm9yIFNlbnRpbmVsLTIKLy9DbG91ZCBtYXNrCnZhciBOR0RSID0gaW5kZXgoQjAyLCBCMDMpOwp2YXIgSW52ZXJzZSA9IChCMDIgLSAwLjIpIC8gKDAuNSAtIDAuMik7Ci8vRmlyZSBpbmRpY2F0b3IKdmFyIFNBSE1fSU5ERVg9ICgoQjEyIC0gQjExKSAvIChCMTIgKyBCMTEpKTsKCmlmIChJbnZlcnNlID4gMSkgeyAKICAgIHJldHVybiBbMC41ICogQjA0LCAwLjUgKiBCMDMsIDIwICogQjAyIF07Cn0KCmlmIChJbnZlcnNlID4gMCAmJiBOR0RSPjApIHsgCiAgICByZXR1cm4gWzAuNSAqIEIwNCAgLCAwLjUgKiBCMDMsIDIwICogQjAyXTsKfQoKaWYoKFNBSE1fSU5ERVg%2BMC40KXx8KEIxMj4xKSl7CiAgcmV0dXJuWzIwKkIwNCwgMSpCMDMsIDEqQjAyXTsKfQoKZWxzZSB7CiByZXR1cm4gW0IwNCxCMDQsQjA0XQp9CgovL1JlZCBjb2xvciBpbmRpY2F0ZXMgYWN0aXZlIGZpcmUgYXJlYXMgYW5kIHBvaW50cwovL1RoZSBibHVlIHJhbmdlIGlzIGEgY2xvdWQgbWFzaw%3D%3D&upsampling=BILINEAR#custom-script){:target="_blank"}
 
 ## General description
 

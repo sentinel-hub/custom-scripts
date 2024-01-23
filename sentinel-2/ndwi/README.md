@@ -6,15 +6,24 @@ layout: script
 permalink: /sentinel-2/ndwi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '11'
+  lat: '44.94637'
+  lng: '12.10183'
+  datasetId: S2L2A
+  fromTime: '2020-08-01T00:00:00.000Z'
+  toTime: '2020-08-01T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKLy9UaGlzIHNjcmlwdCB3YXMgY29udmVydGVkIGZyb20gdjEgdG8gdjMgdXNpbmcgdGhlIGNvbnZlcnRlciBBUEkKCi8vbmR3aQp2YXIgY29sb3JSYW1wMSA9IFsKICAJWzAsIDB4RkZGRkZGXSwKICAJWzEsIDB4MDA4MDAwXQogIF07CnZhciBjb2xvclJhbXAyID0gWwogIAlbMCwgMHhGRkZGRkZdLAogIAlbMSwgMHgwMDAwQ0NdCiAgXTsKCmxldCB2aXoxID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIoY29sb3JSYW1wMSk7CmxldCB2aXoyID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIoY29sb3JSYW1wMik7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICB2YXIgdmFsID0gaW5kZXgoc2FtcGxlcy5CMDMsIHNhbXBsZXMuQjA4KTsKCiAgaWYgKHZhbCA8IC0wKSB7CiAgICByZXR1cm4gdml6MS5wcm9jZXNzKC12YWwpOwogIH0gZWxzZSB7CiAgICByZXR1cm4gdml6Mi5wcm9jZXNzKE1hdGguc3FydChNYXRoLnNxcnQodmFsKSkpOwogIH0KfQoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbewogICAgICBiYW5kczogWwogICAgICAgICJCMDMiLAogICAgICAgICJCMDgiCiAgICAgIF0KICAgIH1dLAogICAgb3V0cHV0OiB7CiAgICAgIGJhbmRzOiAzCiAgICB9CiAgfQp9
 ---
-
-## Evaluate and visualize 
- - [EO Browser](https://sentinelshare.page.link/u9bq){:target="_blank"}
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/go5){:target="_blank"}
-
 ## General description of the script
 
 The NDWI is used to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum,  NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies. The index was proposed by McFeeters, 1996.
