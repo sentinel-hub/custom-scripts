@@ -5,16 +5,22 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/orm_index/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '21.2049'
+  lng: '38.19809'
+  datasetId: S1_AWS_IW_VVVH
+  fromTime: '2019-10-13T00:00:00.000Z'
+  toTime: '2019-10-13T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9PaWwgc2xpY2tzIGFuZCBSZWQgdGlkZSBtb25pdG9yaW5nICAKLy9CeSBUSVpORUdBUiBTdGFydHVwIENvLCB3d3cudGl6bmVnYXIuY29tCi8vRGF0YXNldDpTZW50aW5lbC0xIEFXUy1JVy1WVlZICgp2YXIgT1JNID0gTWF0aC5sb2coMC4wMS8oMC4wMStWVioyKSk7IAoKaWYgKE9STSA8IFsgMF0gJiYgIFZWPCBbIDAuMDE4XSYmICBWSDwgWyAwLjAwMTI2XSkgeyAKICAgIAogICByZXR1cm4gY29sb3JCbGVuZCAgIAogICAgKE9STSwJICAgICAgICAgICAgCiAgICAgICAgIFstMS42LCAtMS40LCAtMS4yLCAtMSwgLS44LCAtLjYsIC0uNCwgLS4yLCAwXSwgCiAgICAgICAgWyAgICAgCiAgIAogICAgIFswLDAsLjEgXSwKICAgICBbMCwwLC40IF0sCiAgICAgWzAsMCwuOF0sCiAgICAgWzEsMCwuNV0sCiAgICAgWzEsMCwwXSwKICAgICBbMSwuNSwuMl0sCiAgICAgWzEsLjgsLjJdLAogICAgIFsxLDEsLjRdLAogICAgIFsuNSwuOCwuM10sCiAgICAgICAgICAgCgogICAgICBdKTsKfQplbHNlIHsKIHJldHVybiBbMi41KlZWLDIuNSpWViwyLjUqVlZdCn0K
 ---
-
 
 ## Author of the script
 By TIZNEGAR Startup Co, 
 [www.tiznegar.com](https://www.tiznegar.com/){:target="_blank"}
-
-## Evaluate and Visualize
-
-- [EO Browser](https://sentinelshare.page.link/5vH6){:target="_blank"}
 
 ## General description
 This script is capable of detecting oil slicks and [red tides (harmful algal blooms)](https://oceanservice.noaa.gov/facts/redtide.html) at sea. In this script we use the ORM (Oil slicks and Red tide monitoring) index, calculated as: 

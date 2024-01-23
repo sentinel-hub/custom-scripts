@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/sar_false_color_visualization/
 nav_exclude: true
+examples:
+- zoom: '12'
+  lat: '-5.8310'
+  lng: '105.2030'
+  fromTime: '2019-03-21T00:00:00.000Z'
+  toTime: '2019-03-21T23:59:59.999Z'
+  datasetId: S1_AWS_IW_VVVH
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/sar_false_color_visualization/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-5.8310&lng=105.2030&zoom=12&time=2019-03-21&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=Ly8gU0FSIEZhbHNlIENvbG9yIFZpc3VhbGl6YXRpb24gCi8vIFRoZSBzY3JpcHQgdmlzdWFsaXplcyBFYXJ0aCBzdXJmYWNlIGluIEZhbHNlIENvbG9yIGZyb20gU2VudGluZWwtMSBkYXRhLiAKLy8gQXV0aG9yOiBBbm5hbWFyaWEgTHVvbmdvIChUd2l0dGVyOiBAYW5uYW1hcmlhXzg0LCBodHRwOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9hbm5hbWFyaWEtbHVvbmdvLVJTICkKLy8gTGljZW5zZTogQ0MgQlkgNC4wIEludGVybmF0aW9uYWwgCgp2YXIgYzEgPSAxMGUtNDsgCnZhciBjMiA9IDAuMDE7IAp2YXIgYzMgPSAwLjAyOyAKdmFyIGM0ID0gMC4wMzsgCnZhciBjNSA9IDAuMDQ1OyAKdmFyIGM2ID0gMC4wNTsgCnZhciBjNyA9IDAuOTsgCnZhciBjOCA9IDAuMjU7IAoKLy9FbmhhbmNlZCBvciBub24tZW5oYW5jZWQgb3B0aW9uIChzZXQgdG8gInRydWUiIGlmIHlvdSB3YW50IGVuaGFuY2VkKQp2YXIgZW5oYW5jZWQgPSBmYWxzZTsKCmlmIChlbmhhbmNlZCE9dHJ1ZSkKewovL05vbi1lbmhhbmNlZCBvcHRpb24KdmFyIGJhbmQxID0gYzQgKyBNYXRoLmxvZyAoYzEgLSBNYXRoLmxvZyAoYzYgLyAoYzMgKyAyICogVlYpKSk7IAp2YXIgYmFuZDIgPSBjNiArIE1hdGguZXhwIChjOCAqIChNYXRoLmxvZyAoYzIgKyAyICogVlYpICsgTWF0aC5sb2cgKGMzICsgNSAqIFZIKSkpOyAKdmFyIGJhbmQzID0gMSAtIE1hdGgubG9nIChjNiAvIChjNSAtIGM3ICogVlYpKTsgCn0KZWxzZQp7Ci8vRW5oYW5jZWQgb3B0aW9uCnZhciBiYW5kMSA9IGM0ICsgTWF0aC5sb2cgKGMxIC0gTWF0aC5sb2cgKGM2IC8gKGMzICsgMi41ICogVlYpKSArIE1hdGgubG9nIChjNiAvIChjMyArIDEuNSAqIFZIKSkpOwp2YXIgYmFuZDIgPSBjNiArIE1hdGguZXhwIChjOCAqIChNYXRoLmxvZyAoYzIgKyAyICogVlYpICsgTWF0aC5sb2cgKGMzICsgNyAqIFZIKSkpOwp2YXIgYmFuZDMgPSAwLjggLSBNYXRoLmxvZyAoYzYgLyAoYzUgLSBjNyAqIFZWKSk7Cn0KCnJldHVybiBbYmFuZDEsYmFuZDIsYmFuZDNdOw%3D%3D){:target="_blank"}   
 
 ## Description
 The script visualizes Earth surface in False Color from Sentinel-1 data.  

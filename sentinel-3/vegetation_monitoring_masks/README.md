@@ -5,16 +5,22 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-3/vegetation_monitoring_masks/
 nav_exclude: true
+examples:
+- zoom: '8'
+  lat: '37.45306'
+  lng: '48.8562'
+  datasetId: S3OLCI
+  fromTime: '2020-06-18T00:00:00.000Z'
+  toTime: '2020-06-18T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly8gU2VudGluZWwtMyBPTENJIC0gVmVnZXRhdGlvbiBtb25pdG9yaW5nCi8vYnkgVElaTkVHQVIgc3RhcnR1cCBjbwovL3d3dy50aXpuZWdhci5jb20KCi8vVmVnZXRhdGlvbiBtb25pdG9yaW5nIGluZGV4IGZvciBPTENJIFNlbnRpbmVsIDMgT0xDSShWTUkzKQoKdmFyIFZNSTMgPSAoQjE3IC0gQjA4KSAvIChCMTcgKyBCMDgpOwoKLy9DbG91ZCBtYXNrCgp2YXIgTkdEUiA9IGluZGV4KEIwNCwgQjA2KTsKdmFyIENNICA9IChCMDQgLSAwLjIpIC8gKDAuNSAtIDAuMik7CmlmIChDTSA+IDAuOCkgeyAKICAgIHJldHVybiBbMTAgKiBCMDMsIDEwICogQjAyLCAxMCAqIEIwMSBdOwp9CgppZiAoQ00gPiAwICYmIE5HRFI+LjE1KSB7IAogICAgcmV0dXJuIFsxMCAqIEIwMyAgLCAxMCAqIEIwMiwgMTAgKiBCMDFdOwp9CgoKLy9Zb3UgY2FuIHNlZSBvbmx5IHRoZSBjaGFuZ2VzIGluIHRoZSB2ZWdldGF0aW9uIHlvdSB3YW50IGJ5IGNoYW5naW5nIHRoZSBpbnRlcnZhbCBiZWxvdwoKCmlmIChWTUkzID4gWyAtMSBdICYmIFZNSTM8IFsgMSBdKSB7IAogICAgcmV0dXJuIGNvbG9yQmxlbmQgICAKICAgIChWTUkzLAkgICAgICAgICAgICAKICAgICAgICBbIC0uOCwgLS4xLCAtLjAyLCAwLCAwLjAxLCAuMDYsIC4xLCAuMiwgLjMsIC40LCAuNSwgLjYsIC43LCAuOCwgLjldLCAKICAgICAgICBbICAgICAKICAgICAgICAgICAgWzAsIC4yLCAuNV0sCiAgICAgICAgICAgIFswLCAuNiwgLjhdLAogICAgICAgICAgICBbLjgsIC44LCAuOF0sCiAgICAgICAgICAgIFsuOSwgLjksIC45XSwKICAgICAgICAgICAgWzEsIDEsIDFdLAogICAgICAgICAgICBbLjUsLjMsLjJdLAogICAgICAgICAgICBbLjYzLC4zMiwuMThdLAogICAgICAgICAgICBbMSwuNDUsLjA1XSwKICAgICAgICAgICAgWy45LCAxLCAwXSwKICAgICAgICAgICAgWzAsIC44LDBdLAogICAgICAgICAgICBbMCwgLjUsIDBdLAogICAgICAgICAgICBbMCwgLjQsIDBdLAogICAgICAgICAgICBbMCwgLjMsIDBdLAogICAgICAgICAgICBbMCwgLjIsIDBdLAogICAgICAgICAgICBbMCwgLjEsIDBdLAoKICAgICAgXSk7Cn0KZWxzZSB7CiByZXR1cm4gWzIuNSpCMDgsMi41KkIwNiwyLjUqQjA0XQp9
 ---
-
 
 ## Author of the script
 By TIZNEGAR Startup Co, 
 [www.tiznegar.com](https://www.tiznegar.com/){:target="_blank"}
-
-## Evaluate and Visualize
-
-- [EO Browser](https://sentinelshare.page.link/xRUA){:target="_blank"}
 
 ## General description
 Vegetation monitoring index for Sentinel 3 OLCI (VMI3) has the same functionality as NDVI, using NIR* and RED wavelengths in a normalized difference index. The script displays the vegetation index with a continuous colour scale and uses cloud mask to display clouds and snow in white. It also provides a preprepared conditional statement for land classification, by only changing the visualized range. 

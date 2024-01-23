@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/swir-rgb/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '41.98803'
+  lng: '12.70981'
+  datasetId: S2L2A
+  fromTime: '2021-03-31T00:00:00.000Z'
+  toTime: '2021-03-31T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: "https://custom-scripts.sentinel-hub.com/sentinel-2/swir-rgb/script.js"
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://sentinelshare.page.link/uDnP){:target="_blank"} 
 
 ## General description of the script
 

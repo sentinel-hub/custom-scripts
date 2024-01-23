@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/white_water/
 nav_exclude: true
+examples:
+- zoom: '15'
+  lat: '39.60651'
+  lng: '-9.09239'
+  datasetId: S2L2A
+  fromTime: '2023-04-04T00:00:00.000Z'
+  toTime: '2023-04-04T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIwMSIsIkIwMiIsIkIwMyIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIAogIHJldHVybiBbMi41ICogc2FtcGxlLkIwMSwgMi41ICogc2FtcGxlLkIwMiwgMi41ICogc2FtcGxlLkIwMywgc2FtcGxlLmRhdGFNYXNrXTsKfQ==
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=15&lat=39.60651&lng=-9.09239&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIwMSIsIkIwMiIsIkIwMyIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIAogIHJldHVybiBbMi41ICogc2FtcGxlLkIwMSwgMi41ICogc2FtcGxlLkIwMiwgMi41ICogc2FtcGxlLkIwMywgc2FtcGxlLmRhdGFNYXNrXTsKfQ%3D%3D&datasetId=S2L2A&fromTime=2023-04-04T00%3A00%3A00.000Z&toTime=2023-04-04T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script){:target="_blank"}
 
 ## General description of the script
 

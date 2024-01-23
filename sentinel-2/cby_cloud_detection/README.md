@@ -5,12 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/cby_cloud_detection/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '46.07609'
+  lng: '14.67773'
+  datasetId: S2L1C
+  fromTime: '2016-12-06T00:00:00.000Z'
+  toTime: '2017-06-06T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/cby_cloud_detection/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '100'
 ---
-
-
-## Evaluate and visualize
-- [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=10&lat=46.07609&lng=14.67773&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2F274a990e-7090-4676-8f7d-f1867e8474a7&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Fsentinel-hub%2FcustomScripts%2Fmaster%2Fsentinel-2%2Fcby_cloud_detection%2Fscript.js&datasetId=S2_L1C_CDAS&fromTime=2016-12-06T00%3A00%3A00.000Z&toTime=2017-06-06T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=100&dateMode=MOSAIC#custom-script){:target="_blank"}
-- [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat=42.43765&lng=11.19284&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2F42924c6c-257a-4d04-9b8e-36387513a99c&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-2%2Fcby_cloud_detection%2Fscript.js&datasetId=S2L1C&fromTime=2017-10-06T00%3A00%3A00.000Z&toTime=2017-10-06T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script){:target="_blank"}
 
 ## General description
 In  [1] Braaten, Cohen, and Yang describe a very simple cloud detection algorithm. The whole cloud detection is a simple threshold-based test:   

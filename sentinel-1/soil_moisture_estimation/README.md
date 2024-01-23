@@ -5,12 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/soil_moisture_estimation/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '49.58263'
+  lng: '-97.78971'
+  datasetId: S1_AWS_IW_VVVH
+  fromTime: '2015-10-01T00:00:00.000Z'
+  toTime: '2019-10-31T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-1/soil_moisture_estimation/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '20'
 ---
-
-
-## Evaluate and visualize   
- - [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=11&lat=49.58263&lng=-97.78971&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2Fea820656-1f43-408b-9554-afc79eea489a&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-1%2Fsoil_moisture_estimation%2Fscript.js&datasetId=S1_CDAS_IW_VVVH&fromTime=2015-10-01T00%3A00%3A00.000Z&toTime=2019-10-31T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=20&dateMode=TIME%20RANGE#custom-script){:target="_blank"} 
-
 
 ## General description of the script
 

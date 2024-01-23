@@ -5,12 +5,21 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/oil-spill-index/
 nav_exclude: true
+examples:
+- zoom: '14'
+  lat: '-20.43437229834543'
+  lng: '57.740750312805176'
+  datasetId: S2L2A
+  fromTime: '2020-02-01'
+  toTime: '2020-08-06'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly8gT2lsIFNwaWxsIEluZGV4IGluIGdyYXlzY2FsZQpsZXQgT1NJID0gKEIwMyArIEIwNCkgLyBCMDI7CnJldHVybiBbT1NJLzNdCgovLyBSR0IgdmlzdWFsaXphdGlvbiBhKQovKgpsZXQgUiA9IChCMDUrQjA2KS9CMDcKbGV0IEcgPSAoQjAzK0IwNCkvQjAyCmxldCBCID0gKEIxMStCMTIpL0IwOApyZXR1cm4gW1IvMywgRy8zLCBCLzNdCiovCgovLyBSR0IgdmlzdWFsaXphdGlvbiBiKQovKgpsZXQgUiA9IChCMDMvQjAyKQpsZXQgRyA9IChCMDMrQjA0KS9CMDIKbGV0IEIgPSAoQjA2K0IwNykvQjA1CnJldHVybiBbUi8zLCBHLzMsIEIvM10KKi8=
+  additionalQueryParams:
+  - - maxcc
+    - '21'
 ---
-
-
-## Evaluate and visualize
- - [Sentinel Playground](https://apps.sentinel-hub.com/sentinel-playground/?source=S2L2A&lat=-20.43437229834543&lng=57.740750312805176&zoom=14&preset=CUSTOM&layers=B01,B02,B03&maxcc=21&gain=1.0&gamma=1.7&time=2020-02-01%7C2020-08-06&atmFilter=&showDates=false&evalscript=Ly8gT2lsIFNwaWxsIEluZGV4IGluIGdyYXlzY2FsZQpsZXQgT1NJID0gKEIwMyArIEIwNCkgLyBCMDI7CnJldHVybiBbT1NJLzNdCgovLyBSR0IgdmlzdWFsaXphdGlvbiBhKQovKgpsZXQgUiA9IChCMDUrQjA2KS9CMDcKbGV0IEcgPSAoQjAzK0IwNCkvQjAyCmxldCBCID0gKEIxMStCMTIpL0IwOApyZXR1cm4gW1IvMywgRy8zLCBCLzNdCiovCgovLyBSR0IgdmlzdWFsaXphdGlvbiBiKQovKgpsZXQgUiA9IChCMDMvQjAyKQpsZXQgRyA9IChCMDMrQjA0KS9CMDIKbGV0IEIgPSAoQjA2K0IwNykvQjA1CnJldHVybiBbUi8zLCBHLzMsIEIvM10KKi8%3D){:target="_blank"}    
- - [EO Browser](https://sentinelshare.page.link/EpXM){:target="_blank"} 
 
 ## General description of the script
 
@@ -18,11 +27,11 @@ The OSI (Oil Spill Index) uses visible Sentinel-2 bands to display oil spills ov
 
 **OSI = (B03 + B04) / B02**
 
-# Author of the script
+## Author of the script
 
 **Sankaran Rajendran**
 
-# Description of representative images
+## Description of representative images
 
 ‘Sentinel-2 Images developed using oil spill index (OSI) with other indices showing the occurrence and distribution of oil spill occurred off Mauritius located in the Indian ocean on August 06, 2020 (images acquired a. before (17 July, 2020), b. and c. during (01 and 06 August, 2020) and c. after (05 September, 2020) the oil spill). The results can be compared with the images of decorrelated the spectral bands 4, 3 and 2 given below (Rajendran et al., 2021b, c)’.
 

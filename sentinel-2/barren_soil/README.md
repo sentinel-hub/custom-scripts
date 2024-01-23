@@ -5,12 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/barren_soil/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '45.98008'
+  lng: '14.50856'
+  datasetId: S2L1C
+  fromTime: '2018-10-16T00:00:00.000Z'
+  toTime: '2019-04-16T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/barren_soil/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '24'
 ---
-
-
-## Evaluate and visualize
- - [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=13&lat=45.98008&lng=14.50856&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2F274a990e-7090-4676-8f7d-f1867e8474a7&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-2%2Fbarren_soil%2Fscript.js&datasetId=S2_L1C_CDAS&fromTime=2018-10-16T00%3A00%3A00.000Z&toTime=2019-04-16T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=24&dateMode=MOSAIC#custom-script){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=45.98008&lng=14.50856&zoom=13&time=2019-04-16&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly9WRVJTSU9OPTMgKGF1dG8tY29udmVydGVkIGZyb20gMSkKCi8vQXV0aG9yOiBNb25qYSBTZWJlbGEKCmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwocykgewogICAgbGV0IHZhbCA9IDIuNSAqICgocy5CMTEgKyBzLkIwNCktKHMuQjA4ICsgcy5CMDIpKS8oKHMuQjExICsgcy5CMDQpKyhzLkIwOCArIHMuQjAyKSk7CiAgICByZXR1cm4gWzIuNSogdmFsLCBzLkIwOCwgcy5CMTFdOwp9CmZ1bmN0aW9uIHNldHVwKCkgewogIHJldHVybiB7CiAgICBpbnB1dDogW3sKICAgICAgYmFuZHM6IFsKICAgICAgICAgICJCMDIiLAogICAgICAgICAgIkIwNCIsCiAgICAgICAgICAiQjA4IiwKICAgICAgICAgICJCMTEiLAogICAgICAgICAgIkIxMiIKICAgICAgXQogICAgfV0sCiAgICBvdXRwdXQ6IHsgYmFuZHM6IDMgfSAgfQp9Cgo%3D){:target="_blank"} 
 
 ## General description of the script
 

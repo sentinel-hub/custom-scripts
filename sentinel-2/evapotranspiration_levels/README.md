@@ -5,12 +5,21 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/evapotranspiration_levels/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '51.6877'
+  lng: '4.80414'
+  datasetId: S2L2A
+  fromTime: '2020-09-22T00:00:00.000Z'
+  toTime: '2020-09-22T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIxMSIsIkIwOSIsIkIwMiIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIHJldHVybiBbMi41ICogc2FtcGxlLkIxMSwyLjUgKiBzYW1wbGUuQjA5LDIuNSAqIHNhbXBsZS5CMDIsIHNhbXBsZS5kYXRhTWFzayBdOwp9
+  additionalQueryParams:
+  - - minQa
+    - NaN
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=51.6877&lng=4.80414&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-09-22T00%3A00%3A00.000Z&toTime=2020-09-22T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscript=Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgcmV0dXJuIHsKICAgIGlucHV0OiBbIkIxMSIsIkIwOSIsIkIwMiIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiB7IGJhbmRzOiA0IH0KICB9Owp9CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZSkgewogIHJldHVybiBbMi41ICogc2FtcGxlLkIxMSwyLjUgKiBzYW1wbGUuQjA5LDIuNSAqIHNhbXBsZS5CMDIsIHNhbXBsZS5kYXRhTWFzayBdOwp9&minQa=NaN){:target="_blank"} 
-
 
 ## General description of the script
 

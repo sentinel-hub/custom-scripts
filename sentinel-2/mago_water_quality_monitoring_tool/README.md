@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/mago_water_quality_monitoring_tool/
 nav_exclude: true
+examples:
+- zoom: '15'
+  lat: '36.70486'
+  lng: '10.76622'
+  datasetId: S2L2A
+  fromTime: '2022-01-30T00:00:00.000Z'
+  toTime: '2022-01-30T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/mago_water_quality_monitoring_tool/script.js
 ---
-
-
-## Evaluate and visualize
- - [EO Browser](https://sentinelshare.page.link/GUdK) 
 
 ## General description of the script
 MAGO Water Quality Monitoring tool is a code to estimate water quality parameters in lakes, reservoir or large ponds from Sentinel-2 images. The user can visualize water quality parameters (chlorophyll-a, cyanotoxins, turbidity...) on the EO Browser map  and get the corresponding time series at selected points or areas.

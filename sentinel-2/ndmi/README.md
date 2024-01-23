@@ -6,16 +6,24 @@ layout: script
 permalink: /sentinel-2/ndmi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '12'
+  lat: '42.40876'
+  lng: '12.00634'
+  datasetId: S2L2A
+  fromTime: '2023-10-02T00:00:00.000Z'
+  toTime: '2023-10-02T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKY29uc3QgbW9pc3R1cmVSYW1wcyA9IFsKICAgIFstMC44LCAweDgwMDAwMF0sCiAgICBbLTAuMjQsIDB4ZmYwMDAwXSwKICAgIFstMC4wMzIsIDB4ZmZmZjAwXSwKICAgIFswLjAzMiwgMHgwMGZmZmZdLAogICAgWzAuMjQsIDB4MDAwMGZmXSwKICAgIFswLjgsIDB4MDAwMDgwXQogIF07Cgpjb25zdCB2aXogPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihtb2lzdHVyZVJhbXBzKTsKCmZ1bmN0aW9uIHNldHVwKCkgewogIHJldHVybiB7CiAgICBpbnB1dDogWyJCOEEiLCAiQjExIiwgIlNDTCIsICJkYXRhTWFzayJdLAogICAgb3V0cHV0OiBbCiAgICAgIHsgaWQ6ICJkZWZhdWx0IiwgYmFuZHM6IDQgfSwKICAgICAgeyBpZDogImluZGV4IiwgYmFuZHM6IDEsIHNhbXBsZVR5cGU6ICJGTE9BVDMyIiB9LAogICAgICB7IGlkOiAiZW9icm93c2VyU3RhdHMiLCBiYW5kczogMiwgc2FtcGxlVHlwZTogIkZMT0FUMzIiIH0sCiAgICAgIHsgaWQ6ICJkYXRhTWFzayIsIGJhbmRzOiAxIH0sCiAgICBdLAogIH07Cn0KCmZ1bmN0aW9uIGV2YWx1YXRlUGl4ZWwoc2FtcGxlcykgewogIGxldCB2YWwgPSBpbmRleChzYW1wbGVzLkI4QSwgc2FtcGxlcy5CMTEpOwogIC8vIFRoZSBsaWJyYXJ5IGZvciB0aWZmcyB3b3JrcyB3ZWxsIG9ubHkgaWYgdGhlcmUgaXMgb25seSBvbmUgY2hhbm5lbCByZXR1cm5lZC4KICAvLyBTbyB3ZSBlbmNvZGUgdGhlICJubyBkYXRhIiBhcyBOYU4gaGVyZSBhbmQgaWdub3JlIE5hTnMgb24gZnJvbnRlbmQuCiAgY29uc3QgaW5kZXhWYWwgPSBzYW1wbGVzLmRhdGFNYXNrID09PSAxID8gdmFsIDogTmFOOwogIHJldHVybiB7CiAgICBkZWZhdWx0OiBbLi4udml6LnByb2Nlc3ModmFsKSwgc2FtcGxlcy5kYXRhTWFza10sCiAgICBpbmRleDogW2luZGV4VmFsXSwKICAgIGVvYnJvd3NlclN0YXRzOiBbdmFsLCBpc0Nsb3VkKHNhbXBsZXMuU0NMKSA/IDEgOiAwXSwKICAgIGRhdGFNYXNrOiBbc2FtcGxlcy5kYXRhTWFza10sCiAgfTsKfQoKZnVuY3Rpb24gaXNDbG91ZChzY2wpIHsKICBpZiAoc2NsID09IDMpIHsKICAgIC8vIFNDX0NMT1VEX1NIQURPVwogICAgcmV0dXJuIGZhbHNlOwogIH0gZWxzZSBpZiAoc2NsID09IDkpIHsKICAgIC8vIFNDX0NMT1VEX0hJR0hfUFJPQkEKICAgIHJldHVybiB0cnVlOwogIH0gZWxzZSBpZiAoc2NsID09IDgpIHsKICAgIC8vIFNDX0NMT1VEX01FRElVTV9QUk9CQQogICAgcmV0dXJuIHRydWU7CiAgfSBlbHNlIGlmIChzY2wgPT0gNykgewogICAgLy8gU0NfQ0xPVURfTE9XX1BST0JBCiAgICByZXR1cm4gZmFsc2U7CiAgfSBlbHNlIGlmIChzY2wgPT0gMTApIHsKICAgIC8vIFNDX1RISU5fQ0lSUlVTCiAgICByZXR1cm4gdHJ1ZTsKICB9IGVsc2UgaWYgKHNjbCA9PSAxMSkgewogICAgLy8gU0NfU05PV19JQ0UKICAgIHJldHVybiBmYWxzZTsKICB9IGVsc2UgaWYgKHNjbCA9PSAxKSB7CiAgICAvLyBTQ19TQVRVUkFURURfREVGRUNUSVZFCiAgICByZXR1cm4gZmFsc2U7CiAgfSBlbHNlIGlmIChzY2wgPT0gMikgewogICAgLy8gU0NfREFSS19GRUFUVVJFX1NIQURPVwogICAgcmV0dXJuIGZhbHNlOwogIH0KICByZXR1cm4gZmFsc2U7Cn0K
 ---
-
-## Evaluate and visualize
-   
- - [EO Browser](https://sentinelshare.page.link/G8yN){:target="_blank"}
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/ewj){:target="_blank"}
-
 ## General description of the script
 
 The NDMI is a normalized difference moisture index, that uses NIR and SWIR bands to display moisture. 

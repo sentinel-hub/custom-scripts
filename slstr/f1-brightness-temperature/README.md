@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /slstr/f1-brightness-temperature/
 nav_exclude: true
+examples:
+- zoom: '6'
+  lat: '33.08234'
+  lng: '-108.19336'
+  datasetId: S3SLSTR
+  fromTime: '2021-06-13T00:00:00.000Z'
+  toTime: '2021-06-13T23:59:59.999Z'
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/slstr/f1-brightness-temperature/script.js
+  platform:
+  - CDSE
+  - EOB
 ---
-
-
-## Evaluate and visualize
-
- - [EO Browser](https://sentinelshare.page.link/Gyyd){:target="_blank"}
 
 ## General description
 

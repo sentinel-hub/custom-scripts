@@ -5,14 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/cab/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '43.5142'
+  lng: '16.60103'
+  datasetId: S2L1C
+  fromTime: '2023-07-12T00:00:00.000Z'
+  toTime: '2024-01-12T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/cab/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '30'
 ---
-
-
-## Evaluate and visualize
- - [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=11&lat=43.5142&lng=16.60103&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2F274a990e-7090-4676-8f7d-f1867e8474a7&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-2%2Fcab%2Fscript.js&datasetId=S2_L1C_CDAS&fromTime=2023-07-12T00%3A00%3A00.000Z&toTime=2024-01-12T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=MOSAIC#custom-script){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscripturl=https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/cab/script.js){:target="_blank"}   
- When EO Browser loads, switch to **code view**, then check the **Use URL** checkbox and press **Refresh**.
-
 
 ## General description of the script
 

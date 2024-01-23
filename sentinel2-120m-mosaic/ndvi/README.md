@@ -7,10 +7,9 @@ permalink: /sentinel2-120m-mosaic/ndvi/
 nav_exclude: true
 ---
 
-
 ## Collection Access
 
-[Sentinel-2 L2A 120 m mosaic](https://collections.sentinel-hub.com/sentinel-s2-l2a-mosaic-120/) is a [public data collection](https://collections.sentinel-hub.com/), that is not part of open EO data. It is not included into EO Browser or Sentinel Playground. To access it, you need a [Sentinel Hub account](https://www.sentinel-hub.com/pricing/), and then either create a [process request](https://docs.sentinel-hub.com/api/latest/api/process/) to the collection or to [create a configuration based on the preprepared template](https://www.sentinel-hub.com/faq/#how-to-visualize-own-collection-eobrowser), which will allow you to view it in EO Browser and make [OGC requests](https://www.sentinel-hub.com/develop/api/ogc/) to it. The collection ID is `484d8dbb-9e3e-41f2-b96b-35189d3ae37f`, and the collection type is `byoc-484d8dbb-9e3e-41f2-b96b-35189d3ae37f`. 
+[Sentinel-2 L2A 120 m mosaic](https://collections.sentinel-hub.com/sentinel-s2-l2a-mosaic-120/) is a [public data collection](https://collections.sentinel-hub.com/), that is not part of open EO data. It is not included in EO Browser. To access it, you need a [Sentinel Hub account](https://www.sentinel-hub.com/pricing/), and then either create a [process request](https://docs.sentinel-hub.com/api/latest/api/process/) to the collection or to [create a configuration based on the preprepared template](https://www.sentinel-hub.com/faq/#how-to-visualize-own-collection-eobrowser), which will allow you to view it in EO Browser and make [OGC requests](https://www.sentinel-hub.com/develop/api/ogc/) to it. The collection ID is `484d8dbb-9e3e-41f2-b96b-35189d3ae37f`, and the collection type is `byoc-484d8dbb-9e3e-41f2-b96b-35189d3ae37f`.
 
 ## General description
 
@@ -30,19 +29,14 @@ See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/#).
 
 ## Description of representative images
 
-NDVI of northern Africa and Europe, 27.12.2019. 
+NDVI of northern Africa and Europe, 27.12.2019.
 
 ![120 m mosaic NDVI](fig/fig1.png)
 
-NDVI of Japan, 27.12.2019. 
+NDVI of Japan, 27.12.2019.
 
 ![120 m mosaic NDVI](fig/fig2.png)
 
 NDVI of Ganges delta in Bangladesh, 27.12.2019.
 
 ![120 m mosaic NDVI](fig/fig3.png)
-
-
-
-
-

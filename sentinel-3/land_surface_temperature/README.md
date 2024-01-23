@@ -1,28 +1,41 @@
 ---
 title: Sentinel-3 Land Surface Temperature Mapping
 parent: Sentinel-3
-
 layout: script
 permalink: /sentinel-3/land_surface_temperature/
 nav_exclude: true
+examples:
+- zoom: '9'
+  lat: '37.41489'
+  lng: '13.98834'
+  datasetId: S3OLCI
+  fromTime: '2023-07-20T00:00:00.000Z'
+  toTime: '2023-07-20T23:59:59.999Z'
+  platform:
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-3/land_surface_temperature/script.js
+  additionalQueryParams:
+  - - dataFusion
+    - '[{"id":"CRE_S3OLCI","alias":"S3OLCI"},{"id":"CRE_S3SLSTR","alias":"S3SLSTR"}]'
+- zoom: '9'
+  lat: '37.41489'
+  lng: '13.98834'
+  datasetId: S3OLCI
+  fromTime: '2023-07-20T00:00:00.000Z'
+  toTime: '2023-07-20T23:59:59.999Z'
+  platform:
+  - CDSE
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-3/land_surface_temperature/script.js
+  additionalQueryParams:
+  - - dataFusion
+    - '[{"id":"CDAS_S3OLCI","alias":"S3OLCI"},{"id":"CDAS_S3SLSTR","alias":"S3SLSTR"}]'
 ---
-
 
 
 | Timelapse (2023) of Land Surface Temperature in Sicily during the 2023 heatwave |
 | :----------------------------------------------------------------------------------: |
 |  !['Timelapse of 2023'](img/S3OLCI-1511248905868594-timelapse_sicily_heatwave.gif)  |
 
-
-## Evaluate and visualize 
-
-Note that these links include a shortened version of the script with most of the comments removed - otherwise URLs can not be shared.
-
-Sicily, Italy
- - [EO Browser](https://sentinelshare.page.link/gXdV){:target="_blank"} 
-
-Paris, France
- - [Copernicus Browser](https://sentinelshare.page.link/csxC)  
 
 ## General description of the script
 

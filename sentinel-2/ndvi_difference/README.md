@@ -6,50 +6,24 @@ layout: script
 permalink: /sentinel-2/ndvi_difference/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '15'
+  lat: '42.38635'
+  lng: '12.4479'
+  datasetId: S2L2A
+  fromTime: '2023-06-29T00:00:00.000Z'
+  toTime: '2023-07-29T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKLy8gU2NyaXB0IHRvIGV4dHJhY3QgTkRWSSBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIGxhdGVzdCBhY3F1aXNpdGlvbiBhbmQgdGhlIGFjcXVpc2l0aW9uIDEwLWRheSBwcmlvciB0byB0aGUgbGF0ZXN0IHdpdGhpbiBhIHNwZWNpZmllZCB0aW1lIHJhbmdlCmZ1bmN0aW9uIHNldHVwKCkgewogICAgcmV0dXJuIHsKICAgICAgICBpbnB1dDogW3sKICAgICAgICAgICAgYmFuZHM6IFsiQjA0IiwgIkIwOCIsICJTQ0wiLCAiZGF0YU1hc2siXSwKICAgICAgICAgICAgdW5pdHM6ICJETiIKICAgICAgICB9XSwKICAgICAgICBvdXRwdXQ6IFsKICAgICAgICAgICAgeyBpZDogImRlZmF1bHQiLCBiYW5kczogNCB9LAogICAgICAgICAgICB7IGlkOiAiaW5kZXgiLCBiYW5kczogMSwgc2FtcGxlVHlwZTogIkZMT0FUMzIiIH0sCiAgICAgICAgICAgIHsgaWQ6ICJlb2Jyb3dzZXJTdGF0cyIsIGJhbmRzOiAyLCBzYW1wbGVUeXBlOiAiRkxPQVQzMiIgfSwKICAgICAgICAgICAgeyBpZDogImRhdGFNYXNrIiwgYmFuZHM6IDEgfQogICAgICAgIF0sCiAgICAgICAgbW9zYWlja2luZzogTW9zYWlja2luZy5PUkJJVAogICAgfQoKfQoKZnVuY3Rpb24gZXZhbHVhdGVQaXhlbChzYW1wbGVzKSB7CiAgICAvLyBuZHZpIGRpZmZlcmVuY2UKICAgIGxldCBsYXRlc3QgPSBzYW1wbGVzWzBdOwogICAgbGV0IHByaW9yID0gc2FtcGxlc1sxXTsKICAgIGxldCBkYXRhTWFzayA9IGxhdGVzdC5kYXRhTWFzayAqIHByaW9yLmRhdGFNYXNrOwogICAgY29uc3QgZGlmZiA9IGRhdGFNYXNrID09PSAxID8gaW5kZXgobGF0ZXN0LkIwOCwgbGF0ZXN0LkIwNCkgLSBpbmRleChwcmlvci5CMDgsIHByaW9yLkIwNCkgOiBOYU47CgogICAgLy8gdmlzdWFsaXNhdGlvbgogICAgY29uc3QgcmFtcHMgPSBbCiAgICAgICAgWy0yLCAweDhlMDE1Ml0sCiAgICAgICAgWy0xLCAweGM1MWI3ZF0sCiAgICAgICAgWy0wLjUsIDB4ZGU3N2FlXSwKICAgICAgICBbMCwgMHhmN2Y3ZjddLAogICAgICAgIFswLjUsIDB4N2ZiYzQxXSwKICAgICAgICBbMSwgMHg0ZDkyMjFdLAogICAgICAgIFsyLCAweDI3NjQxOV0KICAgIF0KICAgIGNvbnN0IHZpc3VhbGl6ZXIgPSBuZXcgQ29sb3JSYW1wVmlzdWFsaXplcihyYW1wcyk7CiAgICBsZXQgaW1nVmFscyA9IHZpc3VhbGl6ZXIucHJvY2VzcyhkaWZmKTsKICAgIGltZ1ZhbHMucHVzaChkYXRhTWFzaykKCiAgICByZXR1cm4gewogICAgICAgIGRlZmF1bHQ6IGltZ1ZhbHMsCiAgICAgICAgaW5kZXg6IFtkaWZmXSwKICAgICAgICBlb2Jyb3dzZXJTdGF0czogW2RpZmYsIGlzQ2xvdWQoc2FtcGxlcy5TQ0wpID8gMSA6IDBdLAogICAgICAgIGRhdGFNYXNrOiBbZGF0YU1hc2tdCiAgICB9Owp9CgpmdW5jdGlvbiBwcmVQcm9jZXNzU2NlbmVzKGNvbGxlY3Rpb25zKSB7CiAgICAvLyBzb3J0IGZyb20gbW9zdCByZWNlbnQgdG8gbGVhc3QgcmVjZW50CiAgICBjb2xsZWN0aW9ucy5zY2VuZXMub3JiaXRzID0gY29sbGVjdGlvbnMuc2NlbmVzLm9yYml0cy5zb3J0KAogICAgICAgIChzMSwgczIpID0+IG5ldyBEYXRlKHMyLmRhdGVGcm9tKSAtIG5ldyBEYXRlKHMxLmRhdGVGcm9tKQogICAgKTsKCiAgICBsZXQgc2NlbmVzID0gY29sbGVjdGlvbnMuc2NlbmVzLm9yYml0czsKICAgIGxldCBsYXRlc3Q7CiAgICBsZXQgY2xvc2VzdDsKICAgIGxhdGVzdCA9IGNsb3Nlc3QgPSBzY2VuZXNbMF07CgogICAgLy8gdGltZXN0YW1wIG9mIDEwLWRheSBwcmlvciB0byBsYXRlc3QgYWNxdWlzaXRpb24KICAgIGxldCB0YXJnZXQgPSBuZXcgRGF0ZShuZXcgRGF0ZShsYXRlc3QuZGF0ZUZyb20pLmdldFRpbWUoKSAtIDEwICogMjQgKiAzNjAwICogMTAwMCk7CgogICAgLy8gZmluZCBjbG9zZXQgdGltZXN0YW1wIHRvIHRoZSB0YXJnZXQKICAgIGxldCBkaWZmID0gTnVtYmVyLlBPU0lUSVZFX0lORklOSVRZOwogICAgZm9yIChsZXQgaSA9IDE7IGkgPCBzY2VuZXMubGVuZ3RoOyBpKyspIHsKICAgICAgICBjdXJyZW50ID0gbmV3IERhdGUoc2NlbmVzW2ldLmRhdGVGcm9tKTsKICAgICAgICBpZiAoTWF0aC5hYnMoY3VycmVudCAtIHRhcmdldCkgPj0gZGlmZikgeyBicmVhazsgfQogICAgICAgIGRpZmYgPSBNYXRoLmFicyhjdXJyZW50IC0gdGFyZ2V0KTsKICAgICAgICBjbG9zZXN0ID0gc2NlbmVzW2ldOwogICAgfQoKICAgIC8vIGZpbHRlciBjb2xsZWN0aW9ucyB0byBrZWVwIHRoZSBsYXRlc3QgYWNxdWlzaXRpb24gYW5kIHRoZSBjbG9zZXN0IGFjcXVpc2l0aW9ucyB0byB0aGUgdGFyZ2V0CiAgICBjb2xsZWN0aW9ucy5zY2VuZXMub3JiaXRzID0gY29sbGVjdGlvbnMuc2NlbmVzLm9yYml0cy5maWx0ZXIoZnVuY3Rpb24gKG9yYml0KSB7CiAgICAgICAgdmFyIG9yYml0RGF0ZUZyb20gPSBvcmJpdC5kYXRlRnJvbTsKICAgICAgICByZXR1cm4gW2xhdGVzdC5kYXRlRnJvbSwgY2xvc2VzdC5kYXRlRnJvbV0uaW5jbHVkZXMob3JiaXREYXRlRnJvbSk7CiAgICB9KQogICAgcmV0dXJuIGNvbGxlY3Rpb25zCn0KCmZ1bmN0aW9uIGlzQ2xvdWQoc2NsKSB7CiAgICBpZiAoc2NsID09IDMpIHsgLy8gU0NfQ0xPVURfU0hBRE9XCiAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgfSBlbHNlIGlmIChzY2wgPT0gOSkgeyAvLyBTQ19DTE9VRF9ISUdIX1BST0JBCiAgICAgICAgcmV0dXJuIHRydWU7CiAgICB9IGVsc2UgaWYgKHNjbCA9PSA4KSB7IC8vIFNDX0NMT1VEX01FRElVTV9QUk9CQQogICAgICAgIHJldHVybiB0cnVlOwogICAgfSBlbHNlIGlmIChzY2wgPT0gNykgeyAvLyBTQ19DTE9VRF9MT1dfUFJPQkEKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9IGVsc2UgaWYgKHNjbCA9PSAxMCkgeyAvLyBTQ19USElOX0NJUlJVUwogICAgICAgIHJldHVybiB0cnVlOwogICAgfSBlbHNlIGlmIChzY2wgPT0gMTEpIHsgLy8gU0NfU05PV19JQ0UKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9IGVsc2UgaWYgKHNjbCA9PSAxKSB7IC8vIFNDX1NBVFVSQVRFRF9ERUZFQ1RJVkUKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9IGVsc2UgaWYgKHNjbCA9PSAyKSB7IC8vIFNDX0RBUktfRkVBVFVSRV9TSEFET1cKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9CiAgICByZXR1cm4gZmFsc2U7Cn0=
 ---
-
-
-## Evaluate and visualize
-- [EO Browser](https://sentinelshare.page.link/xc8s)
-
-**Note**: The default output in the script is the visualisation layer for the EO Browser generated via the [ColorRampVisualizer](https://docs.sentinel-hub.com/api/latest/evalscript/functions/#colorrampvisualizer) which interpolates the range of NDVI difference from -2 to 2 with the color ramps defined below. The actual value of the NDVI difference can be obtained from the output `index`.
-
-<table>
-  <tr>
-    <th>NDVI difference</th>
-    <th>HTLM color code</th>
-    <th>Color</th>
-  </tr>
-  <tr>
-    <td>-2</td>
-    <td>#8e0152</td>
-    <td style="background-color: #8e0152;"></td>
-  </tr>
-  <tr>
-    <td>-1</td>
-    <td>#c51b7d</td>
-    <td style="background-color: #c51b7d;"></td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>#f7f7f7</td>
-    <td style="background-color: #f7f7f7;"></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>#4d9221</td>
-    <td style="background-color: #4d9221;"></td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>#276419</td>
-    <td style="background-color: #276419;"></td>
-  </tr>
-</table>
-
 
 ## General description
 This script aims to obtain the diffence of NDVI between the latest acquisition and the acquisition 10-day prior to the latest on within a specified time period. Multi-temporal analysis is common in the Earth Observation field. Here we take NDVI as an example and demonstrate how to calculate the difference of NDVI between two acquisitions using [`mosaicking: ORBIT`](https://docs.sentinel-hub.com/api/latest/evalscript/v3/#mosaicking) and [`preProcessScenes`](https://docs.sentinel-hub.com/api/latest/evalscript/v3/#preprocessscenes-function-optional) in one single request.

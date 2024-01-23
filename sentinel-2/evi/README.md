@@ -6,16 +6,24 @@ layout: script
 permalink: /sentinel-2/evi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '12'
+  lat: '42.40876'
+  lng: '12.00634'
+  datasetId: S2L2A
+  fromTime: '2023-10-02T00:00:00.000Z'
+  toTime: '2023-10-02T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/evi/eob.js
 ---
-
-## Evaluate and visualize
-
- - [EO Browser](https://sentinelshare.page.link/NnPE){:target="_blank"}
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/kkf){:target="_blank"}
-
 ## General description of the script
 
 For Sentinel-2, the index looks like this:

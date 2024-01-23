@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/urban_areas/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '44.51260'
+  lng: '11.35008'
+  fromTime: '2019-05-26T00:00:00.000Z'
+  toTime: '2019-05-26T23:59:59.999Z'
+  datasetId: S1_AWS_IW_VVVH
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/urban_areas/script.js
+  platform:
+  - CDSE
+  - EOB
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=44.51260&lng=11.35008&zoom=13&time=2019-05-26&preset=CUSTOM&datasource=Sentinel-1%20AWS%20(S1-AWS-IW-VVVH)&layers=VV,VH,HH&evalscript=cmV0dXJuIFs1LjUgKiBWSCA%2BIDAuNSwgVlYsIFZIICogOF07){:target="_blank"}
- Constrains: the script works only on data located on AWS.
 
 ## General description of the script
 

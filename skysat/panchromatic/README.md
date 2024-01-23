@@ -10,7 +10,7 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-As Skysat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playground links are not possible due to the personalized data credentials.   
+As Skysat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.   
 
 ## General description
 

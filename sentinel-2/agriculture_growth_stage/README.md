@@ -5,13 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/agriculture_growth_stage/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '45.6246'
+  lng: '12.42073'
+  datasetId: S2L1C
+  fromTime: '2017-06-01T00:00:00.000Z'
+  toTime: '2017-08-31T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/agriculture_growth_stage/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '30'
 ---
-
-
-## Evaluate and visualize
-
- - [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=11&lat=45.6246&lng=12.42073&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2F274a990e-7090-4676-8f7d-f1867e8474a7&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-2%2Fagriculture_growth_stage%2Fscript.js&datasetId=S2_L1C_CDAS&fromTime=2017-06-01T00%3A00%3A00.000Z&toTime=2017-08-31T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=TIME%20RANGE#custom-script){:target="_blank"}    
-
 
 ## Author of the script
 [@HarelDan](https://github.com/hareldunn/GIS_Repo/blob/master/Multi-Temporal%20NDVI%20for%20Sentinel%20Hub%20Custom%20Scripts){:target="_blank"}    

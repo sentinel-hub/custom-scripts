@@ -42,7 +42,7 @@ Version 1 works for both Sentinel 2 and Sentinel 3 as is. Version 3 adds support
 
 ## Description of the script
 
-Ulyssys Water Quality Viewer (UWQV) is a custom script for the [Sentinel-hub EO-Browser](https://apps.sentinel-hub.com/eo-browser/) or the [Sentinel-hub Playground](https://apps.sentinel-hub.com/sentinel-playground/) to dynamically **visualize the chlorophyll and sediment conditions of water bodies on both Sentinel-2 and Sentinel-3 images**.
+Ulyssys Water Quality Viewer (UWQV) is a custom script for the [Sentinel-hub EO-Browser](https://apps.sentinel-hub.com/eo-browser/) to dynamically **visualize the chlorophyll and sediment conditions of water bodies on both Sentinel-2 and Sentinel-3 images**.
 
 The visualization you see is a product of two masking operations and two water quality parameter visualizations:
 

@@ -5,11 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/forest_hurricane/
 nav_exclude: true
+examples:
+- zoom: '12'
+  lat: '53.7405'
+  lng: '17.7210'
+  fromTime: '2017-08-16T00:00:00.000Z'
+  toTime: '2017-08-16T23:59:59.999Z'
+  datasetId: S1_AWS_IW_VVVH
+  platform:
+  - CDSE
+  - EOB
+  evalscript: cmV0dXJuIFtWViozLFZIKjgsVkgqM10=
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=53.7405&lng=17.7210&zoom=12&time=2017-08-16&preset=CUSTOM&datasource=Sentinel-1%20GRD%20IW&layers=VH,VH,VH&evalscript=cmV0dXJuIFtWViozLFZIKjgsVkgqM10%3D){:target="_blank"} 
 
 ## General description of the script
 

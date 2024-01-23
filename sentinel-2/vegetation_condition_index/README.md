@@ -5,16 +5,17 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/vegetation_condition_index/
 nav_exclude: true
+examples:
+- zoom: '12'
+  lat: '37.99495'
+  lng: '-100.16888'
+  datasetId: S2L1C
+  fromTime: '2015-05-30T00:00:00.000Z'
+  toTime: '2020-05-30T23:59:59.000Z'
+  platform:
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/vegetation_condition_index/script.js
 ---
-
-
-## Evaluate and visualize
-- [EO Browser](https://sentinelshare.page.link/iMVM){:target="_blank"}
-
-Sentinel Hub RESTful API: [Click to view the request](curl.txt){:target="_blank"} 
-
-Save script.js to your current directory and run the bash command above.
-Don't forget to insert your actual access token.
 
 ## General description of the script
 
@@ -24,9 +25,7 @@ VCI = (NDVI_observed - NDVI_hist_min) / (NDVI_hist_max - NDVI_hist_min)
 
 Please note that in case of Sentinel 2, only a few years of history are available.
 
-The script takes the newest (latest) available scene as the observed one -- thus, the observed date can be chosen in the Sentinel Hub Playground GUI (or, in case of API request, via the ```dataFilter.timeRange.to``` field). Then, for each previous year the script finds all values within `toleranceDays` of the most recent date.
-
-Because of the multi-temporal nature of this index, be sure to use it in the temporal version of Sentinel Hub Playground with "Enable temporal data" checked in the "Effects" tab, or in case of API request, set the ```dataFilter.timeRange.to``` field far enough back to include all available history.
+The script takes the newest (latest) available scene as the observed one. Then, for each previous year the script finds all values within `toleranceDays` of the most recent date.
 
 The actual scenes (dates) used can be returned as meta-data with an API requests by replacing the ```responses``` part of the request with:
 

@@ -5,13 +5,23 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/bais2/
 nav_exclude: true
+examples:
+- zoom: '12'
+  lat: '28.03426'
+  lng: '-15.69672'
+  datasetId: S2L1C
+  fromTime: '2019-02-19T00:00:00.000Z'
+  toTime: '2019-08-19T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/bais2/script.js
+  additionalQueryParams:
+  - - mosaickingOrder
+    - mostRecent
+  - - cloudCoverage
+    - '61'
 ---
-
-
-## Evaluate and visualize
- - [Copernicus Browser](https://dataspace.copernicus.eu/browser/?zoom=12&lat=28.03426&lng=-15.69672&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fsh.dataspace.copernicus.eu%2Fogc%2Fwms%2F274a990e-7090-4676-8f7d-f1867e8474a7&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fsentinel-2%2Fbais2%2Fscript.js&datasetId=S2_L1C_CDAS&fromTime=2019-02-19T00%3A00%3A00.000Z&toTime=2019-08-19T23%3A59%3A59.999Z&mosaickingOrder=mostRecent&demSource3D=%22MAPZEN%22&cloudCoverage=61&dateMode=MOSAIC#custom-script){:target="_blank"}    
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=27.9401&lng=-15.6967&zoom=11&time=2019-08-19&preset=CUSTOM&datasource=Sentinel-2%20L1C&layers=B01,B02,B03&evalscript=Ly8gQnVybmVkIEFyZWEgSW5kZXggZm9yIFNlbnRpbmVsLTIgICAoYWJicnYuIEJBSVMyKQovLyBCYXNlZCBvbiBET0k6IDEwLjMzOTAvZWNycy0yLTA1MTc3IAovLyAybmQgSW50ZXJuYXRpb25hbCBFbGVjdHJvbmljIENvbmZlcmVuY2Ugb24gUmVtb3RlIFNlbnNpbmcsIFZvbHVtZTogUHJvY2VlZGluZ3MsIDIoNyksIDM2NAovLyBCeSBGZWRlcmljbyBGaWxpcHBvbmkgb2YgSVNQUkEKLy8gVVJMIGh0dHBzOi8vd3d3LnJlc2VhcmNoZ2F0ZS5uZXQvcHVibGljYXRpb24vMzIzOTY0MTI0X0JBSVMyX0J1cm5lZF9BcmVhX0luZGV4X2Zvcl9TZW50aW5lbC0yCi8vIEFkYXB0ZWQgYnkgSGFyZWwgRGFuLiBASGFyZWxEYW4sIGhhcmVsLmR1bm5AZ21haWwuY29tCi8vCgpsZXQgaW5kZXggPSAoMS0oKEIwNipCMDcqQjhBKS9CMDQpKiowLjUpKigoQjEyLUI4QSkvKChCMTIrQjhBKSoqMC41KSsxKTsKbGV0IG1pbiA9IDA7CmxldCBtYXggPSAwLjk5OwpsZXQgemVybyA9IDAuNTsKCi8vIGNvbG9yQmxlbmQgd2lsbCByZXR1cm4gYSBjb2xvciB3aGVuIHRoZSBpbmRleCBpcyBiZXR3ZWVuIG1pbiBhbmQgbWF4IGFuZCB3aGl0ZSB3aGVuIGl0IGlzIGxlc3MgdGhhbiBtaW4uCi8vIFRvIHNlZSBibGFjayB3aGVuIGl0IGlzIG1vcmUgdGhhbiBtYXgsIHVuY29tbWVudCB0aGUgbGFzdCBsaW5lIG9mIGNvbG9yQmxlbmQuCi8vIFRoZSBtaW4vbWF4IHZhbHVlcyB3ZXJlIGNvbXB1dGVkIGF1dG9tYXRpY2FsbHkgYW5kIG1heSBiZSBwb29ybHkgc3BlY2lmaWVkLCBmZWVsIGZyZWUgdG8gY2hhbmdlIHRoZW0gdG8gdHdlYWsgdGhlIGRpc3BsYXllZCByYW5nZS4KLy8gVGhpcyBpbmRleCBjcm9zc2VzIHplcm8sIHNvIGEgZGl2ZXJnaW5nIGNvbG9yIG1hcCBpcyB1c2VkLiBUbyB0d2VhayB0aGUgdmFsdWUgb2YgdGhlIGJyZWFrIGluIHRoZSBjb2xvciBtYXAsIGNoYW5nZSB0aGUgdmFyaWFibGUgJ3plcm8nLgoKbGV0IHVuZGVyZmxvd19jb2xvciA9IFsxLCAxLCAxXTsKbGV0IGxvd19jb2xvciA9IFswLzI1NSwgMC8yNTUsIDI1NS8yNTVdOwpsZXQgaGlnaF9jb2xvciA9IFsyNTUvMjU1LCAyMC8yNTUsIDIwLzI1NV07CmxldCB6ZXJvX2NvbG9yID0gWzI1MC8yNTUsIDI1NS8yNTUsIDEwLzI1NV07CmxldCBvdmVyZmxvd19jb2xvciA9IFsyNTUvMjU1LCAwLzI1NSwgMjU1LzI1NV07CgpyZXR1cm4gY29sb3JCbGVuZChpbmRleCwgW21pbiwgbWluLCB6ZXJvLCBtYXhdLApbCgl1bmRlcmZsb3dfY29sb3IsCglsb3dfY29sb3IsCgl6ZXJvX2NvbG9yLCAvLyBkaXZlcmdlbnQgc3RlcCBhdCB6ZXJvCgloaWdoX2NvbG9yLAoJb3ZlcmZsb3dfY29sb3IgLy8gdW5jb21tZW50IHRvIHNlZSBvdmVyZmxvd3MKXSk7Cg%3D%3D){:target="_blank"}   
-
 
 ## General description of the script
 

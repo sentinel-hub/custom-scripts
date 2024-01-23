@@ -1,5 +1,20 @@
 ---
 layout: default
+cdse_lookup:
+  S2L2A: S2_L2A_CDAS
+  S2L1C: S2_L1C_CDAS
+  S1_AWS_IW_VVVH: S1_CDAS_IW_VVVH
+  S3SLSTR: S3SLSTR_CDAS
+  S3OLCI: S3OLCI_CDAS
+  S5_AER_AI: S5_AER_AI_CDAS
+  S5_CH4: S5_CH4_CDAS
+  S5_NO2: S5_NO2_CDAS
+  S5_CLOUD: S5_CLOUD_CDAS
+  S5_CO: S5_CO_CDAS
+  S5_HCHO: S5_HCHO_CDAS
+  S5_O3: S5_O3_CDAS
+  S5_SO2: S5_SO2_CDAS
+  S1_AWS_EW_HHHV: S1_CDAS_EW_HHHV
 ---
 
 <h1 class="d-inline" id={{page.slug}}> {{page.title}} </h1>
@@ -37,5 +52,29 @@ layout: default
 <button class="expand" onclick="expand(event)">Show full evalscript <span class="chevron bottom"></span></button>
 
 </div>
+
+{% if page.examples %}
+<h2 class="d-inline"> Evaluate and Visualize </h2>
+{% for example in page.examples %}
+{% if example.name %}
+<h3 class="d-inline"> {{example.name}} </h2>
+{% endif %}
+{% capture additonalParams %}{% for query in example.additionalQueryParams %}&{{query[0]}}={{query[1] | url_encode}}{% endfor %}{% endcapture %}
+<ul>
+{% if example.platform contains "CDSE" %}
+<li>
+{% capture from %}{{ example.fromTime | slice: 0, 10 }}{% endcapture %}
+{% capture to %}{{ example.toTime | slice: 0, 10 }}{% endcapture %}
+<a href="https://dataspace.copernicus.eu/browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{layout.cdse_lookup[example.datasetId] | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{% if from != to %}&dateMode=TIME RANGE{%- endif -%}{{additonalParams}}#custom-script" target="_blank">Copernicus Browser</a>
+</li>
+{% endif %}
+{% if example.platform contains "EOB" %}
+<li>
+<a href="https://apps.sentinel-hub.com/eo-browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{example.datasetId | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{{additonalParams}}#custom-script" target="_blank">EO Browser</a>
+</li>
+{% endif %}
+</ul>
+{% endfor %}
+{% endif %}
 
 {{content}}

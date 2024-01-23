@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/apa_script/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '-0.3213'
+  lng: '34.1359'
+  fromTime: '2019-10-04T00:00:00.000Z'
+  toTime: '2019-10-04T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  datasetId: S2L2A
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/apa_script/script.js
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-0.3213&lng=34.1359&zoom=10&time=2019-10-04&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B03,B02,B01&evalscript=Ly9pbmRpY2VzIHRvIGFwcGx5IGEgbWFzayB0byB3YXRlciBib2RpZXMKbGV0IG1vaXN0dXJlID0gKEI4QS1CMTEpLyhCOEErQjExKTsgCmxldCBORFdJID0gKEIwMyAtIEIwOCkvKEIwMyArIEIwOCk7CmxldCB3YXRlcl9ib2RpZXMgPSAoTkRXSS1tb2lzdHVyZSkvKE5EV0krbW9pc3R1cmUpOwovL2luZGljZXMgdG8gaWRlbnRpZnkgd2F0ZXIgcGxhbnRzIGFuZCBhbGdhZQpsZXQgd2F0ZXJfcGxhbnRzID0gKEIwNSAtIEIwNCkvKEIwNSArIEIwNCk7CmxldCBOSVIyID0gQjA0ICsgKEIxMSAtIEIwNCkqKCg4MzIsOCAtIDY2NCw2KS8oMTYxMyw3IC0gNjY0LDYpKTsKbGV0IEZBSSA9IEIwOCAtIE5JUjI7Ci8vaW5kaWNlcyB0byBhcHBseSBhIG1hc2sgb3ZlciBjbG91ZHMKLy9jb2RlIHRha2VuIGZyb20gc2VudGluZWwtMiBjdXN0b20gc2NyaXB0cyBjYnlfY2xvdWRfZGV0ZWN0aW9uIGJ5IFBldGVyIEZvZ2gKbGV0IGJSYXRpbyA9IChCMDMgLSAwLjE3NSkgLyAoMC4zOSAtIDAuMTc1KTsKbGV0IE5ER1IgPSBpbmRleChCMDMsIEIwNCk7CmxldCBnYWluID0gMi41OwovLyBuYXR1cmFsIGNvbG9yIGNvbXBvc2l0aW9uCmxldCBuYXR1cmFsX2NvbG9yID0gWzMqQjA0LCAzKkIwMywgMypCMDJdOwoKLy8gY2xvdWQgbWFzawpmdW5jdGlvbiBjbGlwKGEpIHsKIHJldHVybiBNYXRoLm1heCgwLCBNYXRoLm1pbigxLCBhKSk7Cn0KCmlmIChCMTE%2BMC4xICYmIGJSYXRpbyA%2BIDEpIHsgLy9jbG91ZAogdmFyIHYgPSAwLjUqKGJSYXRpbyAtIDEpOwogcmV0dXJuIG5hdHVyYWxfY29sb3I7Cn0KCmlmIChCMTEgPiAwLjEgJiYgYlJhdGlvID4gMCAmJiBOREdSPjApIHsgLy9jbG91ZAogdmFyIHYgPSA1ICogTWF0aC5zcXJ0KGJSYXRpbyAqIE5ER1IpOwogcmV0dXJuIG5hdHVyYWxfY29sb3I7Cn0KLy9jbGFzc2lmeSB0aGUgcHJlc2VuY2Ugb2YgYWxnYWUgYW5kIHdhdGVyIHBsYW50cyBvdmVyIHdhdGVyIHN1cmZhY2VzCmlmIChORFdJIDwgMCAmJiB3YXRlcl9ib2RpZXMgPiAwKSByZXR1cm4gbmF0dXJhbF9jb2xvcjsKZWxzZSByZXR1cm4gW0ZBSSo4LjUsIHdhdGVyX3BsYW50cyo1LjUsIE5EV0kqMV07Cgo%3D){:target="_blank"} 
-
 
 ## General description of the script
 

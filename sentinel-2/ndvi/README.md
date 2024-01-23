@@ -6,15 +6,24 @@ layout: script
 permalink: /sentinel-2/ndvi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '10'
+  lat: '42.76703'
+  lng: '11.22847'
+  datasetId: S2L2A
+  fromTime: '2020-07-12T00:00:00.000Z'
+  toTime: '2020-07-12T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/eob.js
 ---
-
-## Evaluate and visualize
- - [EO Browser](https://sentinelshare.page.link/NWpq){:target="_blank"}
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/s9w){:target="_blank"}
-
 ## General description
 
 The well known and widely used NDVI is a simple, but effective index for quantifying green vegetation. It normalizes green leaf scattering in Near Infra-red wavelengths with chlorophyll absorption in red wavelengths.

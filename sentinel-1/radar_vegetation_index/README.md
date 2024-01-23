@@ -6,16 +6,24 @@ layout: script
 permalink: /sentinel-1/radar_vegetation_index/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
-    - [Raw Values, raw.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
+examples:
+- zoom: '11'
+  lat: '49.76752'
+  lng: '-97.85179'
+  datasetId: S1_AWS_IW_VVVH
+  fromTime: '2019-07-10T00:00:00.000Z'
+  toTime: '2019-07-10T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly9WRVJTSU9OPTMKZnVuY3Rpb24gc2V0dXAoKSB7CiAgICByZXR1cm4gewogICAgICAgIGlucHV0OiBbIlZWIiwgIlZIIiwgImRhdGFNYXNrIl0sCiAgICAgICAgb3V0cHV0OiBbCiAgICAgICAgICAgIHsgaWQ6ICJkZWZhdWx0IiwgYmFuZHM6IDQgfSwKICAgICAgICAgICAgeyBpZDogImluZGV4IiwgYmFuZHM6IDEsIHNhbXBsZVR5cGU6ICJGTE9BVDMyIiB9LAogICAgICAgICAgICB7IGlkOiAiZW9icm93c2VyU3RhdHMiLCBiYW5kczogMSwgc2FtcGxlVHlwZTogJ0ZMT0FUMzInIH0sCiAgICAgICAgICAgIHsgaWQ6ICJkYXRhTWFzayIsIGJhbmRzOiAxIH0KICAgICAgICBdCiAgICB9Owp9Cgpjb25zdCByYW1wID0gWwogICAgWzAsIDB4OGUwMTUyXSwKICAgIFswLjI1LCAweGRlNzdhZV0sCiAgICBbMC41LCAweGY3ZjdmN10sCiAgICBbMC43NSwgMHg3ZmJjNDFdLAogICAgWzEsIDB4Mjc2NDE5XSwKXTsKCgpjb25zdCB2aXN1YWxpemVyID0gbmV3IENvbG9yUmFtcFZpc3VhbGl6ZXIocmFtcCk7CgpmdW5jdGlvbiBldmFsdWF0ZVBpeGVsKHNhbXBsZXMpIHsKICAgIGxldCBkb3AgPSAoc2FtcGxlcy5WViAvIChzYW1wbGVzLlZWICsgc2FtcGxlcy5WSCkpOwogICAgbGV0IG0gPSAxIC0gZG9wOwogICAgLy9kZXBvbGFyaXphdGlvbiB3aXRoaW4gdGhlIHZlZ2V0YXRpb24KICAgIGxldCB2YWwgPSAoTWF0aC5zcXJ0KGRvcCkpICogKCg0ICogKHNhbXBsZXMuVkgpKSAvIChzYW1wbGVzLlZWICsgc2FtcGxlcy5WSCkpOwogICAgLy8gVGhlIGxpYnJhcnkgZm9yIHRpZmZzIHdvcmtzIHdlbGwgb25seSBpZiB0aGVyZSBpcyBvbmx5IG9uZSBjaGFubmVsIHJldHVybmVkLgogICAgLy8gU28gd2UgZW5jb2RlIHRoZSAibm8gZGF0YSIgYXMgTmFOIGhlcmUgYW5kIGlnbm9yZSBOYU5zIG9uIGZyb250ZW5kLgogICAgY29uc3QgaW5kZXhWYWwgPSBzYW1wbGVzLmRhdGFNYXNrID09PSAxID8gdmFsIDogTmFOOwogICAgY29uc3QgaW1nVmFscyA9IHZpc3VhbGl6ZXIucHJvY2Vzcyh2YWwpOwoKICAgIHJldHVybiB7CiAgICAgICAgZGVmYXVsdDogaW1nVmFscy5jb25jYXQoc2FtcGxlcy5kYXRhTWFzayksCiAgICAgICAgaW5kZXg6IFtpbmRleFZhbF0sCiAgICAgICAgZW9icm93c2VyU3RhdHM6IFt2YWxdLAogICAgICAgIGRhdGFNYXNrOiBbc2FtcGxlcy5kYXRhTWFza10KICAgIH07Cn0K
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://sentinelshare.page.link/cxF5){:target="_blank"} 
- - [Copernicus Browser](link.dataspace.copernicus.eu/v6y){:target="_blank"} 
-
 
 ## General description of the script
 

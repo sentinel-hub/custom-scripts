@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /slstr/active_fire_points_detection/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '37.66916'
+  lng: '-119.7551'
+  datasetId: S3SLSTR
+  fromTime: '2018-08-06T00:00:00.000Z'
+  toTime: '2018-08-06T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscript: Ly8gaGlnaCBhY2N1cmFjeSBEZXRlY3QgYWN0aXZlIGZpcmUgcG9pbnRzIAovL1NlbnRpbmVsLTMgU0xTVFIKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgp2YXIgU0FITT0gKChTNiAtIFM1KSAvIChTNiArIFM1KSk7CgppZihTQUhNPi4wNSAmJiBTMTwuMjMpewogIHJldHVybls1KlMzLCAxKlMyLCAxKlMxXQp9CgplbHNlIHsKIHJldHVybiBbUzYsUzMsUzJdCn0KCi8vUmVkIGNvbG9yIGluZGljYXRlcyBhY3RpdmUgZmlyZSBhcmVhcyBhbmQgcG9pbnRz
 ---
-
-## Evaluate and visualize
-
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=10&lat=37.66916&lng=-119.7551&themeId=WILDFIRES-NORMAL-MODE&datasetId=S3SLSTR&fromTime=2018-08-06T00%3A00%3A00.000Z&toTime=2018-08-06T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2F616409b9-173e-4012-a580-c0ef4799bc36&evalscript=Ly8gaGlnaCBhY2N1cmFjeSBEZXRlY3QgYWN0aXZlIGZpcmUgcG9pbnRzIAovL1NlbnRpbmVsLTMgU0xTVFIKLy9ieSBUaXpuZ2VyIHN0YXJ0dXAgY28KLy93d3cudGl6bmVnYXIuY29tCgp2YXIgU0FITT0gKChTNiAtIFM1KSAvIChTNiArIFM1KSk7CgppZihTQUhNPi4wNSAmJiBTMTwuMjMpewogIHJldHVybls1KlMzLCAxKlMyLCAxKlMxXQp9CgplbHNlIHsKIHJldHVybiBbUzYsUzMsUzJdCn0KCi8vUmVkIGNvbG9yIGluZGljYXRlcyBhY3RpdmUgZmlyZSBhcmVhcyBhbmQgcG9pbnRz#custom-script){:target="_blank"}
-
 ## General description
 
 The script for Sentinel-3 SLSTR identifies active fire points, offering valuable information for monitoring fire spots in any area. 

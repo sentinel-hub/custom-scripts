@@ -5,12 +5,21 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/true_color/
 nav_exclude: true
+examples:
+- zoom: '10'
+  lat: '42.01869'
+  lng: '12.58484'
+  datasetId: S2L2A
+  fromTime: '2023-10-12T00:00:00.000Z'
+  toTime: '2023-10-12T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/true_color/script.js
+  additionalQueryParams:
+  - - cloudCoverage
+    - '30'
 ---
-
-
-## Evaluate and visualize  
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/#lat=41.9&lng=12.5&zoom=10&datasource=Sentinel-2%20L1C&time=2017-10-08&preset=CUSTOM&layers=B01,B02,B03&evalscript=bGV0IGdhaW4gPSAyLjU7CnJldHVybiBbQjA0LCBCMDMsIEIwMl0ubWFwKGEgPT4gZ2FpbiAqIGEpOwo%3D){:target="_blank"} 
- - [Copernicus Browser](https://link.dataspace.copernicus.eu/9ju){:target="_blank"}
 
 ## General description
 

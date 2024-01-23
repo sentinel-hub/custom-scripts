@@ -5,13 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/crop_monitoring/
 nav_exclude: true
+examples:
+- zoom: '13'
+  lat: '44.68397'
+  lng: '12.16993'
+  datasetId: S1_AWS_IW_VVVH
+  fromTime: '2017-01-01T00:00:00.000Z'
+  toTime: '2018-08-28T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-1/crop_monitoring/script.js
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=13&lat=44.68397&lng=12.16993&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Ff2068f4f-3c75-42cf-84a1-42948340a846&evalscripturl=https%3A%2F%2Fcustom-scripts.sentinel-hub.com%2Fcustom-scripts%2Fsentinel-1%2Fcrop_monitoring%2Fscript.js&datasetId=S1_AWS_IW_VVVH&fromTime=2018-04-20T00%3A00%3A00.000Z&toTime=2024-01-17T23%3A59%3A59.999Z&demSource3D=%22MAPZEN%22#custom-script){:target="_blank"} 
- 
- The script is based on the time series of Sentinel-1 radar data. 
 
 ## General description of the script
 

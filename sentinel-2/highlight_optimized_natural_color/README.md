@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/highlight_optimized_natural_color/
 nav_exclude: true
+examples:
+- zoom: '11'
+  lat: '-51.0021'
+  lng: '-73.3260'
+  fromTime: '2019-05-08'
+  toTime: '2019-05-09'
+  datasetId: S2L2A
+  platform:
+  - CDSE
+  - EOB
+  evalscript: cmV0dXJuIFtNYXRoLmNicnQoMC42KkIwNCksCiAgICAgICAgTWF0aC5jYnJ0KDAuNipCMDMpLAogICAgICAgIE1hdGguY2JydCgwLjYqQjAyKV0=
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?lat=-51.0021&lng=-73.3260&zoom=11&time=2019-05-08&preset=CUSTOM&datasource=Sentinel-2%20L2A&layers=B01,B02,B03&evalscript=cmV0dXJuIFtNYXRoLmNicnQoMC42KkIwNCksCiAgICAgICAgTWF0aC5jYnJ0KDAuNipCMDMpLAogICAgICAgIE1hdGguY2JydCgwLjYqQjAyKV0%3D){:target="_blank"} 
-
 
 ## General description of the script
 

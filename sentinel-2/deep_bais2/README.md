@@ -5,12 +5,18 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/deep_bais2/
 nav_exclude: true
+examples:
+- zoom: '9'
+  lat: '50.76339'
+  lng: '3.01712'
+  datasetId: S2L2A
+  fromTime: '2020-02-25T00:00:00.000Z'
+  toTime: '2020-02-25T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://raw.githubusercontent.com/roshni-b/eolearn-scripts/main/BAI_LGBMr_eval.js
 ---
-
-
-## Evaluate and visualize   
- - [EO Browser](https://apps.sentinel-hub.com/eo-browser/?zoom=9&lat=50.76339&lng=3.01712&themeId=DEFAULT-THEME&datasetId=S2L2A&fromTime=2020-02-25T00%3A00%3A00.000Z&toTime=2020-02-25T23%3A59%3A59.999Z&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&evalscripturl=https%3A%2F%2Fraw.githubusercontent.com%2Froshni-b%2Feolearn-scripts%2Fmain%2FBAI_LGBMr_eval.js#custom-script){:target="_blank"} 
-
 
 ## General description of the script
 
