@@ -3,6 +3,10 @@ title: Example product
 parent: Contribute
 layout: script
 nav_exclude: true
+scripts:
+  - [Visualization, script.js]
+  - [EO Browser, eob.js]
+  - [Raw Values, raw.js]
 examples:
 - zoom: '10'
   lat: '42.76703'
@@ -13,7 +17,7 @@ examples:
   platform:
   - CDSE
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/contribute/example/script.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/contribute/example-multiple-scripts/eob.js
 ---
 
 The layout `script` automatically adds the title defined in the front matter and adds buttons to visualize the script. For the buttons to work the evalscript has to be named `script.js` and must be in the same directory as the `README.md` file.
@@ -48,7 +52,6 @@ Alternatively the evalscript can be passed into the parameter `evalscript`. Here
 When multiple different evalscripts are added, they can also be named by passing the parameter `name` to each entry of the example list.
 
 It is also possible to pass more url query parameters to the built example link by specifying `additionalQueryParams`. See the [NDVI Time Series](https://github.com/sentinel-hub/custom-scripts/blob/main/sentinel-2/ndvi_time_series/README.md?plain=1) script as an example.
-
 
 ## General description of the script
 
