@@ -2,7 +2,7 @@
 title: CCC (Canopy Chlorophyll Content)
 parent: Sentinel-2
 grand_parent: Sentinel
-layout: example_test
+layout: script
 permalink: /sentinel-2/ccc/
 nav_exclude: true
 examples:
@@ -16,9 +16,6 @@ examples:
   - CDSE
   - EOB
   evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/ccc/script.js
-  additionalQueryParams:
-  - - cloudCoverage
-    - '30'
 ---
 
 ## General description of the script
