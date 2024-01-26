@@ -15,6 +15,7 @@ examples:
   platform:
   - CDSE
   - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/script.js
   additionalQueryParams:
   - - layerId
     - 3_NDVI

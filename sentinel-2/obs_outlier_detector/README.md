@@ -15,7 +15,7 @@ examples:
   platform:
   - CDSE
   - EOB
-  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/obs_outlier_detector/v2/script.js
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/sentinel-2/obs_outlier_detector/script.js
 ---
 
 ## General description of the script

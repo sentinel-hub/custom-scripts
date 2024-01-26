@@ -6,10 +6,10 @@ layout: script
 permalink: /sentinel-2/ozone_column_over_snow/
 nav_exclude: true
 examples:
-- zoom: '13'
-  lat: '-75.1347'
-  lng: '123.38127'
-  datasetId: S2L2A
+- zoom: '11'
+  lat: '-75.09987'
+  lng: '123.32394'
+  datasetId: S2L1C
   fromTime: '2021-02-08T00:00:00.000Z'
   toTime: '2021-02-08T23:59:59.999Z'
   platform:

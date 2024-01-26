@@ -10,7 +10,7 @@ examples:
   lat: '42.56016134191609'
   lng: '-1.80450439453125'
   datasetId: S2L2A
-  fromTime: '2017-03-28'
+  fromTime: '2020-01-01'
   toTime: '2020-07-31'
   platform:
   - EOB

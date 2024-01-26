@@ -54,27 +54,31 @@ cdse_lookup:
 </div>
 
 {% if page.examples %}
-<h2 class="d-inline"> Evaluate and Visualize </h2>
+<p></p>
+
+<div class="flex-container">
 {% for example in page.examples %}
-{% if example.name %}
-<h3 class="d-inline"> {{example.name}} </h2>
-{% endif %}
 {% capture additonalParams %}{% for query in example.additionalQueryParams %}&{{query[0]}}={{query[1] | url_encode}}{% endfor %}{% endcapture %}
-<ul>
-{% if example.platform contains "CDSE" %}
-<li>
-{% capture from %}{{ example.fromTime | slice: 0, 10 }}{% endcapture %}
-{% capture to %}{{ example.toTime | slice: 0, 10 }}{% endcapture %}
-<a href="https://dataspace.copernicus.eu/browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{layout.cdse_lookup[example.datasetId] | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{% if from != to %}&dateMode=TIME RANGE{%- endif -%}{{additonalParams}}#custom-script" target="_blank">Copernicus Browser</a>
-</li>
-{% endif %}
-{% if example.platform contains "EOB" %}
-<li>
-<a href="https://apps.sentinel-hub.com/eo-browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{example.datasetId | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{{additonalParams}}#custom-script" target="_blank">EO Browser</a>
-</li>
-{% endif %}
-</ul>
+<div class = "card">
+  <img src="fig/example-{{forloop.index0}}.jpg" alt="">
+  <div class="card-content">
+    <h3>
+      {{ example.name | default: "Interactive Example" }}
+    </h3>
+    <p class="m-0">
+      {% if example.platform contains "CDSE" %}
+      {% capture from %}{{ example.fromTime | slice: 0, 10 }}{% endcapture %}
+      {% capture to %}{{ example.toTime | slice: 0, 10 }}{% endcapture %}
+      <a href="https://dataspace.copernicus.eu/browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{layout.cdse_lookup[example.datasetId] | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{% if from != to %}&dateMode=TIME RANGE{%- endif -%}{{additonalParams}}#custom-script" target="_blank" class="btn btn-blue fs-2 px-2">Copernicus Browser</a>
+      {% endif %}
+      {% if example.platform contains "EOB" %}
+      <a href="https://apps.sentinel-hub.com/eo-browser/?zoom={{example.zoom}}&lat={{example.lat}}&lng={{example.lng}}{% if example.evalscript %}&evalscript={{example.evalscript | url_encode}}{%- endif -%}{% if example.evalscripturl %}&evalscripturl={{example.evalscripturl | url_encode}}{%- endif -%}&datasetId={{example.datasetId | url_encode}}&fromTime={{example.fromTime | url_encode}}&toTime={{example.toTime | url_encode}}{{additonalParams}}#custom-script" target="_blank" class="btn btn-primary fs-2 px-2">EO Browser</a>
+      {% endif %}
+    </p>
+  </div>
+</div>
 {% endfor %}
+</div>
 {% endif %}
 
 {{content}}

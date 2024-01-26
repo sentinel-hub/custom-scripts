@@ -6,11 +6,12 @@ layout: script
 permalink: /sentinel-2/red_edge_position/
 nav_exclude: true
 examples:
-- zoom: '7'
+- zoom: '9'
   lat: '42.102'
   lng: '13.041'
-  fromTime: '2019-06-30'
-  toTime: '2019-06-30'
+  fromTime: '2019-06-01T00:00:00.000Z'
+  toTime: '2019-06-30T23:59:59.999Z'
+  datasetId: S2L1C
   platform:
   - CDSE
   - EOB

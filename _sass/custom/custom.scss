@@ -16,18 +16,34 @@
     background-color: #a2b228;
 }
 
-div.highlighter-rouge>button,
-div.listingblock>div.content>button,
-figure.highlight>button {
-    width:1rem;
-    opacity:0.5;
+div.highlighter-rouge > button,
+div.listingblock > div.content > button,
+figure.highlight > button {
+    width: 1rem;
+    opacity: 0.5;
 }
 
-
-div.highlighter-rouge > button:focus, div.listingblock > div.content > button:focus, figure.highlight > button:focus { opacity: 1; }
-div.highlighter-rouge > button:hover, div.listingblock > div.content > button:hover, figure.highlight > button:hover {opacity: 1 !important; cursor: pointer !important;}
-div.highlighter-rouge:hover > button, div.listingblock > div.content:hover > button, figure.highlight:hover > button { opacity: 0.5 }
-div.highlighter-rouge > button svg, div.listingblock > div.content > button svg, figure.highlight > button svg { fill: none !important; }
+div.highlighter-rouge > button:focus,
+div.listingblock > div.content > button:focus,
+figure.highlight > button:focus {
+    opacity: 1;
+}
+div.highlighter-rouge > button:hover,
+div.listingblock > div.content > button:hover,
+figure.highlight > button:hover {
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+div.highlighter-rouge:hover > button,
+div.listingblock > div.content:hover > button,
+figure.highlight:hover > button {
+    opacity: 0.5;
+}
+div.highlighter-rouge > button svg,
+div.listingblock > div.content > button svg,
+figure.highlight > button svg {
+    fill: none !important;
+}
 
 .tabcontainer {
     border-radius: 3px;
@@ -38,7 +54,7 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
     overflow: hidden;
     height: 250px;
     padding-bottom: 1.5em;
-    transition: height .5s ease;
+    transition: height 0.5s ease;
 }
 
 .tab {
@@ -55,7 +71,7 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
     border: none;
     outline: none;
     cursor: pointer;
-    height: 3.5em; 
+    height: 3.5em;
     padding: 0px 16px;
     transition: 0.25s ease;
     border-bottom: 2px solid $sidebar-color;
@@ -90,14 +106,18 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
         left: 0;
         width: 100%;
         height: var(--fade-height);
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50% );
-      }
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 50%
+        );
+    }
 }
 
-.expand { 
-    position: absolute; 
-    bottom: 0px;  
-    margin-bottom: 1em; 
+.expand {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 1em;
     left: 50%;
     transform: translateX(-50%);
     appearance: none;
@@ -114,27 +134,102 @@ div.highlighter-rouge > button svg, div.listingblock > div.content > button svg,
 }
 
 .expand:hover {
-    background:rgba($btn-primary-color, 0.2);
-    cursor: pointer
+    background: rgba($btn-primary-color, 0.2);
+    cursor: pointer;
 }
 
 .chevron::before {
-	border-style: solid;
-	border-width: 0.2em 0.2em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	left: 0.5em;
-	position: relative;
-	top: 0.8em;
-	transform: rotate(-45deg);
-	vertical-align: top;
-	width: 0.45em;
+    border-style: solid;
+    border-width: 0.2em 0.2em 0 0;
+    content: "";
+    display: inline-block;
+    height: 0.45em;
+    left: 0.5em;
+    position: relative;
+    top: 0.8em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.45em;
 }
 
 .chevron.bottom:before {
-	top: 0.5em;
-	transform: rotate(135deg);
+    top: 0.5em;
+    transform: rotate(135deg);
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    box-shadow: 0 0 5px RGBa(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: scale 0.3s 0.9s ease-out;
+    scale: 1;
+}
+
+.card h3 {
+    position: absolute;
+    inset: auto auto 20px 20px;
+    margin: 0;
+    transition: inset 0.3s 0.9s ease-out;
+}
+
+.card p,
+.card a {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s 0.6s ease-out;
+}
+
+.card p {
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.card:hover h3 {
+    inset: auto auto 110px 20px;
+    transition: inset 0.3s ease-out;
+}
+
+.card:hover p,
+.card:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+}
+
+.card:hover img {
+    transition: scale 0.3s ease-in;
+    scale: 1.1;
+}
+
+.card:hover .card-content {
+    height: 100%;
+    transition: height 0.3s ease-in;
+}
+
+.card-content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    bottom: 0;
+    height: 30%;
+    transition: height 0.3s 0.9s ease-out;
+}
