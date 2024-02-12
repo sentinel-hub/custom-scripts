@@ -31,7 +31,7 @@ The goal of the script is to calculate the Radar Vegetation Index for Sentinel-1
 
 ## Details of the script
 
-The script is applicable to monitor crop condition over the global scale and invariant to crop types. The vegetation indices developed here utilize the GRD product. First, the VH/VV ratio is calulated and denoted as q. Then an equivalent to the degree of polarization (m) is derived from q, as (1-q)/(1+q). The m factor ranges between 0 and 1. For low vegetation conditions, the co-pol backscatter will be high and the cross-pol backscatter is low (i.e., q->0). As a consequence, one can observe that, for bare field conditions m is high, and decreases gradually with an increase in vegetation canopy density.
+The script is applicable to monitor crop condition over the global scale and invariant to crop types. The vegetation indices developed here utilize the GRD product. First, the VH/VV ratio is calculated and denoted as q. Then an equivalent to the degree of polarization (m) is derived from q, as (1-q)/(1+q). The m factor ranges between 0 and 1. For low vegetation conditions, the co-pol backscatter will be high and the cross-pol backscatter is low (i.e., q->0). As a consequence, one can observe that, for bare field conditions m is high, and decreases gradually with an increase in vegetation canopy density.
 
 Further, the beta (normalized co-pol intensity parameter) can be expressed as, beta = 1/(1+q). where 0.5<beta<1.
 
