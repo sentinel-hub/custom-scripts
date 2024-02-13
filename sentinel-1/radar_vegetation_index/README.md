@@ -31,11 +31,17 @@ The goal of the script is to calculate the Radar Vegetation Index for Sentinel-1
 
 ## Details of the script
 
-The script is applicable to monitor crop condition over the global scale and invariant to crop types. The vegetation indices developed here utilize the GRD product. First, an equivalent to the degree of polarization (DOP) is calculated as VV/SPAN. SPAN is total power received at both the channel and can be treated as VV+VH. The DOP is utilized to obtain the depolarized fraction as m = 1 - DOP. The m factor ranges between 0 and 1. For pure or elementary targets the m value is close to zero; whereas for fully random canopy (at high vegetative growth), it reaches close to 1. This m factor is multiplied with the vegetation depolarization power fraction (4xVH)/(VV+VH). The m factor is modulated with a square root scaling for a better dynamic range of the RVI4S1 index. The index also separates urban areas and bare soil from the vegetated terrain. However, for very rough soil (likely after tillage) or water surface (high windy condition), the DOP would be lower, which turns the RVI4S1 to be quite higher than a smooth surface. Hence care should be taken with this particular condition.
+The script is applicable to monitor crop condition over the global scale and invariant to crop types. The vegetation indices developed here utilize the GRD product. First, the VH/VV ratio is calculated and denoted as q. Then an equivalent to the degree of polarization (m) is derived from q, as (1-q)/(1+q). The m factor ranges between 0 and 1. For low vegetation conditions, the co-pol backscatter will be high and the cross-pol backscatter is low (i.e., q->0). As a consequence, one can observe that, for bare field conditions m is high, and decreases gradually with an increase in vegetation canopy density.
+
+Further, the beta (normalized co-pol intensity parameter) can be expressed as, beta = 1/(1+q). where 0.5<beta<1.
+
+Now, the overall purity of the co-pol component can be obtained by multiplying the co-pol purity parameter m and normalized co-pol intensity parameter beta. Subsequently, by subtracting overall purity, we obtain a quantitative measure of scattering randomness, as RVI4S1. with 0<RVI4S1<1.0. 
+
+It quantifies impurity in the co-pol component of scattered wave. The index also separates urban areas and bare soil from the vegetated terrain. However, for very rough soil (likely after tillage) or water surface (high windy condition), the DOP would be lower, which turns the RVI4S1 to be quite higher than a smooth surface. Hence care should be taken with this particular condition. For example, RVI4S1 = 0 for a pure or point target scattering which corresponds to copol purity parameter m = 1, and beta =1. On the other extreme case m = 0 and beta = 0.5 for a completely random scattering. Therefore, RVI4S1=1 for a completely random scattering.
 
 ## Author of the script
 
-Dipankar Mandal
+Dr. Dipankar Mandal
 
 ## Description of representative images
 
