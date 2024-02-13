@@ -23,15 +23,27 @@ const ramp = [
 const visualizer = new ColorRampVisualizer(ramp);
 
 function evaluatePixel(samples) {
-    let dop = (samples.VV / (samples.VV + samples.VH));
-    let m = 1 - dop;
+    //equivalent to complement of the degree of polarization
+    // Ratio parameter
+    let q =  (samples.VH / samples.VV);
+
+    // co-pol purity parameter m
+    // m = (1-q)/(1+q)
+    // normalized co-pol intensity parameter beta
+    // beta = 1/(1+q)
+    // Dual-pol radar vegetation indec DpRVIc = 1-(m*beta)
+    // It can be also written directly in terms of q as follows
+    let N = q*(q+3);
+    let D = (q+1)*(q+1);
+
     //depolarization within the vegetation
-    let val = (Math.sqrt(dop)) * ((4 * (samples.VH)) / (samples.VV + samples.VH));
+    //let val = (Math.sqrt(dop)) * ((4 * (samples.VH)) / (samples.VV + samples.VH));
+    let val = N/D;
+
     // The library for tiffs works well only if there is only one channel returned.
     // So we encode the "no data" as NaN here and ignore NaNs on frontend.
     const indexVal = samples.dataMask === 1 ? val : NaN;
     const imgVals = visualizer.process(val);
-
     return {
         default: imgVals.concat(samples.dataMask),
         index: [indexVal],
