@@ -82,8 +82,6 @@ if (water==0) {
     return [248/255,207/255,2/255];
 } else if (chl<90){
     return [134/255,247/255,0];
-} else if (chl<24){
-    return [245/255,205/255,1/255];
 } else if (chl<100){
     return [245/255,164/255,9/255];
 } else if (chl<150){
