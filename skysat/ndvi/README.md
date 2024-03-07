@@ -10,7 +10,7 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-As SkySat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials. 
+As SkySat is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials. 
 
 ## General description
 
@@ -20,7 +20,7 @@ The value range of the NDVI is -1 to 1. Negative values of NDVI (values approach
 
 The normalized difference vegetation index, abbreviated NDVI, is defined as   
 
-$$NDVI := \mathtt{Index}(NIR,Red) = \frac{NIR-RED}{NIR+Red}.$$  
+$$NDVI := \mathtt{Index}(nir,red) = \frac{nir-red}{nir+red}.$$  
 
 The result is visualized using the `valueInterpolate` function. It maps the values of the
 NDVI in certain intervals to RGBA (RGB+Alpha) values for visualization. 

@@ -5,10 +5,10 @@ function setup() {
   return {
     input: [{
       bands: [
-        "Red",
-        "NIR",
+        "red",
+        "nir",
         "dataMask",
-        "UDM2_Clear"
+        "clear"
       ]
     }],
     output: [
@@ -21,9 +21,9 @@ function setup() {
 }
 
 function evaluatePixel(samples) {
-  let ndvi = (samples.NIR - samples.Red) / (samples.NIR + samples.Red);
+  let ndvi = (samples.nir - samples.red) / (samples.nir + samples.red);
   const indexVal = samples.dataMask === 1 ? ndvi : NaN;
-  const clear = samples.dataMask * samples.UDM2_Clear;
+  const clear = samples.dataMask * samples.clear;
 
   let id_default = colorBlend(ndvi, [0.0, 0.5, 1.0],
     [
@@ -35,7 +35,7 @@ function evaluatePixel(samples) {
   return {
     default: id_default,
     index: [indexVal],
-    eobrowserStats: [indexVal, samples.UDM2_Clear],
+    eobrowserStats: [indexVal, samples.clear],
     dataMask: [samples.dataMask],
   };
 }

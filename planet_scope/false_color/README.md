@@ -10,11 +10,11 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials. 
+As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials. 
 
 ## General description
 
-The [False color](https://en.wikipedia.org/wiki/False_color) infrared composite maps near-infrared spectral band B4 with red and green bands, B3 and B2, to [sRGB](https://en.wikipedia.org/wiki/SRGB) components directly. It is most commonly used to assess plant density and healht, as plants reflect near infrared and green light, while absorbing red. Since they reflect more near infrared than green, plant-covered land appears deep red. Denser plant growth is darker red. Cities and exposed ground are gray or tan, and water appears blue or black.
+The [False color](https://en.wikipedia.org/wiki/False_color) infrared composite maps near-infrared spectral band `nir` with `red` and `green` bands to [sRGB](https://en.wikipedia.org/wiki/SRGB) components directly. It is most commonly used to assess plant density and healht, as plants reflect near infrared and green light, while absorbing red. Since they reflect more near infrared than green, plant-covered land appears deep red. Denser plant growth is darker red. Cities and exposed ground are gray or tan, and water appears blue or black.
 
 ## Description of representative images
 

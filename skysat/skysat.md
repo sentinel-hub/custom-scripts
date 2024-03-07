@@ -12,15 +12,15 @@ permalink: /planet/skysat/
 
 The spectral bands of SkySat data are the following:
 
-*Blue - 450-515 nm, resolution 0.5m*
+*blue - 450-515 nm, resolution 0.5m*
 
-*Green - 515-595 nm, resolution 0.5m*
+*green - 515-595 nm, resolution 0.5m*
 
-*Red - 605-695 nm, resolution 0.5m*
+*red - 605-695 nm, resolution 0.5m*
 
-*NIR - 740-900 nm Near Infrared, resolution 0.5m*
+*nir - 740-900 nm Near Infrared, resolution 0.5m*
 
-*Pan - 450-900nm Panchromatic, resolution 0.5*
+*pan - 450-900nm Panchromatic, resolution 0.5*
 
  - [True Color](/skysat/true_color)
  - [Panchromatic](/skysat/panchromatic)

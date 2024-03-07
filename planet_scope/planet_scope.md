@@ -15,31 +15,31 @@ permalink: /planet/planetscope/
 
 The spectral bands of PlanetScope data are the following if you order a 4-band <a href = "https://docs.sentinel-hub.com/api/latest/data/planet/planet-scope/#productbundle-parameter">product bundle</a>:
 
-- *B1 - Blue, resolution 3m*
+- *blue - Blue, resolution 3m*
  
-- *B2 - Green, resolution 3m*
+- *green - Green, resolution 3m*
  
-- *B3 - Red, resolution 3m*
+- *red - Red, resolution 3m*
  
-- *B4 - Near Infrared, resolution 3m*
+- *nir - Near Infrared, resolution 3m*
 
 The spectral bands of PlanetScope data are the following if you order a 8-band product bundle:
 
-- *B1 - Coastal Blue, resolution 3m*
+- *coastal_blue - Coastal Blue, resolution 3m*
  
-- *B2 - Blue, resolution 3m*
+- *blue - Blue, resolution 3m*
  
-- *B3 - Green I, resolution 3m* 
+- *green_i - Green I, resolution 3m* 
  
-- *B4 - Green, resolution 3m*
+- *green - Green, resolution 3m*
  
-- *B5 - Yellow, resolution 3m*
+- *yellow - Yellow, resolution 3m*
  
-- *B6 - Red, resolution 3m*
+- *red - Red, resolution 3m*
  
-- *B7 - Red Edge, resolution 3m*
+- *rededge - Red Edge, resolution 3m*
  
-- *B8 - Near-infrared, resolution 3m*
+- *nir - Near-infrared, resolution 3m*
 
 </details>
 
