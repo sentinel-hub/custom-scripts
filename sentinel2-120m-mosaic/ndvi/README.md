@@ -25,7 +25,7 @@ For Sentinel-2, the NDVI is calculated using NIR band 5 and red band 4:
 
 NDVI = (B08 - B04) / (B08 + B04)
 
-See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/#).
+See also [this page](https://custom-scripts.sentinel-hub.com/sentinel-2/ndvi/#).
 
 ## Description of representative images
 
