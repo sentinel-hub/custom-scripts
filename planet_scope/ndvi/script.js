@@ -1,5 +1,5 @@
 //NDVI
-var val = (NIR - Red) / (NIR + Red);
+var val = (nir - red) / (nir + red);
 
 return colorBlend(val,
   [0.0, 0.5, 1.0],

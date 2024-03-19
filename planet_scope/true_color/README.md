@@ -10,11 +10,11 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials.   
+As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.   
 
 ## General description
 
-The true color product maps PlanetScope band values B3, B2, and B1 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components.
+The true color product maps PlanetScope band values `red`, `green`, and `blue` which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components.
 
 ## Description of representative images
 

@@ -14,7 +14,7 @@ As SkySat is commercial data, brought into Sentinel Hub as Bring Your Own Data, 
 
 ## General description
 
-The true color product combines Skysat band values Red, Blue, and Green to create a true color image.
+The true color product combines Skysat band values `red`, `blue`, and `green` to create a true color image.
 
 ## Description of representative images
 

@@ -10,19 +10,19 @@ nav_exclude: true
 
 ## Evaluate and visualize
 
-As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials.   
+As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.   
 
 ## General description
 
-PlanetScope has several usable data mask (UDM2) bands. The `UDM2_Clear` band gives information on whether the pixel is clear, meaning that the surface is clearly visible. If it's not clear, that means it's classified as either shadow, snow, light haze, heavy haze or cloud. Each of these is a separate UDM2 mask band: 
+PlanetScope has several usable data mask (UDM2) bands. The `clear` band gives information on whether the pixel is clear, meaning that the surface is clearly visible. If it's not clear, that means it's classified as either shadow, snow, light haze, heavy haze or cloud. Each of these is a separate UDM2 mask band: 
 
-- UDM2_Snow
-- UDM2_Shadow
-- UDM2_LightHaze
-- UDM2_HeavyHaze
-- UDM2_Cloud
+- snow
+- shadow
+- haze_light
+- haze_heavy
+- cloud
 
-When the mask band == 1, the pixel belongs to the mask (for example, when UDM2_Snow == 1, the pixel was recognized as snow). The bands are mutually exclusive - if a pixel belongs to one mask class, it cannot belong to any other.
+When the mask band == 1, the pixel belongs to the mask (for example, when `snow` == 1, the pixel was recognized as snow). The bands are mutually exclusive - if a pixel belongs to one mask class, it cannot belong to any other.
 
 In the script, each of the UDM2 mask bands is classified with a unique color, and the pixels that do not belong to any class, are returned transparent. 
 

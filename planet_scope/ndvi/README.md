@@ -12,7 +12,7 @@ scripts:
 
 ## Evaluate and visualize
 
-As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser and Sentinel Playgorund links are not possible due to the personalized data credentials. 
+As PlanetScope is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials. 
 
 ## General description
 
@@ -22,7 +22,7 @@ The value range of the NDVI is -1 to 1. Negative values of NDVI (values approach
 
 The normalized difference vegetation index, abbreviated NDVI, is defined as   
 
-$$NDVI := \mathtt{Index}(NIR,RED) = \frac{NIR-RED}{NIR+RED}.$$  
+$$NDVI := \mathtt{Index}(nir,red) = \frac{nir-red}{nir+red}.$$  
 
 This is an example script which can be used with EO Browser and is configured to return statistics in a format which can be used with the statistical info chart.  For more information, see <a href = "https://www.sentinel-hub.com/faq/how-configure-your-layers-statistical-info-eo-browser/"> How Can I Configure My Layers For Statistical Information In EO Browser?</a>
 
