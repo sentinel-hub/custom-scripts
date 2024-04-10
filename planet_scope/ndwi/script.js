@@ -1,15 +1,30 @@
+//VERSION=3
 //NDWI
 
-var val = (green / 3000 - nir / 3000) / (green / 3000 + nir / 3000);
+function setup() {
+  return {
+    input: [{ bands: ["green", "nir", "dataMask"] }],
+    output: [
+      { id: "default", bands: 4 },
+    ]
+  }
+}
 
-return colorBlend(val,
-  [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
-  [
-    [1, 0, 1],
-    [1, 0.5, 0],
-    [1, 1, 0],
-    [0.2, 1, 0.5],
-    [0, 0, 1],
-    [0, 0, 0.3],
-    [0, 0, 0],
-  ]);
+function evaluatePixel(samples) {
+  let ndwi = (samples.green / 3000 - samples.nir / 3000) / (samples.green / 3000 + samples.nir / 3000);
+
+  let id_default = colorBlend(ndwi,
+    [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
+    [
+      [1, 0, 1, samples.dataMask],
+      [1, 0.5, 0, samples.dataMask],
+      [1, 1, 0, samples.dataMask],
+      [0.2, 1, 0.5, samples.dataMask],
+      [0, 0, 1, samples.dataMask],
+      [0, 0, 0.3, samples.dataMask],
+      [0, 0, 0, samples.dataMask],
+    ]
+  );
+
+  return { default: id_default };
+}
