@@ -5,6 +5,13 @@ grand_parent: Planet
 layout: script
 permalink: /planet_scope/ndwi/
 nav_exclude: true
+scripts:
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
 ---
 
 
