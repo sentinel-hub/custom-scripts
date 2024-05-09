@@ -58,6 +58,6 @@ function evaluatePixel(sample) {
         default: imgVals.concat(sample.dataMask),
         index: [is_clouds ? null : kndvi],
         eobrowserStats: [is_clouds ? null : kndvi],
-        dataMask: [sample.dataMask]
+        dataMask: [sample.dataMask],
     }
 }

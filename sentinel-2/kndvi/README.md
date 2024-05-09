@@ -1,21 +1,22 @@
 ---
-layout: kNDVI with Cloud Masking
+title: kernel NDVI
 parent: Sentinel-2
-title: Contribute
 grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/kndvi/
 nav_exclude: true
-nav_order: 99
-has_children: false
-permalink: /contribute/
+scripts:
+- - Visualization, EO Browser, Raw Values
+  - script.js
+examples:
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/kndvi/script.js
 ---
 
 # Evaluate and Visualize
 
 - Interlaken, Switzerland (to show green vegetation, bare rock, snow and ice, and clouds together with kNDVI)
   - [EO Browser](https://sentinelshare.page.link/kD7v)
-  - [Copernicus Browser](https://tinyurl.com/chkndvi)
+  - [Copernicus Browser](https://link.dataspace.copernicus.eu/dzpu)
 ---
 
 ## Description of the Script
