@@ -110,3 +110,26 @@ Replace `GH_VERSION` with the version number that is displayed next to github-pa
 
   - then the site can be built with `bundle exec jekyll serve`
   - The site should then be visible on `127.0.0.1:4000`
+
+#### Windows
+
+  - First of all, you will have to have Git installed on your system. In a command terminal, type `git version`. If you get a version number, you have Git installed. Otherwise, follow the instructions [here](https://gitforwindows.org/)
+- You will mainly want to follow [this installation guide](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll?platform=windows):
+  - Go to [Ruby](https://www.ruby-lang.org/en/), download windows installer, eg from [here](https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller)
+    - Run the installer file to install ruby
+    - Once the installer is ready, you can check Ruby by opening a terminal and typing `ruby -v` . A version number should be displayed.
+  - Install bundler
+    - In the terminal, type `gem install bundler`
+
+- If you get an error message "Cannot create directory, filename too long", you have to enable long file paths for Git on your system. Open a command prompt, running it as an administrator.
+ - Then type `git config --system core.longpaths true`
+
+- Assuming Git is already installed on your system, now you can clone the https://github.com/sentinel-hub/custom-scripts/ repository to a folder on your computer (if you haven't already): 
+   - Navigate to the parent folder, right-click and select "Git GUI Here", and type `git clone https://github.com/sentinel-hub/custom-scripts/`
+ - Now you are ready to set up jekyll. Navigate to the main folder of the cloned repository ("custom-scripts")
+ - Type `bundle install` and wait for the process to finish
+ - Now type `bundle exec jekyll serve` and wait for the local server to generate ("generating..."). You will see the message with the address of the local server, eg.  "Server address : http://127.0.0.1:4000"
+   - Copy this address to a web browser, and you will see the web version of the custom script repository, but with all of your local changes included. This will allow you to test layouts and the effects of your changes. If you make a change to a file you are displaying in Jekyll, save it and wait for the regenerating process to run. You will see the message in the Git GUI window: 
+ 'Regenerating: 1 file(s) changed 
+ ... done in XX seconds`
+  If everything looks OK, you can commit, push and create a [pull request](https://github.com/sentinel-hub/custom-scripts/pulls). 
