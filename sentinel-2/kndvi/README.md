@@ -6,17 +6,28 @@ layout: script
 permalink: /sentinel-2/kndvi/
 nav_exclude: true
 scripts:
-- - Visualization, EO Browser, Raw Values
+- - Visualization
   - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
 examples:
+- zoom: '12'
+  lat: '46.6200'
+  lng: '7.86'
+  datasetId: S2L2A
+  fromTime: '2023-09-16T00:00:00.000Z'
+  toTime: '2023-09-16T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/kndvi/script.js
 ---
 
-# Evaluate and Visualize
 
-- Interlaken, Switzerland (to show green vegetation, bare rock, snow and ice, and clouds together with kNDVI)
-  - [EO Browser](https://sentinelshare.page.link/kD7v)
-  - [Copernicus Browser](https://link.dataspace.copernicus.eu/dzpu)
+Interlaken, Switzerland (to show green vegetation, bare rock, snow and ice, and clouds together with kNDVI)
+
 ---
 
 ## Description of the Script
