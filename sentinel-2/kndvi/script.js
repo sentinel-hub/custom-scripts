@@ -5,10 +5,7 @@ function setup() {
     return {
         input: ["B04", "B08", "SCL", "dataMask"],
         output: [
-            { id: "default", bands: 4 },
-            { id: "index", bands: 1, sampleType: "FLOAT32" },
-            { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
-            { id: "dataMask", bands: 1 }
+            { bands: 4 }
         ]
     }
 }
@@ -54,10 +51,5 @@ function evaluatePixel(sample) {
     let imgVals = kndvi <= 0.6 ? visualizer.process(kndvi) : [0, 0.27, 0];
     let is_clouds = Object.keys(cloud_palette).includes(sample.SCL.toString())
     imgVals = is_clouds ? cloud_palette[sample.SCL] : imgVals;
-    return {
-        default: imgVals.concat(sample.dataMask),
-        index: [is_clouds ? null : kndvi],
-        eobrowserStats: [is_clouds ? null : kndvi],
-        dataMask: [sample.dataMask],
-    }
+    return imgVals.concat(sample.dataMask)
 }
