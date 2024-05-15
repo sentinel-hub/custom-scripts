@@ -56,8 +56,8 @@ function evaluatePixel(sample) {
     imgVals = is_clouds ? cloud_palette[sample.SCL] : imgVals;
     return {
         default: imgVals.concat(sample.dataMask),
-        index: [is_clouds ? null : kndvi],
-        eobrowserStats: [is_clouds ? null : kndvi],
+        index: [is_clouds ? NaN : kndvi],
+        eobrowserStats: [is_clouds ? NaN : kndvi],
         dataMask: [sample.dataMask],
     }
 }
