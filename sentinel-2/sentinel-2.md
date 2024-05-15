@@ -47,6 +47,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [EVI](/sentinel-2/evi) - enhanced vegetation index
  - [EVI2](/sentinel-2/evi2) - enhanced vegetation index 2
  - [GNDVI](/sentinel-2/gndvi) - green normalized difference vegetation index
+  - [kNDVI](/sentinel-2/kndvi) - new alternative to NDVI with more complex transfer function
  - [MCARI](/sentinel-2/mcari) - modified chlorophyll absorption in reflectance index
  - [MSI](/sentinel-2/msi) - moisture index
  - [NDMI](/sentinel-2/ndmi) - normalized difference moisture index
