@@ -22,7 +22,7 @@ examples:
   platform:
   - CDSE
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/kndvi/script.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/kndvi/eob.js
 ---
 
 
