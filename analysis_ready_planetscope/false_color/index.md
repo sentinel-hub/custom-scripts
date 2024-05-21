@@ -12,5 +12,8 @@ scripts:
 ## General description
 The False color infrared composite maps near-infrared spectral band nir with red and green bands to sRGB components directly. It is most commonly used to assess plant density and health, as plants reflect near infrared and green light, while absorbing red. Since they reflect more near infrared than green, plant-covered land appears deep red. Denser plant growth is darker red. Cities and exposed ground are gray or tan, and water appears blue or black.
 
-## Description of representative images
+## Description of representative image
 
+A visualization of Des Moines, United States in false color (April 2023)
+
+![False Color of Des Moines](fig/fig1.png)

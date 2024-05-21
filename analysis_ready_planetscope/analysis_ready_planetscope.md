@@ -10,8 +10,8 @@ Analysis-Ready PlanetScope combines the monitoring benefits of daily 3 m spatial
 
 ### Indices
 
- - [True Color](/analysis_ready_planetscope/truecolor)
- - [False Color](/analysis_ready_planetscope/falsecolor)
+ - [True Color](/analysis_ready_planetscope/true_color)
+ - [False Color](/analysis_ready_planetscope/false_color)
  - [NDVI](/analysis_ready_planetscope/ndvi)
- - [Cloud Classification](/analysis_ready_planetscope/mask_classification)
- - [Cloud Masked True Color](/analysis_ready_planetscope/truecolor_cloudMasked)
+ - [Cloud Classification](/analysis_ready_planetscope/cloud_mask_classification)
+ - [Cloud Masked True Color](/analysis_ready_planetscope/true_color_cloud_masked)

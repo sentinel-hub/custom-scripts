@@ -13,12 +13,14 @@ function setup() {
 
 let factor = 1/2000; 
 function evaluatePixel(sample) {
-    if (sample.cloud_mask==1) {
-        return [factor * sample.red,
-                factor * sample.green,
-                factor * sample.blue,
-                1];
-    } else {
-        return [0, 0, 0, 0];
-    }
+    let opacity = sample.cloud_mask == 1 ? 1 : 0
+    
+    if (sample.cloud_mask == 1) 
+      return [
+        factor * sample.red,
+        factor * sample.green,
+        factor * sample.blue,
+        opacity
+    ];
+  else return [1,1,1,opacity];
 }
