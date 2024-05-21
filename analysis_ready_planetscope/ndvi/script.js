@@ -4,12 +4,9 @@
 function setup() {
   return {
     input: ["nir","red", "cloud_mask", "dataMask"],
-    output: [
-      { id:"default", bands: 4 },
-      { id: "index", bands: 1, sampleType: 'FLOAT32' },
-      { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
-      { id: "dataMask", bands: 1 },
-    ]
+    output: {
+      bands: 4
+  }
   };
 }
 
@@ -29,21 +26,6 @@ function evaluatePixel(samples) {
   else {
     visVal = [...viz.process(ndvi),samples.dataMask];
   }
-
-  const indexVal = samples.dataMask === 1 ? ndvi : NaN;
-
-  // see those layers for context
-  // - True Color, Cloud Masked
-  // - Cloud Classification
-  // cloud_mask = 1 => no clouds
-  // cloud_mask = 2,3,4,5,6,7 => different classes of clouds (bright cloud, haze, ...)
-  // cloud_mask = -999 => no data
-  let cloudBool = samples.cloud_mask == 1 ? 1 : 0;
-
-  return { 
-    default: visVal, 
-    index: [indexVal],
-    eobrowserStats: [ndvi, cloudBool],
-    dataMask: [samples.dataMask],
-  };
+  
+  return visVal
 }

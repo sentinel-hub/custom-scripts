@@ -1,5 +1,4 @@
 //VERSION=3
-//cloud mask classification
 
 function setup() {
     return {
@@ -12,27 +11,19 @@ function setup() {
     }
 }
 
-let nodatavalue = -999
+const map = [
+    [2, [0.5, 0.5, 0.8]],  //bright cloud in purple
+    [3, [0.4, 0.4, 0.4]],  //cloud shadows in grey
+    [4, [0, 0.9, 1]],      //haze in sky blue
+    [5, [1, 0.7, 1]],      //adjacent clouds/cloud shadows in light pink
+    [6, [0.7, 0.7, 0.7]],  //additional haze or cloud elements in white
+    [7, [0, 0.5, 0.5]]     //contamination including snow in green
+]
+const visualizer = new ColorMapVisualizer(map);
+
+
 function evaluatePixel(samples) {
-    if (samples.cloud_mask == 2) { //bright cloud
-        return[0.5,0.5,0.8,0.8]  // purple
-  }
-    if (samples.cloud_mask == 3){ //cloud shadows
-        return[0.4,0.4,0.4,1]  //grey
-  }
-    if (samples.cloud_mask == 4){ //haze
-        return[0,0.9,1,1]   //sky blue
-  }
-    if (samples.cloud_mask == 5){ //adjacent clouds/cloud shadows
-        return[1,0.7,1,1]   //light pink
-  }
-    if (samples.cloud_mask == 6){ //additional haze or cloud elements
-        return[0.7,0.7,0.7,1]  //white
-  }
-    if (samples.cloud_mask == 7){ //contamination including snow
-        return[0,0.5,0.5] // green
-  }
-    if (samples.cloud_mask == nodatavalue) { //nodatavalue
-        return [0,0,0,0]
-    }
+    const dataMask =  nodatavalue == -999 ? 0 : 1
+    imgVals = visualizer.process(sample.cloud_mask)
+    return imgVals.concat(dataMask)
 }

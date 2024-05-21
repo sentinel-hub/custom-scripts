@@ -1,5 +1,4 @@
 //VERSION=3
-//False Color
 
 function setup() {
   return {

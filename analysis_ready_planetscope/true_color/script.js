@@ -18,6 +18,5 @@ function evaluatePixel(sample) {
         factor * sample.green,
         factor * sample.blue,
         sample.dataMask
-
-];
+    ];
 }
