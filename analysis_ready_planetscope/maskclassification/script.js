@@ -13,7 +13,7 @@ function setup() {
 }
 
 let nodatavalue = -999
-function evaluatePixel(samples) {
+function evaluatePixel(sample) {
     if (samples.cloud_mask == 2) { //bright cloud
         return[0.5,0.5,0.8,0.8]  // purple
   }
