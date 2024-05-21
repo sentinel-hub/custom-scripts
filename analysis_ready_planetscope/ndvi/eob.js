@@ -7,7 +7,7 @@ function setup() {
       output: [
         { id:"default", bands: 4 },
         { id: "index", bands: 1, sampleType: 'FLOAT32' },
-        { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
+        { id: "eobrowserStats", bands: 2, sampleType: 'FLOAT32' },
         { id: "dataMask", bands: 1 },
       ]
     };
@@ -18,7 +18,7 @@ function setup() {
   let viz = new ColorRampVisualizer(colorRamp);
   
   function evaluatePixel(sample) {
-    let ndvi = (sample.nir-sample.red) / (sample.nir+sample.red);
+    let ndvi = (sample.nir - sample.red) / (sample.nir + sample.red);
     const minIndex = 0;
     const maxIndex = 1;
     let visVal = null;
@@ -27,7 +27,7 @@ function setup() {
       visVal = [0, 0, 0, 0];
     }
     else {
-      visVal = [...viz.process(ndvi),sample.dataMask];
+      visVal = [...viz.process(ndvi), sample.dataMask];
     }
   
     const indexVal = sample.dataMask === 1 ? ndvi : NaN;

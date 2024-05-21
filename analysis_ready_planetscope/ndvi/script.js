@@ -15,7 +15,7 @@ const colorRamp = [[0,0xfffdea],[0.00390625,0xfefce7],[0.0078125,0xfefbe5],[0.01
 let viz = new ColorRampVisualizer(colorRamp);
 
 function evaluatePixel(sample) {
-  let ndvi = (sample.nir-sample.red) / (sample.nir+sample.red);
+  let ndvi = (sample.nir - sample.red) / (sample.nir + sample.red);
   const minIndex = 0;
   const maxIndex = 1;
   let visVal = null;

@@ -11,5 +11,5 @@ function setup() {
   }
   
 function evaluatePixel(sample) {
-    return [(sample.nir-sample.red) / (sample.nir+sample.red)];
+    return [(sample.nir - sample.red) / (sample.nir + sample.red)];
 }
