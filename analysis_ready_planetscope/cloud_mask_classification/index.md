@@ -8,7 +8,6 @@ permalink: /analysis_ready_planetscope/cloud_mask_classification
 scripts:
   - [Visualization, script.js]
   - [Raw Value, raw.js]
-  - [EO Browser, eob.js]
 ---
 
 ## General description

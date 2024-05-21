@@ -8,5 +8,5 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  return [sample.nir / 3000, sample.green / 3000, sample.blue / 3000,  sample.dataMask];
+  return [sample.nir / 3000, sample.green / 3000, sample.blue / 3000, sample.dataMask];
 }
