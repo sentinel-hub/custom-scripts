@@ -4,7 +4,7 @@ parent: Analysis Ready Planetscope
 grand_parent: Planet
 layout: script
 nav_exclude: true
-permalink: /analysis_ready_planetscope/maskclassification
+permalink: /analysis_ready_planetscope/true_color_cloud_masked
 scripts:
   - [Visualization, script.js]
 ---

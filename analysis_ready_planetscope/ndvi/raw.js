@@ -3,13 +3,13 @@
 
 function setup() {
     return {
-      input: ["nir","red", "cloud_mask", "dataMask"],
+      input: ["nir", "red", "cloud_mask", "dataMask"],
       output: {
         bands: 4
-    }
+      }
     };
   }
   
-function evaluatePixel(samples) {
-    return [(samples.nir-samples.red)/(samples.nir+samples.red)];
+function evaluatePixel(sample) {
+    return [(sample.nir-sample.red) / (sample.nir+sample.red)];
 }

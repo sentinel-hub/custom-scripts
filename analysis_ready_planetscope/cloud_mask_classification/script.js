@@ -22,7 +22,7 @@ const map = [
 const visualizer = new ColorMapVisualizer(map);
 
 
-function evaluatePixel(samples) {
+function evaluatePixel(sample) {
     const dataMask =  nodatavalue == -999 ? 0 : 1
     imgVals = visualizer.process(sample.cloud_mask)
     return imgVals.concat(dataMask)

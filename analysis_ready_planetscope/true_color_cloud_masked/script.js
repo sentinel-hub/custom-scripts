@@ -2,9 +2,7 @@
 
 function setup() {
     return {
-        input: [{
-            bands: ["blue", "green", "red", "cloud_mask"],
-        }],
+        input: ["blue", "green", "red", "cloud_mask"],
         output: {
             bands: 4
         }
@@ -22,5 +20,4 @@ function evaluatePixel(sample) {
         factor * sample.blue,
         opacity
     ];
-  else return [1,1,1,opacity];
 }

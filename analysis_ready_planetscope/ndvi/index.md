@@ -7,6 +7,8 @@ nav_exclude: true
 permalink: /analysis_ready_planetscope/ndvi
 scripts:
   - [Visualization, script.js]
+  - [EO Browser, eob.js]
+  - [Raw Values, raw.js]
 ---
 
 ## General description
