@@ -1,35 +1,16 @@
 ---
-title: Canopy Cover, Forest Carbon Diligence
-parent: Forest Carbon Diligence
-grand_parent: Planetary Variables
+title: NDVI, Analysis Ready Planetscope
+parent: Analysis Ready Planetscope
+grand_parent: Planet
 layout: script
 nav_exclude: true
+permalink: /analysis_ready_planetscope/ndvi
 scripts:
   - [Visualization, script.js]
-  - [EO Browser, eob.js]
-  - [Raw Values, raw.js]
 ---
 
-## Evaluate and visualize
-
-As Forest Carbon Diligence is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.
-
 ## General description
-
-Canopy cover quantifies the percentage of area occupied by trees within a
-pixel, where a tree is defined as vegetation 5 meters or taller. This metric will be most sensitive to tree clearing
-events like timber harvest or deforestation, but is also sensitive to seasonal leaf-on variation and to drought.
-
-The data layer has four bands:
-
-- **Canopy Cover** quantifies the horizontal area occupied by tree canopies that are > 5m tall.
-- **Lower prediction bound (5th percentile)** of the 90% prediction interval for model predictions at each pixel.
-- **Upper prediction bound (95th percentile)** of the 90% prediction interval for model predictions at each pixel.
-- **Quality Assurance Flags** describing the expected quality of satellite data measurements, and
-  whether any temporal gap-filling was applied.
+The well known and widely used NDVI is a simple, but effective index for quantifying green vegetation. It normalizes green leaf scattering in Near Infra-red wavelengths with chlorophyll absorption in red wavelengths. The value range of the NDVI is -1 to 1. Negative values of NDVI (values approaching -1) correspond to water. Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).
 
 ## Description of representative images
 
-Canopy Cover in 2022 near Apui, Brazil.
-
-![Canopy Cover Example](fig/canopycover.jpg)
