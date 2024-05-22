@@ -2,9 +2,7 @@
 
 function setup() {
     return {
-        input: [{
-            bands: ["cloud_mask"]
-        }],
+        input: ["cloud_mask"],
         output: {
             bands: 4
         }
