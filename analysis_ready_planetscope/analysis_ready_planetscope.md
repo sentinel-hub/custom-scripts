@@ -3,6 +3,7 @@ layout: default
 title: Analysis Ready PlanetScope 
 nav_order: 1
 parent: Planet
+permalink: /planet/analysis_ready_planetscope/
 ---
 
 # Analysis Ready PlanetScope 
