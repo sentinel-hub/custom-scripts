@@ -4,7 +4,7 @@ parent: Analysis Ready Planetscope
 grand_parent: Planet
 layout: script
 nav_exclude: true
-permalink: /analysis_ready_planetscope/ndvi
+permalink: /analysis_ready_planetscope/ndvi/
 scripts:
   - [Visualization, script.js]
   - [EO Browser, eob.js]
