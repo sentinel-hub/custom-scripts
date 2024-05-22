@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Analysis Ready PlanetScope 
-nav_order: 1
+nav_order: 2
 parent: Planet
 permalink: /planet/analysis_ready_planetscope/
 ---
