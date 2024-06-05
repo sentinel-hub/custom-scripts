@@ -20,9 +20,9 @@ function setup() {
   }
 }
 
-function evaluatePixel(samples) {
-  let ndci = (samples.rededge - samples.red) / (samples.rededge + samples.red);
-  const clear = (samples.dataMask * samples.clear);
+function evaluatePixel(sample) {
+  let ndci = (sample.rededge - sample.red) / (sample.rededge + sample.red);
+  const clear = (sample.dataMask * sample.clear);
   let id_default = colorBlend(ndci, [0.0, 0.5, 1.0],
     [
       [1, 0, 0, clear],
@@ -34,6 +34,6 @@ function evaluatePixel(samples) {
     default: id_default,
     index: [ndci],
     eobrowserStats: [ndci, +!clear],
-    dataMask: [samples.dataMask],
+    dataMask: [sample.dataMask],
   };
 }
