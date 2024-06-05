@@ -20,9 +20,9 @@ function setup() {
   }
 }
 
-function evaluatePixel(samples) {
-  let ndre = (samples.nir - samples.rededge) / (samples.nir + samples.rededge);
-  const clear = (samples.dataMask * samples.clear);
+function evaluatePixel(sample) {
+  let ndre = (sample.nir - sample.rededge) / (sample.nir + sample.rededge);
+  const clear = (sample.dataMask * sample.clear);
   let id_default = colorBlend(ndre, [0.0, 0.5, 1.0],
     [
       [1, 0, 0, clear],
@@ -34,6 +34,6 @@ function evaluatePixel(samples) {
     default: id_default,
     index: [ndre],
     eobrowserStats: [ndre, +!clear],
-    dataMask: [samples.dataMask],
+    dataMask: [sample.dataMask],
   };
 }
