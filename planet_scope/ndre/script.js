@@ -1,5 +1,5 @@
-//PlanetScope NDVI
-var val = (nir - red) / (nir + red);
+//PlanetScope NDRE
+var val = (nir - rededge) / (nir + rededge);
 
 return colorBlend(val,
   [0.0, 0.5, 1.0],

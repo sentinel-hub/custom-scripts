@@ -1,12 +1,12 @@
 //VERSION=3
-//PlanetScope NDVI EO Browser
+//PlanetScope NDRE EO Browser
 
 function setup() {
   return {
     input: [{
       bands: [
-        "red",
         "nir",
+        "rededge",
         "dataMask",
         "clear"
       ]
@@ -21,9 +21,9 @@ function setup() {
 }
 
 function evaluatePixel(samples) {
-  let ndvi = (samples.nir - samples.red) / (samples.nir + samples.red);
+  let ndre = (samples.nir - samples.rededge) / (samples.nir + samples.rededge);
   const clear = (samples.dataMask * samples.clear);
-  let id_default = colorBlend(ndvi, [0.0, 0.5, 1.0],
+  let id_default = colorBlend(ndre, [0.0, 0.5, 1.0],
     [
       [1, 0, 0, clear],
       [1, 1, 0, clear],
@@ -32,8 +32,8 @@ function evaluatePixel(samples) {
 
   return {
     default: id_default,
-    index: [ndvi],
-    eobrowserStats: [ndvi, +!clear],
+    index: [ndre],
+    eobrowserStats: [ndre, +!clear],
     dataMask: [samples.dataMask],
   };
 }
