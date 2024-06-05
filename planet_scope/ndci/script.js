@@ -1,5 +1,8 @@
 //PlanetScope NDCI
-var val = (rededge - red) / (rededge + red);
+let band1 = sample.rededge;
+let band2 = sample.red;
+const denominator = band1 + band2;
+let ndci = denominator === 0 ? NaN : (band1 - band2) / denominator;
 
 return colorBlend(val,
   [0.0, 0.5, 1.0],

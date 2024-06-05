@@ -21,17 +21,23 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  let ndre = (sample.nir - sample.rededge) / (sample.nir + sample.rededge);
+
+  let band1 = sample.nir;
+  let band2 = sample.rededge;
+  const denominator = band1 + band2;  
+  let ndre = denominator === 0 ? NaN : (band1 - band2) / denominator;
+
   const clear = (sample.dataMask * sample.clear);
+
   let id_default = colorBlend(ndre, [0.0, 0.5, 1.0],
     [
-      [1, 0, 0, clear],
-      [1, 1, 0, clear],
-      [0.1, 0.31, 0, clear],
+      [1, 0, 0],
+      [1, 1, 0],
+      [0.1, 0.31, 0],
     ])
 
   return {
-    default: id_default,
+    default: [...id_default, clear],
     index: [ndre],
     eobrowserStats: [ndre, +!clear],
     dataMask: [sample.dataMask],

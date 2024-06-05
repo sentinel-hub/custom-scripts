@@ -1,8 +1,11 @@
 //NDWI
 
-var val = (green / 3000 - nir / 3000) / (green / 3000 + nir / 3000);
+let band1 = sample.green;
+let band2 = sample.nir;
+const denominator = band1 + band2;
+let ndwi = denominator === 0 ? NaN : (band1 - band2) / denominator;
 
-return colorBlend(val,
+return colorBlend(ndwi,
   [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
   [
     [1, 0, 1],
@@ -12,4 +15,6 @@ return colorBlend(val,
     [0, 0, 1],
     [0, 0, 0.3],
     [0, 0, 0],
-  ]);
+  ]
+);
+
