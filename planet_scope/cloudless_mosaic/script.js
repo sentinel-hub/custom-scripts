@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["Red", "Green", "Blue", "dataMask", "UDM2_Clear"],
+    input: ["red", "green", "blue", "dataMask", "clear"],
     output: { bands: 4 },
     mosaicking: "ORBIT"
   };
@@ -37,12 +37,12 @@ function evaluatePixel(samples, scenes) {
 
   for (var i = 0; i < samples.length; i++) { //for each sample
     var sample = samples[i]; //get current sample
-    var clear = 0 + (sample.dataMask * sample.UDM2_Clear); //0 for clouds OR datamask, 1 for neither
+    var clear = 0 + (sample.dataMask * sample.clear); //0 for clouds OR datamask, 1 for neither
 
     if (clear === 1) { //if not clouds nor datamask 
-      reds[a] = sample.Red; //assign values for that sample to the channel arrays
-      blues[a] = sample.Blue;
-      greens[a] = sample.Green;
+      reds[a] = sample.red; //assign values for that sample to the channel arrays
+      blues[a] = sample.blue;
+      greens[a] = sample.green;
       a = a + 1; //increment a to represent that at this specific pixel, a value was detected
     }
   }
