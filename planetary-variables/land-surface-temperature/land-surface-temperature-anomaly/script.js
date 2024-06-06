@@ -62,22 +62,33 @@ function sortDatesDescending(d1, d2) {
     return date2 - date1;
 }
 
+var obsPerYear = [0];
 function preProcessScenes(collections) {
     let scenes = collections.scenes.tiles.filter(function (tile) {
         return tile.dataPath.includes("T" + sensingTime);
     });
     // sort
+    if (scenes.length == 0) {
+        return collections;
+    }
     scenes = scenes.sort(sortDatesDescending);
     let newScenes = [];
     // convert first scene to day of year
     const observed = new Date(scenes[0].date);
     const obsMs = datetimeToYearEpoch(observed);
+    var year = 0;
     for (let i = 0; i < scenes.length; i++) {
         let currentDate = new Date(scenes[i].date);
         let sceneMs = datetimeToYearEpoch(currentDate);
         let dt = relDiff(obsMs, sceneMs);
         if (dt <= toleranceMs) {
             newScenes.push(scenes[i]);
+            obsPerYear[year]++;
+        } else {
+            if (obsPerYear[year] != 0) {
+                year++;
+                obsPerYear[year] = 0;
+            }
         }
     }
 
@@ -115,11 +126,28 @@ function std(array, mean) {
 }
 
 function evaluatePixel(samples) {
+    // Return transparent, if no value for most recent image
+    if (samples.length == 0) return [NODATA];
+    if (!samples[0].dataMask) return [NODATA];
     const values = [];
-    for (let i = samples.length; i--; ) {
-        if (samples[i].dataMask) {
-            values.push(samples[i][band]);
+    var yearIndex = 0;
+    for (let i = 0; i < obsPerYear.length; i++) {
+        let obsInYear = obsPerYear[i];
+        if (obsInYear == 0) continue;
+        let validObsInYear = 0;
+        var yearSum = 0;
+        for (let j = 0; j < obsInYear; j++) {
+            var currentIndex = yearIndex + j;
+            if (samples[currentIndex].dataMask) {
+                yearSum += samples[currentIndex][band];
+                validObsInYear++;
+            }
         }
+        if (validObsInYear) {
+            const yearMean = yearSum / validObsInYear;
+            values.push(yearMean);
+        }
+        yearIndex += obsInYear;
     }
     if (values.length === 0) return [0, 0, 0, 0];
     const valsMean = mean(values);

@@ -43,6 +43,8 @@ _Please note_: The date that is compared to the reference period is always the m
 
 The reference period represents which dates get included for each year and is determined by the variable `toleranceDays` in the evalscript. This variable determines how many days adjacent to the selected day are included in the calculation. If the day for which an anomaly is computed is the 10th of January 2024 and `toleranceDays` is 0, only data in previous years that are also exactly on the 10th of January will be considered. If `toleranceDays` is 1, for each year in the reference period, one day before and after the 10th of January will also be considered and included in the calculation.
 
+If multiple values are available in a year, they will be averaged to form a yearly average. This average will then be used for the anomaly calculation. This is done to avoid bias, which would happen if one year has many more acquisitions available than other years.
+
 ### Visualization
 
 In the visualization script you can modify the color scale by changing the variables `vmin` and `vmax`. Those are the maximum and minimum values of the color ramp. If the anomaly is only very slight, you might want to change `vmin` and `vmax` to lower values to be able to see slight differences better.

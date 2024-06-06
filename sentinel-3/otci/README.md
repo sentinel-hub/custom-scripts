@@ -5,6 +5,11 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-3/otci/
 nav_exclude: true
+scripts:
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
 examples:
 - zoom: '7'
   lat: '44.868'
@@ -15,7 +20,7 @@ examples:
   - CDSE
   - EOB
   datasetId: S3OLCI
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-3/otci/script.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-3/otci/eob.js
 ---
 
 ## Description
