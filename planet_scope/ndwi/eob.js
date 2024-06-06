@@ -15,6 +15,7 @@ function setup() {
 
 function evaluatePixel(sample) {
   let ndwi = (sample.Green / 3000 - sample.NIR / 3000) / (sample.Green / 3000 + sample.NIR / 3000);
+  ndwi = isFinite(ndwi) ? ndwi : NaN;
   const indexVal = sample.dataMask === 1 ? ndwi : NaN;
 
   let id_default = colorBlend(ndwi,
