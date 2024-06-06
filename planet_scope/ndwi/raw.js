@@ -10,7 +10,7 @@ function setup() {
   }
 }
 
-function evaluatePixel(samples) {
-  let ndwi = index(samples.green, samples.nir);
+function evaluatePixel(sample) {
+  let ndwi = index(sample.green, sample.nir);
   return { default: [isFinite(ndwi) ? ndwi : NaN] };
 }
