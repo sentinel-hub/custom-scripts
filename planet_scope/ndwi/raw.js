@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: [{ bands: ["green", "nir", "dataMask"] }],
+    input: [{ bands: ["green", "nir"] }],
     output: [
       { id: "default", bands: 1, sampleType: "FLOAT32" },
     ]
