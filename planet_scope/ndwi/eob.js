@@ -20,18 +20,18 @@ function evaluatePixel(sample) {
   let id_default = colorBlend(ndwi,
     [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
     [
-      [1, 0, 1, sample.dataMask],
-      [1, 0.5, 0, sample.dataMask],
-      [1, 1, 0, sample.dataMask],
-      [0.2, 1, 0.5, sample.dataMask],
-      [0, 0, 1, sample.dataMask],
-      [0, 0, 0.3, sample.dataMask],
-      [0, 0, 0, sample.dataMask],
+      [1, 0, 1],
+      [1, 0.5, 0],
+      [1, 1, 0],
+      [0.2, 1, 0.5],
+      [0, 0, 1],
+      [0, 0, 0.3],
+      [0, 0, 0],
     ]
   );
 
   return {
-    default: id_default,
+    default: [...id_default, sample.dataMask],
     index: [indexVal],
     eobrowserStats: [indexVal, sample.dataMask],
     dataMask: [sample.dataMask],
