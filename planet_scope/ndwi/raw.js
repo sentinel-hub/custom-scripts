@@ -12,5 +12,5 @@ function setup() {
 
 function evaluatePixel(samples) {
   let ndwi = index(samples.green, samples.nir);
-  return {default: [ndwi]};
+  return { default: [isFinite(ndwi) ? ndwi : NaN] };
 }
