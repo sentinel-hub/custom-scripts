@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["Red", "NIR", "dataMask"],
+    input: ["Red", "NIR"],
     output: [
       { id: "default", bands: 1 },
     ]
