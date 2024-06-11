@@ -23,14 +23,12 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  let band1 = sample.rededge;
-  let band2 = sample.red;
-  const denominator = band1 + band2;
-  let ndci = denominator === 0 ? NaN : (band1 - band2) / denominator;
 
-  const clear = (sample.dataMask * sample.clear);
+  let ndci = index(sample.rededge, sample.red); 
 
-  let ndci_map = colorBlend(ndci, [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+  const clear = sample.dataMask && sample.clear;  
+
+  let ndci_colored = colorBlend(ndci, [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
   [
     [0, 0, 1],   // Blue
     [0, 0, 1],   // Blue
@@ -47,12 +45,12 @@ function evaluatePixel(sample) {
   let threshold = 0.3; 
 
   // Conditional logic to select either true_color or ndci_map
-  let id_default = (ndci < threshold) ? true_color : ndci_map;
+  let ndci_colored_masked = (ndci < threshold) ? true_color : ndci_map;
 
   return {
-    default: [...id_default, clear],
+    default: [...ndci_colored_masked, clear],
     index: [ndci],
-    eobrowserStats: [ndci, +!clear],
+    eobrowserStats: [ndci, !clear],
     dataMask: [sample.dataMask],
   };
 }

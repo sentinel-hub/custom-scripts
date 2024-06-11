@@ -21,14 +21,11 @@ function setup() {
 
 function evaluatePixel(sample) {
 
-    let band1 = sample.green;
-    let band2 = sample.nir;
-    const denominator = band1 + band2;
-    let ndwi = denominator === 0 ? NaN : (band1 - band2) / denominator;
+    let ndwi = index(sample.green, sample.nir)
 
-    const clear = (sample.dataMask * sample.clear);
+    const clear = sample.dataMask && sample.clear;
 
-    let id_default = colorBlend(ndwi,
+    let ndwi_colored = colorBlend(ndwi,
         [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
         [
             [1, 0, 1],
@@ -42,9 +39,9 @@ function evaluatePixel(sample) {
     );
 
     return {
-        default: [...id_default, clear],
+        default: [...ndwi_colored, clear],
         index: [ndwi],
-        eobrowserStats: [ndwi, sample.dataMask],
+        eobrowserStats: [ndwi, !clear],
         dataMask: [sample.dataMask],
     };
 }

@@ -12,7 +12,8 @@ function setup() {
 function preProcessScenes(collections) {
   collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
     var orbitDateFrom = new Date(orbit.dateFrom);
-    return orbitDateFrom.getTime() >= (collections.to.getTime() - 7 * 24 * 3600 * 1000);
+    const nAggregationDays = 7;
+    return orbitDateFrom.getTime() >= (collections.to.getTime() - nAggregationDays * 24 * 3600 * 1000);
   });
   return collections;
 }
@@ -37,7 +38,7 @@ function evaluatePixel(samples, scenes) {
 
   for (var i = 0; i < samples.length; i++) { //for each sample
     var sample = samples[i]; //get current sample
-    var clear = 0 + (sample.dataMask * sample.clear); //0 for clouds OR datamask, 1 for neither
+    var clear = sample.dataMask && sample.clear; //0 for clouds OR datamask, 1 for neither  
 
     if (clear === 1) { //if not clouds nor datamask 
       reds[a] = sample.red; //assign values for that sample to the channel arrays
