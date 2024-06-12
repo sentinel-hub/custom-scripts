@@ -6,12 +6,16 @@ function setup() {
     input: ["Red", "NIR", "dataMask"],
     output: [
       { id: "default", bands: 4 },
+      { id: "index", bands: 1, sampleType: "FLOAT32" },
+      { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
+      { id: "dataMask", bands: 1 },
     ]
   }
 }
 
 function evaluatePixel(sample) {
   let NDVI = index(sample.NIR, sample.Red);
+  const indexVal = isFinite(NDVI) && sample.dataMask === 1 ? NDVI : NaN;
   let id_default = valueInterpolate(NDVI,
     [0, 0.2, 0.3, 0.4, 0.5, 1.0],
     [
@@ -22,9 +26,13 @@ function evaluatePixel(sample) {
       [0.19, 0.43, 0.11],
       [0.06, 0.33, 0.04],
       [0, 0.27, 0],
-    ]);
+    ]
+  );
 
   return {
     default: [...id_default, sample.dataMask],
+    index: [indexVal],
+    eobrowserStats: [indexVal, sample.dataMask],
+    dataMask: [sample.dataMask],
   };
 }
