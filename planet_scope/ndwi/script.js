@@ -1,8 +1,8 @@
 //NDWI
 
-var val = (green / 3000 - nir / 3000) / (green / 3000 + nir / 3000);
+let ndwi = index(green, nir);
 
-return colorBlend(val,
+return colorBlend(ndwi,
   [-1, -0.5, -0.2, 0, 0.2, 0.5, 1.0],
   [
     [1, 0, 1],
@@ -12,4 +12,6 @@ return colorBlend(val,
     [0, 0, 1],
     [0, 0, 0.3],
     [0, 0, 0],
-  ]);
+  ]
+);
+

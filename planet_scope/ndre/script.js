@@ -1,8 +1,8 @@
-//PlanetScope NDVI
-let ndvi = index(nir, red);
+//PlanetScope NDRE
+let ndre = index(nir, rededge);
 
 return colorBlend(
-    ndvi,
+    ndre,
     [0.0, 0.5, 1.0],
     [
         [1, 0, 0],

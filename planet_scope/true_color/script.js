@@ -3,11 +3,11 @@
 
 function setup() {
   return {
-    input: ["blue", "green", "red"],
-    output: { bands: 3 }
+    input: ["blue", "green", "red", "dataMask"],
+    output: { bands: 4 }
   };
 }
 
 function evaluatePixel(sample) {
-  return [sample.red / 3000, sample.green / 3000, sample.blue / 3000];
+  return [sample.red / 3000, sample.green / 3000, sample.blue / 3000, sample.dataMask];
 }
