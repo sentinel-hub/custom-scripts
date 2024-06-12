@@ -6,9 +6,12 @@ layout: script
 permalink: /planet_scope/ndwi/
 nav_exclude: true
 scripts:
-scripts:
-    - [Visualization, script.js]
-    - [EO Browser, eob.js]
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
 ---
 
 
