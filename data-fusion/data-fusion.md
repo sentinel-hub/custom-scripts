@@ -23,3 +23,4 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Sand-Oriented Land Cover Classification with Sentinel-1 and Sentinel-2](/data-fusion/sand-oriented_land_cover_classification_s1_s2)
  - [Thermal visualization and water in wetlands with Landsat 8 L1 & L2](/data-fusion/thermal_visualization_and_water_in_wetlands)
  - [Land Surface Temperature with S3 SLSTR and OLCI](/sentinel-3/land_surface_temperature)
+ - [Visualising floods using Sentinel-1 overlaid on Sentinel-2 imagery](/data-fusion/s1_flooding_visualisation/)
