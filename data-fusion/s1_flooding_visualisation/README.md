@@ -13,7 +13,7 @@ nav_exclude: true
 - William Ray & Maxim Lamare
   
 ## Evaluate and visualize  
- - [EO Browser](https://sentinelshare.page.link/gi8N)
+ - [EO Browser](https://sentinelshare.page.link/i2yk)
   
 ## General description of the script  
   
