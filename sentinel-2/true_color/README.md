@@ -44,12 +44,13 @@ examples:
 The true color product maps Sentinel-2 band values B04, B03, and B02 which roughly correspond to red, green, and blue part of the spectrum, respectively, to R, G, and B components of the image shown.
 
 But what color is true color? Various additional processing steps can be applied to scale the image values in a range that is well perceived and pleasing to the eye [(Sovdat et al, 2019)]((https://www.sciencedirect.com/science/article/pii/S0034425719300422)).
-For the default script here, we apply simple gain correction, multiplying the pixel values of each image band with a single constant value. This is the `gain` parameter which can be adjusted in the script window.
 
-For [Copernicus Browser](https://browser.dataspace.copernicus.eu/), we chose to apply default a true color script which adds [Highlight Compression](https://docs.sentinel-hub.com/api/latest/evalscript/functions/#highlightcompressvisualizer) and also saturation and contrast adjustment. In this context, saturation is the brightness of colours in the image and contrast is the difference between the bright and dark areas.
+- For the default script here, we apply simple gain correction, multiplying the pixel values of each image band with a single constant value. This is the `gain` parameter which can be adjusted in the script window.
+
+- For [Copernicus Browser](https://browser.dataspace.copernicus.eu/), we chose to apply default a true color script which adds [Highlight Compression](https://docs.sentinel-hub.com/api/latest/evalscript/functions/#highlightcompressvisualizer) and also saturation and contrast adjustment. In this context, saturation is the brightness of colours in the image and contrast is the difference between the bright and dark areas.
 The current True Color algorithm for Copernicus Browser can be accessed as [Sentinel-2 L2A optimized True Color](https://custom-scripts.sentinel-hub.com/sentinel-2/l2a_optimized/) and is also compatible with EO Browser.
 
-The default True Color script in [EO Browser](https://apps.sentinel-hub.com/eo-browser/) is more simple, with Highlight Compression between specific `min` and `max` values. The `min` and `max` values are user-adjustable, and of course, this script also works in Copernicus Browser
+- The default True Color script in [EO Browser](https://apps.sentinel-hub.com/eo-browser/) is more simple, with Highlight Compression between specific `min` and `max` values. The `min` and `max` values are user-adjustable, and of course, this script also works in Copernicus Browser
 
 The bands to use for True Color are
 
