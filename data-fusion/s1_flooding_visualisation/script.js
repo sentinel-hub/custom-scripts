@@ -11,7 +11,7 @@ function setup() {
       }
     ],
     output: { bands: 4 },
-    mosaicking: "ORBIT"
+    mosaicking: "SIMPLE"
   };
 }
 
@@ -21,13 +21,11 @@ function toDB(input){
 
 function evaluatePixel(sample) {
   var S1 = sample.S1GRD[0];
-  var S2 = sample.S2L2A;
+  var S2 = sample.S2L2A[0];
   if (toDB(S1.VV) <= -15){
-    //console.log(S1[0].VV*25)
     return [S1.VV * 10, S1.VV * 10 , S1.VV * 50, 1];
-    //return [1,0,0,1]
   } else {
     const f = 2.5;
-    return [f*S2[0].B08,f*S2[0].B08, f*S2[0].B08,1]
+    return [f*S2.B08,f*S2.B08, f*S2.B08,1]
   }
 }
