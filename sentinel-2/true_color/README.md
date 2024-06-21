@@ -11,19 +11,6 @@ scripts:
 - - EO Browser
   - eob.js
 examples:
-- zoom: '10'
-  lat: '42.01869'
-  lng: '12.58484'
-  datasetId: S2L2A
-  fromTime: '2023-10-12T00:00:00.000Z'
-  toTime: '2023-10-12T23:59:59.999Z'
-  platform:
-  - CDSE
-  - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/sentinel-2/true_color/script.js
-  additionalQueryParams:
-  - - cloudCoverage
-    - '30'
 - zoom: '12'
   lat: '34.23664'
   lng: '127.20074'
@@ -66,10 +53,6 @@ For [MODIS](https://custom-scripts.sentinel-hub.com/modis/true-color/): **B01, B
 
 ## Description of representative images
 
-True color visualization of Rome, on 8.10.2017.
-
-![True color visualization of Rome, on 8.10.2017.](fig/fig1.png)
-
 True color visualization of islands in the Korea Strait
 - With basic True Color Product (this script)
 
@@ -82,7 +65,6 @@ True color visualization of islands in the Korea Strait
 - With Copernicus Browser default True Color [Sentinel-2 L2A optimized True Color](https://custom-scripts.sentinel-hub.com/sentinel-2/l2a_optimized/)
 
 ![True color visualization of islands in the Korea Strait, on 16.05.2024.](fig/cdse_default_true_color.jpg)
-
 
 ## References
  - Sovdat, Blaž, Miha Kadunc, Matej Batič, and Grega Milčinski. "Natural color representation of Sentinel-2 data." Remote sensing of environment 225 (2019): 392-402. [Full Text](https://www.sciencedirect.com/science/article/pii/S0034425719300422)
