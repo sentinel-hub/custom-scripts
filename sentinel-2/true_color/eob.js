@@ -6,12 +6,12 @@ let viz = new HighlightCompressVisualizer(minVal, maxVal);
 
 function setup() {
    return {
-    input: ["B04", "B03", "B02","dataMask"],
+    input: ["B04", "B03", "B02", "dataMask"],
     output: { bands: 4 }
   };
 }
 
 function evaluatePixel(samples) {
-    let val = [samples.B04, samples.B03, samples.B02,samples.dataMask];
+    let val = [samples.B04, samples.B03, samples.B02, samples.dataMask];
     return viz.processList(val);
 }
