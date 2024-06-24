@@ -6,7 +6,6 @@ layout: script
 permalink: /planet_scope/max_ndvi/
 nav_exclude: true
 examples:
-examples:
 - zoom: '15'
   lat: '-16.60556'
   lng: '-48.80419'
@@ -33,7 +32,7 @@ William Ray
 
 ## Description of representative images
 
-![g](fig/fig1.png)
+![figure 1](fig/fig1.png)
 
 
 
