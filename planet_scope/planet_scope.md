@@ -49,6 +49,8 @@ The spectral bands of PlanetScope data are the following if you order a 8-band p
  - [False Color](/planet_scope/false_color)
  - [Cloudless Mosaic](/planet_scope/cloudless_mosaic)
  - [NDVI](/planet_scope/ndvi)
+ - [Maximum NDVI](/planet_scope/max_ndvi)
+ - [NDVI Difference](/planet_scope/ndvi_difference)
  - [NDWI](/planet_scope/ndwi)
  - [NDCI - Normalized Difference Chlorophyll Index](/planet_scope/ndci)
  - [NDRE - Normalized Difference Red Edge Index](/planet_scope/ndre)
