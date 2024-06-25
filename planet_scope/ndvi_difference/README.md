@@ -8,6 +8,10 @@ nav_exclude: true
 scripts:
 - - Visualization
   - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
 examples:
 - zoom: '14'
   lat: '52.24714'
