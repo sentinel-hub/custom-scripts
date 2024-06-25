@@ -21,7 +21,7 @@ In this function we limit the scenes, which are used for processing.
 These are based also on input variables. 
 E.g. if one sets date "2017-03-01" ("TO date") and cloud coverage filter 30%, 
 all scenes older than 2017-03-01 with cloud coverage 30% will be checked against
-further conditions in this function.
+further conditions in this function (in this function it is currently limited to 3 months).
 The more scenes there are, longer it will take to process the data.
 After 60 seconds of processing, there will be a timeout.
 */
