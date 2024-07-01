@@ -5,6 +5,13 @@ grand_parent: Planet
 layout: script
 permalink: /planet_scope/max_ndvi/
 nav_exclude: true
+scripts:
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+- - Raw Values
+  - raw.js
 examples:
 - zoom: '15'
   lat: '-16.60556'

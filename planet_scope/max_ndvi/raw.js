@@ -3,15 +3,15 @@
 //Basic initialization setup function
 function setup() {
   return {
-	//List of all bands, that will be used in the script, either for visualization or for choosing best pixel
+    //List of all bands, that will be used in the script, either for visualization or for choosing best pixel
     input: [{
       bands: [
-         "Red",
-         "NIR"
+        "Red",
+        "NIR"
       ]
     }],
-	//This can always be the same if one is doing RGB images
-    output: { bands: 3 },
+    //This can always be the same if one is doing RGB images
+    output: { bands: 1 },
     mosaicking: "ORBIT"
   }
 }
@@ -26,23 +26,23 @@ The more scenes there are, longer it will take to process the data.
 After 60 seconds of processing, there will be a timeout.
 */
 
-function preProcessScenes (collections) {
-    collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
-        var orbitDateFrom = new Date(orbit.dateFrom)
-        return orbitDateFrom.getTime() >= (collections.to.getTime()-3*31*24*3600*1000);
-    })
-    return collections
+function preProcessScenes(collections) {
+  collections.scenes.orbits = collections.scenes.orbits.filter(function (orbit) {
+    var orbitDateFrom = new Date(orbit.dateFrom)
+    return orbitDateFrom.getTime() >= (collections.to.getTime() - 3 * 31 * 24 * 3600 * 1000);
+  })
+  return collections
 }
 
 function calcNDVI(sample) {
   var denom = sample.Red + sample.NIR;
   return ((denom != 0) ? (sample.NIR - sample.Red) / denom : NaN);
 }
-function evaluatePixel(samples) {  
-  var max = 0;
-  for (var i= 0; i<samples.length;i++) {
-      var ndvi = calcNDVI(samples[i]);
-    max = ndvi > max ? ndvi:max;
-    return [max];
+function evaluatePixel(samples) {
+  var max = Number.NEGATIVE_INFINITY;
+  for (let i = 0; i < samples.length; i++) {
+    var ndvi = calcNDVI(samples[i]);
+    max = ndvi > max ? ndvi : max;
   }
+  return [max];
 }

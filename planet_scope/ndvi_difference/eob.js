@@ -10,7 +10,7 @@ function setup() {
         output: [
             { id: "default", bands: 4 },
             { id: "index", bands: 1, sampleType: "FLOAT32" },
-            { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
+            { id: "eobrowserStats", bands: 2, sampleType: "FLOAT32" },
             { id: "dataMask", bands: 1 }
         ],
         mosaicking: Mosaicking.ORBIT
@@ -37,12 +37,10 @@ function evaluatePixel(samples) {
     ]
     const visualizer = new ColorRampVisualizer(ramps);
     let imgVals = visualizer.process(diff);
-    imgVals.push(dataMask)
-
     return {
-        default: imgVals,
+        default: imgVals.concat(dataMask),
         index: [diff],
-        eobrowserStats: [diff],
+        eobrowserStats: [diff, dataMask],
         dataMask: [dataMask]
     };
 }

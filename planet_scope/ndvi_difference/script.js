@@ -32,9 +32,7 @@ function evaluatePixel(samples) {
     ]
     const visualizer = new ColorRampVisualizer(ramps);
     let imgVals = visualizer.process(diff);
-    imgVals.push(dataMask)
-
-    return imgVals
+    return imgVals.concat(dataMask)
 }
 
 function preProcessScenes(collections) {
