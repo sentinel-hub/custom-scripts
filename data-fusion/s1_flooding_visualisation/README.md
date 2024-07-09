@@ -21,7 +21,7 @@ examples:
   platform:
   - CDSE
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/data-fusion/s1_flooding_visualisation/eob.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/data-fusion/s1_flooding_visualisation/copernicus_browser.js
 
 ---
 
@@ -43,7 +43,7 @@ This script can be used to visualise flood events using Sentinel-1 GRD imagery. 
 
 - Select your area of interest
 - From Data Collections, select `Sentinel-2 Mosaic` or `Sentinel-2 L2A`. You can choose the most recent mosaic or the one from the same season as your time of interest; if you are selecting a single image, make sure it is cloud free.
-- From Layers, select Custom Script. Click the Custom Script tab, and check the `Use additional datasets (advanced)` box. Under `Additional datasets`, you will see `S-1 GRD`. Click the `+` Sign to add it. Make sure you enable orthorectification, optionally, you can also use a speclke filter.
+- From Layers, select Custom Script. Click the Custom Script tab, and check the `Use additional datasets (advanced)` box. Under `Additional datasets`, you will see `S-1 GRD`. Click the `+` Sign to add it. Make sure you enable orthorectification. Optionally, you can also use a speckle filter.
 - Check the `Customize timespan` box and select the timeframe you are interested in (the timeframe of your flood)
 - Now paste the script in the code field. Take care to use the right one, `Copernicus Browser` if you are using a single Sentinel-2 image as a background and `Sentinel-2 Mosaic` if you want the mosaic background. Then click `Refresh Evalscript`.
 - If you want to adjust the brightness of the background image, change the `f` constant. It is typically around 2.5 for Sentinel-2 images and 0.0008 for Sentinel-2 mosaics, increasing the gain makes the image brighter.
