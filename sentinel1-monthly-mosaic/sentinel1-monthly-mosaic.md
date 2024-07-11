@@ -1,29 +1,21 @@
 ---
 layout: default
-title: Sentinel-2 L2A Quarterly Cloudless Mosaic
+title: Sentinel-1 Monthly Mosaic
 nav_order: 5
 parent: Sentinel
-permalink: /sentinel/sentinel2-quarterly-cloudless-mosaic/
+permalink: /sentinel/sentinel1-monthly-mosaic/
 ---
 
-# Sentinel-2 Quarterly Cloudless Mosaic
+# Sentinel-1 Monthly Mosaic
 
-Sentinel-2 Quarterly Mosaics are mosaics generated from three months of Sentinel-2 level 2A, offering a cloudless mosaic of the whole world for 4 spectral Sentinel-2 bands (Blue, Green, Red, and NIR) and an ancillary band of observaions. The resolution of the collection is 10 meters.
+Sentinel-1 Monthly mosaics are an analysis-ready product of individual Sentinel-1 acquisitions. The dataset is prepared for most populated areas of the world. Two separate data products are available: Sentinel-1 IW Monthly Mosaics for the temperate zone and the tropics with VV and VH polarization, and Sentinel-1 DH Monthly Mosaics with HH and HV polarization for the polar regions. The resolution of the collection is 20 meters.
 
-The algorithm used to derive the product was run independently at pixel level. For each pixel, a 3-month stack of Sentinel-2 L2A `B02`, `B03`, `B04`, `B08`, and `SCL` observations was taken. The observations were marked `invalid` if the value of the Sentinel-2 L2A scene classification band (`SCL`) is one of the following values:
-- 1 (SATURATED_DEFECTIVE)
-- 3 (CLOUD_SHADOW)
-- 7 (CLOUD_LOW_PROBA / UNCLASSIFIED)
-- 8 (CLOUD_MEDIUM_PROBA)
-- 9 (CLOUD_HIGH_PROBA)
-- 10 (THIN_CIRRUS)
+The algorithm used to derive the product was run independently at pixel level. For each pixel and each band, a weighted average of the pixel values was calculated. The weights were calculated based on the local resolution (the inverse of the imaged area) that particular pixel. The imaged area is a function of the sensor configuration (look angle and azimuth) and the local terrain aspect and slope. If the slope is facing towards the sensor, the imaged area is small and returned intensity will be high, while if it is facing away from the sensor, the the imaged area is large and the returned intensity will be low or even zero for radar shadows.
+For more details of this correction process, visit [(Small 2012)](https://ieeexplore.ieee.org/abstract/document/6350465).
 
-The invalid observations were removed from the stack. The number of valid observations was recorded for each pixel as the output of `observations` band. After the removal of invalid observations, each band was sorted separately and the value of the first quartile was taken as the output value in digital number (DN; `DN = reflectance * 10000`). If there is no valid observation, the output value will be `-32768` which represents no data. In this case, the `observations` band should has the value `0`.
+Please find related resources and more information about the collection [here](https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/S1GRD.html#processing-chain).
 
-
-Please find related resources and more information about the collection [here](https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel2.html#sentinel-2-level-3-quarterly-mosaics).
-
-- [True Color](/sentinel2-quarterly-cloudless-mosaic/true-color)
+- [RGB ratio](/sentinel2-quarterly-cloudless-mosaic/true-color)
 - [False Color](/sentinel2-quarterly-cloudless-mosaic/false-color)
 - [NDVI](/sentinel2-quarterly-cloudless-mosaic/ndvi)
 - [NDWI](/sentinel2-quarterly-cloudless-mosaic/ndwi)
