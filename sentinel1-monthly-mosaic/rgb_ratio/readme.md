@@ -9,7 +9,7 @@ examples:
 - zoom: '11'
   lat: '53.62774'
   lng: '9.61716'
-  datasetId: 3c662330-108b-4378-8899-525fd5a225cb
+  datasetId: S1_MOSAIC
   fromTime: '2023-09-01T00:00:00.000Z'
   toTime: '2023-09-01T23:59:59.999Z'
   platform:

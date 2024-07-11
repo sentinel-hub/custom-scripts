@@ -15,7 +15,7 @@ For more details of this correction process, visit [(Small 2012)](https://ieeexp
 
 Please find related resources and more information about the collection [here](https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/S1GRD.html#processing-chain).
 
-- [RGB ratio](/sentinel2-quarterly-cloudless-mosaic/true-color)
+- [RGB ratio](/sentinel1-monthly-mosaic/rgb_ratio)
 - [False Color](/sentinel2-quarterly-cloudless-mosaic/false-color)
 - [NDVI](/sentinel2-quarterly-cloudless-mosaic/ndvi)
 - [NDWI](/sentinel2-quarterly-cloudless-mosaic/ndwi)
