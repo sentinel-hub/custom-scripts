@@ -1,3 +1,4 @@
+//VERSION=3
 // Visualization
 const vmin = -2;
 const vmax = 2;
