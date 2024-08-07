@@ -124,7 +124,7 @@ function setup() {
     // cloud_mask = 1 => no clouds
     // cloud_mask = 2,3,4,5,6,7 => different classes of clouds (bright cloud, haze, ...)
     // cloud_mask = -999 => no data
-    let cloudBool = sample.cloud_mask == 1 ? 1 : 0;
+    let cloudBool = sample.cloud_mask == 1 ? 0 : 1; // cloud_mask for eobrowserStats should be 0 for no-clouds
   
     return { 
       default: visVal, 
