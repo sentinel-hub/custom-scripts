@@ -8,43 +8,42 @@ const max = 30;
 const min = 0;
 
 function setup() {
-    return {
-        input: ["CH", "dataMask"],
-        output: [
-            { id: "default", bands: 4 },
-            { id: "index", bands: 1, sampleType: "UINT8" },
-            { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
-            { id: "dataMask", bands: 1 },
-        ],
-    };
+  return {
+    input: ["CH", "dataMask"],
+    output: [
+      { id: "default", bands: 4 },
+      { id: "index", bands: 1, sampleType: "UINT8" },
+      { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
+      { id: "dataMask", bands: 1 },
+    ],
+  };
 }
 
 function updateMap(max, min) {
-    const numIntervals = map.length;
-    const intervalLength = (max - min) / (numIntervals - 1);
-    for (let i = 0; i < numIntervals; i++) {
-        map[i][0] = max - intervalLength * i;
-    }
+  const numIntervals = map.length;
+  const intervalLength = (max - min) / (numIntervals - 1);
+  for (let i = 0; i < numIntervals; i++) {
+    map[i][0] = max - intervalLength * i;
+  }
 }
 
 const map = [
-    [30, 0x345e03],
-    [20, 0x6da20c],
-    [10, 0xbace6e],
-    [0, 0xf0f5d5],
+  [30, 0x345e03],
+  [20, 0x6da20c],
+  [10, 0xbace6e],
+  [0, 0xf0f5d5],
 ];
 
-if (!defaultVis) updateMap(max, min);
-const visualizer = new ColorRampVisualizer(map);
+const visualizer = new ColorRampVisualizer(map, min, max);
 
 function evaluatePixel(sample) {
-    let val = sample.CH;
-    let imgVals = visualizer.process(val);
+  let val = sample.CH;
+  let imgVals = visualizer.process(val);
 
-    return {
-        default: imgVals.concat(sample.dataMask),
-        index: [val],
-        eobrowserStats: [val],
-        dataMask: [sample.dataMask],
-    };
+  return {
+    default: imgVals.concat(sample.dataMask),
+    index: [val],
+    eobrowserStats: [val],
+    dataMask: [sample.dataMask],
+  };
 }

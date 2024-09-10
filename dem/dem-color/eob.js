@@ -1,11 +1,10 @@
 //VERSION=3
 // To set custom max and min values, set
-// defaultVis to false and choose your max and
-// min values. The color map will then be scaled
+// choose your max and min values. 
+// The color map will then be scaled
 // to those max and min values
-const defaultVis = true
 const max = 9000
-const min = -9000
+const min = -12000
 
 function setup() {
     return {
@@ -16,14 +15,6 @@ function setup() {
             { id: "dataMask", bands: 1 }
         ]
     };
-}
-
-function updateMap(max, min) {
-    const numIntervals = map.length
-    const intervalLength = (max - min) / (numIntervals - 1);
-    for (let i = 0; i < numIntervals; i++) {
-        map[i][0] = max - intervalLength * i
-    }
 }
 
 const map = [
@@ -51,8 +42,7 @@ const map = [
     [-12000, 0x000028],
 ];
 
-if (!defaultVis) updateMap(max, min);
-const visualizer = new ColorRampVisualizer(map);
+const visualizer = new ColorRampVisualizer(map, min, max);
 
 function evaluatePixel(sample) {
     let val = sample.DEM;

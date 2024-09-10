@@ -1,25 +1,21 @@
 //VERSION=3
+const band = "NO2";
 var minVal = 0.0;
 var maxVal = 0.0001;
-var diff = maxVal - minVal;
-const map = [
-	[minVal, 0x00007f], 
-	[minVal + 0.125 * diff, 0x0000ff],
-	[minVal + 0.375 * diff, 0x00ffff],
-	[minVal + 0.625 * diff, 0xffff00],
-	[minVal + 0.875 * diff, 0xff0000],
-	[maxVal, 0x7f0000]
-]; 
 
-const visualizer = new ColorRampVisualizer(map)
 function setup() {
-   return {
-    input: ["NO2","dataMask"],
-    output: { bands: 4 }
+  return {
+    input: [band, "dataMask"],
+    output: {
+      bands: 4,
+    },
   };
 }
 
+var viz = ColorRampVisualizer.createBlueRed(minVal, maxVal);
+
 function evaluatePixel(samples) {
-   const [r, g, b] = visualizer.process(samples.NO2);
-   return [r, g, b, samples.dataMask];
+  let ret = viz.process(samples[band]);
+  ret.push(samples.dataMask);
+  return ret;
 }

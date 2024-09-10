@@ -28,15 +28,14 @@ var option = 0;
 var minC = 0;
 var maxC = 50;
 
-
 ////INPUT DATA - FOR BETTER RESULTS, THE DATA SHOULD BE ADJUSTED
 // NVDIs for bare soil and NDVIv for full vegetation
-// Note: NVDIs for bare soil and NDVIv for full vegetation are needed to 
+// Note: NVDIs for bare soil and NDVIv for full vegetation are needed to
 //       be evaluated for every scene. However in the custom script, default values are set regarding:
-// https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html 
+// https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html
 // https://www.researchgate.net/post/Can_anyone_help_me_to_define_a_range_of_NDVI_value_to_extract_bare_soil_pixels_for_Landsat_TM
 // NVDIs=0.2, NDVIv=0.8
-// other source suggests global values: NVDIs=0.2, NDVIv=0.5; 
+// other source suggests global values: NVDIs=0.2, NDVIv=0.5;
 // https://www.researchgate.net/publication/296414003_Algorithm_for_Automated_Mapping_of_Land_Surface_Temperature_Using_LANDSAT_8_Satellite_Data
 var NDVIs = 0.2;
 var NDVIv = 0.8;
@@ -60,7 +59,7 @@ if (option == 2) {
   minC = 0;
   maxC = 25;
 }
-let viz = ColorGradientVisualizer.createRedTemperature(minC, maxC);
+let viz = ColorRampVisualizer.createRedTemperature(minC, maxC);
 
 //this is where you set up the evalscript to access the bands of the two datasets in the fusion
 
@@ -68,14 +67,12 @@ function setup() {
   return {
     input: [
       { datasource: "S3SLSTR", bands: ["S8"] },
-      { datasource: "S3OLCI", bands: ["B06", "B08", "B17"] }],
-    output: [
-      { id: "default", bands: 3, sampleType: SampleType.AUTO }
+      { datasource: "S3OLCI", bands: ["B06", "B08", "B17"] },
     ],
-    mosaicking: "ORBIT"
-  }
+    output: [{ id: "default", bands: 3, sampleType: SampleType.AUTO }],
+    mosaicking: "ORBIT",
+  };
 }
-
 
 //emissivity calc (Unchanged from Landsat script)
 //https://www.researchgate.net/publication/296414003_Algorithm_for_Automated_Mapping_of_Land_Surface_Temperature_Using_LANDSAT_8_Satellite_Data
@@ -118,24 +115,26 @@ function evaluatePixel(samples) {
     var B17i = samples.S3OLCI[i].B17;
 
     // some images have errors, whole area is either B10<173K or B10>65000K. Also errors, where B06 and B17 =0. Therefore no processing if that happens, in addition for average and stdev calc, N has to be reduced!
-    if ((Bi > 173 && Bi < 65000) && (B06i > 0 && B08i > 0 && B17i > 0)) {
+    if (Bi > 173 && Bi < 65000 && B06i > 0 && B08i > 0 && B17i > 0) {
       // ok image
       //1 Kelvin to C
       var S8BTi = Bi - 273.15;
       //2 NDVI - Normalized Difference vegetation Index - based on this custom script: https://custom-scripts.sentinel-hub.com/sentinel-3/ndvi/
       var NDVIi = (B17i - B08i) / (B17i + B08i);
       //3 PV - proportional vegetation
-      var PVi = Math.pow(((NDVIi - NDVIs) / (NDVIv - NDVIs)), 2);
-      //4 LSE land surface emmisivity  
+      var PVi = Math.pow((NDVIi - NDVIs) / (NDVIv - NDVIs), 2);
+      //4 LSE land surface emmisivity
       var LSEi = LSEcalc(NDVIi, PVi);
       //5 LST
-      var LSTi = (S8BTi / (1 + (((bCent * S8BTi) / rho) * Math.log(LSEi))));
+      var LSTi = S8BTi / (1 + ((bCent * S8BTi) / rho) * Math.log(LSEi));
 
       ////temporary calculation
       //avg
       LSTavg = LSTavg + LSTi;
       //max
-      if (LSTi > LSTmax) { LSTmax = LSTi; }
+      if (LSTi > LSTmax) {
+        LSTmax = LSTi;
+      }
       //array
       LSTarray.push(LSTi);
     } else {
@@ -151,16 +150,12 @@ function evaluatePixel(samples) {
 
   // calc final stdev value
   for (let i = 0; i < LSTarray.length; i++) {
-    LSTstd = LSTstd + (Math.pow(LSTarray[i] - LSTavg, 2));
+    LSTstd = LSTstd + Math.pow(LSTarray[i] - LSTavg, 2);
   }
-  LSTstd = (Math.pow(LSTstd / (LSTarray.length - 1), 0.5));
+  LSTstd = Math.pow(LSTstd / (LSTarray.length - 1), 0.5);
 
   // WHICH LST to output, it depends on option variable: 0 for one image analysis (OE Browser); MULTI-TEMPORAL: 0->avg; 1->max; 2->stdev
-  let outLST = (option == 0)
-    ? LSTavg
-    : (option == 1)
-      ? LSTmax
-      : LSTstd;
+  let outLST = option == 0 ? LSTavg : option == 1 ? LSTmax : LSTstd;
 
   //// output to image
   return viz.process(outLST);

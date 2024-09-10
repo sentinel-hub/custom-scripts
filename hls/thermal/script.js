@@ -2,7 +2,7 @@
 let minVal = -50;
 let maxVal = 50;
 
-let viz = ColorGradientVisualizer.createBlueRed(minVal, maxVal);
+let viz = ColorRampVisualizer.createBlueRed(minVal, maxVal);
 
 function evaluatePixel(samples) {
     let val = samples.ThermalInfrared1;
