@@ -8,16 +8,14 @@
 //
 function setup() {
   return {
-    input: [{
-      bands: [
-          "VV",
-          "VH"
-      ]
-    }],
-    output: { bands: 3 }
-  }
+    input: [
+      {
+        bands: ["VV", "VH"],
+      },
+    ],
+    output: { bands: 3 },
+  };
 }
-
 
 const GAIN = 2.5;
 const WATER_LIMIT = 0.1;
@@ -25,44 +23,44 @@ const FOREST_LIMIT = 0.2;
 const INVERSE_FACTOR = 25;
 
 const GREEN_GRADIENT = [
-    [1.000, 0x80F300],
-    [0.500, 0x406600],
-    [0.000, 0x003300]
-]
-
-const RED_GRADIENT = [
-    [1.000, 0xFFFFFF],
-    [0.525, 0xFF8600],
-    [0.300, 0xFF6E00],
-    [0.250, 0xAE0000],
-    [0.000, 0x000000]
+  [1.0, 0x80f300],
+  [0.5, 0x406600],
+  [0.0, 0x003300],
 ];
 
-const GREEN_VIZ = new ColorGradientVisualizer(GREEN_GRADIENT, 0, 1);
-const RED_VIZ = new ColorGradientVisualizer(RED_GRADIENT, 0, 1);
+const RED_GRADIENT = [
+  [1.0, 0xffffff],
+  [0.525, 0xff8600],
+  [0.3, 0xff6e00],
+  [0.25, 0xae0000],
+  [0.0, 0x000000],
+];
+
+const GREEN_VIZ = new ColorRampVisualizer(GREEN_GRADIENT, 0, 1);
+const RED_VIZ = new ColorRampVisualizer(RED_GRADIENT, 0, 1);
 
 const evaluatePixel = function (samples, scenes) {
-	let vv = samples.VV;
-	let vh = samples.VH;
+  let vv = samples.VV;
+  let vh = samples.VH;
 
-    let area = vv * vh;
-	let v_len = Math.sqrt(vv * vv + vh * vh);
-  	let v_angle_weighted = 0;
-	if (vv > 0) {
-		v_angle_weighted = Math.atan(vh/vv) / (Math.PI / 2);
-	}
-	let v_len_inverse = 0;
-  	if (v_len > 0) {
-		v_len_inverse = 1 / (INVERSE_FACTOR * v_len);
-    }
+  let area = vv * vh;
+  let v_len = Math.sqrt(vv * vv + vh * vh);
+  let v_angle_weighted = 0;
+  if (vv > 0) {
+    v_angle_weighted = Math.atan(vh / vv) / (Math.PI / 2);
+  }
+  let v_len_inverse = 0;
+  if (v_len > 0) {
+    v_len_inverse = 1 / (INVERSE_FACTOR * v_len);
+  }
 
-  	if (v_len < WATER_LIMIT) {
-    	return [0];
-    } else if (v_len > FOREST_LIMIT) {
-      	let index = GAIN * v_len - v_angle_weighted;
-        return GREEN_VIZ.process(index);
-    } else {
-        let index = GAIN * v_len_inverse + v_angle_weighted;
-        return RED_VIZ.process(index);
-    }
+  if (v_len < WATER_LIMIT) {
+    return [0];
+  } else if (v_len > FOREST_LIMIT) {
+    let index = GAIN * v_len - v_angle_weighted;
+    return GREEN_VIZ.process(index);
+  } else {
+    let index = GAIN * v_len_inverse + v_angle_weighted;
+    return RED_VIZ.process(index);
+  }
 };

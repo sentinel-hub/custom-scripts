@@ -13,11 +13,10 @@ var option = 0;
 var minC = 0;
 var maxC = 50;
 
-
 ////INPUT DATA - FOR BETTER RESULTS, THE DATA SHOULD BE ADJUSTED
 // NVDIs for bare soil and NDVIv for full vegetation
 // Note: NVDIs for bare soil and NDVIv for full vegetation are needed to be evaluated for every scene. However in the custom script, default values are set regarding:
-// https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html 
+// https://profhorn.meteor.wisc.edu/wxwise/satmet/lesson3/ndvi.html
 // https://www.researchgate.net/post/Can_anyone_help_me_to_define_a_range_of_NDVI_value_to_extract_bare_soil_pixels_for_Landsat_TM
 // NVDIs=0.2, NDVIv=0.8
 // other source suggests global values: NVDIs=0.2, NDVIv=0.5; https://www.researchgate.net/publication/296414003_Algorithm_for_Automated_Mapping_of_Land_Surface_Temperature_Using_LANDSAT_8_Satellite_Data
@@ -32,7 +31,7 @@ var vegetationE = 0.973;
 var C = 0.009; //surface roughness, https://www.researchgate.net/publication/331047755_Land_Surface_Temperature_Retrieval_from_LANDSAT-8_Thermal_Infrared_Sensor_Data_and_Validation_with_Infrared_Thermometer_Camera
 
 //central/mean wavelength in meters, B10 or B11
-var bCent = (band == "B10") ? 0.000010895 : 0.000012005;
+var bCent = band == "B10" ? 0.000010895 : 0.000012005;
 
 // rho =h*c/sigma=PlanckC*velocityLight/BoltzmannC
 var rho = 0.01438; // m K
@@ -43,25 +42,19 @@ if (option == 2) {
   minC = 0;
   maxC = 25;
 }
-let viz = ColorGradientVisualizer.createRedTemperature(minC, maxC);
-
+let viz = ColorRampVisualizer.createRedTemperature(minC, maxC);
 
 function setup() {
   return {
-    input: [{
-      bands: [
-        "B03",
-        "B04",
-        "B05",
-        "B10",
-        "B11"
-      ]
-    }],
+    input: [
+      {
+        bands: ["B03", "B04", "B05", "B10", "B11"],
+      },
+    ],
     mosaicking: "ORBIT",
-    output: { bands: 3 }
-  }
+    output: { bands: 3 },
+  };
 }
-
 
 //emissivity calc
 //https://www.researchgate.net/publication/296414003_Algorithm_for_Automated_Mapping_of_Land_Surface_Temperature_Using_LANDSAT_8_Satellite_Data
@@ -99,30 +92,32 @@ function evaluatePixel(samples) {
   for (var i = 0; i < N; i++) {
     //// for LST
     // B10 or B11
-    var Bi = (band == "B10") ? samples[i].B10 : samples[i].B11;
+    var Bi = band == "B10" ? samples[i].B10 : samples[i].B11;
     var B03i = samples[i].B03;
     var B04i = samples[i].B04;
     var B05i = samples[i].B05;
 
     // some images have errors, whole area is either B10<173K or B10>65000K. Also errors, where B04 and B05 =0. Therefore no processing if that happens, in addition for average and stdev calc, N has to be reduced!
-    if ((Bi > 173 && Bi < 65000) && (B03i > 0 && B04i > 0 && B05i > 0)) {
+    if (Bi > 173 && Bi < 65000 && B03i > 0 && B04i > 0 && B05i > 0) {
       // ok image
       //1 Kelvin to C
       var b10BTi = Bi - 273.15;
       //2 NDVI - Normalized Difference vegetation Index
       var NDVIi = (B05i - B04i) / (B05i + B04i);
       //3 PV - proportional vegetation
-      var PVi = Math.pow(((NDVIi - NDVIs) / (NDVIv - NDVIs)), 2);
-      //4 LSE land surface emmisivity  
+      var PVi = Math.pow((NDVIi - NDVIs) / (NDVIv - NDVIs), 2);
+      //4 LSE land surface emmisivity
       var LSEi = LSEcalc(NDVIi, PVi);
       //5 LST
-      var LSTi = (b10BTi / (1 + (((bCent * b10BTi) / rho) * Math.log(LSEi))));
+      var LSTi = b10BTi / (1 + ((bCent * b10BTi) / rho) * Math.log(LSEi));
 
       ////temporary calculation
       //avg
       LSTavg = LSTavg + LSTi;
       //max
-      if (LSTi > LSTmax) { LSTmax = LSTi; }
+      if (LSTi > LSTmax) {
+        LSTmax = LSTi;
+      }
       //array
       LSTarray.push(LSTi);
     } else {
@@ -138,16 +133,12 @@ function evaluatePixel(samples) {
 
   // calc final stdev value
   for (var i = 0; i < LSTarray.length; i++) {
-    LSTstd = LSTstd + (Math.pow(LSTarray[i] - LSTavg, 2));
+    LSTstd = LSTstd + Math.pow(LSTarray[i] - LSTavg, 2);
   }
-  LSTstd = (Math.pow(LSTstd / (LSTarray.length - 1), 0.5));
+  LSTstd = Math.pow(LSTstd / (LSTarray.length - 1), 0.5);
 
   // WHICH LST to output, it depends on option variable: 0 for one image analysis (OE Browser); MULTI-TEMPORAL: 0->avg; 1->max; 2->stdev
-  let outLST = (option == 0)
-    ? LSTavg
-    : (option == 1)
-      ? LSTmax
-      : LSTstd;
+  let outLST = option == 0 ? LSTavg : option == 1 ? LSTmax : LSTstd;
 
   //// output to image
   return viz.process(outLST);
