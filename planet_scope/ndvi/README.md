@@ -3,10 +3,9 @@ title: Normalized difference vegetation index, PlanetScope
 parent: PlanetScope
 grand_parent: Planet
 layout: script
-permalink: /planet_scope/ndvi/
+permalink: /planetscope/ndvi/
 nav_exclude: true
 scripts:
-    - [Visualization, script.js]
     - [EO Browser, eob.js]
 examples:
 - zoom: '16'
