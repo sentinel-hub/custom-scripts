@@ -48,7 +48,7 @@ function expFilter(swc, dataMask, dates, timeConst) {
     }
 
     // Set first day of derived root-zone SWC equal to surface SWC
-    let rzswc = referenceSWC;
+    let drzswc = referenceSWC;
 
     if (referenceIndex > -1) {
         // Only apply the filter if there is at least one valid value in the time series
@@ -61,7 +61,7 @@ function expFilter(swc, dataMask, dates, timeConst) {
             }
         }
     }
-    return [rzswc];
+    return [drzswc];
 }
 
 
@@ -119,7 +119,7 @@ function evaluatePixel(samples, scenes) {
     const drzswc = expFilter(swcASC, dataMaskASC, datesASC, nDays);
     
     // Apply colormap
-    let imgVals = visualizer.process(rzswc);
+    let imgVals = visualizer.process(drzswc);
 
     return {
         default: [...imgVals, samples[0].dataMask],
