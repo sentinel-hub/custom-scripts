@@ -60,7 +60,7 @@ function expFilter(swc, dataMask, dates, timeConst) {
             }
         }
     }
-    return [rzswc];
+    return [drzswc];
 }
 
 
