@@ -8,6 +8,16 @@ scripts:
     - [Visualization, script.js]
     - [EO Browser, eob.js]
     - [Raw Values, raw.js]
+examples:
+- zoom: '10'
+  lat: '41.2'
+  lng: '-93.8'
+  datasetId: SWC-SMAP-L_V5.0_1000
+  fromTime: '2023-03-01T00:00:00.000Z'
+  toTime: '2023-03-30T23:59:59.999Z'
+  platform:
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planetary-variables/soil-water-content/derived-root-zone-soil-water-content/eob.js
 ---
 Here, we show how to compute and show derived root-zone soil water content (DRSWC) using the Sentinel Hub EO Browser. DRSWC is an estimate of the amount of water in the soil in the root zone: the depth range over which plant roots take up most of their water. The root zone depends on the type of vegetation, but typically covers the upper 100 cm of the soil [Stocker et al., 2023]. With satellites, we can observed soil water content (SWC) in the upper layer of the soil, typically covering the first 5 to 10 cm. To estimate SWC in the root zone from the upper-layed SWC observed by satellites, we can use an exponential filter.
 
