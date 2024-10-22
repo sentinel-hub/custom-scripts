@@ -1,6 +1,6 @@
 //VERSION=3
 
-const nDays = 20;           // The number of days to load data for
+const nDays = 10;           // The number of days to load data for
 const scaleFactor = 1000;   // The scale factor for the SWC values
 const vmin = 0.1;           // The minimum value of the colormap
 const vmax = 0.4;           // The maximum value of the colormap
@@ -10,7 +10,6 @@ function setup() {
         input: ["SWC", "dataMask"],
         output: [
             { id: "default", bands: 4, 
-              sampleType: "FLOAT32",
             }
         ],
         mosaicking: "ORBIT"

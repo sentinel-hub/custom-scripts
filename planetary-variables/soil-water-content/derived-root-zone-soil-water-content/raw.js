@@ -1,6 +1,6 @@
 //VERSION=3
 
-const nDays = 20;           // The number of days to load data for
+const nDays = 10;           // The number of days to load data for
 const scaleFactor = 1000;   // The scale factor for the SWC values
 
 function setup() {
