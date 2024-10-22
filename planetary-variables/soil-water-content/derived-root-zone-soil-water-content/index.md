@@ -13,7 +13,7 @@ examples:
   lat: '41.2'
   lng: '-93.8'
   datasetId: '858254ae-0f29-4152-ac53-449efa00bbb0'
-  fromTime: '2022-5-01T00:00:00.000Z'
+  fromTime: '2022-05-01T00:00:00.000Z'
   toTime: '2022-05-26T23:59:59.999Z'
   platform:
   - EOB
