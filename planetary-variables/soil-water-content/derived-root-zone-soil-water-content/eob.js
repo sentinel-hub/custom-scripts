@@ -105,10 +105,20 @@ const visualizer = new ColorRampVisualizer(cmap);
 
 function evaluatePixel(samples, scenes) {
     // When there are no dates, return no data
-    if (samples.length == 0) return [NaN, NaN, NaN, 0];
+    if (samples.length == 0) return {
+        default: [NaN, NaN, NaN, 0],
+        index: [NaN],
+        eobrowserStats: [NaN],
+        dataMask: [0],
+    }  ;
 
     // When there is no data for the last day, don't run calculation, return no data
-    if (!samples[0].dataMask) return [NaN, NaN, NaN, 0];
+    if (!samples[0].dataMask) return {
+        default: [NaN, NaN, NaN, 0],
+        index: [NaN],
+        eobrowserStats: [NaN],
+        dataMask: [0],
+    }  ;
     
     // Extract dates, data mask and scaled SWC values and sort them ascending (oldes to newest)
     var datesASC = scenes.map(scene => new Date(scene.date)).reverse();
