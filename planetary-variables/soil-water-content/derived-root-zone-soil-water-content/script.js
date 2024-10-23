@@ -60,13 +60,6 @@ function expFilter(swc, dataMask, dates, timeConst) {
 }
 
 
-function updateColormap(vmin, vmax) {
-    const numIntervals = cmap.length;
-    const intervalLength = (vmax - vmin) / (numIntervals - 1);
-    for (let i = 0; i < numIntervals; i++) {
-        cmap[i][0] = vmin + intervalLength * i;
-    }
-}
 
 
 const cmap = [
