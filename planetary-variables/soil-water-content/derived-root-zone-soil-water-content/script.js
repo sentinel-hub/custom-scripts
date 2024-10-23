@@ -60,8 +60,6 @@ function expFilter(swc, dataMask, dates, timeConst) {
 }
 
 
-
-
 const cmap = [
     [0.0, 0xfff7ea],
     [0.05, 0xfaedda],
