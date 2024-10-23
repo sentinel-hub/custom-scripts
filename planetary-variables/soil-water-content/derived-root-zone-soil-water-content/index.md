@@ -6,7 +6,6 @@ layout: script
 nav_exclude: false
 scripts:
     - [Visualization, script.js]
-    - [EO Browser, eob.js]
     - [Raw Values, raw.js]
 examples:
 - zoom: '11'
@@ -17,7 +16,7 @@ examples:
   toTime: '2022-05-26T23:59:59.999Z'
   platform:
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planetary-variables/soil-water-content/derived-root-zone-soil-water-content/eob.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planetary-variables/soil-water-content/derived-root-zone-soil-water-content/script.js
   additionalQueryParams: 
   - - themeId
     - PLANET_SANDBOX
