@@ -6,11 +6,7 @@ const scaleFactor = 1000;   // The scale factor for the SWC values
 function setup() {
     return {
         input: ["SWC", "dataMask"],
-        output: [
-            { id: "default", bands: 1, 
-              sampleType: "FLOAT32",
-            }
-        ],
+        output: { bands: 1, sampleType: "FLOAT32" },
         mosaicking: "ORBIT"
     };
 }

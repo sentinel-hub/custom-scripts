@@ -8,10 +8,7 @@ const vmax = 0.4;           // The maximum value of the colormap
 function setup() {
     return {
         input: ["SWC", "dataMask"],
-        output: [
-            { id: "default", bands: 4, 
-            }
-        ],
+        output: { bands: 4 },
         mosaicking: "ORBIT"
     };
 }
