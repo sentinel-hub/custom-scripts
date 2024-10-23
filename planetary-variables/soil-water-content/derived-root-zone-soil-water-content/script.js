@@ -94,8 +94,7 @@ const cmap = [
 ];
 
 // Prepare colormap based on provided min and max values
-updateColormap(vmin, vmax);
-const visualizer = new ColorRampVisualizer(cmap);
+const visualizer = new ColorRampVisualizer(cmap, vmin, vmax);
 
 
 function evaluatePixel(samples, scenes) {
