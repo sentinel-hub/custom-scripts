@@ -23,7 +23,7 @@ examples:
     - PLANET_SANDBOX
 ---
 ## General description
-Here, we show how to compute and visualize derived root-zone soil water content (DRZSWC) using the Sentinel Hub EO Browser. DRZSWC is an estimate of the amount of water in the soil in the root zone: the depth range over which plant roots take up most of their water. The root zone depends on the type of vegetation, but typically covers the upper 100 cm of the soil [Stocker et al., 2023]. With satellites, we can observed soil water content (SWC) in the upper layer of the soil, typically covering the first 5 to 10 cm. To estimate SWC in the root zone from the upper-layed SWC observed by satellites, we can use an exponential filter.
+Here, we show how to compute and visualize derived root-zone soil water content (DRZSWC) using the Sentinel Hub EO Browser. DRZSWC is an estimate of the amount of water in the soil in the root zone: the depth range over which plant roots take up most of their water. The root zone depends on the type of vegetation, but typically covers the upper 100 cm of the soil [Stocker et al., 2023]. With satellites, we can observe soil water content (SWC) in the upper layer of the soil, typically covering the first 5 to 10 cm. To estimate SWC in the root zone from the near-surface SWC observed by satellites, we can use an exponential filter.
 
 ## Description of representative images
 
