@@ -34,7 +34,7 @@ Here, we show how to compute and visualize derived root-zone soil water content 
 In the figure above, we show near-surface and root-zone soil water content in Iowa (USA), on a rainy day after a dry period. The surface has become wet (blue), while the deeper root zone is still dry (yellow) due to the long dry spell. 
 
 ## Algorithm
-The main drivers of SWC changes (precipitation and evaporation) happen at the surface. As a result, near-surface soil water content tends to react more and faster on precipitation and evaporation than soil water content in the deeper root zone. Omitting lateral transport and drainage to deeper layers, we can describe the changes over time $$t$$ of DRZSWC $$R$$ as a simple diffusion process that is a function of near-surface soil water content $$S$$ [Wagner et al., 1998]:
+The main drivers of SWC changes (precipitation and evaporation) happen at the surface. As a result, near-surface soil water content tends to react more and faster to precipitation and evaporation than soil water content in the deeper root zone. Omitting lateral transport and drainage to deeper layers, we can describe the changes over time $$t$$ of DRZSWC $$R$$ as a simple diffusion process that is a function of near-surface soil water content $$S$$ [Wagner et al., 1998]:
 
 $$
 \frac{\partial R(t)}{\partial t} = \frac{1}{T} \left[S(t) - R(t)\right].
