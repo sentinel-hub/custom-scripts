@@ -45,11 +45,11 @@ function evaluatePixel(samples) {
     if (samples.length == 0) return [NaN, NaN, NaN, 0];
 
     // Extract SWC values and dataMask
-    var swc  = samples.map(sample => sample.SWC / scaleFactor);
+    var swc = samples.map(sample => sample.SWC / scaleFactor);
     var dataMask = samples.map(sample => sample.dataMask);
 
     // Calculate mean SWC value
-    mean_swc_val = get_mean_swc_value(swc, dataMask);
+    const mean_swc_val = get_mean_swc_value(swc, dataMask);
    
     return [mean_swc_val];
   }

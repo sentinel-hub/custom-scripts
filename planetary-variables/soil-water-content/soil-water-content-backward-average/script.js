@@ -80,7 +80,7 @@ function evaluatePixel(samples) {
     var dataMask = samples.map(sample => sample.dataMask);
 
     // Calculate mean SWC value
-    mean_swc_val = get_mean_swc_value(swc, dataMask);
+    const mean_swc_val = get_mean_swc_value(swc, dataMask);
 
     // Set opacity to 0 if there is no valid data
     let opacity = 1;
