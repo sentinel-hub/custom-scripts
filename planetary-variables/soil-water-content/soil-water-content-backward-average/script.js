@@ -75,20 +75,22 @@ function evaluatePixel(samples) {
     // When there are no dates, return no data
     if (samples.length == 0) return [NaN, NaN, NaN, 0];
 
-    // When there is no data for the last day, don't run calculation, return no data
-    if (!samples[0].dataMask) return [NaN, NaN, NaN, 0];
-
     // Extract SWC values and dataMask
     var swc  = samples.map(sample => sample.SWC / scaleFactor);
     var dataMask = samples.map(sample => sample.dataMask);
 
     // Calculate mean SWC value
     mean_swc_val = get_mean_swc_value(swc, dataMask);
+
+    // Set opacity to 0 if there is no valid data
+    let opacity = 1;
+    if (isNaN(mean_swc_val)) {
+        opacity = 0
+    }
     
     // Apply colormap
     imgVals = visualizer.process(mean_swc_val);
    
-    return [...imgVals, samples[0].dataMask];
+    return [...imgVals, opacity];
   }
-  
   
