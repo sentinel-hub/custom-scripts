@@ -40,4 +40,5 @@ The Landsat program is the longest running enterprise for acquisition of satelli
   - [Clouds Segmentation](/landsat-8/clouds_segmentation)
   - [Pansharpened true color](/landsat-8/true-color-pansharpened)
   - [Thermal visualization](/landsat-8/thermal)
+  - [Thermal FLIR visualization](/landsat-8/thermal-iron)
   - [Band quality assessment band visualization](/landsat-8/bqa)
