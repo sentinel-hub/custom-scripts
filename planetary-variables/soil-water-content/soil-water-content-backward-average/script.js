@@ -27,7 +27,7 @@ function setup() {
     let n_valid_dates = 0;
     let sum = 0;
     for (let i = 0; i < swc.length; i++) {
-        if (dataMask[i]) {;
+        if (dataMask[i]) {
             sum += swc[i];
             n_valid_dates += 1;
         }
