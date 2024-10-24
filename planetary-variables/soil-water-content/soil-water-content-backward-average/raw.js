@@ -44,9 +44,6 @@ function evaluatePixel(samples) {
     // When there are no dates, return no data
     if (samples.length == 0) return [NaN, NaN, NaN, 0];
 
-    // When there is no data for the last day, don't run calculation, return no data
-    if (!samples[0].dataMask) return [NaN, NaN, NaN, 0];
-
     // Extract SWC values and dataMask
     var swc  = samples.map(sample => sample.SWC / scaleFactor);
     var dataMask = samples.map(sample => sample.dataMask);
