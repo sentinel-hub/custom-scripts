@@ -22,13 +22,13 @@ function setup() {
     return collections
   }
   
-  function get_mean_swc_value(swc, dataMask) {
+  function get_mean_swc_value(samples) {
     // Get the sum of all SWC values
     let n_valid_dates = 0;
     let sum = 0;
-    for (let i = 0; i < swc.length; i++) {
-        if (dataMask[i]) {
-            sum += swc[i];
+    for (let i = 0; i < samples.length; i++) {
+        if (samples[i].dataMask) {
+            sum += samples[i].SWC / scaleFactor;
             n_valid_dates += 1;
         }
     }
@@ -75,12 +75,9 @@ function evaluatePixel(samples) {
     // When there are no dates, return no data
     if (samples.length == 0) return [NaN, NaN, NaN, 0];
 
-    // Extract SWC values and dataMask
-    var swc  = samples.map(sample => sample.SWC / scaleFactor);
-    var dataMask = samples.map(sample => sample.dataMask);
 
     // Calculate mean SWC value
-    const mean_swc_val = get_mean_swc_value(swc, dataMask);
+    const mean_swc_val = get_mean_swc_value(samples);
 
     // Set opacity to 0 if there is no valid data
     let opacity = 1;

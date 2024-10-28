@@ -6,7 +6,7 @@ const scaleFactor = 1000;   // The scale factor for the SWC values
 function setup() {
     return {
       input: ["SWC", "dataMask"],
-      output: { bands: 1, sampleType: "FLOAT32" },
+      output: { bands: 1 },
       mosaicking: "ORBIT"
     };
   }
@@ -20,13 +20,13 @@ function setup() {
     return collections
   }
   
-  function get_mean_swc_value(swc, dataMask) {
+  function get_mean_swc_value(samples) {
     // Get the sum of all SWC values
     let n_valid_dates = 0;
     let sum = 0;
-    for (let i = 0; i < swc.length; i++) {
-        if (dataMask[i]) {
-            sum += swc[i];
+    for (let i = 0; i < samples.length; i++) {
+        if (samples[i].dataMask) {
+            sum += samples[i].SWC / scaleFactor;
             n_valid_dates += 1;
         }
     }
@@ -44,13 +44,9 @@ function evaluatePixel(samples) {
     // When there are no dates, return no data
     if (samples.length == 0) return [NaN];
 
-    // Extract SWC values and dataMask
-    var swc = samples.map(sample => sample.SWC / scaleFactor);
-    var dataMask = samples.map(sample => sample.dataMask);
-
     // Calculate mean SWC value
-    const mean_swc_val = get_mean_swc_value(swc, dataMask);
-   
+    const mean_swc_val = get_mean_swc_value(samples);
+
     return [mean_swc_val];
   }
   
