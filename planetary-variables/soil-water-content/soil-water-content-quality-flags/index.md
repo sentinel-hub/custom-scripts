@@ -13,7 +13,7 @@ examples:
   lng: '-0.5294'
   datasetId: '65f7e4fb-a27a-4fae-8d79-06a59d7e6ede'
   fromTime: '2022-04-26T00:00:00.000Z'
-  toTime: '2022-04-26T26:59:59.999Z'
+  toTime: '2022-04-26T23:59:59.999Z'
   platform:
   - EOB
   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planetary-variables/soil-water-content/soil-water-content-quality-flags/script.js
