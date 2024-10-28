@@ -42,7 +42,7 @@ function setup() {
 
 function evaluatePixel(samples) {
     // When there are no dates, return no data
-    if (samples.length == 0) return [NaN, NaN, NaN, 0];
+    if (samples.length == 0) return [NaN];
 
     // Extract SWC values and dataMask
     var swc = samples.map(sample => sample.SWC / scaleFactor);
