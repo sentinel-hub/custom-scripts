@@ -8,7 +8,7 @@ const differenceThreshold = -0.12; // Threshold signifying a rapid drop in SWC f
 function setup() {
   return {
     input: ["SWC", "dataMask"],
-    output: { bands: 4 },
+    output: { bands: 1 },
     mosaicking: "ORBIT"
   };
 }
@@ -45,7 +45,7 @@ function getMeanSWCValue(swc, dataMask) {
 
 function evaluatePixel(samples) {
   // When there are no dates, return no data
-  if (samples.length == 0) return [NaN, NaN, NaN, 0];
+  if (samples.length == 0) return [0];
 
   // Extract SWC values and dataMask
   const swc = samples.slice(0, 14).map(sample => sample.SWC / scaleFactor);
@@ -61,10 +61,5 @@ function evaluatePixel(samples) {
   const swcDifference = meanSWC - meanSWCPrevious;
   const isFlashDrought = (meanSWC < droughtThreshold && swcDifference < differenceThreshold) ? 1 : 0;
 
-  let opacity = 0;
-  if (isFlashDrought) {
-    opacity = 1;
-  }
-
-  return [isFlashDrought, 0, 0, opacity];
+  return [isFlashDrought];
 }
