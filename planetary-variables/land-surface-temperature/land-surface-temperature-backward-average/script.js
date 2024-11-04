@@ -6,9 +6,8 @@
 const date = "2022-12-31"; // The date for which the backward average is calculated
 const nDays = 20; // The number of days to load data for
 const scaleFactor = 100; // The scale factor for the SWC values
-const defaultVis = true; // If true, the default visualization will be applied. If false, the color_min and color_max values will be used.
-const color_min = 290; // The minimum value of the colormap. Default min: 263.
-const color_max = 330; // The maximum value of the colormap. Default max: 340.
+const color_min = 260; // The minimum value of the colormap.
+const color_max = 280; // The maximum value of the colormap.
 const sensing_time = "0130"; // Observation time: "0130" or "1330" or ""
 const variable = "LST"; // Variable of interest: "LST" or "LST_MaskedPixels"
 
@@ -78,20 +77,8 @@ const cmap = [
   [340, 0xfcfdbf],
 ];
 
-// Updated color ramp based on color_min and color_max
-function updateCMap(min, max) {
-  const numIntervals = cmap.length;
-  const intervalLength = (max - min) / (numIntervals - 1);
-  for (let i = 0; i < numIntervals; i++) {
-    cmap[i][0] = min + intervalLength * i;
-  }
-}
-
-// Update the min max of color bar if defaultVis set to false
-if (!defaultVis) updateCMap(color_min, color_max);
-
 // Initialize the ColorRamp
-const visualizer = new ColorRampVisualizer(cmap);
+const visualizer = new ColorRampVisualizer(cmap, color_min, color_max);
 
 function evaluatePixel(samples) {
   // When there are no dates, return no data
