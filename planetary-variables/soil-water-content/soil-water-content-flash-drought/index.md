@@ -22,9 +22,9 @@ Based on the work of Eswar et al. (2018), we developed a methodology that highli
 The amount of days to calculate the backward average is 14, but can be changed by setting *nDaysBackwardAverage*. By default, the backward average SWC value is compared to the backward average SWC value of 28 days ago, which can be changed by setting *nDaysPrevious*. If you have a collection with SWC data, the first day on which this flash drought script can be applied is day 42 (*nDaysBackwardAverage + nDaysPrevious*). Be also aware that you set the timespan correctly in the EO Browser or Requests Builder (the difference between the start and end date must be at least *nDaysBackwardAverage + nDaysPrevious*), otherwise *no data* will be returned. 
 
 ## Useful links
--   [SWC Technical specifications](https://developers.planet.com/docs/planetary-variables/soil-water-content-technical-specification/)
--   [SWC Data sheet](https://planet.widen.net/s/cv7bfjhhd5)
--   [Sentinel Hub documentation about Soil Water Content](https://docs.sentinel-hub.com/api/latest/data/planetary-variables/soil-water-content/)
+-   [Drying Up in a Flash: What Satellite Data Can Tell Us About Flash Drought Risks and the Regions We Should Be Watching](https://www.planet.com/pulse/drying-up-in-a-flash-what-satellite-data-can-tell-us-about-flash-drought-risks-and-the-regions-we-should-be-watching/)
+-   [Flash Drought Hotspots: Southwestern United States](https://www.planet.com/pulse/flash-drought-hotspots-southwestern-united-states/)
+-   [Flash Drought Hotspots: Iberian Peninsula](https://www.planet.com/pulse/flash-drought-hotspots-iberian-peninsula/)
 
 ## References
 Eswar R., Das N.N., Poulsen C., Behrangi A., Swigart J., Svoboda M., Entekhabi D., Yueh S., Doorn B., Entin J. (2018). SMAP Soil Moisture Change as an Indicator of Drought Conditions. Remote Sensing, 10(5), 788. [https://doi.org/10.3390/rs10050788](https://doi.org/10.3390/rs10050788)
