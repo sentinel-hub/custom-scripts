@@ -13,3 +13,5 @@ Planet's LST product provides near real-time measurements twice a day at 1:30 an
 
 -   [Land Surface Temperature Visualization]({% link planetary-variables/land-surface-temperature/land-surface-temperature-visualization/index.md %})
 -   [Land Surface Temperature Anomaly]({% link planetary-variables/land-surface-temperature/land-surface-temperature-anomaly/index.md %})
+-   [Land Surface Temperature Backward Average]({% link planetary-variables/land-surface-temperature/land-surface-temperature-backward-average/index.md %})
+-   [Land Surface Temperature Quality Flags]({% link planetary-variables/land-surface-temperature/land-surface-temperature-quality-flags/index.md %})
