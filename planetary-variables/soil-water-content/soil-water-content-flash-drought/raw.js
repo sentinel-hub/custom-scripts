@@ -30,13 +30,13 @@ function preProcessScenes(collections) {
   return collections;
 }
 
-function getMeanSWCValue(swc, dataMask) {
+function getMeanSWCValue(samples) {
   // Get the sum of all SWC values
   let validDateCount = 0;
   let sum = 0;
-  for (let i = 0; i < swc.length; i++) {
-    if (dataMask[i]) {
-      sum += swc[i];
+  for (let i = 0; i < samples.length; i++) {
+    if (samples[i].dataMask) {
+      sum += samples[i].swc;
       validDateCount += 1;
     }
   }
@@ -56,23 +56,13 @@ function evaluatePixel(samples) {
   // When the search interval of the request body is too short to perform the calculation, return no data
   if (samples.length < daysToLoad) return [NaN];
 
-  // Extract SWC values and dataMask
-  const swc = samples
-    .slice(0, nDaysBackwardAverage)
-    .map((sample) => sample.SWC / scaleFactor);
-  const dataMask = samples
-    .slice(0, nDaysBackwardAverage)
-    .map((sample) => sample.dataMask);
-  const swcPrevious = samples
-    .slice(nDaysPrevious, nDaysBackwardAverage + nDaysPrevious)
-    .map((sample) => sample.SWC / scaleFactor);
-  const dataMaskPrevious = samples
-    .slice(nDaysPrevious, nDaysBackwardAverage + nDaysPrevious)
-    .map((sample) => sample.dataMask);
+  // Extract samples for the two time periods
+  const initialSamples = samples.slice(0, nDaysBackwardAverage)
+  const previousSamples = samples.slice(nDaysPrevious, nDaysBackwardAverage + nDaysPrevious)
 
   // Calculate mean SWC value
-  const meanSWC = getMeanSWCValue(swc, dataMask);
-  const meanSWCPrevious = getMeanSWCValue(swcPrevious, dataMaskPrevious);
+  const meanSWC = getMeanSWCValue(initialSamples);
+  const meanSWCPrevious = getMeanSWCValue(previousSamples);
 
   const swcDifference = meanSWC - meanSWCPrevious;
   const isFlashDrought =
