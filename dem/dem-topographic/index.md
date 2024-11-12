@@ -2,13 +2,12 @@
 title: DEM Topographic Visualization
 parent: DEM
 layout: script
-permalink: /dem/dem-topographic/
 nav_exclude: true
 scripts:
-- - Visualization
-  - script.js
-- - EO Browser
-  - eob.js
+- - Mapzen
+  - mapzen.js
+- - COP-DEM
+  - cop-dem.js
 examples:
 - zoom: '10'
   lat: '42.40876'
@@ -19,7 +18,7 @@ examples:
   platform:
   - CDSE
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/dem/dem-topographic/eob.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/dem/dem-topographic/mapzen.js
 ---
 
 
