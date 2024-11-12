@@ -58,12 +58,12 @@ const waterMap = [
   [-1000, 0x283087],
   [-5000, 0x070772],
 ];
-const landVis = new ColorRampVisualizer(landMap, waterLevel, max);
-const waterVis = new ColorRampVisualizer(waterMap, min, waterLevel);
+const landVis = new ColorRampVisualizer(landMap, seaLevel, max);
+const waterVis = new ColorRampVisualizer(waterMap, min, seaLevel);
 
 function evaluatePixel(sample) {
   let val = sample.DEM;
-  let imgVals = val > waterLevel ? landVis.process(val) : waterVis.process(val);
+  let imgVals = val > seaLevel ? landVis.process(val) : waterVis.process(val);
 
   // Return the 4 inputs and define content for each one
   return {
