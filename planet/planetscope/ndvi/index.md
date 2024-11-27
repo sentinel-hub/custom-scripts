@@ -3,10 +3,11 @@ title: Normalized difference vegetation index, PlanetScope
 parent: PlanetScope
 grand_parent: Planet
 layout: script
-permalink: /planetscope/ndvi/
 nav_exclude: true
 scripts:
+    - [Visualization, script.js]
     - [EO Browser, eob.js]
+    - [Raw Values, raw.js]
 examples:
 - zoom: '16'
   lat: '-32.10671'
@@ -16,7 +17,7 @@ examples:
   toTime: '2023-04-19T23:59:59.999Z'
   platform:
   - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet_scope/ndvi/eob.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet/planetscope/ndvi/eob.js
   additionalQueryParams: 
   - - themeId
     - PLANET_SANDBOX
