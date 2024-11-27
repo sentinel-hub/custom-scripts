@@ -16,7 +16,7 @@ examples:
 - zoom: '14'
   lat: '52.24714'
   lng: '9.20886'
-  datasetId: Planetscope
+  datasetId: 'ccb1f8f0-e5bf-4c31-afe5-d8803bcbde2a'
   fromTime: '2023-04-02T00:00:00.000Z'
   toTime: '2023-06-01T23:59:59.999Z'
   platform:
