@@ -20,7 +20,7 @@ examples:
   toTime: '2023-11-19T23:59:59.999Z'
   platform:
   - EOB
-  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/custom-scripts/master/planet_scope/max_ndvi/script.js
+  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet/planetscope/max_ndvi/eob.js
   additionalQueryParams:
   - - themeId
     - PLANET_SANDBOX
