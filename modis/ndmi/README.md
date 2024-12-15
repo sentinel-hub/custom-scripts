@@ -23,9 +23,9 @@ NDMI is computed using the near infrared (NIR) and the short wave infrared (SWIR
 
 **NDMI = (NIR - SWIR) / (NIR + SWIR)**
 
-For MODIS, the NDMI is calculated using NIR band 2 and SWIR band 6: 
+For MODIS, the NDMI is calculated using NIR band 2 and SWIR band 5: 
 
-**NDMI = (B02 - B06) / (B02 + B06)**
+**NDMI = (B02 - B05) / (B02 + B05)**
 
 {: .note}
 
