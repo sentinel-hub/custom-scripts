@@ -121,3 +121,6 @@ examples:
   </tr>
 </table>
 
+## Author of the script
+
+András Zlinszky, Sinergise
