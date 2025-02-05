@@ -1,6 +1,6 @@
 ---
-title: Aboveground Carbon Density, Forest Carbon Diligence
-parent: Forest Carbon Diligence
+title: Aboveground Carbon Density, Forest Carbon Monitoring
+parent: Forest Carbon Monitoring
 grand_parent: Planetary Variables
 layout: script
 nav_exclude: true
@@ -12,7 +12,7 @@ scripts:
 
 ## Evaluate and visualize
 
-As Forest Carbon Diligence is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.
+As Forest Carbon Monitoring is commercial data, brought into Sentinel Hub as Bring Your Own Data, direct EO Browser links are not possible due to the personalized data credentials.
 
 ## General description
 
@@ -28,8 +28,6 @@ The data layer has four bands:
   primarily trees and shrubs. Grassland, herbaceous, and soil carbon stocks are not quantified.
 - **Lower prediction bound (5th percentile)** of the 90% prediction interval for model predictions at each pixel.
 - **Upper prediction bound (95th percentile)** of the 90% prediction interval for model predictions at each pixel.
-- **Quality Assurance Flags** describing the expected quality of satellite data measurements, and
-  whether any temporal gap-filling was applied.
 
 ## Description of representative images
 
