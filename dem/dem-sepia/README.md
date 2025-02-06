@@ -4,13 +4,23 @@ parent: DEM
 layout: script
 permalink: /dem/dem-sepia/
 nav_exclude: true
+scripts:
+- - Visualization
+  - script.js
+- - EO Browser
+  - eob.js
+examples:
+- zoom: '10'
+  lat: '42.40876'
+  lng: '12.00634'
+  datasetId: DEM_MAPZEN
+  fromTime: '2023-10-02T00:00:00.000Z'
+  toTime: '2023-10-02T23:59:59.999Z'
+  platform:
+  - CDSE
+  - EOB
+  evalscripturl: https://custom-scripts.sentinel-hub.com/dem/dem-sepia/eob.js
 ---
-
-
-## Evaluate and visualize
-
-- [EO Browser](https://sentinelshare.page.link/KXde)
-- [Copernicus Browser](https://sentinelshare.page.link/rh5v)
 
 ## Description
 

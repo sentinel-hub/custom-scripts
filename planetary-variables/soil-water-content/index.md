@@ -13,3 +13,7 @@ Planet's SWC product provides near-daily measurements at spatial resolutions of 
 
 -   [Soil Water Content Visualization]({% link planetary-variables/soil-water-content/soil-water-content-visualization/index.md %})
 -   [Soil Water Content Anomaly]({% link planetary-variables/soil-water-content/soil-water-content-anomaly/index.md %})
+-   [Derived Root-Zone Soil Water Content]({% link planetary-variables/soil-water-content/derived-root-zone-soil-water-content/index.md %})
+-   [Soil Water Content Backward Average]({% link planetary-variables/soil-water-content/soil-water-content-backward-average/index.md %})
+-   [Soil Water Content Quality Flags]({% link planetary-variables/soil-water-content/soil-water-content-quality-flags/index.md %})
+-   [Flash Drought]({% link planetary-variables/soil-water-content/soil-water-content-flash-drought/index.md %})

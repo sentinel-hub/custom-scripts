@@ -2,18 +2,20 @@
 // MODIS Normalized Difference Salinity Index (NDSI)
 // https://www.indexdatabase.de/db/si-single.php?rsindex_id=57=&sensor_id=14
 
-
-let viz = ColorGradientVisualizer.createWhiteGreen(-0.89, 0.89);
+let viz = ColorRampVisualizer.createWhiteGreen(-0.89, 0.89);
 
 function evaluatePixel(samples) {
-    let val = index(samples.B06, samples.B07);
-    return [...viz.process(val),samples.dataMask];
+  let val = index(samples.B06, samples.B07);
+  return [...viz.process(val), samples.dataMask];
 }
 
 function setup() {
   return {
-    input: [{
-      bands: [ "B06", "B07", "dataMask" ]
-    }],
-    output: { bands: 4 }  }
+    input: [
+      {
+        bands: ["B06", "B07", "dataMask"],
+      },
+    ],
+    output: { bands: 4 },
+  };
 }
