@@ -28,6 +28,6 @@ The data layer has four bands:
 
 ## Description of representative images
 
-Canopy Cover in 2022 near Apui, Brazil.
+Canopy Cover in 2024-09-21 near Novo Progresso, Brazil.
 
 ![Canopy Cover Example](fig/canopycover.jpg)

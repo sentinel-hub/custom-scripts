@@ -27,6 +27,6 @@ The data layer has four bands:
 
 ## Description of representative images
 
-Canopy Height in 2022 near Apui, Brazil.
+Canopy Height in 2024-09-21 near Novo Progresso, Brazil.
 
 ![Canopy Height Example](fig/canopyheight.jpg)

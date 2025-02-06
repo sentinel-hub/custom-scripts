@@ -31,6 +31,6 @@ The data layer has four bands:
 
 ## Description of representative images
 
-Aboveground Carbon Density in 2022 near Apui, Brazil.
+Aboveground Carbon Density in 2024-09-21 near Novo Progresso, Brazil..
 
 ![Aboveground Carbon Density Example](fig/abovegroundcarbon.jpg)
