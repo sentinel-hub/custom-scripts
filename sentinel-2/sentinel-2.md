@@ -95,7 +95,6 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Multitemporal burnt area analysis](/sentinel-2/burned_area)
  - [Wildfire visualization](/sentinel-2/markuse_fire) (by Pierre Markuse, taken from his [blog post](https://pierre-markuse.net/2017/08/07/visualizing-wildfires-sentinel-2-imagery-eo-browser/){:target="_blank"})
  - [Burned Area Visualization](/sentinel-2/burned_area_ms)
- - [Active Fire Detection](/sentinel-2/active_fire_detection)
  - [Deep BAIS2 (Burned Area Index for Sentinel 2)](/sentinel-2/deep_bais2)
  - [Landslide detection for rapid Mapping](/sentinel-2/landslide_detection_rapid_mapping)
  - [Oil Spill Index](/sentinel-2/oil-spill-index)
