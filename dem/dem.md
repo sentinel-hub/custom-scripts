@@ -15,3 +15,4 @@ DEM (digital elevation model) is a 3D representation of the terrain's surface cr
   - [DEM topographic visualization](/dem/dem-topographic)
   - [DEM contour lines](/dem/contour-lines)
   - [DEM difference visualization](/dem/dem-difference)
+  - [DEM Central Europe](/dem/dem-central-europe)
