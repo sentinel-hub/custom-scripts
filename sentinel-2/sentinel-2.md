@@ -156,6 +156,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Aesthetic Neon](/sentinel-2/aesthetic-neon) - Aesthetic visualization for urban and dry (desert) areas
  - [Total Ozone Column over Antarctica snow](/sentinel-2/ozone_column_over_snow)
  - [BRDF normalisation](/sentinel-2/brdf)
+ - [Simple Panchromatic](/sentinel-2/simple_panchromatic) - Create a simple greyscale visualization by averaging the 10m true color and NIR bands
 
 #### Scripts including machine learning techniques (eo-learn)
 
