@@ -156,6 +156,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Total Ozone Column over Antarctica snow](/sentinel-2/ozone_column_over_snow)
  - [BRDF normalisation](/sentinel-2/brdf)
  - [Simple Panchromatic](/sentinel-2/simple_panchromatic) - Create a simple greyscale visualization by averaging the 10m true color and NIR bands
+ - [Magic Eyes](/sentinel-2/magic_eyes) - A composite optimized for visual interpretation of land cover
 
 #### Scripts including machine learning techniques (eo-learn)
 

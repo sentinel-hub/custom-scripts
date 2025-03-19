@@ -10,8 +10,8 @@ scripts:
   - script_mosaics.js
 examples:
 - zoom: '14'
-  lat: '42.76703'
-  lng: '36.823'
+  lat: '-1.29954'
+  lng: '36.85158'
   datasetId: S2L2A
   fromTime: '2025-03-03T00:00:00.000Z'
   toTime: '2025-03-03T23:59:59.999Z'
