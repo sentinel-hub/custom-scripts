@@ -5,7 +5,7 @@
 
 function setup() {
     return {
-      input: ["B01", "B02", "B03", "B08", "dataMask"],
+      input: ["B02", "B03", "B04", "B08", "dataMask"],
       output: { bands: 4 }
     };
   }
@@ -14,7 +14,7 @@ function setup() {
   
   function evaluatePixel(sample) {
     // Calculate the mean of the bands
-    let pan = (sample.B01 + sample.B02 + sample.B03 + sample.B08) / 4;
+    let pan = (sample.B02 + sample.B03 + sample.B04 + sample.B08) / 4;
   
     return [gain * pan, gain * pan, gain * pan, sample.dataMask];
   }
