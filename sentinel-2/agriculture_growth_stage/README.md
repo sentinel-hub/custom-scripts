@@ -5,6 +5,9 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/agriculture_growth_stage/
 nav_exclude: true
+scripts:
+  - [Copernicus Browser, script.js]
+  - [Sentinel-2 mosaic, quarterly_mosaics.js]
 examples:
 - zoom: '11'
   lat: '45.6246'
