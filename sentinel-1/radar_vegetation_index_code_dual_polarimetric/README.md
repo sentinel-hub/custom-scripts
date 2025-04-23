@@ -5,6 +5,9 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-1/radar_vegetation_index_code_dual_polarimetric/
 nav_exclude: true
+scripts:
+  - [Copernicus Browser, script.js]
+  - [Sentinel-1 Monthly Mosaics, sentinel_1_mosaics.js]
 examples:
 - zoom: '11'
   lat: '15.9973'
