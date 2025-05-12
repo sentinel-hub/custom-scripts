@@ -16,8 +16,8 @@ examples:
   lat: '52.67571'
   lng: '23.59823'
   datasetId: S2L2A
-  fromTime: '2019-06-04T00%3A00%3A00.000Z'
-  toTime: '2019-06-04T23%3A59%3A59.999Z'
+  fromTime: '2019-06-04T00:00:00.000Z'
+  toTime: '2019-06-04T23:59:59.999Z'
   platform:
   - CDSE
   - EOB
