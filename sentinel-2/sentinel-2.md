@@ -106,6 +106,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Bare soil detector](/sentinel-2/bare_soil_detector)
  - [Scene Classification](/sentinel-2/scene-classification)
  - [Built-up Area Classification](/sentinel-2/built_up_classifier_mask)
+ - [Forest Disturbance Classification](/sentinel-2/forest_disturbance_classification)
 
 #### Vegetation algorithms
 
@@ -118,6 +119,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Forest cut temporal detection](/sentinel-2/forest_cut_temporal_detection)
  - [Pseudo forest canopy density (pseudo-FCD)](/sentinel-2/pseudo_forest_canopy_density)
  - [Infrared agriculture display](/sentinel-2/infrared_agriculture_display)
+ - [Forest Disturbance Classification](/sentinel-2/forest_disturbance_classification)
 
 #### Marine and other water bodies environment algorithms
  - [Cyanobacteria chlorophyll-a from Sentinel-2](/sentinel-2/cyanobacteria_chla_ndci_l1c)
