@@ -288,11 +288,12 @@ function evaluatePixel(sample) {
   }
 
   const indexVal = sample.dataMask === 1 ? ndvi : NaN;
+  const clear = sample.dataMask && sample.clear;
 
   return {
     default: visVal,
     index: [indexVal],
-    eobrowserStats: [ndvi, sample.clear],
+    eobrowserStats: [ndvi, !clear],
     dataMask: [sample.dataMask],
   };
 }
