@@ -31,9 +31,13 @@ This index can be applied to retrieve the crop phenological stages and also for 
 
 See the [supplementary material](supplementary_material.pdf){:target="_blank"} for more details about the script.
 
+## Adaptation to Sentinel-1 mosaics
+
+As Sentinel-1 mosaics provide a seamless and noise-reduced data source, they can also be used for visualizing Radar Vegetation Index. This script was modified to calculate the same spectral index, but provide a vegetation-oriented color ramp that can be tuned by the user to their local data range. It also includes a very rudimentary water classification by a simple threshold - this is prone to mistake bare soil as water.
+
 ## Author of the script
 
-Subhadip Dey
+Subhadip Dey, adapted to Sentinel-1 monthly mosaics by András Zlinszky and Github Copilot
 
 ## Description of representative images
 
