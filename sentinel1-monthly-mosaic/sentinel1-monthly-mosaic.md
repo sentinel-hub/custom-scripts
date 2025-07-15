@@ -17,5 +17,4 @@ Please find related resources and more information about the collection [here](h
 
 - [RGB ratio](/sentinel1-monthly-mosaic/rgb_ratio)
 - [False Color](/sentinel2-quarterly-cloudless-mosaic/false-color)
-- [NDVI](/sentinel2-quarterly-cloudless-mosaic/ndvi)
-- [NDWI](/sentinel2-quarterly-cloudless-mosaic/ndwi)
+- [Mangrove Radar](/sentinel1-monthly-mosaic/mangrove_radar)
