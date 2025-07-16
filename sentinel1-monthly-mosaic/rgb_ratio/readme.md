@@ -1,6 +1,6 @@
 ---
 title: RGB Ratio Script
-parent: Sentinel-1
+parent: sentinel1-monthly-mosaic
 grand_parent: Sentinel
 layout: script
 permalink: /sentinel1-monthly-mosaic/rgb_ratio/
