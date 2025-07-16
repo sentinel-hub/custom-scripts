@@ -1,6 +1,8 @@
 ---
-title: Mangrove Radar
+title: Mangrove Radar script
 parent: sentinel1-monthly-mosaic
+grand_parent: Sentinel
+permalink: /sentinel1-monthly-mosaic/mangrove_radar/
 layout: script
 nav_exclude: true
 examples:
@@ -18,7 +20,7 @@ examples:
 
 ## General description of the script
 
-Mangrove vegetation is essential for shore protection, carbon sequestration and the maintenance of biodiversity and human livelyhoods. Tracking changes in mangrove with satellite imagery can be particularly difficult due to frequent cloud cover. Here we exploit the regular and consistent radar data provided by Sentinel-1 monthly mosaics as a source for mangrove monitoring. It seems from empirical observation that mangrove vegetation can have a slightly higher reflectivity in VV polarization than many other vegetation types. Therefore, by visualizing VV decibel gamma0 on a colour ramp, it is possible to create a color scheme where potential mangrove vegetation stands out. Of course, this visualization can also be used as a generic tool for understanding radar reflectivity of various surface types.
+Mangrove vegetation is essential for shore protection, carbon sequestration and the maintenance of biodiversity and human livelyhoods. Tracking changes in mangrove with satellite imagery can be particularly difficult due to frequent cloud cover. Here we exploit the regular and consistent radar data provided by Sentinel-1 monthly mosaics as a source for mangrove monitoring. It seems from empirical observation that depending on the season, mangrove vegetation can have a slightly higher reflectivity in VV polarization than many other vegetation types. Therefore, by visualizing VV decibel gamma0 on a colour ramp, it is possible to create a color scheme where potential mangrove vegetation stands out. Of course, this visualization can also be used as a generic tool for understanding radar reflectivity of various surface types.
 We chose a color ramp similar to the atlas shader that is regularly used to visualize elevation - therefore it is easy to understand where high and low reflectivity is observed (and the sea is more or less blue)
 
 ## How to use
