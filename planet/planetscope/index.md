@@ -47,6 +47,8 @@ The spectral bands of PlanetScope data are the following if you order a 8-band p
  - [True Color]({% link planet/planetscope/true_color/index.md %})
  - [False Color]({% link planet/planetscope/false_color/index.md %})
  - [Cloudless Mosaic]({% link planet/planetscope/cloudless_mosaic/index.md %})
+ - [Agriculture Growth Stage]({% link planet/planetscope/agriculture_growth_stage/readme.md %})
+ - [Kernel NDVI]({% link planet/planetscope/kndvi/readme.md %})
  - [NDVI]({% link planet/planetscope/ndvi/index.md %})
  - [Maximum NDVI]({% link planet/planetscope/max_ndvi/index.md %})
  - [NDVI Difference]({% link planet/planetscope/ndvi_difference/index.md %})
