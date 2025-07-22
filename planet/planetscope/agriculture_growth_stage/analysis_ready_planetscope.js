@@ -6,8 +6,9 @@ will take the current image as baseline and calculate average NDVI for the previ
 Based on:
 https://twitter.com/sentinel_hub/status/922813457145221121
 https://twitter.com/sentinel_hub/status/1020755996359225344
-Script requires multi-temporal processing so parameter TEMPORAL=true should be added to the request
+Script requires multi-temporal processing so parameter TEMPORAL=true should be added to the request Set the time interval to at least three months.
 Adapted to PlanetScope and Analysis-ready PlanetScope by @azlinszky.bsky.social
+This version is for Analysis-ready PlanetScope data, where cloudy pixels are already filtered out.
 */
 
 function setup() {
