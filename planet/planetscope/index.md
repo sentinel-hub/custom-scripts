@@ -55,5 +55,6 @@ The spectral bands of PlanetScope data are the following if you order a 8-band p
  - [NDWI]({% link planet/planetscope/ndwi/index.md %})
  - [NDCI - Normalized Difference Chlorophyll Index]({% link planet/planetscope/ndci/index.md %})
  - [NDRE - Normalized Difference Red Edge Index]({% link planet/planetscope/ndre/index.md %})
+ - [Penguin Locator - Highlight small differences in snow and ice landscapes]({% link planet/planetscope/penguin_locator/index.md})
  - [Green City]({% link planet/planetscope/green_city/index.md %})
  - [UDM2 Cloud/Snow Classification]({% link planet/planetscope/cloud_classification/index.md %})
