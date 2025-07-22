@@ -15,3 +15,7 @@ Analysis-Ready PlanetScope combines the monitoring benefits of daily 3 m spatial
  - [NDVI]({% link planet/analysis_ready_planetscope/ndvi/index.md %})
  - [Cloud Classification]({% link planet/analysis_ready_planetscope/cloud_mask_classification/index.md %})
  - [Cloud Masked True Color]({% link planet/analysis_ready_planetscope/true_color_cloud_masked/index.md %})
+ - [Forest Vitality Index]({% link planet/analysis_ready_planetscope/fvi/index.md %})
+ - [Forest Vitality Index with Canopy Cover Filter]({% link planet/analysis_ready_planetscope/fvi_cc/index.md %})
+ - [Forest Vitality Change Index - Gain]({% link planet/analysis_ready_planetscope/fvci_gain/index.md %})
+ - [Forest Vitality Change Index - Loss]({% link planet/analysis_ready_planetscope/fvci_loss/index.md %})
