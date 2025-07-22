@@ -88,20 +88,18 @@ function clipAndScaleVI(vi) {
 
 // Filter scenes to only include first and last of specified time range
 function preProcessScenes(collections) {
-  // Get the orbits array
-  var orbits = collections.arps.scenes.orbits;
-  
-  // Make sure we have at least 2 orbits to work with
-  if (orbits && orbits.length >= 2) {
-    // Keep only first and last orbits
-    var firstOrbit = orbits[0];
-    var lastOrbit = orbits[orbits.length - 1];
-    collections.arps.scenes.orbits = [firstOrbit, lastOrbit];
-  } else {
-    // Log an error if there aren't enough orbits
-    console.warn("FVCI requires at least 2 scenes for change detection");
+  // Helper to keep only first and last orbit if possible
+  function filterOrbits(orbits, label) {
+    if (Array.isArray(orbits) && orbits.length >= 2) {
+      return [orbits[0], orbits[orbits.length - 1]];
+    } else {
+      throw new Error(`FVCI requires at least 2 ${label} scenes for change detection`);
+    }
   }
-  
+
+  collections.arps.scenes.orbits = filterOrbits(collections.arps.scenes.orbits, "arps");
+  collections.canopy_cover.scenes.orbits = filterOrbits(collections.canopy_cover.scenes.orbits, "canopy cover");
+
   return collections;
 }
 
