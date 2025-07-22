@@ -87,6 +87,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Monthly snow report](/sentinel-2/monthly_snow_report)
  - [Snow cover change detection](/sentinel-2/snow_cover_change)
  - [NDSI Visualized](/sentinel-2/ndsi) - Visualized normalized difference snow index 
+ - [Penguin Locator](/sentinel-2/penguin_locator) - Highlights subtle patterns on the snow and ice surface
 
 #### Disaster management and prevention algorithms
  - [Detecting deep moist convection](/sentinel-2/deep_moist_convection)
