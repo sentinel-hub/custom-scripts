@@ -39,7 +39,7 @@ The Forest Vitality Index is calculated as follows:
 4. Classify the scaled values into 15 forest vitality classes
 5. Apply a color palette to visualize the classes
 
-The script includes cloud masking and data validation checks to ensure only valid forest pixels are processed.
+The script includes cloud masking and data validation checks to ensure only valid forest pixels are processed. This version of the script only uses vegetation index thresholds to mask vegetated pixels. Please check the script [Forest Vitality Index with Canopy Cover Filter (FVI-CC)](../forest_vitality_index_canopy_cover/index.md) for a forest mask based on the Canopy Cover layer from the Forest Carbon Monitoring dataset.
 
 ## Description of representative images
 

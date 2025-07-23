@@ -28,7 +28,7 @@ additionalQueryParams:
 
 ## General description
 
-This script enhances the Forest Vitality Index (FVI) by incorporating a canopy cover filter. It combines Analysis Ready PlanetScope imagery with Canopy Cover data from the Forest Carbon Monitoring dataset to produce a more accurate forest vitality assessment that focuses exclusively on areas with significant tree coverage. By filtering with a minimum canopy cover threshold (default 25%), the script removes non-forest or sparse vegetation areas from the analysis.
+This script enhances the [Forest Vitality Index (FVI)](../forest_vitality_index/index.md) by incorporating a canopy cover filter. It combines Analysis Ready PlanetScope imagery with Canopy Cover data from the Forest Carbon Monitoring dataset to produce a more accurate forest vitality assessment that focuses exclusively on areas with significant tree coverage. By filtering with a minimum canopy cover threshold (default 25%), the script removes non-forest or sparse vegetation areas from the analysis.
 
 ## Details of the script
 
