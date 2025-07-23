@@ -13,7 +13,7 @@ examples:
   fromTime: '2025-06-04T00:00:00.000Z'
   toTime: '2025-06-04T23:59:59.999Z'
   platform:
-  - CDSE
+  - EOB
   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel/sentinel-2/penguin_locator/script.js
 ---
 

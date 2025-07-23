@@ -6,15 +6,15 @@ layout: script
 permalink: /sentinel-2/penguin_locator/
 nav_exclude: true
 examples:
-- zoom: '10'
-  lat: '66.4630'
-  lng: '-38.46067'
+- zoom: '13'
+  lat: '-73.33561'
+  lng: '-169.67045'
   datasetId: S2L2A
-  fromTime: '2025-07-19T00:00:00.000Z'
-  toTime: '2025-07-19T23:59:59.999Z'
+  fromTime: '2024-09-28T00:00:00.000Z'
+  toTime: '2024-09-28T23:59:59.999Z'
   platform:
   - CDSE
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel/sentinel-2/penguin_locator/script.js
+  evalscripturl: https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/penguin_locator/script.js
 ---
 
 The layout `script` automatically adds the title defined in the front matter and adds buttons to visualize the script. For the buttons to work the evalscript has to be named `script.js` and must be in the same directory as the `README.md` file.
