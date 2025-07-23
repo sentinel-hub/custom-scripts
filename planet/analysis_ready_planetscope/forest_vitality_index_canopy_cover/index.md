@@ -6,16 +6,6 @@ layout: script
 nav_exclude: true
 scripts:
   - [Visualization, script.js]
-# examples:
-# - zoom: '14'
-#   lat: '44.74116'
-#   lng: '-0.68435'
-#   datasetId: '3f605f75-86c4-411a-b4ae-01c896f0e54e'
-#   fromTime: '2023-04-18T00:00:00.000Z'
-#   toTime: '2023-04-18T23:59:59.999Z'
-#   platform:
-#   - EOB
-#   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet/analysis_ready_planetscope/fvi_cc/script.js
 additionalQueryParams: 
   - - themeId
     - PLANET_SANDBOX
@@ -28,7 +18,7 @@ additionalQueryParams:
 
 ## General description
 
-This script enhances the [Forest Vitality Index (FVI)](../forest_vitality_index/index.md) by incorporating a canopy cover filter. It combines Analysis Ready PlanetScope imagery with Canopy Cover data from the Forest Carbon Monitoring dataset to produce a more accurate forest vitality assessment that focuses exclusively on areas with significant tree coverage. By filtering with a minimum canopy cover threshold (default 25%), the script removes non-forest or sparse vegetation areas from the analysis.
+This script enhances the [Forest Vitality Index (FVI)](../forest_vitality_index/index.md) by incorporating a canopy cover filter. It combines Analysis Ready PlanetScope imagery with the Canopy Cover layer from the Forest Carbon Monitoring dataset to produce a more accurate forest vitality assessment that focuses exclusively on areas with significant tree coverage. By filtering with a minimum canopy cover threshold (default 25%), the script removes non-forest or sparse vegetation areas from the analysis.
 
 ## Details of the script
 
@@ -36,7 +26,7 @@ The FVI-CC processing workflow includes:
 1. Filter pixels based on canopy cover percentage (>25%)
 2. Calculate vegetation index (users can choose between NDVI or SAVI) from red and NIR bands for remaining pixels
 3. Clip the vegetation index to a predefined range (0.15-0.85)
-4. Scale the clipped VI to a 1-100 range
+4. Scale the clipped vegetation index to a 1-100 range
 5. Classify the scaled values into 15 forest vitality classes
 6. Apply a color palette to visualize the classes
 

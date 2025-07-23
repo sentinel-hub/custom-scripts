@@ -6,16 +6,6 @@ layout: script
 nav_exclude: true
 scripts:
   - [Visualization, script.js]
-# examples:
-# - zoom: '14'
-#   lat: '44.74116'
-#   lng: '-0.68435'
-#   datasetId: '3f605f75-86c4-411a-b4ae-01c896f0e54e'
-#   fromTime: '2023-04-18T00:00:00.000Z'
-#   toTime: '2023-04-18T23:59:59.999Z'
-#   platform:
-#   - EOB
-#   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet/analysis_ready_planetscope/fvci_gain/script.js
 additionalQueryParams: 
   - - themeId
     - PLANET_SANDBOX
@@ -28,7 +18,7 @@ additionalQueryParams:
 
 ## General description
 
-The FVCI-Gain script visualizes positive changes in forest vitality between two time periods. This specialized visualization focuses exclusively on areas showing improvement in forest health, making it easier to identify regeneration, growth, or recovery patterns. The script combines Analysis Ready PlanetScope imagery with Canopy Cover data from the Forest Carbon Monitoring dataset to ensure analysis is focused on forest areas only.
+The FVCI-Gain script visualizes positive changes in forest vitality between two time periods. This specialized visualization focuses exclusively on areas showing improvement in forest health, making it easier to identify regeneration, growth, or recovery patterns. The script combines Analysis Ready PlanetScope imagery with the Canopy Cover layer from the Forest Carbon Monitoring dataset to ensure analysis is focused on forest areas only.
 
 ## Details of the script
 
@@ -41,7 +31,7 @@ The FVCI-Gain processing workflow includes:
 6. Classify positive changes into 20 intensity levels
 7. Apply a color palette transitioning from yellow through green to purple to visualize different gain intensities
 
-The script utilizes the first and last PlanetScope ARD acquisition in the specified time range.
+The script utilizes the first and last PlanetScope ARD acquisitions and Canopy Cover products in the specified time range.
 
 ## Description of representative images
 

@@ -6,16 +6,6 @@ layout: script
 nav_exclude: true
 scripts:
   - [Visualization, script.js]
-# examples:
-# - zoom: '14'
-#   lat: '44.74116'
-#   lng: '-0.68435'
-#   datasetId: '3f605f75-86c4-411a-b4ae-01c896f0e54e'
-#   fromTime: '2023-04-18T00:00:00.000Z'
-#   toTime: '2023-04-18T23:59:59.999Z'
-#   platform:
-#   - EOB
-#   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/planet/analysis_ready_planetscope/fvi/script.js
 additionalQueryParams: 
   - - themeId
     - PLANET_SANDBOX
@@ -35,11 +25,11 @@ This script calculates the Forest Vitality Index (FVI) based on vegetation indic
 The Forest Vitality Index is calculated as follows:
 1. Calculate vegetation index (NDVI or SAVI) from red and NIR bands
 2. Clip the vegetation index to a predefined range (0.15-0.85)
-3. Scale the clipped VI to a 1-100 range
+3. Scale the clipped vegetation index to a 1-100 range
 4. Classify the scaled values into 15 forest vitality classes
 5. Apply a color palette to visualize the classes
 
-The script includes cloud masking and data validation checks to ensure only valid forest pixels are processed. This version of the script only uses vegetation index thresholds to mask vegetated pixels. Please check the script [Forest Vitality Index with Canopy Cover Filter (FVI-CC)](../forest_vitality_index_canopy_cover/index.md) for a forest mask based on the Canopy Cover layer from the Forest Carbon Monitoring dataset.
+The script includes cloud masking and data validation checks to ensure only valid pixels are processed. This version of the script only uses vegetation index thresholds to mask vegetated pixels. Please check the script [Forest Vitality Index with Canopy Cover Filter (FVI-CC)](../forest_vitality_index_canopy_cover/index.md) for a forest mask based on the Canopy Cover layer from the Forest Carbon Monitoring dataset.
 
 ## Description of representative images
 
