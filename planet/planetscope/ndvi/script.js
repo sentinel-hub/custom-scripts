@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["NIR", "red", "dataMask"],
+    input: ["nir", "red", "dataMask"],
     output: {
       bands: 4,
     },
@@ -273,7 +273,7 @@ const colorRamp = [
 let viz = new ColorRampVisualizer(colorRamp);
 
 function evaluatePixel(sample) {
-  let ndvi = index(sample.NIR, sample.red);
+  let ndvi = index(sample.nir, sample.red);
   const minIndex = 0;
   const maxIndex = 1;
   let visVal = null;

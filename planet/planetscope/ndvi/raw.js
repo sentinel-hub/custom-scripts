@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["NIR", "red", "dataMask"],
+    input: ["nir", "red", "dataMask"],
     output: {
       bands: 4,
     },
@@ -11,5 +11,5 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  return [index(sample.NIR, sample.red)];
+  return [index(sample.nir, sample.red)];
 }
