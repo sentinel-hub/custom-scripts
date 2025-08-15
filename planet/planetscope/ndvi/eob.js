@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["NIR", "red", "clear", "dataMask"],
+    input: ["nir", "red", "clear", "dataMask"],
     output: [
       { id: "default", bands: 4 },
       { id: "index", bands: 1, sampleType: "FLOAT32" },
@@ -276,7 +276,7 @@ const colorRamp = [
 let viz = new ColorRampVisualizer(colorRamp);
 
 function evaluatePixel(sample) {
-  let ndvi = index(sample.NIR, sample.red);
+  let ndvi = index(sample.nir, sample.red);
   const minIndex = 0;
   const maxIndex = 1;
   let visVal = null;
