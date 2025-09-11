@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["Red", "NIR"],
+    input: ["red", "nir"],
     output: [
       { id: "default", bands: 1 },
     ]
@@ -11,6 +11,6 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  let NDVI = index(sample.NIR, sample.Red);
+  let NDVI = index(sample.nir, sample.red);
   return { default: [NDVI] };
 }
