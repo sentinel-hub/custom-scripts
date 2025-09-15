@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["Red", "NIR", "dataMask"],
+    input: ["red", "nir", "dataMask"],
     output: [
       { id: "default", bands: 4 },
     ]
@@ -11,7 +11,7 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  let NDVI = index(sample.NIR, sample.Red);
+  let NDVI = index(sample.nir, sample.red);
   let id_default = valueInterpolate(NDVI,
     [0, 0.2, 0.3, 0.4, 0.5, 1.0],
     [

@@ -3,7 +3,7 @@
 
 function setup() {
   return {
-    input: ["Red", "NIR", "dataMask"],
+    input: ["red", "nir", "dataMask"],
     output: [
       { id: "default", bands: 4 },
       { id: "index", bands: 1, sampleType: "FLOAT32" },
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function evaluatePixel(sample) {
-  let NDVI = index(sample.NIR, sample.Red);
+  let NDVI = index(sample.nir, sample.red);
   const indexVal = isFinite(NDVI) && sample.dataMask === 1 ? NDVI : NaN;
   let id_default = valueInterpolate(NDVI,
     [0, 0.2, 0.3, 0.4, 0.5, 1.0],
