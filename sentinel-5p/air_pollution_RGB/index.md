@@ -15,56 +15,35 @@ examples:
   evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-5p/air_pollution_RGB/script.js
 ---
 
-The layout `script` automatically adds the title defined in the front matter and adds buttons to visualize the script. For the buttons to work the evalscript has to be named `script.js` and must be in the same directory as the `README.md` file.
-
-## Adding examples
-
-This page shows how example links can be added by defining the parameters in the [front matter](https://jekyllrb.com/docs/front-matter/). 
-An example is defined like this:
-
-```yaml
-examples:
-- zoom: '10'
-  lat: '42.76703'
-  lng: '11.22847'
-  datasetId: S2L2A
-  fromTime: '2020-07-12T00:00:00.000Z'
-  toTime: '2020-07-12T23:59:59.999Z'
-  platform:
-  - CDSE
-  - EOB
-  evalscripturl: https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/ndvi/eob.js
-```
-
-From these parameters, example urls are built automatically in the [layout file](https://github.com/sentinel-hub/custom-scripts/blob/main/_layouts/script.html?plain=1). The parameter `platform` specifies for which visualization platform the example links should be built. Right now the only options are Copernicus Browser (CDSE) and EO Browser (EOB). 
-
-If a script only works on one platform but not the other, only the platform the script works on should be specified (See for example [cloud statistics](https://github.com/sentinel-hub/custom-scripts/blob/main/sentinel-2/cloud_statistics/README.md)). If the page has separate versions for each platform, multiple examples can be specified in the list (See [markuse fire](https://github.com/sentinel-hub/custom-scripts/blob/main/sentinel-2/markuse_fire/README.md?plain=1)). 
-
-The evalscript can be given as an `evalscripturl` like done here. This is the preferred option since it keeps maintenance of example links to a minimum since nothing needs to be updated if the evalscript is changed at a later point.
-
-Alternatively the evalscript can be passed into the parameter `evalscript`. Here the evalscript needs to be Base64 encoded. See the [Forest Hurricane Script](https://github.com/sentinel-hub/custom-scripts/blob/main/sentinel-1/forest_hurricane/README.md?plain=1) as an example.
-
-When multiple different evalscripts are added, they can also be named by passing the parameter `name` to each entry of the example list.
-
-It is also possible to pass more url query parameters to the built example link by specifying `additionalQueryParams`. See the [NDVI Time Series](https://github.com/sentinel-hub/custom-scripts/blob/main/sentinel-2/ndvi_time_series/README.md?plain=1) script as an example.
-
 
 ## General description of the script
 
-This script creates an RGB visualization of key air pollutants NO2, SO2 and O3, based on their mean values within a studied interval.
+This script creates an RGB visualization of key air pollutants NO<sub>2</sub>, SO<sub>2</sub> and HCHO, based on their mean values within a studied interval.
 It "tricks" Copernicus Browser into creating a data fusion with all three datasets coming from the same source, Sentinel-5PL2. This is necessary because otherwise Sentinel-5P is not configured to return multiple bands.
+
+Red: NO<sub>2</sub> is mainly releasd by internal combustion engines. It represents a public health hazard, worsening asthma and lung conditions such as chronic bronchitis. It is also used as a generic proxy of emissions from industry and traffic. High seas shipping is a particularly important source of this gas.
+
+Green: SO<sub>2</sub> is released by combustion of fossil fuels, especially coal, and by volcanoes. Sulfur dioxide also leads to airway narrowing and thus worsens asthma and bronchitis, but additionally, it is highly irritating to the eyes, nose, throat and lungs.
+
+Blue: Formaldehyde (HCHO) is also released during biomass burning, vehicle exhausts, and to some extend from vegetation and seawater. It is also a secondary product of the photo-oxidation of other volatile organic compounds in the atmosphere. Exposure to HCHO affects the central nervous system, can produce eye and skin irritation and irritation of the respiratory tract.
 
 ## How to use
 
 - Open Copernicus Browser, navigate to your area of interest
 - Select Sentinel-5P and a time range - typically a few weeks to a month
-- Select N02, click the </> icon to edit the code
+- Select NO<sub>2</sub>, click the </> icon to edit the code
 - Select "use additional datasets (advanced)
 - Add S5PL2 twice
 - Rename the new data sources to S5PL2_1 and S5PL2_2, respectively
 - Paste in the script and wait for the data to load. It will take a while and Sentinel-5P provide daily datasets
-- Tune the min and max values: set the "statband" parameter to NO2, SO2 and O3 respectively, calculate a local histogram for a smaller area of interest and check the values.
+- Tune the min and max values
 
-## References
+## Example image
 
-- possible references (scientific articles, wiki/web references, ...)
+This image shows the Middle East, with the Air Pollution RGB overlain on the panchromatic version of the Sentinel-2 Quarterly Cloudless Mosaic.
+
+![Air Pollution RGB Middle East](fig/air_pollution_rgb_middle_east.jpg)
+
+Direct link to image: https://link.dataspace.copernicus.eu/38fr 
+
+
