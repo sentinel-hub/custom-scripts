@@ -17,8 +17,6 @@ examples:
   evalscripturl: https://raw.githubusercontent.com/sentinel-hub/customScripts/master/sentinel-2/penguin_locator/script.js
 ---
 
-The layout `script` automatically adds the title defined in the front matter and adds buttons to visualize the script. For the buttons to work the evalscript has to be named `script.js` and must be in the same directory as the `README.md` file.
-
 
 ## General description of the script
 

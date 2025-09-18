@@ -1,6 +1,9 @@
 ---
-title: Example product
-parent: Contribute
+title: Air Pollution RGB
+parent: Sentinel-5P
+grand_parent: Sentinel
+layout: script
+permalink: /sentinel-5p/air_pollution_RGB/
 layout: script
 nav_exclude: true
 examples:
@@ -34,8 +37,8 @@ Blue: Formaldehyde (HCHO) is also released during biomass burning, vehicle exhau
 - Select NO<sub>2</sub>, click the </> icon to edit the code
 - Select "use additional datasets (advanced)
 - Add S5PL2 twice
-- Rename the new data sources to S5PL2_1 and S5PL2_2, respectively
-- Paste in the script and wait for the data to load. It will take a while and Sentinel-5P provide daily datasets
+- Rename the new data sources to S5PL2_1 and S5PL2_2, respectively (change the dash to an underscore)
+- Paste in the script and wait for the data to load. It will take a while, since Sentinel-5P provides daily datasets
 - Tune the min and max values
 
 ## Example image
