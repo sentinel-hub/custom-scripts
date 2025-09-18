@@ -44,3 +44,4 @@ Sentinel-5P provides atmospheric measurements, relating to air quality, climate 
 #### Additional Products
 
  - [Nitrogen Dioxide monthly mean](/sentinel-5p/no2_monthly_mean)
+ - [Air Pollution RGB](/sentinel-5p/air_pollution_RGB/)
