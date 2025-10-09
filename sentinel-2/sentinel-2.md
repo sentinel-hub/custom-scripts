@@ -121,6 +121,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Pseudo forest canopy density (pseudo-FCD)](/sentinel-2/pseudo_forest_canopy_density)
  - [Infrared agriculture display](/sentinel-2/infrared_agriculture_display)
  - [Forest Disturbance Classification](/sentinel-2/forest_disturbance_classification)
+ - [Plastic Greenhouse Detection](/sentinel-2/plastic_greenhouse/)
 
 #### Marine and other water bodies environment algorithms
  - [Cyanobacteria chlorophyll-a from Sentinel-2](/sentinel-2/cyanobacteria_chla_ndci_l1c)
