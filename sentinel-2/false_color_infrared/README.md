@@ -32,8 +32,6 @@ For [Landsat 4-5 TM](https://custom-scripts.sentinel-hub.com/landsat-4-5-tm/fals
 
 For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/false-color/): **B05, B04, B03**
 
-For [MODIS](https://custom-scripts.sentinel-hub.com/modis/false-color/): **B02, B01, B04**
-
 ## Description of representative images
 
 False color composite of Rome. Acquired on 8.10.2017.

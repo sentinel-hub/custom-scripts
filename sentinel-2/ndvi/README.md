@@ -44,8 +44,6 @@ $$NDVI := \mathtt{Index}(B8,B4) = \frac{B8-B4}{B8+B4}.$$
 
 Landsat 5 and 7 NDVI = **(B04 - B03) / (B04 + B03)**
 
-[MODIS NDVI](https://custom-scripts.sentinel-hub.com/modis/ndvi/) = **(B02 - B01) / (B02 + B01)**
-
 ENVISAT MERIS NDVI = **(B13 - B07) / (B13 + B07)**
 
 [Landsat 1-5 MSS NDVI](https://custom-scripts.sentinel-hub.com/landsat-1-5-mss/ndvi/) = **(B04 - B02) / (B04 + B02)**

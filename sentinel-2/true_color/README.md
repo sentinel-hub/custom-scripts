@@ -49,8 +49,6 @@ For [Landsat 7 ETM](https://custom-scripts.sentinel-hub.com/landsat-7-etm/true-c
 
 For [Landsat 8](https://custom-scripts.sentinel-hub.com/landsat-8/true-color/): **B04, B03, B02**
 
-For [MODIS](https://custom-scripts.sentinel-hub.com/modis/true-color/): **B01, B04, B03**
-
 ## Description of representative images
 
 True color visualization of islands in the Korea Strait

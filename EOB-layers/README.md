@@ -108,14 +108,6 @@ Configuration name: _EO_Browser-Sentinel-2-L2A API production_
 - [4-NDVI](https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/) - NDVI
 - [THERMAL](https://custom-scripts.sentinel-hub.com/landsat-8/thermal/) - Thermal
 
-## MODIS
-
-- [1-TRUE-COLOR](https://custom-scripts.sentinel-hub.com/modis/true-color/) - True color
-- [2-FALSE-COLOR](https://custom-scripts.sentinel-hub.com/modis/false-color/) - False Color
-- [3-NDVI](https://custom-scripts.sentinel-hub.com/modis/ndvi/) - NDVI
-- [NDWI](https://custom-scripts.sentinel-hub.com/modis/ndwi/) - NDWI
-- [SALINITY-INDEX](https://custom-scripts.sentinel-hub.com/modis/salinity-index/) - Normalized Difference Salinity Index
-
 ## DEM
 
 Same for all 3 DEM collections
