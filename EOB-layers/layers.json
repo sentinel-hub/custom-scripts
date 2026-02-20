@@ -301,38 +301,6 @@
   ]
 },
 {
-  "MODIS": [
-    {
-      "Title": "True color",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/true-color/script.js"
-    },
-    {
-      "Title": "False color",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/false-color/script.js"
-    },
-    {
-      "Title": "SWIR",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/swir/script.js"
-    },
-    {
-      "Title": "NDVI",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndvi/script.js"
-    },
-    {
-      "Title": "NDMI",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndmi/script.js"
-    },
-    {
-      "Title": "NDWI",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/ndwi/script.js"
-    },
-    {
-      "Title": "Salinity Index",
-      "URL": "https://custom-scripts.sentinel-hub.com/modis/salinity-index/script.js"
-    }
-  ]
-},
-{
   "dem": [
     {
       "Title": "Color",
