@@ -48,7 +48,7 @@ NDWI index is often used synonymously with the NDMI index, often using NIR-SWIR 
 
 ## Description of representative images
 
-The NDMI of Rome, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
+The NDMI of the Tyrrhenian coast between Piombino and Grosseto, Italy. Acquired on 08.10.2017, processed by Sentinel Hub. 
 
 ![NDWI](fig/fig1.png)
 
