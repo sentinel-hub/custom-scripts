@@ -92,7 +92,7 @@ function setup() {
     output: [
       { id: "default", bands: 4, sampleType: "UINT8" }, // RGBA color map
       { id: "index", bands: 1, sampleType: "FLOAT32" }, // LST (K)
-      { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" }, // LST (K) for stats
+      { id: "browserStats", bands: 1, sampleType: "FLOAT32" }, // LST (K) for stats
       { id: "dataMask", bands: 1 }, // validity mask
     ],
   };
@@ -156,7 +156,7 @@ function invalid() {
   return {
     default: [0, 0, 0, 0],
     index: [NaN],
-    eobrowserStats: [NaN],
+    browserStats: [NaN],
     dataMask: [0],
   };
 }
@@ -184,7 +184,7 @@ function evaluatePixel(sample) {
   return {
     default: rgb.concat(255),
     index: [lst],
-    eobrowserStats: [lst],
+    browserStats: [lst],
     dataMask: [1],
   };
 }

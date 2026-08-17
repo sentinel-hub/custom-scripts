@@ -15,10 +15,10 @@
  *
  * KNOWN COPERNICUS BROWSER LIMITATION: the statistics / histogram panel does not work
  * on data fusion layers. It fails with "Dataset with id: <alias> not found" even though
- * the layer renders correctly, and declaring an eobrowserStats output (as this script
+ * the layer renders correctly, and declaring a browserStats output (as this script
  * does) makes no difference. This has been reported to CDSE. Until it is fixed, read
  * the mean off the map by tuning residualCenterK (see USER OPTIONS), or compute it with
- * the Statistical API. The eobrowserStats output is kept so that the histogram starts
+ * the Statistical API. The browserStats output is kept so that the histogram starts
  * working here as soon as the fix lands.
  *
  * The spread of the residual is the other number worth having, and it needs the
@@ -139,7 +139,7 @@ function setup() {
     output: [
       { id: "default", bands: 4, sampleType: "UINT8" }, // RGBA color map
       { id: "index", bands: 1, sampleType: "FLOAT32" }, // residual (K)
-      { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" }, // residual, for stats
+      { id: "browserStats", bands: 1, sampleType: "FLOAT32" }, // residual, for stats
       { id: "dataMask", bands: 1 }, // validity mask
     ],
     mosaicking: "SIMPLE", // one clear scene per layer; access samples.X[0]
@@ -208,7 +208,7 @@ function invalid() {
   return {
     default: [0, 0, 0, 0],
     index: [NaN],
-    eobrowserStats: [NaN],
+    browserStats: [NaN],
     dataMask: [0],
   };
 }
@@ -254,7 +254,7 @@ function evaluatePixel(samples) {
   return {
     default: rgb.concat(255),
     index: [residual],
-    eobrowserStats: [residual],
+    browserStats: [residual],
     dataMask: [1],
   };
 }

@@ -10,7 +10,7 @@ scripts:
   - [biasOffset measurement, bias_offset.js]
 ---
 
-## General description of the script
+## General description
 
 Copernicus Land Monitoring Service (CLMS) Land Surface Temperature (LST, 3 km hourly V3) collects data every hour and is published with 3-hour latency, but only at a 3 km resolution.
 Landsat TIRS resolves LST at 100 m but has an 8–16 day revisit. Alone, neither of these can deliver daily high resolution land surface temperature for urban planning and monitoring of conditions at local scale.
@@ -134,20 +134,20 @@ actually present and makes intra-urban contrast much easier to read. Both values
 (°C = K − 273.15). As with `biasOffset`, use the same values in both scripts when comparing layers;
 different ranges make two layers look different for purely cosmetic reasons.
 
-There is deliberately no `eobrowserStats` output. That output exists to feed the Copernicus Browser
+There is deliberately no `browserStats` output. That output exists to feed the Copernicus Browser
 **time series** tool, which works by re-running the request over a sequence of time intervals — but
 this script pins `CLMS_CAL` to a fixed calibration date, so a swept time range has no coherent
 meaning and the tool returns an error.
 
 **Known Copernicus Browser limitation.** The statistics / histogram panel does not work on any data
 fusion layer. It fails with `Dataset with id: <alias> not found` even though the same layer renders
-correctly, and this is independent of what the datasource is called — declaring an `eobrowserStats`
+correctly, and this is independent of what the datasource is called — declaring a `browserStats`
 output does not help either. This is a Browser issue rather than a script one, and it has been
 reported to CDSE support. Single-dataset layers are unaffected, so read means and histograms from
 `landsat_lst_reference.js` or from a plain CLMS LST layer, and use the Statistical API when you need
 statistics on a fused product.
 
-`landsat_lst_reference.js` does declare `eobrowserStats`: it is a single-dataset script with no
+`landsat_lst_reference.js` does declare `browserStats`: it is a single-dataset script with no
 pinned timespans, so both the time series tool and the statistics panel behave as expected.
 
 ## The three scripts
@@ -163,7 +163,7 @@ same emissivity model, same constants, same guards, same color ramp. Because the
 identical, any difference between the two layers is attributable to the sharpening rather than to a
 difference in method. It differs in two respects, both intentional: it applies a Collection 2 QA
 cloud mask (`decodeL8C2Qa`, on by default), since you will be opening arbitrary overpass dates with
-it rather than a hand-picked clear-sky scene; and it declares an `eobrowserStats` output, so the
+it rather than a hand-picked clear-sky scene; and it declares a `browserStats` output, so the
 Browser time series tool works on it (see "Outputs" above).
 
 `bias_offset.js` outputs the residual field itself — `LST_landsat_cal − LST_clms_cal` in Kelvin
@@ -325,7 +325,7 @@ built-up districts become distinguishable at a resolution the native 3 km CLMS p
 provide.
 
 **Sharpened CLMS LST over Budapest**
-![Sharpened LST over Budapest](fig/fig_1.jpg)
+![Sharpened LST over Budapest](fig/fig1.jpg)
 
 The Danube stands out as a cool ribbon, the Buda hills on the west bank read cooler than the dense
 Pest districts on the east, and individual parks, rail yards and industrial roofs are resolved. None
@@ -336,7 +336,7 @@ pixels.
 
 | Native CLMS LST (3 km) | Landsat-sharpened CLMS LST |
 |:----------------------:|:--------------------------:|
-| ![Native CLMS LST over the same mosaic](fig/fig_4.jpg) | ![Sharpened LST over a VHR true color mosaic of Budapest](fig/fig_2.jpg) |
+| ![Native CLMS LST over the same mosaic](fig/fig4.jpg) | ![Sharpened LST over a VHR true color mosaic of Budapest](fig/fig2.jpg) |
 
 Displayed semi-transparently over a 2024 VHR true color mosaic, the thermal pattern can be read
 against the urban fabric that produces it: warm anomalies line up with large impervious surfaces and
@@ -355,7 +355,7 @@ reads cooler than native CLMS. Setting `biasOffset` as described above brings th
 absolute scale.
 
 **Native Landsat LST (left) versus Landsat-sharpened CLMS LST (right)**
-![Landsat LST compared with sharpened CLMS LST](fig/fig_3.jpg)
+![Landsat LST compared with sharpened CLMS LST](fig/fig3.jpg)
 
 This is the validation test described above, with both layers on the same color ramp. The faint
 vertical line left of the Danube is the split between the two layers, not a feature of either — and
