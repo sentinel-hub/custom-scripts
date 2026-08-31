@@ -135,6 +135,8 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [Water In Wetlands Index (WIW)](/sentinel-2/wiw_s2_script)
  - [Simple Water Bodies' Mapping - SWBM ](/sentinel-2/simple_water_bodies_mapping-swbm)
  - [MAGO Water Quality Monitoring Tool](/sentinel-2/mago_water_quality_monitoring_tool)
+ - [Ship detection](/sentinel-2/ship_detection) - highlights ships at sea and their wakes
+
 
 #### Urban planning algorithms
  - [Green city](/sentinel-2/green_city)
