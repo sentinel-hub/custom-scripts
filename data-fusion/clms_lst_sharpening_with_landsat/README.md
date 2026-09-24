@@ -12,13 +12,13 @@ scripts:
 
 ## General description
 
-Copernicus Land Monitoring Service (CLMS) Land Surface Temperature (LST, 3 km hourly V3) collects data every hour and is published with 3-hour latency, but only at a 3 km resolution.
+Copernicus Land Monitoring Service (CLMS) Land Surface Temperature (LST, 3 km hourly V3) collects data every hour and is published with 3-hour latency, but only at 3 km resolution.
 Landsat TIRS resolves LST at 100 m but has an 8–16 day revisit. Alone, neither of these can deliver daily high resolution land surface temperature for urban planning and monitoring of conditions at local scale.
 
 This data fusion script **sharpens** the coarse CLMS LST using the fine spatial detail of a
 Landsat thermal image, following a simple additive-residual (statistical downscaling) approach.
 
-First we calculate the difference between Landsat and CLMS temperature at a calibration date where we have both. This can be months or even years old Then we use the difference to sharpen the CLMS temperature dataset for the time of interest. As a result, thermal conditions can be estimated at high resolution and daily frequency, suitable for complementing sensor-based heat monitoring and creating detailed maps to inform urban planning or disaster intervention.
+First we calculate the difference between Landsat and CLMS temperature at a calibration date where we have both. This can be months or even years old, but should be from the same season and approximate temperature range as the target date. Then we use the difference to sharpen the CLMS temperature dataset for the time of interest. As a result, thermal conditions can be estimated at high resolution and daily frequency, suitable for complementing sensor-based heat monitoring and creating detailed maps to inform urban planning or disaster intervention.
 
 ### Method
 
@@ -66,7 +66,7 @@ Artis & Carnahan (1982).
 
 **A note on the roughness constant `C`.** These scripts use `C = 0.005`, the value given by
 Sobrino et al. (2008) and used by Avdan & Jovanovska (2016). The Landsat-8 LST Mapping script
-from uses `C = 0.009`, a value that appears in Salih et al. (2018); we
+uses `C = 0.009`, a value that appears in Salih et al. (2018); we
 were unable to trace it to a primary measurement, so we kept the more widely cited figure. The
 practical difference is small — of order 0.2–0.3 K, and only on mixed soil/vegetation pixels —
 but it is a real difference, so `C` is exposed in the user options block of all three scripts. Set it
@@ -107,10 +107,42 @@ differencing means taken over different pixel sets.
 
 Leave `biasOffset` at `0` to keep pure additive Landsat detail.
 
-Expect this offset to be sizeable. Landsat L1 band B10 is top-of-atmosphere brightness temperature
+Expect this offset to be sizeable (<10 K). Landsat L1 band B10 is top-of-atmosphere brightness temperature
 with no atmospheric correction, so it reads systematically colder than the atmospherically corrected
-CLMS LST — over Budapest the difference is around 7.6 K. What matters for the method is not that the
+CLMS LST — over Budapest on the example calibration date the difference is around 2.2 K. What matters for the method is not that the
 bias is small but that it is *stable*, which is exactly what a single scalar can absorb.
+
+### `changeScale` and `deltaTMean` — damping the CLMS change (optional)
+
+The additive formula passes the full 3 km change that CLMS sees between the calibration and the target
+date on to every 100 m pixel. That change is partly real and partly retrieval noise and resampling.
+In a leave-one-date-out test over Budapest (28 Landsat dates, companion notebook Section 12.4), the
+sharpened map came closer to the target-date Landsat when only part of the change was used. The
+median pattern error was 1.78 K with the additive model and 1.53 K with the change scaled by the
+calibration-date slope, against 2.16 K for plain CLMS. This is one city and a small box, and the
+reference is Landsat itself, so the additive model stays the default. The scaling is offered as an
+option:
+
+```
+LST_sharpened = LST_landsat_cal + s × (LST_clms_target − LST_clms_cal) + (1 − s) × deltaTMean + biasOffset
+```
+
+- `changeScale` is `s`. At `1` (the default) the formula is exactly the additive one above and
+  `deltaTMean` is ignored. At `0` the Landsat calibration pattern is used unchanged and only the
+  scene-mean change is added.
+- A sensible `s` is the slope of a linear regression of Landsat LST on CLMS LST over your area:
+  how many Kelvin degrees Landsat changes per Kelvin degree of CLMS, spatially, within one date.
+  Take the median over several calibration dates, because the slope of a single date is noisy (over
+  Budapest the example calibration date gave 0.89, against a median of 0.54 over 28 dates).
+  The companion notebook computes it (Section 12.5). Over Budapest a sweep of fixed values gave
+  nearly the same error for any `s` between 0.25 and 0.5, rising steadily towards `s = 1`. In other
+  cities the median per-date slope ranged from about 0.25 to 0.8, so measure it rather than borrow
+  it. A fixed `s` for a city worked as well as a per-date one.
+- `deltaTMean` is `mean(CLMS_TGT) − mean(CLMS_CAL)` over your area. Without this term an `s` below 1
+  would also damp the scene mean, and the sharpened map would drift away from the CLMS level
+  (by 5 K for `s = 0.5` and a 10 K warmer target). Both means can be read in the Copernicus Browser
+  statistics panel from two plain CLMS LST layers, which are single-dataset layers. The difference is
+  the same in °C and in Kelvin.
 
 ### Validity and masking
 
@@ -217,7 +249,8 @@ which also documents the bands and the `LST × 0.01 + 273.15` decoding)
 6. Paste `script.js` into the script editor and run.
 
 7. Optionally adjust the user options at the top of the script — `paletteMinK` / `paletteMaxK` to
-   suit the temperature range of your scene, and `biasOffset` once you have measured it.
+   suit the temperature range of your scene, `biasOffset` once you have measured it, and
+   `changeScale` / `deltaTMean` if you want to damp the CLMS change (see above).
 
 The aliases are **case-sensitive** and must match the `setup()` datasources exactly, or the request
 will not bind. Note that the CLMS collection is deliberately added **twice**, with two different
@@ -374,10 +407,17 @@ Example location and dates (Copernicus Browser):
 ## Caveats
 
 - Structures influencing microclimate are relatively constant in cities but can be less constant in more natural landscapes as vegetation condition or soil water content changes. Use with extra caution outside cities, keep the calibration scene as close as possible in time to the target scene.
-- Clouds will influece all three datasets involved. Data gaps will appear where there were missing pixels due to clouds in the CLMS scenes, and erroneous values may appear where clouds affect the Landsat image used for calibration.
+- Clouds will influence all three datasets involved. Data gaps will appear where there were missing pixels due to clouds in the CLMS scenes, and erroneous values may appear where clouds affect the Landsat image used for calibration.
 - The residual also absorbs the systematic bias between the two different LST retrieval algorithms
   (Landsat vs CLMS), not purely spatial structure.
 - The additive-in-Kelvin model treats anomaly magnitude as background-independent. This means that the differences we introduce from the residuals do not scale with the actual temperature, they stay constant. It is a good idea to select a calibration scene from the same season and from the same generic conditions if possible.
+- The size of the temperature change between the calibration and the target scene limits the method.
+  In the Budapest validation (companion notebook, Section 12.2) the sharpened map was clearly better
+  than plain CLMS when the two scene means differed by less than about 10 K, still better at 10–20 K,
+  and worse than plain CLMS above about 20 K, e.g. a winter calibration scene applied to a summer
+  target. Above 20 K the fine-scale pattern itself changes with the season, and no choice of
+  `biasOffset` or `changeScale` fixes that. The time between the dates mattered much less than the
+  temperature difference. These thresholds come from one city and should be taken as a guide.
 - `script.js` does no cloud detection: you must pick a clear-sky Landsat calibration scene yourself.
   Its guards only screen fill / error / gross-outlier pixels, not thin cloud.
   (`landsat_lst_reference.js` does apply a Collection 2 QA cloud mask, since it is meant to be run on
@@ -387,6 +427,20 @@ Example location and dates (Copernicus Browser):
 - The residual is a snapshot of one hour of the diurnal cycle. Calibration requires `CLMS_CAL` at the
   Landsat overpass hour; applying the result to a very different hour of day is an untested
   extrapolation (see "Matching the hour" above).
+
+## Companion notebook and citation
+
+The method is documented and evaluated in a Jupyter notebook in the CDSE notebook samples:
+[`clms_lst_landsat_sharpening.ipynb`](https://github.com/eu-cdse/notebook-samples/blob/main/sentinelhub/clms_lst_landsat_sharpening.ipynb).
+It reproduces the sharpening for Budapest with the Sentinel Hub Process API, then tests the method:
+how stable the residual pattern is over time, whether the Landsat − CLMS bias is the same in ten
+cities across climate zones, whether the additive model holds, and how large the error of a sharpened
+map is in a leave-one-date-out validation against Landsat. It runs on the CDSE JupyterLab.
+
+If you use this method, please cite the notebook:
+
+> Zlinszky, A. (2026). *Landsat-sharpened CLMS Land Surface Temperature: method, validation and
+> error budget* (Version 1.0) [Jupyter notebook]. Zenodo. https://doi.org/10.5281/zenodo.22944002
 
 ## Author of the script
 

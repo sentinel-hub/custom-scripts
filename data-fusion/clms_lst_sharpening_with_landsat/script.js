@@ -2,6 +2,9 @@
 
 /**
  * Thermal sharpening of CLMS LST (3 km hourly V3) with Landsat thermal imagery.
+ * By András Zlinszky, Sinergise (azlinszky.bsky.social) and Claude Code
+ * Based on the Landsat Land Surface Temperature custom script by Mohor Gartner
+ * https://custom-scripts.sentinel-hub.com/custom-scripts/landsat-8/land_surface_temperature_mapping/
  * Data fusion of three sources; see README.md for the method, caveats and setup.
  *
  * Quick setup (Copernicus Browser -> "use additional datasets (advanced)"):
@@ -17,6 +20,9 @@
  *   residual      = LST_landsat_cal - LST_clms_cal
  *   LST_sharpened = LST_clms_target + residual + biasOffset
  *
+ * Optional scaling of the CLMS change (changeScale = s, default 1 = the formula above):
+ *   LST_sharpened = LST_landsat_cal + s * (LST_clms_target - LST_clms_cal)
+ *                   + (1 - s) * deltaTMean + biasOffset
  */
 
 //// ---- USER OPTIONS ---------------------------------------------------------
@@ -28,6 +34,16 @@ var band = "B10";
 // 0 = pure additive Landsat detail; set to mean(CLMS_cal)-mean(Landsat_cal)
 // to anchor the sharpened scene-mean to CLMS.
 var biasOffset = 0;
+
+// scale s of the 3 km CLMS change between the calibration and the target date.
+// 1 = additive sharpening, the full CLMS change is applied (default). Values below 1
+// damp the change: use the median slope of Landsat on CLMS over several calibration
+// dates (companion notebook, Section 12.5); over Budapest any value 0.25-0.5 worked.
+var changeScale = 1;
+
+// only used when changeScale != 1: mean(CLMS_TGT) - mean(CLMS_CAL) over your area,
+// in Kelvin (the same number in degC). Keeps the sharpened scene mean on the CLMS level.
+var deltaTMean = 0;
 
 // physical sanity range for the Landsat-derived calibration LST (degC).
 // Pixels whose derived LST falls outside this band are masked out.
@@ -199,6 +215,13 @@ function evaluatePixel(samples) {
   // bias offset.
   var residual = lstLandsatCal - lstClmsCal;
   var lstSharpened = lstClmsTgt + residual + biasOffset;
+
+  // optional: damp the local CLMS change by changeScale, but keep the full
+  // scene-mean change deltaTMean, so the scene mean stays on the CLMS level
+  if (changeScale !== 1) {
+    var clmsChange = lstClmsTgt - lstClmsCal;
+    lstSharpened -= (1 - changeScale) * (clmsChange - deltaTMean);
+  }
 
   var rgb = visualizer.process(lstSharpened);
   return {
