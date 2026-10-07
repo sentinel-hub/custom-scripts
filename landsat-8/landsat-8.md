@@ -42,3 +42,4 @@ The Landsat program is the longest running enterprise for acquisition of satelli
   - [Thermal visualization](/landsat-8/thermal)
   - [Thermal FLIR visualization](/landsat-8/thermal-iron)
   - [Band quality assessment band visualization](/landsat-8/bqa)
+  - [Markuse fire](/landsat-8/markuse_fire_landsat)
