@@ -24,3 +24,4 @@ The combination of multiple remote sensing data sources can provide invaluable i
  - [Thermal visualization and water in wetlands with Landsat 8 L1 & L2](/data-fusion/thermal_visualization_and_water_in_wetlands)
  - [Land Surface Temperature with S3 SLSTR and OLCI](/sentinel-3/land_surface_temperature)
  - [Visualising floods using Sentinel-1 overlaid on Sentinel-2 imagery](/data-fusion/s1_flooding_visualisation/)
+ - [Agricultural growth stage from three Sentinel-2 quarterly mosaics](/sentinel-2/agriculture_growth_stage)
