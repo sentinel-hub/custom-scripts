@@ -50,6 +50,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
   - [kNDVI](/sentinel-2/kndvi) - new alternative to NDVI with more complex transfer function
  - [MCARI](/sentinel-2/mcari) - modified chlorophyll absorption in reflectance index
  - [MSI](/sentinel-2/msi) - moisture index
+ - [NDGRI](/sentinel-2/ndgri) - normalized difference gamma-radiation index for screening elevated gamma-radiation zones in arid and semi-arid environments
  - [NDMI](/sentinel-2/ndmi) - normalized difference moisture index
  - [NDWI](/sentinel-2/ndwi) - normalized difference water index
  - [NDMI STRESS](/sentinel-2/ndmi_special) - normalized difference moisture index for crop moisture stress
