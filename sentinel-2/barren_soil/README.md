@@ -5,6 +5,11 @@ grand_parent: Sentinel
 layout: script
 permalink: /sentinel-2/barren_soil/
 nav_exclude: true
+scripts:
+- - Visualization
+  - script.js
+- - Updated version
+  - updated_script.js
 examples:
 - zoom: '13'
   lat: '45.98008'
@@ -30,6 +35,8 @@ The barren soil script applies the Bare soil index (BSI) to the red channel, wit
 The bare soil index for Sentinel-2: 
 
 **BSI = ((B11 + B04) - (B08 + B02)) / ((B11 + B04) + (B08 + B02))**
+
+The **Updated version** tab (`updated_script.js`) is an Evalscript V3 rewrite that keeps the same colour scheme but adds two extra outputs - `index` and `eobrowserStats` (the BSI scaled to 0-1, where 1 = definitely bare soil and 0 = not bare soil) - so EO Browser shows the value at a pixel and can build Statistical Info and temporal charts. It also masks clouds and water (and other non-soil classes) via the Scene Classification Layer, following the same palette approach as the [kNDVI script](/sentinel-2/kndvi/). Updated-version contributor: András Zlinszky.
 
 ## Author of the script
 
