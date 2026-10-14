@@ -40,7 +40,7 @@ spatial detail.
 
 | Alias | Collection | Timespan | Bands |
 |-------|-----------|----------|-------|
-| `LANDSAT-OT-L1`  | Landsat 8-9 L1 | calibration date (clear-sky overpass) | `B03, B04, B05, B10, B11` |
+| `LANDSAT-OT-L1`  | Landsat 8-9 L1 | calibration date (clear-sky overpass) | `B03, B04, B05, B10, B11, BQA, dataMask` |
 | `CLMS_CAL` | CLMS LST 3km hourly V3 | the hour matching the Landsat overpass | `LST, dataMask` |
 | `CLMS_TGT` | CLMS LST 3km hourly V3 | target date/hour to sharpen | `LST, dataMask` |
 
@@ -89,19 +89,17 @@ There are two ways to obtain it, both external to `script.js`.
 **Measure the residual directly (recommended).** Run `bias_offset.js` (see below) on your calibration
 date. It outputs `LST_landsat_cal − LST_clms_cal` per pixel, so `biasOffset = −mean(residual)`.
 Because both terms come out of a single request, the same pixels are masked on both sides and the two
-retrievals are matched in time by construction.
-
-<!-- TEMPORARY-WORKAROUND: remove when CDSE fixes statistics on data fusion layers -->
-> ⚠️ **Temporary — until the Browser histogram is fixed.** The statistics panel does not currently
-> work on data fusion layers (see "Outputs" below), so the mean of `bias_offset.js` cannot be read
-> from a histogram in the Browser. Until CDSE resolves this, either estimate it from the map by
-> tuning `residualCenterK` — the procedure is under "Measuring `biasOffset`" below — or compute it
-> with the Statistical API.
+retrievals are matched in time by construction. Open the Copernicus Browser statistics / histogram
+panel for the resulting layer over your area of interest. For a narrow, roughly symmetric
+distribution, visually estimate its centre as an approximation to the mean residual. Negate that
+estimate and enter it as `biasOffset` in `script.js`; see "Measuring `biasOffset`" below. The Browser
+does not report the mean or directly export histogram values; use the companion notebook or
+Statistical API when you need a calculated mean rather than a visual estimate.
 
 **Subtract two layer means.** Run `landsat_lst_reference.js` and the `CLMS_CAL` layer over your area
-of interest, read each layer's mean (Copernicus Browser statistics/histogram panel, or the
-Statistical API), and set `biasOffset = mean(CLMS_cal) − mean(Landsat_cal)`. Both are single-dataset
-layers, so the statistics panel works on them today. The weakness is that the two layers do not mask
+of interest, obtain each layer's mean with the Statistical API or companion notebook,
+and set `biasOffset = mean(CLMS_cal) − mean(Landsat_cal)`. Both are single-dataset
+layers. The weakness is that the two layers do not mask
 the same pixels — Landsat drops cloud-affected and out-of-range pixels that CLMS keeps — so you are
 differencing means taken over different pixel sets.
 
@@ -140,16 +138,24 @@ LST_sharpened = LST_landsat_cal + s × (LST_clms_target − LST_clms_cal) + (1 �
   it. A fixed `s` for a city worked as well as a per-date one.
 - `deltaTMean` is `mean(CLMS_TGT) − mean(CLMS_CAL)` over your area. Without this term an `s` below 1
   would also damp the scene mean, and the sharpened map would drift away from the CLMS level
-  (by 5 K for `s = 0.5` and a 10 K warmer target). Both means can be read in the Copernicus Browser
-  statistics panel from two plain CLMS LST layers, which are single-dataset layers. The difference is
-  the same in °C and in Kelvin.
+  (by 5 K for `s = 0.5` and a 10 K warmer target). Obtain both means with the Statistical API or
+  companion notebook. The Browser histograms can provide approximate centres only if both
+  distributions are narrow and roughly symmetric. The difference is the same in °C and in Kelvin.
 
 ### Validity and masking
 
 A pixel is masked (transparent, `NaN` index) when any of the following holds: the Landsat pixel
 fails the raw-band guard (`B10` outside `173–65000`, or `B03/B04/B05 ≤ 0`); the Landsat-derived
 LST falls outside a configurable physical range (default −20 °C … +60 °C, catching undetected
-cloud / emissivity blow-ups); or either CLMS input has `dataMask === 0`.
+cloud / emissivity blow-ups); or any Landsat or CLMS input has `dataMask === 0`.
+
+With `applyCloudMask = true` (the default), Landsat Collection 2 QA flags decoded from `BQA`
+with `decodeL8C2Qa` also mask fill, cloud, dilated cloud, cirrus and cloud shadow. This is the
+same cloud mask used by both companion scripts and the notebook. Masking happens before the
+residual is calculated, so calibration-date clouds cannot propagate into target-date maps as
+false cool areas. Those pixels remain no-data even if the target day is clear; use a clearer
+calibration scene to recover coverage. Keep `applyCloudMask` identical across all three scripts
+when comparing their results.
 
 ### Outputs
 
@@ -171,13 +177,10 @@ There is deliberately no `browserStats` output. That output exists to feed the C
 this script pins `CLMS_CAL` to a fixed calibration date, so a swept time range has no coherent
 meaning and the tool returns an error.
 
-**Known Copernicus Browser limitation.** The statistics / histogram panel does not work on any data
-fusion layer. It fails with `Dataset with id: <alias> not found` even though the same layer renders
-correctly, and this is independent of what the datasource is called — declaring a `browserStats`
-output does not help either. This is a Browser issue rather than a script one, and it has been
-reported to CDSE support. Single-dataset layers are unaffected, so read means and histograms from
-`landsat_lst_reference.js` or from a plain CLMS LST layer, and use the Statistical API when you need
-statistics on a fused product.
+The Copernicus Browser statistics / histogram panel supports data fusion layers. Use it to inspect
+the sharpened LST from `script.js` or the calibration residual from `bias_offset.js` over your area
+of interest. A histogram describes the spatial distribution for the configured dates; it does not
+require sweeping the calibration timespan as a time series would.
 
 `landsat_lst_reference.js` does declare `browserStats`: it is a single-dataset script with no
 pinned timespans, so both the time series tool and the statistics panel behave as expected.
@@ -193,17 +196,16 @@ pinned timespans, so both the time series tool and the statistics panel behave a
 `landsat_lst_reference.js` is deliberately a copy of the Landsat half of `script.js` — same band,
 same emissivity model, same constants, same guards, same color ramp. Because the retrieval is
 identical, any difference between the two layers is attributable to the sharpening rather than to a
-difference in method. It differs in two respects, both intentional: it applies a Collection 2 QA
-cloud mask (`decodeL8C2Qa`, on by default), since you will be opening arbitrary overpass dates with
-it rather than a hand-picked clear-sky scene; and it declares a `browserStats` output, so the
-Browser time series tool works on it (see "Outputs" above).
+difference in method. It applies the same default-on Collection 2 QA cloud mask as `script.js`.
+It additionally declares a `browserStats` output, so the Browser time series tool works on it
+(see "Outputs" above).
 
 `bias_offset.js` outputs the residual field itself — `LST_landsat_cal − LST_clms_cal` in Kelvin
 degrees — rather than a sharpened temperature. It uses the same Landsat retrieval and the same
 calibration-date pairing as `script.js`, so the value you measure with it is the value `script.js`
-needs. Two deliberate differences: it applies the Collection 2 QA cloud mask, because cloud tops read
-cold and would bias the mean in the same direction as the atmospheric effect being measured, making
-the two indistinguishable; and it can optionally drop water pixels (`excludeWater`), whose thermal
+needs. It applies the same Collection 2 QA cloud mask: cloud tops read cold and would bias the mean
+in the same direction as the atmospheric effect being measured, making the two indistinguishable.
+It can additionally drop water pixels (`excludeWater`), whose thermal
 inertia decouples them from the land signal so that a river or lake shifts the scene mean. It renders
 on a diverging blue–neutral–red ramp rather than the CLMS magma ramp, because the residual is a
 *signed* quantity whose whole interpretive content is the sign, and a sequential ramp gives the
@@ -292,33 +294,37 @@ Set up exactly as for the sharpening, but with only **one** additional dataset:
 
 Put both timespans on the calibration date, with `CLMS_CAL` on the hourly slot containing the Landsat
 overpass. There is no `CLMS_TGT`: this script measures the calibration pair, it does not sharpen
-anything. Keep `band`, `C`, `minValidC` and `maxValidC` identical to `script.js` — the offset is only
+anything. Keep `band`, `C`, `minValidC`, `maxValidC` and `applyCloudMask` identical to `script.js` — the offset is only
 valid for the retrieval that produced it. If your area contains open water, set `excludeWater = true`
-before reading the mean.
+before estimating the offset; this estimates a land-only offset rather than one for all valid pixels.
 
 The layer renders on a diverging ramp: blue where Landsat reads colder than CLMS, neutral where the
 residual equals `residualCenterK`, red where Landsat reads warmer. With the default
 `residualCenterK = 0` a typical scene comes out uniformly blue — that is the top-of-atmosphere cold
 bias, and it is the thing you are about to quantify.
 
-<!-- TEMPORARY-WORKAROUND: remove when CDSE fixes statistics on data fusion layers -->
-> ⚠️ **Temporary procedure — replace with the histogram once the Browser bug is fixed.**
->
-> The intended way to use this script is to open the statistics panel and read the mean and standard
-> deviation of the residual directly. That panel does not currently work on fusion layers, so until
-> CDSE fixes it, read the mean off the map by bisection:
->
-> 1. Start at `residualCenterK = 0`, `residualSpreadK = 15`. Note whether the scene skews blue or red.
-> 2. Move `residualCenterK` toward the skew — for a uniformly blue scene, try `-8`.
-> 3. Re-run. If the land now reads mostly neutral you are close; if it has flipped to red, you overshot.
-> 4. Narrow `residualSpreadK` (to 5, then 2) and repeat until the bulk of the land renders neutral.
->
-> `residualCenterK` is then the scene-mean residual, and `biasOffset = −residualCenterK`. At
-> `residualSpreadK = 2` the mean is readable to a few tenths of a Kelvin degree, comfortably below
-> the accuracy the method needs.
->
-> This gives you the mean but **not** the standard deviation — the number that says whether a single
-> scene-wide constant describes the residual fairly at all. For that, use the Statistical API.
+1. Paste `bias_offset.js` into the custom script editor and run the calibration pair.
+2. Select the area of interest you intend to sharpen and open the statistics / histogram panel
+  for the residual layer. Use the same area when comparing results or measuring another date.
+3. Inspect the full histogram, including its tails. If it has one narrow, roughly symmetric
+   cluster, visually estimate the residual value at its centre from the horizontal axis. This
+   approximates the mean; the tallest bin is the mode, which is near the mean only for a roughly
+   symmetric, single-peaked distribution. Do not use the midpoint of the color ramp as the estimate.
+4. Set `biasOffset` to the negative of that estimated centre in `script.js`. For example, a
+   histogram narrowly clustered around **−2.2 K** suggests `biasOffset = 2.2`. The values are
+   temperature differences in Kelvin, numerically identical to differences in degrees Celsius;
+   do not subtract 273.15. Re-run the sharpening with that value.
+
+This is an approximate Browser-only calibration: the histogram does not report a mean or directly
+export bin values. Do not infer precision finer than the histogram bins support. Narrow residual
+distributions are expected when a scene-wide bias dominates, but check rather than assume this.
+A broad, skewed or multi-peaked distribution makes a visual mean estimate unreliable and suggests
+spatial differences that a constant cannot remove. In that case, or when numerical accuracy matters,
+use the companion notebook or Statistical API to calculate `biasOffset = −mean(residual)` over the
+same area and with the same masking settings.
+
+Masked pixels are excluded from the statistics. `residualCenterK` and `residualSpreadK` only control
+the display colors; they do not change the residual values or the estimated offset.
 
 ### Validating against native Landsat (`landsat_lst_reference.js`)
 
@@ -331,9 +337,11 @@ calibrated on. To check that yourself:
    from the second overpass enters the calculation.
 3. In a second layer, run `landsat_lst_reference.js` on that second overpass date. This is the truth
    to compare against.
-4. Compare the two visually. The Browser statistics panel can give you a mean and histogram for
-   `landsat_lst_reference.js`, but not for the sharpened layer — it does not work on fusion layers
-   (see "Outputs" above).
+4. Compare the two visually and use the Browser statistics / histogram panel to compare their
+  distributions over the same area. Use the Statistical API or companion notebook for calculated
+  means. Statistics are available for both the native
+  Landsat reference and the sharpened data fusion layer; different valid-pixel masks can still
+  affect the comparison.
 
 **Keep `biasOffset` consistent between the two scripts.** With `biasOffset = 0` in both, the layers
 share the Landsat top-of-atmosphere scale and the difference you see is purely spatial sharpening —
@@ -407,7 +415,7 @@ Example location and dates (Copernicus Browser):
 ## Caveats
 
 - Structures influencing microclimate are relatively constant in cities but can be less constant in more natural landscapes as vegetation condition or soil water content changes. Use with extra caution outside cities, keep the calibration scene as close as possible in time to the target scene.
-- Clouds will influence all three datasets involved. Data gaps will appear where there were missing pixels due to clouds in the CLMS scenes, and erroneous values may appear where clouds affect the Landsat image used for calibration.
+- Clouds can affect all three datasets. Data gaps appear where either CLMS input is missing or, with `applyCloudMask = true` (the default), the Landsat calibration pixel is flagged as cloud-affected. Clouds missed by the QA mask can still introduce erroneous values into the calibration residual and the sharpened maps.
 - The residual also absorbs the systematic bias between the two different LST retrieval algorithms
   (Landsat vs CLMS), not purely spatial structure.
 - The additive-in-Kelvin model treats anomaly magnitude as background-independent. This means that the differences we introduce from the residuals do not scale with the actual temperature, they stay constant. It is a good idea to select a calibration scene from the same season and from the same generic conditions if possible.
@@ -418,10 +426,10 @@ Example location and dates (Copernicus Browser):
   target. Above 20 K the fine-scale pattern itself changes with the season, and no choice of
   `biasOffset` or `changeScale` fixes that. The time between the dates mattered much less than the
   temperature difference. These thresholds come from one city and should be taken as a guide.
-- `script.js` does no cloud detection: you must pick a clear-sky Landsat calibration scene yourself.
-  Its guards only screen fill / error / gross-outlier pixels, not thin cloud.
-  (`landsat_lst_reference.js` does apply a Collection 2 QA cloud mask, since it is meant to be run on
-  arbitrary dates.)
+- All three scripts apply the Landsat Collection 2 QA cloud mask by default, but it is not infallible;
+  thin cloud or cloud edges may escape detection. Prefer a clear-sky Landsat calibration scene
+  and inspect it visually. Flagged pixels remain no-data on every target date; the script does
+  not fill these gaps even when the target day is clear.
 - Sharpening cannot recover thermal structure that changed after the calibration date — new
   construction, a harvested field, a recently irrigated park. Re-calibrate periodically.
 - The residual is a snapshot of one hour of the diurnal cycle. Calibration requires `CLMS_CAL` at the

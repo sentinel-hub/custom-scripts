@@ -54,6 +54,8 @@ var maxValidC = 60;
 // 0.005 follows Sobrino et al. (2008) and Avdan & Jovanovska (2016).
 var C = 0.005;
 
+var applyCloudMask = true;
+
 // color-map range for the RGBA "default" output, in Kelvin. The defaults
 // 240-330 K (-33 to +57 degC) reproduce the CLMS LST 3km hourly V3 palette
 // exactly. Use the same values in landsat_lst_reference.js when comparing the two layers.
@@ -110,7 +112,10 @@ const visualizer = new ColorRampVisualizer(ColorBar);
 function setup() {
   return {
     input: [
-      { datasource: "LANDSAT-OT-L1", bands: ["B03", "B04", "B05", "B10", "B11"] },
+      {
+        datasource: "LANDSAT-OT-L1",
+        bands: ["B03", "B04", "B05", "B10", "B11", "BQA", "dataMask"],
+      },
       { datasource: "CLMS_CAL", bands: ["LST", "dataMask"] },
       { datasource: "CLMS_TGT", bands: ["LST", "dataMask"] },
     ],
@@ -195,9 +200,15 @@ function evaluatePixel(samples) {
   var clmsCal = samples.CLMS_CAL[0];
   var clmsTgt = samples.CLMS_TGT[0];
 
-  // CLMS validity
-  if (clmsCal.dataMask === 0 || clmsTgt.dataMask === 0) {
+  if (landsat.dataMask === 0 || clmsCal.dataMask === 0 || clmsTgt.dataMask === 0) {
     return invalid();
+  }
+
+  if (applyCloudMask) {
+    var qa = decodeL8C2Qa(landsat.BQA);
+    if (qa.fill || qa.cloud || qa.dilatedCloud || qa.cirrus || qa.cloudShadow) {
+      return invalid();
+    }
   }
 
   // Landsat calibration LST (Kelvin), with raw-band + physical-range guards
