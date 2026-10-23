@@ -134,7 +134,7 @@ LST_sharpened = LST_landsat_cal + s × (LST_clms_target − LST_clms_cal) + (1 �
   Budapest the example calibration date gave 0.89, against a median of 0.54 over 28 dates).
   The companion notebook computes it (Section 12.5). Over Budapest a sweep of fixed values gave
   nearly the same error for any `s` between 0.25 and 0.5, rising steadily towards `s = 1`. In other
-  cities the median per-date slope ranged from about 0.25 to 0.8, so measure it rather than borrow
+  cities the median per-date slope ranged from about 0.17 to 0.82, so measure it rather than borrow
   it. A fixed `s` for a city worked as well as a per-date one.
 - `deltaTMean` is `mean(CLMS_TGT) − mean(CLMS_CAL)` over your area. Without this term an `s` below 1
   would also damp the scene mean, and the sharpened map would drift away from the CLMS level
@@ -426,6 +426,11 @@ Example location and dates (Copernicus Browser):
   target. Above 20 K the fine-scale pattern itself changes with the season, and no choice of
   `biasOffset` or `changeScale` fixes that. The time between the dates mattered much less than the
   temperature difference. These thresholds come from one city and should be taken as a guide.
+  Across nine cities the sharpening improved on plain CLMS in seven, but not in London and Alicante,
+  where plain CLMS already misses little fine-scale structure (companion notebook, Section 13).
+  Before relying on it for a new area, check that a sharpened map beats plain CLMS on a second
+  Landsat date from the same season: calibrate on one scene, sharpen onto the date of another, and
+  compare with `landsat_lst_reference.js` on that second date.
 - All three scripts apply the Landsat Collection 2 QA cloud mask by default, but it is not infallible;
   thin cloud or cloud edges may escape detection. Prefer a clear-sky Landsat calibration scene
   and inspect it visually. Flagged pixels remain no-data on every target date; the script does
@@ -448,7 +453,7 @@ map is in a leave-one-date-out validation against Landsat. It runs on the CDSE J
 If you use this method, please cite the notebook:
 
 > Zlinszky, A. (2026). *Landsat-sharpened CLMS Land Surface Temperature: method, validation and
-> error budget* (Version 1.0) [Jupyter notebook]. Zenodo. https://doi.org/10.5281/zenodo.22944002
+> error budget* [Jupyter notebook]. Zenodo. https://doi.org/10.5281/zenodo.22944001
 
 ## Author of the script
 
