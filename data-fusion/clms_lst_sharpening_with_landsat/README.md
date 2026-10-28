@@ -444,7 +444,7 @@ Example location and dates (Copernicus Browser):
 ## Companion notebook and citation
 
 The method is documented and evaluated in a Jupyter notebook in the CDSE notebook samples:
-[`clms_lst_landsat_sharpening.ipynb`](https://github.com/eu-cdse/notebook-samples/blob/main/sentinelhub/clms_lst_landsat_sharpening.ipynb).
+[`clms_lst_landsat_sharpening.ipynb`](https://github.com/eu-cdse/notebook-samples/blob/main/sentinelhub/use_cases/clms_lst_landsat_sharpening.ipynb).
 It reproduces the sharpening for Budapest with the Sentinel Hub Process API, then tests the method:
 how stable the residual pattern is over time, whether the Landsat − CLMS bias is the same in ten
 cities across climate zones, whether the additive model holds, and how large the error of a sharpened
