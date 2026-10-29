@@ -134,7 +134,7 @@ LST_sharpened = LST_landsat_cal + s × (LST_clms_target − LST_clms_cal) + (1 �
   Budapest the example calibration date gave 0.89, against a median of 0.54 over 28 dates).
   The companion notebook computes it (Section 12.5). Over Budapest a sweep of fixed values gave
   nearly the same error for any `s` between 0.25 and 0.5, rising steadily towards `s = 1`. In other
-  cities the median per-date slope ranged from about 0.25 to 0.8, so measure it rather than borrow
+  cities the median per-date slope ranged from about 0.17 to 0.8, so measure it rather than borrow
   it. A fixed `s` for a city worked as well as a per-date one.
 - `deltaTMean` is `mean(CLMS_TGT) − mean(CLMS_CAL)` over your area. Without this term an `s` below 1
   would also damp the scene mean, and the sharpened map would drift away from the CLMS level
@@ -439,7 +439,7 @@ Example location and dates (Copernicus Browser):
 ## Companion notebook and citation
 
 The method is documented and evaluated in a Jupyter notebook in the CDSE notebook samples:
-[`clms_lst_landsat_sharpening.ipynb`](https://github.com/eu-cdse/notebook-samples/blob/main/sentinelhub/clms_lst_landsat_sharpening.ipynb).
+[`clms_lst_landsat_sharpening.ipynb`](https://github.com/eu-cdse/notebook-samples/blob/main/sentinelhub/use_cases/clms_lst_landsat_sharpening.ipynb).
 It reproduces the sharpening for Budapest with the Sentinel Hub Process API, then tests the method:
 how stable the residual pattern is over time, whether the Landsat − CLMS bias is the same in ten
 cities across climate zones, whether the additive model holds, and how large the error of a sharpened
@@ -448,7 +448,7 @@ map is in a leave-one-date-out validation against Landsat. It runs on the CDSE J
 If you use this method, please cite the notebook:
 
 > Zlinszky, A. (2026). *Landsat-sharpened CLMS Land Surface Temperature: method, validation and
-> error budget* (Version 1.0) [Jupyter notebook]. Zenodo. https://doi.org/10.5281/zenodo.22944002
+> error budget* (Version 1.1) [Jupyter notebook]. Zenodo. https://doi.org/10.5281/zenodo.22944001
 
 ## Author of the script
 
