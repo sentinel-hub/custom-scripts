@@ -62,7 +62,7 @@ Dedicated to supplying data for [Copernicus services](https://www.esa.int/Our_Ac
  - [SAVI](/sentinel-2/savi) - soil adjusted vegetation index
  - [SIPI1](/sentinel-2/sipi1) - structure insensitive pigment index
  - [LAI](/sentinel-2/lai) - Leaf Area Index
- - [Leaf chlorophyll content](/sentinel-2/cab)
+ - [Canopy chlorophyll content (legacy Cab visualization, 0–300)](/sentinel-2/cab)
  - [Canopy chlorophyll content](/sentinel-2/ccc)
  - [FAPAR](/sentinel-2/fapar) - the fraction of absorbed photosynthetically active radiation
  - [FCOVER](/sentinel-2/fcover) - the fraction of green vegetation cover
